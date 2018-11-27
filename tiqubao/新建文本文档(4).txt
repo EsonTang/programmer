@@ -1,0 +1,29 @@
+QQ等第三方AP视频通话时画面过暗或过曝，AE不收敛
+ 
+ 
+[SOLUTION]
+ 
+ main log分析，会有如下字样的信息：
+01-01 03:30:12.346  249  7487  D  aaa_hal/3Athread: waitVsync done.
+01-01 03:30:12.380  249  7487  D  aaa_hal :[sem_wait_relativeTime][AESensorThreadLoop::semAEI2CSen]AE_sem_timedwait finish  //timeout46ms
+ 
+aaa_hal/3Athread: waitVsync done到aaa_hal :[sem_wait_relativeTime][AESensorThreadLoop::semAEI2CSen]AE_sem_timedwait finish的时间大概都是40ms, 而不是file中配置的timeout时间12ms。
+造成了AESenThread timeout wait时间异常，导致了update sensor shutter, gain基本没有执行，也就是没有更新曝光时间和gain给sensor，所以造成了AE算法是正常在跑，但是出来的画面一直是过暗或过亮的。
+ 
+此问题需要申请patch：ALPS02227222
+ 
+patch改动的地方：
+ 
+在创建AESenThread之前，设置PR_SET_TIMERSLACK更改自己timer_slack_ns, 不要让被系统改掉。
+Aaa_hal.thread.cpp
+(vendor\mediatek\proprietary\platform\mt6735\hardware\mtkcam\core\featureio\pipe\aaa)文件中，做如下修改：
+MVOID Hal3A::createAEThread()
+{
+   sem_init(&semAEI2CSen, 0, 0);
+   sem_init(&semAESen, 0, 0);
+   sem_init(&semAESenThdEnd, 0, 1);
+   sem_init(&semVsyncFromAE, 0, 0);
+ 
+  prctl(PR_SET_TIMERSLACK, 5000, 0, 0, 0); //add this line
+  pthread_create(&mAESenThread, NULL, AESensorThreadLoop, this);
+}

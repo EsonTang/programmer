@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+ <item-info> 
+    <name>默认主题;默認主題;Default</name>
+	<id>default</id>
+ </item-info>
+ 
+ <item-info> 
+    <name>金色年华;金色年華;Golden years</name>
+	<id>jinsenianhua</id>
+	<folder_layer>4</folder_layer>
+ </item-info>
+
+ <item-info> 
+    <name>水果派对;水果派對;Fruit Party</name>
+	<id>shuiguopaidui</id>
+	<folder_layer>4</folder_layer>
+ </item-info>
+ 
+  <item-info> 
+    <name>星光璀璨;星光璀璨;Stars Shining</name>
+	<id>xingguangcuican</id>
+ </item-info>
+ 
+ <item-info> 
+    <name>星际之光;星際之光;Star Light</name>
+	<id>xingjizhiguang</id>
+	<folder_layer>4</folder_layer>
+ </item-info>
+ 
+ <item-info> 
+    <name>圆之彩韵;園之彩韻;Garden </name>
+	<id>yuanzhicaiyun</id>
+	<folder_layer>4</folder_layer>
+ </item-info>
+ 
+  <item-info> 
+    <name>只若初见;只若初見;only shown</name>
+	<id>zhiruochujian</id>
+	<folder_layer>4</folder_layer>
+ </item-info>
+ 
+</items>

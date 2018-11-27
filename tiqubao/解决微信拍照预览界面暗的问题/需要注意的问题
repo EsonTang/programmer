@@ -1,0 +1,1 @@
+Config.ftbl.gc30a_mipi_raw.h,不同的项目需要确认用的什么摄像头，修改对应的Config.ftbl.XXXX_mipi_raw.h
