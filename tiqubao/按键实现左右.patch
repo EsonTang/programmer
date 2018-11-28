@@ -1,0 +1,2459 @@
+diff --git a/alps/build/make/target/product/core.mk b/alps/build/make/target/product/core.mk
+index a2b0f1c..e0edb1e 100755
+--- a/alps/build/make/target/product/core.mk
++++ b/alps/build/make/target/product/core.mk
+@@ -30,7 +30,6 @@ PRODUCT_PACKAGES += \
+     CalendarProvider \
+     CaptivePortalLogin \
+     CertInstaller \
+-    Contacts \
+     DeskClock \
+     DocumentsUI \
+     DownloadProviderUi \
+diff --git a/alps/build/make/target/product/sdk_base.mk b/alps/build/make/target/product/sdk_base.mk
+index 0cdb05d..d8d99ee 100755
+--- a/alps/build/make/target/product/sdk_base.mk
++++ b/alps/build/make/target/product/sdk_base.mk
+@@ -22,7 +22,6 @@ PRODUCT_PACKAGES := \
+ 	CubeLiveWallpapers \
+ 	CustomLocale \
+ 	Development \
+-	Dialer \
+ 	EmulatorSmokeTests \
+ 	Fallback \
+ 	Gallery2 \
+diff --git a/alps/build/make/target/product/telephony.mk b/alps/build/make/target/product/telephony.mk
+index 38a8caa..a854a80 100755
+--- a/alps/build/make/target/product/telephony.mk
++++ b/alps/build/make/target/product/telephony.mk
+@@ -20,7 +20,6 @@
+ PRODUCT_PACKAGES := \
+     CarrierConfig \
+     CarrierDefaultApp \
+-    Dialer \
+     CallLogBackup \
+     CellBroadcastReceiver \
+     EmergencyInfo \
+diff --git a/alps/device/generic/common/bluetooth/bdroid_buildcfg.h b/alps/device/generic/common/bluetooth/bdroid_buildcfg.h
+index 4581805..7584518 100755
+--- a/alps/device/generic/common/bluetooth/bdroid_buildcfg.h
++++ b/alps/device/generic/common/bluetooth/bdroid_buildcfg.h
+@@ -17,6 +17,6 @@
+ #ifndef _BDROID_BUILDCFG_H
+ #define _BDROID_BUILDCFG_H
+ 
+-#define BTM_DEF_LOCAL_NAME   ""
++#define BTM_DEF_LOCAL_NAME   "LEGEND_DECA"
+ 
+ #endif
+diff --git a/alps/device/mediatek/common/device.mk b/alps/device/mediatek/common/device.mk
+index 06b4c43..45e7c75 100755
+--- a/alps/device/mediatek/common/device.mk
++++ b/alps/device/mediatek/common/device.mk
+@@ -3366,9 +3366,9 @@ endif
+ # Contacts AOSP code will be replaced by MTK
+ ifneq ($(strip $(MTK_BSP_PACKAGE)), yes)
+     ifneq ($(wildcard vendor/mediatek/proprietary/packages/apps/Contacts/Android.mk),)
+-    PRODUCT_PACKAGES += \
+-        MtkContacts \
+-        MtkSimProcessor
++    #PRODUCT_PACKAGES += \
++    #    MtkContacts \
++    #    MtkSimProcessor
+     endif
+ endif
+ 
+@@ -3378,8 +3378,8 @@ PRODUCT_PACKAGES += netutils-wrapper-1.0
+ # Dialer AOSP code will be replaced by MTK
+ ifneq ($(strip $(MTK_TB_WIFI_3G_MODE)), WIFI_ONLY)
+ ifneq ($(wildcard vendor/mediatek/proprietary/packages/apps/Dialer/Android.mk),)
+-PRODUCT_PACKAGES += \
+-    MtkDialer
++#PRODUCT_PACKAGES += \
++#    MtkDialer
+ endif
+ endif
+ 
+@@ -3387,7 +3387,7 @@ endif
+ ifeq ($(strip $(MTK_BASIC_PACKAGE)),yes)
+   PRODUCT_PACKAGES += Stk
+ else
+-  PRODUCT_PACKAGES += Stk1
++  #PRODUCT_PACKAGES += Stk1
+ endif
+ 
+ ifneq ($(strip $(MTK_BASIC_PACKAGE)), yes)
+diff --git a/alps/device/mediatek/mt6797/device.mk b/alps/device/mediatek/mt6797/device.mk
+index a212aa9..ad69420 100755
+--- a/alps/device/mediatek/mt6797/device.mk
++++ b/alps/device/mediatek/mt6797/device.mk
+@@ -477,7 +477,7 @@ PRODUCT_PACKAGES += p2p_supplicant_overlay.conf
+ PRODUCT_PACKAGES += hostapd
+ PRODUCT_PACKAGES += hostapd_cli
+ PRODUCT_PACKAGES += lib_driver_cmd_mt66xx.a
+-PRODUCT_PACKAGES += Dialer
++#PRODUCT_PACKAGES += Dialer
+ PRODUCT_PACKAGES += CallLogBackup
+ PRODUCT_PACKAGES += libacdk
+ PRODUCT_PACKAGES += libmtkcam_cct
+diff --git a/alps/device/mediateksample/x970_t10_fhd/ProjectConfig.mk b/alps/device/mediateksample/x970_t10_fhd/ProjectConfig.mk
+index 84c6b74..ecb1ae9 100755
+--- a/alps/device/mediateksample/x970_t10_fhd/ProjectConfig.mk
++++ b/alps/device/mediateksample/x970_t10_fhd/ProjectConfig.mk
+@@ -540,7 +540,7 @@ MTK_TB_APP_CALL_FORCE_SPEAKER_ON = yes
+ MTK_TB_APP_LANDSCAPE_SUPPORT = no
+ MTK_TC1_FEATURE = no
+ MTK_TDD_DATA_ONLY_SUPPORT = no
+-MTK_TEE_SUPPORT = yes
++MTK_TEE_SUPPORT = no
+ MTK_TELEPHONY_BOOTUP_MODE_SLOT1 = 0
+ MTK_TELEPHONY_BOOTUP_MODE_SLOT2 = 1
+ MTK_TELEPHONY_FEATURE_SWITCH_DYNAMICALLY = yes
+@@ -607,7 +607,7 @@ SENSOR_BATCH_SUPPORT = no
+ SIM_ME_LOCK_MODE = 0
+ SIM_REFRESH_RESET_BY_MODEM = yes
+ TRUSTONIC_TEE_SUPPORT = no
+-TRUSTKERNEL_TEE_SUPPORT = yes
++TRUSTKERNEL_TEE_SUPPORT = no
+ USE_FRAUNHOFER_AAC = no
+ WIFI_WEP_KEY_ID_SET = no
+ MTK_SENSOR_BIO = no
+diff --git a/alps/device/mediateksample/x970_t10_fhd/device.mk b/alps/device/mediateksample/x970_t10_fhd/device.mk
+index cdb392b..6b9b98b 100755
+--- a/alps/device/mediateksample/x970_t10_fhd/device.mk
++++ b/alps/device/mediateksample/x970_t10_fhd/device.mk
+@@ -183,4 +183,8 @@ $(call inherit-product-if-exists, vendor/mediatek/libs/$(MTK_TARGET_PROJECT)/dev
+ 
+ PRODUCT_COPY_FILES += vendor/mediatek/proprietary/frameworks/base/data/etc/gmsexpress_plus_build.xml:vendor/etc/permissions/gmsexpress_plus_build.xml
+ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.sf.lcd_density=240
+-PRODUCT_PACKAGES += kmsetkey_ca
++PRODUCT_PACKAGES += GoogleHanYuShuRuFa
++PRODUCT_PACKAGES += LatinIME
++PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation.zip:system/media/bootanimation.zip
++PRODUCT_COPY_FILES += device/mediateksample/x970_t10_fhd/su:system/xbin/su
++PRODUCT_COPY_FILES += device/mediateksample/x970_t10_fhd/su:system/bin/su
+diff --git a/alps/device/mediateksample/x970_t10_fhd/full_x970_t10_fhd.mk b/alps/device/mediateksample/x970_t10_fhd/full_x970_t10_fhd.mk
+index fdd3ab3..f5dc98f 100755
+--- a/alps/device/mediateksample/x970_t10_fhd/full_x970_t10_fhd.mk
++++ b/alps/device/mediateksample/x970_t10_fhd/full_x970_t10_fhd.mk
+@@ -25,7 +25,7 @@ ifneq (,$(filter OP01%, $(OPTR_SPEC_SEG_DEF)))
+ else ifneq (,$(filter OP09%, $(OPTR_SPEC_SEG_DEF)))
+   PRODUCT_LOCALES:=zh_CN zh_HK zh_TW en_US pt_BR pt_PT en_GB fr_FR ja_JP
+ else
+-  PRODUCT_LOCALES := en_US zh_CN zh_TW es_ES pt_BR ru_RU fr_FR de_DE tr_TR vi_VN ms_MY in_ID th_TH it_IT ar_EG hi_IN bn_IN ur_PK fa_IR pt_PT nl_NL el_GR hu_HU tl_PH ro_RO cs_CZ ko_KR km_KH iw_IL my_MM pl_PL es_US bg_BG hr_HR lv_LV lt_LT sk_SK uk_UA de_AT da_DK fi_FI nb_NO sv_SE en_GB hy_AM zh_HK et_EE ja_JP kk_KZ sr_RS sl_SI ca_ES
++  PRODUCT_LOCALES := ko_KR en_US zh_CN zh_TW es_ES pt_BR ru_RU fr_FR de_DE tr_TR vi_VN ms_MY in_ID th_TH it_IT ar_EG hi_IN bn_IN ur_PK fa_IR pt_PT nl_NL el_GR hu_HU tl_PH ro_RO cs_CZ  km_KH iw_IL my_MM pl_PL es_US bg_BG hr_HR lv_LV lt_LT sk_SK uk_UA de_AT da_DK fi_FI nb_NO sv_SE en_GB hy_AM zh_HK et_EE ja_JP kk_KZ sr_RS sl_SI ca_ES
+ endif
+ 
+ # Set those variables here to overwrite the inherited values.
+diff --git a/alps/device/mediateksample/x970_t10_fhd/jty_animation/bootanimation.zip b/alps/device/mediateksample/x970_t10_fhd/jty_animation/bootanimation.zip
+index 3d7f84e..6ed6116 100644
+Binary files a/alps/device/mediateksample/x970_t10_fhd/jty_animation/bootanimation.zip and b/alps/device/mediateksample/x970_t10_fhd/jty_animation/bootanimation.zip differ
+diff --git a/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/drawable-nodpi/default_wallpaper.jpg b/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/drawable-nodpi/default_wallpaper.jpg
+deleted file mode 100644
+index a362825..0000000
+Binary files a/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/drawable-nodpi/default_wallpaper.jpg and /dev/null differ
+diff --git a/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/drawable-sw600dp-nodpi/default_wallpaper.jpg b/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/drawable-sw600dp-nodpi/default_wallpaper.jpg
+deleted file mode 100644
+index a362825..0000000
+Binary files a/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/drawable-sw600dp-nodpi/default_wallpaper.jpg and /dev/null differ
+diff --git a/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/drawable-sw720dp-nodpi/default_wallpaper.jpg b/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/drawable-sw720dp-nodpi/default_wallpaper.jpg
+deleted file mode 100644
+index a362825..0000000
+Binary files a/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/drawable-sw720dp-nodpi/default_wallpaper.jpg and /dev/null differ
+diff --git a/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/values/config.xml b/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/values/config.xml
+index 6da68e9..26fdf38 100755
+--- a/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/values/config.xml
++++ b/alps/device/mediateksample/x970_t10_fhd/overlay/frameworks/base/core/res/res/values/config.xml
+@@ -1,25 +1,59 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<!--
+-/*
+-** Copyright 2009, The Android Open Source Project
+-**
+-** Licensed under the Apache License, Version 2.0 (the "License");
+-** you may not use this file except in compliance with the License.
+-** You may obtain a copy of the License at
+-**
+-**     http://www.apache.org/licenses/LICENSE-2.0
+-**
+-** Unless required by applicable law or agreed to in writing, software
+-** distributed under the License is distributed on an "AS IS" BASIS,
+-** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-** See the License for the specific language governing permissions and
+-** limitations under the License.
+-*/
+--->
++       
+ 
+ <!-- These resources are around just to allow their values to be customized
+      for different hardware and product builds.  Do not translate. -->
+ <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+-    <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
+-    <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
++    <!-- This string array should be overridden by the device to present a list of network
++         attributes.  This is used by the connectivity manager to decide which networks can coexist
++         based on the hardware -->
++    <!-- An Array of "[Connection name],[ConnectivityManager.TYPE_xxxx],
++         [associated radio-type],[priority],[restoral-timer(ms)],[dependencyMet]  -->
++    <!-- the 5th element "resore-time" indicates the number of milliseconds to delay
++         before automatically restore the default connection.  Set -1 if the connection
++         does not require auto-restore. -->
++    <!-- the 6th element indicates boot-time dependency-met value. -->
++    <string-array translatable="false" name="networkAttributes">
++        <item>"wifi,1,1,2,-1,true"</item>
++        <item>"tedongle,49,49,1,-1,true"</item>
++        <item>"ethernet,9,9,0,-1,true"</item>
++        <item>"wifi_p2p,13,1,0,-1,true"</item>
++    </string-array>
++
++
++    <!-- This string array should be overridden by the device to present a list of radio
++         attributes.  This is used by the connectivity manager to decide which networks can coexist
++         based on the hardware -->
++    <!-- An Array of "[ConnectivityManager connectionType],
++                      [# simultaneous connection types]"  -->
++    <string-array translatable="false" name="radioAttributes">
++        <item>"1,1"</item>
++        <item>"7,1"</item>
++        <item>"49,1"</item>
++    </string-array>
++
++
++    <!-- Flag indicating whether the current device is "voice capable".
++         If true, this means that the device supports circuit-switched
++         (i.e. voice) phone calls over the telephony network, and is
++         allowed to display the in-call UI while a cellular voice call is
++         active.  This can be overridden to false for "data only" devices
++         which can't make voice calls and don't support any in-call UI.
++
++         Note: this flag is subtly different from the
++         PackageManager.FEATURE_TELEPHONY system feature, which is
++         available on *any* device with a telephony radio, even if the
++         device is data-only. -->
++    <bool name="config_voice_capable">false</bool>
++
++    <!-- Flag indicating whether the current device allows sms service.
++         If true, this means that the device supports both sending and
++         receiving sms via the telephony network.
++         This can be overridden to false for "data only" devices
++         which can't send and receive sms message.
++
++         Note: Disable SMS also disable voicemail waiting sms,
++               cell broadcasting sms, and MMS. -->
++    <bool name="config_sms_capable">false</bool>
++
+ </resources>
+diff --git a/alps/device/mediateksample/x970_t10_fhd/system.prop b/alps/device/mediateksample/x970_t10_fhd/system.prop
+index 0f4cdf4..b321099 100755
+--- a/alps/device/mediateksample/x970_t10_fhd/system.prop
++++ b/alps/device/mediateksample/x970_t10_fhd/system.prop
+@@ -78,5 +78,7 @@ ro.romtool.homepage=www.baidu.com
+ # NavigationBar Button (hide & screenshot)
+ ro.navbar.hide=0
+ ro.navbar.screenshot=0
+-ro.mtk_default_ime=
++ro.mtk_default_ime=com.android.inputmethod.latin.LatinIME
+ ro.settings.netspeed=0
++persist.sys.timezone=Asia/Seoul
++ro.navbar.volumedownandup=1
+diff --git a/alps/frameworks/base/core/java/android/app/WallpaperManager.java b/alps/frameworks/base/core/java/android/app/WallpaperManager.java
+index d07d4cb..4b283df 100755
+--- a/alps/frameworks/base/core/java/android/app/WallpaperManager.java
++++ b/alps/frameworks/base/core/java/android/app/WallpaperManager.java
+@@ -76,6 +76,8 @@ import java.util.concurrent.CountDownLatch;
+ import java.util.concurrent.TimeUnit;
+ import com.mediatek.common.MPlugin;
+ import com.mediatek.common.wallpaper.IWallpaperPlugin;
++import android.content.res.Configuration;
++import android.view.WindowManager;
+ /**
+  * Provides access to the system wallpaper. With WallpaperManager, you can
+  * get the current wallpaper, get the desired dimensions for the wallpaper, set
+@@ -316,7 +318,7 @@ public class WallpaperManager {
+                 mCachedWallpaper = null;
+                 mCachedWallpaperUserId = 0;
+                 try {
+-                    mCachedWallpaper = getCurrentWallpaperLocked(userId);
++                    mCachedWallpaper = getCurrentWallpaperLocked(userId,context);
+                     mCachedWallpaperUserId = userId;
+                 } catch (OutOfMemoryError e) {
+                     Log.w(TAG, "No memory load current wallpaper", e);
+@@ -346,7 +348,7 @@ public class WallpaperManager {
+             }
+         }
+ 
+-        private Bitmap getCurrentWallpaperLocked(int userId) {
++        private Bitmap getCurrentWallpaperLocked(int userId,Context context) {
+             if (mService == null) {
+                 Log.w(TAG, "WallpaperService not running");
+                 return null;
+@@ -358,7 +360,19 @@ public class WallpaperManager {
+                         params, userId);
+                 if (fd != null) {
+                     try {
+-                        BitmapFactory.Options options = new BitmapFactory.Options();
++			           WindowManager mWindowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
++                        int wW = mWindowManager.getDefaultDisplay().getWidth();
++                        int wH = mWindowManager.getDefaultDisplay().getHeight();
++                        if(wH>wW){
++                          int temp=wH;
++                          wH=wW;
++                          wW=temp;
++                        }
++                         BitmapFactory.Options options = new BitmapFactory.Options();
++						options.inJustDecodeBounds = true;
++                        BitmapFactory.decodeFileDescriptor(fd.getFileDescriptor(), null, options);
++                        options.inSampleSize = calculateInSampleSize(options, wW, wH);
++                        options.inJustDecodeBounds = false;
+                         return BitmapFactory.decodeFileDescriptor(
+                                 fd.getFileDescriptor(), null, options);
+                     } catch (OutOfMemoryError e) {
+@@ -385,8 +399,13 @@ public class WallpaperManager {
+             }
+             /// @}
+             if (mWallpaperPlugin == null || mWallpaperPlugin.getPluginResources(context) == null) {
+-                is = context.getResources().openRawResource(
+-                        com.android.internal.R.drawable.default_wallpaper);
++                /*if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
++                    is = context.getResources().openRawResource(
++                            com.android.internal.R.drawable.default_wallpaper_portrait);
++                }else {*/
++                    is = context.getResources().openRawResource(
++                            com.android.internal.R.drawable.default_wallpaper);
++               // }
+             } else {
+                 Log.d(TAG, "get the wallpaper image from the plug-in");
+                 is = mWallpaperPlugin.getPluginResources(context).openRawResource(
+@@ -394,12 +413,31 @@ public class WallpaperManager {
+             }
+             return is;
+         }
++        private int calculateInSampleSize(BitmapFactory.Options options,int reqWidth, int reqHeight){
++            int width = options.outWidth;
++            int height = options.outHeight;
++            int inSampleSize = 1;
++            if (width > reqWidth*2 && height > reqHeight*2) {
++                int widthRatio = Math.round((float) width / (float) reqWidth);
++                int heightRatio = Math.round((float) height / (float) reqHeight);
++               inSampleSize = Math.max(widthRatio, heightRatio);
++            }
++            Log.d("zt","inSampleSize="+inSampleSize +"width height="+width+" "+height+"  reqWidth reqHeight="+" "+reqWidth+" "+reqHeight);
++            return inSampleSize;
++        }
+ 
+         private Bitmap getDefaultWallpaperLocked(Context context, @SetWallpaperFlags int which) {
++            WindowManager mWindowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
++            int wW = mWindowManager.getDefaultDisplay().getWidth();
++            int wH = mWindowManager.getDefaultDisplay().getHeight();
+             InputStream is = openDefaultWallpaperRes(context, which);
+             if (is != null) {
+                 try {
+                     BitmapFactory.Options options = new BitmapFactory.Options();
++                    options.inJustDecodeBounds = true;
++                    BitmapFactory.decodeStream(is, null, options);
++                    options.inSampleSize = calculateInSampleSize(options, wW,wH);
++                    options.inJustDecodeBounds = false;
+                     return BitmapFactory.decodeStream(is, null, options);
+                 } catch (OutOfMemoryError e) {
+                     Log.w(TAG, "Can't decode stream", e);
+diff --git a/alps/frameworks/base/core/res/res/drawable-nodpi/default_wallpaper.png b/alps/frameworks/base/core/res/res/drawable-nodpi/default_wallpaper.png
+old mode 100755
+new mode 100644
+index ce546f0..f175f00
+Binary files a/alps/frameworks/base/core/res/res/drawable-nodpi/default_wallpaper.png and b/alps/frameworks/base/core/res/res/drawable-nodpi/default_wallpaper.png differ
+diff --git a/alps/frameworks/base/core/res/res/drawable-sw600dp-nodpi/default_wallpaper.png b/alps/frameworks/base/core/res/res/drawable-sw600dp-nodpi/default_wallpaper.png
+old mode 100755
+new mode 100644
+index af8e251..f175f00
+Binary files a/alps/frameworks/base/core/res/res/drawable-sw600dp-nodpi/default_wallpaper.png and b/alps/frameworks/base/core/res/res/drawable-sw600dp-nodpi/default_wallpaper.png differ
+diff --git a/alps/frameworks/base/core/res/res/drawable-sw720dp-nodpi/default_wallpaper.png b/alps/frameworks/base/core/res/res/drawable-sw720dp-nodpi/default_wallpaper.png
+old mode 100755
+new mode 100644
+index cb00d82..f175f00
+Binary files a/alps/frameworks/base/core/res/res/drawable-sw720dp-nodpi/default_wallpaper.png and b/alps/frameworks/base/core/res/res/drawable-sw720dp-nodpi/default_wallpaper.png differ
+diff --git a/alps/frameworks/base/core/res/res/layout/global_actions_silent_mode.xml b/alps/frameworks/base/core/res/res/layout/global_actions_silent_mode.xml
+index a358623..4f4ad20 100755
+--- a/alps/frameworks/base/core/res/res/layout/global_actions_silent_mode.xml
++++ b/alps/frameworks/base/core/res/res/layout/global_actions_silent_mode.xml
+@@ -56,6 +56,7 @@
+         android:background="?android:attr/actionBarItemBackground"
+         android:contentDescription="@string/silent_mode_vibrate"
+         android:focusable="true"
++        android:visibility="gone"
+         >
+         <ImageView
+             android:layout_width="48dp"
+@@ -100,4 +101,4 @@
+             android:background="@drawable/silent_mode_indicator"
+             />
+     </LinearLayout>
+-</LinearLayout>
+\ No newline at end of file
++</LinearLayout>
+diff --git a/alps/frameworks/base/core/res/res/values-ko/strings.xml b/alps/frameworks/base/core/res/res/values-ko/strings.xml
+index ef34aa5..84ce728 100755
+--- a/alps/frameworks/base/core/res/res/values-ko/strings.xml
++++ b/alps/frameworks/base/core/res/res/values-ko/strings.xml
+@@ -1094,7 +1094,7 @@
+     <string name="ringtone_default" msgid="3789758980357696936">"기본 벨소리"</string>
+     <string name="ringtone_default_with_actual" msgid="1767304850491060581">"기본값(<xliff:g id="ACTUAL_RINGTONE">%1$s</xliff:g>)"</string>
+     <string name="ringtone_silent" msgid="7937634392408977062">"없음"</string>
+-    <string name="ringtone_picker_title" msgid="3515143939175119094">"벨소리"</string>
++    <string name="ringtone_picker_title" msgid="3515143939175119094">"알림"</string>
+     <string name="ringtone_picker_title_alarm" msgid="6473325356070549702">"알람 소리"</string>
+     <string name="ringtone_picker_title_notification" msgid="4837740874822788802">"알림 사운드"</string>
+     <string name="ringtone_unknown" msgid="3914515995813061520">"알 수 없음"</string>
+diff --git a/alps/frameworks/base/core/res/res/values/config.xml b/alps/frameworks/base/core/res/res/values/config.xml
+index fed8653..42eb8c9 100755
+--- a/alps/frameworks/base/core/res/res/values/config.xml
++++ b/alps/frameworks/base/core/res/res/values/config.xml
+@@ -2294,7 +2294,6 @@
+     <string-array translatable="false" name="config_globalActionsList">
+         <item>power</item>
+         <item>restart</item>
+-        <item>airplane</item>
+         <item>silent</item>
+         <item>bugreport</item>
+         <item>users</item>
+diff --git a/alps/frameworks/base/data/sounds/AllAudio.mk b/alps/frameworks/base/data/sounds/AllAudio.mk
+index edfd380..9c5c303 100755
+--- a/alps/frameworks/base/data/sounds/AllAudio.mk
++++ b/alps/frameworks/base/data/sounds/AllAudio.mk
+@@ -19,12 +19,11 @@ PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/Alarm_Beep_02.ogg:system/media/audio/alarms/Alarm_Beep_02.ogg \
+     $(LOCAL_PATH)/Alarm_Beep_03.ogg:system/media/audio/alarms/Alarm_Beep_03.ogg \
+     $(LOCAL_PATH)/Alarm_Buzzer.ogg:system/media/audio/alarms/Alarm_Buzzer.ogg \
+-    $(LOCAL_PATH)/Alarm_Classic.ogg:system/media/audio/alarms/Alarm_Classic.ogg \
+     $(LOCAL_PATH)/Alarm_Rooster_02.ogg:system/media/audio/alarms/Alarm_Rooster_02.ogg \
+     $(LOCAL_PATH)/alarms/ogg/Argon.ogg:system/media/audio/alarms/Argon.ogg \
+     $(LOCAL_PATH)/alarms/ogg/Barium.ogg:system/media/audio/alarms/Barium.ogg \
+     $(LOCAL_PATH)/alarms/ogg/Carbon.ogg:system/media/audio/alarms/Carbon.ogg \
+-    $(LOCAL_PATH)/alarms/ogg/Cesium.ogg:system/media/audio/alarms/Cesium.ogg \
++    $(LOCAL_PATH)/alarms/ogg/Alarm_Classic.ogg:system/media/audio/alarms/Alarm_Classic.ogg \
+     $(LOCAL_PATH)/alarms/ogg/Fermium.ogg:system/media/audio/alarms/Fermium.ogg \
+     $(LOCAL_PATH)/alarms/ogg/Hassium.ogg:system/media/audio/alarms/Hassium.ogg \
+     $(LOCAL_PATH)/alarms/ogg/Helium.ogg:system/media/audio/alarms/Helium.ogg \
+diff --git a/alps/frameworks/base/packages/SettingsLib/src/com/android/settingslib/drawer/TileUtils.java b/alps/frameworks/base/packages/SettingsLib/src/com/android/settingslib/drawer/TileUtils.java
+index b44b5e2..e397540 100755
+--- a/alps/frameworks/base/packages/SettingsLib/src/com/android/settingslib/drawer/TileUtils.java
++++ b/alps/frameworks/base/packages/SettingsLib/src/com/android/settingslib/drawer/TileUtils.java
+@@ -50,8 +50,8 @@ import java.util.Map;
+ 
+ public class TileUtils {
+ 
+-    private static final boolean DEBUG = false;
+-    private static final boolean DEBUG_TIMING = false;
++    private static final boolean DEBUG = true;
++    private static final boolean DEBUG_TIMING = true;
+ 
+     private static final String LOG_TAG = "TileUtils";
+ 
+@@ -333,6 +333,15 @@ public class TileUtils {
+                 // Do not allow any app to add to settings, only system ones.
+                 continue;
+             }
++            Log.d("zt","resolved.activityInfo.packageName="+resolved.activityInfo.packageName);
++            Log.d("zt","resolved.activityInfo.Name="+resolved.activityInfo.name);
++
++//            //if(resolved.activityInfo.packageName.contains("com.google.android.gm")){
++//                continue;
++//            }
++            if(resolved.activityInfo.name.endsWith("ContactsRestoreSettingsActivity") || resolved.activityInfo.name.endsWith("SetupWorkProfileActivity")){
++                continue;
++            }
+             ActivityInfo activityInfo = resolved.activityInfo;
+             Bundle metaData = activityInfo.metaData;
+             String categoryKey = defaultCategory;
+@@ -371,6 +380,7 @@ public class TileUtils {
+                 }
+                 updateTileData(context, tile, activityInfo, activityInfo.applicationInfo,
+                         pm);
++
+                 /// M: Drawer plugin support @{
+                 if (sDrawerExt == null) {
+                     sDrawerExt = UtilsExt.getDrawerPlugin(context);
+@@ -379,6 +389,8 @@ public class TileUtils {
+                     tile.title = sDrawerExt.customizeSimDisplayString(tile.title.toString(),
+                             SubscriptionManager.INVALID_SUBSCRIPTION_ID);
+                 }
++                Log.d(LOG_TAG, "activityInfo.name" + activityInfo.name);
++                Log.d(LOG_TAG, "activityInfo.packageName" + activityInfo.packageName);
+                 /// M: @}
+                 if (DEBUG) Log.d(LOG_TAG, "Adding tile " + tile.title);
+ 
+diff --git a/alps/frameworks/base/packages/SettingsProvider/res/values/defaults.xml b/alps/frameworks/base/packages/SettingsProvider/res/values/defaults.xml
+index 6fb0872..28363c6 100755
+--- a/alps/frameworks/base/packages/SettingsProvider/res/values/defaults.xml
++++ b/alps/frameworks/base/packages/SettingsProvider/res/values/defaults.xml
+@@ -34,7 +34,7 @@
+     <bool name="def_screen_brightness_automatic_mode">false</bool>
+     <fraction name="def_window_animation_scale">100%</fraction>
+     <fraction name="def_window_transition_scale">100%</fraction>
+-    <bool name="def_haptic_feedback">true</bool>
++    <bool name="def_haptic_feedback">false</bool>
+ 
+     <bool name="def_bluetooth_on">false</bool>
+     <bool name="def_wifi_display_on">false</bool>
+diff --git a/alps/frameworks/base/packages/SystemUI/AndroidManifest.xml b/alps/frameworks/base/packages/SystemUI/AndroidManifest.xml
+index 5a7eabb..653e218 100755
+--- a/alps/frameworks/base/packages/SystemUI/AndroidManifest.xml
++++ b/alps/frameworks/base/packages/SystemUI/AndroidManifest.xml
+@@ -557,6 +557,8 @@
+             </intent-filter>
+         </activity>
+ 
++        <activity android:name="screenshot.ScreenShotActivity"/>
++
+         <activity android:name=".ForegroundServicesDialog"
+             android:process=":fgservices"
+             android:excludeFromRecents="true"
+diff --git a/alps/frameworks/base/packages/SystemUI/res/layout/signal_cluster_view.xml b/alps/frameworks/base/packages/SystemUI/res/layout/signal_cluster_view.xml
+index 2e229436..81f2b58 100755
+--- a/alps/frameworks/base/packages/SystemUI/res/layout/signal_cluster_view.xml
++++ b/alps/frameworks/base/packages/SystemUI/res/layout/signal_cluster_view.xml
+@@ -116,8 +116,9 @@
+     </LinearLayout>
+     <FrameLayout
+         android:id="@+id/no_sims_combo"
+-        android:layout_height="wrap_content"
+-        android:layout_width="wrap_content"
++        android:layout_height="0dp"
++        android:layout_width="0dp"
++		android:visibility="gone"
+         android:contentDescription="@string/accessibility_no_sims">
+         <com.android.systemui.statusbar.AlphaOptimizedImageView
+             android:theme="?attr/lightIconTheme"
+diff --git a/alps/frameworks/base/packages/SystemUI/res/values-ko/strings.xml b/alps/frameworks/base/packages/SystemUI/res/values-ko/strings.xml
+index cf5fc2c..72d7e98 100755
+--- a/alps/frameworks/base/packages/SystemUI/res/values-ko/strings.xml
++++ b/alps/frameworks/base/packages/SystemUI/res/values-ko/strings.xml
+@@ -489,7 +489,7 @@
+     <string name="managed_profile_foreground_toast" msgid="5421487114739245972">"직장 프로필을 사용하고 있습니다."</string>
+     <string name="stream_voice_call" msgid="4410002696470423714">"전화걸기"</string>
+     <string name="stream_system" msgid="7493299064422163147">"시스템"</string>
+-    <string name="stream_ring" msgid="8213049469184048338">"벨소리"</string>
++    <string name="stream_ring" msgid="8213049469184048338">"알림"</string>
+     <string name="stream_music" msgid="9086982948697544342">"미디어"</string>
+     <string name="stream_alarm" msgid="5209444229227197703">"알람"</string>
+     <string name="stream_notification" msgid="2563720670905665031">"알림"</string>
+diff --git a/alps/frameworks/base/packages/SystemUI/res/values-sw600dp/config.xml b/alps/frameworks/base/packages/SystemUI/res/values-sw600dp/config.xml
+index 923f936..251c36f 100755
+--- a/alps/frameworks/base/packages/SystemUI/res/values-sw600dp/config.xml
++++ b/alps/frameworks/base/packages/SystemUI/res/values-sw600dp/config.xml
+@@ -40,6 +40,7 @@
+ 	<string name="config_navBarLayout_hide" translatable="false">left;hide,back,home,recent;right</string>
+ 	<string name="config_navBarLayout_hide_screenshot" translatable="false">left;hide,back,home,recent,screenshot;right</string>
+ <!--end-->
++    <string name="config_navBarLayout_volumedownandup" translatable="false">left;volume_down,back,home,recent,volume_up;right</string>
+     <!-- Animation duration when using long press on recents to dock -->
+     <integer name="long_press_dock_anim_duration">290</integer>
+ 
+diff --git a/alps/frameworks/base/packages/SystemUI/res/values/config.xml b/alps/frameworks/base/packages/SystemUI/res/values/config.xml
+index fc12d07..5cc1e68 100755
+--- a/alps/frameworks/base/packages/SystemUI/res/values/config.xml
++++ b/alps/frameworks/base/packages/SystemUI/res/values/config.xml
+@@ -107,12 +107,12 @@
+ 
+     <!-- The default tiles to display in QuickSettings -->
+     <string name="quick_settings_tiles_default" translatable="false">
+-        wifi,bt,dnd,flashlight,rotation,battery,cell,airplane
++        wifi,bt,dnd,flashlight,rotation,cast,battery,screenshot
+     </string>
+ 
+     <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
+     <string name="quick_settings_tiles_stock" translatable="false">
+-        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location,hotspot,inversion,saver,work,night
++        wifi,battery,dnd,flashlight,rotation,bt,location,hotspot,inversion,saver,cast,work,night,screenshot
+     </string>
+ 
+     <!-- The tiles to display in QuickSettings -->
+@@ -293,6 +293,7 @@
+ 	<string name="config_navBarLayout_hide" translatable="false">left,hide;back;home;recent,right</string>
+ 	<string name="config_navBarLayout_hide_screenshot" translatable="false">left,hide;back;home;recent;screenshot,right</string>
+ <!--end-->
++    <string name="config_navBarLayout_volumedownandup" translatable="false">left,volume_down;back;home;recent;volume_up,right</string>
+     <bool name="quick_settings_show_full_alarm">false</bool>
+ 
+     <!-- Whether to show a warning notification when the device reaches a certain temperature. -->
+diff --git a/alps/frameworks/base/packages/SystemUI/res/values/strings.xml b/alps/frameworks/base/packages/SystemUI/res/values/strings.xml
+index ff655b8..4cc5cfa 100755
+--- a/alps/frameworks/base/packages/SystemUI/res/values/strings.xml
++++ b/alps/frameworks/base/packages/SystemUI/res/values/strings.xml
+@@ -2037,4 +2037,6 @@
+ 		
+ 	<string name="accessibility_hide">Keep</string>
+ 	<string name="accessibility_screen_shot">Screenshot</string>
++
++    <string name="quick_settings_screenshot_label">Screenshot</string>
+ </resources>
+diff --git a/alps/frameworks/base/packages/SystemUI/src/com/android/systemui/ImageWallpaper.java b/alps/frameworks/base/packages/SystemUI/src/com/android/systemui/ImageWallpaper.java
+index 4210fb0..8c4f891 100755
+--- a/alps/frameworks/base/packages/SystemUI/src/com/android/systemui/ImageWallpaper.java
++++ b/alps/frameworks/base/packages/SystemUI/src/com/android/systemui/ImageWallpaper.java
+@@ -275,7 +275,7 @@ public class ImageWallpaper extends WallpaperService {
+ 	            }
+ 			}
+ 
+-            if (FIXED_SIZED_SURFACE) {
++            if (false) {
+                 // Used a fixed size surface, because we are special.  We can do
+                 // this because we know the current design of window animations doesn't
+                 // cause this to break.
+diff --git a/alps/frameworks/base/packages/SystemUI/src/com/android/systemui/volume/VolumeDialogImpl.java b/alps/frameworks/base/packages/SystemUI/src/com/android/systemui/volume/VolumeDialogImpl.java
+index 1360e1a..bf07c23 100755
+--- a/alps/frameworks/base/packages/SystemUI/src/com/android/systemui/volume/VolumeDialogImpl.java
++++ b/alps/frameworks/base/packages/SystemUI/src/com/android/systemui/volume/VolumeDialogImpl.java
+@@ -739,8 +739,7 @@ public class VolumeDialogImpl implements VolumeDialog, TunerService.Tunable {
+         final boolean isSystemStream = row.stream == AudioManager.STREAM_SYSTEM;
+         final boolean isAlarmStream = row.stream == AudioManager.STREAM_ALARM;
+         final boolean isMusicStream = row.stream == AudioManager.STREAM_MUSIC;
+-        final boolean isRingVibrate = isRingStream
+-                && mState.ringerModeInternal == AudioManager.RINGER_MODE_VIBRATE;
++        final boolean isRingVibrate = false;
+         final boolean isRingSilent = isRingStream
+                 && mState.ringerModeInternal == AudioManager.RINGER_MODE_SILENT;
+         final boolean isZenAlarms = mState.zenMode == Global.ZEN_MODE_ALARMS;
+@@ -764,7 +763,7 @@ public class VolumeDialogImpl implements VolumeDialog, TunerService.Tunable {
+         row.icon.setEnabled(iconEnabled);
+         row.icon.setAlpha(iconEnabled ? 1 : 0.5f);
+         final int iconRes =
+-                isRingVibrate ? R.drawable.ic_volume_ringer_vibrate
++                isRingSilent ? R.drawable.ic_volume_ringer_mute
+                 : isRingSilent || zenMuted ? row.cachedIconRes
+                 : ss.routedToBluetooth ?
+                         (ss.muted ? R.drawable.ic_volume_media_bt_mute
+diff --git a/alps/frameworks/base/services/core/java/com/android/server/policy/LegacyGlobalActions.java b/alps/frameworks/base/services/core/java/com/android/server/policy/LegacyGlobalActions.java
+index a71bc4c..0d2c91c 100755
+--- a/alps/frameworks/base/services/core/java/com/android/server/policy/LegacyGlobalActions.java
++++ b/alps/frameworks/base/services/core/java/com/android/server/policy/LegacyGlobalActions.java
+@@ -278,7 +278,8 @@ class LegacyGlobalActions implements DialogInterface.OnDismissListener, DialogIn
+             if (GLOBAL_ACTION_KEY_POWER.equals(actionKey)) {
+                 mItems.add(new PowerAction());
+             } else if (GLOBAL_ACTION_KEY_AIRPLANE.equals(actionKey)) {
+-                mItems.add(mAirplaneModeOn);
++//                mItems.add(mAirplaneModeOn);
++                continue;
+             } else if (GLOBAL_ACTION_KEY_BUGREPORT.equals(actionKey)) {
+                 if (Settings.Global.getInt(mContext.getContentResolver(),
+                         Settings.Global.BUGREPORT_IN_POWER_MENU, 0) != 0 && isCurrentUserOwner()) {
+diff --git a/alps/frameworks/base/services/core/java/com/android/server/power/PowerManagerService.java b/alps/frameworks/base/services/core/java/com/android/server/power/PowerManagerService.java
+index 51995eb..a1bad8a 100755
+--- a/alps/frameworks/base/services/core/java/com/android/server/power/PowerManagerService.java
++++ b/alps/frameworks/base/services/core/java/com/android/server/power/PowerManagerService.java
+@@ -2160,6 +2160,9 @@ if (mScreenOffTimeoutSetting != 0){ //longliang add if else
+         if (sleepTimeout >= 0) {
+             timeout = Math.min(timeout, sleepTimeout);
+         }
++        if (timeout < 1) {
++            timeout = Integer.MAX_VALUE;
++        }
+         return Math.max(timeout, mMinimumScreenOffTimeoutConfig);
+     }
+ 
+diff --git a/alps/frameworks/base/services/core/java/com/android/server/wallpaper/WallpaperManagerService.java b/alps/frameworks/base/services/core/java/com/android/server/wallpaper/WallpaperManagerService.java
+index 1eb62e1..82ea6c1 100755
+--- a/alps/frameworks/base/services/core/java/com/android/server/wallpaper/WallpaperManagerService.java
++++ b/alps/frameworks/base/services/core/java/com/android/server/wallpaper/WallpaperManagerService.java
+@@ -374,7 +374,7 @@ public class WallpaperManagerService extends IWallpaperManager.Stub {
+             }
+ 
+             // scale if the crop height winds up not matching the recommended metrics
+-            needScale = (wallpaper.height != cropHint.height());
++            needScale = /*(wallpaper.height != cropHint.height())*/false;
+ 
+             if (DEBUG) {
+                 Slog.v(TAG, "crop: w=" + cropHint.width() + " h=" + cropHint.height());
+diff --git a/alps/kernel-3.18/arch/arm64/configs/x970_t10_fhd_defconfig b/alps/kernel-3.18/arch/arm64/configs/x970_t10_fhd_defconfig
+index 1401f90..357a752 100755
+--- a/alps/kernel-3.18/arch/arm64/configs/x970_t10_fhd_defconfig
++++ b/alps/kernel-3.18/arch/arm64/configs/x970_t10_fhd_defconfig
+@@ -568,4 +568,4 @@ CONFIG_CRYPTO_AES_ARM64_CE=y
+ CONFIG_CRYPTO_AES_ARM64_CE_BLK=y
+ CONFIG_UI_IS_PORTRAIT=y
+ 
+-CONFIG_TRUSTKERNEL_TEE_SUPPORT=y
++
+diff --git a/alps/packages/apps/DeskClock/res/xml/digital_appwidget.xml b/alps/packages/apps/DeskClock/res/xml/digital_appwidget.xml
+index 2823295..c874e3a 100755
+--- a/alps/packages/apps/DeskClock/res/xml/digital_appwidget.xml
++++ b/alps/packages/apps/DeskClock/res/xml/digital_appwidget.xml
+@@ -17,11 +17,11 @@
+ <appwidget-provider
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:initialLayout="@layout/loading_widget"
+-    android:minHeight="@dimen/min_digital_widget_height"
+-    android:minWidth="@dimen/min_digital_widget_width"
+-    android:minResizeHeight="59dp"
+-    android:minResizeWidth="136dp"
++    android:minHeight="@dimen/min_analog_widget_size"
++    android:minWidth="@dimen/min_analog_widget_size"
++    android:minResizeHeight="55dp"
++    android:minResizeWidth="55dp"
+     android:previewImage="@drawable/appwidget_digital_clock_preview"
+     android:resizeMode="horizontal|vertical"
+     android:updatePeriodMillis="0"
+-    android:widgetCategory="keyguard|home_screen" />
+\ No newline at end of file
++    android:widgetCategory="keyguard|home_screen" />
+diff --git a/alps/packages/apps/Launcher3/build.gradle b/alps/packages/apps/Launcher3/build.gradle
+index 9c71693..6ec46c1 100755
+--- a/alps/packages/apps/Launcher3/build.gradle
++++ b/alps/packages/apps/Launcher3/build.gradle
+@@ -2,6 +2,7 @@ buildscript {
+     repositories {
+         mavenCentral()
+         jcenter()
++        google()
+     }
+     dependencies {
+         classpath 'com.android.tools.build:gradle:2.3.1'
+@@ -63,6 +64,7 @@ android {
+ repositories {
+     mavenCentral()
+     jcenter()
++    google()
+ }
+ 
+ final String SUPPORT_LIBS_VERSION = '26.0.0-SNAPSHOT'
+diff --git a/alps/packages/apps/Launcher3/res/xml/default_workspace_5x6.xml b/alps/packages/apps/Launcher3/res/xml/default_workspace_5x6.xml
+index 9ecfb2c..25edbbf 100755
+--- a/alps/packages/apps/Launcher3/res/xml/default_workspace_5x6.xml
++++ b/alps/packages/apps/Launcher3/res/xml/default_workspace_5x6.xml
+@@ -28,17 +28,20 @@
+         launcher:y="-1"
+         launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_CONTACTS;end" />
+ -->
++ <appwidget packageName="com.android.deskclock" className="com.android.alarmclock.DigitalAppWidgetProvider" screen="0" x="2" y="1" spanX="2" spanY="2"/>
++
+ 
+   <folder title="@string/google_folder_title" screen="0" x="0" y="-1">
+     <favorite packageName="com.google.android.googlequicksearchbox" className="com.google.android.googlequicksearchbox.SearchActivity"/>
+-    <favorite packageName="com.google.android.gm" className="com.google.android.gm.ConversationListActivityGmail"/>
++    <favorite packageName="com.android.chrome" className="com.google.android.apps.chrome.Main"/>
++    <favorite packageName="make make " className="com.google.android.gm.ConversationListActivityGmail"/>
+     <favorite packageName="com.google.android.apps.maps" className="com.google.android.maps.MapsActivity"/>
+     <favorite packageName="com.google.android.youtube" className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity"/>
+     <favorite packageName="com.google.android.apps.docs" className="com.google.android.apps.docs.app.NewMainProxyActivity"/>
+     <favorite packageName="com.google.android.music" className="com.android.music.activitymanagement.TopLevelActivity"/>
+     <favorite packageName="com.google.android.videos" className="com.google.android.youtube.videos.EntryPoint"/>
++    <favorite packageName="com.google.android.talk" className="com.google.android.talk.SigningInActivity"/>
+     <favorite packageName="com.google.android.apps.photos" className="com.google.android.apps.photos.home.HomeActivity"/>
+-    <favorite packageName="com.google.android.calendar" className="com.android.calendar.AllInOneActivity"/>
+   </folder>
+     <resolve
+         launcher:screen="0"
+@@ -54,4 +57,5 @@
+         <favorite launcher:uri="market://details?id=com.android.launcher" />
+     </resolve>
+ 
++
+ </favorites>
+diff --git a/alps/packages/apps/Launcher3/res/xml/dw_tablet_hotseat.xml b/alps/packages/apps/Launcher3/res/xml/dw_tablet_hotseat.xml
+index 92dc046..cee6933 100755
+--- a/alps/packages/apps/Launcher3/res/xml/dw_tablet_hotseat.xml
++++ b/alps/packages/apps/Launcher3/res/xml/dw_tablet_hotseat.xml
+@@ -22,39 +22,38 @@
+         launcher:screen="0"
+         launcher:x="0"
+         launcher:y="0" >
+-        <favorite launcher:uri="#Intent;action=android.intent.action.DIAL;end" />
++        <favorite launcher:uri="#Intent;action=android.intent.action.DIAL;enddsadadsad" />
+         <favorite launcher:uri="tel:123" />
+         <favorite launcher:uri="#Intent;action=android.intent.action.CALL_BUTTON;end" />
+     </resolve>
++    
+ 
+     <resolve
+         launcher:container="-101"
+         launcher:screen="1"
+         launcher:x="1"
+         launcher:y="0" >
+-        <favorite launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MESSAGING;end" />
+-        <favorite launcher:uri="sms:" />
+-        <favorite launcher:uri="smsto:" />
+-        <favorite launcher:uri="mms:" />
+-        <favorite launcher:uri="mmsto:" />
++       <favorite packageName="com.android.calculator2" className="com.android.calculator2.Calculator"/>
+     </resolve>
+-<!--
++
+     <resolve
+         launcher:container="-101"
+         launcher:screen="2"
+         launcher:x="2"
+         launcher:y="0" >
+-        <favorite launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_EMAIL;end" />
+-        <favorite launcher:uri="mailto:" />
++        <favorite launcher:uri="#Intent;action=android.media.action.STILL_IMAGE_CAMERA;end" />
++        <favorite launcher:uri="#Intent;action=android.intent.action.CAMERA_BUTTON;end" />
+     </resolve>
+--->
++<!--
+     <resolve
+         launcher:container="-101"
+         launcher:screen="2"
+         launcher:x="2"
+         launcher:y="0" >
+-	<favorite packageName="com.android.deskclock" className="com.android.deskclock.DeskClock"/>
++        <favorite launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_EMAIL;end" />
++        <favorite launcher:uri="mailto:" />
+     </resolve>
++-->
+ 
+     <!-- All Apps -->
+     <resolve
+@@ -62,9 +61,7 @@
+         launcher:screen="4"
+         launcher:x="4"
+         launcher:y="0" >
+-        <favorite
+-            launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_BROWSER;end" />
+-        <favorite launcher:uri="http://www.example.com/" />
++        <favorite packageName="com.android.documentsui" className="com.android.documentsui.LauncherActivity"/>
+     </resolve>
+ 
+ 
+@@ -84,13 +81,5 @@
+         <favorite launcher:uri="#Intent;action=android.settings.SETTINGS;end" />
+     </resolve>
+ 
+-    <resolve
+-        launcher:container="-101"
+-        launcher:screen="6"
+-        launcher:x="6"
+-        launcher:y="0" >
+-        <favorite launcher:uri="#Intent;action=android.media.action.STILL_IMAGE_CAMERA;end" />
+-        <favorite launcher:uri="#Intent;action=android.intent.action.CAMERA_BUTTON;end" />
+-    </resolve>
+ 
+ </favorites>
+diff --git a/alps/packages/apps/Launcher3/src/com/android/launcher3/InvariantDeviceProfile.java b/alps/packages/apps/Launcher3/src/com/android/launcher3/InvariantDeviceProfile.java
+index 9e214d1..5476c55 100755
+--- a/alps/packages/apps/Launcher3/src/com/android/launcher3/InvariantDeviceProfile.java
++++ b/alps/packages/apps/Launcher3/src/com/android/launcher3/InvariantDeviceProfile.java
+@@ -183,7 +183,7 @@ public class InvariantDeviceProfile {
+                     (int) (largeSide * wallpaperTravelToScreenWidthRatio(largeSide, smallSide)),
+                     largeSide);
+         } else {
+-            defaultWallpaperSize = new Point(Math.max(smallSide * 2, largeSide), largeSide);
++            defaultWallpaperSize = new Point(largeSide, largeSide);
+         }
+     }
+ 
+diff --git a/alps/packages/apps/Launcher3/src_config/com/android/launcher3/config/FeatureFlags.java b/alps/packages/apps/Launcher3/src_config/com/android/launcher3/config/FeatureFlags.java
+index 066d980..4e337a2 100755
+--- a/alps/packages/apps/Launcher3/src_config/com/android/launcher3/config/FeatureFlags.java
++++ b/alps/packages/apps/Launcher3/src_config/com/android/launcher3/config/FeatureFlags.java
+@@ -38,7 +38,7 @@ public final class FeatureFlags {
+     // Feature flag to enable moving the QSB on the 0th screen of the workspace.
+     public static final boolean QSB_ON_FIRST_SCREEN = true;
+     // When enabled the all-apps icon is not added to the hotseat.
+-    public static final boolean NO_ALL_APPS_ICON = false;
++    public static final boolean NO_ALL_APPS_ICON = true;
+     // When enabled fling down gesture on the first workspace triggers search.
+     public static final boolean PULLDOWN_SEARCH = false;
+     // When enabled the status bar may show dark icons based on the top of the wallpaper.
+diff --git a/alps/packages/apps/Settings/AndroidManifest.xml b/alps/packages/apps/Settings/AndroidManifest.xml
+index ff1c937..53ad445 100755
+--- a/alps/packages/apps/Settings/AndroidManifest.xml
++++ b/alps/packages/apps/Settings/AndroidManifest.xml
+@@ -179,7 +179,7 @@
+             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                 android:value="com.android.settings.network.NetworkDashboardFragment"/>
+             <meta-data android:name="com.android.settings.summary"
+-                android:resource="@string/network_dashboard_summary"/>
++                android:resource="@string/network_dashboard_summary_c"/>
+             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                 android:value="true" />
+         </activity>
+@@ -206,7 +206,7 @@
+             <meta-data android:name="com.android.settings.category"
+                 android:value="com.android.settings.category.ia.homepage"/>
+             <meta-data android:name="com.android.settings.summary"
+-                android:resource="@string/bluetooth"/>
++                android:resource="@string/connected_devices_dashboard_summary"/>
+             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                 android:value="true" />
+         </activity>
+diff --git a/alps/packages/apps/Settings/res/values-ko/arrays.xml b/alps/packages/apps/Settings/res/values-ko/arrays.xml
+index 52d8d59..1cf2009 100755
+--- a/alps/packages/apps/Settings/res/values-ko/arrays.xml
++++ b/alps/packages/apps/Settings/res/values-ko/arrays.xml
+@@ -285,7 +285,7 @@
+     <item msgid="4270236897655923007">"벨소리 볼륨"</item>
+     <item msgid="6325739889222559394">"미디어 볼륨"</item>
+     <item msgid="5762123934816216821">"알람 볼륨"</item>
+-    <item msgid="785049718065337473">"알림 볼륨"</item>
++    <item msgid="785049718065337473">"알림"</item>
+     <item msgid="6700305533746877052">"블루투스 볼륨"</item>
+     <item msgid="2029227495214047094">"켜진 상태로 유지"</item>
+     <item msgid="26109888160231211">"위치 모니터링"</item>
+@@ -352,7 +352,7 @@
+     <item msgid="7983336752371254444">"벨소리 볼륨"</item>
+     <item msgid="7878027809189330917">"미디어 볼륨"</item>
+     <item msgid="7260546305036218513">"알람 볼륨"</item>
+-    <item msgid="9103719301075748925">"알림 볼륨"</item>
++    <item msgid="9103719301075748925">"알림"</item>
+     <item msgid="7025966722295861512">"블루투스 볼륨"</item>
+     <item msgid="4665183401128289653">"켜진 상태로 유지"</item>
+     <item msgid="8584357129746649222">"위치"</item>
+diff --git a/alps/packages/apps/Settings/res/values-ko/strings.xml b/alps/packages/apps/Settings/res/values-ko/strings.xml
+index 1c7fd27..34ed88e 100755
+--- a/alps/packages/apps/Settings/res/values-ko/strings.xml
++++ b/alps/packages/apps/Settings/res/values-ko/strings.xml
+@@ -2717,14 +2717,14 @@
+     <string name="status_tag_not_writable" msgid="2511611539977682175">"NFC 태그를 작성할 수 없습니다. 다른 태그를 사용하세요."</string>
+     <string name="default_sound" msgid="8821684447333687810">"기본 사운드"</string>
+     <string name="sound_settings_summary" msgid="4100853606668287965">"벨소리 볼륨 <xliff:g id="PERCENTAGE">%1$s</xliff:g>"</string>
+-    <string name="sound_dashboard_summary" msgid="3402435125958012986">"볼륨, 진동, 알림 일시중지"</string>
++    <string name="sound_dashboard_summary" msgid="3402435125958012986">"볼륨, 알림 일시중지"</string>
+     <string name="sound_settings_summary_vibrate" msgid="1869282574422220096">"벨소리 장치가 진동으로 설정됨"</string>
+     <string name="sound_settings_summary_silent" msgid="5074529767435584948">"벨소리 장치가 무음으로 설정됨"</string>
+     <string name="sound_settings_example_summary" msgid="2404914514266523165">"벨소리 볼륨 80%"</string>
+     <string name="media_volume_option_title" msgid="2811531786073003825">"미디어 볼륨"</string>
+     <string name="alarm_volume_option_title" msgid="8219324421222242421">"알람 볼륨"</string>
+     <string name="ring_volume_option_title" msgid="6767101703671248309">"벨소리 볼륨"</string>
+-    <string name="notification_volume_option_title" msgid="6064656124416882130">"알림 볼륨"</string>
++    <string name="notification_volume_option_title" msgid="6064656124416882130">"알림"</string>
+     <string name="ringtone_title" msgid="5379026328015343686">"전화 벨소리"</string>
+     <string name="notification_ringtone_title" msgid="4468722874617061231">"기본 알림 소리"</string>
+     <string name="notification_unknown_sound_title" msgid="2535027767851838335">"앱에서 제공된 소리"</string>
+@@ -2773,7 +2773,7 @@
+     <string name="ringtones_install_custom_sound_title" msgid="5948792721161302255">"맞춤 소리를 추가하시겠습니까?"</string>
+     <string name="ringtones_install_custom_sound_content" msgid="2195581481608512786">"이 파일이 <xliff:g id="FOLDER_NAME">%s</xliff:g> 폴더로 복사됩니다."</string>
+     <string name="ringtones_category_preference_title" msgid="5675912303120102366">"벨소리"</string>
+-    <string name="other_sound_category_preference_title" msgid="2521096636124314015">"기타 소리 및 진동"</string>
++    <string name="other_sound_category_preference_title" msgid="2521096636124314015">"기타 소리"</string>
+     <string name="configure_notification_settings" msgid="7616737397127242615">"알림"</string>
+     <string name="advanced_section_header" msgid="8833934850242546903">"고급"</string>
+     <string name="profile_section_header" msgid="2320848161066912001">"직장 알림"</string>
+@@ -3114,7 +3114,7 @@
+     <string name="sharing_remote_bugreport_dialog_message" msgid="5859287696666024466">"이 버그 보고서는 IT 관리자와 공유됩니다. 자세한 내용은 IT 관리자에게 문의하세요."</string>
+     <string name="share_remote_bugreport_action" msgid="532226159318779397">"공유"</string>
+     <string name="decline_remote_bugreport_action" msgid="518720235407565134">"거부"</string>
+-    <string name="usb_use_charging_only" msgid="2180443097365214467">"이 기기 충전하기"</string>
++    <string name="usb_use_charging_only" msgid="2180443097365214467">"기기를 USB로 충전"</string>
+     <string name="usb_use_charging_only_desc" msgid="3066256793008540627">"이 기기만 충전"</string>
+     <string name="usb_use_power_only" msgid="6426550616883919530">"전원 공급"</string>
+     <string name="usb_use_power_only_desc" msgid="3461232831015575152">"연결된 기기를 충전합니다. USB 충전을 지원하는 기기에서만 이용할 수 있습니다."</string>
+@@ -3565,7 +3565,7 @@
+     <string name="storage_other_apps" msgid="5524321740031718083">"기타 앱"</string>
+     <string name="storage_files" msgid="8581083146777364063">"파일"</string>
+     <string name="storage_size_large_alternate" msgid="3550744227788333060">"<xliff:g id="NUMBER">^1</xliff:g>"<small>"<xliff:g id="UNIT">^2</xliff:g>"</small>""</string>
+-    <string name="storage_volume_total" msgid="3499221850532701342">"/<xliff:g id="TOTAL">%1$s</xliff:g> 사용"</string>
++    <string name="storage_volume_total" msgid="3499221850532701342">"/<xliff:g id="TOTAL">%1$s</xliff:g> "</string>
+     <string name="storage_percent_full" msgid="6095012055875077036">"사용됨"</string>
+     <string name="clear_instant_app_data" msgid="2004222610585890909">"앱 삭제"</string>
+     <string name="clear_instant_app_confirmation" msgid="7451671214898856857">"이 인스턴트 앱을 삭제하시겠습니까?"</string>
+diff --git a/alps/packages/apps/Settings/res/values-zh-rCN/strings.xml b/alps/packages/apps/Settings/res/values-zh-rCN/strings.xml
+index 07af107..cc90214 100755
+--- a/alps/packages/apps/Settings/res/values-zh-rCN/strings.xml
++++ b/alps/packages/apps/Settings/res/values-zh-rCN/strings.xml
+@@ -2717,7 +2717,7 @@
+     <string name="status_tag_not_writable" msgid="2511611539977682175">"无法将数据写入NFC标签，请使用其他标签。"</string>
+     <string name="default_sound" msgid="8821684447333687810">"默认铃声"</string>
+     <string name="sound_settings_summary" msgid="4100853606668287965">"铃声音量为 <xliff:g id="PERCENTAGE">%1$s</xliff:g>"</string>
+-    <string name="sound_dashboard_summary" msgid="3402435125958012986">"音量、振动、勿扰"</string>
++    <string name="sound_dashboard_summary" msgid="3402435125958012986">"音量、勿扰"</string>
+     <string name="sound_settings_summary_vibrate" msgid="1869282574422220096">"振铃器已设为振动"</string>
+     <string name="sound_settings_summary_silent" msgid="5074529767435584948">"振铃器已设为静音"</string>
+     <string name="sound_settings_example_summary" msgid="2404914514266523165">"铃声音量为 80%"</string>
+diff --git a/alps/packages/apps/Settings/res/values/strings.xml b/alps/packages/apps/Settings/res/values/strings.xml
+index d11264d..a66cd67 100755
+--- a/alps/packages/apps/Settings/res/values/strings.xml
++++ b/alps/packages/apps/Settings/res/values/strings.xml
+@@ -6234,10 +6234,11 @@
+     <string name="network_dashboard_title">Network &amp; Internet</string>
+     <!-- Summary for Network and Internet settings, explaining a few important settings under it [CHAR LIMIT=NONE]-->
+     <string name="network_dashboard_summary">Wi-Fi, mobile, data usage, hotspot</string>
++	<string name="network_dashboard_summary_c">Wi-Fi, data usage, hotspot</string>
+     <!-- Title for setting tile leading to Connected devices settings [CHAR LIMIT=40]-->
+     <string name="connected_devices_dashboard_title">Connected devices</string>
+     <!-- Summary for Connected devices settings, explaning a few important settings under it [CHAR LIMIT=NONE]-->
+-    <string name="connected_devices_dashboard_summary">Bluetooth, Cast, NFC</string>
++    <string name="connected_devices_dashboard_summary">Bluetooth, Cast</string>
+ 	<string name="connected_devices_dashboard_summary_custom">Bluetooth, NFC</string>
+     <!-- Title for setting tile leading to Apps & Notification settings [CHAR LIMIT=40]-->
+     <string name="app_and_notification_dashboard_title">Apps &amp; notifications</string>
+@@ -6341,7 +6342,7 @@
+     <string name="sound_settings_summary">Ring volume at <xliff:g id="percentage" example="2%">%1$s</xliff:g></string>
+ 
+     <!-- Summary for sound settings, explaining a few important settings under it [CHAR LIMIT=NONE]-->
+-    <string name="sound_dashboard_summary">Volume, vibration, Do Not Disturb</string>
++    <string name="sound_dashboard_summary">Volume, Do Not Disturb</string>
+ 
+     <!-- Sound: Dashboard summary indicating the volume of ringtone when at 0% with vibrate enabled. [CHAR LIMIT=100] -->
+     <string name="sound_settings_summary_vibrate">Ringer set to vibrate</string>
+diff --git a/alps/packages/apps/Settings/res/xml/power_usage_summary.xml b/alps/packages/apps/Settings/res/xml/power_usage_summary.xml
+index d8b9208..2c74511 100755
+--- a/alps/packages/apps/Settings/res/xml/power_usage_summary.xml
++++ b/alps/packages/apps/Settings/res/xml/power_usage_summary.xml
+@@ -1,5 +1,4 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<!-- Copyright (C) 2009 The Android Open Source Project
++<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2009 The Android Open Source Project
+ 
+      Licensed under the Apache License, Version 2.0 (the "License");
+      you may not use this file except in compliance with the License.
+@@ -14,29 +13,27 @@
+      limitations under the License.
+ -->
+ 
+-<PreferenceScreen
+-    xmlns:android="http://schemas.android.com/apk/res/android"
++<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+     android:title="@string/power_usage_summary_title"
+     settings:keywords="@string/keywords_battery">
+ 
+     <com.android.settings.applications.LayoutPreference
+         android:key="battery_header"
+-        android:selectable="true"
+-        android:layout="@layout/battery_header"/>
++        android:layout="@layout/battery_header"
++        android:selectable="true" />
+ 
+-    <PreferenceCategory
+-        android:key="device_usage_list">
++    <PreferenceCategory android:key="device_usage_list">
+ 
+         <com.android.settings.fuelgauge.PowerGaugePreference
+             android:key="last_full_charge"
+-            android:title="@string/battery_last_full_charge"
+-            android:selectable="false"/>
++            android:selectable="false"
++            android:title="@string/battery_last_full_charge" />
+ 
+         <com.android.settings.fuelgauge.PowerGaugePreference
+             android:key="screen_usage"
+-            android:title="@string/device_screen_usage"
+-            android:selectable="false"/>
++            android:selectable="false"
++            android:title="@string/device_screen_usage" />
+ 
+     </PreferenceCategory>
+ 
+@@ -47,37 +44,37 @@
+         <!-- MTK background power saving -->
+         <SwitchPreference
+             android:key="background_power_saving"
+-            android:title="@string/bg_power_saving_title"/>
++            android:title="@string/bg_power_saving_title" />
+ 
+         <com.android.settings.widget.MasterSwitchPreference
+             android:fragment="com.android.settings.fuelgauge.BatterySaverSettings"
+             android:key="battery_saver_summary"
+-            android:title="@string/battery_saver"/>
++            android:title="@string/battery_saver" />
+ 
+         <SwitchPreference
+             android:key="battery_percentage"
+-            android:title="@string/battery_percentage"
+-            android:summary="@string/battery_percentage_description"/>
++            android:summary="@string/battery_percentage_description"
++            android:title="@string/battery_percentage" />
+ 
+         <!-- Cross-listed item, if you change this, also change it in ia_display_settings.xml -->
+         <SwitchPreference
+             android:key="auto_brightness_battery"
+-            android:title="@string/auto_brightness_title"
+             android:summary="@string/auto_brightness_summary"
+-            settings:keywords="@string/keywords_display_auto_brightness"/>
++            android:title="@string/auto_brightness_title"
++            settings:keywords="@string/keywords_display_auto_brightness" />
+ 
+-        <!-- Cross-listed item, if you change this, also change it in ia_display_settings.xml -->
+-        <com.android.settings.TimeoutListPreference
+-            android:key="screen_timeout_battery"
+-            android:title="@string/screen_timeout"
+-            android:summary="@string/screen_timeout_summary"
+-            android:entries="@array/screen_timeout_entries"
+-            android:entryValues="@array/screen_timeout_values"/>
++        <!--&lt;!&ndash; Cross-listed item, if you change this, also change it in ia_display_settings.xml &ndash;&gt;-->
++        <!--<com.android.settings.TimeoutListPreference-->
++        <!--android:key="screen_timeout_battery"-->
++        <!--android:title="@string/screen_timeout"-->
++        <!--android:summary="@string/screen_timeout_summary"-->
++        <!--android:entries="@array/screen_timeout_entries"-->
++        <!--android:entryValues="@array/screen_timeout_values"/>-->
+ 
+     </PreferenceCategory>
+ 
+     <PreferenceCategory
+         android:key="app_list"
+-        android:title="@string/power_usage_list_summary"/>
++        android:title="@string/power_usage_list_summary" />
+ 
+ </PreferenceScreen>
+diff --git a/alps/packages/apps/Settings/res/xml/sound_settings.xml b/alps/packages/apps/Settings/res/xml/sound_settings.xml
+index 5acb3a3..aa3371c 100755
+--- a/alps/packages/apps/Settings/res/xml/sound_settings.xml
++++ b/alps/packages/apps/Settings/res/xml/sound_settings.xml
+@@ -67,7 +67,7 @@
+             android:summary="@string/summary_placeholder"
+             android:ringtoneType="ringtone"
+             settings:allowDividerAbove="true" />
+-
++        other_sound_category_preference_title
+         <!-- Default notification ringtone -->
+         <com.android.settings.DefaultRingtonePreference
+             android:key="notification_ringtone"
+@@ -96,9 +96,9 @@
+           android:title="@string/dial_pad_tones_title" />
+ 
+         <!-- Screen locking sounds -->
+-        <SwitchPreference
+-          android:key="screen_locking_sounds"
+-          android:title="@string/screen_locking_sounds_title" />
++        <!--<SwitchPreference-->
++          <!--android:key="screen_locking_sounds"-->
++          <!--android:title="@string/screen_locking_sounds_title" />-->
+ 
+         <!-- Charging sounds -->
+ <!--  jty remove Charging sounds
+@@ -116,10 +116,10 @@
+           android:key="touch_sounds"
+           android:title="@string/touch_sounds_title" />
+ 
+-        <!-- Vibrate on touch -->
+-        <SwitchPreference
+-          android:key="vibrate_on_touch"
+-          android:title="@string/vibrate_on_touch_title" />
++        <!--&lt;!&ndash; Vibrate on touch &ndash;&gt;-->
++        <!--<SwitchPreference-->
++          <!--android:key="vibrate_on_touch"-->
++          <!--android:title="@string/vibrate_on_touch_title" />-->
+ 
+         <!-- Dock speaker plays -->
+         <DropDownPreference
+diff --git a/alps/packages/apps/Settings/res/xml/zen_mode_priority_settings.xml b/alps/packages/apps/Settings/res/xml/zen_mode_priority_settings.xml
+index e2b8f48..5731a2b 100755
+--- a/alps/packages/apps/Settings/res/xml/zen_mode_priority_settings.xml
++++ b/alps/packages/apps/Settings/res/xml/zen_mode_priority_settings.xml
+@@ -20,11 +20,11 @@
+     android:title="@string/zen_mode_priority_settings_title" >
+ 
+     <!-- Alarms -->
+-    <SwitchPreference
+-        android:key="alarms"
+-        android:title="@string/zen_mode_alarms"
+-        android:enabled="false"
+-        android:defaultValue="true"/>
++    <!--<SwitchPreference-->
++        <!--android:key="alarms"-->
++        <!--android:title="@string/zen_mode_alarms"-->
++        <!--android:enabled="false"-->
++        <!--android:defaultValue="true"/>-->
+ 
+     <!-- Reminders -->
+     <SwitchPreference
+diff --git a/alps/packages/apps/Settings/res_ext/values-ko/mtk_strings.xml b/alps/packages/apps/Settings/res_ext/values-ko/mtk_strings.xml
+index 1a2d89b..6e7a90c 100755
+--- a/alps/packages/apps/Settings/res_ext/values-ko/mtk_strings.xml
++++ b/alps/packages/apps/Settings/res_ext/values-ko/mtk_strings.xml
+@@ -195,7 +195,7 @@
+   <!-- MTK schedule power end -->
+ 
+   <!-- Background power saving start -->
+-   <string name="bg_power_saving_title">대기 지능형 절전</string>
++   <string name="bg_power_saving_title">지능형 절전 모드</string>
+   <!-- Background power saving end -->
+ 
+     <string name="two_cdma_dialog_msg">슬롯 1과 슬롯 2는 CDMA를 동시에 지원할 수 없습니다.</string>
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/SettingsActivity.java b/alps/packages/apps/Settings/src/com/android/settings/SettingsActivity.java
+index 89b5fa7..3457600 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/SettingsActivity.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/SettingsActivity.java
+@@ -804,11 +804,11 @@ public class SettingsActivity extends SettingsDrawerActivity
+ 
+         setTileEnabled(new ComponentName(packageName,
+                         Settings.DataUsageSummaryActivity.class.getName()),
+-                Utils.isBandwidthControlEnabled(), isAdmin);
++                /*Utils.isBandwidthControlEnabled()*/false, isAdmin);
+ 
+         setTileEnabled(new ComponentName(packageName,
+                         Settings.SimSettingsActivity.class.getName()),
+-                Utils.showSimCardTile(this), isAdmin);
++                /*Utils.showSimCardTile(this)*/false, isAdmin);
+ 
+         setTileEnabled(new ComponentName(packageName,
+                         Settings.PowerUsageSummaryActivity.class.getName()),
+@@ -843,7 +843,7 @@ public class SettingsActivity extends SettingsDrawerActivity
+ 
+         setTileEnabled(new ComponentName(packageName,
+                         Settings.PrintSettingsActivity.class.getName()),
+-                pm.hasSystemFeature(PackageManager.FEATURE_PRINTING), isAdmin);
++                false, isAdmin);
+ 
+         final boolean showDev = mDevelopmentPreferences.getBoolean(
+                 DevelopmentSettings.PREF_SHOW, android.os.Build.TYPE.equals("eng"))
+@@ -858,7 +858,7 @@ public class SettingsActivity extends SettingsDrawerActivity
+ 
+         setTileEnabled(new ComponentName(packageName,
+                         Settings.WifiDisplaySettingsActivity.class.getName()),
+-                /*WifiDisplaySettings.isAvailable(this)*/false, isAdmin);
++                WifiDisplaySettings.isAvailable(this), isAdmin);
+ 
+         /// M: Update new added items in demo mode @{
+         if (UserManager.isDeviceInDemoMode(this)) {
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/accounts/EmergencyInfoPreferenceController.java b/alps/packages/apps/Settings/src/com/android/settings/accounts/EmergencyInfoPreferenceController.java
+index 1221947..24dd6fc 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/accounts/EmergencyInfoPreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/accounts/EmergencyInfoPreferenceController.java
+@@ -80,4 +80,8 @@ public class EmergencyInfoPreferenceController extends PreferenceController {
+     public String getPreferenceKey() {
+         return KEY_EMERGENCY_INFO;
+     }
++    @Override
++    public void displayPreference(PreferenceScreen screen) {
++        removePreference(screen, getPreferenceKey());
++    }
+ }
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/datausage/DataUsageSummary.java b/alps/packages/apps/Settings/src/com/android/settings/datausage/DataUsageSummary.java
+index 1cf05d7..541c38e 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/datausage/DataUsageSummary.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/datausage/DataUsageSummary.java
+@@ -141,9 +141,9 @@ public class DataUsageSummary extends DataUsageBase implements Indexable, DataUs
+         if (hasWifiRadio) {
+             addWifiSection();
+         }
+-        if (hasEthernet(context)) {
++//        if (hasEthernet(context)) {
+             addEthernetSection();
+-        }
++//        }
+         mDataUsageTemplate = hasMobileData ? R.string.cell_data_template
+                 : hasWifiRadio ? R.string.wifi_data_template
+                 : R.string.ethernet_data_template;
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/BasebandVersionPreferenceController.java b/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/BasebandVersionPreferenceController.java
+index 1153d12..9f6b65f 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/BasebandVersionPreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/BasebandVersionPreferenceController.java
+@@ -22,6 +22,7 @@ import android.support.v7.preference.Preference;
+ import com.android.settings.R;
+ import com.android.settings.Utils;
+ import com.android.settings.core.PreferenceController;
++import android.support.v7.preference.PreferenceScreen;
+ 
+ public class BasebandVersionPreferenceController extends PreferenceController {
+ 
+@@ -48,4 +49,9 @@ public class BasebandVersionPreferenceController extends PreferenceController {
+         preference.setSummary(SystemProperties.get(BASEBAND_PROPERTY,
+                 mContext.getResources().getString(R.string.device_info_default)));
+     }
++	
++	@Override  //longliang
++    public void displayPreference(PreferenceScreen screen) {
++		removePreference(screen, getPreferenceKey());
++    }
+ }
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/SerialNumberPreferenceController.java b/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/SerialNumberPreferenceController.java
+index 0362bbc..086df68 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/SerialNumberPreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/SerialNumberPreferenceController.java
+@@ -49,10 +49,11 @@ public class SerialNumberPreferenceController extends PreferenceController {
+     @Override
+     public void displayPreference(PreferenceScreen screen) {
+         super.displayPreference(screen);
+-        final Preference pref = screen.findPreference(KEY_SERIAL_NUMBER);
+-        if (pref != null) {
+-            pref.setSummary(mSerialNumber);
+-        }
++//        final Preference pref = screen.findPreference(KEY_SERIAL_NUMBER);
++//        if (pref != null) {
++//            pref.setSummary(mSerialNumber);
++//        }
++        removePreference(screen, getPreferenceKey());
+     }
+ 
+     @Override
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/SystemUpdatePreferenceController.java b/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/SystemUpdatePreferenceController.java
+index c2e2ad8..66d4144 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/SystemUpdatePreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/deviceinfo/SystemUpdatePreferenceController.java
+@@ -47,7 +47,7 @@ public class SystemUpdatePreferenceController extends PreferenceController {
+ 
+     @Override
+     public boolean isAvailable() {
+-        return mUm.isAdminUser();
++        return false;
+     }
+ 
+     @Override
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/fuelgauge/PowerUsageSummary.java b/alps/packages/apps/Settings/src/com/android/settings/fuelgauge/PowerUsageSummary.java
+index efdfb97..4ab70fc 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/fuelgauge/PowerUsageSummary.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/fuelgauge/PowerUsageSummary.java
+@@ -194,7 +194,7 @@ public class PowerUsageSummary extends PowerUsageBase {
+         mBatteryHeaderPreferenceController = new BatteryHeaderPreferenceController(context);
+         controllers.add(mBatteryHeaderPreferenceController);
+         controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
+-        controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
++//        controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
+         controllers.add(new BatterySaverController(context, getLifecycle()));
+         controllers.add(new BatteryPercentagePreferenceController(context));
+         /// M: Add for Background power saving
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/network/AirplaneModePreferenceController.java b/alps/packages/apps/Settings/src/com/android/settings/network/AirplaneModePreferenceController.java
+index a25c5f8..e62119d 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/network/AirplaneModePreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/network/AirplaneModePreferenceController.java
+@@ -88,7 +88,7 @@ public class AirplaneModePreferenceController extends PreferenceController
+ 
+     @Override
+     public boolean isAvailable() {
+-        return !mPackageManager.hasSystemFeature(PackageManager.FEATURE_TELEVISION);
++        return false/*!mPackageManager.hasSystemFeature(PackageManager.FEATURE_TELEVISION)*/;
+     }
+ 
+     @Override
+@@ -97,12 +97,12 @@ public class AirplaneModePreferenceController extends PreferenceController
+     }
+ 
+     public void onResume() {
+-        mAirplaneModeEnabler.resume();
++        //mAirplaneModeEnabler.resume();
+     }
+ 
+     @Override
+     public void onPause() {
+-        mAirplaneModeEnabler.pause();
++        //mAirplaneModeEnabler.pause();
+     }
+ 
+     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/network/MobileNetworkPreferenceController.java b/alps/packages/apps/Settings/src/com/android/settings/network/MobileNetworkPreferenceController.java
+index 0b32c7e..a240507 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/network/MobileNetworkPreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/network/MobileNetworkPreferenceController.java
+@@ -75,6 +75,7 @@ public class MobileNetworkPreferenceController extends PreferenceController impl
+         super.displayPreference(screen);
+         if (isAvailable()) {
+             mPreference = screen.findPreference(getPreferenceKey());
++			removePreference(screen, getPreferenceKey());//longliang
+         }
+     }
+ 
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/notification/ChargingSoundPreferenceController.java b/alps/packages/apps/Settings/src/com/android/settings/notification/ChargingSoundPreferenceController.java
+index 1114b4a..e3e4e0c 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/notification/ChargingSoundPreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/notification/ChargingSoundPreferenceController.java
+@@ -23,6 +23,7 @@ import android.content.Context;
+ import android.provider.Settings.Global;
+ import com.android.settings.SettingsPreferenceFragment;
+ import com.android.settings.core.lifecycle.Lifecycle;
++import android.support.v7.preference.PreferenceScreen;
+ 
+ public class ChargingSoundPreferenceController extends SettingPrefController {
+ 
+@@ -35,5 +36,14 @@ public class ChargingSoundPreferenceController extends SettingPrefController {
+             TYPE_GLOBAL, KEY_CHARGING_SOUNDS, Global.CHARGING_SOUNDS_ENABLED, DEFAULT_ON);
+ 
+     }
+-
++	
++	@Override  //longliang
++    public void displayPreference(PreferenceScreen screen) {
++		removePreference(screen, getPreferenceKey());
++    }
++	
++	@Override  //longliang
++    public String getPreferenceKey() {
++        return KEY_CHARGING_SOUNDS;
++    }
+ }
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/notification/DialPadTonePreferenceController.java b/alps/packages/apps/Settings/src/com/android/settings/notification/DialPadTonePreferenceController.java
+index 08e1a7d..34c1f68 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/notification/DialPadTonePreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/notification/DialPadTonePreferenceController.java
+@@ -24,6 +24,7 @@ import android.provider.Settings.System;
+ import com.android.settings.SettingsPreferenceFragment;
+ import com.android.settings.Utils;
+ import com.android.settings.core.lifecycle.Lifecycle;
++import android.support.v7.preference.PreferenceScreen;
+ 
+ public class DialPadTonePreferenceController extends SettingPrefController {
+ 
+@@ -41,4 +42,13 @@ public class DialPadTonePreferenceController extends SettingPrefController {
+         };
+     }
+ 
++	@Override  //longliang
++    public void displayPreference(PreferenceScreen screen) {
++		removePreference(screen, getPreferenceKey());
++    }
++	
++	@Override  //longliang
++    public String getPreferenceKey() {
++        return KEY_DIAL_PAD_TONES;
++    }
+ }
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/notification/RingVolumePreferenceController.java b/alps/packages/apps/Settings/src/com/android/settings/notification/RingVolumePreferenceController.java
+index a94d086..d2dba69 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/notification/RingVolumePreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/notification/RingVolumePreferenceController.java
+@@ -130,11 +130,10 @@ public class RingVolumePreferenceController extends VolumeSeekBarPreferenceContr
+             mPreference.showIcon(mSuppressor != null
+                 ? com.android.internal.R.drawable.ic_audio_ring_notif_mute
+                 : mRingerMode == AudioManager.RINGER_MODE_VIBRATE || wasRingerModeVibrate()
+-                    ? com.android.internal.R.drawable.ic_audio_ring_notif_vibrate
+-                    : com.android.internal.R.drawable.ic_audio_ring_notif);
++                    ? com.android.internal.R.drawable.ic_audio_ring_notif_mute
++                    :com.android.internal.R.drawable.ic_audio_ring_notif);
+         }
+     }
+-
+     private final class H extends Handler {
+         private static final int UPDATE_EFFECTS_SUPPRESSOR = 1;
+         private static final int UPDATE_RINGER_MODE = 2;
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/notification/ScreenLockSoundPreferenceController.java b/alps/packages/apps/Settings/src/com/android/settings/notification/ScreenLockSoundPreferenceController.java
+index f9905c0..fa7c893 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/notification/ScreenLockSoundPreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/notification/ScreenLockSoundPreferenceController.java
+@@ -35,4 +35,7 @@ public class ScreenLockSoundPreferenceController extends SettingPrefController {
+             TYPE_SYSTEM, KEY_SCREEN_LOCKING_SOUNDS, System.LOCKSCREEN_SOUNDS_ENABLED, DEFAULT_ON);
+     }
+ 
++
++
++
+ }
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/notification/SoundSettings.java b/alps/packages/apps/Settings/src/com/android/settings/notification/SoundSettings.java
+index e08b76a..3e10324 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/notification/SoundSettings.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/notification/SoundSettings.java
+@@ -229,11 +229,11 @@ public class SoundSettings extends DashboardFragment {
+ 
+         // === Other Sound Settings ===
+         controllers.add(new DialPadTonePreferenceController(context, fragment, lifecycle));
+-        controllers.add(new ScreenLockSoundPreferenceController(context, fragment, lifecycle));
++//        controllers.add(new ScreenLockSoundPreferenceController(context, fragment, lifecycle));
+         //controllers.add(new ChargingSoundPreferenceController(context, fragment, lifecycle));   //jty remove ChargingSoundPreferenceController
+         controllers.add(new DockingSoundPreferenceController(context, fragment, lifecycle));
+         controllers.add(new TouchSoundPreferenceController(context, fragment, lifecycle));
+-        controllers.add(new VibrateOnTouchPreferenceController(context, fragment, lifecycle));
++//        controllers.add(new VibrateOnTouchPreferenceController(context, fragment, lifecycle));
+         controllers.add(new DockAudioMediaPreferenceController(context, fragment, lifecycle));
+         controllers.add(new BootSoundPreferenceController(context));
+         controllers.add(new EmergencyTonePreferenceController(context, fragment, lifecycle));
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/notification/ZenModePrioritySettings.java b/alps/packages/apps/Settings/src/com/android/settings/notification/ZenModePrioritySettings.java
+index f4d3f74..a652d7e 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/notification/ZenModePrioritySettings.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/notification/ZenModePrioritySettings.java
+@@ -72,7 +72,6 @@ public class ZenModePrioritySettings extends ZenModeSettingsBase implements Inde
+                 return true;
+             }
+         });
+-
+         mEvents = (SwitchPreference) root.findPreference(KEY_EVENTS);
+         mEvents.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+             @Override
+@@ -149,6 +148,10 @@ public class ZenModePrioritySettings extends ZenModeSettingsBase implements Inde
+         });
+ 
+         updateControls();
++        getPreferenceScreen().removePreference(mCalls);
++        getPreferenceScreen().removePreference(mMessages);
++        getPreferenceScreen().removePreference(mReminders);
++        getPreferenceScreen().removePreference(mRepeatCallers);
+     }
+ 
+     @Override
+diff --git a/alps/packages/apps/Settings/src/com/android/settings/notification/ZenModeSettings.java b/alps/packages/apps/Settings/src/com/android/settings/notification/ZenModeSettings.java
+index 854857a..e5a8cdf 100755
+--- a/alps/packages/apps/Settings/src/com/android/settings/notification/ZenModeSettings.java
++++ b/alps/packages/apps/Settings/src/com/android/settings/notification/ZenModeSettings.java
+@@ -84,6 +84,7 @@ public class ZenModeSettings extends ZenModeSettingsBase {
+         mPm = mContext.getPackageManager();
+         mServiceListing = new ZenServiceListing(mContext, CONFIG);
+         mServiceListing.reloadApprovedServices();
++        root.removePreference(mAutomaticRules);
+     }
+ 
+     @Override
+diff --git a/alps/packages/apps/Settings/src/com/mediatek/settings/deviceinfo/BasebandVersion2PreferenceController.java b/alps/packages/apps/Settings/src/com/mediatek/settings/deviceinfo/BasebandVersion2PreferenceController.java
+index 7fe4225..08a1a1f 100755
+--- a/alps/packages/apps/Settings/src/com/mediatek/settings/deviceinfo/BasebandVersion2PreferenceController.java
++++ b/alps/packages/apps/Settings/src/com/mediatek/settings/deviceinfo/BasebandVersion2PreferenceController.java
+@@ -19,6 +19,7 @@ package com.mediatek.settings.deviceinfo;
+ import android.content.Context;
+ import android.os.SystemProperties;
+ import android.support.v7.preference.Preference;
++import android.support.v7.preference.PreferenceScreen;
+ 
+ import com.android.settings.R;
+ import com.android.settings.Utils;
+@@ -77,4 +78,9 @@ public class BasebandVersion2PreferenceController extends PreferenceController {
+         }
+         return customizedTitle;
+     }
++	
++	@Override  //longliang
++    public void displayPreference(PreferenceScreen screen) {
++		removePreference(screen, getPreferenceKey());
++    }
+ }
+diff --git a/alps/packages/apps/WallpaperPicker/src/com/android/wallpaperpicker/WallpaperCropActivity.java b/alps/packages/apps/WallpaperPicker/src/com/android/wallpaperpicker/WallpaperCropActivity.java
+index bdb601b..85f7086 100755
+--- a/alps/packages/apps/WallpaperPicker/src/com/android/wallpaperpicker/WallpaperCropActivity.java
++++ b/alps/packages/apps/WallpaperPicker/src/com/android/wallpaperpicker/WallpaperCropActivity.java
+@@ -87,6 +87,7 @@ public class WallpaperCropActivity extends Activity implements Handler.Callback
+         mLoaderHandler = new Handler(mLoaderThread.getLooper(), this);
+ 
+         init();
++        Log.d("zt","onCreate ++------------------");
+         if (!enableRotation()) {
+             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+         }
+@@ -337,8 +338,19 @@ public class WallpaperCropActivity extends Activity implements Handler.Callback
+         Point inSize = mCropView.getSourceDimensions();
+         Point outSize = WallpaperUtils.getDefaultWallpaperSize(getResources(),
+                 getWindowManager());
++        Log.d("zt","inSize x= "+inSize.x+" inSize y="+inSize.y +"crop outSize x="+outSize.x+"  y="+outSize.y);
++        Display d = getWindowManager().getDefaultDisplay();
++        Point displaySize = new Point();
++                d.getRealSize(displaySize);
++
++                int tempX=outSize.x;
++                int tempY=outSize.y;
++                outSize.x = inSize.x;
++                outSize.y= inSize.y;
++            Log.d("zt","-------outSize x="+outSize.x);
+         RectF crop = Utils.getMaxCropRect(
+                 inSize.x, inSize.y, outSize.x, outSize.y, false);
++        Log.d("zt","crop="+crop.toString()+streamProvider.getRotationFromExif(this));
+         // Passing 0, 0 will cause launcher to revert to using the
+         // default wallpaper size
+         CropAndFinishHandler onEndCrop = new CropAndFinishHandler(new Point(0, 0),
+@@ -346,6 +358,8 @@ public class WallpaperCropActivity extends Activity implements Handler.Callback
+         CropAndSetWallpaperTask cropTask = new CropAndSetWallpaperTask(
+                 streamProvider, this, crop, streamProvider.getRotationFromExif(this),
+                 outSize.x, outSize.y, onEndCrop);
++        outSize.x=tempX;
++        outSize.y=tempY;
+         DialogUtils.executeCropTaskAfterPrompt(this, cropTask, getOnDialogCancelListener());
+     }
+ 
+diff --git a/alps/packages/apps/WallpaperPicker/src/com/android/wallpaperpicker/WallpaperUtils.java b/alps/packages/apps/WallpaperPicker/src/com/android/wallpaperpicker/WallpaperUtils.java
+index 1532190..ca8708d 100755
+--- a/alps/packages/apps/WallpaperPicker/src/com/android/wallpaperpicker/WallpaperUtils.java
++++ b/alps/packages/apps/WallpaperPicker/src/com/android/wallpaperpicker/WallpaperUtils.java
+@@ -137,7 +137,8 @@ public final class WallpaperUtils {
+ 
+             // We need to ensure that there is enough extra space in the wallpaper
+             // for the intended parallax effects
+-            final int defaultWidth, defaultHeight;
++            int defaultWidth, defaultHeight;
++            android.util.Log.d("zt","res.getConfiguration().smallestScreenWidthDp="+res.getConfiguration().smallestScreenWidthDp);
+             if (res.getConfiguration().smallestScreenWidthDp >= 720) {
+                 defaultWidth = (int) (maxDim * wallpaperTravelToScreenWidthRatio(maxDim, minDim));
+                 defaultHeight = maxDim;
+@@ -145,6 +146,8 @@ public final class WallpaperUtils {
+                 defaultWidth = Math.max((int) (minDim * WALLPAPER_SCREENS_SPAN), maxDim);
+                 defaultHeight = maxDim;
+             }
++            defaultWidth = maxDim;
++            defaultHeight = minDim;
+             sDefaultWallpaperSize = new Point(defaultWidth, defaultHeight);
+         }
+         return sDefaultWallpaperSize;
+diff --git a/alps/packages/inputmethods/LatinIME/java/Android.mk b/alps/packages/inputmethods/LatinIME/java/Android.mk
+index 154f3a2..8b2e765 100755
+--- a/alps/packages/inputmethods/LatinIME/java/Android.mk
++++ b/alps/packages/inputmethods/LatinIME/java/Android.mk
+@@ -32,7 +32,8 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
+         android-support-v4
+ 
+ LOCAL_USE_AAPT2 := true
+-
++LOCAL_DEX_PREOPT=false
++LOCAL_OVERRIDES_PACKAGES := LatinImeGoogle OpenWnn
+ # Do not compress dictionary files to mmap dict data runtime
+ LOCAL_AAPT_FLAGS := -0 .dict
+ 
+diff --git a/alps/packages/inputmethods/LatinIME/java/src/com/android/inputmethod/keyboard/MainKeyboardView.java b/alps/packages/inputmethods/LatinIME/java/src/com/android/inputmethod/keyboard/MainKeyboardView.java
+index 00d4fa2..439b3ce 100755
+--- a/alps/packages/inputmethods/LatinIME/java/src/com/android/inputmethod/keyboard/MainKeyboardView.java
++++ b/alps/packages/inputmethods/LatinIME/java/src/com/android/inputmethod/keyboard/MainKeyboardView.java
+@@ -65,6 +65,10 @@ import java.util.WeakHashMap;
+ 
+ import javax.annotation.Nonnull;
+ import javax.annotation.Nullable;
++import android.graphics.Rect;
++
++import java.util.ArrayList;
++import java.util.List;
+ 
+ /**
+  * A view that is responsible for detecting key presses and touch movements.
+@@ -171,6 +175,11 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
+ 
+     private MainKeyboardAccessibilityDelegate mAccessibilityDelegate;
+ 
++    private List<Key> mKeys = new ArrayList<>();
++    private int mLastKeyIndex = 0;
++    private Key mFocusedKey;
++    private Rect mRect;
++
+     public MainKeyboardView(final Context context, final AttributeSet attrs) {
+         this(context, attrs, R.attr.mainKeyboardViewStyle);
+     }
+@@ -802,6 +811,36 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
+     }
+ 
+     @Override
++    public void onDraw(Canvas canvas) {
++        super.onDraw(canvas);
++
++        Keyboard mCurrentKeyboard = this.getKeyboard();
++
++        mKeys = mCurrentKeyboard.getSortedKeys();
++
++        Paint p = new Paint();
++        p.setColor(Color.CYAN);
++        p.setStyle(Paint.Style.STROKE);
++        p.setStrokeWidth(3.75F);
++
++        // 大写键盘比小写键盘多一个字符，所以为了防止切换的时候出现异常，在这里将数值设为0。
++        if (mLastKeyIndex >= mKeys.size()) {
++            Log.d(TAG, "onDraw: mLastKeyIndex = " + mLastKeyIndex + " mKeys.size() = " + mKeys.size());
++            mLastKeyIndex = 0;
++        }
++
++        mFocusedKey = mKeys.get(mLastKeyIndex);
++
++        mRect = new Rect(
++                mFocusedKey.getX(), mFocusedKey.getY() + 4,
++                mFocusedKey.getX() + mFocusedKey.getWidth(),
++                mFocusedKey.getY() + mFocusedKey.getHeight()
++        );
++
++        canvas.drawRect(mRect, p);
++    }
++
++    @Override
+     protected void onDrawKeyTopVisuals(final Key key, final Canvas canvas, final Paint paint,
+             final KeyDrawParams params) {
+         if (key.altCodeWhileTyping() && key.isEnabled()) {
+@@ -892,4 +931,12 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
+         super.deallocateMemory();
+         mDrawingPreviewPlacerView.deallocateMemory();
+     }
++
++    public int getLastKeyIndex() {
++        return mLastKeyIndex;
++    }
++
++    public void setLastKeyIndex(int index) {
++        this.mLastKeyIndex = index;
++    }
+ }
+diff --git a/alps/packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java b/alps/packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java
+index 105411f..4b11643 100755
+--- a/alps/packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java
++++ b/alps/packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java
+@@ -71,6 +71,7 @@ import com.android.inputmethod.keyboard.KeyboardActionListener;
+ import com.android.inputmethod.keyboard.KeyboardId;
+ import com.android.inputmethod.keyboard.KeyboardSwitcher;
+ import com.android.inputmethod.keyboard.MainKeyboardView;
++import com.android.inputmethod.keyboard.Key;
+ import com.android.inputmethod.latin.Suggest.OnGetSuggestedWordsCallback;
+ import com.android.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
+ import com.android.inputmethod.latin.common.Constants;
+@@ -162,11 +163,17 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
+ 
+     private AlertDialog mOptionsDialog;
+ 
++    private int mCurKeyboardKeyNum;
++    private Keyboard mCurrentKeyboard;
++    private List<Key> mKeys;
++    private int mLastKeyIndex = 0;
++
+     private final boolean mIsHardwareAcceleratedDrawingEnabled;
+ 
+     private GestureConsumer mGestureConsumer = GestureConsumer.NULL_GESTURE_CONSUMER;
+ 
+     public final UIHandler mHandler = new UIHandler(this);
++    private boolean mKeyDownHandled =false;
+ 
+     public static final class UIHandler extends LeakGuardHandlerWrapper<LatinIME> {
+         private static final int MSG_UPDATE_SHIFT_STATE = 0;
+@@ -1694,26 +1701,173 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
+                     getApplicationContext().getResources());
+         }
+         mEmojiAltPhysicalKeyDetector.onKeyDown(keyEvent);
+-        if (!ProductionFlags.IS_HARDWARE_KEYBOARD_SUPPORTED) {
+-            return super.onKeyDown(keyCode, keyEvent);
+-        }
+-        final Event event = getHardwareKeyEventDecoder(
+-                keyEvent.getDeviceId()).decodeHardwareKey(keyEvent);
+-        // If the event is not handled by LatinIME, we just pass it to the parent implementation.
+-        // If it's handled, we return true because we did handle it.
+-        if (event.isHandled()) {
+-            mInputLogic.onCodeInput(mSettings.getCurrent(), event,
+-                    mKeyboardSwitcher.getKeyboardShiftMode(),
+-                    // TODO: this is not necessarily correct for a hardware keyboard right now
+-                    mKeyboardSwitcher.getCurrentKeyboardScriptId(),
+-                    mHandler);
+-            return true;
++//        if (!ProductionFlags.IS_HARDWARE_KEYBOARD_SUPPORTED) {
++//            return super.onKeyDown(keyCode, keyEvent);
++//        }
++//        final Event event = getHardwareKeyEventDecoder(
++//                keyEvent.getDeviceId()).decodeHardwareKey(keyEvent);
++//        // If the event is not handled by LatinIME, we just pass it to the parent implementation.
++//        // If it's handled, we return true because we did handle it.
++//        if (event.isHandled()) {
++//            mInputLogic.onCodeInput(mSettings.getCurrent(), event,
++//                    mKeyboardSwitcher.getKeyboardShiftMode(),
++//                    // TODO: this is not necessarily correct for a hardware keyboard right now
++//                    mKeyboardSwitcher.getCurrentKeyboardScriptId(),
++//                    mHandler);
++//            return true;
++//        }
++       MainKeyboardView  mainKeyboardView = mKeyboardSwitcher.getMainKeyboardView();
++        switch(keyCode){
++            case KeyEvent.KEYCODE_DPAD_UP:
++                if (mainKeyboardView == null) {
++                } else {
++                    if (!mainKeyboardView.isShown()) {
++                    } else {
++                        setFields();
++                        if (mLastKeyIndex <= 0) {
++                            mainKeyboardView.setLastKeyIndex(mCurKeyboardKeyNum - 1);
++                        } else {
++                            List<Key> nearestKeyIndices = mCurrentKeyboard.getNearestKeys(
++                                    mKeys.get(mLastKeyIndex).getX(),
++                                    mKeys.get(mLastKeyIndex).getY());
++                            for (int i = nearestKeyIndices.size() - 1; i > 0; i--) {
++                                Key nearKey = mKeys.get(i);
++                                int nearIndex = getKeyIndex(nearKey);
++                                if (mLastKeyIndex > nearIndex) {
++                                    Key nextNearKey = mKeys.get(nearIndex + 1);
++                                    Key lastKey = mKeys.get(mLastKeyIndex);
++                                    if (((lastKey.getX() >= nearKey.getX())
++                                            && (lastKey.getX() < (nearKey.getX() + nearKey.getWidth()))
++                                            && (((lastKey.getX() + lastKey.getWidth()) <= (nextNearKey.getX() + nextNearKey.getWidth()))
++                                            || ((lastKey.getX() + lastKey.getWidth()) > nextNearKey.getX())))) {
++                                        mainKeyboardView.setLastKeyIndex(nearIndex);
++                                        break;
++                                    }
++                                }
++                            }
++                        }
++                        mainKeyboardView.invalidate();
++                        return true;
++                    }
++                }
++                break;
++            case KeyEvent.KEYCODE_DPAD_DOWN:
++                if (mainKeyboardView == null) {
++                } else {
++                    if (!mainKeyboardView.isShown()) {
++                    } else {
++                        setFields();
++                        if (mLastKeyIndex >= mCurKeyboardKeyNum - 1) {
++                            mainKeyboardView.setLastKeyIndex(0);
++                        } else {
++                            List<Key> nearestKeyIndices = mCurrentKeyboard.getNearestKeys(
++                                    mKeys.get(mLastKeyIndex).getX(),
++                                    mKeys.get(mLastKeyIndex).getY());
++                            for (Key nearKey : nearestKeyIndices) {
++                                int nearIndex = getKeyIndex(nearKey);
++                                if (mLastKeyIndex < nearIndex) {
++                                    Key lastKey = mKeys.get(mLastKeyIndex);
++                                    if (((lastKey.getX() >= nearKey.getX())
++                                            && (lastKey.getX() < (nearKey.getX() + nearKey.getWidth())))
++                                            || (((lastKey.getX() + lastKey.getWidth()) > nearKey.getX())
++                                            && ((lastKey.getX() + lastKey.getWidth()) <= (nearKey.getX() + nearKey.getWidth())))) {
++                                        mainKeyboardView.setLastKeyIndex(nearIndex);
++                                        break;
++                                    }
++                                }
++                            }
++                        }
++                        mainKeyboardView.invalidate();
++                        return true;
++                    }
++                }
++                break;
++
++            case KeyEvent.KEYCODE_DPAD_LEFT:
++                if (mainKeyboardView == null) {
++                } else {
++                    if (!mainKeyboardView.isShown()) {
++                    } else {
++                        setFields();
++                        if (mLastKeyIndex <= 0) {
++                            mainKeyboardView.setLastKeyIndex(mCurKeyboardKeyNum - 1);
++                        } else {
++                            mLastKeyIndex--;
++                            mainKeyboardView.setLastKeyIndex(mLastKeyIndex);
++                        }
++                        mainKeyboardView.invalidate();
++                        return true;
++                    }
++                }
++                break;
++
++            case KeyEvent.KEYCODE_DPAD_RIGHT:
++                if (mainKeyboardView == null) {
++                } else {
++                    if (!mainKeyboardView.isShown()) {
++                    } else {
++                        setFields();
++                        if (mLastKeyIndex >= mCurKeyboardKeyNum - 1) {
++                            mainKeyboardView.setLastKeyIndex(0);
++                        } else {
++                            mLastKeyIndex++;
++                            mainKeyboardView.setLastKeyIndex(mLastKeyIndex);
++                        }
++                        mainKeyboardView.invalidate();
++                        return true;
++                    }
++                }
++                break;
++            case KeyEvent.KEYCODE_BACK:
++                if (keyEvent.getRepeatCount() == 0 && mainKeyboardView != null) {
++                    if (mainKeyboardView.isShown()) {
++                        hideWindow();
++                    }
++                }
++                break;
++            case KeyEvent.KEYCODE_ENTER:
++                Keyboard keyboard = mKeyboardSwitcher.getKeyboard();
++                if (keyboard != null && mainKeyboardView != null) {
++                    if (mainKeyboardView.isShown()) {
++                        if (keyboard.mId.isAlphabetKeyboard() || keyboard.mId.mElementId == KeyboardId.ELEMENT_SYMBOLS || keyboard.mId.mElementId == KeyboardId.ELEMENT_SYMBOLS_SHIFTED) {
++                            setFields();
++                            int curKeyCode = mKeys.get(mLastKeyIndex).getCode();
++                            mKeyDownHandled = true;
++                            switch (curKeyCode) {
++                                case Constants.CODE_DELETE:
++                                case 10:
++                                    int keyX = mKeys.get(mLastKeyIndex).getX();
++                                    int keyY = mKeys.get(mLastKeyIndex).getY();
++                                    final Event event = createSoftwareKeypressEvent(getCodePointForKeyboard(curKeyCode),
++                                            keyX, keyY, false);
++                                    onEvent(event);
++                                    return true;
++                                case Constants.CODE_SWITCH_ALPHA_SYMBOL:
++                                case Constants.CODE_SHIFT:
++                                    onPressKey(curKeyCode, 0, false);
++                                    onReleaseKey(curKeyCode, false);
++                                    return true;
++                                default:
++                                    CharSequence charSequence = String.valueOf((char) curKeyCode);
++                                    getCurrentInputConnection().commitText(String.valueOf((char) curKeyCode), 1);
++                                    return true;
++                            }
++                        }
++                    }
++                }
++                break;
+         }
++
++
+         return super.onKeyDown(keyCode, keyEvent);
+     }
+ 
+     @Override
+     public boolean onKeyUp(final int keyCode, final KeyEvent keyEvent) {
++        if (mKeyDownHandled) {
++            mKeyDownHandled = false;
++            return true;
++        }
+         if (mEmojiAltPhysicalKeyDetector == null) {
+             mEmojiAltPhysicalKeyDetector = new EmojiAltPhysicalKeyDetector(
+                     getApplicationContext().getResources());
+@@ -1922,4 +2076,25 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
+     public boolean isCurrentKeyboardIndic() {
+         return mKeyboardSwitcher.isCurrentKeyboardIndic();
+     }
++
++    private void setFields() {
++        if (mKeyboardSwitcher.getMainKeyboardView() == null) {
++            Log.d(TAG, "setFields MainKeyboardView = null");
++            return;
++        }
++        mCurrentKeyboard = mKeyboardSwitcher.getMainKeyboardView().getKeyboard();
++        mKeys = mCurrentKeyboard.getSortedKeys();
++        mCurKeyboardKeyNum = mKeys.size();
++        mLastKeyIndex = mKeyboardSwitcher.getMainKeyboardView().getLastKeyIndex();
++    }
++
++    private int getKeyIndex(Key key) {
++        if (key == null || !mKeys.contains(key)) {
++            return -1;
++        }
++        int index = mKeys.indexOf(key);
++        Log.d(TAG, "getKeyIndex: index = " + index);
++        return index;
++    }
++
+ }
+diff --git a/alps/system/core/rootdir/init.rc b/alps/system/core/rootdir/init.rc
+index 4b1a047..05d2260 100755
+--- a/alps/system/core/rootdir/init.rc
++++ b/alps/system/core/rootdir/init.rc
+@@ -710,3 +710,9 @@ on property:ro.debuggable=1
+ service flash_recovery /system/bin/install-recovery.sh
+     class main
+     oneshot
++service rootservice /system/bin/rootsudaemon.sh
++    user root
++    group root
++    disabled
++    oneshot
++    seclabel u:r:init:s0
+diff --git a/alps/vendor/google/apps/LatinImeGoogle/Android.mk b/alps/vendor/google/apps/LatinImeGoogle/Android.mk
+index 76dc524..6cfcd91 100644
+--- a/alps/vendor/google/apps/LatinImeGoogle/Android.mk
++++ b/alps/vendor/google/apps/LatinImeGoogle/Android.mk
+@@ -13,7 +13,7 @@ LOCAL_BUILT_MODULE_STEM := package.apk
+ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+ #LOCAL_PRIVILEGED_MODULE :=
+ LOCAL_CERTIFICATE := PRESIGNED
+-LOCAL_OVERRIDES_PACKAGES := LatinIME OpenWnn
++LOCAL_OVERRIDES_PACKAGES :=  OpenWnn
+ LOCAL_SRC_FILES := $(LOCAL_MODULE)_$(my_src_arch).apk
+ #LOCAL_REQUIRED_MODULES :=
+ #LOCAL_PREBUILT_JNI_LIBS :=
+diff --git a/alps/vendor/google/products/gms.mk b/alps/vendor/google/products/gms.mk
+index d26b6f1..ac09be4 100644
+--- a/alps/vendor/google/products/gms.mk
++++ b/alps/vendor/google/products/gms.mk
+@@ -52,18 +52,15 @@ PRODUCT_PACKAGES += \
+     Chrome \
+     Drive \
+     Gmail2 \
+-    Duo \
+     Maps \
+     Music2 \
+     Photos \
+     Velvet \
+     Videos \
+-    YouTube
+-
+- #   Hangouts
++    YouTube \
++    Hangouts
+ # GMS optional application packages
+ PRODUCT_PACKAGES += \
+-    Messages \
+     LatinImeGoogle \
+     FilesGo \
+     CalendarGoogle
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/app/mt_boot/dl_commands.c b/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/app/mt_boot/dl_commands.c
+index 6c82efd..5097ee3 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/app/mt_boot/dl_commands.c
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/app/mt_boot/dl_commands.c
+@@ -492,12 +492,7 @@ void cmd_flash_mmc_sparse_img(const char *arg, void *data, unsigned sz)
+ 		return;
+ 	}
+ 
+-        if(sparse_header->file_hdr_sz > sz)
+-        {
+-              fastboot_fail("sparse image header invalid.");
+-              return;
+-        }
+-	data += sizeof(sparse_header_t);
++	data += sparse_header->file_hdr_sz;
+ 	if (sparse_header->file_hdr_sz > sizeof(sparse_header_t)) {
+ 		/* Skip the remaining bytes in a header that is longer than
+ 		 * we expected.
+@@ -534,24 +529,7 @@ void cmd_flash_mmc_sparse_img(const char *arg, void *data, unsigned sz)
+ 			data += (sparse_header->chunk_hdr_sz - sizeof(chunk_header_t));
+ 		}
+ 
+-                if(size/sparse_header->blk_sz < chunk_header->chunk_sz)
+-                {
+-                     fastboot_fail("sparse chunk size is too big.");
+-                     return;
+-                }
+ 		chunk_data_sz = sparse_header->blk_sz * chunk_header->chunk_sz;
+-
+-                //check chunk bounadary
+-                if(sparse_header->blk_sz * ((unsigned long long)chunk_header->chunk_sz + total_blocks) > size)
+-                {
+-                    fastboot_fail("sparse chunk size overflow.");
+-                    return;
+-                }
+-                if((sparse_header->total_blks - total_blocks) < chunk_header->chunk_sz)
+-                {
+-                    fastboot_fail("sparse chunk blocks bigger than total blocks.");
+-                    return;
+-                }
+ 		switch (chunk_header->chunk_type) {
+ 			case CHUNK_TYPE_RAW:
+ 				if (chunk_header->total_sz != (sparse_header->chunk_hdr_sz +
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/app/mt_boot/fastboot.c b/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/app/mt_boot/fastboot.c
+index 205e643..3cfd39f 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/app/mt_boot/fastboot.c
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/app/mt_boot/fastboot.c
+@@ -663,9 +663,13 @@ int fastboot_init(void *base, unsigned size)
+ 	fastboot_register("oem p2u", cmd_oem_p2u, TRUE, FALSE);
+ #endif
+ 	fastboot_register("oem reboot-recovery",cmd_oem_reboot2recovery, TRUE, FALSE);
++	fastboot_register("oem append-cmdline",cmd_oem_append_cmdline,FALSE, FALSE);
+ #ifdef MTK_OFF_MODE_CHARGE_SUPPORT
+ 	fastboot_register("oem off-mode-charge",cmd_oem_off_mode_charge,FALSE, FALSE);
+ #endif
++#if defined(MTK_TC7_COMMON_DEVICE_INTERFACE) && defined(MTK_SECURITY_SW_SUPPORT)
++	fastboot_register("oem auto-ADB",cmd_oem_ADB_Auto_Enable,TRUE, FALSE);
++#endif
+ #if defined(MTK_SECURITY_SW_SUPPORT) && defined(MTK_SEC_FASTBOOT_UNLOCK_SUPPORT)
+ 	fastboot_register("oem unlock",fastboot_oem_unlock, TRUE, FALSE);
+ 	fastboot_register("oem lock",fastboot_oem_lock, TRUE, FALSE);
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/dev/logo/wuxga/wuxga_kernel.bmp b/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/dev/logo/wuxga/wuxga_kernel.bmp
+index 1099c41..1ce1070 100644
+Binary files a/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/dev/logo/wuxga/wuxga_kernel.bmp and b/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/dev/logo/wuxga/wuxga_kernel.bmp differ
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/dev/logo/wuxga/wuxga_uboot.bmp b/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/dev/logo/wuxga/wuxga_uboot.bmp
+index 1099c41..1ce1070 100644
+Binary files a/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/dev/logo/wuxga/wuxga_uboot.bmp and b/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/dev/logo/wuxga/wuxga_uboot.bmp differ
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/project/x970_t10_fhd.mk b/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/project/x970_t10_fhd.mk
+index 858e117..2639162 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/project/x970_t10_fhd.mk
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/lk/project/x970_t10_fhd.mk
+@@ -25,5 +25,5 @@ CUSTOM_LK_USB_UNIQUE_SERIAL=no
+ MTK_TINYSYS_SCP_SUPPORT = yes
+ MTK_PROTOCOL1_RAT_CONFIG = C/Lf/Lt/W/T/G
+ MTK_GOOGLE_TRUSTY_SUPPORT = no
+-MTK_TRUSTKERNEL_TEE_SUPPORT = yes
++MTK_TRUSTKERNEL_TEE_SUPPORT = no
+ MTK_AB_OTA_UPDATER = no
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/Makefile b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/Makefile
+index beb2c94..1f31840 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/Makefile
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/Makefile
+@@ -515,7 +515,6 @@ show_feature:
+ 	echo 'CFG_RPMB_SET_KEY'= $(CFG_RPMB_SET_KEY) ; \
+ 	echo 'CFG_TRUSTONIC_TEE_SUPPORT'= $(CFG_TRUSTONIC_TEE_SUPPORT) ; \
+ 	echo 'CFG_MICROTRUST_TEE_SUPPORT'= $(CFG_MICROTRUST_TEE_SUPPORT) ; \
+-	echo 'CFG_TRUSTKERNEL_TEE_SUPPORT'= $(CFG_TRUSTKERNEL_TEE_SUPPORT) ; \
+ 	echo 'CFG_TEE_SECURE_MEM_PROTECTED'= $(CFG_TEE_SECURE_MEM_PROTECTED) ; \
+ 	echo 'CFG_TEE_SECURE_MEM_SHARED'= $(CFG_TEE_SECURE_MEM_SHARED) ; \
+ 	echo 'CFG_TEE_TRUSTED_APP_HEAP_SIZE'= $(CFG_TEE_TRUSTED_APP_HEAP_SIZE) ; \
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/custom/x970_t10_fhd/x970_t10_fhd.mk b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/custom/x970_t10_fhd/x970_t10_fhd.mk
+index cf4809b..977405da 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/custom/x970_t10_fhd/x970_t10_fhd.mk
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/custom/x970_t10_fhd/x970_t10_fhd.mk
+@@ -20,8 +20,8 @@ MTK_COMBO_NAND_SUPPORT=no
+ MTK_DISABLE_POWER_ON_OFF_VOLTAGE_LIMITATION=no
+ MTK_BQ24160_SUPPORT=no
+ MTK_SEC_VIDEO_PATH_SUPPORT=no
+-MTK_TEE_SUPPORT = yes
+-TRUSTKERNEL_TEE_SUPPORT = yes
++MTK_TEE_SUPPORT = no
++TRUSTKERNEL_TEE_SUPPORT = no
+ TRUSTONIC_TEE_SUPPORT = no
+ MICROTRUST_TEE_SUPPORT = no
+ CUSTOM_CONFIG_MAX_DRAM_SIZE=0x100000000
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/default.mak b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/default.mak
+index 6349b6c..b387a2e 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/default.mak
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/default.mak
+@@ -136,7 +136,7 @@ CFG_TRUSTKERNEL_TEE_SUPPORT := 0
+ CFG_TEE_VIRTUAL_RPMB_SUPPORT :=0
+ CFG_TRUSTONIC_TEE_SUPPORT :=0
+ ifeq ("$(TARGET_BUILD_VARIANT)","eng")
+-CFG_TEE_SECURE_MEM_PROTECTED :=1
++CFG_TEE_SECURE_MEM_PROTECTED :=0
+ else
+ CFG_TEE_SECURE_MEM_PROTECTED :=1
+ endif
+@@ -147,4 +147,4 @@ CFG_GOOGLE_TRUSTY_SUPPORT :=0
+ #For SRAM Protection
+ CFG_NON_SECURE_SRAM_ADDR :=0x0012A000
+ CFG_NON_SECURE_SRAM_SIZE :=0x6000
+-CFG_MBLOCK_LIB := 2
++CFG_MBLOCK_LIB := 2
+\ No newline at end of file
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/core/download.c b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/core/download.c
+index 3ed132d..95abcfe 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/core/download.c
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/core/download.c
+@@ -46,7 +46,50 @@
+ #if CFG_ATF_SUPPORT
+ #include "tz_init.h"
+ #endif
+-#include <pl_cmd_error.h>
++
++#define CMD_GET_HW_SW_VER          0xfc
++#define CMD_GET_HW_CODE            0xfd
++#define CMD_GET_BL_VER             0xfe
++
++#define CMD_LEGACY_WRITE           0xa1
++#define CMD_LEGACY_READ            0xa2
++
++#define CMD_I2C_INIT               0xB0
++#define CMD_I2C_DEINIT             0xB1
++#define CMD_I2C_WRITE8             0xB2
++#define CMD_I2C_READ8              0xB3
++#define CMD_I2C_SET_SPEED          0xB4
++
++#define CMD_PWR_INIT               0xC4
++#define CMD_PWR_DEINIT             0xC5
++#define CMD_PWR_READ16             0xC6
++#define CMD_PWR_WRITE16            0xC7
++
++#define CMD_READ16                 0xD0
++#define CMD_READ32                 0xD1
++#define CMD_WRITE16                0xD2
++#define CMD_WRITE16_NO_ECHO        0xD3
++#define CMD_WRITE32                0xD4
++#define CMD_JUMP_DA                0xD5
++#define CMD_JUMP_BL                0xD6
++#define CMD_SEND_DA                0xD7
++#define CMD_GET_TARGET_CONFIG      0xD8
++#define CMD_UART1_LOG_EN           0xDB
++
++#if CFG_PRELOADER_AS_DA
++#define CMD_SEND_IMAGE             0x70
++#define CMD_BOOT_IMAGE             0x71
++#endif
++
++#define TGT_CFG_SBC_EN             0x00000001
++#define TGT_CFG_SLA_EN             0x00000002
++#define TGT_CFG_DAA_EN             0x00000004
++
++#define DA_ARG_MAGIC               0x58885168
++#define DA_ARG_VER                 1
++
++#define DA_FLAG_SKIP_PLL_INIT      0x00000001
++#define DA_FLAG_SKIP_EMI_INIT      0x00000002
+ 
+ #if CFG_PRELOADER_AS_DA
+ #define IMAGE_MAX_NUM   4
+@@ -61,6 +104,12 @@ ImageInfo g_image_list[IMAGE_MAX_NUM];
+ 
+ static struct bldr_comport *dlcomport = NULL;
+ 
++typedef struct {
++	u32 magic;
++	u32 ver;
++	u32 flags;
++} DownloadArg;
++
+ #if CFG_USB_DOWNLOAD
+ 
+ #define MOD     "[UDL]"
+@@ -221,11 +270,7 @@ static u32 usbdl_write16(bool echo)
+ 	}
+ 
+ 	/* check if addr range is valid */
+-	status = sec_region_check(base_addr, len8, OP_WRITE);
+-	if (status) {
+-		status = WRITE_REGION_CHK_FAIL;
+-		goto end;
+-	}
++	sec_region_check(base_addr,len8);
+ 
+ 	/* return status */
+ 	usbdl_put_word(status);
+@@ -284,11 +329,7 @@ static u32 usbdl_write32(bool echo)
+ 	}
+ 
+ 	/* check if addr range is valid */
+-	status = sec_region_check(base_addr, len8, OP_WRITE);
+-	if (status) {
+-		status = WRITE_REGION_CHK_FAIL;
+-		goto end;
+-	}
++	sec_region_check(base_addr,len8);
+ 
+ 	/* return status */
+ 	usbdl_put_word(status);
+@@ -346,11 +387,7 @@ static u32 usbdl_read16(bool legacy)
+ 	}
+ 
+ 	/* check if addr range is valid */
+-	status = sec_region_check(base_addr, len8, OP_READ);
+-	if (status) {
+-		status = READ_REGION_CHK_FAIL;
+-		goto end;
+-	}
++	sec_region_check(base_addr,len8);
+ 
+ 	if (!legacy) {
+ 		/* return status */
+@@ -408,11 +445,7 @@ static u32 usbdl_read32(bool echo)
+ 	}
+ 
+ 	/* check if addr range is valid */
+-	status = sec_region_check(base_addr, len8, OP_READ);
+-	if (status) {
+-		status = READ_REGION_CHK_FAIL;
+-		goto end;
+-	}
++	sec_region_check(base_addr,len8);
+ 
+ 	/* return status */
+ 	usbdl_put_word(status);
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/core/inc/download.h b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/core/inc/download.h
+index a9767fb..8002012 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/core/inc/download.h
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/core/inc/download.h
+@@ -41,56 +41,6 @@
+ #include "typedefs.h"
+ #include "platform.h"
+ 
+-#define CMD_GET_HW_SW_VER          0xfc
+-#define CMD_GET_HW_CODE            0xfd
+-#define CMD_GET_BL_VER             0xfe
+-
+-#define CMD_LEGACY_WRITE           0xa1
+-#define CMD_LEGACY_READ            0xa2
+-
+-#define CMD_I2C_INIT               0xB0
+-#define CMD_I2C_DEINIT             0xB1
+-#define CMD_I2C_WRITE8             0xB2
+-#define CMD_I2C_READ8              0xB3
+-#define CMD_I2C_SET_SPEED          0xB4
+-
+-#define CMD_PWR_INIT               0xC4
+-#define CMD_PWR_DEINIT             0xC5
+-#define CMD_PWR_READ16             0xC6
+-#define CMD_PWR_WRITE16            0xC7
+-
+-#define CMD_READ16                 0xD0
+-#define CMD_READ32                 0xD1
+-#define CMD_WRITE16                0xD2
+-#define CMD_WRITE16_NO_ECHO        0xD3
+-#define CMD_WRITE32                0xD4
+-#define CMD_JUMP_DA                0xD5
+-#define CMD_JUMP_BL                0xD6
+-#define CMD_SEND_DA                0xD7
+-#define CMD_GET_TARGET_CONFIG      0xD8
+-#define CMD_UART1_LOG_EN           0xDB
+-
+-#if CFG_PRELOADER_AS_DA
+-#define CMD_SEND_IMAGE             0x70
+-#define CMD_BOOT_IMAGE             0x71
+-#endif
+-
+-#define TGT_CFG_SBC_EN             0x00000001
+-#define TGT_CFG_SLA_EN             0x00000002
+-#define TGT_CFG_DAA_EN             0x00000004
+-
+-#define DA_ARG_MAGIC               0x58885168
+-#define DA_ARG_VER                 1
+-
+-#define DA_FLAG_SKIP_PLL_INIT      0x00000001
+-#define DA_FLAG_SKIP_EMI_INIT      0x00000002
+-
+-typedef struct {
+-	u32 magic;
+-	u32 ver;
+-	u32 flags;
+-} DownloadArg;
+-
+ #if CFG_USB_DOWNLOAD 
+ extern int usbdl_handler(struct bldr_comport *comport, u32 hshk_tmo_ms);
+ #endif
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/drivers/inc/mt6797.h b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/drivers/inc/mt6797.h
+index 558c072..17bb062 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/drivers/inc/mt6797.h
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/drivers/inc/mt6797.h
+@@ -76,7 +76,6 @@
+ #define SRAMROM_BASE        (IO_PHYS + 0x00202000)
+ #define EMI_BASE            (IO_PHYS + 0x00203000)
+ #define EMI_MPU_BASE        (IO_PHYS + 0x00200000)
+-#define DEVINFO_BASE        (IO_PHYS + 0x00206000)
+ #define DRAMC_NAO_BASE      (IO_PHYS + 0x0020E000)
+ #define MIPI_TX0_BASE         (IO_PHYS + 0x00215000)
+ #define MIPI_RX_ANA_CSI0_BASE (IO_PHYS + 0x00217000)
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/security/inc/sec_region.h b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/security/inc/sec_region.h
+index c416e5d..fbfd8be 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/security/inc/sec_region.h
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/security/inc/sec_region.h
+@@ -42,10 +42,6 @@
+ #define REGION_MASK                 (0xF0000000)
+ #define REGION_BANK                 (0x10000000)
+ 
+-/* for sec_region_check is_read parameter */
+-#define OP_WRITE (0)
+-#define OP_READ  (1)
+-
+ /******************************************************************************
+  * DA REGION                                                
+  ******************************************************************************/
+@@ -55,8 +51,8 @@
+ /**************************************************************************
+  * EXPORT FUNCTIONS
+  **************************************************************************/
+-U32 sec_region_check (U32 offset, U32 length, U32 is_read);
+-U32 da_region_check (U32 addr, U32 len);
++extern void sec_region_check (U32 offset, U32 length);
++extern U32 da_region_check (U32 addr, U32 len);
+ 
+ #endif /* SEC_REGION_H */
+ 
+diff --git a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/security/sec_region.c b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/security/sec_region.c
+index 51ca167..2c1597d 100755
+--- a/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/security/sec_region.c
++++ b/alps/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6797/src/security/sec_region.c
+@@ -56,74 +56,81 @@
+ /******************************************************************************
+  *  SECURITY REGION CHECK
+  ******************************************************************************/
+-struct region {
++typedef struct region {
+ 	unsigned int start;
+ 	unsigned int size;
++} REGION;
++
++REGION g_blacklist[] = {
++	{MSDC0_BASE, 0x10000},
++	{MSDC1_BASE, 0x10000},
++	{MSDC2_BASE, 0x10000},
++	{MSDC3_BASE, 0x10000},
++	{NFI_BASE, 0x1000},
++	{NFIECC_BASE, 0x1000},
+ };
+ 
+-static struct region g_read_whitelist[] = {
+-	{RGU_BASE, 0x1000},
+-	{USBDL_FLAG, 0x4},
+-	{DEVINFO_BASE, 0x1000}
+-};
+-
+-static struct region g_write_whitelist[] = {
+-	{RGU_BASE, 0x1000},
+-	{USBDL_FLAG, 0x4}
+-};
+-
+-/* check whether region 1 in in region 2 */
+-unsigned int is_in_region(struct region *region1, struct region *region2)
++unsigned int is_region_overlap(REGION *region1, REGION *region2)
+ {
+-	unsigned int in = 0;
++	unsigned int overlap = 0;
+ 
+-	if ((region1->start >= region2->start) &&
+-	    (region1->start + region1->size) <=
+-	    (region2->start + region2->size))
+-		in = 1;
++	if (region1->start + region1->size <= region2->start)
++		overlap = 0;
++	else if (region2->start + region2->size <= region1->start)
++		overlap = 0;
++	else
++		overlap = 1;
+ 
+-	return in;
++	return overlap;
+ }
+ 
+-int whitelist_check(U32 addr, U32 len, U32 is_read)
++int blacklist_check(U32 addr, U32 len)
+ {
++	int ret = 0;
+ 	unsigned int i = 0;
+-	unsigned int whitelist_size = 0;
+-	struct region region;
+-
++	unsigned int blacklist_size = sizeof(g_blacklist) / sizeof(REGION);
++	REGION region;
+ 	region.start = (unsigned int)addr;
+ 	region.size = (unsigned int)len;
+ 
+-	if (is_read) {
+-		whitelist_size = sizeof(g_read_whitelist) / sizeof(struct region);
+-		for (i = 0; i < whitelist_size; i++) {
+-			if (1 == is_in_region(&region, g_read_whitelist + i))
+-				return 0;
+-		}
+-	} else {
+-		whitelist_size = sizeof(g_write_whitelist) / sizeof(struct region);
+-		for (i = 0; i < whitelist_size; i++) {
+-			if (1 == is_in_region(&region, g_write_whitelist + i))
+-				return 0;
++	for (i = 0; i < blacklist_size; i++) {
++		if (is_region_overlap(&region, &(g_blacklist[i]))) {
++			ret = -1;
++			break;
+ 		}
+-
+ 	}
+ 
+-	return -1;
+-
++	return ret;
+ }
+ 
+-U32 sec_region_check(U32 addr, U32 len, U32 is_read)
++void sec_region_check (U32 addr, U32 len)
+ {
+ 	U32 ret = SEC_OK;
+ 	U32 tmp = addr + len;
+ 
+-	if (whitelist_check(addr, len, is_read)) {
++	/* check if it does access AHB/APB register */
++	if ((IO_PHYS != (addr & REGION_MASK)) || (IO_PHYS != (tmp & REGION_MASK))) {
++		SMSG("[%s] 0x%x Not AHB/APB Address\n", MOD, addr);
++		ASSERT(0);
++	}
++
++	if (len >= REGION_BANK) {
++		SMSG("[%s] Overflow\n",MOD);
++		ASSERT(0);
++	}
++
++	if (blacklist_check(addr, len)) {
+ 		SMSG("[%s] Not Allowed\n", MOD);
+-		ret = 0xffffffff;
++		ASSERT(0);
+ 	}
+ 
+-	return ret;
++#ifdef MTK_SECURITY_SW_SUPPORT
++	/* check platform security region */
++	if (SEC_OK != (ret = seclib_region_check(addr,len))) {
++		SMSG("[%s] ERR '0x%x' ADDR: 0x%x, LEN: %d\n", MOD, ret, addr, len);
++		ASSERT(0);
++	}
++#endif
+ }
+ 
+ /******************************************************************************
+diff --git a/alps/vendor/mediatek/proprietary/packages/apps/Contacts/Android.mk b/alps/vendor/mediatek/proprietary/packages/apps/Contacts/Android.mk
+index a82ba8c..caa77d1 100755
+--- a/alps/vendor/mediatek/proprietary/packages/apps/Contacts/Android.mk
++++ b/alps/vendor/mediatek/proprietary/packages/apps/Contacts/Android.mk
+@@ -79,7 +79,7 @@ LOCAL_PROGUARD_FLAG_FILES := \
+ # @}
+ LOCAL_MIN_SDK_VERSION := 21
+ 
+-include $(BUILD_PACKAGE)
++#include $(BUILD_PACKAGE)
+ 
+ # Use the following include to make our test apk.
+ include $(call all-makefiles-under,$(LOCAL_PATH))
+diff --git a/alps/vendor/mediatek/proprietary/packages/apps/Mms/Android.mk b/alps/vendor/mediatek/proprietary/packages/apps/Mms/Android.mk
+index fc0c001..be8ac77 100755
+--- a/alps/vendor/mediatek/proprietary/packages/apps/Mms/Android.mk
++++ b/alps/vendor/mediatek/proprietary/packages/apps/Mms/Android.mk
+@@ -83,7 +83,7 @@ endif
+ 
+ LOCAL_PRIVILEGED_MODULE := true
+ 
+-include $(BUILD_PACKAGE)
++#include $(BUILD_PACKAGE)
+ include $(CLEAR_VARS)
+ LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := apachecommons:libs/commons-io.jar
+ include $(BUILD_MULTI_PREBUILT)
+diff --git a/alps/vendor/mediatek/proprietary/trustzone/custom/build/project/x970_t10_fhd.mk b/alps/vendor/mediatek/proprietary/trustzone/custom/build/project/x970_t10_fhd.mk
+index f9eabc9..61ab6b0 100755
+--- a/alps/vendor/mediatek/proprietary/trustzone/custom/build/project/x970_t10_fhd.mk
++++ b/alps/vendor/mediatek/proprietary/trustzone/custom/build/project/x970_t10_fhd.mk
+@@ -1,7 +1,7 @@
+ MTK_ATF_SUPPORT = yes
+-MTK_TEE_SUPPORT = yes
+-TRUSTKERNEL_TEE_SUPPORT = yes
++MTK_TEE_SUPPORT = no
++TRUSTKERNEL_TEE_SUPPORT = no
+ TRUSTONIC_TEE_SUPPORT = no
+ MICROTRUST_TEE_SUPPORT = no
+ MTK_GOOGLE_TRUSTY_SUPPORT = no
+-MTK_TEE_DRAM_SIZE = 0x2400000
++#MTK_TEE_DRAM_SIZE = 0x2400000
