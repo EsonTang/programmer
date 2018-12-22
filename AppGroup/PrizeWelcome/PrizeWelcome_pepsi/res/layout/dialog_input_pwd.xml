@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_delete_station"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="45.5dp"
+        android:layout_marginLeft="17dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/prize_text_default"
+        android:textSize="@dimen/textsize_large" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/dialog_title_line" />
+
+    <LinearLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:minHeight="66.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_password"
+            android:textSize="@dimen/textsize_medium" 
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:maxLength="64"
+            android:password="true"
+            android:requiresFadingEdge="horizontal"
+            android:singleLine="true"
+            android:textDirection="locale"
+            android:textSize="@dimen/textsize_medium" 
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="253.5dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_line" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="76.5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="@dimen/dialog_btn_width"
+            android:layout_height="@dimen/dialog_btn_height"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/terms_lbtn_slt"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/prize_text_default"
+            android:textSize="@dimen/textsize_medium" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="@dimen/dialog_btn_width"
+            android:layout_height="@dimen/dialog_btn_height"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/terms_rbtn_slt"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/connect"
+            android:textAllCaps="false"
+            android:textColor="@color/prize_text_default"
+            android:textSize="@dimen/textsize_medium" />
+    </LinearLayout>
+
+</LinearLayout>

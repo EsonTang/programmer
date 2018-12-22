@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_title_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:paddingLeft="@dimen/prize_pane_margin">
+    <TextView
+        android:id="@+id/main_title_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/prize_title_main_ts"
+        android:textColor="#323232"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prize_title_month"
+        android:textColor="#323232"
+        android:textSize="@dimen/prize_title_submain_ts"
+        android:layout_marginLeft="2.5dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="7.5dp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/main_title_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/prize_title_submain_ts"
+            android:textColor="#323232"/>
+        <TextView
+            android:id="@+id/main_title_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/prize_title_submain_ts"
+            android:textColor="#323232"/>
+
+</LinearLayout>
+    </LinearLayout>

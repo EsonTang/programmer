@@ -1,0 +1,2275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Choices for the "Reminder method" spinner.
+         These must be kept in sync with the reminder_methods_values array.
+         [CHAR LIMIT=10]
+    -->
+    <string-array name="reminder_methods_labels">
+        <item>Notification</item>
+        <item>Email</item>
+        <item>SMS</item>
+        <item>Alarm</item>
+    </string-array>
+
+    <!-- This maps reminder_methods_labels to internal constants. -->
+    <integer-array name="reminder_methods_values" translatable="false">
+        <item>1</item>  <!-- METHOD_ALERT -->
+        <item>2</item>  <!-- METHOD_EMAIL -->
+        <item>3</item>  <!-- METHOD_SMS -->
+        <item>4</item>  <!-- METHOD_ALARM -->
+    </integer-array>
+
+    <!-- Choices for the "Reminder minutes" spinner.
+         These must be kept in sync with the reminder_minutes_values array.
+         For consistency, the format should match what
+         EventViewUtils.constructReminderLabel() generates.  (TODO: eliminate
+         this and just generate the list from reminder_minutes_values?)
+         [CHAR LIMIT=15]
+    -->
+    <string-array name="reminder_minutes_labels">
+        <item>@string/no_remind</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+        <item>2 days</item>
+        <item>1 week</item>
+    </string-array>
+
+    <integer-array name="reminder_minutes_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>720</item>
+        <item>1440</item>
+        <item>2880</item>
+        <item>10080</item>
+    </integer-array>
+
+  <!-- Choices for the "Reminder minutes" spinner in the settings.
+         These must be kept in sync with the preferences_default_reminder_values array.
+         [CHAR LIMIT=12]
+    -->
+       <string-array name="preferences_default_reminder_labels">
+        <item>None</item>
+        <item>0 minutes</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+        <item>2 days</item>
+        <item>1 week</item>
+    </string-array>
+
+    <string-array name="preferences_default_reminder_values" translatable="false">
+        <item>"-1"</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"5"</item>
+        <item>"10"</item>
+        <item>"15"</item>
+        <item>"20"</item>
+        <item>"25"</item>
+        <item>"30"</item>
+        <item>"45"</item>
+        <item>"60"</item>
+        <item>"120"</item>
+        <item>"180"</item>
+        <item>"720"</item>
+        <item>"1440"</item>
+        <item>"2880"</item>
+        <item>"10080"</item>
+    </string-array>
+
+    <string-array name="preferences_week_start_day_labels">
+        <item>Locale default</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+    </string-array>
+
+    <string-array name="preferences_week_start_day_values" translatable="false">
+        <item>"-1"</item>
+        <item>"7"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+    </string-array>
+
+
+
+    <string-array name="availability">
+        <item>Busy</item>
+        <item>Available</item>
+        <item>Tentative</item>
+    </string-array>
+
+    <!-- This maps reminder_methods_labels to internal constants. -->
+    <integer-array name="availability_values" translatable="false">
+        <item>0</item>  <!-- Busy -->
+        <item>1</item>  <!-- Available -->
+        <item>2</item>  <!-- Tentative -->
+    </integer-array>
+
+    <string-array name="visibility">
+        <item>Default</item>
+        <item>Private</item>
+        <item>Public</item>
+    </string-array>
+
+    <string-array name="ordinal_labels">
+        <item>first</item>
+        <item>second</item>
+        <item>third</item>
+        <item>fourth</item>
+        <item>last</item>
+    </string-array>
+
+    <!-- Invitation responses -->
+    <string-array name="response_labels1">
+        <item>No response</item>
+        <item>Yes</item>
+        <item>Maybe</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- The corresponding indices are defined in DeleteEventHelper.java -->
+    <!-- This is a list of choices displayed when the user deletes an event.
+         It only is shown when deleting a recurring event.
+    -->
+    <skip/>
+    <string-array name="delete_repeating_labels">
+        <item>Only this event</item>
+        <item>This and future events</item>
+        <item>All events</item>
+    </string-array>
+
+    <!-- DO NOT TRANSLATE These values need to correspond to the indices
+         defined in DeleteEventHelper.java-->
+    <integer-array name="delete_repeating_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+    <!-- The corresponding indices are defined in DeleteEventHelper.java -->
+    <!-- This is the same array as above (the "delete_repeating_labels" array,
+         except that the first element "Only this event" is removed.  This
+         array exists to work-around a bug in the CalendarProvider and sync
+         code where you can't delete one instance of a repeating event that
+         was created on the phone until that event has been synced to the server.
+     -->
+    <skip/>
+    <string-array name="delete_repeating_labels_no_selected">
+        <item>This &amp; future events</item>
+        <item>All events</item>
+    </string-array>
+
+    <!-- The corresponding array indices are defined in EventInfoActivity.java -->
+    <skip/>
+    <!-- The list of choices displayed in a dialog box when the user wants to
+    respond to an invitation that repeats. -->
+    <string-array name="change_response_labels">
+        <!-- The choice for responding to only one instance of a repeating event -->
+        <item>Only this event</item>
+        <!-- The choice for responding to all instances of a repeating event -->
+        <item>All events in the series</item>
+    </string-array>
+
+    <!-- Strings for buttons in drop down menu -->
+    <string-array name="buttons_list">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Agenda</item>
+    </string-array>
+
+    <!-- Experimental options for skipping reminders. [CHAR LIMIT = 37] -->
+    <string-array name="preferences_skip_reminders_labels">
+        <!-- Default choice -->
+        <item>Only if declined</item>
+        <!-- Second option, for skipping reminders to events not yet responded to. -->
+        <item>If declined or not responded</item>
+    </string-array>
+
+    <string-array name="preferences_skip_reminders_values" translatable="false">
+        <item>declined</item>
+        <item>not_responded</item>
+    </string-array>
+
+    <!-- Recurrence picker: How events are to be repeated.  [CHAR LIMIT = 20] -->
+    <string-array name="recurrence_freq">
+        <item >REPEAT DAILY</item>
+        <item >REPEAT WEEKLY</item>
+        <item >REPEAT MONTHLY</item>
+        <item >REPEAT YEARLY</item>
+    </string-array>
+
+    <!-- The following sets of strings describe a monthly recurring event, which will repeat
+         on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or
+         the last Sunday. These are set up like this to resolve any gender-matching issues
+         that were present in some languages.
+     -->
+    <!-- Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_sun">
+        <item >on every first Sunday</item>
+        <item >on every second Sunday</item>
+        <item >on every third Sunday</item>
+        <item >on every fourth Sunday</item>
+        <item >on every last Sunday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_mon">
+        <item >on every first Monday</item>
+        <item >on every second Monday</item>
+        <item >on every third Monday</item>
+        <item >on every fourth Monday</item>
+        <item >on every last Monday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_tues">
+        <item >on every first Tuesday</item>
+        <item >on every second Tuesday</item>
+        <item >on every third Tuesday</item>
+        <item >on every fourth Tuesday</item>
+        <item >on every last Tuesday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_wed">
+        <item >on every first Wednesday</item>
+        <item >on every second Wednesday</item>
+        <item >on every third Wednesday</item>
+        <item >on every fourth Wednesday</item>
+        <item >on every last Wednesday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_thurs">
+        <item >on every first Thursday</item>
+        <item >on every second Thursday</item>
+        <item >on every third Thursday</item>
+        <item >on every fourth Thursday</item>
+        <item >on every last Thursday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_fri">
+        <item >on every first Friday</item>
+        <item >on every second Friday</item>
+        <item >on every third Friday</item>
+        <item >on every fourth Friday</item>
+        <item >on every last Friday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_sat">
+        <item >on every first Saturday</item>
+        <item >on every second Saturday</item>
+        <item >on every third Saturday</item>
+        <item >on every fourth Saturday</item>
+        <item >on every last Saturday</item>
+    </string-array>
+       <string-array name="prize_sc_solar_terms">
+        <item>小寒</item>
+        <item>大寒</item>
+        <item>立春</item>
+        <item>雨水</item>
+        <item>惊蛰</item>
+        <item>春分</item>
+        <item>清明</item>
+        <item>谷雨</item>
+        <item>立夏</item>
+        <item>小满</item>
+        <item>芒种</item>
+        <item>夏至</item>
+        <item>小暑</item>
+        <item>大暑</item>
+        <item>立秋</item>
+        <item>处暑</item>
+        <item>白露</item>
+        <item>秋分</item>
+        <item>寒露</item>
+        <item>霜降</item>
+        <item>立冬</item>
+        <item>小雪</item>
+        <item>大雪</item>
+        <item>冬至</item>
+    </string-array>
+    <string-array name="prize_tc_solar_terms">
+        <item>小寒</item>
+        <item>大寒</item>
+        <item>立春</item>
+        <item>雨水</item>
+        <item>驚蟄</item>
+        <item>春分</item>
+        <item>清明</item>
+        <item>穀雨</item>
+        <item>立夏</item>
+        <item>小滿</item>
+        <item>芒種</item>
+        <item>夏至</item>
+        <item>小暑</item>
+        <item>大暑</item>
+        <item>立秋</item>
+        <item>處暑</item>
+        <item>白露</item>
+        <item>秋分</item>
+        <item>寒露</item>
+        <item>霜降</item>
+        <item>立冬</item>
+        <item>小雪</item>
+        <item>大雪</item>
+        <item>冬至</item>
+    </string-array>
+    <string-array name="prize_month_number_array"
+        translatable="false">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+        <item>十一</item>
+        <item>十二</item>
+    </string-array>
+    <string-array name="prize_lunar_month_array"
+        translatable="false">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一</item>
+        <item>十二</item>
+    </string-array>
+    <string-array name="prize_tens_prefix_array"
+        translatable="false">
+        <item>初</item>
+        <item>十</item>
+        <item>廿</item>
+        <item>卅</item>
+    </string-array>
+    
+     <integer-array name="prize_lunar_info">
+        <item>0x04bd8</item>
+        <item>0x04ae0</item>
+        <item>0x0a570</item>
+        <item>0x054d5</item>
+        <item>0x0d260</item>
+        <item>0x0d950</item>
+        <item>0x16554</item>
+        <item>0x056a0</item>
+        <item>0x09ad0</item>
+        <item>0x055d2</item>
+
+        <item>0x04ae0</item>
+        <item>0x0a5b6</item>
+        <item>0x0a4d0</item>
+        <item>0x0d250</item>
+        <item>0x1d255</item>
+        <item>0x0b540</item>
+        <item>0x0d6a0</item>
+        <item>0x0ada2</item>
+        <item>0x095b0</item>
+        <item>0x14977</item>
+
+        <item>0x04970</item>
+        <item>0x0a4b0</item>
+        <item>0x0b4b5</item>
+        <item>0x06a50</item>
+        <item>0x06d40</item>
+        <item>0x1ab54</item>
+        <item>0x02b60</item>
+        <item>0x09570</item>
+        <item>0x052f2</item>
+        <item>0x04970</item>
+
+        <item>0x06566</item>
+        <item>0x0d4a0</item>
+        <item>0x0ea50</item>
+        <item>0x06e95</item>
+        <item>0x05ad0</item>
+        <item>0x02b60</item>
+        <item>0x186e3</item>
+        <item>0x092e0</item>
+        <item>0x1c8d7</item>
+        <item>0x0c950</item>
+
+        <item>0x0d4a0</item>
+        <item>0x1d8a6</item>
+        <item>0x0b550</item>
+        <item>0x056a0</item>
+        <item>0x1a5b4</item>
+        <item>0x025d0</item>
+        <item>0x092d0</item>
+        <item>0x0d2b2</item>
+        <item>0x0a950</item>
+        <item>0x0b557</item>
+
+        <item>0x06ca0</item>
+        <item>0x0b550</item>
+        <item>0x15355</item>
+        <item>0x04da0</item>
+        <item>0x0a5d0</item>
+        <item>0x14573</item>
+        <item>0x052d0</item>
+        <item>0x0a9a8</item>
+        <item>0x0e950</item>
+        <item>0x06aa0</item>
+
+        <item>0x0aea6</item>
+        <item>0x0ab50</item>
+        <item>0x04b60</item>
+        <item>0x0aae4</item>
+        <item>0x0a570</item>
+        <item>0x05260</item>
+        <item>0x0f263</item>
+        <item>0x0d950</item>
+        <item>0x05b57</item>
+        <item>0x056a0</item>
+
+        <item>0x096d0</item>
+        <item>0x04dd5</item>
+        <item>0x04ad0</item>
+        <item>0x0a4d0</item>
+        <item>0x0d4d4</item>
+        <item>0x0d250</item>
+        <item>0x0d558</item>
+        <item>0x0b540</item>
+        <item>0x0b5a0</item>
+        <item>0x195a6</item>
+
+        <item>0x095b0</item>
+        <item>0x049b0</item>
+        <item>0x0a974</item>
+        <item>0x0a4b0</item>
+        <item>0x0b27a</item>
+        <item>0x06a50</item>
+        <item>0x06d40</item>
+        <item>0x0af46</item>
+        <item>0x0ab60</item>
+        <item>0x09570</item>
+
+        <item>0x04af5</item>
+        <item>0x04970</item>
+        <item>0x064b0</item>
+        <item>0x074a3</item>
+        <item>0x0ea50</item>
+        <item>0x06b58</item>
+        <item>0x055c0</item>
+        <item>0x0ab60</item>
+        <item>0x096d5</item>
+        <item>0x092e0</item>
+
+        <item>0x0c960</item>
+        <item>0x0d954</item>
+        <item>0x0d4a0</item>
+        <item>0x0da50</item>
+        <item>0x07552</item>
+        <item>0x056a0</item>
+        <item>0x0abb7</item>
+        <item>0x025d0</item>
+        <item>0x092d0</item>
+        <item>0x0cab5</item>
+
+        <item>0x0a950</item>
+        <item>0x0b4a0</item>
+        <item>0x0baa4</item>
+        <item>0x0ad50</item>
+        <item>0x055d9</item>
+        <item>0x04ba0</item>
+        <item>0x0a5b0</item>
+        <item>0x15176</item>
+        <item>0x052b0</item>
+        <item>0x0a930</item>
+
+        <item>0x07954</item>
+        <item>0x06aa0</item>
+        <item>0x0ad50</item>
+        <item>0x05b52</item>
+        <item>0x04b60</item>
+        <item>0x0a6e6</item>
+        <item>0x0a4e0</item>
+        <item>0x0d260</item>
+        <item>0x0ea65</item>
+        <item>0x0d530</item>
+
+        <item>0x05aa0</item>
+        <item>0x076a3</item>
+        <item>0x096d0</item>
+        <item>0x04bd7</item>
+        <item>0x04ad0</item>
+        <item>0x0a4d0</item>
+        <item>0x1d0b6</item>
+        <item>0x0d250</item>
+        <item>0x0d520</item>
+        <item>0x0dd45</item>
+
+        <item>0x0b5a0</item>
+        <item>0x056d0</item>
+        <item>0x055b2</item>
+        <item>0x049b0</item>
+        <item>0x0a577</item>
+        <item>0x0a4b0</item>
+        <item>0x0aa50</item>
+        <item>0x1b255</item>
+        <item>0x06d20</item>
+        <item>0x0ada0</item>
+    </integer-array>
+
+    <integer-array name="prize_solar_term_days">
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>6</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>24</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>6</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>24</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>6</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>9</item>
+        <item>24</item>
+        <item>8</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>3</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>21</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>6</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>3</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>24</item>
+        <item>8</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>6</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>3</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>6</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>3</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>6</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>3</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>6</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>6</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>3</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>21</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>18</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>5</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>6</item>
+        <item>21</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>21</item>
+        <item>7</item>
+        <item>23</item>
+        <item>7</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+
+        <item>6</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>4</item>
+        <item>19</item>
+        <item>5</item>
+        <item>20</item>
+        <item>5</item>
+        <item>21</item>
+        <item>6</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+        <item>7</item>
+        <item>22</item>
+        <item>8</item>
+        <item>23</item>
+        <item>7</item>
+        <item>22</item>
+        <item>6</item>
+        <item>21</item>
+
+    </integer-array>
+    
+    <string-array name="days_in_week">
+    	<item>Sun.</item>
+    	<item>Mon.</item>
+    	<item>Tues.</item>
+    	<item>Wed.</item>
+    	<item>Thurs.</item>
+    	<item>Fri.</item>
+    	<item>Sat.</item>
+    </string-array>
+    
+    <string-array name="get_more_items">
+    	<item>All Agendas</item>
+    	<item>Jump to Selected Date</item>
+    	<item>Setting</item>
+    </string-array>
+    
+    <string-array name="prize_gerge_month_array">
+        <item>Jan.</item>
+        <item>Feb.</item>
+        <item>Mar.</item>
+        <item>Apr.</item>
+        <item>May.</item>
+        <item>Jun.</item>
+        <item>Jul.</item>
+        <item>Aug.</item>
+        <item>Sep.</item>
+        <item>Oct.</item>
+        <item>Nov.</item>
+        <item>Dec.</item>
+    </string-array>
+    
+</resources>

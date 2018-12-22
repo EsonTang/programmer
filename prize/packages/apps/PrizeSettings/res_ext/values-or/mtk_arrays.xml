@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="auto_time_entries">
+    <item>नेटवर्क द्वारा प्रदान समय का उपयोग करें</item>
+    <item>GPS द्वारा प्रदान समय का उपयोग करें</item>
+    <item>बंद करें</item>
+  </string-array>
+  <string-array name="sim_slot">
+    <item>"(अनिर्दिष्ट)"</item>
+    <item>सिम स्लॉट 1</item>
+    <item>सिम स्लॉट 2</item>
+  </string-array>
+  <string-array name="wfd_resolution_entry">
+    <item>1080p FHD (वीडियो के लिए)</item>
+    <item>720p HD (गेम के लिए)</item>
+  </string-array>
+</resources>

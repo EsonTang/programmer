@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppNetControl</string>
+	<string name="pkg_list">All Application</string>
+	
+	<string name="g_string">mobile data</string>
+	<string name="w_string">WLAN</string>
+	<string name="layout_title">APP NetWork Control</string>
+</resources>

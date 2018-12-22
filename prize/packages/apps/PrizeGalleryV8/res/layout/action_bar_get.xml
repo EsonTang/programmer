@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/statusbar_add_actionbar_height_divide"
+    android:background="@drawable/ic_action_bar_divide_prize"
+    android:paddingTop="@dimen/statusbar_height"
+    android:paddingBottom="@dimen/divide_height">
+
+    <ImageView
+        android:id="@+id/im_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_title_back"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_height_prize"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_large"
+        android:gravity="center_vertical"
+        android:text="@string/select_image"/>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/cootek_avatar_dialog_width"
+    android:layout_height="@dimen/cootek_avatar_dialog_height"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/cootek_avatar_dialog_width"
+        android:layout_height="@dimen/cootek_avatar_dialog_height"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/cootek_avatar_verti_padding">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/cootek_avatar_hori_padding"
+                android:paddingRight="@dimen/cootek_avatar_hori_padding">
+
+                <ImageView
+                    android:id="@+id/avatar_man"
+                    android:layout_width="@dimen/cootek_avatar_width"
+                    android:layout_height="@dimen/cootek_avatar_width"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/cootek_header_man" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/cootek_avatar_hori_padding"
+                android:paddingRight="@dimen/cootek_avatar_hori_padding">
+
+                <ImageView
+                    android:id="@+id/avatar_woman"
+                    android:layout_width="@dimen/cootek_avatar_width"
+                    android:layout_height="@dimen/cootek_avatar_width"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/cootek_header_woman" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/cootek_avatar_verti_padding">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/cootek_avatar_hori_padding"
+                android:paddingRight="@dimen/cootek_avatar_hori_padding">
+
+                <ImageView
+                    android:id="@+id/avatar_man2"
+                    android:layout_width="@dimen/cootek_avatar_width"
+                    android:layout_height="@dimen/cootek_avatar_width"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/cootek_header_man2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/cootek_avatar_hori_padding"
+                android:paddingRight="@dimen/cootek_avatar_hori_padding">
+
+                <ImageView
+                    android:id="@+id/avatar_woman2"
+                    android:layout_width="@dimen/cootek_avatar_width"
+                    android:layout_height="@dimen/cootek_avatar_width"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/cootek_header_woman2" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

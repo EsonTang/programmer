@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.ui.RotateImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_indicator"
+    style="@style/OnScreenPickerFixed"
+    android:src="@drawable/ic_setting"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="@dimen/picker_group_margintop"
+    android:layout_marginEnd="@dimen/setting_indicator_margin_end"
+    android:contentDescription="@string/accessibility_second_level_indicators"
+    />

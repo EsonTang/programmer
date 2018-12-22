@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_Llyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_folder"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <!-- Tab 的标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/action_bar_tab"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="@dimen/tab_height_40dp">
+
+        <TextView
+            android:id="@+id/bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingBottom="0dip"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            tools:text="标题" />
+
+        <ImageButton
+            android:id="@+id/action_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/action_go_downQueen"
+            android:background="@drawable/folder_fresh_sl" />
+
+        <ImageButton
+            android:id="@+id/action_go_downQueen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19.5dp"
+            android:background="@drawable/folder_goqueue_sl" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/reload_layout" />
+
+        <include
+            layout="@layout/folder_waiting_view" />
+
+        <GridView
+            android:id="@+id/gridview_local_app_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="32.5dp"
+            android:listSelector="@android:color/transparent"
+            android:horizontalSpacing="@dimen/folder_gridview_horizontalSpacing"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/folder_gridview_verticalSpacing" />
+    </RelativeLayout>
+</LinearLayout>

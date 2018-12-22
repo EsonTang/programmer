@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- App name -->
+    <string name="app_name">Music</string>
+    <string name="app_version_number">1.0</string>
+
+    <!-- Content descriptions for the Bottom Action Bar -->
+    <string name="cd_favorite">Make this a favorite song</string>
+    <string name="cd_search">Search through your music</string>
+    <string name="cd_overflow">View more options</string>
+    <string name="cd_bottom_action_bar_album_art">Album art for this song</string>
+    <string name="cd_repeat">Repeat one or all</string>
+    <string name="cd_previous">Skip backwards</string>
+    <string name="cd_play">Play and pause</string>
+    <string name="cd_next">Skip forwards</string>
+    <string name="cd_shuffle">Shuffle tracks</string>
+
+    <!-- AudioPlayer title -->
+    <string name="nowplaying">Now playing</string>
+
+    <!-- Used to indicate the number of albums for an artist -->
+    <plurals name="Nalbums">
+
+        <!-- Number of albums is one -->
+        <item quantity="one">1 album</item>
+        <!-- Number of albums is more than one -->
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> albums</item>
+    </plurals>
+
+    <!-- Used to indicate the number of songs for an album -->
+
+    <plurals name="Nsongs">
+
+        <!-- Number of songs is one -->
+        <item quantity="one">1 song</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> songs</item>
+    </plurals>
+
+    <!-- Toasts after adding song(s) to playlists -->
+    <plurals name="NNNtrackstoplaylist">
+        <!-- message shown when one song was added -->
+        <item quantity="one">1 song added to playlist</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> songs added to playlist</item>
+    </plurals>
+    <!-- Toasts after removing song from playlist -->
+    <string name="track_removed_from_playlist">\"%s\" removed from playlist</string>
+    
+
+    <!-- Headers -->
+    <string name="album_header">ALBUM LIST</string>
+    <string name="track_header">TRACK LIST</string>
+
+    <!-- Options MenuItems -->
+    <string name="settings">Settings</string>
+    <string name="shuffle_all">全部随机播放</string>
+    <string name="share">Share</string>
+    <string name="play_store">Play Store</string>
+
+    <!-- Set track as ringtone -->
+    <string name="set_as_ringtone">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" 已设置为手机铃声</string>
+
+    <!-- Do not translate. Duration format for duration < 1 hour -->
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%5$02d</xliff:g></string>
+    <!-- Do not translate. Duration format for duration >= 1 hour -->
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%3$02d:%5$02d</xliff:g></string>
+
+    <!-- Transient popup message shown after renaming a playlist -->
+    <string name="rename_playlist">Rename playlist</string>
+
+    <!-- Shuffle and repeat messages -->
+  <string name="repeat_one">重复播放当前歌曲</string>
+    <string name="repeat_all">重复播放所有歌曲</string>
+    <string name="repeat_off">重复播放已关闭</string>
+    <string name="shuffle_off">随机播放已关闭</string>
+    <string name="shuffle_on">随机播放已开启</string>
+
+    <!-- Share Intent -->
+    <string name="now_listening_to">Now listening to:</string>
+    <string name="by">by</string>
+    <string name="share_track_using">Share track using</string>
+
+    <!-- ContextMenu items -->
+    <string name="play_all">Play all</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="use_as_ringtone">Use as ringtone</string>
+    <string name="delete_playlist">Delete playlist</string>
+    <string name="search">Search</string>
+    <string name="remove">Remove from playlist</string>
+    <string name="image_edit_gallery">New image from gallery</string>
+    <string name="image_edit_file">Original image from file</string>
+    <string name="image_edit_lastfm">Fetch image from last.fm</string>
+    <string name="image_edit_web">Search the web for an image</string>
+    
+    <!--  ContextMenu Headers -->
+    <string name="image_edit_albums">Edit Album Artwork</string>
+    <string name="image_edit_artists">Edit Artist Image</string>
+    <string name="image_edit_genre">Edit Genre Image</string>
+    <string name="image_edit_playlist">Edit Playlist Image</string>
+
+    <!-- App Widgets -->
+    <string name="apollo_1x1">Apollo (1x1)</string>
+    <string name="apollo_4x1">Apollo (4x1)</string>
+    <string name="apollo_4x2">Apollo (4x2)</string>
+
+    <!-- Unknown genre name -->
+    <string name="unknown">Unknown</string>
+
+    <!-- Settings -->
+    <string name="about">About ApolloMod</string>
+    <string name="eqalizer">Equalizer</string>
+    <string name="header_interface">Interface</string>
+    <string name="settings_storage_category">Storage</string>
+    <string name="themes">Themes</string>
+    <string name="apollo_themes">Select theme for Apollo</string>
+    <string name="select_theme">Select your theme</string>
+    <string name="version">ApolloMod Version</string>
+    <string name="tab_visibility_title">Tab visibility</string>
+    <string name="tab_visibility_summary">Choose which tabs are displayed</string>
+    <string name="settings_delete_cache_title">Delete cache</string>
+    <string name="settings_delete_cache_summary">Remove all cached images</string>
+    <string name="delete_warning">This will permanently delete the cached image entries</string>
+    <string name="visualizer_title">Audio visualizer</string>
+    <string name="visualizer_summary">Choose to display audio visualizations during playback</string>
+	<string name="widget_style_title">Widget Style</string>
+    <string name="widget_style_summary">Choose the widget design</string>
+    <string name="widget_style_dark">Holo Dark</string>
+    <string name="widget_style_light">Holo Light</string>
+    <string name="about_apollomod_title">About ApolloMod</string>
+    <string name="about_apollomod_message"><![CDATA[ApolloMod is an open source music player based on CyanogenMod\'s Apollo Music Player and released under the same Apache License.\n\n
+License Link:\n
+        http://www.apache.org/licenses/LICENSE-2.0.html \n\n
+ApolloMod Source Code:\n
+https://github.com/Splitter/android_packages_apps_apolloMod  \n\n
+Original Apollo Source Code: \n
+https://github.com/CyanogenMod/android_packages_apps_Apollo/tree/cm-10.1
+        
+    ]]></string>
+    <string name="dependencies">Dependency Licenses</string>
+    <string name="dependencies_title">Dependency Licenses:</string>
+    
+    <!-- Settings keys -->
+    <string name="key_themes" translatable="false">themepreview</string>
+    <string name="key_themes_package" translatable="false">themePackageName</string>
+    <string name="key_themes_preferences" translatable="false">themePrefences</string>
+    <string name="key_build_version" translatable="false">build_version</string>
+    <string name="key_build_depends" translatable="false">build_depends</string>
+    <string name="key_tabs_enabled" translatable="false">tabs_enabled</string>
+    <string name="key_visualization_type" translatable="false">visualization_type</string>
+    <string name="key_widget_style" translatable="false">widget_type</string>
+    <string name="key_delete_cache" translatable="false">delete_cache</string>
+
+    <!-- Theme layout Buttons -->
+    <string name="apply_theme">Apply theme</string>
+    <string name="get_more_themes">Get more themes</string>
+
+    <!-- Playlists menu -->
+    <string name="favorite">favorite</string>
+    <string name="queue">Queue</string>
+    <string name="new_playlist">New</string>
+    <string name="new_playlist_name_template">Playlist <xliff:g id="number">%d</xliff:g></string>
+    <string name="save">Save</string>
+    <string name="overwrite">Overwrite</string>
+     <!--  Simple EQ -->
+    <string name="simple_eq_page_title">Equalizer</string>
+    <string name="simple_eq_bass">Bass Boost</string>
+    <string name="simple_eq_equalizer">Equalizer</string>
+    <string name="simple_eq_band0">15Hz</string>
+    <string name="simple_eq_band1">62Hz</string>
+    <string name="simple_eq_band2">250Hz</string>
+    <string name="simple_eq_band3">1kHz</string>
+    <string name="simple_eq_band4">5kHz</string>
+    <string name="simple_eq_band5">16kHz</string>
+    <!-- Visualizations -->
+    <string name="visual_none">None</string>
+    <string name="visual_bargraph">Bar Graph</string>
+    <string name="visual_solidbargraph">Solid Bar Graph</string>
+    <string name="visual_waveform">Waveform</string>
+
+    <!-- Tabs -->
+    <string name="tab_recent_play">Recent play</string>
+    <string name="tab_recent_add">Recently added</string>
+    <string name="tab_artists">singer</string>
+    <string name="tab_albums">Album</string>
+    <string name="tab_songs">song</string>
+    <string name="tab_playlists">playlist</string>
+    <string name="tab_genres">schools</string>
+
+    <!-- Something went wrong -->
+    <string name="error">error</string>
+
+    <!-- External file dialog -->
+    <string name="play_external_question_msg">Choose to apply to: \n\n<b><xliff:g id="name">%s</xliff:g></b>Operation</string>
+    <string name="play_external_question_button_play">play</string>
+    <string name="play_external_question_button_queue">queue</string>
+    <string name="play_external_question_button_cancel">cancel</string>
+    <string name="play_external_error">Cannot play file</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="confirm_delete_song_file">delete</string>
+    
+      <string name="no_result">Not search results</string>
+      <string name="all_music">All music</string>
+      <string name="pl_select_songs">Please choose songs</string>
+      <string name="all_select">check all </string>
+      <string name="no_select">Reverse selection</string>
+      <string name="all">All</string>
+      <string name="delete">Delete</string>
+      <string name="add">Add</string>
+      <string name="rings">Ring</string>
+      <string name="sort">Store Up</string>
+      <string name="addsongs">Add Songs</string>
+      <string name="nomusic_in_list">No music in list </string>
+      <string name="nolyric_pl_download">No lyrics</string>
+      <string name="save_lyric_to">Please save the lyrics to</string>
+      <string name="my_list">My song</string>
+      <string name="edit">Edit</string>
+      <string name="album">Album</string>
+      <string name="song">Song</string>
+      
+      <string name="my_love">My Love</string>
+      <string name="create_list">Create New List</string>
+      <string name="create_play_list">Create New Play List</string>
+      <string name="add_song">Add</string>
+      
+
+      <string name="shuff_all">Play All Songs Random</string>
+      <string name="add_to">Add To</string>
+      <string name="rename">Rename</string>
+      <string name="new_play_list">Create New Play List</string>
+      <string name="pl_select_list">Please Chooise Song List</string>
+      <string name="listname">List Name</string>
+      <string name="singer">Singer：</string>
+      <string name="search_lyric">Search Lyric</string>
+      <string name="songname">Song Name：</string>
+      <string name="confirm_delete_playlsit">Sure Delete This List</string>
+      <string name="setring">Set Ring</string>
+      <string name="aboutSinger">About Singer</string>
+      <string name="please_input_songs_key">Please enter a keyword for the song</string>
+     
+      <string name="addSuccessful">Add Sucesss!</string>
+      <string name="no_add_song">No Songs Added!</string>
+      <string name="deleteSuccessful">Delete Success!</string>
+      <string name="deleteFail">Delete Failed!</string>
+      <string name="Song_has_been">Song Exeit!</string>
+      <string name="Not_selected_playlists">No List Selected!</string>
+      <string name="List_name_repetition">List name repetition!</string>
+      <string name="delete_from_list">Delete From List</string>
+      <string name="songs">Songs</string>
+      <string name="collectionSuccessful">Collection Success！</string>
+      <string name="music">Music</string>
+      <string name="name_cannot_be_empty">List name cannot be empty</string>
+      <string name="input_list_name">Enter 0-14 character list name</string>
+      <string name="not_support_wma">Wma format songs are not supported for the time being</string>
+      <string name="not_music_in_list">No song in the playlist</string>
+      <string name="sort_love_list_yet">have sort into my favorite list</string>
+      <string name="already_cancel_sort">Has been canceled collection</string>
+      <string name="del_suc">Delete Success</string>
+      <string name="del_faile">Delete Failed</string>
+      <string name="pl_select_item">Please select a song entry</string>
+      
+      <string name="create_fail">Create List Failed！</string>
+      <string name="adding">Adding...</string>
+      <string name="collectioning">collecting ...</string>
+      <string name="deleteing">Being deleted ...</string>
+      <string name="no_other_list">No other list</string>
+      <string name="song_has_bean">The song is already in the list</string>
+      <string name="no_songs_play">No song playback</string>
+      <string name="online_music">Online music</string>
+      <string name="local_music">Local music</string>
+      <string name="uninstall_xiami">XiaMi music is not installed</string>
+      <string name="xiami_music">xiami music</string>
+      <string name="uninstall_duomi">DuoMi music is not installed</string>
+      <string name="duomi_music">duomi music</string>
+      <string name="audio_player_current_time_text_default">0:00</string>
+      <string name="failed_to_get_the_lyrics">Failed to get the lyrics</string>
+      <string name="sure_you_want_to_delete">Sure you want to delete</string>
+</resources>

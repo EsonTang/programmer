@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    android:transitionName="relayout">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_id"
+        android:focusableInTouchMode="true" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar_no_tab"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/reload_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar_no_tab"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_bar_no_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+       >
+
+        <RelativeLayout
+            android:id="@+id/toolbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height_40dp"
+            android:clickable="true" >
+
+            <ImageButton
+                android:id="@+id/action_bar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/action_bar_back_selector" />
+
+            <TextView
+                android:id="@+id/app_title_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/action_bar_search"
+                android:layout_toRightOf="@id/action_bar_back"
+                android:singleLine="true"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/action_bar_menu_right"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true" />
+
+            <ImageButton
+                android:id="@+id/action_bar_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/action_go_downQueen"
+                android:background="@drawable/action_bar_search_selector" />
+
+            <ImageButton
+                android:id="@+id/action_go_downQueen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="8dp"
+                android:layout_marginLeft="11dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btn_comment_sl"
+                android:gravity="center"
+                android:onClick="goToComment" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_id"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_gray_color" />
+
+
+        <!--<com.prize.appcenter.ui.widget.DownLoadButtonDetail-->
+            <!--android:id="@+id/detailinfo_download_id"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/detail_button_height"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginLeft="40dip"-->
+            <!--android:layout_marginRight="40dip"-->
+            <!--/>-->
+        <com.prize.appcenter.ui.widget.progressbutton.DetailDownloadProgressButton
+            android:id="@+id/detailinfo_download_id"
+            android:layout_width="280dp"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:progressbtn_show_progress="true"
+            app:progressbtn_radius="20dp"
+            app:progressbtn_text_size="14dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

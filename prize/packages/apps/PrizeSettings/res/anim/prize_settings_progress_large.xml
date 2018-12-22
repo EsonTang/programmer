@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/prize_progress_large_01"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_02"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_03"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_04"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_05"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_06"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_07"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_08"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_09"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_10"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_11"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_12"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_13"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_14"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_15"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_16"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_17"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_18"
+        android:duration="50"/>
+    <item
+        android:drawable="@drawable/prize_progress_large_19"
+        android:duration="50"/>
+	
+
+</animation-list>

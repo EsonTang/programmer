@@ -1,0 +1,28 @@
+package com.prize.qihoo.lib.atv.holder;
+
+import android.content.Context;
+import android.view.View;
+import android.widget.TextView;
+
+
+/**
+ * Created by Bogdan Melnychuk on 2/11/15.
+ */
+public class SimpleViewHolder extends com.prize.qihoo.lib.atv.model.TreeNode.BaseNodeViewHolder<Object> {
+
+    public SimpleViewHolder(Context context) {
+        super(context);
+    }
+
+    @Override
+    public View createNodeView(com.prize.qihoo.lib.atv.model.TreeNode node, Object value) {
+        final TextView tv = new TextView(context);
+        tv.setText(String.valueOf(value));
+        return tv;
+    }
+
+    @Override
+    public void toggle(boolean active) {
+
+    }
+}

@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/text_color_f5f5f5"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/pad_left_right_15dp"
+            android:text="@string/notice_caution"
+            android:textColor="@color/text_color_6c6c6c"
+            android:textSize="@dimen/text_size_micro" />
+        <!-- 更新提醒设置 -->
+
+
+        <RelativeLayout
+            android:id="@+id/update_notify_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/update_notify_set_btn_iv"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/update_notify_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notify_game_setting"
+                    android:textColor="@color/text_color_404040"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/notify_game_receive_push_content"
+                    android:textColor="@color/text_color_9a9a9a"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/update_notify_set_btn_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/notify_game_setting"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:background="@color/bg_gray_color" />
+
+
+        <RelativeLayout
+            android:id="@+id/push_notify_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/push_notification_set_btn_iv"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/push_notify_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/receive_push_notification"
+                    android:textColor="@color/text_color_404040"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/receive_push_content"
+                    android:textColor="@color/text_color_9a9a9a"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/push_notification_set_btn_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:background="@color/bg_gray_color" />
+
+
+        <RelativeLayout
+            android:id="@+id/garbage_clean_Rlyt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/garbage_clean_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/garbage_clean_notification"
+                    android:textColor="@color/text_color_404040"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/garbage_clean_notification_content"
+                    android:textColor="@color/text_color_9a9a9a"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/garbage_clean_Sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/text_color_f5f5f5"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/pad_left_right_15dp"
+            android:text="@string/download_settings"
+            android:textColor="@color/text_color_6c6c6c"
+            android:textSize="@dimen/text_size_micro" />
+
+        <RelativeLayout
+            android:id="@+id/install_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/install_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/install_background"
+                    android:textColor="@color/text_color_262626"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/install_description"
+                    android:textColor="@color/text_color_737373"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/install_silent_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/set_only_WLAN"
+                android:paddingTop="5dip"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/auto_update_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/auto_update_sw"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auto_update_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/auto_update"
+                    android:textColor="@color/text_color_404040"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/auto_update_content"
+                    android:textColor="@color/text_color_9a9a9a"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/auto_update_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/notify_game_setting"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:background="@color/bg_gray_color" />
+
+        <RelativeLayout
+            android:id="@+id/save_traffic_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/save_traffic_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_traffic_mode"
+                    android:textColor="@color/text_color_404040"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_traffic_mode_content"
+                    android:textColor="@color/text_color_9a9a9a"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/save_traffic_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/notify_game_setting"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:background="@color/bg_gray_color" />
+
+        <!-- wifi设置 -->
+
+        <RelativeLayout
+            android:id="@+id/wifi_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wifi_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/set_only_WLAN"
+                    android:textColor="@color/text_color_404040"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/turn_on_download_under_WLAN"
+                    android:textColor="@color/text_color_9a9a9a"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/wifi_set_btn_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/set_only_WLAN"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material" />
+        </RelativeLayout>
+        <!-- 分割线 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/app_title"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/pad_left_right_15dp"
+            android:text="@string/install_set"
+            android:textColor="@color/text_color_737373"
+            android:textSize="@dimen/text_size_micro"
+            android:visibility="gone" />
+        <!-- 分割线 -->
+
+        <RelativeLayout
+            android:id="@+id/paackage_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/package_delete_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/set_delete_package"
+                android:textColor="@color/text_color_262626"
+                android:textSize="@dimen/text_size_small" />
+
+            <Switch
+                android:id="@+id/package_set_del_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/set_only_WLAN"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/package_path_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/path_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/package_path_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/package_path"
+                    android:textColor="@color/text_color_262626"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/package_save_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ll"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_262626"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/package_path_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/path_ll"
+                android:text="@string/package_path_content"
+                android:textColor="@color/text_color_737373"
+                android:textSize="@dimen/text_size_micro" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/text_color_f5f5f5"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/pad_left_right_15dp"
+            android:text="@string/other"
+            android:textColor="@color/text_color_6c6c6c"
+            android:textSize="@dimen/text_size_micro" />
+
+        <RelativeLayout
+            android:id="@+id/folder_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/folder_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/set_folder"
+                    android:textColor="@color/text_color_404040"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hot_game_folder"
+                    android:textColor="@color/text_color_9a9a9a"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/folder_set_btn_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/set_only_WLAN"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:id="@+id/shortcut_line"
+            android:background="@color/bg_gray_color" />
+
+        <RelativeLayout
+            android:id="@+id/clear_cache_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/clear_cache_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/clear_cache"
+                    android:textColor="@color/text_color_404040"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/cache_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ll"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_262626"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:text="@string/clear_cache_content"
+                android:textColor="@color/text_color_9a9a9a"
+                android:textSize="@dimen/text_size_micro" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:background="@color/bg_gray_color" />
+
+        <RelativeLayout
+            android:id="@+id/about_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_55dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:layout_marginRight="@dimen/pad_left_right_15dp">
+
+            <TextView
+                android:id="@+id/about_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/set_about"
+                android:textColor="@color/text_color_404040"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/about_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_new_version"
+                android:contentDescription="@string/notify_game_setting"
+                android:gravity="center"
+                android:text="NEW"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_micro"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/pad_left_right_15dp"
+            android:background="@color/bg_gray_color" />
+
+
+        <TextView
+            android:id="@+id/login_out_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/personal_login_out_btn_selector"
+            android:gravity="center"
+            android:text="@string/logout_account"
+            android:textColor="@color/text_color_ff9732"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

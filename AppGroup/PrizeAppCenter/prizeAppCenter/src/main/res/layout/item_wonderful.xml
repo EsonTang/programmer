@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ProgressBar"
+        android:gravity="center_horizontal"
+        android:padding="6dp">
+
+        <com.prize.appcenter.ui.widget.CustomImageView
+            android:id="@+id/game_iv"
+            style="@style/game_item_image_55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/alert_title"
+            android:transitionName="robot"
+            app:iv_radius="10dp" />
+
+        <TextView
+            android:id="@+id/game_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_micro" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/download_count_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/game_name_tv"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:lines="1"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/text_size_20" />-->
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/state_tv"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/state_tv"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="安装"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_26" />
+
+</merge>

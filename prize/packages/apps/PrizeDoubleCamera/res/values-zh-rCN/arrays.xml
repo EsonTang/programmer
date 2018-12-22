@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- HDR -->
+    <array name="pref_hdr_icons" translatable="false">
+        <item>@drawable/ic_mode_hdr_normal</item>
+        <item>@drawable/ic_mode_hdr_focus</item>
+    </array>
+    <string-array name="watermark_type">
+        <item>最近</item>
+        <item>创意</item>
+        <item>美食</item>
+        <item>时间</item>
+        <item>地点</item>
+        <item>天气</item>
+        <item>特色</item>
+    </string-array>
+</resources>

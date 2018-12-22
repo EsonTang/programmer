@@ -1,0 +1,71 @@
+<!--
+  ~ Copyright (C) 2012 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+-->
+
+<resources>
+
+    <dimen name="contact_bladeview_popup_text_size">20dp</dimen>
+    <dimen name="contact_bladeview_width">8dip</dimen> <!-- prize-change-huangliemin-2016-7-20-15dip -->
+    <dimen name="contact_bladeview_min_height">8dip</dimen>
+    <dimen name="contact_bladeview_popup_width">170dip</dimen>
+    <dimen name="contact_bladeview_gap">2dip</dimen>
+    <dimen name="lyt_search_padding_top_bottom">5dp</dimen>
+    <dimen name="lyt_tab_padding_left_right">20dp</dimen>
+    <dimen name="lyt_tab_padding_top_bottom">10dp</dimen>
+    <dimen name="prize_bottom_button_padding_bottom_quick">0dp</dimen>
+    <dimen name="quickcontact_maximum_title_size_origin">91dp</dimen>
+
+    <dimen name="prize_search_editor_hight">28.5dp</dimen>
+    <dimen name="prize_search_editor_marginRight">20dp</dimen>
+    <dimen name="prize_search_editor_layout_hight">41dp</dimen>
+    <dimen name="prize_search_editor_text_size">12sp</dimen>
+    <dimen name="prize_gourp_button_hight">50dp</dimen>
+    <dimen name="prize_contact_list_item_text_size"><!--14.8dp-->15sp</dimen>   <!--prize adaptation big-font by zhaojian 20180601-->
+    <dimen name="prize_contact_section_header_text_size">10.56dp</dimen>
+    <dimen name="prize_contact_popupmenuItem_text_size"><!--14.8dp-->14.8sp</dimen>
+    <dimen name="prize_contact_popupmenuItem_hight">49.5dp</dimen>
+    <dimen name="prize_contact_popupmenuItem_marginRight">13.2dp</dimen>
+    <dimen name="prize_title_text_size">16sp</dimen>
+    <dimen name="prize_editor_menu_text_size">13sp</dimen>
+    <dimen name="prize_editor_menu_margin_right">93dp</dimen>
+    <dimen name="prize_editor_menu_margin_left">93dp</dimen>
+    <dimen name="prize_action_bar_height">39.6dp</dimen>
+    <dimen name="prize_actionbar_content_Insert_start">15dp</dimen>
+    <dimen name="prize_bladeview_text_size">12dp</dimen>
+
+
+    <dimen name="prize_card_layout_padding_left_right">6dp</dimen>
+    <dimen name="prize_card_layout_padding_top">12dp</dimen>
+    <dimen name="prize_content_padding">14dp</dimen>
+    <dimen name="preference_fragment_padding_side">16dp</dimen>
+    <dimen name="contact_list_custom_margin_bottom">64dp</dimen>
+    <dimen name="prize_double_content_height">61dp</dimen>
+    <dimen name="prize_single_title_height">30dp</dimen>
+    <dimen name="prize_actionbar_button_margin">20dp</dimen>
+    <dimen name="prize_bottom_button_shadow_height">52dp</dimen>
+    <dimen name="prize_single_content_height">50dp</dimen>
+    <dimen name="prize_actionbar_custom_height">40dp</dimen>
+    <dimen name="prize_popup_margin_left_right">12dp</dimen>
+    <dimen name="prize_popup_margin_bottom">10dp</dimen>
+    <dimen name="prize_bottom_text_botton_width">60dp</dimen>
+    <dimen name="prize_process_dialog_width">205dp</dimen>
+    <dimen name="prize_circle_percent_view_radius">23dp</dimen>
+    <dimen name="prize_single_content_size">15sp</dimen>
+    <dimen name="prize_subtitle_text_size">13sp</dimen>
+    <dimen name="prize_botttom_button_text_size">15sp</dimen>
+    <dimen name="prize_exchange_account_ic_width">28dp</dimen>
+    <dimen name="prize_divider_height">1px</dimen>
+
+</resources>

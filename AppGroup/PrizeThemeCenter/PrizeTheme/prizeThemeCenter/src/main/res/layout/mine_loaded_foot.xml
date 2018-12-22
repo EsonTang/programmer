@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/mine_loaded_delete_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_gray_color" />
+
+    <TextView
+        android:id="@+id/mine_loaded_delete_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/text_color_9a9a9a"
+        android:text="@string/common_delete_text"
+        android:drawableTop="@drawable/icon_delete_selector"/>
+
+
+
+</RelativeLayout>

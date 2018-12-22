@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/dimens.xml
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <dimen name="hint_y_offset">64dip</dimen>
+    <dimen name="timerView_TextSize_Big">90px</dimen>
+    <dimen name="timerView_TextSize_Small">70px</dimen>
+    <!-- @prize fanjunchen 2015-05-14 start -->
+    <dimen name="radio_item_height">48dp</dimen>
+    <dimen name="radio_item_width">120dp</dimen>
+    <dimen name="select_font_size">14sp</dimen>
+    <dimen name="pop_item_height">48dp</dimen>
+    <dimen name="pop_item_width">145dp</dimen>
+    <dimen name="pop_item_padding_left">13dp</dimen>
+    <dimen name="pop_item_font_size">14sp</dimen>
+    <dimen name="record_top">154dp</dimen>
+    <dimen name="btn_group_marginbottom">15dp</dimen>
+    
+    <dimen name="title_height">51dp</dimen>
+    <dimen name="title_padding_left">20dp</dimen>
+    <dimen name="title_font_size">16sp</dimen>
+    <dimen name="title_hint_font_size">14sp</dimen>
+    <dimen name="title_hint_margin_top">10dp</dimen>
+    <dimen name="title_hint_padding">4dp</dimen>
+    
+    <dimen name="play_time_font_size">42sp</dimen>
+    <dimen name="play_time_margin_top">-12dp</dimen>
+    
+    <dimen name="play_file_font_size">20sp</dimen>
+    
+    <dimen name="progressbar_height">2dp</dimen>
+    <dimen name="progressbar_margin_top">10dp</dimen>
+    <dimen name="progressbar_margin_start">20dp</dimen>
+    <dimen name="mic_top">36dp</dimen>
+    <dimen name="group_btn_width">260dp</dimen>
+    
+    <dimen name="list_title_height">56dp</dimen>
+    <dimen name="list_header_btn_paddingleft">10dp</dimen>
+    <dimen name="list_header_btn_paddingright">15dp</dimen>
+    <dimen name="list_header_txt_size">16sp</dimen>
+    <dimen name="list_padding">15dp</dimen>
+    <dimen name="bottom_btn_area_padding">55dp</dimen>
+    <dimen name="bottom_txt_height">36dp</dimen>
+    <dimen name="bottom_txt_size">13sp</dimen>
+    
+    <!-- file list item-->
+    <dimen name="lay_padding">10dp</dimen>
+    <dimen name="name_txt_size">15sp</dimen>
+    <dimen name="time_txt_size">12sp</dimen>
+    <dimen name="view_margin_leftright">10dp</dimen>
+    <dimen name="view_margin_top">4dp</dimen>
+    <dimen name="view_height">11dp</dimen>
+    <!-- file list item end-->
+    
+    <!-- sel dialog define -->
+    <dimen name="radio_group_pad_lr">25dp</dimen>
+    <dimen name="radio_group_pad_tb">10dp</dimen>
+    
+    <dimen name="bottom_pad_lr">20dp</dimen>
+    <dimen name="bottom_pad_t">12dp</dimen>
+    <dimen name="bottom_pad_b">9dp</dimen>
+    <dimen name="view_margin_lr">12dp</dimen>
+    <!-- sel dialog end -->
+    
+    <!-- dialog define -->
+    <dimen name="dialog_title_height">48dp</dimen>
+    <dimen name="title_paddingleft">20dp</dimen>
+    <dimen name="title_txt_size">16sp</dimen>
+    <dimen name="notch_title_txt_size">18sp</dimen>
+    
+    <dimen name="edit_lay_height">56dp</dimen>
+    <dimen name="edit_lay_paddinglr">27dp</dimen>
+    <dimen name="edit_lay_paddingtop">18dp</dimen>
+    <dimen name="edit_txt_size">16sp</dimen>
+    <dimen name="dialog_view_top">3dp</dimen>
+    
+    <dimen name="txt_hint_paddingleft">11dp</dimen>
+    <dimen name="dialog_view_marginlr">23dp</dimen>
+    
+    <dimen name="dialog_btn_lay_top">13dp</dimen>
+    <dimen name="dialog_btn_lay_bottom">10dp</dimen>
+    
+    <dimen name="txt_btn_height">36dp</dimen>
+    <dimen name="txt_btn_txt_size">14sp</dimen>
+    <!-- dialog end -->
+    <!-- @prize fanjunchen end -->
+    
+    <dimen name="notch_action_bar_height">48dp</dimen>
+    <dimen name="action_bar_height">40dp</dimen>
+    <dimen name="grean_layout_padding_top">10dp</dimen>
+    <dimen name="title_padding_h">20dp</dimen>
+    <dimen name="small_text_size">15sp</dimen>
+    <dimen name="comm_small_text_size">10sp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="play_name">12sp</dimen>
+    <dimen name="play_time">10sp</dimen>
+    <dimen name="play_control_margin">7dp</dimen>
+    <dimen name="play_info_margin">9dp</dimen>
+    <dimen name="play_progress_margin">10dp</dimen>
+    <dimen name="play_progress_width">186dp</dimen>
+    <dimen name="play_time_width">52dp</dimen>
+    <dimen name="play_time_margin">4dp</dimen>
+    <dimen name="play_info_margin_top">10dp</dimen>
+    <dimen name="play_margin_top">12dp</dimen>
+    <dimen name="play_bottom_height">60dp</dimen>
+    <dimen name="play_anim_margin_r">60dp</dimen>
+    <dimen name="list_check_box_r">-5dp</dimen>
+
+    <dimen name="float_text_size">7dp</dimen>
+    <dimen name="float_window_height">40dp</dimen>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<com.android.camera.ui.PreviewFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+    <FrameLayout android:id="@+id/preview_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#ff0f0d0d" />
+    <com.android.camera.ui.FaceView android:id="@+id/face_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <com.android.camera.ui.ObjectView android:id="@+id/object_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <include layout="@layout/focus_indicator"/>
+    <!-- gangyun tech add begin -->
+    <include layout="@layout/gy_levelseekbar"/>
+    <com.gangyun.camera.gangyunCameraAperture
+            android:id="@+id/gyCameraAperture"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" 
+            android:visibility="gone"
+            />
+    <!-- gangyun tech add end  -->
+    
+     <com.android.prize.DoubleCameraFocusIndicator
+        android:id="@+id/double_camera_rotate_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="170dp" >
+
+            <com.android.prize.ApertureView
+                android:id="@+id/aperture"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/aperture_view_focusing_bg"
+                android:padding="5dp"/>
+
+            <SeekBar
+                android:id="@+id/double_camera_seekbar"
+                style="@style/DoubleCameraSeekBarStyle"
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/aperture"
+                android:layout_marginTop="15dp"
+                android:max="100"
+                android:progress="50"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </com.android.prize.DoubleCameraFocusIndicator>
+</com.android.camera.ui.PreviewFrameLayout>

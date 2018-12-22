@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+	<!-- PRIZE- add spinner_color- zhangzhonghao-2015-4-20 -start -->
+    <color name="spinner_color">#000000</color>
+    	<!-- PRIZE- add spinner_color- zhangzhonghao-2015-4-20 -start -->
+    <color name="quickcontact_name_detail_background">#66000000</color>
+    <color name="quickcontact_entry_sub_header_text_color">#969696</color>
+    <color name="quickcontact_entry_header_text_color">#323232</color>
+
+    <color name="background_social_updates">#ffeeeeee</color>
+
+    <!-- TODO: remove these colors once we delete the group code (b/16522929) -->
+    <color name="action_bar_background">#0288d1</color>
+    <color name="action_bar_background_highlight">#cecece</color>
+    <color name="action_bar_button_text_color">#FFFFFF</color>
+
+    <color name="actionbar_background_color">@color/prize_actionbar_bg_color</color><!-- prize-change for dido os8.0-hpf-2017-7-27-@color/primary_color -->
+    <color name="actionbar_background_color_dark">@color/primary_color_dark</color>
+	
+    <!-- PRIZE-change-yuandailin-2016-6-1-start-->
+    <!--<color name="contextual_selection_bar_color">#616161</color>-->
+    <!-- Color of the status bar above the contextual selection bar. -->
+    <!--<color name="contextual_selection_bar_status_bar_color">#424242</color>-->
+    <color name="contextual_selection_bar_color">#efeff0</color>
+	<color name="contextual_selection_bar_status_bar_color">#efeff0</color>
+	<!-- PRIZE-change-yuandailin-2016-6-1-end-->
+	
+    <!-- prize change primary color and primary color dark zhangzhonghao 20160304 start -->
+    <color name="primary_color_dark">#efeff0</color>
+    <color name="primary_color">#efeff0</color>
+    <!-- prize change primary color and primary color dark zhangzhonghao 20160304 start -->
+
+    <!-- Color of the selected tab underline -->
+    <color name="contacts_accent_color">#FFFFFF</color>
+
+    <color name="floating_action_button_icon_color">@color/contacts_accent_color</color>
+
+    <!-- Horizontal separator line should be 12% dark in the light theme. -->
+    <color name="divider_line_color_light">#dcdcdc</color><!-- prize-change-huangliemin-2016-7-28 #e0e0e0-->
+
+    <color name="expanding_entry_card_item_separator_color">#e4e4e4</color>
+    <!-- Color of the text on an ExpandingEntryCard button -->
+    <color name="expanding_entry_card_button_text_color">@android:color/black</color>
+
+    <!-- Background color for an ExpandingEntryCard -->
+    <color name="expanding_entry_card_background_color">#ffffff</color>
+
+    <!-- Color of the margin for cards -->
+    <color name="card_margin_color">#ffffff</color><!-- PRIZE-change-yuandailin-2016-8-5-->
+    
+    <color name="call_arrow_green">#2aad6f</color>
+    <color name="call_arrow_red">#ff2e58</color>
+
+    <!-- Background color of pinned header items. -->
+    <color name="list_item_pinned_header_color">@color/background_primary</color>
+
+    <!-- Add for ICS -->
+    <color name="calllog_list_item_simname_font_color">#ffffffff</color>
+
+    <!-- Add for Phone Landscape UI -->
+    <color name="call_log_detail">#ff111c21</color>
+
+    <!-- M:MTK adds. Color of the Contact name be searched -->
+    <color name="contact_name_searched_color">#2EE4FF</color>
+
+    <!-- Color of the mime-type icons inside the editor. 50% black. -->
+    <color name="editor_icon_color">#7f7f7f</color>
+
+    <!-- Color of disabled text and unfocused hint text inside the contact editor. 25% black. -->
+    <color name="editor_disabled_text_color">#40000000</color>
+
+    <!-- Color of button background in compact photo picker. -->
+    <color name="google_grey_600">#757575</color>
+
+    <!-- Color of button text in compact photo picker, 85% white. -->
+    <color name="photo_action_button_color">#D9FFFFFF</color>
+
+    <!-- Color of text on disabled link contacts button, 25% black. -->
+    <color name="disabled_button_text">#40000000</color>
+
+    <!-- Color of background of disabled link contacts button, 15% black. -->
+    <color name="disabled_button_background">#26000000</color>
+    
+    	<!-- PRIZE-add-yuandailin-2016-6-3-start-->
+	<color name="prize_seacher_view_hint_color">#50000000</color>
+	<!-- PRIZE-add-yuandailin-2016-6-3-end-->
+	<color name="prize_button_dialer_text_color">@color/prize_theme_color</color>
+	
+	<!-- PRIZE- add DialogBottomMenu_Color- zhudaopeng-2016-8-4 -start -->
+	<color name="white">#FFFFFF</color>
+	<color name="dialog_bottom_divider_color">#DCDCDC</color>
+	<color name="dialog_bottom_name_color">#323232</color>
+	<!-- PRIZE- add DialogBottomMenu_Color- zhudaopeng-2016-8-4 -End -->
+	<color name="prize_contacts_gray">#F0F0F0</color><!-- PRIZE- add-yuandailin-2016-8-5 -->
+	<color name="preference_divider">#DCDCDC</color><!-- PRIZE- add-wangyunhe-2016-8-5 -->
+	<!-- PRIZE- add for dido os 8.0-huangpengfei-2017-7-18-start -->
+	<color name="prize_divider_color">#dcdcdc</color>
+	<color name="prize_colorAccent">@color/prize_theme_color</color>
+	<color name="prize_hint_edit_text_color">#969696</color>
+	<color name="prize_delete_contact_text_color">#cc0000</color>
+	<!-- PRIZE- add for dido os 8.0-huangpengfei-2017-7-18-end -->
+	
+</resources>

@@ -1,0 +1,9 @@
+# ==============================================
+# MTK Attribute declarations
+# ==============================================
+
+# attribute that represents all MTK IMS types. It should be used by AP side module only.
+attribute mtkimsapdomain;
+
+# attribute that represents all MTK IMS types. It should be used by MD side module only.
+attribute mtkimsmddomain;

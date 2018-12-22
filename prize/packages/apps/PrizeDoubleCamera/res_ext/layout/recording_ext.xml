@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout style="@style/RecordingLayout" >
+
+        <LinearLayout
+            android:id="@+id/recording_time_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/recording_time"
+                style="@style/RecordingText" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/recording_size_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/recording_time_group"
+            android:background="@drawable/bg_indicator_background"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/recording_current"
+                style="@style/RecordingSizeText"
+                android:layout_alignParentStart="true" />
+
+            <SeekBar
+                android:id="@+id/recording_progress"
+                style="@style/RecordingSizeProgress"
+                android:layout_toEndOf="@id/recording_current"
+                android:layout_toStartOf="@+id/recording_total"
+                android:clickable="false"
+                android:focusable="false"
+                android:thumb="@null" />
+
+            <TextView
+                android:id="@+id/recording_total"
+                style="@style/RecordingSizeText"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/shutter_group_height"
+        android:layout_alignParentBottom="true"
+        android:splitMotionEvents="false" >
+
+        <RelativeLayout
+            android:id="@+id/pause_resume_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.mediatek.camera.ui.RotateImageView
+                android:id="@+id/btn_pause_resume"
+                style="@style/ShutterButton"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/shutter_marginleft"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/btn_recoding_pause" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

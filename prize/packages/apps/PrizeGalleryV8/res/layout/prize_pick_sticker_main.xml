@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    
+    <RelativeLayout 
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pick_sticker_title_height">
+        <ImageView android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sel_back_black"
+            android:layout_centerVertical="true"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/watermark"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"/>
+    </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+		android:weightSum="6"
+		android:layout_alignParentBottom="true">
+		<TextView
+		    android:id="@+id/tv_hot"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="@string/lately"
+		    android:textColor="@color/sticker_pick_text"
+        />
+		<TextView
+		    android:id="@+id/tv_interest"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="@string/interest"
+		    android:textColor="@color/sticker_pick_text"
+        />
+		<TextView
+		    android:id="@+id/tv_food"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="@string/delicious_food"
+		    android:textColor="@color/sticker_pick_text"
+        />
+		<TextView
+		    android:id="@+id/tv_travel"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="@string/travel"
+		    android:textColor="@color/sticker_pick_text"
+        />
+		<TextView
+		    android:id="@+id/tv_originality"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="@string/originality"
+		    android:textColor="@color/sticker_pick_text"
+        />
+		<TextView
+		    android:id="@+id/tv_mood"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="@string/mood"
+		    android:textColor="@color/sticker_pick_text"
+        />
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_above="@id/view_bottom"
+        android:layout_below="@id/view_top"/>
+
+</RelativeLayout>

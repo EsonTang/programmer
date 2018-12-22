@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false" >
+
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#21b5c0"
+        android:drawableLeft="@drawable/cloud_back_normal"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:onClick="onBackClk"
+        android:text="@string/regist_koobee"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textsize_large" />
+    
+    <EditText
+        android:id="@+id/passwordedit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/cloud_shurukuang"
+        android:hint="@string/please_input_phone"
+        android:layout_marginTop="17dp"
+        android:inputType="textPassword"
+        android:maxLength="11"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/prize_text_default"
+        android:textColorHint="#c8c8c8"
+        android:digits="@string/symbol"
+        android:textSize="@dimen/textsize_medium" />
+    <TextView
+        android:id="@+id/regist_agree_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textsize_medium"
+        android:drawableLeft="@drawable/cloud_agree"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/agree"
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/regist_next_id"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/next"
+        android:textSize="@dimen/textsize_medium"
+        android:gravity="center"
+        android:textColor="@color/login_color"
+        android:background="@drawable/cloud_next_selector"
+        android:clickable="true"
+        ></TextView>
+    <TextView
+        android:id="@+id/regist_other_phone_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/use_own_phone_two"
+        android:textSize="12sp"
+        android:textColor="#D4D4D4"
+        />
+
+    
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:keepScreenOn="true"
+    android:orientation="vertical" >
+	<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/touchpanel_edge_name" />
+    <TextView
+        android:id="@+id/linearity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/touchpanel_edge_linearity" />
+    <TextView
+        android:id="@+id/accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/touchpanel_edge_accuracy" />
+    <TextView
+        android:id="@+id/sensivicity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/touchpanel_edge_sensivicity" />
+    <TextView
+        android:id="@+id/zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/touchpanel_edge_zoom" />
+	-->
+	<TextView
+        android:id="@+id/linearityHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/touchpanel_edge_linearityHorizontal" />
+    <TextView
+        android:id="@+id/linearityVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/touchpanel_edge_linearityVertical" />
+    <TextView
+        android:id="@+id/free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/touchpanel_edge_free" />
+	
+
+    <include layout="@layout/bottom_bar" />
+
+</LinearLayout>

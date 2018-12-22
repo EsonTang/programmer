@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height_40dp"
+        android:background="@color/app_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/search_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="3.5dp"
+            android:src="@drawable/action_bar_back_selector"
+            android:contentDescription="@string/brand" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/search_et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:focusable="true"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="30dp"
+                android:paddingRight="33dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_262626"
+                android:textColorHint="@color/text_color_737373"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_small" />
+
+            <ImageView
+                android:id="@+id/search_iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/iv_delete_bg"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="8dip"
+            android:background="#ededed" />
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dip"
+            android:background="@drawable/action_bar_search_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:background="@color/bg_gray_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/search_lv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/app_background"
+            android:divider="@color/app_title"
+            android:dividerHeight="@dimen/zero_point_five_dp"
+            android:focusable="false"
+            android:scrollbars="none"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</merge>

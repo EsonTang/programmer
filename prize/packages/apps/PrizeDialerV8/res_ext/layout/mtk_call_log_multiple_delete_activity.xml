@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright Statement:
+
+   This software/firmware and related documentation ("MediaTek Software") are
+   protected under relevant copyright laws. The information contained herein
+   is confidential and proprietary to MediaTek Inc. and/or its licensors.
+   Without the prior written permission of MediaTek inc. and/or its licensors,
+   any reproduction, modification, use or disclosure of MediaTek Software,
+   and information contained herein, in whole or in part, shall be strictly prohibited.
+
+   MediaTek Inc. (C) 2011. All rights reserved.
+
+   BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+   THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+   RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+   AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+   NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+   SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+   SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+   THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+   THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+   CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+   SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+   STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+   CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+   AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+   OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+   MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+-->
+
+
+<!-- M: Add layout for [Multi-Delete] feature -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/call_log_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.mediatek.dialer.calllog.CallLogMultipleDeleteFragment" />
+<!-- PRIZE-change-yuandailin-2016-8-4-start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom" 
+        android:background="@color/prize_dialer_white">
+
+        <View
+            android:id="@+id/prize_spacer"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="#e3e3e3" />
+
+        <ImageButton
+            android:id="@+id/prize_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prize_spacer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/prize_delete_drawable" />
+        
+        <TextView
+            android:id="@+id/prize_make_sure_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/prize_spacer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:background="@drawable/prize_normal_button_background_drawable"
+            android:text="@android:string/ok"
+            android:textColor="@color/prize_button_disabled_color"
+            android:textSize="12sp"/>
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prize_delete_text"
+            android:layout_below="@id/prize_delete_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/prize_delete_string"
+            android:textSize="12sp" />
+    </RelativeLayout>
+<!-- PRIZE-change-yuandailin-2016-8-4-end-->
+</FrameLayout>

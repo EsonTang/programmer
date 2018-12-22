@@ -1,0 +1,36 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:id="@+id/float_id"
+    android:padding="3dip" >  
+  
+  <!-- android:src="@drawable/ic_launcher"  -->
+     <ImageView  
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="5dip"  
+        android:src="@drawable/icon_anim"
+        android:id="@+id/imageView"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"   
+         
+        android:background="@drawable/qqfloat_roundbg" />  
+  
+    <FrameLayout   
+        android:layout_gravity="right"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" >  
+  
+  <!--            android:text="999"  -->
+        <TextView
+            android:id="@+id/numtext"
+            android:layout_width="20dip"  
+            android:layout_height="20dip"  
+            android:background="@drawable/qqfloat_tips_circle"  
+            android:gravity="center"  
+            android:textSize="10dip"  
+            android:textStyle="bold"  
+            android:textColor="@android:color/white" />  
+    </FrameLayout>  
+  
+</FrameLayout>  

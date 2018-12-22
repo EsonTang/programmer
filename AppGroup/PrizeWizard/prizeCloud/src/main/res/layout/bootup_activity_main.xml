@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/backgroud_img_height"
+        android:background="@drawable/cloud_default_background"
+        ></View>
+    <TextView
+        android:id="@+id/login_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_login_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/login"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textsize_medium"
+        android:textColor="@color/prize_text_default"
+        ></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/prize_line"
+        ></View>
+    <TextView
+        android:id="@+id/regist_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_login_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/regist"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textsize_medium"
+        android:textColor="@color/prize_text_high"
+        ></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/prize_line"
+        ></View>
+    
+    <TextView
+        android:id="@+id/next_id"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/bt_next_margintop"
+        android:text="@string/next"
+        android:textSize="@dimen/textsize_medium"
+        android:gravity="center"
+        android:background="@drawable/cloud_next_selector"
+        android:textColor="@color/login_color"
+        android:clickable="true"
+        ></TextView>
+    <TextView
+        android:id="@+id/skip_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/skip"
+        android:textSize="@dimen/textsize_medium"
+        android:textColor="#D4D4D4"
+        />
+    
+
+</LinearLayout>

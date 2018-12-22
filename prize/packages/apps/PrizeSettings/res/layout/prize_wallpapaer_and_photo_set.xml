@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mLinearLayout">
+    
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"> -->
+        <!-- android:background="@drawable/prize_wall_papaer_setting" -->
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:text="@string/prize_settings_wallpaper_string"
+            android:layout_marginLeft="@dimen/padding_default_prize"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/text_color_3478f6"
+            android:layout_marginTop="8dp"/>
+    
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_vertical_spacing"
+            android:layout_marginLeft="@dimen/padding_default_prize"
+            android:layout_marginRight="@dimen/padding_default_prize"
+            android:background="@color/prize_wallpaper_gray"/>
+    
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/padding_default_prize"
+            android:layout_marginRight="@dimen/padding_default_prize"
+            android:layout_marginTop="@dimen/gridview_paddingtop_prize" >
+            <LinearLayout
+                android:id="@+id/wallLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="8dp" >
+                    <ImageView
+                        android:id="@+id/wallImage" 
+                        android:layout_width="150dp"
+                        android:layout_height="270dp"/>
+                    <!--  android:src="@drawable/prize_photo" -->
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wallpaper_settings_title"
+                        android:layout_marginTop="@dimen/gridview_paddingtop_prize"
+                        android:layout_marginBottom="@dimen/padding_default_prize"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/photoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp" >
+                    <ImageView 
+                        android:id="@+id/photo"
+                        android:layout_width="150dp"
+                        android:layout_height="270dp"
+                        android:background="@drawable/prize_photo_background"/>
+                    <!-- prize_photo_background -->
+                    <TextView 
+                        android:id="@+id/photoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prize_photo_album"
+                        android:layout_marginTop="@dimen/gridview_paddingtop_prize"
+                        android:layout_marginBottom="@dimen/padding_default_prize"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+    <!-- </LinearLayout>  -->
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/prize_wall_papaer_setting" 
+        android:layout_margin="7dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/changed_wallpaper_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:textColor="#33cccc"/>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/prize_wallpaper_gray"/>
+        <RelativeLayout
+            android:id="@+id/switchLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textSize="15sp"
+                android:textColor="#323232"
+                android:text="@string/changed_wallpaper_title"/>
+            <ImageView
+                android:id="@+id/switchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"/>
+        </RelativeLayout>
+    </LinearLayout>  -->
+    
+
+</LinearLayout>

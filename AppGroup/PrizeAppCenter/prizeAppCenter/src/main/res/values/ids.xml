@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tag_id"/>
+    <item name="id_adapter" type="id"/>
+    <item name="id_adapter_devide" type="id"/>
+    <item name="id_adapter_downloading" type="id"/>
+    <item name="id_adapter_downloaded" type="id"/>
+    <item name="id_appitem" type="id"/>
+    <item name="id_viewhold" type="id"/>
+    <item name="node_header" type="id" />
+    <item name="node_items" type="id" />
+    <item name="tree_items" type="id" />
+    <item name="secKill_mall_items" type="id" />
+    <item name="subComm_mall_items" type="id" />
+    <item name="itembean_mall" type="id" />
+    <item name="search_btn_object" type="id" />
+    <item name="search_btn_position" type="id" />
+</resources>

@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <solid android:color="@color/prize_divider_line_color" />
+    <size android:height="@dimen/prize_divider_height"
+        android:width="540dp"/>
+</shape>

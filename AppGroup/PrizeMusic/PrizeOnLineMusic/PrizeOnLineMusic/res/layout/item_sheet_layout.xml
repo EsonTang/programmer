@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/eidt_img"
+        android:layout_width="@dimen/gridview_album_width"
+        android:layout_height="@dimen/gridview_album_width"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_new_albums" />
+
+    <ImageView
+        android:id="@+id/icon_fly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/icon_fly"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eidt_img"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="17dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/text_color_323232"
+        android:textSize="@dimen/text_size_small" />
+
+    <CheckBox
+        android:id="@+id/edit_check"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_alignEnd="@+id/eidt_img"
+        android:layout_alignParentTop="true"
+        android:button="@drawable/icon_checkbox_edit_list_selector"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <ImageView
+        android:id="@+id/play_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eidt_img"
+        android:layout_alignEnd="@+id/eidt_img"
+        android:paddingBottom="3dp"
+        android:paddingEnd="5dp"
+        android:src="@drawable/icon_play" />
+
+</RelativeLayout>

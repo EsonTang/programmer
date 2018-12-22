@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- HomeTabs -->
+    <string name="me">我的</string>
+    <string name="music_libs">音乐馆</string>
+    <!-- HomeSubTabs -->
+    <string name="recommend">推荐</string>
+    <string name="rank">排行</string>
+    <string name="collect">歌单</string>
+    <string name="radio">电台</string>
+    <!-- App name -->
+    <string name="app_name">音乐</string>
+    <string name="app_version_number">1.0</string>
+
+    <!-- Content descriptions for the Bottom Action Bar -->
+    <string name="cd_search">搜索您的音乐库</string>
+    <string name="cd_bottom_action_bar_album_art">专辑图片</string>
+    <string name="cd_repeat">重复一首或全部</string>
+    <string name="cd_previous">前一首</string>
+    <string name="cd_play">暂停/继续</string>
+    <string name="cd_next">下一首</string>
+    <string name="cd_shuffle">随机播放</string>
+
+    <!-- AudioPlayer title -->
+    <string name="nowplaying">现在播放</string>
+
+    <!-- Used to indicate the number of albums for an artist -->
+    <plurals name="Nalbums">
+
+        <!-- Number of albums is one -->
+        <item quantity="one">1 张专辑</item>
+        <!-- Number of albums is more than one -->
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> 张专辑</item>
+    </plurals>
+
+    <!-- Used to indicate the number of songs for an album -->
+
+    <plurals name="Nsongs">
+
+        <!-- Number of songs is one -->
+        <item quantity="one">1 首歌曲</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> 首歌曲</item>
+    </plurals>
+
+    <!-- Toasts after adding song(s) to playlists -->
+    <plurals name="NNNtrackstoplaylist">
+
+        <!-- message shown when one song was added -->
+        <item quantity="one">1 首歌曲添加到播放列表.</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> 首歌曲添加到播放列表.</item>
+    </plurals>
+
+    <!-- Options MenuItems -->
+    <string name="settings">设置</string>
+    <string name="shuffle_all">全部随机播放</string>
+    <string name="play_all">全部播放</string>
+    <string name="share">分享</string>
+
+    <!-- Set track as ringtone -->
+    <string name="set_as_ringtone">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" 已设置为手机铃声</string>
+
+    <!-- Transient popup message shown after renaming a playlist -->
+    <string name="rename_playlist">重命名播放列表</string>
+
+    <!-- Shuffle and repeat messages -->
+    <string name="repeat_one">重复播放当前歌曲</string>
+    <string name="repeat_all">重复播放所有歌曲</string>
+    <string name="repeat_off">重复播放已关闭</string>
+    <string name="shuffle_off">随机播放已关闭</string>
+    <string name="shuffle_on">随机播放已开启</string>
+
+    <!-- ContextMenu items -->
+    <string name="add_to_playlist">添加到播放列表</string>
+    <string name="delete_playlist">删除播放列表</string>
+    <string name="search">搜索</string>
+    <string name="remove">从播放列表中移除</string>
+
+    <!-- Unknown genre name -->
+    <string name="unknown">未知</string>
+
+    <!-- Settings -->
+    <string name="about">关于 Apollo</string>
+    <string name="eqalizer">均衡器</string>
+    <string name="header_interface">界面</string>
+    <string name="version">Apollo 版本</string>
+
+    <!-- Playlists menu -->
+    <string name="favorite">喜爱</string>
+    <string name="queue">队列</string>
+    <string name="new_playlist">新建</string>
+    <string name="new_playlist_name_template">播放列表 <xliff:g id="number">%d</xliff:g></string>
+    <string name="save">保存</string>
+    <string name="overwrite">覆盖</string>
+
+    <!-- Tabs -->
+    <string name="tab_recent_play">最近播放</string>
+    <string name="tab_recent_add">最近添加</string>
+    <string name="tab_artists">歌手</string>
+    <string name="tab_albums">专辑</string>
+    <string name="tab_songs">歌曲</string>
+
+    <!-- Something went wrong -->
+    <string name="error">错误</string>
+
+    <!-- External file dialog -->
+    <string name="play_external_question_msg">选择应用于: \n\n<b><xliff:g id="name">%s</xliff:g></b>的操作</string>
+    <string name="play_external_question_button_play">播放</string>
+    <string name="play_external_question_button_queue">队列</string>
+    <string name="play_external_question_button_cancel">取消</string>
+    <string name="play_external_error">无法播放文件</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="confirm_delete_song_file">删除</string>
+    <string name="no_result">未搜索到结果</string>
+    <string name="all_music">全部音乐</string>
+    <string name="local_music">本地音乐</string>
+    <string name="pl_select_songs">请选择歌曲</string>
+    <string name="all_select">全选</string>
+    <string name="no_select">反选</string>
+    <string name="all">全部</string>
+    <string name="all_param">全部</string>
+    <string name="delete">删除</string>
+    <string name="add">添加</string>
+    <string name="rings">铃声</string>
+    <string name="sort">收藏</string>
+    <string name="addsongs">添加歌曲</string>
+    <string name="nomusic_in_list">列表无音乐</string>
+    <string name="nolyric_pl_download">歌词获取失败,点击获取歌词</string>
+    <string name="nolyric">暂无歌词</string>
+    <string name="loading_lyric">歌词载入中</string>
+    <string name="save_lyric_to">请将歌词保存至</string>
+    <string name="my_list">我的歌单</string>
+    <string name="edit">编辑</string>
+    <string name="album">专辑</string>
+    <string name="my_love">我喜欢的</string>
+    <string name="create_list">新建列表</string>
+    <string name="create_play_list">新建播放列表</string>
+    <string name="play_list">播放列表</string>
+    <string name="add_song">添加</string>
+    <string name="add_to">添加至</string>
+    <string name="rename">重命名</string>
+    <string name="rename_sucess">重命名成功</string>
+    <string name="new_play_list">新建播放列表</string>
+    <string name="pl_select_list">请选择歌单</string>
+    <string name="listname">列表名称</string>
+    <string name="singer">歌手名：</string>
+    <string name="search_lyric">搜索歌词</string>
+    <string name="songname">歌曲名：</string>
+    <string name="confirm_delete_playlsit">确定要删除此歌单吗?</string>
+    <string name="setring">设为铃声</string>
+    <string name="aboutSinger">歌手</string>
+    <string name="please_input_songs_key">本地搜索歌曲、歌手、专辑</string>
+    <string name="addSuccessful">添加成功!</string>
+    <string name="no_add_song">未添加歌曲!</string>
+    <string name="deleteSuccessful">删除成功!</string>
+    <string name="Song_has_been">歌曲已经存在!</string>
+    <string name="Not_selected_playlists">未选中歌单!</string>
+    <string name="List_name_repetition">列表名称重复!</string>
+    <string name="delete_from_list">从列表中删除</string>
+    <string name="songs">首歌</string>
+    <string name="songs_ask">首歌曲及本地歌曲文件？</string>
+    <string name="song_ask">首歌曲及本地歌曲文件？</string>
+    <string name="collectionSuccessful">收藏成功！</string>
+    <string name="create_fail">创建列表失败！</string>
+    <string name="failed_to_get_the_lyrics">获取歌词失败！</string>
+    <string name="sure_you_want_to_delete">确定要删除</string>
+    <string name="sure_you_want_to_delete_local_musci">确定要删除此首本地歌曲吗？</string>
+    <string name="triffic_play_music">开始在流量下播放在线歌曲</string>
+    <string name="no_permission_music">暂无权限</string>
+    <string name="no_permission_album">暂无此专辑版权</string>
+
+    <!-- External file dialog -->
+    <string name="music">音乐</string>
+    <string name="name_cannot_be_empty">列表名称不能为空</string>
+    <string name="input_list_name">输入0-14位字符列表名称</string>
+    <string name="not_support_wma">暂时不支持wma格式歌曲</string>
+    <string name="sort_love_list_yet">已收藏到我喜欢的列表</string>
+    <string name="already_cancel_sort">已取消收藏</string>
+    <string name="del_suc">删除成功</string>
+    <string name="del_faile">删除失败</string>
+    <string name="pl_select_item">请选择歌曲条目</string>
+    <string name="adding">正在添加，请稍后&#8230;</string>
+    <string name="collectioning">正在收藏，请稍后&#8230;</string>
+    <string name="deleteing">正在删除，请稍后&#8230;</string>
+    <string name="no_other_list">暂无其他列表</string>
+    <string name="song_has_bean">歌曲已在列表中</string>
+    <string name="no_songs_play">音乐列表为空！</string>
+    <string name="online_music">在线音乐</string>
+    <string name="xiami_music">虾米音乐</string>
+    <string name="uninstall_duomi">未安装多米音乐</string>
+    <string name="duomi_music">多米音乐</string>
+    <string name="app_loading">数据加载中</string>
+    <string name="forbid">抱歉，暂时无此专辑的版权</string>
+    <string name="forbid_singer">抱歉，暂时无此歌手的歌曲版权</string>
+    <string name="mv">MV</string>
+    <string name="stop_timing">定时停止</string>
+    <string name="music_download">歌曲下载</string>
+    <string name="login_now">立即登录</string>
+
+    <!-- 意见反馈 -->
+    <string name="feedback_content">问题描述</string>
+    <string name="pls_input_feedback">请详细描述你遇到的问题</string>
+    <string name="fedbck_contact_tip">反馈附图(可填)</string>
+    <string name="send_fedbck_tip">感谢您的意见和建议，内容已发送~</string>
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_msg_empty">请输入您的建议或者疑问</string>
+    <string name="feedback_send">提交</string>
+    <string name="nonet_connect">暂无网络连接</string>
+    <string name="questing">请求中,请不要重复操作</string>
+    <string name="committing">提交中&#8230;</string>
+    <string name="caution">提示</string>
+    <string name="caution_content">您已编辑，是否舍弃本条反馈？</string>
+    <string name="is_clear_cache_now">是否立即清理缓存?</string>
+    <string name="is_logoutnow">是否退出音乐云账号？</string>
+    <string name="clear">清理</string>
+    <string name="alert_button_yes">确认</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="reach_nodata">没有相关结果</string>
+    <string name="reach_nomore">没有更多</string>
+    <string name="new_albums">新碟上架</string>
+    <string name="more">更多</string>
+    <string name="daily_songs">今日歌单</string>
+    <string name="hot_songs">热门歌曲</string>
+    <string name="recommand_collect">精选歌单</string>
+    <string name="scene_songs">场景音乐</string>
+    <string name="guess_you_love">猜你喜欢</string>
+    <string name="select_category">选择分类</string>
+    <string name="select">选择</string>
+    <string name="singer_album">专辑%1$s</string>
+    <string name="singer_hotsongs">热门歌曲%1$s</string>
+
+    <!-- 搜索界面 -->
+    <string name="search_singer">歌手</string>
+    <string name="search_hottips">推荐热词</string>
+    <string name="search_history">搜索历史</string>
+    <string name="search_empty_history">清空历史</string>
+    <string name="search_more">更多</string>
+    <string name="search_change">换一换</string>
+    <string name="search_chinese">华语</string>
+    <string name="search_Europe">欧美</string>
+    <string name="search_japanese">日本</string>
+    <string name="search_korea">韩国</string>
+    <string name="singer_M">男歌手</string>
+    <string name="singer_W">女歌手</string>
+    <string name="singer_B">组合</string>
+    <string name="singer_hot">热门歌手</string>
+    <string name="search_song">歌曲</string>
+    <string name="search_album">专辑</string>
+    <string name="all_downLoad">全部下载</string>
+    <string name="batch_select">批选</string>
+    <string name="number_item_selected">已选择 %1$s 项</string>
+    <string name="download">下载</string>
+    <string name="click_update_to_install">安装包已经准备好了</string>
+    <string name="current_net_is_nowifi">当前为移动数据流量,建议切换至WIFI环境更新！</string>
+    <string name="after_do">以后再说</string>
+    <string name="now_update">立即更新</string>
+    <string name="net_error_share">无网络,无法分享</string>
+    <string name="net_error">网络错误，请检查网络</string>
+    <string name="play_error">播放错误</string>
+    <string name="search_keyword_empty">请输入关键字</string>
+    <!-- 歌曲下载界面 -->
+    <string name="nodata_to_operator">暂无可以操作的数据</string>
+    <string name="add_download_queue_ok">成功加入下载队列</string>
+    <string name="songs_download">歌曲下载</string>
+    <string name="download_complete">已下载</string>
+    <string name="download_ing">下载中</string>
+    <string name="download_wait">等待下载中&#8230;</string>
+    <string name="no_downloadTask">歌曲已下载</string>
+    <string name="pauseing_click_continue">已暂停,点击继续下载</string>
+    <string name="all_down">全部下载</string>
+    <string name="all_pause">全部暂停</string>
+    <string name="no_downdata">列表空空如也</string>
+    <string name="filter_cannot_down">已经为您过滤不能下载的歌曲</string>
+    <string name="num_download_task">成功添加了%1$s 个下载任务</string>
+    <!-- 设置 -->
+    <string name="setting">设置</string>
+    <string name="setting_download_title">边听边下载</string>
+    <string name="setting_download_detail">在线听过的歌曲自动下载到本地，付费歌曲除外</string>
+    <string name="setting_download_method">下载方式</string>
+    <string name="wifi_download_auto">仅在WIFI下自动下载</string>
+    <string name="dialog_hint">流量下播放歌曲弹框提示</string>
+    <string name="dialog_detail">避免产生高额费用</string>
+    <string name="play_setting">播放设置</string>
+    <string name="stop_by_yourself">定时停止播放</string>
+    <string name="others">其他</string>
+    <string name="feedback">意见反馈</string>
+    <string name="clear_data">清理缓存</string>
+    <string name="check_update">检测更新</string>
+    <string name="version_num_is">当前版本%1$s</string>
+    <string name="new_version">发现新版本 %1$s</string>
+    <string name="for_new_version">--> %1$s</string>
+    <string name="clear_data_success">缓存清理成功</string>
+    <string name="clear_cache_content">清理图标，内容等缓存文件</string>
+    <string name="already_newest_version">当前为最新版本</string>
+
+    <!-- 批量编辑 -->
+    <string name="all_data_has_sort">所选已经全部收藏过了</string>
+    <string name="data_has_sort">已经收藏过了</string>
+    <string name="some_has_sort">%1$s 首歌曲收藏成功</string>
+    <string name="num_item_deleteSuccessful">%1$s 首歌曲被删除成功!</string>
+    <string name="nodata_hasDownloaded">所选歌曲还没有被下载</string>
+    <string name="logout">退出</string>
+    <string name="listen_is_forbidden">暂不提供试听服务</string>
+    <string name="pl_select">请选择歌曲</string>
+    <string name="hot_topic">热门</string>
+
+    <!-- Visualizations -->
+    <string name="visual_none">None</string>
+    <string name="visual_bargraph">Bar Graph</string>
+    <string name="visual_solidbargraph">Solid Bar Graph</string>
+    <string name="visual_waveform">Waveform</string>
+
+    <!-- Do not translate. Duration format for duration < 1 hour -->
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%5$02d</xliff:g></string>
+    <!-- Do not translate. Duration format for duration >= 1 hour -->
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%3$02d:%5$02d</xliff:g></string>
+
+    <!-- Toasts after removing song from playlist -->
+    <string name="track_removed_from_playlist">\"%s\" removed from playlist</string>
+
+    <!-- ContextMenu Headers -->
+    <string name="tab_visibility_title">Tab visibility</string>
+    <string name="tab_visibility_summary">Choose which tabs are displayed</string>
+    <string name="settings_delete_cache_title">Delete cache</string>
+    <string name="settings_delete_cache_summary">Remove all cached images</string>
+    <string name="delete_warning">This will permanently delete the cached image entries</string>
+    <string name="visualizer_title">Audio visualizer</string>
+    <string name="visualizer_summary">Choose to display audio visualizations during playback</string>
+    <string name="widget_style_title">Widget Style</string>
+    <string name="widget_style_summary">Choose the widget design</string>
+    <string name="widget_style_dark">Holo Dark</string>
+    <string name="widget_style_light">Holo Light</string>
+    <string name="about_apollomod_title">About ApolloMod</string>
+    <string name="about_apollomod_message">
+<![CDATA[ApolloMod is an open source music player based on CyanogenMod\'s Apollo Music Player and released under the same Apache License.\n\n
+License Link:\n
+        http://www.apache.org/licenses/LICENSE-2.0.html \n\n
+ApolloMod Source Code:\n
+https://github.com/Splitter/android_packages_apps_apolloMod  \n\n
+Original Apollo Source Code: \n
+https://github.com/CyanogenMod/android_packages_apps_Apollo/tree/cm-10.1
+        
+    ]]>
+    </string>
+    <string name="dependencies">Dependency Licenses</string>
+    <string name="dependencies_title">Dependency Licenses:</string>
+
+    <!-- Settings keys -->
+    <string name="key_build_version" translatable="false">build_version</string>
+    <string name="key_build_depends" translatable="false">build_depends</string>
+    <string name="key_tabs_enabled" translatable="false">tabs_enabled</string>
+    <string name="key_visualization_type" translatable="false">visualization_type</string>
+    <string name="key_widget_style" translatable="false">widget_type</string>
+    <string name="key_delete_cache" translatable="false">delete_cache</string>
+
+    <!-- Simple EQ -->
+    <string name="simple_eq_page_title">Equalizer</string>
+    <string name="simple_eq_bass">Bass Boost</string>
+    <string name="simple_eq_equalizer">Equalizer</string>
+    <string name="simple_eq_band0">15Hz</string>
+    <string name="simple_eq_band1">62Hz</string>
+    <string name="simple_eq_band2">250Hz</string>
+    <string name="simple_eq_band3">1kHz</string>
+    <string name="simple_eq_band4">5kHz</string>
+    <string name="simple_eq_band5">16kHz</string>
+    <string name="wifi_is_not">网络不给力</string>
+    <string name="try_again">请检查网络后点击屏幕重试</string>
+    <string name="audio_player_current_time_text_default">0:00</string>
+
+    <!-- 排行榜 -->
+    <string name="hot_songs_rank">热歌榜</string>
+    <string name="new_songs_rank">新歌榜</string>
+    <string name="xiami_new_songs_rank">虾米新歌榜</string>
+    <string name="original_songs_rank">原创榜</string>
+    <string name="xiami_original_songs_rank">虾米原创榜</string>
+    <string name="xiami_songs_rank">虾米音乐榜</string>
+    <string name="musicer_demo_rank">音乐人Demo榜</string>
+    <string name="xiami_musicer_demo_rank">虾米音乐人Demo榜</string>
+    <string name="daxia_listner_rank">大虾试听榜</string>
+    <string name="collect_sort_rank">精选集收录榜</string>
+    <string name="KTV_H_rank">KTV嗨歌榜</string>
+    <string name="title_activity_edit_sheet">EditSheetActivity</string>
+    <string name="list_name_exit">列表名已存在</string>
+    <string name="list_name_empty">列表名不能为空</string>
+    <string name="can_not_set_as_ring">在线歌曲不能设置为铃声</string>
+    <string name="play_music_in_gprs_tip">您正在使用流量播放在线歌曲,可能产生高额费用,是否继续播放?</string>
+    <string name="gprs_tip">流量提示</string>
+    <string name="xiami_tip">搜索虾米在线音乐</string>
+    <string name="music_error_toast">"不支持此音乐格式"</string>
+
+    <!-- 开屏广告 -->
+    <string name="web_error">"哎呀，网络出错了！"</string>
+    <string name="web_error_reason">"可能的原因有：\n无法连接网络\n该页面不存在或出现故障"</string>
+    <string name="web_reload">"刷新页面"</string>
+    <string name="set_network">"设置网络"</string>
+
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/level_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/text_color_404040"
+            android:text="5"
+            android:textSize="@dimen/text_size_80" />
+
+        <TextView
+            android:id="@+id/good_level_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/level_id"
+            android:layout_below="@+id/level_id"
+            android:layout_marginTop="-3dp"
+            android:text="@string/good_scrol"
+            android:textColor="@color/text_color_9a9a9a"
+            android:textSize="@dimen/text_size_small" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_big_id"
+            style="@style/foodRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/scorl"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/scorl"
+            android:clickable="false"
+            android:focusable="false"
+            android:isIndicator="true"
+            android:numStars="5" />
+
+        <TextView
+            android:id="@+id/scorl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/level_id"
+            android:layout_alignBottom="@+id/level_id"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/level_id"
+            android:text="@string/scrol"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/detail_comment_icon" />
+    </RelativeLayout>
+
+<!--     <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/bg_gray_color" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/detail_love_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/commentEdit_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_rectangle"
+            android:gravity="center_vertical"
+            android:hint="@string/input_some_comments"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:paddingLeft="12dp"
+            android:textColorHint="@color/text_color_9a9a9a"
+            android:textSize="@dimen/text_size_small" >
+        </TextView>
+    </LinearLayout>
+
+    <com.prize.appcenter.ui.widget.ListViewForScrollView
+        android:id="@+id/detail_comment_lv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:focusable="false"
+        android:listSelector="@color/transparent" >
+    </com.prize.appcenter.ui.widget.ListViewForScrollView>
+
+    <TextView
+        android:id="@+id/more_comment_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="-15dp"
+        android:background="@color/app_background"
+        android:gravity="right"
+        android:text="@string/see_all"
+        android:textColor="@color/text_color_35cdcd"
+        android:drawableRight="@drawable/detail_more_selector"
+        android:drawablePadding="2dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

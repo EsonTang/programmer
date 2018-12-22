@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <integer name="prize_palette_margin">120</integer>
+    <integer name="prize_custom_height">1005</integer>
+    <integer name="prize_gradual_bitmap_width">699</integer>
+    <integer name="prize_bottom_height">51</integer>
+    <integer name="prize_line_left_margin">52</integer>
+    <integer name="prize_line_top_margin">75</integer>
+    <integer name="prize_line_bottom_margin">82</integer>
+    <integer name="prize_total_width">720</integer>
+    <integer name="prize_total_height">525</integer>
+    <integer name="prize_activity_width">939</integer>
+    <integer name="prize_activity_height">1512</integer>
+
+</resources>

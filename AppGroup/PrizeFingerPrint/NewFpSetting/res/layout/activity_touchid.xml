@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/add_fp_prompt_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/density_30dp"
+            android:background="@drawable/fp_show_poster"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/add_fp_prompt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_show"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/density_10dp"
+            android:text="@string/click_add_fp"
+            android:textColor="@color/add_fp_prompt_text_color"
+            android:textSize="@dimen/normal_front" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_head_line_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_fp_prompt_rl"
+        android:layout_above="@+id/add_rl"
+        android:paddingTop="@dimen/density_30dp" >
+        
+        <ListView
+            android:id="@+id/fp_finger_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent"
+            android:divider="@drawable/list_view_divier"
+            android:listSelector="@drawable/list_view_bg_color_selector"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_70dp"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/density_05dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/list_view_divier" />
+
+        <TextView
+            android:id="@+id/add_fingerprint_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/add_fp_button_selector"
+            android:gravity="center"
+            android:text="@string/fp_entry_button"
+            android:textColor="@color/title_header_bg_color"
+            android:textSize="@dimen/normal_front" />
+    </RelativeLayout>
+
+</RelativeLayout>

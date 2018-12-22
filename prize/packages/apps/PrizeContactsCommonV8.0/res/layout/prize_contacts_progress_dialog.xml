@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pcpv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19.5dp"
+        android:textSize="@dimen/prize_title_text_size" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="19.5dp"
+        android:layout_marginTop="19.5dp" >
+
+        <com.android.contacts.common.prize.PrizeCirclePercentView
+            android:id="@+id/custom_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            pcpv:backgroundColor="@color/prize_custom_progressbar_background_color"
+            pcpv:foregroundColor="@color/prize_custom_progressbar_foreground_color"
+            pcpv:progressColor="@color/prize_theme_color"
+            pcpv:radius="@dimen/prize_circle_percent_view_radius" />
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/city_select_item_heght"
+    android:orientation="horizontal"
+    android:padding="1.5dp" >
+
+    <TextView
+        android:id="@+id/itemCity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/city_item_bg"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="@dimen/medium_textsize" 
+        android:textColor="@color/city_txt_color"/>
+
+</LinearLayout>

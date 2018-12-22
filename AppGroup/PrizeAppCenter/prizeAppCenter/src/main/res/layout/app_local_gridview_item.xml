@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.prize.appcenter.ui.widget.CustomImageView
+            android:id="@+id/appItem_img_id"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:scaleType="fitXY"
+            android:transitionName="robot"
+            app:iv_radius="13dp" />
+        <com.prize.appcenter.ui.widget.FolderProgress
+            android:id="@+id/appItem_prg"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:padding="11dp"
+            android:transitionName="robot"
+            />
+
+        <ImageView
+            android:id="@+id/folder_down_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/appItem_img_id"
+            android:layout_alignRight="@id/appItem_img_id"
+            android:src="@drawable/icon_folder_down_flag" />
+
+        <ImageView
+            android:id="@+id/seemore_Iv"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:background="@drawable/folder_seemore_sl"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/appItem_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_micro" />
+
+</LinearLayout>

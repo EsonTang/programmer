@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <com.prize.appcenter.ui.util.PagerSlidingTabStripExtends
+        android:id="@+id/slidingtabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paddingTop"
+        app:pstsSelectedTabTextColor="@color/text_color_009def"
+        app:pstsSelectedTabTextSize="@dimen/text_size_small"
+        app:pstsTabTextColor="@color/common_app_title"
+        app:pstsTabTextSize="@dimen/text_size_small"
+        app:pstsUnderlineColor="@android:color/white"
+        app:pstsUnderlineHeight="@dimen/zero_point_five_dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/slidingpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

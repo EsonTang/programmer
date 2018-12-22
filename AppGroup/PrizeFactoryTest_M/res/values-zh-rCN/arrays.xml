@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="single_test_items">
+    <item>LCD</item>
+    <item>触屏</item>
+    <item>内存</item>
+    <item>后摄像头</item>
+    <item>前摄像头</item>
+    <item>电源</item>
+    <item>按键</item>
+    <item>喇叭</item>
+    <item>麦克风</item>
+    <item>麦克风(回路)</item>
+    <item>听筒</item>
+    <item>耳机</item>
+    <item>收音机</item>
+    <item>震动</item>
+    <item>电话</item>
+    <item>背光</item>
+    <item>TF卡</item>
+    <item>SIM</item>
+    <item>闪光灯</item>
+    <item>蓝牙</item>
+    <item>GPS</item>
+    <item>重力传感器</item>
+    <item>WiFi</item>
+    <item>副后摄像头</item>
+    <item>指纹识别</item>
+    <item>光传感器</item>
+    <item>距离传感器</item>
+    <item>磁力传感器</item>
+    <item>计步器</item>
+    <item>陀螺仪传感器</item>
+    <item>红外</item>
+    <item>前闪光灯</item>
+    <item>霍尔传感器</item>
+    <item>LED</item>
+    <item>验钞灯</item>
+    <item>OTG</item>
+    <item>NFC</item>
+  </string-array>
+  <string-array name="aging_test_items">
+    <item>视频和扬声器</item>
+    <item>视频和听筒</item>
+    <item>振动器</item>
+    <item>麦克风和听筒</item>
+    <item>前摄像头</item>
+    <item>后摄像头</item>
+  </string-array>
+</resources>

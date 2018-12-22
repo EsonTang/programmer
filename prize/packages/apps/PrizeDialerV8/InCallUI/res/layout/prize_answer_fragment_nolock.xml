@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2013 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<!-- PRIZE-Change-Optimize_Dialer-wangzhong-2018_3_5-start -->
+<!--<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.android.incallui.GlowPadWrapper
+        xmlns:dc="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/glow_pad_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/glowpadview_margin_bottom"
+        android:background="@color/glowpad_background_color"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone"
+        dc:allowScaling="true"
+        dc:directionDescriptions="@array/incoming_call_widget_audio_with_sms_direction_descriptions"
+        dc:feedbackCount="1"
+        dc:glowRadius="@dimen/glowpadview_glow_radius"
+        dc:handleDrawable="@drawable/ic_incall_audio_handle"
+        dc:innerRadius="@dimen/glowpadview_inner_radius"
+        dc:outerRadius="@dimen/glowpadview_target_placement_radius"
+        dc:outerRingDrawable="@drawable/ic_lockscreen_outerring"
+        dc:pointDrawable="@drawable/ic_lockscreen_glowdot"
+        dc:snapMargin="@dimen/glowpadview_snap_margin"
+        dc:targetDescriptions="@array/incoming_call_widget_audio_with_sms_target_descriptions"
+        dc:targetDrawables="@array/incoming_call_widget_audio_with_sms_targets"
+        dc:vibrationDuration="20"/>
+
+    &lt;!&ndash; LEFT &ndash;&gt;
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/prize_answer_fragment_nolock_margin_start"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/reject_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/description_target_decline"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/reject_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/reject_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/prize_reject_selector"/>
+
+        <TextView
+            android:id="@+id/silent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/reject_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/onscreenMuteText"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/silent_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/silent_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/mute_select"/>
+    </RelativeLayout>
+
+    &lt;!&ndash; RIGHT &ndash;&gt;
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/prize_answer_fragment_nolock_margin_end"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/answer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/description_target_answer"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/answer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answer_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/prize_answer_selector"/>
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answer_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/prizeIncallMessage"
+            android:textColor="@drawable/prize_callcard_video_tv_color_selector"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/message_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/message_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/prize_answer_fragment_nolock_message_selector"/>
+    </RelativeLayout>
+
+</LinearLayout>-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <!-- LEFT -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/prize_answer_fragment_nolock_margin_start"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/reject_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/description_target_decline"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/reject_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/reject_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/prize_reject_selector"/>
+
+        <TextView
+            android:id="@+id/silent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/reject_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/onscreenMuteText"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/silent_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/silent_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/prize_answer_fragment_nolock_mute_selector"/>
+    </RelativeLayout>
+
+    <!-- prize-add for video call to audio call by xiekui-20180813 start-->
+    <!-- MID -->
+    <RelativeLayout
+        android:id="@+id/prize_tv_to_audio_call_nolock_root"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/prize_img_to_audio_call_nolock"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@+id/prize_tv_to_audio_call_title_nolock"
+            android:background="@drawable/prize_video_switch_voice_unlock_selector"/>
+
+        <TextView
+            android:id="@+id/prize_tv_to_audio_call_title_nolock"
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/answer_button_useless"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/prize_to_audio_call_title"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/answer_text_useless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:text="@string/description_target_answer"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/answer_button_useless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answer_text_useless"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/prize_answer_selector"/>
+    </RelativeLayout>
+    <!-- prize-add for video call to audio call by xiekui-20180813 end-->
+
+    <!-- RIGHT -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/prize_answer_fragment_nolock_margin_end"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/answer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/description_target_answer"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/answer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answer_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/prize_answer_selector"/>
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answer_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/prizeIncallMessage"
+            android:textColor="@drawable/prize_callcard_video_tv_color_selector"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/message_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/message_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/prize_answer_fragment_nolock_message_selector"/>
+
+    </RelativeLayout>
+</LinearLayout>
+<!-- PRIZE-Change-Optimize_Dialer-wangzhong-2018_3_5-end -->

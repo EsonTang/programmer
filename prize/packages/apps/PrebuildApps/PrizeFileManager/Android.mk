@@ -1,0 +1,13 @@
+LOCAL_PATH:= $(call my-dir)
+
+ifeq ($(strip $(PRIZE_FILE_EXPLORER)),BUILT_IN)
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := PrizeFileManager
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
+LOCAL_SRC_FILES :=PrizeFileManager.apk
+include $(BUILD_PREBUILT)
+endif
+

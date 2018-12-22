@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- PRIZE-Change-PrizeInCallUI-wangzhong-2016_10_24-start -->
+    <ListView
+        android:id="@+id/prize_incallui_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#4DFFFFFF"
+        android:dividerHeight="0.4dp"
+        android:layout_marginTop="@dimen/prize_sms_responses_view_margin_top"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"/>
+    <!-- PRIZE-Change-PrizeInCallUI-wangzhong-2016_10_24-end -->
+
+    <ImageButton 
+        android:id="@+id/prize_incallui_message_popup_shutdown_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/prize_incallui_message_popup_shutdonw_button_drawable"/>
+
+</LinearLayout>

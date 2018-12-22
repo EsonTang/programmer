@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--original-->
+    <com.prize.prizethemecenter.ui.widget.ScrollGridView
+        android:id="@+id/hotWords_GV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:horizontalSpacing="7.5dip"
+        android:numColumns="3"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:paddingBottom="25dp"
+        android:paddingTop="15dp"
+        android:verticalSpacing="7.5dip"
+        android:visibility="gone"/>
+
+    <!-- result  for theme wallpaper-->
+    <com.prize.prizethemecenter.ui.widget.GridViewWithHeaderAndFooter
+        android:id="@+id/search_result_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="@dimen/margin_left_right_13"
+        android:layout_marginRight="@dimen/margin_left_right_13"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="5dp"
+        android:visibility="gone" />
+
+    <!-- result  for theme font-->
+    <com.prize.prizethemecenter.ui.widget.GridViewWithHeaderAndFooter
+        android:id="@+id/search_font_result_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/margin_left_right"
+        android:numColumns="2"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="5dp"
+        android:visibility="gone" />
+
+    <!--match tips-->
+    <ListView
+        android:id="@+id/search_tips_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:paddingRight="@dimen/margin_left_right"
+        android:divider="@color/bg_gray_color"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <!--history-->
+    <ListView
+        android:id="@+id/search_history_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:paddingRight="@dimen/margin_left_right"
+        android:divider="@color/bg_gray_color"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+</LinearLayout>

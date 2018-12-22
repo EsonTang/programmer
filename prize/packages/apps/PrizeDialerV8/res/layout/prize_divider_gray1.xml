@@ -1,0 +1,7 @@
+<View
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/prize_divider_height2"
+    android:layout_marginEnd="@dimen/prize_divider_margin2"
+    android:layout_marginStart="@dimen/prize_divider_margin2"
+    android:background="@color/prize_divider_color_gray6"/>

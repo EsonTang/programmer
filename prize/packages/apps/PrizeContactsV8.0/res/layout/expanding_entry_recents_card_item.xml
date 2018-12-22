@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- PRIZE- add height ,marginleft and marginright- zhangzhonghao-2015-4-17 -start -->
+<!-- prize-remove-android:background-yuandailin-2016-8-27 -->
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/prize_calllog_item_height"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    class="com.android.contacts.quickcontact.ExpandingEntryCardView$EntryView">
+
+    <!-- prize-change-huangliemin-2016-7-15-start -->
+    <!-- 
+    <ImageView
+        android:id="@+id/style_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/style_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/style_icon"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/expanding_entry_card_title_text_size" />
+    -->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/prize_content_padding"
+        android:textColor="@color/quickcontact_entry_header_text_color"
+        android:textSize="@dimen/prize_sub_text_size" />
+    
+    <ImageView
+        android:id="@+id/style_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/date"
+        android:layout_gravity="center_vertical" />
+    
+    <!-- prize-add-huangliemin-2016-7-23-start -->
+    <ImageView
+        android:id="@+id/sim_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/style_icon"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" />
+    <!-- prize-add-huangliemin-2016-7-23-end -->
+
+    <TextView
+        android:id="@+id/style_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/prize_content_padding"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/quickcontact_entry_header_text_color"
+        android:textSize="@dimen/prize_sub_text_size" />
+
+    <!-- prize-change-huangliemin-2016-7-15-end -->
+
+</view>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">SIM kişileri birleştirilemiyor.</string>
+    <string name="menu_done">"Bitti"</string>
+    <string name="menu_deleteContact">"Sil"</string>
+    <string name="menu_select_all">"Tümünüseç"</string>
+    <string name="menu_select_none">"Tümününseçiminikaldır"</string>
+    <string name="menu_new_contact_action_bar">"Yeni"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> seçildi </string>
+    <string name="multichoice_no_select_alert">Seçili öğe yok.</string>
+    <string name="aas_phone_type_none">"Yok"</string>
+    <string name="aas_custom_title">Özel etiketler</string>
+    <string name="aas_new_dialog_title">Yeni etiket ekle</string>
+    <string name="ass_rename_dialog_title">Etiketi düzenle</string>
+    <string name="aas_delele_dialog_message">Etiketlerin silinmesi, etiketlere bağlanan tüm ek numaraları etkileyecektir. Emin misiniz?</string>
+    <string name="aas_name_invalid">Etiket adı geçersiz. Lütfen başka birini girin.</string>
+    <string name="aas_name_exist">Etiket zaten var.</string>
+    <string name="aas_usim_full">Yeni etiketler için hiç alan yok.</string>
+    <string name="ass_edit_assert_message">Etiketin değiştirilmesi, etikete bağlanan tüm ek numaraları etkileyecektir. Emin misiniz?</string>
+    <string name="aas_new_fail">Yeni etiket oluşturulamadı.</string>
+    <string name="aas_edit_fail"><xliff:g id="aas">%s</xliff:g> yeniden adlandırılamadı.</string>
+    <string name="aas_delete_fail"> <xliff:g id="aas">%s</xliff:g> silinemedi. </string>
+    <string name="aas_phone_primary">Birincil Numara</string>
+    <string name="aas_phone_additional">İlave Numara</string>
+</resources>

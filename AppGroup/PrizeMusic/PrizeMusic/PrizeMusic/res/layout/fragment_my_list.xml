@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <ImageView
+            android:id="@+id/list_fg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="44dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="@string/my_list" />
+
+        <ImageView
+            android:id="@+id/list_fg_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="21dp"
+            android:src="@drawable/ic_launcher" />
+
+    </RelativeLayout>
+	<ListView 
+	    android:id="@+id/list_new_list"
+	    android:layout_height="wrap_content"
+   		android:layout_width="match_parent"
+   		android:visibility="gone">
+	</ListView>
+	<RelativeLayout 
+	    android:layout_height="0dp"
+	    android:layout_width="match_parent"
+	    android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/list_new_songs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="166dp"
+            android:text="@string/addsongs"
+            android:textSize="40sp" />
+
+	</RelativeLayout>
+
+	
+
+</LinearLayout>

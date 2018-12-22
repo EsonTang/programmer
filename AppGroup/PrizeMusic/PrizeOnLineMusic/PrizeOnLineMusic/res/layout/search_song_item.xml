@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    
+     <TextView
+        android:id="@+id/song_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="匆匆那年" 
+        android:textColor="@color/text_color_323232"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:textSize="@dimen/text_size_15sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxEms="16"/>
+     
+     <TextView
+        android:id="@+id/singer_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王菲" 
+        android:layout_below="@+id/song_name_tv"
+        android:layout_marginBottom="11dp"
+        android:layout_alignLeft="@+id/song_name_tv"
+        android:textColor="@color/text_color_969696"
+        android:textSize="@dimen/text_size_micro"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxEms="16"/>
+       
+         <ImageView
+            android:id="@+id/icon_fly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/song_name_tv"
+            android:src="@drawable/icon_fly"
+            android:visibility="invisible"/>
+        <ImageButton
+            android:id="@+id/download_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_item_download_state_selector" />
+     
+
+</RelativeLayout>

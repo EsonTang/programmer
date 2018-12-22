@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e6e6e6"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <!-- <include
+        layout="@layout/titile_bar_problem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_h"
+   /> -->
+    <include 
+        layout="@layout/title_bar_problem"
+         android:layout_width="match_parent"
+        android:layout_height="@dimen/title_h"
+        
+        />
+   <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_fafafa"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            
+            android:background="@drawable/back_press_selector" />
+
+        <TextView
+            android:id="@+id/problem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12.5dp"
+           
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/text_size_medium" >
+        </TextView>
+    </RelativeLayout> -->
+
+  <ImageView 
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+             android:src="@drawable/top_ying"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_e6e6e6"
+        android:orientation="vertical"
+        android:layout_marginTop="9.5dp" >
+
+        <EditText
+            android:id="@+id/content_Edtv"
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/up_down"
+            android:gravity="top"
+            android:hint="@string/pl_input_advice"
+            android:paddingTop="7dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:lineSpacingExtra="13dp"
+            android:textColor="@color/color_323232"
+            android:textColorHint="@color/color_969696"
+            android:textSize="14sp" 
+             android:maxLength="1000"
+            />
+        
+       
+
+        <EditText
+            android:id="@+id/phone_email_Edtv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            
+            
+            android:background="@drawable/up_down"
+            android:gravity="center_vertical"
+            android:hint="@string/pl_input_phone_or_email"
+           
+            android:paddingLeft="14dp"
+            android:textColor="#323232"
+            android:textColorHint="@color/color_969696"
+            android:textSize="14sp" 
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+           
+            android:numeric="integer"
+            />
+        <TextView 
+            android:id="@+id/contnet_tip_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contnet_tip_two"
+             android:textSize="12sp"
+            android:textColor="@color/color_ff0000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/send_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_send_feedback_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/color_c8c8c8"
+            android:textSize="16sp"
+             />
+    </LinearLayout>
+
+</LinearLayout>

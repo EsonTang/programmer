@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="feed_back_drawablePadding">3dp</dimen>
+    <dimen name="feed_back_margin_top">37.5dp</dimen>
+    <dimen name="feed_back_margin_oritation">51.6dp</dimen>
+    <dimen name="feed_back_margin_oritation_long">53.4dp</dimen>
+    <dimen name="activity_feedback_zero">31dp</dimen>
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="feed_back_margin_oritation2">39dp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="textsize_13">13sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="text_to_leftimage">12.5dp</dimen>
+    <dimen name="activity_main_one">277.5dp</dimen>
+    <dimen name="activity_main_two">155dp</dimen>
+    <dimen name="activity_main_three">43dp</dimen>
+    <dimen name="activity_main_four">51dp</dimen>
+    <dimen name="activity_main_five">40dp</dimen>
+    <dimen name="activity_main_six">17.5dp</dimen>
+    <dimen name="activity_main_seven">86dp</dimen>
+    <dimen name="activity_main_eight">98dp</dimen>
+    <dimen name="activity_feedback_one">35dp</dimen>
+    <dimen name="activity_feedback_two">28dp</dimen>
+    <dimen name="activity_feedback_three">190dp</dimen>
+    <dimen name="activity_main_nine">22.2dp</dimen>
+	 <dimen name="gridview_verticalspacing">30dp</dimen>
+</resources>

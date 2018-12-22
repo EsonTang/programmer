@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="telecommAppLabel" product="default">Telefon</string>
+    <string name="unknown">"Unbekannt"</string>
+    <string name="notification_missedCallTitle">Verpasster Anruf</string>
+    <string name="notification_missedCallsTitle">Verpasste Anrufe</string>
+    <string name="notification_missedCallsMsg"><xliff:g id="num_missed_calls">%s</xliff:g> verpasste Anrufe</string>
+    <string name="notification_missedCallTicker">Verpasster Anruf von <xliff:g id="missed_call_from">%s</xliff:g></string>
+    <string name="notification_missedCall_call_back">Rückruf</string>
+    <string name="notification_missedCall_message">NACHRICHT</string>
+    <string name="accessibility_call_muted">Anruf stumm geschaltet</string>
+    <string name="accessibility_speakerphone_enabled">Lautsprecher aktiviert</string>
+    <string name="respond_via_sms_canned_response_1">Kann nicht sprechen. Was ist?</string>
+    <string name="respond_via_sms_canned_response_2">Rufe gleich zurück.</string>
+    <string name="respond_via_sms_canned_response_3">Rufe Dich später an.</string>
+    <string name="respond_via_sms_canned_response_4">Kann nicht sprechen. Ruf später an?</string>
+    <string name="respond_via_sms_setting_title">Schnellantworten</string>
+    <string name="respond_via_sms_setting_title_2">Schnellantworten editieren</string>
+    <string name="respond_via_sms_setting_summary"></string>
+    <string name="respond_via_sms_edittext_dialog_title">Schnellantwort</string>
+    <string name="respond_via_sms_menu_reset_default_activity">Standardeinstellungen wiederherstellen</string>
+    <string name="respond_via_sms_confirmation_format">Nachricht gesendet an <xliff:g id="phone_number">%s</xliff:g>.</string>
+    <string name="phone_account_preferences_title">Einstellung Telefonkonto</string>
+    <string name="default_outgoing_account_title">Vorgabekonto ausgehend</string>
+    <string name="sim_call_manager_account">Wi-Fi-Anrufs-Konto</string>
+    <string name="account_ask_every_time">Jedesmal fragen</string>
+    <string name="do_not_use_sim_call_manager">Wi-Fi-Anrufe nicht verwenden</string>
+    <string name="outgoing_call_not_allowed">Dieser Benutzer darf nur Notrufe tätigen.</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">Anruf nicht gesendet, keine gültige Nummer eingegeben.</string>
+    <string name="duplicate_video_call_not_allowed">Kann im Moment nicht hinzugefügt werden.</string>
+    <string name="no_vm_number">Fehlende Voicemail-Nummer</string>
+    <string name="no_vm_number_msg">Auf der SIM-Karte ist keine Voicemail-Nummer gespeichert.</string>
+    <string name="add_vm_number_str">Nummer hinzufügen</string>
+    <string name="handle_restricted">Beschränkt</string>
+    <string name="userCallActivityLabel" product="default">Telefon</string>
+    <string name="enable_account_preference_title">Anrufkonten</string>
+    <string name="add_blocked_number_hint">Rufnummer</string>
+    <string name="block_button">Blockieren</string>
+    <string name="notification_missedWorkCallTitle">Verpasster beruflicher Anruf</string>
+    <string name="outgoing_call_not_allowed_user_restriction">Nur Notrufe möglich.</string>
+    <string name="outgoing_call_not_allowed_no_permission">Mit dieser Applikation können ohne Telefon-Berechtigung keine Anrufe getätigt werden.</string>
+    <string name="change_default_dialer_dialog_title">Wähltastatur-Standardapp ändern?</string>
+    <string name="change_default_dialer_with_previous_app_set_text">Möchten Sie <xliff:g id="new_app">%1$s</xliff:g> statt <xliff:g id="current_app">%2$s</xliff:g> als Wähltastatur-Standardapp nutzen?</string>
+    <string name="change_default_dialer_no_previous_app_set_text"><xliff:g id="new_app">%s</xliff:g> als Wähltastatur-Standardapp nutzen?</string>
+    <string name="blocked_numbers">Blockierte Nummern</string>
+    <string name="blocked_numbers_msg">Sie erhalten keine Anrufe und Textnachrichten von blockierten Nummern.</string>
+    <string name="block_number">Nummer hinzufügen</string>
+    <string name="unblock_dialog_body"><xliff:g id="number_to_block">%1$s</xliff:g> freigeben?</string>
+    <string name="unblock_button">Freigeben</string>
+    <string name="add_blocked_dialog_body">Anrufe und Textnachrichten blockieren – von</string>
+    <string name="non_primary_user">Blockierte Nummern können nur vom Gerätebesitzer angezeigt und verwaltet werden.</string>
+    <string name="delete_icon_description">Freigeben</string>
+    <string name="blocked_numbers_butter_bar_title">Blockierung vorübergehend abgeschaltet</string>
+    <string name="blocked_numbers_butter_bar_body">Nach Anrufen und Versenden von Textnachrichten an Notfallnummern wird die Blockierung abgeschaltet, damit Sie von Notfalldiensten erreicht werden können.</string>
+    <string name="blocked_numbers_butter_bar_button">Wieder aktiviert</string>
+    <string name="blocked_numbers_number_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> blockiert</string>
+    <string name="blocked_numbers_number_unblocked_message"><xliff:g id="unblocked_number">%1$s</xliff:g> freigegeben</string>
+    <string name="blocked_numbers_block_emergency_number_message">Notfallnummer kann nicht blockiert werden.</string>
+    <string name="blocked_numbers_number_already_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> ist bereits blockiert</string>
+    <string name="toast_personal_call_msg">Anruf über persönliche Wähltastatur tätigen</string>
+</resources>

@@ -1,0 +1,2 @@
+allow platform_app data_fonts_file:dir { create_dir_perms rw_dir_perms };
+allow platform_app data_fonts_file:file { create_file_perms rw_file_perms };

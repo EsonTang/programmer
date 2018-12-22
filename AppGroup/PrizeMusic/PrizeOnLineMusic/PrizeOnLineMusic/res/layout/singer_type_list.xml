@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomactionbar_new"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/action_bar_no_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_bar_height"
+            android:background="@color/text_color_f0f0f0" >
+
+            <ImageButton
+                android:id="@+id/action_bar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/action_bar_back_selector" />
+
+            <TextView
+                android:id="@+id/action_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/action_bar_back"
+                android:paddingBottom="0dip"
+                android:text="@string/search_singer"
+                android:textColor="@color/text_color_323232"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <!-- 最右边 不显示,只用来以他为最右边的标尺 -->
+
+            <TextView
+                android:id="@+id/action_bar_menu_right"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true" />
+
+            <ImageButton
+                android:id="@+id/action_bar_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/action_bar_menu_right"
+                android:background="@drawable/action_bar_search_selector" />
+        </RelativeLayout>
+
+        <include layout="@layout/waiting_view" />
+
+        <include
+            layout="@layout/reload_layout"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+             android:background="@color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/divider"
+            android:dividerHeight="1px"
+            android:paddingLeft="@dimen/divider_padding"
+            android:paddingRight="@dimen/divider_padding"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:fastScrollAlwaysVisible="false"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/bottomactionbar_new"
+        android:name="com.prize.music.ui.fragments.BottomActionBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

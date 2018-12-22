@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:paddingTop="37dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/music"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/search_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/more_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_list_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/head_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/edit"
+            android:paddingTop="@dimen/edit_padding_top"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_small"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line_separator" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+             <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView 
+                    android:id="@+id/local_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/local_head_icon"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/local_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignBottom="@+id/local_icon"
+                    android:textColor="@color/white"
+                     android:textSize="@dimen/text_size_small"
+                    android:text="@string/local_music"/>
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/grideView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/local_margin_top"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:layout_weight="1"
+                android:verticalSpacing="25dp" >
+            </GridView>
+
+            <com.prize.music.views.SongListGridView
+                android:id="@+id/me_grideView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/gridview_marging_top"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:scrollbars="none"
+                android:verticalSpacing="20dp" />
+            <RelativeLayout 
+                android:id="@+id/online_relayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/online_marging_top">
+                <TextView 
+                    android:id="@+id/online_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/online_icon"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/online_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignBottom="@+id/online_icon"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/online_music"/>
+                <ImageView 
+	                android:id="@+id/online_music_btn"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="@dimen/local_margin_top"
+	                android:layout_below="@+id/online_icon"
+	                android:layout_marginLeft="20dp"
+	                android:background="@drawable/icon_xiami_music"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_below="@+id/online_music_btn"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/online_marginbottom"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/duomi_music"/>
+            </RelativeLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

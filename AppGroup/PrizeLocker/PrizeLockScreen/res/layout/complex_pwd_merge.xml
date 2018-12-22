@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        />
+
+    <TextView android:layout_width="wrap_content"
+	    android:layout_height="30dp"
+	    android:id="@+id/txt_hint"
+	    android:text="@string/enter_pwd"
+	    android:gravity="center"
+	    android:layout_gravity="center"
+	    android:layout_marginBottom="8dp"
+	    style="@style/style_str_hint"
+	    />
+
+    <!-- Password entry field -->
+      <FrameLayout
+         android:id="@+id/keyguard_bouncer_frame"
+         android:layout_height="wrap_content"
+         android:layout_width="280dp"
+         android:layout_gravity="center_horizontal"
+         android:theme="@style/PasswordTheme"
+         >
+
+         <EditText android:id="@+id/edit_pwd"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             android:singleLine="true"
+             android:textStyle="normal"
+             android:inputType="textPassword"
+             android:textSize="16sp"
+             android:maxLength="16"
+             android:imeOptions="flagForceAscii|actionDone"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             />
+
+         <!-- <ImageView android:id="@+id/switch_ime_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="12dp"
+             android:src="@drawable/ic_lockscreen_ime"
+             android:contentDescription="@string/accessibility_ime_switch_button"
+             android:clickable="true"
+             android:padding="8dip"
+             android:layout_gravity="end|center_vertical"
+             android:background="?android:attr/selectableItemBackground"
+             android:visibility="gone"
+             /> -->
+       </FrameLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        />
+</merge>

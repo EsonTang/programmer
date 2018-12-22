@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+    <title>搜索</title>
+    <style type="text/css">
+html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}th{text-align:inherit}fieldset,img{border:0}iframe{display:block}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}ol,ul{list-style:none}q:before,q:after{content:''}div{-moz-user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-focus-ring-color:rgba(0,0,0,0)}div:focus{outline:0}input{-webkit-appearance:none}select{border:0;background:0;-webkit-appearance:none}.displayNone,.display-none{display:none!important}.displayBox{display:-webkit-box}input::-webkit-search-decoration,input::-webkit-search-cancel-button{display:none}a{text-decoration:none}.frame{position:fixed;top:0;left:0;z-index:10001;width:100%;height:100%;background-color:#fff}.link{width:100%;height:100%}html{font-size:10px}@media(min-width:480px){html{font-size:15px}}@media(min-width:421px) and (max-width:479px){html{font-size:12px}}@media(max-width:420px){html{font-size:10px}}.clearfix{display:block;zoom:1}.clearfix:after{content:" ";display:block;font-size:0;height:0;clear:both;visibility:hidden}
+.searchHolder{position:relative;z-index:9998;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-pack:start;-webkit-box-align:stretch;height:3.7rem;padding:1rem .8rem;background-color: #eeeeee}
+#m_search_autocomplete{position:absolute;width:100%;z-index:9999;top:5.7rem;margin-left:-0.67rem}
+#m_suggestion_holder{display:none;/*box-shadow:0 .4rem .67rem #454545*/}
+#m_suggestion_holder li{width:96%;height:4rem;background:#fff;cursor:pointer;overflow:hidden;border-bottom:#dcdcdc 1px solid;display: -webkit-box;margin:0 2% 0 2%}
+#m_suggestion_holder li .suggestionLogo{
+    background: url(res/image/suggestion_logo.png) no-repeat center center;
+    background-size: 1.5rem 1.5rem;
+    width: 2.3rem;
+}
+#m_suggestion_holder li a{overflow:hidden;display:block;height:2rem;padding:1rem .67rem 1rem 0.3rem;text-decoration:none;color:#404040;line-height:2.33rem;font-size:1.33rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+/*#m_clear_history{background-color:#f00;text-align:center;width:100%}
+#m_clear_history a{color:#666;text-align:center}*/
+#m_suggestion_holder li.active{font-weight:bold;color:#4686bc;background:#dcdcdc}
+.inputBar{-webkit-box-flex:1;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:start;-webkit-box-align:stretch;-webkit-box-sizing:border-box;height:3.47rem;
+    /*border:.15rem solid #a8c1e4;*/
+    /*border-radius:3px;*/
+    overflow:hidden}
+.searchLogo{width:5.3rem;height:3.7rem;background-color:white;background-position:center center;background-repeat:no-repeat;background-size:3.3rem 3.3rem;border-radius:4px;margin-left: 8px;}
+.searchLogo[disable='true']{background-color: #69bdfb;
+    /*background-image:url(res/image/searchicon_disable.png)*/}
+.searchLogo[disable='false']{background-color: #29a1f7;
+    /*background-image:url(res/image/searchicon_enable.png)*/}
+.searchLogo[disable='false'].active{background-color: #69bdfb;
+    /*background-image:url(res/image/searchicon_pressed.png)*/}
+.searchLogo .searchImg{
+    height: 3.3rem;width: 3.3rem;
+    margin-top: 0.2rem;margin-left: 1rem;
+}
+.chooseCity{position:relative;width:6.67rem;border-right:1px solid #a8c1e4;background-color:white;border-radius:3px 0 0 3px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-pack:center;-webkit-box-align:stretch}#m_city{text-align:center;color:#5c8aca;font-size:1.3rem;border-radius:3px 0 0 3px}#m_city_base.active{background-color:#e3e3e3}.triangle{height:0;width:0;border-width:4px;border-style:solid;border-color:transparent #a8c1e4 #a8c1e4 transparent;overflow:hidden;position:absolute;bottom:1px;right:1px}
+.searchInputHeader{-webkit-box-flex:1;height:3.7rem;border-radius:4px;background-color:white}
+.searchInputHeader input{width:100%;height:3.7rem;border-style:none;outline:0;-webkit-appearance:textfield;-webkit-box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0);font-size:1.4rem;color:#999999;padding-left:.67rem;border-radius: 4px}
+.searchInputHeader input::-webkit-input-placeholder{color:#dfdfdf;font-size:1.4rem;text-align:left}
+.removeInput{width:3.6rem;height:3.7rem;background:#fff url(res/image/cross-search.png) no-repeat center center;background-size:2.0rem 2.0rem;border-radius: 4px;margin-left: -8px;}
+.removeInput.active{background-image:url(res/image/cross-search-press.png)}
+.Cover{position:absolute;z-index:9997;width:100%;height:100%;background-color:white;opacity:1}
+body{width:100%;background-color:white}.fNewCover{position:absolute;top:0;bottom:0;z-index:9999;width:100%;height:100%;background-color:black;opacity:.7;font-size:2.27rem;color:#fff}.Container{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-pack:start;-webkit-box-align:stretch;overflow:hidden}.searchResults{-webkit-box-flex:1;-webkit-box-align:stretch}.resultsTimeout .resultsTimeoutImage{height:10.07rem;margin-left:auto;margin-right:auto;padding-top:6.87rem;background-image:url('res/image/search_timeout.png');background-repeat:no-repeat;background-position:center bottom;background-size:11.73rem 10.07rem}.resultsTimeout .resultsTimeoutDescription{padding-top:2rem;height:1.6rem;font-size:1.6rem;line-height:1.6rem;color:#9d9d9d;text-align:center}.resultsTimeout .resultsTimeoutRetry{width:5rem;height:2.93rem;background:url(res/image/retry_btn.png);margin:1.33rem auto 0;background-size:5rem 2.93rem}.resultsTimeout .resultsTimeoutRetry.active{background:url(res/image/retry_btn_press.png)}.resultsNone .resultsNoneImage{height:13.8rem;margin-right:2.4rem;background-image:url('res/image/noresult.png');background-repeat:no-repeat;background-position:center bottom;margin-bottom:2.33rem;background-size:14.26rem 7.06rem}.resultsNone .resultsNoneDescription{height:3.07rem;line-height:3.07rem;font-size:1.47rem;color:#9d9d9d;font-family:黑体;text-align:center}
+.searchToast{position:fixed;top:12rem;left:50%;margin-left:-6.8rem;height:3rem}.toastInner{display:-webkit-box;-webkit-box-orient:horizontal;margin-left:auto;margin-right:auto}
+.toastInner .toastInnerLeft{width:3rem;height: 3rem;
+    /*background-image:url('res/image/reload_animation_grey.gif');*/
+    background-image:url(res/image/reload_animation_grey2.gif);
+    background-repeat:no-repeat;background-position:center center;background-size:2.8rem auto}
+.toastInner .toastInnerRight{margin-left:.47rem;font-size:1.6rem;color:#9c9c9c;line-height:3rem}
+    .masterMore{height:5.8rem;*display:-webkit-box;-webkit-box-pack:center;-webkit-box-align:stretch;background-color:#f9f9f9}.masterMore.active{background-color:#e4e4e4}.innerMaster{height:100%;display:-webkit-box;-webkit-box-orient:horizontal;margin-left:auto;margin-right:auto}.innerMasterLeft{background-position:center center;background-repeat:no-repeat}.innerMasterLeft[role='normal']{display:none}.innerMasterLeft[role='loading']{width:2.13rem;height:2.13rem;margin-top:1.83rem;background-image:url(res/image/load_circle.png);background-size:2.13rem 2.13rem}.innerMasterLeft[role='retry']{width:2.47rem;background-image:url(res/image/disconnected_more.png);-webkit-transform:rotate(0deg);background-size:2.47rem 2.87rem}.innerMasterRight{padding-left:.8rem;line-height:5.8rem;color:#333;font-size:1.47rem}.token-invalid{margin-top:6.67rem}.captcha-container{position:fixed;bottom:0;background-color:white;width:100%;height:20rem;border-top:.4rem solid #2da1f7;z-index:10000}.captcha-top{padding:0 .8rem}.captcha-msg{line-height:4.13rem;font-size:1.6rem;margin-top:.67rem;margin-bottom:2rem;color:#2da1f7}.captcha-code{width:100%;display:-webkit-box;overflow:hidden}.captcha-input{height:4.67rem;-webkit-box-flex:1;padding-left:.67rem;border-style:none;line-height:2rem;font-size:1.33rem;outline-style:none;border:1px solid #e4e4e4;display:block}.captcha-input::-webkit-inner-spin-button{-webkit-appearance:none}.captcha-input::-webkit-outer-spin-button{-webkit-appearance:none}.captcha-img{border:1px solid #e4e4e4;height:4.67rem;border-left-style:none}.captcha-img img{position:relative;height:3.33rem;margin-top:.67rem}.captcha-bottom{width:100%;height:4.87rem;position:absolute;bottom:0;color:#666}.captcha-bottom-child{width:50%;float:left;border-top:1px solid #e4e4e4;line-height:4.8rem;font-size:1.6rem;text-align:center}.captcha-bottom-child.active{background-color:#e4e4e4}.captcha-no{margin-left:-1px;border-right:1px solid #e4e4e4}.captcha-yes{color:#2da1f7}.captcha-error{padding:.27rem .8rem;color:#f00;line-height:1.07rem;font-size:1.2rem}
+.item-name span{color:#58aff8}
+.list-item{position:relative;height:5.8rem;padding-left:1.33rem;display:-webkit-box;-webkit-box-pack:start;-webkit-box-orient:horizontal;-webkit-box-align:center;border-bottom:1px solid #e4e4e4;background-color:#fdfdfd}.list-item.active{background-color:#f2f2f2}.item-logo{border-radius:5px;background-repeat:no-repeat;background:#e9e9e9 url(res/image/navigate_elements.png) -1rem -10.2rem;margin-right:1.33rem;height:4.4rem;width:4.4rem}.item-logo img{height:4.4rem;width:4.4rem;border-radius:5px;border:1px solid #eee}
+.item-name{color:#404040;font-size:1.47rem;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;!-webkit-box-orient:vertical;-webkit-box-flex:1}
+.item-distance{position:relative;width:6.67rem;height:5.8rem;line-height:5.8rem;color:#aaa;font-size:1.07rem}.item-coupon{position:absolute;top:-1px;right:0;display:none;width:0;height:0;border-top:1.2rem solid #f76156;border-right:1.2rem solid #d83429;border-bottom:1.2rem solid transparent;border-left:1.2rem solid transparent}.item-coupon:after{content:'惠';position:absolute;top:-1.13rem;right:-1rem;line-height:1.33rem;color:#fff;font-size:1rem;-webkit-transform:rotate(45deg)}.item-coupon.show-coupon{display:inline-block}.list-item:after{content:'';position:absolute;top:2.4rem;right:1.33rem;display:inline-block;width:.87rem;height:.87rem;border-bottom:2px solid #aaa;border-right:2px solid #aaa;-webkit-transform:rotate(-45deg)}
+.fav-box {
+    background-color: #eeeeee;
+    padding: 0 2% 0 2%;
+}
+.service-box {
+    background-color: #eeeeee;
+}
+.fav-header, .history-header, .service-header {
+    display: block;
+    height: 3rem;
+    background-color: #eeeeee;
+}
+.fav-title, .history-title, .service-title, .service-footer {
+    float: left;color:#7abaf4;font-size: 1.4rem;height: 3.0rem;line-height: 2.0rem;padding: 0 0.3rem;
+}
+.history-title, .service-title, .service-footer {
+    padding: 0 1rem;
+}
+.service-footer {
+    padding-top: 1rem;
+}
+.fav-list {
+    display: block;
+}
+.fav-item {
+    position: relative;
+    float:left;
+    width: 25%;
+}
+.fav-name {
+    margin:0 4% 8% 4%;
+    padding:12% 0 12% ;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    color: #616161;
+}
+.fav-name.active {
+    background-color: #e1f2ff;
+}
+#m_history_holder li{width:96%;background:#fff;cursor:pointer;overflow:hidden;border-bottom:#e0e0e0 1px solid;display: -webkit-box;-webkit-box-pack: start;-webkit-box-orient: horizontal;-webkit-box-align: center;margin: 0 2% 0 2%;height: 4rem;}
+.historylogo {margin-left: 0.5rem;}
+.historylogo img {height:1.6rem;width:1.6rem;}
+#m_history_holder li a{overflow:hidden;display:block;height:2rem;padding:1rem .67rem 1rem 0.5rem;text-decoration:none;color:#404040;line-height:2rem;font-size:14px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+#m_clear_history{background-color:#f00;text-align:center;width:100%}
+#m_clear_history a{color:#58aff8!important;text-align:center;margin:0 auto;}
+#m_history_holder li.active{color:#4686bc;background:#e1f2ff}
+#m_service_holder .service-logo {
+    background: transparent;
+}
+.service-logo .logo-img {
+    border-radius: 50px;
+    border: transparent;
+}
+</style>
+</head>
+<body>
+<script>
+    console.log('txm devicePixelRatio:' + window.devicePixelRatio);
+    console.log('txm clientWidth: ' + document.body.clientWidth);
+        var isIOS = false;
+        var AND_APILEVEL = 0;
+        var IOS_APILEVEL = 0;
+        if (window.CTKJavaScriptHandler) {
+            AND_APILEVEL = window.CTKJavaScriptHandler.getApiLevel();
+        }
+</script>
+<div id="header">
+</div>
+<div id="content">
+    <div class='displayNone fNewCover' id='m_new_cover'></div>
+    <div class='searchHolder' id='m_search_holder'>
+        <div class='inputBar'>
+            <div class='display-none chooseCity' id='m_city_base'><div id='m_city'></div><div class='triangle'></div></div>
+            <div class='searchInputHeader'>
+                <input type='search' class='searchInput' id='m_search_input' autocomplete='off' name='search' placeholder='搜索：肯德基、招商银行...'/>
+            </div>
+            <div class='removeInput display-none' id='m_remove_input'></div>
+            <div class='searchLogo' id='m_search_logo'>
+                <img class='searchImg' src="res/image/searchlogo.png">
+            </div>
+        </div>
+        <div id='m_search_autocomplete'>
+            <ul id='m_suggestion_holder'></ul>
+        </div>
+    </div>
+    <div class='display-none Cover' id='m_cover'></div>
+    <div>
+        <div class='Container' id='m_container'>
+
+            <div class='fav-box'>
+                <div class='fav-header'>
+                    <h1 class='fav-title'>常用号码</h1>
+                </div>
+                <ul class='fav-list' id='mFavList'>
+                    <li class='fav-item display-none' id='mFavItem'><h3 class='fav-name'></h3></li>
+                </ul>
+            </div>
+            <div class='history-box display-none'>
+                <div class='history-header'>
+                    <h1 class='history-title'>历史记录</h1>
+                </div>
+                <div id = 'm_history_list'>
+                    <ul id='m_history_holder'>
+                        <li class="history-item ">
+                            <div class='historylogo'>
+                                <img src="res/image/history-logo.png">
+                            </div>
+                            <a class="historyAnchor">麦包包</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class='service-box display-none' id='m_service_box'>
+                <div class='service-header'>
+                    <h1 class='service-title'>服务直达</h1>
+                </div>
+                <div id='m_service_list'>
+                    <ul id='m_service_holder'></ul>
+                </div>
+                <div class='service-header'>
+                    <h1 class='service-footer'>黄页号码</h1>
+                </div>
+            </div>
+
+            <div class='list-item displayNone' id='list-item'>
+                <div class='item-logo displayNone'>
+                    <img class='logo-img displayNone' border='0'/>
+                </div>
+                <p class='item-name'></p>
+                <p class='item-distance'>
+                    <span class='distance-text'></span>
+                    <span class="item-coupon"></span>
+                </p>
+            </div>
+
+            <div class='displayNone resultsNone' id='m_results_none'>
+                <div class='resultsNoneImage'></div>
+                <div class='resultsNoneDescription'>抱歉，暂时没搜到您满意的内容</div>
+                <div class='resultsNoneDescription'>请换个词试试</div>
+            </div>
+            <div class='displayNone token-invalid resultsNone' id='token-invalid'>
+                <div class='resultsNoneDescription'>请求失败，请返回重试！</div>
+            </div>
+            <div class='displayNone resultsTimeout' id='m_results_timeout'>
+                <div class='resultsTimeoutImage'></div>
+                <div class='resultsTimeoutDescription'>啊哦 网络好像断开了</div>
+                <div class='resultsTimeoutRetry' id='m_results_retry'></div>
+            </div>
+            <div class='displayNone searchToast' id='m_search_toast'>
+                <div class='toastInner'>
+                    <div class='toastInnerLeft' id='m_toast_inner_left'></div>
+                    <div class='toastInnerRight' id='m_toast_inner_right'>正在为您查号...</div>
+                </div>
+            </div>
+            <div class='searchResults' id='m_search_results'>
+            </div>
+        </div>
+        <div class='displayNone masterMore' id='m_master_more'>
+            <div class='innerMaster'>
+                <div class='innerMasterLeft' id='load-img'></div>
+                <div class='innerMasterRight'>加载更多</div>
+            </div>
+        </div>
+        <div class='captcha-container displayNone' id='captcha-container'>
+            <div class='captcha-top'>
+                <div class='captcha-msg'>服务器提了一个问题</div>
+                <div class='captcha-code'>
+                    <input class='captcha-input' id='captcha-input' type='number' placeholder='请输入验证码'>
+                    <div class='captcha-img' id='captcha-img'><img></div>
+                </div>
+            </div>
+            <div class='captcha-error displayNone' id='captcha-error'>请输入验证码</div>
+            <div class='captcha-bottom'>
+                <div class='captcha-no captcha-bottom-child' id='captcha-no'>取消</div>
+                <div class='captcha-yes captcha-bottom-child' id='captcha-yes'>确定</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+</div>
+<script type='text/javascript' src='res/js/zepto.v2.js'></script>
+<script type='text/javascript' src='res/js/ctk.v1.js'></script>
+<script type='text/javascript' src='res/js/util.v1.js'></script>
+<script type='text/javascript'>
+var src_url="res/js/lib/";function loadJs(d,a){xmlHttp=new XMLHttpRequest();xmlHttp.open("GET",a,false);xmlHttp.send(null);if(xmlHttp.readyState==4){if((xmlHttp.status>=200&&xmlHttp.status<300)||xmlHttp.status==0||xmlHttp.status==304){var c=document.getElementsByTagName("HEAD").item(0);var b=document.createElement("script");b.language="javascript";b.type="text/javascript";b.id=d;b.appendChild(document.createTextNode(xmlHttp.responseText));c.appendChild(b);return true}return false}return false}function existJs(b){var a=false;try{switch(b){case"util":a=util_exist;break;case"zepto":a=zepto_exist;break;case"ctk":a=ctk_exist;break;default:break}}catch(c){a=false}if(a!=true&&a!=false){a=false}return a}function readyJs(f){for(var d=f.length-1;d>=0;--d){var c=f[d];var h=c.split("_");var b=src_url;if(h.length==1){var e=c.split(".")[0];b+=c}else{var e=h[0];var g=c.substring(c.lastIndexOf("."));b+=h[0]+g}if(existJs(e)==false){console.log("load js from web:"+b);var a=loadJs("test_"+d.toString(),b)}}};    readyJs(['zepto.v2.js', 'ctk.v1.js', 'util.v1.js']);
+Utils.phone_call=function(d){console.log("===========use the util_patch===========");var a=d.phone.replace(/ /g,"");if(a.indexOf("-")!=a.lastIndexOf("-")){a=a.replace(/-/g,"")}else{if(a.indexOf("-")!=-1){a=a.replace("-",",,")}}if(a.indexOf(",")!=-1){a=a.slice(0,a.indexOf(","))}console.log("the phone");console.log(a);var b=d.shopname;if(window.CTKJavaScriptHandler){Utils.collect_scenario_action_phone_call_params(d);var c=window.CTKJavaScriptHandler.getApiLevel();if(c>=4){window.CTKJavaScriptHandler.callPhoneLevel4(a,b?b:"",false)}else{if(c>=2){window.CTKJavaScriptHandler.callPhoneLevel2(a,b?b:"")}else{window.CTKJavaScriptHandler.callPhone(a)}}}else{if(a.indexOf(",")!=-1){a=a.slice(0,a.indexOf(","))}setTimeout(function(){window.location.href="tel:"+a},0)}};Utils.append_scenario_node=function(a){return CTK.appendScenarioNode(a)};Utils.get_token=function(){return CTK.getToken()};Utils.isLogged=function(){return CTK.isLogged()};Utils.login=function(b,a,c){return CTK.login(b,a,c)};Utils.getLoginNumber=function(){return CTK.getLoginNumber()};Utils.getSecret=function(){return CTK.getSecret()};Utils.collect_scenario_action_phone_call_params=function(b){var a=Utils.collect_scenario_params_common(12,"action_phone_call");if(b.shopid){a.shop_id=b.shopid}a.shop_name=b.shopname;a.phone=b.phone;a.page=b.page;if(b.coupons){a.coupon=b.coupons}if(b.tag){a.tag=b.tag}Utils.append_scenario_node(JSON.stringify(a))};Utils.collect_scenario_action_express=function(d,b,a){var c=Utils.collect_scenario_params_common(56,"action_express");c.page=d;c.type=b;if(a&&a.length>0){c.share_type=a}Utils.append_scenario_node(JSON.stringify(c))};Utils.collect_scenario_save_coupon_params=function(c){var b=Utils.collect_scenario_params_common(7,"status_page_loaded_detail");var a=Utils.coupon_info;b.shop_id=a.shopid;b.shop_name=a.shopname;b.phones=a.phones;b.coupon=a.coupons;b.save_coupon=true;b.save_success=c;Utils.append_scenario_node(JSON.stringify(b))};Utils.collect_ajax_request_params=function(a,b,e,c){var d=Utils.collect_scenario_params_common(40,"status_ajax_request");d.url=a;d.type=b;d.cost=e;d.code=c;Utils.append_scenario_node(JSON.stringify(d))};Utils.collect_scenario_status_external_link_params=function(a){var b=Utils.collect_scenario_params_common(14,"status_external_link");b.external_link=a;b.action="entered";Utils.append_scenario_node(JSON.stringify(b))};AjaxRequest.prototype.send=function(b){var a=this;if(a.request!=null){a.request.abort();if(b.timeout){a.timeout=setTimeout(function(){a.request.abort();b.error(a.request,"timeout");clearTimeout(a.timeout)},b.timeout)}b.asyn=b.asyn?b.asyn:true;b.dataType=b.dataType?b.dataType:"text";a.global=b.global?b.global:false;if(a.global&&typeof AjaxRequest.sendBefore=="function"){AjaxRequest.sendBefore({type:"ajaxSend"},a.request,b)}if(b.beforeSend){b.beforeSend()}try{a.request.onreadystatechange=function(){if(a.getReadyState()==4){var d=a.getStatus();console.log("status"+d);if((d>=200&&d<300)||d==304){clearTimeout(a.timeout);switch(b.dataType){case"text":b.success(a.getResponseText(),d);break;case"xml":b.success(a.getResponseXML(),d);break;case"json":b.success(JSON.parse(a.getResponseText()),d);break}if(a.global&&typeof AjaxRequest.sendSuccess=="function"){AjaxRequest.sendSuccess({type:"ajaxSuccess"},a.request,b)}}else{if(d>=400){clearTimeout(a.timeout);switch(b.dataType){case"text":b.error(a.request,a.getStatus(),null,a.getResponseText());break;case"xml":b.error(a.request,a.getStatus(),null,a.getResponseXML());break;case"json":b.error(a.request,a.getStatus(),null,a.getResponseText());break;default:b.error(a.request,a.getStatus(),null,a.getResponseText());break}}}}};a.request.open(b.type,b.url,b.asyn);if(b.type.toLowerCase()=="get"){a.request.send(null)}else{b.postDataType=b.postDataType?b.postDataType:"application/x-www-form-urlencoded";a.request.setRequestHeader("Content-Type",b.postDataType);a.request.send(b.postData)}}catch(c){clearTimeout(a.timeout);switch(b.dataType){case"text":b.error(a.request,a.getStatus(),c,a.getResponseText());break;case"xml":b.error(a.request,a.getStatus(),c,a.getResponseXML());break;case"json":b.error(a.request,a.getStatus(),c,a.getResponseText());break;default:b.error(a.request,a.getStatus(),c,a.getResponseText());break}if(a.global&&typeof AjaxRequest.sendError=="function"){AjaxRequest.sendError({type:"ajaxError"},a.request,b)}console.log("Ajax error communicating with the server.\nDetails: "+c)}}};CTK.redirectLinkNoNavigateBar=function(a,c,b){if(this.handler){if(c in Utils.source_umeng_map){this.onUMengEvent(Utils.source_umeng_map[c])}if(b=="picture"){window.location=a}else{Utils.collect_scenario_status_external_link_params(a);if(this.getApiLevel()>=12){this.handler.startExternalLinkWebViewHideNavigationBar(a,c)}else{this.handler.startExternalLinkWebView(a,c)}}}else{window.location.href=a}};CTK.backWithRefresh=function(a){if(this.getApiLevel()>=13){return this.handler.backWithRefresh(a)}};CTK.saveFixedPage=function(a){if(this.getApiLevel()>=13){console.log("saveFixedPage : "+document.URL);return this.handler.saveFixedPage(a)}};CTK.goBackOrForward=function(a,b){if(this.getApiLevel()>=13){return this.handler.goBackOrForward(a,b)}};CTK.getBackForwardList=function(){if(this.getApiLevel()>=10){return this.handler.getBackForwardList()}};CTK.setToken=function(){if(this.handler){var c=Utils.netService;var b=this.handler.getAuthToken();var a=Utils.getCookie("auth_token");if(a&&a!==b){Utils.removeCookie("auth_token",{domain:c})}Utils.setCookie("auth_token",b,{domain:c});this.handler.setAuthToken(b)}};CTK.makePhoneCall=function(d,b,a){if(this.handler){Utils.collect_scenario_action_phone_call_params(d);var c=this.getApiLevel();if(a.indexOf(",")!=-1){a=a.slice(0,a.indexOf(","))}if(c>=4){this.handler.callPhoneLevel4(a,b?b:"",false)}else{if(c>=2){this.handler.callPhoneLevel2(a,b?b:"")}else{this.handler.callPhone(a)}}}else{if(a.indexOf(",")!=-1){a=a.slice(0,a.indexOf(","))}window.location.href="tel:"+a}};CTK.getSimOperator=function(a){if(this.handler&&this.getApiLevel()>=15){return this.handler.getSimOperator(a)}};CTK.getNetworkOperator=function(a){if(this.handler&&this.getApiLevel()>=15){return this.handler.getNetworkOperator(a)}};CTK.sendSMSMessage=function(b,a){if(this.getApiLevel()>=15){return this.handler.sendSMSMessage(b,a)}else{if(this.handler){return this.handler.sendMessage("sms",b,a)}}};CTK.getClientVersion=function(){if(this.handler){var b=this.handler.getActivationJsonInfo(),a=null;b=JSON.parse(b);a=b.app_version;a=(clientList&&a in clientList)?clientList[a]:a;return a*1||0}else{return 0}};CTK.activate=function(){var b=this;var a=0;var g=b.getClientInfo();var d=Utils.netService+"/auth/activate";var f={app_name:g.app_name||"cootek.smartinput.android.public",app_version:b.getClientVersion()+""||"0",channel_code:g.channel_code||"010001",activate_type:"new"};(function c(){$.ajax({url:d,type:"POST",async:false,timeout:10000,data:JSON.stringify(f),dataType:"json",success:function(i,h){e(i)},error:function(j,h,i){if(h=="timeout"&&a<3){a++;console.log("txm activate: timeout ! retry "+a+"; status: "+h);c()}else{e(JSON.parse(j.responseText))}}})})();function e(h){console.log("txm activate response: "+JSON.stringify(h));if(h.error_code==0){b.setItemToStorage("auth_token",Utils.getCookie("auth_token"))}}};CTK.sendVerification=function(g){var b=this;var a=0;var d=Utils.netService+"/auth/send_verification?auth_token="+Utils.get_token();var f={account_name:g.phone,type:g.type||"sms",account_type:"com.cootek.auth.phone"};b.getToken();(function c(){$.ajax({url:d,type:"POST",timeout:10000,data:JSON.stringify(f),dataType:"json",success:function(i,h){e(i)},error:function(j,h,i){if(h=="timeout"&&a<3){a++;console.log("txm send verification: timeout ! retry "+a+"; status: "+h);c()}else{e(JSON.parse(j.responseText))}}})})();function e(h){if(h.error_code){console.log("txm send verification response error, response: "+JSON.stringify(h))}else{console.log("txm send verification response: "+JSON.stringify(h))}if(typeof g.callBack=="function"){g.callBack(h)}}};CTK.loginRequest=function(g){var b=this;var a=0;var d=Utils.netService+"/auth/login?auth_token="+Utils.get_token();var f={account_name:g.phone,account_type:"com.cootek.auth.phone",verification:g.verification||"",password:g.password||""};b.getToken();(function c(){$.ajax({url:d,type:"POST",timeout:10000,data:JSON.stringify(f),dataType:"json",success:function(i,h){e(i)},error:function(j,h,i){if(h=="timeout"&&a<3){a++;console.log("txm login timeout ! retry "+a+"; status: "+h);c()}else{e(JSON.parse(j.responseText))}}})})();function e(h){if(h.error_code){console.log("txm login response error, response: "+JSON.stringify(h))}else{if(h.result_code==2000){b.setItemToStorage("auth_token",Utils.getCookie("auth_token"));b.setItemToStorage("login_number",g.phone);if(typeof h.result=="string"){b.setItemToStorage("secret",h.result)}else{if(typeof h.result=="object"){b.setItemToStorage("secret",h.result.secret)}else{console.log("txm login secret type error;")}}}console.log("txm login response: "+JSON.stringify(h))}if(typeof g.callBack=="function"){g.callBack(h)}}};CTK.uploadUsage=function(c){var i=this;var a=0;var b=Utils.netService+"/statistic/usage?type=dialer_new&auth_token="+Utils.get_token();var e={data:[]};var g=Object.prototype.toString.call(c.dataItem).slice(8,-1).toLowerCase();if(g=="array"){c.dataItem.forEach(h)}else{h(c.dataItem)}i.getToken();(function d(){$.ajax({url:b,type:"POST",timeout:10000,data:JSON.stringify(e),dataType:"json",success:function(k,j){f(k)},error:function(m,j,l){if(j=="timeout"&&a<3){a++;console.log("txm upload usage: timeout ! retry "+a+"; status: "+j);d()}else{try{var k=JSON.parse(m.responseText)}catch(l){var k={ret:m.responseText,status:m.status}}f(k)}}})})();function f(j){console.log("txm upload usage response: "+JSON.stringify(j));if(typeof c.callBack=="function"){c.callBack(j)}}function h(k){k.timestamp=+new Date();var j={path:"path_websearch_scenario",value:JSON.stringify(k)};e.data.push(j)}};CTK.login=function(e,a,f){if(this.handler&&this.getApiLevel()>=10){return this.handler.login(e,a,f)}else{window.location.hash="#login";var d=$('<div class="frame"></div>');var c=$('<iframe src="'+Utils.netService+"/page/login.html?title="+e+"&phone="+a+"&callback="+f+'" class="link" id="link" frameborder="0"></iframe>');$("#content").addClass("displayNone");d.append(c);d.insertBefore("#header");window.removeEventListener("hashchange",b);window.addEventListener("hashchange",b);function b(){if(window.location.hash!="#login"){if(isIOS){Array.prototype.slice.call(c[0].contentWindow.document.getElementsByTagName("input")).forEach(function(g){g.blur()})}$("#content").removeClass("displayNone");d.remove()}}}};CTK.isLogged=function(){if(this.handler&&this.getApiLevel()>=10){return this.handler.isLogged()}else{return this.getItemFromStorage("secret")?true:false}};CTK.getSecret=function(){if(this.handler&&this.getApiLevel()>=10){return this.handler.getSecret()}else{return this.getItemFromStorage("secret")}};CTK.getLoginNumber=function(){if(this.handler&&this.getApiLevel()>=10){return this.handler.getLoginNumber()}else{return this.getItemFromStorage("login_number")}};CTK.getToken=function(){if(this.handler&&this.getApiLevel()>=1){return this.handler.getAuthToken()}else{if(!Utils.getCookie("auth_token")&&!this.getItemFromStorage("auth_token")){this.activate()}return Utils.getCookie("auth_token")||this.getItemFromStorage("auth_token")||""}};CTK.appendScenarioNode=function(a){if(this.handler&&this.getApiLevel()>=3){this.handler.appendScenarioNode(a)}else{a=JSON.parse(a);a.isIOS=window.navigator.userAgent.toLowerCase().indexOf("iphone")!=-1?"true":"false";this.uploadUsage({dataItem:a})}};CTK.getClientInfo=function(){if(this.handler&&this.getApiLevel()>=1){return JSON.parse(this.handler.getActivationJsonInfo())}else{return{}}};CTK.isOnlineApk=function(){if(this.handler){var a=window.CTKJavaScriptHandler.isOnlineApk();if(typeof(a)==="boolean"){return a}else{if(typeof(a)==="string"){return(a==="true")?true:false}}}};
+CTK.online2Local=function(c,a){var e=navigator.userAgent,d=e.indexOf("Android"),b=(d>=0)?parseFloat(e.slice(d+8)):-1;if(this.handler&&this.isOnlineApk()){return a}else{if(b>=4.4){if(this.handler&&this.getApiLevel()>=20){return"ctlocal:content://local.file.provider_online/"+c}else{return a}}else{return"content://local.file.provider_online/"+c}}};
+CTK.weixinpay=function(a,b){if(this.handler){return this.handler.weixinpay(a,b)}};CTK.isWXAppInstalled=function(){if(this.handler){return this.handler.isWXAppInstalled()}};CTK.isWXPaySupported=function(){if(this.handler){return this.handler.isWXPaySupported()}};CTK.downloadApk=function(a){if(this.getApiLevel()>=8){this.handler.downloadApk(JSON.stringify(a))}};CTK.getTabbarRedPointInfo=function(){if(this.getApiLevel()>=11){return this.handler.getTabbarRedPointInfo()}};CTK.delTabbarRedPointInfo=function(a){if(this.getApiLevel()>=11){this.handler.delTabbarRedPointInfo(JSON.stringify(a))}};CTK.getReadySim=function(){if(this.getApiLevel()>=8){return this.handler.getReadySim()}};CTK.getDefaultSimCard=function(){if(this.getApiLevel()>=8){return this.handler.getDefaultSimCard()}};
+CTK.isMainTabYellowPage=function(){if(this.getApiLevel()>=23){var a=window.location.href;return(a.indexOf("/page/index.html")!=-1||a.indexOf("local.file.provider_online/index.html")!=-1)?this.handler.isMainTabYellowPage():false}};
+CTK.startExternalLinkWebViewNew=function(b,c,a,e,d){if(this.handler){if(c in Utils.source_umeng_map){this.onUMengEvent(Utils.source_umeng_map[c])}Utils.collect_scenario_status_external_link_params(b);if(this.getApiLevel()>=24){this.handler.startExternalLinkWebViewNew(b,c,!!a,e||"生活黄页",d||"您确定要退出页面吗？\n返回上一页请点顶部返回.")}else{if(a&&this.getApiLevel()>=12){this.handler.startExternalLinkWebViewHideNavigationBar(b,c)}else{this.handler.startExternalLinkWebView(b,c)}}}else{window.location.href=b}};CTK.openUrlInBrowser=function(a){if(this.handler&&this.getApiLevel()>=24){this.handler.openUrlInBrowser(a)}else{return}};var fastclick_exist=true;(function(d){d.fn.fastClick=function(j,i){return this.each(function(){b(d(this),j,i)})};var c="ontouchstart" in window;var h=c?"touchstart":"mousedown";var g=c?"touchmove":"mousemove";var e=c?"touchend":"mouseup";var f="touchcancel";var a=d("body");var b=function(m,s,j){var o,n;var p=function(){m.off(e,r);setTimeout(function(){m.removeClass("active")},200);a.off(g,i).off(f)};var q=function(){var t=m.attr("custom_event");if(!t){return}var u=Utils.collect_scenario_params_common(139,"custom_event");u.module=t.split(" ")[0];u.event=t;Utils.append_scenario_node(JSON.stringify(u))};var r=function(t){t.preventDefault();t.stopPropagation();p();q();s.call(this,t)};var i=function(t){if(c){var u=t.originalEvent;if(!u){u=t.touches}if(Math.abs(u[0].clientX-o)>2||Math.abs(u[0].clientY-n)>2){p()}}else{p()}};var k=function(t){p()};var l=function(t){t.stopPropagation();if(!j){m.off(e)}m.on(e,r);m.addClass("active");a.on(g,i);a.on(f,k);if(c){var u=t.originalEvent;if(!u){u=t.touches}o=u[0].clientX;n=u[0].clientY}};m.on(h,l)}})(Zepto);(function(){var f=window.history,d=navigator.userAgent,a=window.location;var e=d.match(/iPhone OS/g);if(!e||(e&&e.length<=0)){return}var b=function(k,l){this.init_state=k;this.transitions=l||[];for(var j=0,g=l.length;j<g;j++){var h=l[j];if(this.states.indexOf(h.from)<0){this.states.push(h.from)}if(this.states.indexOf(h.to)<0){this.states.push(h.to)}}};b.prototype={init_state:null,states:[],transitions:[],has_state:function(g){return this.states.indexOf(g)>-1},find_trans:function(g){var h=this.transitions;if(g.from){h=h.filter(function(i){return i.from===g.from})}if(g.to){h=h.filter(function(i){return i.to===g.to})}return h}};var c=new b("/page/index.html",[{name:"index",from:"/page/index.html",to:"/page/index.html",back:"/page/index.html"},{name:"select_city",from:"/page/index.html",to:"/page/indexCity.html",back:"/page/index.html"},{name:"input_search",from:"/page/index.html",to:"/page/index.html#input",back:"/page/index.html"},{name:"search",from:"/page/index.html#input",to:"/page/search.html",back:"/page/index.html"},{name:"search_city",from:"/page/search.html",to:"/page/indexCity.html",back:"/page/search.html"}]);f.backward=f.back;f.back=function(){var k=new RegExp(a.origin+"(.+)$"),l=k.exec(a.href),h=k.exec(document.referrer),g,j;l=(l&&l.length>1)?l[1]:undefined;if(!c.has_state(l)){return f.backward()}h=(h&&h.length>1)?h[1]:undefined;var i=c.find_trans({to:h});g=(i.length===1)?i[0].back:c.init_state;var i=c.find_trans({to:l});if(i.length===1){j=i[0].back}else{if(i.length>1){if(h){i=i.filter(function(m){return(m.from===h)?true:false})}j=(i.length===1)?i[0].back:undefined}else{return f.backward()}}if(g&&j){window.history.pushState({url:a.origin+g},document.title,a.origin+g);window.location.href=a.origin+j}else{return f.backward()}}})();
+var favlist = [{
+    identifier: "yinhang",
+    title: "银行",
+    icon_url: "number_icon/icon_yinhang.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=银行",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "jiudian",
+    title: "酒店",
+    icon_url: "number_icon/icon_jiudian.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=酒店",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "hangkonggongsi",
+    title: "机票",
+    icon_url: "number_icon/icon_hangkonggongsi.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=机票预订",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "gonggongfuwu",
+    title: "公共服务",
+    icon_url: "number_icon/icon_gonggongfuwu.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=公共服务",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "chuzuche",
+    title: "打车",
+    icon_url: "number_icon/icon_dache.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=打车",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "daijia",
+    title: "代驾",
+    icon_url: "number_icon/icon_daijia.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=代驾",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "zuche",
+    title: "租车",
+    icon_url: "number_icon/icon_zuche.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=租车",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "zhengquan",
+    title: "证券",
+    icon_url: "number_icon/icon_zhengquan.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=证券",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "touzilicai",
+    title: "理财",
+    icon_url: "number_icon/icon_touzilicai.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=投资理财",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "baoxian",
+    title: "保险",
+    icon_url: "number_icon/icon_baoxian.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=保险",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "dianshangkefu",
+    title: "电商客服",
+    icon_url: "number_icon/icon_dianshang.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=电商客服",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "youxikefu",
+    title: "游戏客服",
+    icon_url: "number_icon/icon_youxikefu.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=游戏客服",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "baojingjiuyuan",
+    title: "报警救援",
+    icon_url: "number_icon/icon_baojingjiuyuan.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=报警救援",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "jubaorexian",
+    title: "举报热线",
+    icon_url: "number_icon/icon_jubaorexian.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=举报热线",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "gonggongcishan",
+    title: "公益慈善",
+    icon_url: "number_icon/icon_gongyicishan.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=公益慈善",
+        nativeParams: ["_city"]
+    }
+},
+{
+    identifier: "pinpaishouhou",
+    title: "品牌售后",
+    icon_url: "number_icon/icon_pinpaishouhou.png",
+    link: {
+        url: "http://search.oem.cootekservice.com/page/navigate.html",
+        localUrl: "/navigate.html",
+        params: "classify=售后服务",
+        nativeParams: ["_city"]
+    }
+}];
+var Search={
+    PROPOSAL_URL:Utils.netService+"/yellowpage/proposal?input=",
+    SEARCH_URL:Utils.netService+"/yellowpage/search?input=",RETRIEVEMORE:Utils.netService+"/yellowpage/retrievemore?ref=",
+    FILTER:Utils.netService+"/yellowpage/filter?ref=",
+    RELATIVE:Utils.netService+"/yellowpage/relative?",
+    SUGGESTION_NUMBER:5,
+    EFAULT_CITY:"全国",
+    search_autocomplete_len:0,
+    search_autocomplete_viewport_flag:false,
+    query_cache:"",
+    disable_autocomplete:false,
+    searchInput:$("#m_search_input"),
+    removeInput:$("#m_remove_input"),
+    cover:$("#m_cover"),
+    searchLogo:$("#m_search_logo"),
+    init:function(){
+        var a=this;
+        if(!Utils.storage_get_item("search_history")){
+            Utils.storage_set_item("search_history",JSON.stringify(new Array()))
+        }
+        $("#m_search_logo").attr("disable","true");/*a.searchInput.on("input",a.whenInput);a.searchInput.on("keyup",a.whenInput);a.searchInput.on("focus",a.search_focus);a.searchInput.on("blur",a.search_blur);a.removeInput.fastClick(a.remove_input);*/
+        a.cover.fastClick(a.hide_cover);
+        a.cover.on("touchstart",function(){
+            if(window.location.hash==="#input"){Utils.back_page()}
+        });
+        a.searchLogo.fastClick(a.searchLogoClicked)
+    },
+    display_suggestion:function(d,b){$("#m_suggestion_holder").html("");var e=Math.min(Search.SUGGESTION_NUMBER,d.length);if(e==0){return}var c=$("#m_suggestion_holder");for(var f=0;f<e;f++){var a=$("<li></li>");a.addClass("suggestion");a.attr("id","m_suggestion"+f);
+    a.html('<div class="suggestionLogo"></div><a class="suggestionAnchor">'+d[f]+"</a></li>");
+    c.append(a)}c.css("display","block");$(".suggestion").each(function(){$(this).fastClick(Search.suggestClicked)});if(b){var a=$("<li></li>");a.attr("id","m_clear_history");a.html("<a>清空历史记录</a>");c.append(a);$("#m_clear_history").fastClick(Search.clear_search_history)}},
+    autocomplete:function(c,d){
+        if(c==""){
+            $("#m_remove_input").addClass("display-none");
+            $("#m_search_logo").attr("disable","true");
+            $("#m_cover").addClass("display-none");
+        }else{
+            $("#m_remove_input").removeClass("display-none");
+            $("#m_search_logo").attr("disable","false");
+            $("#m_cover").removeClass("display-none");
+        }
+        if(d==true&&c==Search.query_cache){return}if(!(c==Search.query_cache)){Search.query_cache=c;if(!c){
+            $("#m_suggestion_holder").html("");
+            //Search.display_history();
+            $("#m_cover").addClass("display-none");
+            return
+        }}
+        $("#m_suggestion_holder").html("");
+        var a=function(f){var e=function(h,g){if(h.error_code==0&&!Search.disable_autocomplete){var i=$("#m_search_input").val();if(!i){
+            $("#m_suggestion_holder").html("");
+            //Search.display_history()
+            $("#m_cover").addClass("display-none");
+        }else{if(i==f){Search.display_suggestion(h.res,false)}}}};return e};var b=function(g,e,f){console.log("failed status: "+g.status)};Utils.ajaxReq().send({type:"GET",url:encodeURI(Search.PROPOSAL_URL+c+"&token="+Utils.get_token()),dataType:"json",success:a(c),error:b})},
+    display_history:function(){$("#m_suggestion_holder").html("");var search_history_list=eval(Utils.storage_get_item("search_history"));Search.display_suggestion(search_history_list,true)},
+    search_focus:function(){
+        var a=window.location.href;if(true||a.indexOf("index")>=0){
+            // window.location.hash="#input"
+        }if(!Search.search_autocomplete_viewport_flag){Search.search_autocomplete_viewport_flag=true;var c=$("#m_search_autocomplete");var d;var f=$("#m_taste_announce");if(f&&!f.hasClass("display-none")){d=f.height()}else{d=0}Search.search_autocomplete_len=$("#m_search_holder").width()}var b=$("#m_cover");
+        // $("#m_city_base").addClass("display-none");
+        if($(this).attr("role")=="home"){b.height(Math.max(window.innerHeight-$("#m_search_holder").height()+Utils.get_tabbar_height()-10,$("#m_first_page").height()+Utils.get_tabbar_height()+10))}else{
+            if($(this).attr("role")=="search"){
+                var h=$("#m_search_results").height()+2;
+                var e=$("#m_master_more");
+                if(!e.hasClass("display-none")){h+=e.height()}
+                // b.height(Math.max(h,window.innerHeight-$("#m_search_holder").height()+Utils.get_tabbar_height()-10))
+                b.height(Math.max(h,$(window).height()-$("#m_search_holder").height()+Utils.get_tabbar_height()-10))
+            }}console.log('search focus');
+            // b.removeClass("display-none");
+            if($("#m_search_input").val()!==""){$("#m_remove_input").removeClass("display-none");$("#m_search_logo").attr("disable","false")}if(Search.disable_autocomplete==true){Search.disable_autocomplete=false}var g=$("#m_search_input").val().trim();
+            if(g==""){
+                // Search.display_history()
+                // b.addClass("display-none");
+            }else{
+                // b.removeClass("display-none");
+                Search.autocomplete(g,false)};
+            },
+    search_blur:function(){
+        Search.disable_autocomplete=true;if(window.location.hash=="#input"&&Utils.storage_get_item("index_hash_input")!="true"){history.back()}
+        // $("#m_city_base").removeClass("display-none");
+        if($("#m_search_input").val()!==""){$("#m_remove_input").removeClass("display-none");$("#m_search_logo").attr("disable","false")}},
+    hide_cover:function(){Search.searchInput.blur();Search.removeInput.addClass("display-none");$("#m_cover").addClass("display-none");window.setTimeout(function(){$("#m_suggestion_holder").html("")},200)},clear_search_history:function(){Utils.storage_set_item("search_history",JSON.stringify(new Array()));$("#m_cover").addClass("display-none");$("#m_suggestion_holder").html("")},
+    remove_input:function(){var a=$("#m_search_input");a.val("");$("#m_suggestion_holder").css("display","none");$("#m_remove_input").addClass("display-none");$("#m_search_logo").attr("disable","true");
+        $("#m_cover").addClass("display-none");
+        a.focus();Search.query_cache=""},
+    init_city:function(){
+        var a=Utils.storage_get_item("city");console.log(a);if(a){$("#m_city").text(a)}else{$("#m_city").text(Search.DEFAULT_CITY);Utils.storage_set_item("city",Search.DEFAULT_CITY)}
+        // $("#m_city_base").removeClass("display-none")
+    },
+    whenInput:function(a){var b=a.target.value;if(a.type=="keyup"&&a.keyCode==13){Search.redirectSearchPage(b)}Search.autocomplete(b,true)},
+    suggestClicked: function(b) {
+        var g = $(this).find(".suggestionAnchor");
+        if (g.length == 0) {
+            g = $(this).find(".historyAnchor");
+        };
+        if (g && (g.hasClass("suggestionAnchor") || g.hasClass("historyAnchor"))) {
+            var k = g[0].text;
+            Search.searchInput.val(k)
+        } else {
+            var k = Search.searchInput.val()
+        }
+        if (k.match("##.*##") != null) {
+            try {
+                info = k.substring(2, k.length - 2).split(",");
+                if (info.length >= 2) {
+                    var i = null,
+                        a = null,
+                        f = null;
+                    i = Number(info[0]);
+                    a = Number(info[1]);
+                    if (info.length >= 3) {
+                        f = info[2]
+                    }
+                    if (i != null && a != null) {
+                        var j = new Array();
+                        j.push(i);
+                        j.push(a);
+                        Utils.storage_set_item("native_param_location", JSON.stringify(j));
+                        var h = new Date();
+                        var c = h.getTime();
+                        Utils.storage_set_item("native_param_locate_cache_time", c.toString());
+                        if (f != null) {
+                            Utils.storage_set_item("native_param_city", f)
+                        }
+                        Utils.showToast(i.toString() + "," + a.toString() + "," + f);
+                        return
+                    }
+                }
+            } catch (e) {
+                console.log("txm search error")
+            }
+        }
+        Search.redirectSearchPage(k)
+    },
+    searchLogoClicked: function() {
+        if ($(this).attr("disable") == "false") {
+            Search.suggestClicked()
+        }
+    },
+    redirectSearchPage: function(a) {
+        a = a.trim();
+        if (a && a !== "") {
+            Utils.storage_set_item("search_term", a);
+            if (window.location.hash == "#input") {
+                Utils.storage_set_item("index_hash_input", "true")
+            }
+            Search.searchInput.blur();
+            Search.hide_cover();
+            if (window.location.hash === "#input") {
+                Utils.back_page()
+            }
+            setTimeout(function() {
+                Utils.storage_set_item("search_page_cache", "");
+                if (IOS_APILEVEL >= 3) {
+                    // window.location.reload()
+                    search_results(a, Search.SEARCH_URL);
+                } else {
+                    // window.location.href = "search.html"
+                    search_results(a, Search.SEARCH_URL);
+                }
+            }, 0)
+        } else {
+            Search.searchInput.blur();
+            Search.hide_cover();
+            Utils.showToast("请输入您要搜索的内容。")
+        }
+    }
+};
+var page_cache_item = 'search_page_cache',
+    available_click = true,
+    isGeoLocationAvailable = navigator.geolocation;// hack for history.back(). Adding this makes javascript enabled when the page reloads from history.back()
+
+var interval;
+
+/*
+    search_cache_item = {
+        results             : STRING,
+        ref                 : STRING,
+        index               : STRING,
+        coupons             : ARRAY,
+        pullup_begin_index  : NUMBER,
+    }
+*/
+var init_search_cache_item = function() {
+    var cache_map = {
+        services: '',
+        results : '',
+        ref : '',
+        index : '',
+        coupons : [],
+        pullup_begin_index : 0,
+        searchTerm : ''
+    }
+    return cache_map;
+};
+
+// for captcha
+var captcha_id = '',
+    search_options = null;
+
+var init = function() {
+	Utils.init();
+    Utils.dump();
+  //  get_query_params();
+    Search.init();
+    Search.init_city();
+    $('#m_search_input').attr('role', 'search');
+    if(!Utils.get_cache_item(page_cache_item) || Utils.get_cache_item(page_cache_item) == '') {
+        Utils.set_cache_item(page_cache_item, init_search_cache_item());
+    }
+    var current_page_info = {
+        'current_page' : '搜索结果'
+    };
+    $('#m_city_base').fastClick(function() {
+        Utils.storage_set_item('pastCity', $(this).text());
+        if(Utils.getApiLevel() >= 2 || Utils.getApiLevel() == 0) {
+            // if (isIOS) {
+            window.location.href = 'indexCity.html';
+            // } else {
+            //     window.location.href = 'indexCity.html';
+            // }
+        } else {
+            window.location.href = 'content://local.file.provider_online/indexCity.html';
+        }
+    });
+    var search_input = $('#m_search_input');
+    search_input.on('input', when_input);
+    search_input.on('keyup', when_input);
+    search_input.on('focus', Search.search_focus);
+    search_input.on('blur', Search.search_blur);
+    $('#m_remove_input').fastClick(Search.remove_input);
+    // $('#m_cover').fastClick(Search.hide_cover);
+    $('#m_master_more').fastClick(refresh_more_masters);
+    $('#m_search_logo').fastClick(searchLogoClicked);
+    $('#m_results_retry').fastClick(suggestClicked);
+    first_load_page();
+};
+
+var get_query_params = function() {
+    city = Utils.storage_get_item('city');
+    if (!city) {
+        city = Utils.getParam('city');
+    }
+    latitude = Utils.getParam('_lat');
+    longitude = Utils.getParam('_lng');
+    if (!latitude && !longitude) {
+        latitude = Utils.getParam('latitude');
+        longitude = Utils.getParam('longitude');
+    }
+    latitude = Number(latitude);
+    longitude = Number(longitude);
+    input = Utils.getParam('input');
+
+    if (city != '') {
+        Utils.storage_set_item("city", city);
+    }
+
+    if (!isNaN(latitude) && latitude != 0 && !isNaN(longitude) && longitude != 0) {
+        var geo_position = new Array();
+        geo_position.push(latitude);
+        geo_position.push(longitude);
+        Utils.storage_set_item("native_param_location", JSON.stringify(geo_position));
+        Utils.storage_set_item("native_param_locate_cache_time", +new Date + '');
+    }
+
+    if (input != '') {
+        Utils.storage_set_item("search_term", input);
+    }
+}
+
+var redirect_navigate = function() {
+    var url = $(this).attr('data-original');
+    var params = $(this).attr('params');
+    var navigateinfo = {
+            classify: params,
+            _city: Utils.storage_get_item("city")
+    };
+    Utils.storage_set_item("navigate_info", JSON.stringify(navigateinfo));
+    if (url == '/navigate.html') {
+        window.location.href = url.slice(0);
+        return;
+    }
+}
+
+var renderFavlist = function() {
+    var mfavlist = $('#mFavList');
+    var mfavitem = mfavlist.find('#mFavItem');
+    favlist.forEach(function(node,i) {
+        var identifier = node.identifier;
+        var title = node.title;
+        var localurl = node.link.localUrl;
+        var params = node.link.params;
+        var item = mfavitem.clone().attr('name','favitem-'+identifier).removeClass('display-none');
+        var itemname = item.find('.fav-name');
+        itemname.attr('params',params.slice(9));
+        itemname.attr('data-original', localurl);
+        itemname.text(title);
+        itemname.fastClick(redirect_navigate);
+        mfavlist.append(item);
+    });
+}
+
+var delSearchHistory = function () {
+    Utils.storage_set_item('search_history', JSON.stringify(new Array()));
+    $('.history-box').addClass('display-none');
+    $('#m_history_holder').html('');
+}
+
+var showSearchHistory = function () {
+    var search_history_list = eval(Utils.storage_get_item('search_history'));
+    if (search_history_list.length > 0) {
+        $('#m_history_holder').html('');
+        $('.history-box').removeClass('display-none');
+        var actual_len =  Math.min(Search.SUGGESTION_NUMBER, search_history_list.length);
+        if(actual_len == 0) return;
+        var m_history_holder = $('#m_history_holder');
+        for(var history_idx=0; history_idx<actual_len; history_idx++) {
+            var li = $('<li></li>');
+            li.addClass('history-item');
+            li.attr('id', 'm_history' + history_idx);
+            li.html('<div class="historylogo"><img src="res/image/history-logo.png"></div><a class="historyAnchor">'+ search_history_list[history_idx] +'</a>');
+            m_history_holder.append(li);
+        }
+        m_history_holder.css('display', 'block');
+        $('.history-item').each(function(){
+            $(this).fastClick(Search.suggestClicked);
+        });
+        var li = $('<li></li>');
+        li.attr('id','m_clear_history');
+        li.html('<a>清除历史记录</a>');
+        m_history_holder.append(li);
+        $('#m_clear_history').fastClick(delSearchHistory);
+    };
+}
+
+// var backfromdetail = Utils.storage_get_item('backFromDetail');  //新webview机制下不再需要记录是否backFromDetail，注释掉相关代码 by JoeWu 11.11.15
+
+var first_load_page = function() {
+    renderFavlist();
+    showSearchHistory();
+    // if (Utils.storage_get_item('search_term')) {
+    //     $('#m_search_input').val(Utils.storage_get_item('search_term'));
+    // }
+    // if (backfromdetail == 'true') {
+    //     search_results(Utils.storage_get_item('search_term'), Search.SEARCH_URL);
+    //     Utils.storage_set_item('backFromDetail', false);
+    // };
+};
+
+function transDistance(distance) {
+    var num_distance = Number(distance);
+    var disp_distance;
+    if (num_distance < 100)
+        disp_distance = '<100m';
+    else if (num_distance < 1000)
+        disp_distance = Math.round(distance) + 'm';
+    else if (num_distance > 1000 * 10)
+        disp_distance = '>10km';
+    else
+        disp_distance = ((num_distance/1000).toFixed(1)).toString() + 'km';
+    return disp_distance;
+};
+
+var replace_name = function(name, h_info) {
+    var len = h_info['begin'].length;
+    if (len == 0)
+        return name;
+    else {
+        var ret_name = '';
+        for(var n_i=0; n_i<name.length; n_i++) {
+            var c_flag = false;
+            for(var c_i=0; c_i<len; c_i++) {
+                if (n_i>=h_info['begin'][c_i] && n_i<h_info['end'][c_i]) {
+                    ret_name += '<span>' + name[n_i] + '</span>';
+                    c_flag = true;
+                    break;
+                }
+            }
+            if (!c_flag)
+                ret_name += name[n_i];
+        }
+        return ret_name;
+    }
+};
+
+var highlight_name = function(hit_info, m_name, s_name) {
+    var c_m_name = m_name;
+    var c_s_name = s_name;
+    var c_map = {'name' : {'begin' : Array(), 'end' : Array()}, 'short' : {'begin' : Array(), 'end' : Array()}};
+    for(var hit_i=0; hit_i<hit_info.length; hit_i++) {
+        var hit_field = hit_info[hit_i]['field'];
+        if (hit_field == 'name') {
+            c_map['name']['begin'].push(hit_info[hit_i]['begin']);
+            c_map['name']['end'].push(hit_info[hit_i]['end']);
+        }
+        else if (hit_field == 'short') {
+            c_map['short']['begin'].push(hit_info[hit_i]['begin']);
+            c_map['short']['end'].push(hit_info[hit_i]['end']);
+        }
+    }
+    c_m_name = replace_name(m_name, c_map['name']);
+    c_s_name = replace_name(s_name, c_map['short']);
+
+    if (c_s_name)
+        c_m_name += ' ' + c_s_name;
+    return c_m_name;
+};
+
+function renderRelative(info, _ref, double_query_flag) {
+    var item = $('#list-item').clone().removeClass('displayNone');
+    var shopId = info['id'];
+    item.attr('id', shopId);
+
+    if (!info['phones']) {
+        item.css('background-color', '#eee');
+    }
+    if (info['format_phones']) {
+        item.attr('phone_number', info['format_phones'][0]);
+    }
+    if (info['have_coupon'] == true) {
+        item.find('.item-coupon').addClass('show-coupon');
+    }
+    if (info['shop_logo']) {
+        item.attr('shop_logo', info['shop_logo']);
+    }
+    var master_name = info['name'];
+    var short_name = info['short'] || '';
+    var rough_name;
+    if (short_name) {
+        rough_name = master_name + ' ' + short_name;
+    } else {
+        rough_name = master_name;
+    }
+
+    var c_master_name;
+    if (info['hit_info']) {
+        if (master_name.length > 30) {
+            rough_name = rough_name.substr(0, 30) + '...';
+            c_master_name = highlight_name(info['hit_info'], master_name.substr(0, 30) + '...', '');
+        } else {
+            var rough_left = 29 - master_name.length;
+            if (rough_left < short_name.length)
+                short_name = short_name.substr(0, rough_left) + '...';
+            c_master_name = highlight_name(info['hit_info'], master_name, short_name);
+        }
+    } else {
+        if (rough_name.length > 30) {
+            rough_name = rough_name.substr(0, 30) + '...';
+        }
+        c_master_name = rough_name;
+    }
+
+    item.find('.item-name').html(c_master_name);
+    item.attr('phone_name', rough_name);
+    if (info['distance']) {
+        item.find('.distance-text').text(transDistance(info['distance']));
+    }
+    var t_city = Utils.storage_get_item('city');
+    if (info['id'] == '16382197466004770466' && t_city !== '北京' && t_city !== '上海' && t_city !== '广州') {
+        item.find('.item-coupon').removeClass('show-coupon');
+    };
+    item.fastClick(redirect_detail);
+    $('#m_search_results').append(item);
+};
+
+var update_coupons_cache = function(res){
+    var page_cache = Utils.get_cache_item(page_cache_item);
+    if (page_cache) {
+        var cur_coupons = page_cache['coupons'];
+        for(i in res){
+            var t_res = res[i];
+            if(t_res.coupon){
+                var t_coupon = {
+                    id : t_res.id,
+                    coupon : t_res.coupon
+                };
+                cur_coupons.push(t_coupon);
+            }
+        }
+        return cur_coupons;
+    };
+    return [];
+}
+
+var wait_location_loop_cb = function(wait_count, loop_end_cb) {
+    if (!wait_count) {
+        wait_count = 0;
+    }
+    var stat = Utils.get_location_status();
+    console.log('location status in check_location loop ' + wait_count + ': ' + stat);
+    var m_search_toast = $('#m_search_toast');
+    if (wait_count < 10 && stat == Utils.WAIT_LOCATION) {
+        wait_count += 1;
+        window.setTimeout(function() {
+            wait_location_loop_cb(wait_count, loop_end_cb);
+        }, 500);
+        if (m_search_toast.hasClass('displayNone')) {
+            m_search_toast.removeClass('displayNone');
+            m_search_toast.find('#m_toast_inner_right').text('正在为您查号...');
+        }
+    }
+    else {
+        loop_end_cb();
+    }
+};
+
+var renderService = function (services) {
+    $('.service-box').removeClass('display-none');
+    $('#m_service_holder').empty();
+    for (var i in services) {
+        var servItem = $('#list-item').clone().removeClass('displayNone');
+        var icon = services[i].icon;
+        var url = services[i].link;
+        var id = services[i].id;
+        var title = services[i].title;
+        servItem.attr('id', 'service_'+id);
+        servItem.attr('data-original',url);
+        servItem.find('.item-name').html(title);
+        servItem.find('.item-logo').removeClass('displayNone').addClass('service-logo');
+        servItem.find('.item-logo').find('.logo-img').attr('src',icon).removeClass('displayNone');
+        servItem.fastClick(redirectService);
+        $('#m_service_holder').append(servItem);
+    };
+}
+
+var redirectService = function () {
+    var self = $(this);
+    var service = self.attr('id').slice(8);
+    var link = self.attr('data-original');
+    switch (service) {
+        case 'express':
+            link += '?_token=' + Utils.get_token();
+            break;
+    }
+    window.location.href = link;
+    // Utils.storage_set_item('backFromDetail', true);
+}
+
+var success_search_logic_cb = function(options, response) {
+    aaa = response;
+    var fetch_count = options['query_params']['count']
+    var m_cache = Utils.get_cache_item(page_cache_item);
+    if(m_cache == null){
+        m_cache = init_search_cache_item();
+    }
+    var s_ref = m_cache['ref'];
+    if(!s_ref) {
+        m_cache['ref'] = response['ref'];
+        s_ref = response['ref'];
+    }
+    else if(response['ref'] && response['ref'] !== s_ref) {
+        m_cache['ref'] = response['ref'];
+        s_ref = response['ref'];
+        m_cache['pullup_begin_index'] = 0;
+    }
+    var m_search_toast = $('#m_search_toast');
+    if (!m_search_toast.hasClass('displayNone')) {
+        m_search_toast.addClass('displayNone');
+    }
+    $('#m_results_timeout').addClass('displayNone');
+    var m_search_results = $('#m_search_results');
+    if (options['type'] == 'search') {
+        m_search_results.empty();
+    }
+    var master_more_div = $('#m_master_more');
+    var pull_up_begin_idx = m_cache['pullup_begin_index'];
+    if((!response.res || response.res.length == 0) && pull_up_begin_idx == 0) {
+        var results_none = $('#m_results_none').clone().removeClass('displayNone');
+        m_search_results.css('border-bottom', '0px');
+        m_search_results.append(results_none);
+        master_more_div.removeClass('displayBox').addClass('displayNone');
+        Utils.delete_cache_item(page_cache_item);
+        collect_scenario_page_loaded_search_params();
+        return;
+    }
+    if (response.services) {
+        renderService(response.services);
+    } else {
+        m_cache['services'] = '';
+    }
+    m_cache['services'] = $('#m_service_holder').html();
+    m_cache['coupons'] = update_coupons_cache(response.res);
+    for(i in response.res) {
+        var info = response.res[i];
+        var double_query_flag = (response.res.length == 1 && ((info['branches'] && info['branches'].length < 6) || !(info['branches'])));
+        renderRelative(info, s_ref, double_query_flag);
+    }
+    m_search_results.focus();
+    pull_up_begin_idx += response.res.length;
+    if(response.res.length == 0 || response.res.length < fetch_count - 1) {
+        master_more_div.removeClass('displayBox').addClass('displayNone');
+        m_cache['pullup_begin_index'] = 0;
+    } else {
+        m_cache['pullup_begin_index'] = pull_up_begin_idx;
+        master_more_div.removeClass('displayNone').addClass('displayBox');
+        master_more_div.attr('ref', s_ref);
+        master_more_div.attr('index', response.res[response.res.length -1].id);
+        master_more_div.find('.innerMasterLeft').attr('role', 'normal');
+        master_more_div.find('.innerMasterRight').text('加载更多');
+        available_click = true;
+    }
+    m_cache['searchTerm'] = Utils.storage_get_item('search_term');
+    Utils.set_cache_item(page_cache_item, m_cache);
+    collect_scenario_page_loaded_search_params();
+};
+
+var success_search_cb = function(options) {
+    var real_success_search_cb = function(response) {
+        clearInterval(interval);
+        console.log('search result is: ' + JSON.stringify(response));
+        if (response['error_code']) {
+            //特殊字符显示为查找不到
+            var m_search_results = $('#m_search_results');
+            var master_more_div = $('#m_master_more');
+            var results_none = $('#m_results_none').clone().removeClass('displayNone');
+            m_search_results.css('border-bottom', '0px');
+            m_search_results.append(results_none);
+            master_more_div.removeClass('displayBox').addClass('displayNone');
+            //$('#m_results_none').removeClass('displayNone');
+            $('#m_search_toast').addClass('displayNone');
+            return;
+        }
+        if (options['type'] == 'search') {
+            var response_loc = ('loc' in response);
+            // Closure in javascript
+            var second_check_cb = function(options) {
+                if ('latitude' in options['query_params'] || 'longitude' in options['query_params']) {
+                    success_search_logic_cb(options, response);
+                } else {
+                    //search with loc param again
+                    var _loc = Utils.storage_get_item('native_param_location');
+                    if (_loc) {
+                        var search_pos = eval(_loc);
+                        options['query_params']['latitude'] = search_pos[0];
+                        options['query_params']['longitude'] = search_pos[1];
+                        Utils.delete_cache_item(page_cache_item);
+                        search_options = options;
+                        search_with_no_cache(options);
+                    }
+                }
+            };
+
+            var wrap_loop_end_cb = function() {
+                console.log('wrap_loop_end_cb');
+                var second_check_flag = Utils.statistic_search_cb_helper(options, Utils.SEARCH_INPUT, response_loc, second_check_cb);
+                if (second_check_flag) return;
+                success_search_logic_cb(options, response);
+            };
+
+            wait_location_loop_cb(0, wrap_loop_end_cb);
+        }
+        else {
+            search_options = options;
+            success_search_logic_cb(options, response);
+        }
+    };
+    var handler = window.CTKJavaScriptHandler; //modify_for_oem by joewu
+    // mark done task id for 活动大厅
+    if (handler) {
+        try {
+                handler.setTaskDoneList(102);
+            } catch (e) {
+                //
+            }
+    }
+    return real_success_search_cb;
+};
+
+var error_search_cb = function(url) {
+    return function(xhr, ajaxOptions, thrownError) {
+        clearInterval(interval);
+        if(xhr.status == '404' || ajaxOptions == 'timeout') {
+            $('#m_search_toast').addClass('displayNone');
+            if (window.location.hash == '#search') { // 防止在断网时，用户已经返回搜索主界面的的时候依然出现断网提示
+                $('#m_results_timeout').removeClass('displayNone');
+            };
+        } else if (xhr.status == '403') {
+            getCaptcha(url)();
+        }
+        collect_scenario_page_loaded_search_params();
+    };
+};
+
+var search_with_no_cache = function(options) {
+    console.log(options)
+    console.log('Search with no cache!');
+    search_options = options;
+    var search_url = options['url'];
+    if (options['query_params']) {
+        for(var key in options['query_params']) {
+            search_url += '&' + key + '=' + options['query_params'][key];
+        }
+    }
+    var m_search_toast = $('#m_search_toast');
+    var m_search_results = $('#m_search_results');
+    m_search_results.empty();
+
+    //$("#m_results_none").addClass("displayNone");
+
+    $('#m_master_more').removeClass('displayBox').addClass('displayNone');
+    m_search_toast.removeClass('displayNone');
+    m_search_toast.find('#m_toast_inner_right').text('正在为您查号...');
+    $('#m_results_timeout').addClass('displayNone');
+
+    // search_url += '&token=' + Utils.get_token();  //token添加重复
+    Utils.ajaxReq().send({
+        type : 'GET',
+        timeout : 10 * 1000,
+        url : encodeURI(search_url),
+        dataType: 'json',
+        beforeSend : function() { Utils.onUMengEvent(Utils.statisticKeyStartSearchPrefix + Utils.SEARCH_INPUT); },
+        success: success_search_cb(options),
+        error: error_search_cb(encodeURI(search_url))
+    });
+}
+
+var search_with_cache = function(m_cache){
+    console.log('Search with cache!');
+    var m_search_toast = $('#m_search_toast');
+    var m_search_results = $('#m_search_results');
+    if (!m_search_toast.hasClass('displayNone')) {
+        m_search_toast.addClass('displayNone');
+    }
+    m_search_results.html(m_cache['results']);
+    if (m_cache['services'] != '') {
+        $('#m_service_holder').html(m_cache['services']);
+        $('#m_service_box').removeClass('display-none');
+        $('#m_service_holder .list-item').fastClick(redirectService);
+    };
+    $('#m_search_results .list-item').fastClick(redirect_detail);
+    if (m_cache['ref'] !== '' && m_cache['index'] !== '') {
+        var m_master_more = $('#m_master_more');
+        m_master_more.removeClass('displayNone').addClass('displayBox').attr('ref', m_cache['ref']).attr('index', m_cache['index']);
+        m_master_more.find('.innerMasterLeft').attr('role', 'normal');
+    }
+    m_search_results.focus();
+    collect_scenario_page_loaded_search_params();
+};
+
+var collect_scenario_action_search_params = function(search_term){
+    // if (Utils.getApiLevel() < 3) {
+    //     return;
+    // }
+    var state = Utils.collect_scenario_params_common(5, 'action_search');
+    state.keyword = search_term;
+    Utils.append_scenario_node(JSON.stringify(state));
+};
+
+var collect_scenario_action_load_more_params=function(){
+    // if (Utils.getApiLevel() < 3) {
+    //     return;
+    // }
+    var state = Utils.collect_scenario_params_common(6, 'action_load_more');
+    state.keyword = $("#m_search_input").val().trim();
+    state.count = $('.list-item').length;
+    Utils.append_scenario_node(JSON.stringify(state));
+};
+
+var collect_scenario_page_loaded_search_params =function(){
+    // if (Utils.getApiLevel() < 3) {
+    //     return;
+    // }
+    var state = Utils.collect_scenario_params_common(4, 'status_page_loaded_search');
+    state.keyword = $("#m_search_input").val().trim();
+    state.count = $('.list-item').length;
+    Utils.append_scenario_node(JSON.stringify(state));
+};
+
+window.addEventListener('hashchange', function() {
+    if (window.location.hash != '#search') {
+        $('#m_results_timeout').addClass('displayNone');
+        $('#m_search_toast').addClass('displayNone');
+        $('#token-invalid').addClass('displayNone');
+        $('#m_cover').removeClass('displayNone');
+        $('.fav-box').removeClass('display-none');
+        $('.history-box').removeClass('display-none');
+        $('#m_service_holder').empty();
+        $('.service-box').addClass('display-none');
+        $('#m_search_results').empty();
+        if ($('#m_master_more').hasClass('displayBox')) {
+            $('#m_master_more').removeClass('displayBox').addClass('displayNone');
+        };
+        showSearchHistory();
+    }
+});
+
+var search_results = function(term, site){
+    window.location.hash = '#search';
+    $('#m_cover').addClass('display-none');
+    $('#m_search_input').blur();
+    $('#m_suggestion_holder').css('display', 'none');
+    if(term != null){
+        term = term.trim();
+    }
+    if (term !== '') {
+        $('.fav-box').addClass('display-none');
+        $('.history-box').addClass('display-none');
+        $('.service-box').addClass('display-none');
+        Utils.onUMengEvent(Utils.statisticKeySearchCnt);
+        Utils.onUMengEvent(Utils.statisticKeyUseCnt);
+        collect_scenario_action_search_params(term);
+        if (term !== Utils.storage_get_item('search_term'))
+            Utils.storage_set_item('search_term', term);
+        $('#m_search_input').val(term);
+        var temp_list = eval(Utils.storage_get_item('search_history'));
+        var s_idx = temp_list.indexOf(term);
+        if (s_idx !== -1) {
+            temp_list.splice(s_idx, 1);
+        }
+        temp_list.unshift(term);
+        Utils.storage_set_item('search_history', JSON.stringify(temp_list.slice(0, 5)));
+        var search_url = site + term + '&token=' + Utils.get_token();
+        var options = {
+            'type' : 'search',
+            'url' : search_url,
+            'query_params' : {
+                'city' : Utils.storage_get_item('city'),
+                'count' : 30
+            }
+        }
+        var m_cache = Utils.get_cache_item(page_cache_item);
+        if (!m_cache || m_cache['results'] == '' || (m_cache['searchTerm'] != "" && m_cache['searchTerm'] != term)) {
+            Utils.query_with_loc(options, search_with_no_cache);
+        }
+        else {
+            search_with_cache(m_cache);
+        }
+    } else {
+        $('.fav-box').removeClass('display-none');
+        $('.history-box').removeClass('display-none');
+        $('#m_service_holder').empty();
+        $('.service-box').addClass('display-none');
+        $('#m_search_results').empty();
+        if ($('#m_master_more').hasClass('displayBox')) {
+            $('#m_master_more').removeClass('displayBox').addClass('displayNone');
+        };
+        Utils.showToast("请输入您要搜索的内容。");
+    }
+};
+
+var suggestClicked = function() {
+    Utils.delete_cache_item(page_cache_item);
+    var anchor = $(this).find('.suggestionAnchor');
+    if (anchor.hasClass('suggestionAnchor')) {
+        $('#m_search_input').val(anchor.text());
+    }
+    search_results($('#m_search_input').val(), Search.SEARCH_URL);
+};
+
+var searchLogoClicked = function() {
+    if ($(this).attr('disable') == 'false') {
+        suggestClicked();
+    }
+};
+
+var when_input = function(event) {
+    if (event.type == 'keyup' && event.keyCode == 13) {
+        Utils.delete_cache_item(page_cache_item);
+        search_results($('#m_search_input').val(), Search.SEARCH_URL);
+        return;
+    }
+    Search.autocomplete(event.target.value, true);
+};
+
+var get_coupons = function(id){
+    var page_cache = Utils.get_cache_item(page_cache_item);
+    var coupons_result = [];
+    if (page_cache) {
+        var cur_coupons = page_cache['coupons'];
+        for(i in cur_coupons){
+            var t_coupon = cur_coupons[i];
+            if (t_coupon.id == id) {
+                for(var j in t_coupon.coupon){
+                    var coupon_result = {
+                        external_source:t_coupon.coupon[j].source
+                    };
+                    if (t_coupon.coupon[j].external_link) {
+                        coupon_result.external_link = t_coupon.coupon[j].external_link;
+                    };
+                    coupons_result.push(coupon_result);
+                };
+            };
+        }
+        return coupons_result;
+    };
+    return [];
+};
+
+var redirect_detail = function(event, _shopid) {
+    var m_cache = Utils.get_cache_item(page_cache_item),
+        master_more = $('#m_master_more'),
+        self = $(this),
+        t_shopid = _shopid || self.attr('id');
+    if (master_more.css('display') !== 'none' && master_more.attr('ref') && master_more.attr('index')) {
+        console.log(master_more.attr('ref'));
+        m_cache['ref'] = master_more.attr('ref');
+        m_cache['index'] = master_more.attr('index');
+    }
+    else{
+        m_cache['ref'] = '';
+        m_cache['index'] = '';
+    }
+    self.removeClass('active');
+    // Utils.storage_set_item('backFromDetail', true);
+    m_cache['results'] = $('#m_search_results').html();
+    m_cache['services'] = $('#m_service_holder').html();
+    Utils.set_cache_item(page_cache_item, m_cache);
+
+    var shopId = t_shopid;
+    var name = self.attr('phone_name');
+    var formatedNumber = self.attr('phone_number');
+    var shoplogo = self.attr('shop_logo')|| '';
+    var handler = window.CTKJavaScriptHandler;
+    if(handler&&handler.launchYellowPageDetail){
+        var number = null;
+        if (formatedNumber) {
+            number = formatedNumber.replace(/[^0-9]/g,'');
+        };
+        var from = "history";
+        console.log("launchYellowPageDetail  "+shopId+"|"+name+"|"+number+"|"+formatedNumber+"|"+shoplogo+"|"+from);
+        handler.launchYellowPageDetail(shopId,name,number,formatedNumber,shoplogo,from);
+    }else{
+        Utils.storage_set_item('detail_info', JSON.stringify({
+            'phone_name': name,
+            'phone_number': formatedNumber,
+            'shop_id': shopId,
+            'shop_logo': shoplogo
+        }));
+        window.location.href = "detail_offline.html";
+    }
+};
+
+var refresh_more_masters = function(event) {
+    if (available_click == true) {
+        available_click = false;
+    } else { return; }
+
+    var search_ref = Utils.get_cache_item(page_cache_item)['ref'];
+    if (search_ref) {
+        collect_scenario_action_load_more_params();
+        var m_master_more = $(this);
+        m_master_more.find('.innerMasterLeft').attr('role', 'loading');
+        m_master_more.find('.innerMasterRight').text('正在加载');
+        interval = Utils.rotate('load-img');
+        var error_master_more = function(m_master_more, url) {
+            var real_error_cb = function(xhr, ajaxOptions, thrownError) {
+                available_click = true
+                if (xhr.status == '404' || ajaxOptions == 'timeout') {
+                    m_master_more.find('.innerMasterLeft').attr('role', 'retry');
+                    m_master_more.find('.innerMasterRight').text('您的网络好像不给力，请点击重试');
+                } else if (xhr.status == '403') {
+                    getCaptcha(url)();
+                }
+            };
+            return real_error_cb;
+        };
+        var fetch_more_count = 30;
+        var retrievemore_options = {
+            'type' : 'retrievemore',
+            'url' : Search.RETRIEVEMORE + search_ref,
+            'query_params' : {
+                'count' : 30,
+                'index' : $('#m_master_more').attr('index')
+            }
+        };
+        var retrievemore_url = retrievemore_options['url'];
+        for(var key in retrievemore_options['query_params']) {
+            retrievemore_url += '&' + key + '=' + retrievemore_options['query_params'][key];
+        }
+	    search_options = retrievemore_options;
+        Utils.ajaxReq().send({
+            type : 'GET',
+            timeout : 10 * 1000,
+            url : encodeURI(retrievemore_url + '&token=' + Utils.get_token()),
+            dataType: 'json',
+            success: success_search_cb(retrievemore_options),
+            error: error_master_more(m_master_more, retrievemore_url)
+        });
+    }
+};
+
+var remove_confirm = function(event) {
+    if ($(this).attr('fCoverTag') == 'removeConfirm') {
+        Utils.back_page(); // remove window.location.hash
+    }
+}
+
+function refreshPage(){
+    var pastCity = Utils.storage_get_item('pastCity');
+    var city = Utils.storage_get_item('city');
+    if (city !== pastCity) {
+        CTK.backWithRefresh(true);
+    }
+    window.location.reload();
+}
+
+function getCaptcha(url) {
+    return function() {
+	console.log(url.match(/(yellowpage\/search|yellowpage\/retrievemore)/)[0]);
+	collect_scenario_captcha(url.match(/(yellowpage\/search|yellowpage\/retrievemore)/)[0]);
+        var _url = Utils.netService + '/yellowpage/captcha';
+        Utils.ajaxReq().send({
+            type : 'GET',
+            timeout : 10 * 1000,
+            url : encodeURI(_url),
+            dataType: 'json',
+            success: successGetCaptcha(url),
+            error: errorGetCaptcha
+        });
+    }
+}
+
+function successGetCaptcha(url){
+    return function(res) {
+        $('#m_search_toast').addClass('displayNone');
+        $('.captcha-container').removeClass('displayNone');
+        $('#m_new_cover').removeClass('displayNone').fastClick(function(){
+            $(this).addClass('displayNone');
+            $('.captcha-container').addClass('displayNone');
+        }).height(document.body.scrollHeight);
+        $('#m_master_more').find('.innerMasterLeft').attr('role', 'normal');
+        $('#m_master_more').find('.innerMasterRight').text('加载更多');
+        captcha_id = res.result.captcha_id || '';
+        $('.captcha-img img').attr('src', res.result.captcha_url || '');
+        $('.captcha-container').removeClass('displayNone');
+        $('#captcha-no').fastClick(captchaNo);
+        $('#captcha-yes').fastClick(captchaYes(url));
+    }
+}
+
+function errorGetCaptcha(xhr, ops, e) {
+    console.log('failed to get captcha.');
+}
+
+function captchaYes(url) {
+    return function () {
+        var inputStr = $('#captcha-input').val();
+        if (!inputStr) {
+            $('#captcha-error').removeClass('displayNone');
+            $('#captcha-input').css('border', '1px solid #ff0000').on('input', function(){
+                $(this).css('border', '1px solid #e4e4e4');
+                $('#captcha-error').addClass('displayNone');
+            });
+        } else {
+            $('.fNewCover').addClass('desplayNone');
+            $('#captcha-container').addClass('desplayNone');
+	    url = decodeURI(url);
+            url += '&captcha=' + inputStr + '&captcha_id=' + captcha_id;
+            Utils.ajaxReq().send({
+                type : 'GET',
+                timeout : 10 * 1000,
+                url : encodeURI(url),
+                dataType: 'json',
+                success: successCaptchaVerify(url),
+                error: errorCaptchaVerify(url)
+            });
+       	    $('#m_new_cover').addClass('displayNone');
+       	    $('#captcha-container').addClass('displayNone');
+	    if (/search/.test(url)) {
+       	        $('#m_search_toast').removeClass('displayNone');
+	    } else if (/retrievemore/.test(url)) {
+	        $('#m_master_more').find('.innerMasterLeft').attr('role', 'loading');
+	        $('#m_master_more').find('.innerMasterRight').text('正在加载');
+            }
+        }
+    }
+}
+
+function showResults(response) {
+    if (response['error_code']) {
+        $('#token-invalid').removeClass('displayNone');
+        $('#m_search_toast').addClass('displayNone');
+        return;
+    }
+    if (search_options['type'] == 'search') {
+        var response_loc = ('loc' in response);
+        // Closure in javascript
+        var second_check_cb = function(options) {
+            if ('latitude' in options['query_params'] || 'longitude' in options['query_params']) {
+                success_search_logic_cb(options, response);
+            } else {
+                //search with loc param again
+                var _loc = Utils.storage_get_item('native_param_location');
+                if (_loc) {
+                    var search_pos = eval(_loc);
+                    options['query_params']['latitude'] = search_pos[0];
+                    options['query_params']['longitude'] = search_pos[1];
+                    Utils.delete_cache_item(page_cache_item);
+                    search_options = options;
+                    search_with_no_cache(options);
+                }
+            }
+        };
+
+        var wrap_loop_end_cb = function() {
+                console.log('wrap_loop_end_cb');
+            var second_check_flag = Utils.statistic_search_cb_helper(search_options, Utils.SEARCH_INPUT, response_loc, second_check_cb);
+            if (second_check_flag) return;
+            success_search_logic_cb(search_options, response);
+        };
+
+        wait_location_loop_cb(0, wrap_loop_end_cb);
+    } else {
+        success_search_logic_cb(search_options, response);
+    }
+}
+
+function successCaptchaVerify(url) {
+    return function(res) {
+        console.log(JSON.stringify(res))
+        if (/search/.test(url)) {
+            $('#m_new_cover').addClass('displayNone');
+            $('#captcha-container').addClass('displayNone');
+            showResults(res);
+        } else if (/retrievemore/.test(url)) {
+            $('#m_new_cover').addClass('displayNone');
+            $('#captcha-container').addClass('displayNone');
+            showResults(res);
+        }
+    }
+}
+
+function errorCaptchaVerify(url) {
+    console.log('failed to verify captcha.');
+    return function (xhr, ajaxOptions, thrownError) {
+        $('#m_new_cover').addClass('displayNone');
+        $('#captcha-container').addClass('displayNone');
+	console.log(url);
+	url = url.match(/(.*)&captcha=/)[1];
+        getCaptcha(encodeURI(url))();
+    };
+}
+
+function captchaNo() {
+    $('#captcha-error').addClass('displayNone');
+    $('#captcha-input').css('border', '1px solid #e4e4e4');
+    $('.fNewCover').addClass('displayNone');
+    $('#captcha-container').addClass('displayNone');
+}
+
+function collect_scenario_captcha(interface) {
+    // if (Utils.getApiLevel() < 3) { return ;}
+    var status = Utils.collect_scenario_params_common(130, 'status_captcha');
+    status.interface = interface;
+    Utils.append_scenario_node(JSON.stringify(status));
+}String.prototype.splice=function(a,c,b){return(this.slice(0,a)+b+this.slice(a+Math.abs(c)))};var TrieNode=function(a){this.flag=a;this.isLeaf=true;this.children={}};var FormatUtil=(function(){function a(){this.root=new TrieNode(0);for(var b in a.raw_data){this.add(this.root,b,a.raw_data[b])}}a.BETWEENNUMBERS="-";a.BETWEENNUMANDAREA=" ";a.raw_data={"13":1,"15":1,"18":1,"14":1,"+8613":2,"+8615":2,"+8618":2,"+8614":2,"008613":4,"008615":4,"008618":4,"008614":4,"400":8,"800":8,"010":16,"020":16,"021":16,"022":16,"023":16,"024":16,"025":16,"027":16,"028":16,"029":16,"+8610":32,"+8620":32,"+8621":32,"+8622":32,"+8623":32,"+8624":32,"+8625":32,"+8627":32,"+8628":32,"+8629":32,"008610":64,"008620":64,"008621":64,"008622":64,"008623":64,"008624":64,"008625":64,"008627":64,"008628":64,"008629":64,"0":128,"+86":256,"0086":512};a.prototype={isValidChar:function(b){if(b=="+"||(b>="0"&&b<="9")){return true}else{return false}},add:function(d,b,e){if(b==""){d.flag=e}else{var c=b.charAt(0);if(!d.children[c]){d.children[c]=new TrieNode(0);d.isLeaf=false}this.add(d.children[c],b.substring(1),e)}},getMethod:function(d,b){if(d.isLeaf==true||b.length==0){return d.flag}else{var c=b.charAt(0);if(!d.children[c]){return d.flag}else{return d.flag+this.getMethod(d.children[c],b.substring(1))}}},getNormalized:function(c){var b=c.length;if(b<=4){return c}var e=this.getMethod(this.root,c);var d=c;switch(e){case 1:if(b!=11){break}if(b<=7){d=c.splice(3,0,a.BETWEENNUMBERS)}else{d=c.splice(7,0,a.BETWEENNUMBERS).splice(3,0,a.BETWEENNUMBERS)}break;case 258:if(b!=14){break}if(b>6){if(b<=10){d=c.splice(6,0,a.BETWEENNUMBERS).splice(3,0,a.BETWEENNUMANDAREA)}else{d=c.splice(10,0,a.BETWEENNUMBERS).splice(6,0,a.BETWEENNUMBERS).splice(3,0,a.BETWEENNUMANDAREA)}}break;case 644:if(b!=15){break}if(b>7){if(b<=11){d=c.splice(7,0,a.BETWEENNUMBERS).splice(4,0,a.BETWEENNUMANDAREA)}else{d=c.splice(11,0,a.BETWEENNUMBERS).splice(7,0,a.BETWEENNUMBERS).splice(4,0,a.BETWEENNUMANDAREA)}}break;case 8:if(b!=10){break}if(b<=7){d=c.splice(3,0,a.BETWEENNUMBERS)}else{d=c.splice(6,0,a.BETWEENNUMBERS).splice(3,0,a.BETWEENNUMBERS)}break;case 144:d=c.splice(3,0,a.BETWEENNUMANDAREA);break;case 128:d=c.splice(4,0,a.BETWEENNUMANDAREA);break;case 288:if(b>5){d=c.splice(5,0,a.BETWEENNUMANDAREA)}break;case 256:if(b>6){d=c.splice(6,0,a.BETWEENNUMANDAREA)}break;case 704:if(b>6){d=c.splice(6,0,a.BETWEENNUMANDAREA)}break;case 640:if(b>7){d=c.splice(7,0,a.BETWEENNUMANDAREA)}break;default:break}return d},};return a})();var format_util=new FormatUtil();
+    init();
+</script>
+</body>
+</html>

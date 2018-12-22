@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+
+    <stroke
+        android:width="@dimen/recent_circle_stroke"
+        android:color="@color/recent_circle_stroke_color"/>
+
+    <size android:width="@dimen/recent_circle_size"
+        android:height="@dimen/recent_circle_size"/>
+
+
+
+</shape>

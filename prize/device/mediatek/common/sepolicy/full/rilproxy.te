@@ -1,0 +1,15 @@
+# ==============================================
+# Policy File of /system/bin/rilproxy Executable File
+
+# For eMBMS
+typeattribute rilproxy mlstrustedsubject, mtkimsapdomain;
+
+# For LWX feature, grant permission to access NVRAM
+allow rilproxy nvram_agent_binder:binder call;
+allow rilproxy nvram_agent_service:service_manager find;
+allow rilproxy proc_ged:file { r_file_perms };
+
+# Date : WK17.02 2017/01/12
+# Operation : IT
+# Purpose : for setting volte enable property
+allow rilproxy mtk_volte_prop:property_service set;

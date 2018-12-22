@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"     
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal" 
+        >
+
+        <LinearLayout
+            android:id="@+id/blur_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+            >
+
+            <!-- header text -->
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/def_total_marginTop"
+                android:gravity="center"
+                android:text="@string/header_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/def_header_text_size" />
+
+            <!-- num password start-->
+            <LinearLayout
+                android:id="@+id/applock_num_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/def_header_pin_vinterval"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" 
+                >
+
+                <!-- dots -->
+
+                <com.prize.applock.fingerprintapplock.view.IndicatorDots
+                    android:id="@+id/indicator_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp" />
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="@dimen/default_delete_button_size"
+                    android:layout_height="@dimen/default_delete_button_size"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/prize_selector_pinlockview_item_delete_bg"
+                    android:clickable="true" />
+            </LinearLayout>
+            <!-- num password end-->
+            
+
+            <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/def_pin_pinlock_vinterval"/>
+            
+	     <!-- complex password start-->
+	     <EditText android:id="@+id/applock_complex"
+	        android:layout_width="208dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="50dp"
+	        android:layout_marginStart="30dip"
+	        android:layout_marginEnd="30dip"
+	        android:layout_marginBottom="0dp"
+	        android:layout_gravity="center_horizontal"
+	        android:inputType="textPassword"
+	        android:imeOptions="actionDone|flagForceAscii"
+	        android:textDirection="locale"
+	        android:textSize="24sp"
+	        android:visibility="gone"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:background="@android:color/transparent"	        
+              style="@style/TextAppearance.PasswordEntry"
+	    	/>    
+	    <ImageView 
+	       android:layout_marginTop="1dp"
+	       android:layout_marginBottom="20dp"
+	       android:padding="0dp"
+	       android:id="@+id/applock_complex_line"
+	       android:layout_width="208dp"
+	       android:layout_height="wrap_content"
+	       android:src="@drawable/dialog_title_line"
+	       android:layout_gravity="center_horizontal"/>
+	    <!-- complex password end-->
+
+	    <!-- pattern password start -->
+	    <com.android.internal.widget.LockPatternView 
+	      android:id="@+id/lockPattern"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/def_lockpattern_hight"
+             android:visibility="gone"/>
+           <!-- pattern password end -->
+
+	    <!-- num password start-->
+            <com.prize.applock.fingerprintapplock.view.PinLockView
+                android:id="@+id/pin_lock_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/def_pinlock_hight"
+                android:layout_marginLeft="@dimen/def_pinlock_left_margin"
+                android:layout_marginRight="@dimen/def_pinlock_right_margin"
+                android:gravity="center"
+                app:keypadButtonSize="72dp"
+                app:keypadShowDeleteButton="true"
+                app:keypadTextColor="@android:color/white"
+                app:keypadTextSize="28sp" />
+          <!-- num password start-->
+
+            <TextView
+                android:id="@+id/tv_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/cancel_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/def_header_text_size" />
+
+            <ImageView
+                android:id="@+id/fingerprint_status"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="top|center_horizontal"
+                android:scaleType="center"
+                android:src="@drawable/status_fingerprint" />
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>

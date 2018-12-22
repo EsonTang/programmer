@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<com.prize.left.page.ui.LeftFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:id="@+id/left_frame"
+    android:background="@android:color/transparent"
+    android:layout_marginTop="@dimen/dp_25"
+    >  
+  	
+    <include layout="@layout/left_header_card" />
+    
+    <android.support.v4.widget.SwipeRefreshLayout  
+        android:id="@+id/id_swipe_ly"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_55"
+        >
+    <android.support.v7.widget.RecyclerView  
+        android:id="@+id/recycle_list"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"
+        />
+    </android.support.v4.widget.SwipeRefreshLayout> 
+        
+    <android.support.v7.widget.RecyclerView  
+        android:id="@+id/recycle_search"  
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+    <!-- <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_lay"
+        android:layout_marginStart="@dimen/search_left_margin"
+        android:layout_marginEnd="@dimen/search_left_margin"
+        android:layout_marginTop="@dimen/search_left_margin"
+        android:gravity="top"
+        android:visibility="gone"
+        android:background="@drawable/left_search_bg"
+        >
+        <ImageView android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/img_menu"
+            android:src="@drawable/left_menu_selector"
+            />
+        <TextView android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_query"
+            android:layout_weight="1"
+            android:hint="@string/str_search_hint"
+	        android:gravity="center_vertical"
+	        android:layout_marginStart="@dimen/search_left_margin"
+	        android:layout_marginEnd="@dimen/search_left_margin"
+            />
+        
+        <ImageView android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_mic"
+            android:src="@drawable/ico_mic_selector"
+            android:visibility="gone"
+            />
+    </TableRow> -->
+</com.prize.left.page.ui.LeftFrameLayout>

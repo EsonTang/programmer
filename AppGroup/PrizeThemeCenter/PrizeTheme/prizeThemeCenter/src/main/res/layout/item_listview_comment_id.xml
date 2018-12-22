@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="13.3dp"
+    android:layout_marginRight="13.3dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp">
+
+
+        <com.prize.prizethemecenter.ui.widget.CircleImageViewTwo
+            android:id="@+id/user_heading_id"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/comment_default_icon" />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13.3dp"
+            android:layout_toRightOf="@+id/user_heading_id"
+            android:text="TextView"
+            android:textColor="@color/textcolor_969696"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/comment_time_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_id"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/user_id"
+            android:text="TextView"
+            android:textColor="@color/textcolor_969696"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginBottom="@dimen/padding10dp"
+        android:id="@+id/comment_content_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="13.3dp"
+        android:ellipsize="end"
+        android:text="qqq"
+        android:textColor="@color/text_color_323232"
+        android:textSize="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2013 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="#00000000" >
+
+    <com.android.incallui.GlowPadWrapper
+        xmlns:dc="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/glow_pad_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/glowpad_background_color"
+        android:layout_marginBottom="@dimen/glowpadview_margin_bottom"
+        dc:targetDrawables="@array/incoming_call_widget_audio_with_sms_targets"
+        dc:targetDescriptions="@array/incoming_call_widget_audio_with_sms_target_descriptions"
+        dc:directionDescriptions="@array/incoming_call_widget_audio_with_sms_direction_descriptions"
+        dc:handleDrawable="@drawable/ic_incall_audio_handle"
+        dc:outerRingDrawable="@drawable/ic_lockscreen_outerring"
+        dc:outerRadius="@dimen/glowpadview_target_placement_radius"
+        dc:innerRadius="@dimen/glowpadview_inner_radius"
+        dc:snapMargin="@dimen/glowpadview_snap_margin"
+        dc:feedbackCount="1"
+        dc:vibrationDuration="20"
+        dc:glowRadius="@dimen/glowpadview_glow_radius"
+        dc:pointDrawable="@drawable/ic_lockscreen_glowdot"
+        dc:allowScaling="true" />
+
+    <com.android.incallui.PrizeAnswerLayout
+        android:id="@+id/prize_answer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp">
+
+        <!-- LEFT -->
+        <!--<TextView
+            android:id="@+id/prize_reject_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prize_arrow_10"
+            android:layout_above ="@+id/prize_reject_img"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="48dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/prize_reject_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prize_reject"
+            android:layout_above ="@+id/reject_incall"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/reject_incall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="@string/prize_incall_reject"
+            android:textSize="14dp"
+            android:layout_alignParentBottom ="true"
+            android:layout_alignParentLeft ="true"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="53dp"
+            android:layout_marginBottom="20dp" />-->
+
+        <RelativeLayout
+            android:id="@+id/rl_reject_incall"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom ="true"
+            android:layout_alignParentStart ="true"
+            android:layout_gravity="start|bottom"
+            android:gravity="bottom" >
+            <TextView
+                android:id="@+id/reject_incall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:text="@string/prize_incall_reject"
+                android:textSize="14dp"
+                android:layout_marginBottom="0dp" />
+
+            <TextView
+                android:id="@+id/prize_reject_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/prize_reject"
+                android:layout_above ="@+id/reject_incall"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/prize_reject_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/prize_arrow_10"
+                android:layout_above ="@+id/prize_reject_img"
+                android:layout_marginBottom="5dp" />
+
+        </RelativeLayout>
+
+        <!-- MID -->
+        <!--<TextView
+            android:id="@+id/prize_answer_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prize_arrow_10"
+            android:layout_above ="@+id/prize_answer_img"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="72dp"
+            android:layout_toRightOf ="@+id/prize_reject_img"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/prize_answer_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prize_fab_blue"
+            android:layout_above ="@id/reject_incall"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf ="@+id/prize_reject_img"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/answer_incall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="@string/prize_incall_answer"
+            android:textSize="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom ="true"
+            android:layout_toRightOf = "@id/reject_incall"
+            android:layout_marginLeft="75dp"
+            android:layout_marginBottom="20dp" />-->
+
+        <!-- PRIZE-Add-360_marker-wangzhong-2016_10_11-start -->
+        <TextView
+            android:id="@+id/prize_tv_marker_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textColor="#FE3044"
+            android:textSize="20sp"/>
+        <!-- PRIZE-Add-360_marker-wangzhong-2016_10_11-end -->
+
+        <TextView
+            android:id="@+id/answer_incall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="@string/prize_incall_answer"
+            android:textSize="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom ="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/prize_answer_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prize_fab_blue"
+            android:layout_above ="@id/answer_incall"
+            android:layout_gravity="center|bottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/prize_answer_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prize_arrow_10"
+            android:layout_above ="@+id/prize_answer_img"
+            android:layout_gravity="center|bottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp" />
+
+        <!-- RIGHT -->
+        <!--<TextView
+            android:id="@+id/prize_message_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prize_arrow_10"
+            android:layout_above ="@+id/prize_message_img"
+            android:layout_gravity="right|bottom"
+            android:layout_alignParentRight ="true"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/prize_message_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prize_message"
+            android:layout_above ="@+id/answer_message"
+            android:layout_gravity="right|bottom"
+            android:layout_alignParentRight ="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/answer_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="@string/prize_incall_message"
+            android:textSize="14dp"
+            android:layout_gravity="right|bottom"
+            android:layout_alignParentBottom ="true"
+            android:layout_alignParentRight ="true"
+            android:layout_marginRight="42dp"
+            android:layout_marginBottom="20dp" />-->
+
+        <RelativeLayout
+            android:id="@+id/rl_answer_message"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom ="true"
+            android:layout_alignParentEnd ="true"
+            android:layout_gravity="end|bottom"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/answer_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:text="@string/prize_incall_message"
+                android:textSize="14dp"
+                android:layout_gravity="end|bottom" />
+
+            <TextView
+                android:id="@+id/prize_message_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/prize_message"
+                android:layout_above ="@+id/answer_message"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/prize_message_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/prize_arrow_10"
+                android:layout_above ="@+id/prize_message_img"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="5dp" />
+
+        </RelativeLayout>
+
+    </com.android.incallui.PrizeAnswerLayout>
+
+</LinearLayout>

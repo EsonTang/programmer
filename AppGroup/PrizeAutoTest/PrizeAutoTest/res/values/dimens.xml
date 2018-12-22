@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+	<!--Prize-add by liyu-for fingerprint factory test-20160621-start-->
+	<dimen name="density_40dp">40dip</dimen>
+	<dimen name="density_10dp">10dip</dimen>
+	<dimen name="density_17dp">17dip</dimen>
+	<dimen name="density_15dp">15dip</dimen>
+	<dimen name="big_front">16sp</dimen>
+	<dimen name="normal_front">14sp</dimen>
+	<dimen name="density_30dp">30dip</dimen>
+	<dimen name="density_20dp">20dip</dimen>
+	<!--Prize-add by liyu-for fingerprint factory test-20160621-end-->
+	
+		
+	<dimen name="prize_ownerinfo_button_width">160dp</dimen>
+	<dimen name="prize_ownerinfo_button_height">42dp</dimen>
+	<dimen name="prize_horizontal_calibration_button_width">319dp</dimen>
+	<dimen name="prize_horizontal_calibration_button_height">42dp</dimen>
+
+	<dimen name="prize_horizontal_calibration_textview_size">14sp</dimen>
+
+
+	<dimen name="prize_ownerinfo_button_location">20dp</dimen>
+	<dimen name="dashboard_category_title_height">25dp</dimen>
+	<dimen name="dashboard_tile_minimum_height">55dp</dimen>
+	<dimen name="dashboard_tile_image_margin_start">18dp</dimen>
+    <dimen name="dashboard_tile_image_margin_end">7dp</dimen>
+	<dimen name="dashboard_tile_divider">320dp</dimen>
+	<dimen name="prize_dashboard_tile_textsize">14sp</dimen>
+	<dimen name="dashboard_category_title_textsize">12sp</dimen>
+	<dimen name="shortcut_item_textsize">14sp</dimen>
+	<dimen name="shortcut_title_textsize">12sp</dimen>
+	<dimen name="shortcut_edit_textsize">12sp</dimen>
+	<dimen name="prize_shortcut_category_height">24dp</dimen>
+	<dimen name="prize_light_control_min_height">54dp</dimen>
+	<dimen name="prize_light_control_textsize">14sp</dimen>
+	<dimen name="prize_light_control_text_marinleft">17dp</dimen>
+	<dimen name="prize_light_control_seekbar_marginright">17dp</dimen>
+	<dimen name="prize_light_control_seekbar_marginleft">18dp</dimen>
+	<dimen name="prize_preference_summary_textsize">12sp</dimen>
+	<dimen name="prize_switchbar_title_textsize">16sp</dimen>
+	<dimen name="prize_cpu_core_preference_height">105dp</dimen>
+	<dimen name="prize_cpu_core_preference_paddingleft">16dip</dimen>
+	<dimen name="prize_settings_progress_large_width">32dp</dimen>
+	<dimen name="prize_settings_progress_large_height">32dp</dimen>
+	<dimen name="prize_app_notification_header_textsize">16sp</dimen>
+	<dimen name="prize_cpu_core_divider">5dp</dimen>
+</resources>

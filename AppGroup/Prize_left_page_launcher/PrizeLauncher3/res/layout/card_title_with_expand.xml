@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_title_height"
+    android:orientation="vertical"
+    android:id="@+id/card_title"
+    >
+    
+    <TableRow android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	style="@style/left_card_title_style"
+    	>
+	    <TextView android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:drawableStart="@null"
+	        android:layout_weight="1"
+	        android:id="@+id/txt_title"
+	        android:singleLine="true"
+	        style="@style/card_name_style"
+	        />
+		
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:drawableStart="@null"
+	        android:id="@+id/txt_expand"
+	        android:singleLine="true"
+	        android:text="@string/str_expand"
+	        android:gravity="center"
+	        style="@style/card_name_style"
+	        android:paddingStart="5dp"
+	        android:visibility="invisible"
+	        android:paddingEnd="5dp"
+	        />
+    </TableRow>
+    
+    <View android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/white_5"
+    	/>
+</LinearLayout>

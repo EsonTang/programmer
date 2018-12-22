@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/sleep_gesture" >
+
+    <PreferenceScreen
+        android:key="sleep_open_app"
+        android:title="@string/sleep_open_app" />
+    <PreferenceScreen
+        android:key="sleep_control_music"
+        android:title="@string/sleep_control_music" />
+    <PreferenceScreen
+        android:key="sleep_unlock_lock_screen"
+        android:title="@string/sleep_unlock_lock_screen" />
+    <PreferenceScreen
+        android:key="sleep_awake"
+        android:title="@string/sleep_awake" />
+    
+</PreferenceScreen>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_delete_station"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_shape"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/dialog_shape" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:gravity="center"
+        android:orientation="horizontal" >
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:text="@string/wifi_pwd_input"
+            android:textColor="@color/prize_text_default"
+            android:textSize="@dimen/textsize_large"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_title_height"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/prize_text_default"
+            android:textSize="@dimen/textsize_large" />
+        <TextView 
+            android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:text="@string/wifi_pwd_str"
+            android:textColor="@color/prize_text_default"
+            android:textSize="@dimen/textsize_large"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/dialog_title_line" />
+
+    <LinearLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_content_height"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/wifi_password"
+            android:textSize="@dimen/textsize_medium"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="none"
+            android:maxLength="64"
+            android:password="true"
+            android:requiresFadingEdge="horizontal"
+            android:singleLine="true"
+            android:textDirection="locale"
+            android:textSize="@dimen/textsize_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/single_line_height"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/terms_lbtn_slt"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/cancel"
+            android:textColor="@color/prize_text_select"
+            android:textSize="@dimen/textsize_medium" />
+        <!-- android:background="@drawable/terms_lbtn_slt" -->
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/terms_rbtn_slt"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/connect"
+            android:textColor="@color/dialog_bt_text_disable"
+            android:textSize="@dimen/textsize_medium" />
+    </LinearLayout>
+
+</LinearLayout>

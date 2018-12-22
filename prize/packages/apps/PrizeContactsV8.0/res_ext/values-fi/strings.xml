@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">SIM-yhteystietoja ei voi yhdistää.</string>
+    <string name="menu_done">"Valmis"</string>
+    <string name="menu_deleteContact">"Poista"</string>
+    <string name="menu_select_all">"Valitsekaikki"</string>
+    <string name="menu_select_none">"Poistakaikkivalinnat"</string>
+    <string name="menu_new_contact_action_bar">"Uusi"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> valittu</string>
+    <string name="multichoice_no_select_alert">Kohteita ei ole valittu.</string>
+    <string name="aas_phone_type_none">"Eimitään"</string>
+    <string name="aas_custom_title">Mukautetut tunnukset</string>
+    <string name="aas_new_dialog_title">Lisää uusi tunnus</string>
+    <string name="ass_rename_dialog_title">Mukauta tunnusta</string>
+    <string name="aas_delele_dialog_message">Tunnusten poistaminen vaikuttaa kaikkiin lisänumeroihin, jotka on linkitetty tunnuksiin. Oletko varma?</string>
+    <string name="aas_name_invalid">Tunnuksen nimi ei kelpaa. Syötä toinen.</string>
+    <string name="aas_name_exist">Tunnus on jo olemassa.</string>
+    <string name="aas_usim_full">Uusille tunnuksille ei ole tilaa.</string>
+    <string name="ass_edit_assert_message">Tunnuksen mukauttaminen vaikuttaa kaikkiin lisänumeroihin, jotka on linkitetty tunnukseen. Oletko varma.</string>
+    <string name="aas_new_fail">Uuden tunnuksen luominen epäonnistui.</string>
+    <string name="aas_edit_fail"><xliff:g id="aas">%s</xliff:g>:n nimeäminen uudelleen epäonnistui.</string>
+    <string name="aas_delete_fail"><xliff:g id="aas">%s</xliff:g>:n poistaminen epäonnistui.</string>
+    <string name="aas_phone_primary">Ensisijainen numero</string>
+    <string name="aas_phone_additional">Lisänumero</string>
+</resources>

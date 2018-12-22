@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/earn_points_header_banner_iv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/points_mall_item_details_header_banner"
+        android:scaleType="fitXY"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/points_header_desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:paddingTop="13dp"
+            android:textColor="@color/text_color_747474"
+            android:textSize="@dimen/text_size_min"
+            />
+
+        <TextView
+            android:id="@+id/points_mall_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="6dp"
+            android:paddingTop="13dp"
+            android:text="@string/points_mall"
+            android:textColor="@color/text_color_009def"
+            android:textSize="@dimen/text_size_min"
+            />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_below="@id/points_mall_tv"
+            android:background="@color/bg_gray_color"/>
+    </RelativeLayout>
+</LinearLayout>

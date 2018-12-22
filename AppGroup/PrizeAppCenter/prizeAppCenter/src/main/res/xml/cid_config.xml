@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+
+    <!-- 务必更换为由360分配的渠道号，否则影响正常功能 -->
+    <sdk
+        key="cid"
+        value="7000098" />
+
+</Config>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <ImageView
+        android:layout_width="@dimen/lucky_money_region_width"
+        android:layout_height="@dimen/lucky_money_region_height"
+        android:scaleType="fitCenter"
+        android:contentDescription="@null"
+        android:src="@drawable/lucky_monkey_bg" />
+
+	<RelativeLayout
+	    android:layout_width="@dimen/lucky_money_region_width"
+	    android:layout_height="@dimen/lucky_money_region_height"
+	    android:layout_gravity="center_horizontal"
+	    android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/from_who"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/lucky_money_who_view_margin_top"
+            android:layout_marginStart="@dimen/lucky_money_who_view_margin_left"
+            android:layout_marginEnd="@dimen/lucky_money_who_view_margin_right"            
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/from_who_demo"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+	    <ImageView
+	        android:id="@+id/which_app"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/from_who"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="@dimen/lucky_money_which_app_view_margin_top"
+	        android:scaleType="fitCenter"
+	        android:background="@null"
+	        android:contentDescription="@null"
+	        android:src="@drawable/lucky_monkey_wechat" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/which_app"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/lucky_money_message_view_margin_top"        
+            android:layout_marginStart="@dimen/lucky_money_message_view_margin_left"
+            android:layout_marginEnd="@dimen/lucky_money_message_view_margin_right"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/message_demo"
+            android:textColor="#FBD347"
+            android:textSize="@dimen/lucky_money_message_view_text_size" />
+
+ 		</RelativeLayout>
+
+
+</FrameLayout>

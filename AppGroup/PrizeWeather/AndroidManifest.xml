@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prize.weather"
+    android:versionCode="4"
+    android:versionName="16.11.24">
+    <!-- PRIZE-Change-PrizeWeather-wangzhong-2016_8_10-start -->
+    <!-- android:versionName="weather_20160120"  > -->
+    <!-- PRIZE-Change-PrizeWeather-wangzhong-2016_8_10-end-->
+
+    <!-- coreApp="true"      
+    android:sharedUserId="android.uid.system" -->
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <application
+        android:name="com.prize.weather.framework.FrameApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:persistent="true" >
+
+        <!-- PRIZE-Add-PrizeWeather-wangzhong-2016_8_10-start -->
+        <meta-data  
+            android:name="com.baidu.lbsapi.API_KEY"  
+            android:value="McOhHC5peYnKAv4PMGs21wES" />
+        <!-- PRIZE-Add-PrizeWeather-wangzhong-2016_8_10-end-->
+
+        <activity
+            android:name=".WeatherHomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="locale|layoutDirection"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".city.CitySelectActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".menu.WeatherMenuActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <service 
+            android:name=".widget.WidgetService"
+            android:process=":widgetservice" >
+            <intent-filter 
+                android:priority="1000" >
+            </intent-filter>
+        </service>
+        
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":locationservice" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        
+        <!-- <receiver android:name=".widget.WeatherWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.prize.intent.location" />
+                <action android:name="com.prize.intent.UPDATE_WEATHER_WIDGET" />
+            </intent-filter>
+            <meta-data 
+                android:name="android.appwidget.provider"
+                android:resource="@xml/weather_prefs"/>
+        </receiver> -->
+        
+        <receiver 
+            android:name=".widget.WeatherWidgetProvider_4x2" 
+            android:process=":widgetservice" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.prize.intent.location" />
+                <action android:name="com.prize.intent.UPDATE_WEATHER_WIDGET" />
+                <action android:name="com.prize.weather.refresh" />
+                <action android:name="com.prize.intent.action.SYSTEM_READY" />
+            </intent-filter>
+            <meta-data 
+                android:name="android.appwidget.provider"
+                android:resource="@xml/weather_prefs_4x2"/>
+        </receiver>
+        
+        <receiver android:name=".widget.WeatherBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- <action android:name="android.intent.action.USER_PRESENT" /> -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.prize.intent.action.SYSTEM_READY" />
+                <!-- PRIZE-Add-PrizeWeather-wangzhong-2016_8_10-start -->
+                <action android:name="com.cooee.weather.Weather.action.REQUEST_REFRESH_DATA_FOR_3TH" />
+                <!-- PRIZE-Add-PrizeWeather-wangzhong-2016_8_10-end-->
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>

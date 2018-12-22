@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.incallui.PrizeInCallFloatView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/floatview_content"
+        android:layout_width="535dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/prize_incomming_call_float_window_bg" >
+
+        <ImageButton
+            android:id="@+id/accept_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/prize_selector_float_incomming_call_accept" />
+
+        <ImageButton
+            android:id="@+id/reject_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/prize_selector_float_incomming_call_reject" />
+
+        <ImageButton
+            android:id="@+id/hands_free_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/prize_selector_float_incomming_call_hf"
+            android:visibility="gone" />
+
+        <!-- name or number -->
+        <TextView
+            android:id="@+id/tv_name_or_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:textSize="15dp" />
+
+        <!-- local -->
+        <TextView
+            android:id="@+id/tv_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:textSize="12dp" />
+        
+        <!-- time -->
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</com.prize.incallui.PrizeInCallFloatView>

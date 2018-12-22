@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:key="prize_smart_select_wifi"
+        android:title="@string/prize_smart_select_wifi_title"
+        android:summary="@string/prize_smart_select_wifi_summary"
+        />
+    <SwitchPreference android:key="prize_auto_change_cellular"
+        android:title="@string/prize_auto_change_mobiledata_title"
+        android:summary="@string/prize_auto_change_mobiledata_summary"
+        android:dependency="prize_smart_select_wifi"/>
+
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.prize.prizethemecenter.activity.ThemeDetailImgActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <com.prize.prizethemecenter.ui.widget.FlowIndicator
+        android:id="@+id/flowIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:visibility="visible"
+        app:point_normal_color="#33ffffff"
+        app:point_radius="3dip"
+        app:point_seleted_color="#e6691e"
+        app:point_size="5dip"
+        app:space="10dip" />
+
+</RelativeLayout>

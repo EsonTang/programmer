@@ -1,0 +1,31 @@
+{
+  "configs": {
+    "key_disable_lockscreen_switch": false,
+    "key_need_show_personal_center_go_shop_view": false,
+    "key_need_show_noti_news": true,
+    "need_show_eshop_ad": false,
+    "tagid": "4,8,9,13",
+    "key_enable_lock_behind_ad": false,
+    "key_enable_redpacket_notify": false
+  },
+  "ads": {
+    "tu_hangup": 43500,
+    "tu_feeds_list_ad": 43501,
+    "tu_middle_feeds_ad_one_pic_one": 43502,
+    "tu_recommend_feeds_ad": 43503,
+    "tu_video_detail_bottom_banner_ad": 43504,
+    "tu_video_recommand_feeds_ad": 43505,
+    "tu_top_feeds_detail_ad": 43506,
+    "tu_bottom_feeds_detail_ad": 43507,
+    "tu_video_bottom_banner_ad": 43508,
+    "tu_middle_feeds_ad_one_pic_three": 43509,
+    "tu_setting_bottom_banner_ad": 43510,
+    "tu_thirdparty_app_intercept_ad": 43511,
+    "tu_middle_feeds_ad_two_pic_three": 43512,
+    "tu_feeds_list_redpackage_ad": 43513,
+    "tu_feeds_detail_redpackage_ad": 43514,
+    "tu_behind_lockscreen_fullscreen_ad": 43515,
+    "tu_behind_lockscreen_interstitial_ad": 43516,
+    "tu_thirdparty_app_intercept_ad_close": 43517
+  }
+}

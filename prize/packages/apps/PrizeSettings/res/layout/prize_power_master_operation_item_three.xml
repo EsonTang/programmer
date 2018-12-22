@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="15dp"
+    android:paddingEnd="7dp" >
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="0dp"
+        android:minHeight="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_power_master_operation_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/front_normal_size" />
+
+        <TextView
+            android:id="@+id/tv_power_master_operation_item_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/front_small_size" />
+    </LinearLayout>
+
+    <com.android.settings.widget.ToggleSwitch
+        android:id="@+id/cb_power_master_operation_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:theme="@style/ThemeOverlay.SwitchBar" />
+
+</LinearLayout>

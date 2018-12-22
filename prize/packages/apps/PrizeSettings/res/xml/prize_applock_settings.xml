@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- created by liuweiquan-20160708 -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/application_lock" >
+        
+     <PreferenceCategory android:key="recommand_category"
+            android:title="@string/applock_recommand_app">  
+        
+
+     </PreferenceCategory>
+     <PreferenceCategory android:key="can_encryption_app"
+            android:title="@string/applock_can_encryption_app">
+        
+
+     </PreferenceCategory>
+</PreferenceScreen> 

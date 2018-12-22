@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:paddingLeft="15dp">
+
+    <com.prize.appcenter.ui.widget.CornerImageView
+        android:id="@+id/app_uninstall_iv"
+        style="@style/game_item_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="12.5dp"
+        android:layout_marginTop="12.5dp"
+        android:src="@drawable/default_icon" />
+
+    <TextView
+        android:id="@+id/app_uninstall_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/app_uninstall_btn"
+        android:layout_toRightOf="@+id/app_uninstall_iv"
+        android:singleLine="true"
+        android:text="应用名称"
+        android:textColor="@color/text_color_262626"
+        android:textSize="@dimen/text_size_small" />
+
+    <!-- android:layout_alignTop="@+id/app_uninstall_iv" -->
+
+    <TextView
+        android:id="@+id/app_uninstall_size_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/app_uninstall_name_tv"
+        android:layout_below="@+id/app_uninstall_name_tv"
+        android:layout_marginTop="9dp"
+        android:textSize="@dimen/text_size_micro" />
+
+    <!-- <com.prize.appcenter.ui.widget.ProgressDeleteButton -->
+
+    <!--<Button-->
+        <!--android:id="@+id/app_uninstall_btn"-->
+        <!--style="@style/game_item_progressButton"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:background="@drawable/btn_uninstall_selector"-->
+        <!--android:focusable="false"-->
+        <!--android:textColor="@color/text_color_12b7f5"-->
+        <!--android:textSize="13sp" />-->
+    <com.prize.appcenter.ui.widget.PrizeCommButton
+        android:id="@+id/app_uninstall_btn"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        app:progressbtn_text_size="@dimen/text_size_26"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:btn_radius="20dp"
+        app:btn_content="@string/feedback_send_text"
+        app:btn_text_size="@dimen/text_size_micro" />
+
+    <View
+        android:id="@+id/app_uninstall_image_tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:background="@color/bg_gray_color" />
+
+</RelativeLayout>

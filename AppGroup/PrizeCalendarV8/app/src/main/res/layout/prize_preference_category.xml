@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout used for PreferenceCategory in a PreferenceActivity. -->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+android:id/title"
+    style="?android:attr/listSeparatorTextViewStyle"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/prize_preferences_category_bg_selector"
+    android:ellipsize="marquee"
+    android:fadingEdge="horizontal"
+    android:gravity="center_vertical"
+    android:paddingEnd="@dimen/prize_preferences_bg_margin5"
+    android:paddingStart="@dimen/prize_preferences_bg_margin5"
+    android:paddingTop="@dimen/prize_preferences_bg_margin2"
+    android:singleLine="true"
+    android:textAppearance="?android:attr/textAppearance"
+    android:textColor="@color/prize_preferences_text_color"
+    android:textSize="@dimen/prize_preferences_text_size1"/>

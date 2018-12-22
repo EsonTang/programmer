@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_items">
+        <item>耗電與發熱</item>
+        <item>信號與通話</item>
+        <item>死機與重啟</item>
+        <item>藍牙</item>
+        <item>相機</item>
+        <item>WLAN</item>
+        <item>GPS</item>
+        <item>建議</item>
+        <item>應用</item>
+    </string-array>
+</resources>

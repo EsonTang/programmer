@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/statusbar_color"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/song_love_title_container_margintop" 
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_back_selector"           
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            />
+		<TextView
+		    android:id="@+id/title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toEndOf="@id/action_back"
+		    android:layout_centerVertical="true"
+		    android:textSize="@dimen/text_size_small"
+		    android:textColor="@color/text_color_323232"/>
+        <ImageView
+            android:id="@+id/action_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_selector" 
+            />
+
+        <ImageView
+            android:id="@+id/action_overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_sound_effect_nomal" 
+            android:visibility="gone"
+            />
+   </RelativeLayout>     
+        
+        <!-- 全选,取消 -->
+         <RelativeLayout
+            android:id="@+id/drag_head_layout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp" 
+            android:layout_alignParentTop="true"
+            android:background="@color/statusbar_color"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/drag_mEdit_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/all_select"
+                android:textColor="@color/text_color_33cccc"
+                android:textSize="@dimen/text_size_micro" />
+
+			<TextView
+	            android:id="@+id/item_select_Tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:gravity="center"
+	            android:textColor="@color/text_color_323232"
+	            android:textSize="@dimen/text_size_medium" />
+            
+            <TextView
+                android:id="@+id/drag_mEdit_neg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/cancel"
+                android:textColor="@color/text_color_33cccc"
+                android:textSize="@dimen/text_size_micro" />
+        </RelativeLayout>
+    
+
+    <View
+        android:id="@+id/line_divider"
+        android:layout_marginTop="@dimen/song_love_line_margintop"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line_separator" />
+    
+    <!-- 列表中无音乐 -->
+    <RelativeLayout
+        android:id="@+id/none_data"
+        android:layout_below="@id/line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/drog_new_songs"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/play_list_nosong_bt_margin_top"
+            android:background="@drawable/ico_add_songs_selector"
+            android:gravity="center"
+            android:text="@string/addsongs"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/play_list_nosong_img_margin_top"
+            android:src="@drawable/list_add_no_songs" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="@dimen/play_list_nosong_tv_margin_top"
+            android:text="@string/nomusic_in_list"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+    
+
+    <ListView
+        android:layout_below="@id/line_divider"
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+         android:background="@color/white"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1px"
+        android:drawSelectorOnTop="false"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none" />
+    
+
+</RelativeLayout>

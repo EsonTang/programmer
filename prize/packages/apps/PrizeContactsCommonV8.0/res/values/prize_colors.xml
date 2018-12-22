@@ -1,0 +1,61 @@
+<resources>
+    <color name="prize_dialer_phone_number_list_item_bg_color">#F5F5F5</color>
+	<color name="prize_theme_color">#3478f6</color>
+	
+    <!-- color for bladeview's text of popup -->
+    <color name="contact_bladeview_popup_text_color">#FFFFFFFF</color>
+    <!-- color for bladeview's text of index -->
+    <color name="contact_bladeview_index_text_color">@color/prize_theme_color</color>
+    <color name="contact_bladeview_index_pressed_text_color">#FFFFFFFF</color>
+    <color name="prize_black">#000000</color>
+    <color name="prize_search_shortcut_icon_color">#555555</color>
+    <color name="prize_primary_color">#323232</color>
+    <color name="cursor_color">@color/prize_theme_color</color>
+    <color name="prize_section_header_text_color">@color/prize_theme_color</color>
+    <color name="prize_black_color">#000000</color>
+    <color name="prize_contacts_common_white">#ffffff</color>
+    <color name="prize_divider_line_color">#dcdcdc</color>
+
+    <!-- PRIZE- add for dido os 8.0-huangpengfei-2017-7-18-start -->
+    <color name="prize_layout_bg_color">#e6e6e6</color>
+    <color name="prize_content_bg_color">#f5f5f5</color>
+    <color name="prize_actionbar_bg_color">#fafafa</color>
+    <color name="prize_actionbar_divider_color">#c8c8c8</color>
+    <color name="prize_divider_color">#dcdcdc</color>
+    <color name="prize_pupup_wondow_title_color">#646464</color>
+    <color name="prize_content_title_color">#323232</color>
+    <color name="prize_sub_title_text_color">#969696</color>
+    <color name="prize_actionbar_title_text_color">#323232</color>
+    <color name="prize_actionbar_btn_text_press">#663478f6</color>
+    <color name="prize_bottom_button_bg_color">#fafafa</color>
+    <color name="prize_bottom_button_bg_color_press">#f0f0f0</color>
+    <color name="transparent">#00000000</color>
+    <color name="prize_contact_search_edit_text_stroke_color">#dcdcdc</color>
+    <color name="transparent">#00000000</color>
+    <color name="prize_contacts_list_item_view_header_text_color">#898989</color>
+    <color name="prize_contacts_list_item_view_header_bg_color">#ededed</color>
+    <color name="prize_custom_progressbar_foreground_color">#ffffff</color>
+    <color name="prize_custom_progressbar_background_color">#eaeaea</color>
+
+    <array name="prize_letter_tile_colors">
+        <item>#b8b8b8</item>
+        <item>#b8b8b8</item>
+        <item>#b8b8b8</item>
+        <item>#b8b8b8</item>
+    </array>
+
+    <array name="prize_letter_tile_colors_dark">
+        <item>#b8b8b8</item>
+        <item>#b8b8b8</item>
+        <item>#b8b8b8</item>
+        <item>#b8b8b8</item>
+    </array>
+    
+    <color name="prize_button_text_default_color">@color/prize_theme_color</color>
+	<color name="prize_button_text_highlight_color">#663478f6</color>
+	<color name="prize_button_text_dark_color">#C8C8C8</color>
+	<color name="prize_dark_color">#000000</color>
+    <!-- PRIZE- add for dido os 8.0-huangpengfei-2017-7-18-end -->
+    <color name="prize_tips_text_color">#D9D9D9</color>
+    
+</resources>

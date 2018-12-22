@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relayout_head_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp">
+
+        <com.prize.appcenter.ui.widget.CustomImageView
+            android:id="@+id/newstyle_icon"
+            android:layout_width="@dimen/item_W"
+            android:layout_height="@dimen/item_W"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            app:iv_radius="14dp"
+            android:transitionName="robot"  />
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newstyle_icon"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                tools:text="支付宝" />
+
+            <com.prize.appcenter.ui.widget.FlowLayout
+                android:id="@+id/ourtag_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/attributeRlyt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/score_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#80FFFFFF"
+                android:textSize="@dimen/text_size_min" />
+
+            <TextView
+                android:id="@+id/downloadTimes_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textColor="#80FFFFFF"
+                android:textSize="@dimen/text_size_min"
+                />
+
+            <TextView
+                android:id="@+id/appSize_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textColor="#80FFFFFF"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/safeableRlyt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/attributeRlyt_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detail_safe_icon" />
+
+            <TextView
+                android:id="@+id/safe_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/app_safe"
+                android:textColor="@color/text_color_24aa42"
+                android:textSize="@dimen/text_size_min" />
+
+            <ImageView
+                android:id="@+id/have_ad_icon_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/detail_safe_icon" />
+
+            <TextView
+                android:id="@+id/ad_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text_color_24aa42"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/app_description_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="1dp"
+        android:drawableLeft="@drawable/icon_detail_description"
+        android:drawablePadding="18dp"
+        android:drawableRight="@drawable/icon_detail_description_right"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_30" />
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/zero_point_five_dp"-->
+    <!--android:background="#66FFFFFF"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_marginRight="15dp"/>-->
+</LinearLayout>

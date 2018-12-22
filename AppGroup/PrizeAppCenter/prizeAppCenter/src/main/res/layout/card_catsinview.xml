@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:layout_marginTop="14dp"-->
+    <!-- 卡片气泡布局-->
+
+    <ImageView
+        android:id="@+id/catsin_bgImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="13.5dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/container_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="14dp">
+        <!--左边-->
+        <TextView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="81dp"
+            android:background="@drawable/catsinone_sl"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="9sp" />
+
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/left_top_Iv"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_toLeftOf="@+id/center_Iv"
+            android:background="@drawable/catsintwo_sl"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_min" />
+
+        <TextView
+            android:id="@+id/left_top_Iv"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="50dp"
+            android:layout_toLeftOf="@+id/center_Iv"
+            android:background="@drawable/catsinthree_sl"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="9sp" />
+
+
+        <TextView
+            android:id="@+id/center_Iv"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/catsinfour_sl"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_micro" />
+
+
+        <!--右边-->
+
+        <TextView
+            android:id="@+id/right_bootom_Iv"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/right_top_Iv"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@id/center_Iv"
+            android:background="@drawable/catsinfive_sl"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_30" />
+
+        <TextView
+            android:id="@+id/right_top_Iv"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="46dp"
+            android:layout_toRightOf="@id/center_Iv"
+            android:background="@drawable/catsinsix_sl"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="9sp" />
+
+        <TextView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="82dp"
+            android:background="@drawable/catsinseven_sl"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</merge>

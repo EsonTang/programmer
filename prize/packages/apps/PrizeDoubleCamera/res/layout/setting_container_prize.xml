@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.setting.SettingRotateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:camera="http://schemas.android.com/apk/res/com.android.gallery3d"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:splitMotionEvents="false" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/setting_bg"
+        android:splitMotionEvents="false" 
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/setting_title_margin_top"
+            android:layout_height="@dimen/setting_title_height" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/pref_camera_settings_category"
+                android:textColor="@color/setting_title"
+                android:textSize="@dimen/textsize_large" />
+
+            <ImageView
+                android:id="@+id/im_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/setting_title_margin"
+                android:padding="@dimen/setting_title_padding"
+                android:src="@drawable/ic_setting_back" />
+
+            <ImageView
+	    		android:id="@+id/im_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/setting_title_margin"
+                android:padding="@dimen/setting_title_padding"
+                android:src="@drawable/ic_setting_reset_prize"/>
+        </RelativeLayout>
+        
+        <View
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@color/setting_item_divider_prize"/>
+
+        <com.android.camera.ui.SettingListLayout
+            android:id="@+id/view_setting_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:splitMotionEvents="false" 
+            android:paddingLeft="@dimen/setting_margin"
+            android:paddingRight="@dimen/setting_margin">
+
+            <ListView
+                android:id="@+id/settingList"
+                style="@style/SettingItemList"
+                android:layout_gravity="top"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@color/setting_item_divider_prize"
+        		android:dividerHeight="1px"
+                android:splitMotionEvents="false" 
+                android:scrollbars="none"/>
+        </com.android.camera.ui.SettingListLayout>
+    </LinearLayout>
+
+</com.prize.setting.SettingRotateLayout>

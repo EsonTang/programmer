@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+     >
+
+    <ImageView
+        android:id="@+id/tag_logo_Iv"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/aaa" />
+
+    <TextView
+        android:id="@+id/collectName_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tag_logo_Iv"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        style="@style/textView_three"
+    />
+
+    <com.prize.music.views.SongListGridView
+        android:id="@+id/mGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/collectName_Tv"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:horizontalSpacing="7.5dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:verticalSpacing="10dip" />
+
+</RelativeLayout>

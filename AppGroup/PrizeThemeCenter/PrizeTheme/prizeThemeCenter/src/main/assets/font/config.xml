@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+
+    <!--默认字体-->
+    <item-info>
+        <name>默认字体;默認字體;Default font</name>
+        <id>0</id>
+        <md5>75225b297e757308c3bfeca013396be6</md5>
+    </item-info>
+
+    <!--<item-info>-->
+        <!--<name>柏青体;柏青体;happy new year</name>-->
+        <!--<id>11</id>-->
+        <!--<md5>c9930f74d5c4608d69f57e8383ba5f0c</md5>-->
+
+    <!--</item-info>-->
+
+    <!--<item-info>-->
+        <!--<name>汉仪中等线;汉仪中等线;Sweet christmas</name>-->
+        <!--<id>12</id>-->
+        <!--<md5>8c4f60ded76ab9f4b49b1b97fa1669a5</md5>-->
+
+    <!--</item-info>-->
+
+
+</items>

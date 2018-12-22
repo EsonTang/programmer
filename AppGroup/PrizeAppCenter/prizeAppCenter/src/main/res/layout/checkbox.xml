@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:button="@null"
+    android:drawableLeft="@drawable/radiobtn_selector"
+    android:drawablePadding="10dp"
+    android:focusable="true"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:textColor="#2b2b2b"
+    android:textSize="@dimen/text_size_30">
+
+</CheckBox>

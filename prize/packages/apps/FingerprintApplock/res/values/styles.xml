@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!-- Customize your theme here. 
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+	
+	<style name="AppTheme" parent="android:Theme.Light" >
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.notAnimation" parent="android:Theme.Light.NoTitleBar.Fullscreen">
+    <!-- <style name="Theme.notAnimation" parent="@*android:style/Theme.Holo.Wallpaper.NoTitleBar"> -->
+        <item name="android:windowAnimationStyle">@style/notAnimation</item>
+        <item name="android:windowBackground">@drawable/prize_pinlockview_bg</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="notAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+        <style name="TextAppearance.PasswordEntry" parent="android:TextAppearance.Material">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- Nav bar color customized feature. START. prize-linkh-20170923 -->
+	<style name="PrizeLockUITheme" parent="Theme.notAnimation" >	
+        <item name="android:disableNavbarColorCustInStartingWin">true</item>       
+    </style>
+    <!--  Nav bar color customized feature. END-->
+
+</resources>

@@ -1,0 +1,30 @@
+{
+    "urlpack": {
+        "locale": {
+            "enable": 1,
+            "name": "locale",
+            "value": "zh-cn",
+            "assign": 1
+        },
+        "api_level": {
+            "enable": 1,
+            "name": "api_level",
+            "value": -1,
+            "assign": 1
+        },
+        "data_name": {
+            "enable": 1,
+            "name": "data_name",
+            "value": "Presentation",
+            "assign": 0
+        }
+    },
+    "config": {
+        "enable": 1,
+        "conf_version": 1,
+        "domain_name": "http://ws2.cootekservice.com",
+        "connection": "Any",
+        "module_name": "notification_center",
+        "update_interval": 14400
+    }
+}

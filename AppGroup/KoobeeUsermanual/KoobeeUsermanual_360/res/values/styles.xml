@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!--   <style name="AppTheme" parent="@android:style/Theme.Material.Light">--> 
+  <style name="AppTheme" parent="android:Theme">
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">#ff0000</item>
+    </style>
+
+    <style name="CustomWindowTitleBackground" >
+        <item name="android:background">@color/app_background_color</item>
+    </style>
+
+</resources>

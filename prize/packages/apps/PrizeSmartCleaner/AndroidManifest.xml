@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prize.smartcleaner"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="prize.permission.PRIZE_COMPONENT_SAFE" />
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <receiver android:name=".BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.prize.smartcleaner.PrizeClearSystemService"
+            android:exported="true"
+            android:label="MSservice">
+            <intent-filter>
+                <action android:name="com.prize.android.service.MSSTART" />
+                <action android:name="com.prize.android.service.DELAYSTART" />
+                <action android:name="com.prize.android.service.UPDATE_FILTER_LIST" />
+                <action android:name="com.prize.android.service.SCREEN_OFF_DELAY_CLEAR" />
+                <action android:name="prize.intent.action.REQUEST_APP_CLEAN_RUNNING" />
+                <action android:name="com.prize.android.service.SCREEN_OFF_PROCESS_CLEAR" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.prize.smartcleaner.PrizeAutoClearService"
+            android:exported="false"
+            android:label="ACservice">
+            <intent-filter>
+                <action android:name="com.prize.android.service.ACSTART" />
+                <action android:name="com.prize.android.service.DELAY_ACSTART" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

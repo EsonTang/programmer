@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+*版权所有©2015,深圳市铂睿智恒科技有限公司
+*
+*内容摘要：通知栏实现一键清理中的view的动画文件
+*当前版本：V1.0
+*作	者：liufan
+*完成日期：2015-04-14
+*修改记录：
+*修改日期：
+*版 本 号：
+*修 改 人：
+*修改内容：
+-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:fromXScale="0.0"
+        android:toXScale="1.4"
+        android:fromYScale="0.0"
+        android:toYScale="1.4"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="500"
+        /> 
+    <rotate 
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:fromDegrees="0"
+        android:toDegrees="+360"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="2000"
+        />
+           
+</set>

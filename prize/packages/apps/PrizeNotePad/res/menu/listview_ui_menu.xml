@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:id="@+id/id_export"
+            android:title="导出"/>
+     <item android:id="@+id/id_delet_many"
+            android:title="批量删除"/>
+     <item android:id="@+id/id_backup"
+            android:title="备份"/>
+     <item android:id="@+id/id_help"
+            android:title="帮助指引"/>
+
+</menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp">
+    
+    <RelativeLayout
+        android:id="@+id/popu_magazine_RL"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" >
+
+        <TextView
+            android:id="@+id/popu_magazine_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prize_use_add_phtot"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_gray_color"
+        android:gravity="center_vertical"/>
+    
+    <RelativeLayout
+        android:id="@+id/popu_lock_RL"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" >
+
+        <TextView
+            android:id="@+id/popu_lock_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prize_use_lockscreen"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popu_lock_TV"
+            android:layout_marginTop="5dp"
+            android:textColor="#969696"
+            android:text="@string/prize_use_lockscreen_summary"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

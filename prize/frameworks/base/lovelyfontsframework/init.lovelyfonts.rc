@@ -1,0 +1,7 @@
+#======================lovelyfonts start=======================
+on post-fs-data
+    mkdir /data/fonts 0755 system system
+    mkdir /data/fonts/lovely 0755 system system
+    restorecon /data/fonts
+    restorecon /data/fonts/lovely
+#======================lovelyfonts end  =======================

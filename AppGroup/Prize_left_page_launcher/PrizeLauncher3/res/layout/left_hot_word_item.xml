@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    android:minHeight="@dimen/dp_48"
+    android:id="@+id/hot_item"
+    >
+
+    <!-- android:layout_marginEnd="@dimen/news_item_img_end"
+        android:layout_marginStart="@dimen/news_item_img_end" -->
+    <TableRow android:layout_width="match_parent"
+	     android:layout_height="47dp"
+	     android:layout_centerVertical="true">
+	    <TextView
+	        android:id="@+id/txt_title"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:singleLine="true"
+	        style="@style/hot_word_item_style"
+	        android:background="@drawable/left_item_click_selector"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/txt_title2"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:singleLine="true"
+	        style="@style/hot_word_item_style"
+	        android:background="@drawable/left_item_click_selector"
+	        />
+	</TableRow>
+	
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_line"
+        />
+
+</RelativeLayout>

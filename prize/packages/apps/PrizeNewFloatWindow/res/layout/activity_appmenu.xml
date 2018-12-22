@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        layout="@layout/title_bar" />
+
+    <View
+        android:id="@+id/topdivide"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/topdivide" />
+
+    <ListView
+        android:id="@+id/lv_app_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/listitem_margin"
+        android:layout_marginRight="@dimen/listitem_margin"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        android:background="@drawable/cardview_normal"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="0.5dp"
+         >
+    </ListView>
+
+</LinearLayout>

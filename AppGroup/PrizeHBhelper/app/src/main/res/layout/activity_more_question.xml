@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="27dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/recorder_back_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/more_question"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/header_textsize" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/devider_color"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/first_item_height"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/side_margin"
+                android:paddingRight="@dimen/side_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/question1"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/item_textsize" />
+
+                <ImageButton
+                    android:id="@+id/rotate1"
+                    android:layout_width="@dimen/rotate_image_width"
+                    android:layout_height="@dimen/rotate_image_height"
+                    android:layout_gravity="center|right"
+                    android:background="@drawable/arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_marginLeft="@dimen/side_margin"
+                android:layout_marginRight="@dimen/side_margin"
+                android:background="@color/devider_color"></View>
+
+            <LinearLayout
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/answer_background"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/answer_text_margin_top"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="@dimen/side_margin"
+                    android:paddingRight="@dimen/side_margin"
+                    android:text="@string/answer1"
+                    android:textSize="@dimen/prize_answer_text_size"/>
+                    <!--prize add textSize for bug 44625 by zhaojian 20171205-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/answer_picture_margin_top"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/side_margin"
+                    android:paddingRight="@dimen/side_margin">
+
+                    <ImageView
+                        android:layout_width="@dimen/picture_width"
+                        android:layout_height="@dimen/picture_height"
+                        android:background="@drawable/answer1_1" />
+
+                    <ImageView
+                        android:layout_width="@dimen/picture_width"
+                        android:layout_height="@dimen/picture_height"
+                        android:layout_marginLeft="@dimen/picture_margin"
+                        android:background="@drawable/answer1_2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_marginLeft="@dimen/side_margin"
+                    android:layout_marginRight="@dimen/side_margin"
+                    android:layout_marginTop="@dimen/answer_bottom_blank"
+                    android:background="@color/devider_color"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:paddingLeft="@dimen/side_margin"
+                android:paddingRight="@dimen/side_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/question2"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/item_textsize" />
+
+                <ImageButton
+                    android:id="@+id/rotate2"
+                    android:layout_width="@dimen/rotate_image_width"
+                    android:layout_height="@dimen/rotate_image_height"
+                    android:layout_gravity="center|right"
+                    android:background="@drawable/arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_marginLeft="@dimen/side_margin"
+                android:layout_marginRight="@dimen/side_margin"
+                android:background="@color/devider_color"
+                android:visibility="gone"></View>
+
+            <LinearLayout
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/answer_background"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/answer_text_margin_top"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/side_margin"
+                    android:paddingRight="@dimen/side_margin"
+                    android:text="@string/answer2"
+                    android:textSize="@dimen/prize_answer_text_size"/>
+                    <!--prize add textSize for bug 44625 by zhaojian 20171205-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/answer_picture_margin_top"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/side_margin"
+                    android:paddingRight="@dimen/side_margin">
+
+                    <ImageView
+                        android:layout_width="@dimen/picture_width"
+                        android:layout_height="@dimen/picture_height"
+                        android:background="@drawable/answer2_1" />
+
+                    <ImageView
+                        android:layout_width="@dimen/picture_width"
+                        android:layout_height="@dimen/picture_height"
+                        android:layout_marginLeft="@dimen/picture_margin"
+                        android:background="@drawable/answer2_2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_marginLeft="@dimen/side_margin"
+                    android:layout_marginRight="@dimen/side_margin"
+                    android:layout_marginTop="@dimen/answer_bottom_blank"
+                    android:background="@color/devider_color"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:paddingLeft="@dimen/side_margin"
+                android:paddingRight="@dimen/side_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/question3"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/item_textsize" />
+
+                <ImageButton
+                    android:id="@+id/rotate3"
+                    android:layout_width="@dimen/rotate_image_width"
+                    android:layout_height="@dimen/rotate_image_height"
+                    android:layout_gravity="center|right"
+                    android:background="@drawable/arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_marginLeft="@dimen/side_margin"
+                android:layout_marginRight="@dimen/side_margin"
+                android:background="@color/devider_color"></View>
+
+            <LinearLayout
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/answer_background"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/answer_text_margin_top"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="@dimen/side_margin"
+                    android:paddingRight="@dimen/side_margin"
+                    android:text="@string/answer3"
+                    android:textSize="@dimen/prize_answer_text_size"/>
+                    <!--prize add textSize for bug 44625 by zhaojian 20171205-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/answer_picture_margin_top"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/side_margin"
+                    android:paddingRight="@dimen/side_margin">
+
+                    <ImageView
+                        android:layout_width="@dimen/picture_width"
+                        android:layout_height="@dimen/picture_height"
+                        android:background="@drawable/answer3_1" />
+
+                    <ImageView
+                        android:layout_width="@dimen/picture_width"
+                        android:layout_height="@dimen/picture_height"
+                        android:layout_marginLeft="@dimen/picture_margin"
+                        android:background="@drawable/answer3_2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_marginLeft="@dimen/side_margin"
+                    android:layout_marginRight="@dimen/side_margin"
+                    android:layout_marginTop="@dimen/answer_bottom_blank"
+                    android:background="@color/devider_color"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:paddingLeft="@dimen/side_margin"
+                android:paddingRight="@dimen/side_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/question4"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/item_textsize" />
+
+                <ImageButton
+                    android:id="@+id/rotate4"
+                    android:layout_width="@dimen/rotate_image_width"
+                    android:layout_height="@dimen/rotate_image_height"
+                    android:layout_gravity="center|right"
+                    android:background="@drawable/arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_marginLeft="@dimen/side_margin"
+                android:layout_marginRight="@dimen/side_margin"
+                android:background="@color/devider_color"></View>
+
+            <LinearLayout
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/answer_background"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/answer_two_line_height"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="@dimen/side_margin"
+                    android:paddingRight="@dimen/side_margin"
+                    android:text="@string/answer4_1"
+                    android:textSize="@dimen/prize_answer_text_size"/>
+                    <!--prize add textSize for bug 44625 by zhaojian 20171205-->
+
+                <!--prize delete for bug of QQ offline 20171205 start-->
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_marginLeft="@dimen/side_margin"
+                    android:layout_marginRight="@dimen/side_margin"
+                    android:background="@color/devider_color"
+                    android:visibility="gone"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/answer_two_line_height"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="@dimen/side_margin"
+                    android:paddingRight="@dimen/side_margin"
+                    android:text="@string/answer4_2"
+                    android:textSize="@dimen/prize_answer_text_size"/>
+                    &lt;!&ndash;prize add textSize for bug 44625 by zhaojian 20171205&ndash;&gt;
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:background="@color/devider_color"
+                    android:visibility="gone"></View>-->
+                <!--prize delete for bug of QQ offline 20171205 end-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

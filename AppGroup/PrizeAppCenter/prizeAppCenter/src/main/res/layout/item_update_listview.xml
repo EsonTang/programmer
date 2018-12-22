@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/container_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp" >
+
+        <com.prize.appcenter.ui.widget.CornerImageView
+            android:id="@+id/game_iv"
+            style="@style/game_item_image"
+            android:contentDescription="@string/alert_title"
+            android:src="@drawable/default_icon" />
+
+        <RelativeLayout
+            android:id="@+id/game_layout"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_alignTop="@+id/game_iv"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@+id/game_download_btn"
+            android:layout_toRightOf="@id/game_iv" >
+
+            <TextView
+                android:id="@+id/game_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="名称"
+                android:textColor="@color/text_color_404040"
+                android:textSize="@dimen/text_size_30" />
+
+            <RelativeLayout
+                android:id="@+id/version_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/game_name_tv"
+                android:layout_marginTop="3.5dp" >
+
+                <TextView
+                    android:id="@+id/update_version_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/update_oldversion_tv"
+                    android:drawableLeft="@drawable/icon_arraw"
+                    android:drawablePadding="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_9a9a9a"
+                    android:textSize="@dimen/text_size_min" />
+
+                <TextView
+                    android:id="@+id/update_oldversion_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_9a9a9a"
+                    android:textSize="@dimen/text_size_min" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/version_id"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/realsize_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_9a9a9a"
+                    android:textSize="@dimen/text_size_min" />
+
+                <TextView
+                    android:id="@+id/game_size_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_009def"
+                    android:textSize="@dimen/text_size_min" />
+
+                <TextView
+                    android:id="@+id/game_tag_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:minWidth="@dimen/ranking_txt_download_minwidth"
+                    android:paddingTop="1dp"
+                    android:singleLine="true"
+                    android:textColor="@color/game_ranking_down"
+                    android:textSize="@dimen/game_size_txt_sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--<com.prize.appcenter.ui.widget.ProgressButton-->
+            <!--android:id="@+id/game_download_btn"-->
+            <!--style="@style/game_item_progressButton"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:focusable="false" />-->
+        <com.prize.appcenter.ui.widget.progressbutton.AnimDownloadProgressButton
+            android:id="@+id/game_download_btn"
+            style="@style/progressButton_wide_hight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:progressbtn_show_progress="true"
+            app:progressbtn_radius="12dp"
+            app:progressbtn_text_size="12dp" />
+    </RelativeLayout>
+
+    <com.prize.appcenter.ui.widget.ExpendSingleTextView
+        android:id="@+id/game_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingTop="8dp" />
+
+    <View
+        android:id="@+id/game_image_tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:background="@color/bg_gray_color" />
+
+</LinearLayout>

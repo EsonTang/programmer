@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="onekey_dialog_top">380dp</dimen>
+    <dimen name="gridview_H">210dp</dimen>
+    <dimen name="setover_padding_top">257dp</dimen>
+    <dimen name="setover_up_height">350dp</dimen>
+</resources>

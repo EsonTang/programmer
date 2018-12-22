@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/RL_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <com.prize.prizethemecenter.ui.widget.CornerImageView
+            android:id="@+id/image_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_theme" />
+
+        <RelativeLayout
+            android:layout_width="214dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16.5dp"
+            android:layout_toRightOf="@+id/image_iv">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.3dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_color_404040"
+                android:textSize="15dp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_top_35dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textColor="@color/textcolor_969696"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/tv_total"
+                    android:gravity="center"
+                    android:text="@string/download_completed"
+                    android:textColor="@color/textcolor_969696"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Dialog style -->
+    <style name="PrizeDialogStyle" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="PrizeBottomDialogAnimationStyle" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/prize_anim_bottom_dialog_translate_in</item>
+        <item name="android:windowExitAnimation">@anim/prize_anim_bottom_dialog_translate_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Llyt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/songName_Tv"
+            style="@style/textView_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@+id/more_menu_iBtn"
+            android:layout_toRightOf="@+id/num_Tv"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/singer_Tv"
+            style="@style/textView_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical|start"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxEms="15"
+            android:drawableEnd="@drawable/icon_hq"
+             />
+
+        <ImageView
+            android:id="@+id/icon_fly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:layout_toRightOf="@+id/num_Tv"
+            android:src="@drawable/icon_fly"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/more_menu_iBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/icon_more_menu_nomal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/statusbar_color" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/include_item_edit_layout" />
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:id="@+id/Llyt"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+         android:paddingLeft="14dp"
+        android:background="@android:color/white" >
+
+      <TextView
+        android:id="@+id/game_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="4"
+        android:minWidth="20dp"
+        android:textSize="@dimen/text_size_micro" 
+        android:textColor="@color/text_color_969696"/>
+
+        <TextView
+            android:id="@+id/song_name_tv"
+            style="@style/textView_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/game_number_tv"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:gravity="center_vertical|left"
+            android:text="中国人" />
+
+        <TextView
+            android:id="@+id/album_name_tv"
+            style="@style/textView_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/game_number_tv"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxEms="15"
+            android:text="liudehua" />
+        
+         <ImageView
+            android:id="@+id/icon_fly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/song_name_tv"
+            android:src="@drawable/icon_fly"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/download_iBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/more_menu_iBtn"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/icon_item_download_state_selector"
+            android:focusable="false" />
+
+        <ImageButton
+            android:id="@+id/more_menu_iBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="18dp"
+            android:focusable="false"
+            android:src="@drawable/icon_more_menu_nomal" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/include_item_edit_layout" />
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- prize change all for dido os 8.0 -hpf-2017-7-25-start -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prize_layout_bg_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/multiscroller"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:descendantFocusability="afterDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                
+                <FrameLayout
+                    android:id="@+id/toolbar_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="271dp"
+                    android:background="@drawable/prize_contacts_bg1" >
+		
+		            <include layout="@layout/quickcontact_header" />
+	             </FrameLayout>
+
+                <!--
+             <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/quickcontact_starting_empty_height"
+            android:contentDescription="@string/quickcontact_transparent_view_description"
+            android:id="@+id/transparent_view" />
+                -->
+
+                <ScrollView
+                    android:scrollbars="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+		            
+		            <include layout="@layout/prize_quickcontact_content_big_font" />
+		            
+                </ScrollView>
+            </LinearLayout>
+
+            <!--
+         This title's maximum height must be less than the minimum size of its
+         parent ViewGroup because of an oddity in the way View#setScaleY() works. As a result,
+         this title can not be inside @style/quickcontact_header.
+            -->
+            <!-- prize-change-huangliemin-2016-7-15-delete -->
+<!--     <include layout="@layout/quickcontact_title" /> -->
+
+        </RelativeLayout>
+
+        <!--
+    prize-change-huangliemin-2016-7-18-android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/prize_bottom_button_padding_bottom_quick"
+        -->
+
+        <LinearLayout
+            android:id="@+id/prize_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/prize_floating_action_button_height"
+            android:background="@color/prize_bottom_button_bg_color"
+            android:layout_gravity="bottom"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/prize_contacts_editor_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/quickcontact_maximum_title_size_origin"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    android:id="@+id/prize_contacts_editor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:src="@drawable/prize_editmenu" />
+
+                <TextView
+                    android:duplicateParentState="true"
+                    android:textColor="@drawable/prize_selector_text_color_btn"
+                    android:id="@+id/prize_contacts_editor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prize_contacts_editor_text_string"
+                    android:textSize="@dimen/prize_quickcontact_acticity_contacts_editor_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/prize_contacts_delete_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    android:id="@+id/prize_contacts_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:src="@drawable/prize_callrecords_delete" />
+
+                <TextView
+                    android:duplicateParentState="true"
+                    android:textColor="@drawable/prize_selector_text_color_btn"
+                    android:id="@+id/prize_contacts_delete_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prize_contacts_delete_text_string"
+                    android:textSize="@dimen/prize_quickcontact_acticity_contacts_delete_text_size" />
+            </LinearLayout>
+
+            
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/prize_contacts_more_menu_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/quickcontact_maximum_title_size_origin"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    android:id="@+id/prize_contacts_more_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:src="@drawable/prize_more_menu_button" />
+
+                <TextView
+                    android:duplicateParentState="true"
+                    android:id="@+id/prize_contacts_more_menu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prize_contacts_more_menu_text_string"
+                    android:textColor="@drawable/prize_selector_text_color_btn"
+                    android:textSize="@dimen/prize_quickcontact_acticity_contacts_more_text_size" />
+
+            </LinearLayout>
+            <!-- prize-change-huangliemin-2016-7-16-end -->
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- prize-add for dido os8.0-hpf-2017-7-27-start -->
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/prize_upper_shadow"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"/>
+    
+    <TextView
+        android:gravity="center"
+        android:layout_marginStart="40dp"
+        android:id="@+id/prize_title" 
+        android:layout_marginTop="25dp"
+        android:textSize="@dimen/prize_actionbar_title_text_size"
+        android:textColor="@color/prize_content_title_color"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/prize_actionbar_custom_height"/>
+    <!-- prize-add for dido os8.0-hpf-2017-7-27-end -->
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_actionbar_custom_height" />
+   
+</RelativeLayout>
+<!-- prize change all for dido os 8.0 -hpf-2017-7-25-end -->

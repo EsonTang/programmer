@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="home_notice_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/text_color_323232</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="imageView_item">
+        <item name="android:layout_width">@dimen/imageView_item_weight</item>
+        <item name="android:layout_height">@dimen/imageView_item_hight</item>
+    </style>
+
+    <style name="welcome_Style" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@drawable/bg_initlogo</item>
+    </style>
+
+    <style name="title_txt_style">
+        <item name="android:textColor">@color/text_color_404040</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="detail_tv_info">
+        <item name="android:textColor">@color/text_color_9a9a9a</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="detail_tv_title">
+        <item name="android:textColor">@color/text_color_404040</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="wallpaper_dialog_style" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/addmusic_dialog_enter</item>
+    </style>
+
+    <style name="wallpaper_use_dialog_style" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <!--<item name="android:windowAnimationStyle">@style/wallpaper_dialog_style</item>-->
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+
+    </style>
+
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/cloud_popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/cloud_pophidden_anim</item>
+    </style>
+
+    <style name="item_checkBox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/item_mine_local_selector</item>
+    </style>
+
+    <style name="ThemeAppTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+</resources>

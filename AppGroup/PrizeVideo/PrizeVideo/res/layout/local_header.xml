@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="4dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/icon_play_record"
+        android:text="@string/lastplay"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp" >
+
+        <com.prize.videoc.widget.RoundImageView
+            android:id="@+id/thumbnail_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/clk_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/play_slt" />
+
+        <ImageView
+            android:id="@+id/sel_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="7.5dp"
+            android:src="@drawable/sel"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_play"
+            android:textColor="#b6b6b6"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/net_videos"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="4dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/icon_net_video"
+        android:text="@string/net_videos"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+    
+    <com.prize.videoc.widget.RoundImageView
+	    android:id="@+id/icon_aqi"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/net_icon" />
+    <TextView
+        android:id="@+id/sub_videos"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="4dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/net_source"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+    
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="4dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/icon_loacal_video"
+        android:text="@string/local_videos"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

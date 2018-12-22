@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">纯净后台</string>
+    <string name="enable_running">允许后台运行</string>
+    <string name="disable_running">禁止后台运行</string>
+    <string name="str_description_information">开启时，在退出应用后，后台不再运行，同时也不会收到应用通知。</string>
+    <string name="empty">空</string>
+    <string name="loading">正在载入&#8230;</string>
+    <string name="pure_background">纯净后台</string>
+    <string name="add_pure_background_app">允许应用</string>
+    <string name="text_click_description">点击</string>
+    <string name="text_click_description_open_information">打开纯净后台</string>
+    <string name="text_click_description_close_information">关闭纯净后台</string>
+    <string name="prize_add_app">添加程序</string>
+    <string name="close_purebackground_text">未打开纯净后台</string>
+
+</resources>

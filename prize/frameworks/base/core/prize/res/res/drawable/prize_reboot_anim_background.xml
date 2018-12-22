@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+   <item android:drawable="@drawable/reboot0" android:duration="100" />
+   <item android:drawable="@drawable/reboot1" android:duration="100" />
+   <item android:drawable="@drawable/reboot2" android:duration="100" />
+   <item android:drawable="@drawable/reboot3" android:duration="100" />
+   <item android:drawable="@drawable/reboot4" android:duration="100" />
+   <item android:drawable="@drawable/reboot5" android:duration="100" />
+   <item android:drawable="@drawable/reboot6" android:duration="100" />
+   <item android:drawable="@drawable/reboot7" android:duration="100" />
+   <item android:drawable="@drawable/reboot8" android:duration="100" />
+   <item android:drawable="@drawable/reboot9" android:duration="100" />
+
+</animation-list> 
+ 

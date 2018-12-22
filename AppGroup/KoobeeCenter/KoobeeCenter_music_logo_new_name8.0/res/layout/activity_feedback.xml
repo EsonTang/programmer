@@ -1,0 +1,441 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/color_e6e6e6"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+     <include
+        layout="@layout/titile_bar_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_h"
+      
+         />
+     <ImageView 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:src="@drawable/top_ying"
+         />
+     <LinearLayout 
+         android:id="@+id/card_view"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_marginLeft="6dp"
+         android:layout_marginRight="6dp"
+         android:background="@drawable/up_down"
+         android:orientation="vertical"
+           android:layout_marginTop="9.5dp"
+         >
+         
+     <RelativeLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="30dp"
+         >
+         
+          <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/choice_problem"
+         android:textSize="12sp"
+         android:textColor="@color/color_3479f6"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="11.3dp"
+        android:layout_centerVertical="true"
+         />
+     </RelativeLayout>
+    
+     <View 
+         android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="@color/color_dedede"
+        android:layout_marginLeft="11.3dp"
+        android:layout_marginRight="11.3dp"
+         
+         />
+     
+     <RelativeLayout 
+         android:id="@+id/system_feedback_area"
+         android:layout_height="48dp"
+         android:layout_width="wrap_content"
+         android:layout_gravity="center_vertical"
+        
+       android:background="@drawable/item_press_selector"
+          android:onClick="toFeedback_Input"
+         >
+     <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         
+         android:text="@string/system_feedback"
+         android:textColor="@color/color_323232"
+         android:textSize="15sp"
+       
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="11.3dp"
+           android:layout_centerVertical="true"
+         />
+     <ImageView 
+         android:id="@+id/image_one"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:src="@drawable/jian33"
+         android:layout_marginRight="11.3dp"
+         android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           
+         />
+     <TextView 
+          android:layout_height="match_parent"
+         android:layout_width="210dp"
+         android:text="@string/advice_message_one"
+         android:layout_toLeftOf="@id/image_one"
+         android:gravity="center_vertical|right"
+         android:layout_marginRight="10dp"
+         android:textColor="@color/color_969696"
+         android:textSize="11sp"
+           android:layout_centerVertical="true"
+         />
+     </RelativeLayout>
+     <View 
+         android:layout_height="0.5dp"
+         android:layout_width="fill_parent"
+         android:background="@color/color_dedede"
+         
+         android:layout_marginLeft="11.3dp"
+         android:layout_marginRight="11.3dp"
+         />
+     
+     <RelativeLayout 
+         android:id="@+id/battery_feedback_area"
+          android:layout_height="48dp"
+         android:layout_width="wrap_content"
+          android:layout_gravity="center_vertical"
+        android:background="@drawable/item_press_selector"
+        
+          android:onClick="toFeedback_Input"
+         >
+         
+         <TextView 
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="@string/batrry_feedback"
+         android:textColor="@color/color_323232"
+         android:textSize="15sp"
+         android:gravity="center_vertical"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="11.3dp"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="5dp"
+             />
+         
+         <ImageView 
+         android:id="@+id/image_two"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+        
+         android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+         android:layout_marginRight="11.3dp"
+           android:src="@drawable/jian33"
+         />
+          <TextView 
+         android:layout_height="match_parent"
+         android:layout_width="210dp"
+         
+         android:text="@string/advice_message_two"
+         android:layout_toLeftOf="@id/image_two"
+         android:gravity="center_vertical|right"
+         android:textColor="@color/color_969696"
+         android:layout_marginRight="10dp"
+         android:textSize="11sp"
+           android:layout_centerVertical="true"
+         />
+     </RelativeLayout>
+      <View 
+         android:layout_height="0.5dp"
+         android:layout_width="match_parent"
+         android:background="@color/color_dedede"
+         android:layout_marginLeft="11.3dp"
+         android:layout_marginRight="11.3dp"
+         />
+      
+      
+      <RelativeLayout 
+          android:id="@+id/signal_feedback_area"
+           android:layout_height="48dp"
+         android:layout_width="wrap_content"
+          android:layout_gravity="center_vertical"
+        android:background="@drawable/item_press_selector"
+          android:onClick="toFeedback_Input"
+          >
+          <TextView 
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="@string/signal_feedback"
+         android:textColor="@color/color_323232"
+         android:textSize="15sp"
+         android:gravity="center_vertical"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="11.3dp"
+           android:layout_centerVertical="true"
+             />
+           <ImageView 
+         android:id="@+id/image_three"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+        
+         android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="11.3dp"
+            android:src="@drawable/jian33"
+        
+         />
+         <TextView 
+         android:layout_height="match_parent"
+         android:layout_width="210dp"
+         android:text="@string/advice_message_three"
+         android:layout_toLeftOf="@id/image_three"
+         android:layout_marginRight="10dp"
+         android:gravity="center_vertical|right"
+         android:textColor="@color/color_969696"
+         android:textSize="11sp" 
+           android:layout_centerVertical="true"
+          />
+      </RelativeLayout>
+        <View 
+         android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+         android:background="@color/color_dedede"
+        android:layout_marginLeft="11.3dp"
+         android:layout_marginRight="11.3dp"
+         />
+      
+      <RelativeLayout 
+          android:id="@+id/camera_feedback_area"
+          android:layout_height="48dp"
+         android:layout_width="wrap_content"
+          android:layout_gravity="center_vertical"
+        android:background="@drawable/item_press_selector"
+          android:onClick="toFeedback_Input"
+          >
+          
+          <TextView 
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="@string/camera_feedback"
+         android:textColor="@color/color_323232"
+         android:textSize="15sp"
+         android:gravity="center_vertical"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="11.3dp"
+           android:layout_centerVertical="true"
+             />
+           <ImageView 
+         android:id="@+id/image_four"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         
+         android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+          android:layout_marginRight="11.3dp"
+            android:src="@drawable/jian33"
+         />
+          <TextView 
+          android:layout_height="match_parent"
+         android:layout_width="210dp"
+         android:text="@string/advice_message_four"
+         android:layout_toLeftOf="@id/image_four"
+         android:layout_marginRight="10dp"
+         android:textColor="@color/color_969696"
+         android:textSize="11sp" 
+           android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+          />
+      </RelativeLayout>
+     <View 
+         android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+         android:background="@color/color_dedede"
+         android:layout_marginLeft="11.3dp"
+         android:layout_marginRight="11.3dp"
+         />
+     
+     
+     <RelativeLayout 
+         android:id="@+id/kobe_mechine_feedback_area"
+          android:layout_height="48dp"
+         android:layout_width="wrap_content"
+         android:background="@drawable/item_press_selector"
+        
+          android:onClick="toFeedback_Input"
+         >
+          <TextView 
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="@string/koobe_machine_feedback"
+         android:textColor="@color/color_323232"
+         android:textSize="15sp"
+         
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="11.3dp"
+           android:layout_centerVertical="true"
+             />
+         <ImageView 
+         android:id="@+id/image_five"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+        
+         android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+          android:layout_marginRight="11.3dp"
+           android:src="@drawable/jian33"
+         />
+        <TextView 
+          android:layout_height="match_parent"
+         android:layout_width="210dp"
+         android:text="@string/advice_message_five"
+         android:layout_toLeftOf="@id/image_five"
+        android:layout_marginRight="10dp"
+         android:textColor="@color/color_969696"
+         android:textSize="11sp" 
+           android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+          /> 
+         
+     </RelativeLayout>
+      <View 
+         android:layout_height="0.5dp"
+       android:layout_width="match_parent"
+         android:background="@color/color_dedede"
+         android:layout_marginLeft="11.3dp"
+         android:layout_marginRight="11.3dp"
+         />
+     
+      
+      <RelativeLayout 
+          android:id="@+id/call_feedback_area"
+          android:layout_height="48dp"
+          android:layout_width="wrap_content"
+          
+         android:background="@drawable/item_press_selector"
+          android:onClick="toFeedback_Input"
+          >
+          <TextView 
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="@string/call_feedback"
+         android:textColor="@color/color_323232"
+         android:textSize="15sp"
+        
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="11.3dp"
+           android:layout_centerVertical="true"
+             />
+          <ImageView 
+         android:id="@+id/image_six"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+          android:background="@drawable/jian33"
+         android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+          android:layout_marginRight="11.3dp"
+         />
+          <TextView 
+       android:layout_height="match_parent"
+         android:layout_width="210dp"
+         android:text="@string/advice_message_six"
+         android:layout_toLeftOf="@id/image_six"
+        android:layout_marginRight="10dp"
+         android:textColor="@color/color_969696"
+         android:textSize="11sp" 
+           android:layout_centerVertical="true"
+           android:gravity="center_vertical|right"
+          /> 
+      </RelativeLayout>
+       <View 
+         android:layout_height="0.5dp"
+         android:layout_width="match_parent"
+         android:background="@color/color_dedede"
+         android:layout_marginLeft="11.3dp"
+         android:layout_marginRight="11.3dp"
+         />
+      
+      <RelativeLayout 
+          android:id="@+id/other_feedback_area"
+           android:layout_height="48dp"
+          android:layout_width="wrap_content"
+          android:background="@drawable/item_press_selector"
+        
+          android:onClick="toFeedback_Input"
+          >
+          <TextView 
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="@string/other_feedback"
+         android:textColor="@color/color_323232"
+         android:textSize="15sp"
+         
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="11.3dp"
+           android:layout_centerVertical="true"
+             />
+          <ImageView 
+         android:id="@+id/image_seven"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+          android:background="@drawable/jian33"
+         android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+         android:layout_marginRight="11.3dp"
+         />
+          <TextView 
+         android:layout_height="match_parent"
+         android:layout_width="210dp"
+         android:text="@string/advice_message_seven"
+         android:layout_toLeftOf="@id/image_seven"
+         android:layout_marginRight="10dp"
+         
+         android:textColor="@color/color_969696"
+         android:textSize="11sp" 
+           android:layout_centerVertical="true"
+           android:gravity="center_vertical|right"
+          /> 
+      </RelativeLayout>
+      
+      </LinearLayout>
+      <RelativeLayout 
+          android:id="@+id/advice_message_area"
+          android:layout_height="48dp"
+          android:layout_width="wrap_content"
+          
+         android:layout_marginLeft="6dp"
+         android:layout_marginRight="6dp"
+         android:background="@drawable/feed_press_three"
+         android:layout_marginTop="12dp"
+          android:onClick="toFeedback_Input"
+          >
+          <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/advice_feedback"
+               android:textColor="@color/color_323232"
+         android:textSize="15sp"
+         
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="11.3dp"
+        
+           android:layout_centerVertical="true"
+              />
+          <ImageView 
+         
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:background="@drawable/jian33"
+         android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+          android:layout_marginRight="11.3dp"
+         />
+          
+          
+      </RelativeLayout>
+     </LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:scrollbars="none"
+        android:touchscreenBlocksFocus="true"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/action_bar_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingTop="25dp">
+
+        <RelativeLayout
+            android:id="@+id/topic_actionbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height_40dp">
+
+            <ImageButton
+                android:id="@+id/action_bar_back_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/action_bar_back_selector" />
+
+            <TextView
+                android:id="@+id/app_title_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/action_bar_back_topic"
+                android:paddingBottom="0dip"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/action_bar_menu_right"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true" />
+
+            <ImageButton
+                android:id="@+id/action_bar_search_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/action_go_downQueen_topic"
+                android:background="@drawable/detail_white_back_selector" />
+
+            <ImageButton
+                android:id="@+id/action_go_downQueen_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_enter_downqueue_selector"
+                android:gravity="center"
+                android:onClick="goToqueen" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

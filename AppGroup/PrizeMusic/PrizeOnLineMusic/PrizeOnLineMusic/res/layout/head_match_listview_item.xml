@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+     <View
+         android:id="@+id/game_line"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/zero_point_five_dp"
+         android:layout_alignParentBottom="true"
+         android:background="@color/app_title" />
+     
+    <com.prize.music.views.ListViewForScrollView
+        android:id="@+id/search_history_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/app_title"
+        android:dividerHeight="@dimen/zero_point_five_dp" />
+
+</RelativeLayout>

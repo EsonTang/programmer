@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prize.music"
+    android:versionCode="4"
+    android:versionName="1.2.release" >
+
+  
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="22" />
+
+    <!-- This is used for Last.fm and Google Music -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Used to check for a data connection -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Used to keep the service running when the phone sleeps -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Stick Broadcast -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- Incoming calls -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Used to set ringtone -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <application
+        android:name="com.prize.music.MainApplication"
+        android:allowTaskReparenting="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:process=":main"
+        android:taskAffinity="apollo.task.music"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56f8fa93e0f55a22ee00100f" >
+        </meta-data>
+        <!--
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="coosea" />
+        -->
+        <!-- Main Activity -->
+        <activity
+            android:name="com.prize.music.activities.WelcomeActivity"
+            android:configChanges="locale|orientation|screenSize|layoutDirection"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Material.Light.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+           <!-- Main Activity -->
+        <activity
+            android:name="com.prize.music.activities.MainActivity"
+            android:configChanges="locale|orientation|screenSize|layoutDirection"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="com.andrew.apolloMod.PLAYBACK_VIEWER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 搜索 -->
+        <activity
+            android:name="com.prize.music.activities.SearchBrowserActivity"
+            android:configChanges="locale|orientation|screenSize|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- Play External File -->
+        <activity
+            android:name="com.prize.music.activities.PlayExternal"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.Light.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+        </activity>
+        <!-- Track browser -->
+        <activity
+            android:name="com.prize.music.activities.TracksBrowser"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 播放界面 -->
+        <activity
+            android:name="com.prize.music.activities.AudioPlayerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MUSIC_PLAYER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.APP_MUSIC" />
+            </intent-filter>
+        </activity>
+
+        <!-- Quickly show the queue -->
+        <activity
+            android:name="com.prize.music.activities.QuickQueue"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/Theme.QuickQueue"
+            android:windowSoftInputMode="stateUnchanged" />
+        <!-- Settings -->
+        <activity
+            android:name="com.prize.music.preferences.SettingsHolder"
+            android:label="@string/settings" />
+        <!-- Simple EQ -->
+        <activity
+            android:name="com.prize.music.activities.SimpleEq"
+            android:excludeFromRecents="true"
+            android:label="@string/simple_eq_page_title"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.prize.music.menu.PlaylistDialog"
+            android:label="@string/rename_playlist"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.andrew.apolloMod.CREATE_PLAYLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.andrew.apolloMod.RENAME_PLAYLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- huanglingjun -->
+        <activity
+            android:name="com.prize.music.activities.NewListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.ToAlbumDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBackgroundTheme" />
+        <activity
+            android:name="com.prize.music.activities.EditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.FeedbackExActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.DownLoadManagerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.BatchSelectActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.MyEditListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.prize.music.activities.RecommandMoreSingerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.SingerByTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.SingerOnlineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.BatchDeleteTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.BatchEditDownloadedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.music.activities.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 云账号 -->
+        <activity
+            android:name="com.prize.cloud.activity.StartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.MainActivityCloud"
+            android:configChanges="keyboardHidden|orientation|locale|mcc|mnc"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.LogonActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.OwnRegActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.RegActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.RegSuccessActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.CodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.SetPswdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.LostPswdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.PersonActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.BindActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateVisible|adjustPan">
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.BindedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.prize.cloud.activity.WebviewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Media button receiver -->
+        <receiver android:name="com.prize.music.service.MediaButtonIntentReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+        <!-- 4x2 App Widget -->
+        <receiver
+            android:name="com.prize.music.app.widgets.AppWidget42"
+            android:icon="@drawable/icon_appwidget"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget4x2_info" />
+        </receiver>
+        <receiver
+            android:name="com.prize.music.MusicFloatWindowBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.prize.music.MusicFloatWindowBroadcastReceiver" />
+                <action android:name="com.android.calculator2.CalculatorFloatWindowBroadcastReceiver" />
+                <action android:name="android.intent.action.PRZIE_FLOATING_VIDEO"/>
+				<action android:name="android.intent.action.PRZIE_FLOATING_VIDEO_SELF"/>
+            </intent-filter>  
+        </receiver>
+        <receiver android:name="com.prize.music.receiver.CompleteReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Music service -->
+        <!--
+        android:process=":play" 
+        <intent-filter android:priority="1000" />
+        -->
+        <service
+            android:name="com.prize.music.service.ApolloService"
+            android:exported="true"
+            android:process=":play"
+            android:taskAffinity="apollo.task.music" >
+            <intent-filter>
+                <action android:name="com.prize.music.service.ApolloService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.prize.music.service.PrizeMusicService" />
+        <service
+            android:name="com.prize.music.service.FloatWindowService"
+            android:enabled="true"
+            android:process=":play"
+            android:taskAffinity="apollo.task.music" >
+            <intent-filter>
+                <action android:name="com.prize.music.service.FloatWindowService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.prize.music.activities.LocalSongActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_local_song" >
+        </activity>
+
+        <provider
+            android:name="com.prize.music.provider.AppInfoProvider"
+            android:authorities="com.prize.music.provider"
+            android:exported="true" >
+        </provider>
+
+        <activity
+            android:name="com.prize.music.EditSheetActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_edit_sheet" >
+        </activity>
+        
+        <activity          
+            android:name="com.prize.music.admanager.view.WebViewActivity"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:process=":webView"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

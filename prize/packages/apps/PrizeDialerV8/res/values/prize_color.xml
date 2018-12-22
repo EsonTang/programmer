@@ -1,0 +1,37 @@
+<resources>
+    <!-- call_log_empty_view -->
+    <color name="prize_dialer_call_log_empty_view_primary_text_color">@color/prize_dialer_primary_color</color>
+
+    <!-- call_log_pop -->
+    <color name="prize_dialer_call_log_pop_selected_text_color">@color/prize_dialer_primary_color</color>
+
+    <!-- call_log_list_item -->
+    <color name="prize_dialer_call_log_list_item_bg_color">#F0F0F0</color>
+    <color name="prize_dialer_call_log_list_item_divider_color">#DCDCDC</color>
+    <color name="prize_dialer_call_log_list_item_location_color">#969696</color>
+    <color name="prize_dialer_call_log_list_item_missed_name_color">#E15151</color>
+    <color name="prize_dialer_call_log_list_item_name_color">#323232</color>
+
+    <!-- dialer_phone_number_list -->
+    <color name="prize_dialer_phone_number_list_item_text_color">@color/prize_dialer_primary_color</color>
+    <color name="prize_dialer_phone_number_list_item_bg_color">@color/prize_dialer_primary_calllog_bg_color</color>
+    <color name="prize_dialer_phone_number_list_item_primary_text_color">@color/prize_dialer_primary_color</color>
+    <color name="prize_dialer_phone_number_list_item_label_text_color">#969696</color>
+
+    <!-- multiple -->
+    <color name="prize_dialer_multiple_top_bg_color">@color/prize_dialer_top_and_bottom_bg_color</color>
+    <color name="prize_dialer_multiple_bottom_bg_color">@color/prize_dialer_top_and_bottom_bg_color</color>
+
+    <color name="prize_dialer_multiple_text_color">@color/prize_dialer_primary_text_color</color>
+    <color name="prize_dialer_multiple_text_color_light">@color/prize_dialer_primary_text_pressed_color</color>
+
+    <!-- PRIZE-Add-TMSDK_Call_Mark-wangzhong-2017_5_5-start -->
+    <color name="prize_calllog_item_call_mark_text_color">#F97C00</color>
+    <color name="prize_primary_call_info_call_mark_text_color">#FFEB10</color>
+    <!-- PRIZE-Add-TMSDK_Call_Mark-wangzhong-2017_5_5-end -->
+
+    <!-- PRIZE-Add-DialerV8_InCallStatusBar-wangzhong-2017_7_19-start -->
+    <color name="prize_incallwindow_bg_color">#4CD964</color>
+    <!-- PRIZE-Add-DialerV8_InCallStatusBar-wangzhong-2017_7_19-end -->
+
+</resources>

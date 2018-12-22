@@ -1,0 +1,45 @@
+# view AndroidManifest.xml #generated:41
+-keep class com.koobee.koobeecenter.AdviceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.koobee.koobeecenter.AftersalesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.koobee.koobeecenter.FeedBackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.koobee.koobeecenter.FeedBackRequestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.koobee.koobeecenter.HotlineActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.koobee.koobeecenter.IntroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.koobee.koobeecenter.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.koobee.koobeecenter.OutletsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.koobee.koobeecenter.OutletsInCityActivity { <init>(...); }
+
+# view res/layout/outlets_row.xml #generated:23
+-keep class com.koobee.koobeecenter.widget.InnerGridView { <init>(...); }
+
+# onClick res/layout/titlebar.xml #generated:7
+-keepclassmembers class * { *** back_clk(...); }
+
+# onClick res/layout/aftersales_main.xml #generated:51
+-keepclassmembers class * { *** toHotline_clk(...); }
+
+# onClick res/layout/aftersales_main.xml #generated:83
+-keepclassmembers class * { *** toIntro_clk(...); }
+
+# onClick res/layout/activity_hotline.xml #generated:56
+-keepclassmembers class * { *** toMap(...); }
+
+# onClick res/layout/aftersales_main.xml #generated:19
+-keepclassmembers class * { *** toOutlets_clk(...); }
+

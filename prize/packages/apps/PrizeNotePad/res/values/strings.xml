@@ -1,0 +1,104 @@
+<resources>
+
+    <string name="app_name">Notepad</string>
+
+    <string name="menu_list_backup">Backup</string>
+    <string name="menu_list_multidelete">Multi-delete</string>
+    <string name="menu_list_guide">Guide</string>
+    
+	<string name="str_select_all">Check all</string>
+	<string name="str_select_none">Cancell check all</string>
+    <string name="str_delect">Delete</string>
+    <string name="str_backup">Backup</string>
+    
+    <!-- note start -->
+    <string name="menu_create_new_one">Create new one</string>
+    <string name="menu_font_size">Font size</string>
+
+    <string name="title_tab_name_notepad">note</string>
+    <string name="percentage">%s%%</string>
+    <string name="export_had_done">There were </string>
+    <string name="export_will_start_message"> notepads backup to ：backup/notepad/</string>
+    <string name="exporting_csv_finished_title">Finished exporting </string>
+    <string name="exporting_csv_canceled_title">Exporting</string>
+    <string name="exporting_notepad_list_message">Your notepad data is being exported to:</string>
+    <string name="exporting_notepad_list_title">Exporting notepad data</string>
+    <string name="exporting_failed_title">Couldn\'t export</string>
+	<string name="fail_reason_could_not_open_file">Couldn\'t open \&quot;</string>
+	<string name="fail_reason_too_long_filename">Required filename is too long (\&quot;</string>
+	<string name="fail_reason_too_many_csv" product="default">Too many csv files are on the SD card.</string>
+	<string name="fail_reason_unknown">Unknown error.</string>
+	<string name="confirm_export_message">Your notepad list will be exported to file: </string>
+	<string name="confirm_export_title">Export notepad?</string>	
+	<string name="no_sdcard_title">No SD card</string>
+	<string name="no_sdcard_message">No SD card was found.</string>
+	<string name="ok">OK</string>
+	<string name="cancel">cancel</string>	
+	<string name="content_of_notepad">The content of notepads：</string>
+	<string name="insufficient_memory_space_title">Insufficient memory space</string>
+	<string name="insufficient_memory_space_content">Sorry, the mobile phone of storage space is insufficient, unable to export.</string>
+	<string name="fail_reason_no_exportable_notepad">There is no exportable notepad.</string>
+		
+	<string name="time_just">just about </string>
+	<string name="time_five_minutes_ago">five minutes ago</string>
+	<string name="time_today">today</string>
+	<string name="time_Monday">Monday</string>
+	<string name="time_Tuesday">Tuesday</string>
+	<string name="time_Wednesday">Wednesday</string>
+	<string name="time_Thursday">Thursday</string>
+	<string name="time_Friday">Friday</string>
+	<string name="time_Saturday">Saturday</string>
+	<string name="time_Sunday">Sunday</string>
+		
+	<string name="dialog_title_set_font">set font size</string>
+	<string name="font_small">small</string>
+	<string name="font_medium">medium</string>
+	<string name="font_large">large</string>
+	<string name="font_super">super</string>
+	
+	<string name="delect_check_all">Check all</string>
+	<string name="delect_cancelled_check_all">Cancelled check all</string>
+	<string name="delect_action">Delete</string>
+	<string name="backup_action">backup</string>
+	
+	<string name="title_name">Notepad</string>
+	
+	<string name="notepad_had_save">the note had been saved</string>
+	<string name="maximize_screen">Maximize screen</string>
+	<string name="content_of_notes">The contents of text note as below：</string>
+	<string name="backup_path">backup/notepad</string>
+	<string name="export_failed">export failed,try again later</string>
+
+	<string name="str_page_note">Note</string>
+    <string name="page_note_list">List</string>
+    
+    <string name="today">Today</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_title">Set the font size</string>
+    
+    <string name="quick_search_keywords">Search</string>
+    <string name="format_image_path_string">[Image]</string>
+    <string name="submit">Submit</string>
+    <string name="creat_new_note_button_text">Create New Note</string>
+    <string name="not_support_no_picture_files">Not supporting non picture files</string>
+    <string name="data_loading_notice">Loading\.\.\.</string>
+	<string name="input_limmit">You can input at most 20000 characters!</string>
+	<!-- note end -->
+	<string name="picture_text_view">Picture</string>
+	<string name="camera_text_view">Camera</string>
+	<string name="share_text_view">Share</string>
+	<string name="text_size_text_view">Font</string>
+	<string name="share_error_hint">Please do not share blank note!</string>
+</resources>

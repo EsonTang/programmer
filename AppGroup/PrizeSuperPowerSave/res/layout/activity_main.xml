@@ -1,0 +1,256 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/content"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true">
+    
+	<ImageButton
+        android:id="@+id/quit_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quitbuttonimage"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"  
+		android:layout_alignParentRight="true"/>
+	
+    <LinearLayout
+        android:id="@+id/time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/time_margin_top"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+        
+		<ImageButton
+        	android:id="@+id/time_hour_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/app_name" />
+		<ImageButton
+        	android:id="@+id/time_hour_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/app_name" />
+		<ImageButton
+        	android:id="@+id/time_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/app_name" />
+		<ImageButton
+        	android:id="@+id/time_minutes_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/app_name" />
+		<ImageButton
+        	android:id="@+id/time_minutes_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/app_name" />
+		<ImageButton
+        	android:id="@+id/time_am_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/app_name" />
+		 </LinearLayout>
+		
+    	<TextView
+        android:id="@+id/date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_label"
+        android:layout_marginTop="@dimen/date_margin_top"
+        android:layout_alignStart="@id/time_label"
+        android:textColor="@color/text_color"
+        android:textSize="23sp" />
+         	        
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:baselineAligned="false"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical" >
+
+        <!-- one line  start -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/widget_margin_bottom" >
+
+            <!-- phone_btn start -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/phone_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/phonebackground"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/phone_unread"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/unread_margin_left"
+                        android:layout_marginTop="@dimen/unread_margin_top"
+                        android:textColor="@android:color/white"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/normal_font_size" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/phone"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/normal_font_size" />
+            </LinearLayout>
+            <!-- phone_btn end -->
+
+
+            <!-- msg_btn start -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/msg_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/messagebackground" />
+
+                    <TextView
+                        android:id="@+id/msg_unread"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/unread_margin_left"
+                        android:layout_marginTop="@dimen/unread_margin_top"
+                        android:textColor="@android:color/white"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/normal_font_size" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/messages"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/normal_font_size" />
+            </LinearLayout>
+            <!-- msg_btn end -->
+
+        </LinearLayout>
+        <!-- one line  end -->
+
+
+        <!-- two line  start -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/widget_margin_bottom"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+             >
+
+            <!-- contact_btn start -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/contact_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/contactbackground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/contacts"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/normal_font_size" />
+            </LinearLayout>
+            <!-- contact_btn end -->
+
+
+            <!-- clock_btn start -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/clock_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/clockbackground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/clock"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/normal_font_size" />
+            </LinearLayout>
+            <!-- clock_btn end -->
+        </LinearLayout>
+
+        <!-- tow line end -->
+    </LinearLayout>
+
+</RelativeLayout>

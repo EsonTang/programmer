@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/statusbar_add_actionbar_height_divide"
+    android:gravity="center"
+    android:orientation="horizontal" 
+    android:background="@drawable/ic_action_bar_divide_prize"
+    android:paddingTop="@dimen/statusbar_height"
+    android:paddingBottom="@dimen/divide_height">
+
+    <ImageView
+        android:id="@+id/im_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/title_edge_h"
+        android:paddingRight="@dimen/title_edge_h"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/notch_actionbar_height_prize"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/notch_actionbar_height_prize"
+        android:paddingLeft="@dimen/title_edge_h"
+        android:paddingRight="@dimen/title_edge_h"
+        android:gravity="center"
+        android:text="@string/edit"
+        android:textColor="@color/done_text"
+        android:textSize="@dimen/text_size_middle" />
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_title"
+    android:paddingTop="@dimen/group_list_view_item_padding_top"
+    android:paddingBottom="@dimen/group_list_view_item_padding_bottom"
+    android:layout_height="wrap_content"
+    android:text="@string/str_description_information"
+    android:textColor="@color/description_info_head_text_color"
+    android:textIsSelectable="false"
+    android:textSize="@dimen/description_info_head_text_size" />

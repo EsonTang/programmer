@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dialog_content_padding"
+        android:background="@drawable/ic_bottom_dialog_item_bg_normal"
+        android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        android:focusable="false" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/dialog_bottom_name_color"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dialog_bottom_divider_color"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/menu_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:divider="@null" >
+    </ListView>
+    
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        android:background="@drawable/prize_sel_bottom_dialog_item_bg"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/title_green"
+        android:layout_marginEnd="@dimen/dialog_content_padding"
+        android:layout_marginStart="@dimen/dialog_content_padding"
+        android:layout_marginBottom="@dimen/dialog_content_padding"
+        android:textSize="15sp" />
+
+</LinearLayout>

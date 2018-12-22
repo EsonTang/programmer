@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.android.prizefloatwindow" 
+	android:sharedUserId="android.uid.system"
+	android:versionCode="1" 
+	android:versionName="1.0">
+
+
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="23" />
+	<uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+	<uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+	<uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+
+
+	<application android:name="com.android.prizefloatwindow.application.PrizeFloatApp"
+		android:allowBackup="true" 
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name" 
+		android:theme="@style/Theme.Settings">
+		<activity android:name="com.android.prizefloatwindow.LauncherActivity"
+			android:label="@string/app_name" 
+			android:screenOrientation="portrait"
+			android:excludeFromRecents="true"
+			android:launchMode="singleTask" 
+			>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<service android:name="com.android.prizefloatwindow.FloatWindowService"
+			android:enabled="true" 
+			android:exported="true">
+		</service>
+		<activity android:name="com.android.prizefloatwindow.FunctionlistActivity"
+			android:screenOrientation="portrait" 
+			android:excludeFromRecents="true"
+			android:launchMode="singleTask" />
+		<activity android:name="com.android.prizefloatwindow.appmenu.AppMenuActivity"
+			android:screenOrientation="portrait" 
+			android:excludeFromRecents="true"
+			android:launchMode="singleTask" />
+		<receiver
+			android:name="com.android.prizefloatwindow.screenshot.ScreenshotServiceErrorReceiver"
+			android:exported="false">
+			<intent-filter>
+				<action android:name="com.android.prizefloatwindow.screenshot.SHOW_ERROR" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="com.android.prizefloatwindow.FloatBootReceive">
+			<intent-filter
+			  android:priority="1000">
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.PRIZE_NEW_FLOAT" />
+				<action android:name="android.intent.action.PRIZEHIDETEMP" />
+				<action android:name="android.intent.action.SCREEN_OFF" />
+			</intent-filter>
+		</receiver>
+		<service
+			android:name="com.android.prizefloatwindow.screenshot.TakeScreenshotService"
+			android:enabled="true" 
+			android:exported="true" />
+	</application>
+
+</manifest>

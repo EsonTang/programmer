@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cootek_basic_text_size_small">16dp</dimen>
+    <dimen name="cootek_basic_text_size_3">20dp</dimen>
+    <dimen name="cootek_basic_text_size_5">16dp</dimen>
+    <dimen name="cootek_basic_text_size_5_5">15dp</dimen>
+    <dimen name="cootek_basic_text_size_4">18dp</dimen>
+    <dimen name="cootek_basic_text_size_6">14dp</dimen>
+    <dimen name="cootek_basic_text_size_7">12dp</dimen>
+    <dimen name="cootek_basic_text_size_8">10dp</dimen>
+    <dimen name="cootek_basic_text_size_10">6dp</dimen>
+
+    <dimen name="cootek_basic_text_size_1">24dp</dimen>
+    <dimen name="cootek_basic_text_size_2">22dp</dimen>
+    <dimen name="cootek_basic_text_size_4_5">17dip</dimen>
+
+    <dimen name="cootek_dlg_container_main_textsize">18dp</dimen>
+
+    <!--login-->
+    <dimen name="cootek_login_icon_textsize">30dp</dimen>
+    <dimen name="cootek_login_icon_textsize2">20dp</dimen>
+    <dimen name="cootek_login_textsize">15dp</dimen>
+    <dimen name="cootek_header_back_textsize">18dp</dimen>
+    <dimen name="cootek_header_close_textsize">16dp</dimen>
+    <dimen name="cootek_header_title_textsize">18dp</dimen>
+    <dimen name="cootek_header_logged_textsize">15dp</dimen>
+
+    <dimen name="cootek_individual_share_textsize">15dp</dimen>
+    <dimen name="cootek_individual_share_textsize2">12dp</dimen>
+</resources>

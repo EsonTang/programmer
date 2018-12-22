@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+*版权所有©2015,深圳市铂睿智恒科技有限公司
+*
+*内容摘要：通知栏亮度调节/音量调节seekbar的样式
+*当前版本：V1.0
+*作  者：liufan
+*完成日期：2015-05-19
+*修改记录：
+*修改日期：
+*版 本 号：
+*修 改 人：
+*修改内容：
+-->
+<layer-list  
+  xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:id="@*android:id/background" android:drawable="@drawable/notification_qs_seekbar_back" />  
+    <!--
+    <item android:id="@*android:id/secondaryProgress">  
+        <scale android:drawable="@drawable/notification_qs_seekbar_back" android:scaleWidth="100%" />  
+    </item>
+    -->
+    <item android:id="@*android:id/progress">  
+        <scale android:drawable="@drawable/notification_qs_seekbar_forward" android:scaleWidth="100%" />  
+    </item>  
+</layer-list> 

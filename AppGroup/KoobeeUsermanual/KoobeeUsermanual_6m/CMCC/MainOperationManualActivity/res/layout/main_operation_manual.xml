@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/animationView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@id/animationback"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/loading" />
+
+        <TextView
+            android:id="@id/manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="147.0dip"
+            android:text="@string/manual"
+            android:textColor="#ffffffff"
+            android:textSize="21.0sp" />
+
+        <ImageView
+            android:id="@id/loading_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/loading_progress_top"
+            android:background="@drawable/loading_progress_new" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="133.0dip"
+            android:text="@string/welcome"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/video_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/viewpager_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="225.0dip" />
+
+        <ImageView
+            android:id="@id/imgview_bottom_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="182.0dip"
+            android:src="@drawable/bottom_video_shadow" />
+
+        <TextView
+            android:id="@id/txt_video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="188.0dip"
+            android:textColor="#fff6fbff"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/txt_video_name"
+            android:layout_marginLeft="286.0dip"
+            android:layout_marginTop="4.0dip"
+            android:src="@drawable/page_index" />
+
+        <TextView
+            android:id="@id/txt_page_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/txt_video_name"
+            android:layout_marginLeft="295.0dip"
+            android:layout_marginTop="2.0dip"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgview_bottom_shadow"
+            android:src="@drawable/white_bar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip" >
+
+        <TextView
+            android:id="@id/userName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:text="@string/login_username"
+            android:textColor="#ff8c8c8c"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4.0dip"
+            android:src="@drawable/dotted_lin1e" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@id/columnListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/bolid_line"
+        android:listSelector="@drawable/list_view_item_selector" />
+
+</LinearLayout>

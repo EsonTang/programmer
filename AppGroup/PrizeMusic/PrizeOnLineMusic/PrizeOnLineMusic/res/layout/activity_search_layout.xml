@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/text_color_f0f0f0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="37dp" >
+
+        <ImageView
+            android:id="@+id/action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/action_bar_back_selector" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/search_word_Edtv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/search_edittext"
+                android:focusable="true"
+                android:hint="@string/please_input_songs_key"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_323232"
+                android:textColorHint="@color/text_color_969696"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_micro" />
+
+            <ImageView
+                android:id="@+id/search_iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/iv_delete_bg"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="8dp"
+            android:background="#ededed" />
+
+        <ImageView
+            android:id="@+id/action_searche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/action_bar_search_selector"
+            android:imeOptions="actionSearch" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_list_line_height"
+        android:background="@drawable/line_separator" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/divider"
+        android:dividerHeight="1px"
+        android:paddingLeft="@dimen/divider_padding"
+        android:paddingRight="@dimen/divider_padding"
+        android:drawSelectorOnTop="false"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none" 
+         android:background="@color/white"/>
+
+</LinearLayout>

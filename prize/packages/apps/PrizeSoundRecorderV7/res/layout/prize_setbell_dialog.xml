@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/setringtone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/dialog_shape"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#3478f6"/>
+
+    <TextView
+        android:id="@+id/setdualringtone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/dialog_shape"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#3478f6"/>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+		android:layout_marginBottom="10dp"
+        android:background="@drawable/dialog_shape"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#3478f6"
+        android:text="@string/cancel"/>
+
+</LinearLayout>

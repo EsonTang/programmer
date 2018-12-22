@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.prize.prizethemecenter.ui.widget.NotifyingScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/head_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_left_right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/font_title"
+                style="@style/detail_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:text="字体1"
+                android:singleLine="true" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/font_download_count"
+                        style="@style/detail_tv_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:text="@string/download_times"/>
+
+                    <TextView
+                        android:id="@+id/font_size"
+                        style="@style/detail_tv_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_toRightOf="@id/font_download_count"
+                        android:text="3.5M"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_72dp"
+                android:layout_marginRight="@dimen/margin_72dp"
+                android:layout_marginBottom="25dp">
+
+                <View
+                    android:id="@+id/top"
+                    android:layout_width="@dimen/font_pic_width"
+                    android:layout_height="@dimen/zero_point_five_dp"
+                    android:background="@color/bg_gray_color"/>
+
+                <View
+                    android:id="@+id/left"
+                    android:layout_width="@dimen/zero_point_five_dp"
+                    android:layout_height="@dimen/font_pic_height"
+                    android:background="@color/bg_gray_color" />
+
+                <ImageView
+                    android:id="@+id/font_pic_IV"
+                    android:layout_width="@dimen/font_pic_width"
+                    android:layout_height="@dimen/font_pic_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/top"
+                    android:scaleType="fitXY"
+                    android:layout_toRightOf="@+id/left"/>
+
+                <View
+                    android:layout_width="@dimen/font_pic_width"
+                    android:layout_height="@dimen/zero_point_five_dp"
+                    android:background="@color/bg_gray_color"
+                    android:layout_below="@+id/font_pic_IV"/>
+
+                <View
+                    android:layout_width="@dimen/zero_point_five_dp"
+                    android:layout_height="@dimen/font_pic_height"
+                    android:background="@color/bg_gray_color"
+                    android:layout_toRightOf="@+id/font_pic_IV"/>
+
+            </RelativeLayout>
+
+            <com.prize.prizethemecenter.ui.widget.view.ExpendTextView
+                android:id="@+id/expendTextView_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero_point_five_dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/bg_gray_color"/>
+
+            <include layout="@layout/detail_comment_view"/>
+        </LinearLayout>
+
+    </com.prize.prizethemecenter.ui.widget.NotifyingScrollView>
+
+</LinearLayout>

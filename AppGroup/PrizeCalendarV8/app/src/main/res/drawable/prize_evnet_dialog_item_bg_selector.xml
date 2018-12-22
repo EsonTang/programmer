@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- prize-编辑事件中的dialog的条目的背景-lixing-2015-6-16 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:state_enabled="true" android:state_pressed="true"  android:drawable="@color/prize_divide_gray"
+         />
+    <item android:state_enabled="true"  android:drawable="@color/white"
+        />
+   
+
+</selector>

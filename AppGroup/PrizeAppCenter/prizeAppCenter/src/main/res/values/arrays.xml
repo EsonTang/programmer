@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="apps_tab_titles">
+        <item>@string/download_ranking</item>
+        <item>@string/soaring_ranking</item>
+        <item>@string/latest_ranking</item>
+    </string-array>
+    <string-array name="game_tab_titles">
+        <item>@string/high_quality_ranking</item>
+        <item>@string/Singlegame_ranking</item>
+        <item>@string/netgame_ranking</item>
+        <item>@string/latest_ranking</item>
+    </string-array>
+    <string-array name="app_need_titles">
+        <item>@string/apps</item>
+        <item>@string/game</item>
+    </string-array>
+    <string-array name="net_game_titles">
+        <item>@string/recommand</item>
+        <item>@string/hotest</item>
+        <item>@string/latest</item>
+    </string-array>
+    <string-array name="gamegift_and_me">
+        <item>@string/gift</item>
+        <item>@string/me</item>
+    </string-array>
+    <string-array name="feed_title_array">
+        <item>@string/title_feed</item>
+        <item>@string/title_feed1</item>
+        <item>@string/title_feed2</item>
+        <item>@string/title_feed3</item>
+        <item>@string/title_feed4</item>
+        <item>@string/title_feed5</item>
+    </string-array>
+
+</resources>

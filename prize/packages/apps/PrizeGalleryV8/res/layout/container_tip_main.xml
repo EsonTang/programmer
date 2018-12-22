@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.container.ui.SelectHorizontalScrollerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:layout_alignParentBottom="true"
+    android:paddingTop="48dp"
+    android:paddingBottom="15dp">
+
+</com.prize.container.ui.SelectHorizontalScrollerLayout>

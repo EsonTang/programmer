@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/scrollshot_button_shape" >
+
+    <TextView
+        android:id="@+id/scrollshot_exit"
+        style="@style/scrollshot_menu"
+        android:drawableTop="@drawable/exit"
+        android:text="@string/exit" />
+
+    <TextView
+        android:id="@+id/scrollshot_nextpage"
+        style="@style/scrollshot_menu"
+        android:drawableTop="@drawable/nextpage"
+        android:text="@string/nextpage" />
+
+    <TextView
+        android:id="@+id/scrollshot_save"
+        style="@style/scrollshot_menu"
+        android:drawableTop="@drawable/save"
+        android:text="@string/save" />
+
+</LinearLayout>

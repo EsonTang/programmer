@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="prize_button_text_default_color">@color/prize_dialer_primary_color</color>
+    <color name="prize_button_text_highlight_color">@color/prize_dialer_primary_text_pressed_color</color>
+</resources>

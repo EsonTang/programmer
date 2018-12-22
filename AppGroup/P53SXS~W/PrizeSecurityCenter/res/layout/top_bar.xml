@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="@dimen/top_bar_margin_left"
+    android:layout_marginRight="@dimen/top_bar_margin_right"
+    android:layout_marginTop="@dimen/top_bar_margin_top"
+    android:layout_marginBottom="@dimen/top_bar_margin_bottom"
+    android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/bt_topbar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_top_bar_back" />
+
+    <TextView
+        android:id="@+id/tv_topbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_margin_left"
+        android:layout_toRightOf="@+id/bt_topbar_back"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/bt_topbar_assist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/top_bar_back_selected" />
+
+</RelativeLayout>

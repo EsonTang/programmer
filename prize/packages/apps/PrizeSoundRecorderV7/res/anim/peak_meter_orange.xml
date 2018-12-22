@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_1"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_2"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_3"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_4"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_5"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_6"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_7"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_8"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_9"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_10"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_11"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_12"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_13"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_14"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_15"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_16"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_17"
+        android:duration="@integer/peak"/>
+    <item
+        android:drawable="@drawable/indicator_playing_peak_meter_black_18"
+        android:duration="@integer/peak"/>
+
+</animation-list>

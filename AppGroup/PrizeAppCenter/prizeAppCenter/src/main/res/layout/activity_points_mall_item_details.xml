@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/points_mall_item_details_rylt"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/points_mall__banner_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/points_mall_item_details_header_banner"
+                    android:scaleType="fitXY"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/pad_left_right_15dp"
+                android:paddingRight="@dimen/pad_left_right_15dp">
+
+                <RelativeLayout
+                    android:id="@+id/points_mall_desc_rlyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:id="@+id/points_mall_details_desc_title_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:drawableLeft="@drawable/points_mall_item_details_title_icon"
+                        android:text="简介"
+                        android:textColor="@color/text_color_404040"
+                        android:textSize="@dimen/text_size_30"/>
+
+                    <TextView
+                        android:id="@+id/points_mall_details_desc_tv"
+                        style="@style/detail_tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/points_mall_details_desc_title_tv"
+                        android:lineSpacingMultiplier="1.1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="5dp"
+                        android:text="description"
+                        android:textColor="@color/text_color_6c6c6c"
+                        android:textSize="@dimen/text_size_26"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero_point_five_dp"
+                        android:layout_alignBottom="@+id/points_mall_details_desc_tv"
+                        android:background="#e4e4e4"
+                        android:paddingTop="15dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/points_mall_way_rlyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/points_mall_details_way_title_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/points_mall_item_details_title_icon"
+                        android:paddingTop="15dp"
+                        android:text="兑换方法"
+                        android:textColor="@color/text_color_404040"
+                        android:textSize="@dimen/text_size_30"/>
+
+                    <TextView
+                        android:id="@+id/points_mall_details_way_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/points_mall_details_way_title_tv"
+                        android:lineSpacingMultiplier="1.1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="5dp"
+                        android:text="way"
+                        android:textColor="@color/text_color_6c6c6c"
+                        android:textSize="@dimen/text_size_26"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero_point_five_dp"
+                        android:layout_alignBottom="@+id/points_mall_details_way_tv"
+                        android:background="#e4e4e4"
+                        android:paddingTop="15dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/points_mall_rule_rlyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:id="@+id/points_mall_details_rule_title_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="领取规则"
+                        android:drawableLeft="@drawable/points_mall_item_details_title_icon"
+                        android:textColor="@color/text_color_404040"
+                        android:textSize="@dimen/text_size_30"/>
+
+                    <TextView
+                        android:id="@+id/points_mall_details_rule_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/points_mall_details_rule_title_tv"
+                        android:lineSpacingMultiplier="1.1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="5dp"
+                        android:text="rule"
+                        android:textColor="@color/text_color_6c6c6c"
+                        android:textSize="@dimen/text_size_26"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero_point_five_dp"
+                        android:layout_alignBottom="@+id/points_mall_details_rule_tv"
+                        android:background="#e4e4e4"
+                        android:paddingTop="15dp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_above="@+id/points_mall_item_details_rylt"
+        android:background="#e4e4e4"/>
+
+    <RelativeLayout
+        android:id="@+id/points_mall_item_details_rylt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/pad_left_right_15dp"
+        android:paddingRight="@dimen/pad_left_right_15dp">
+
+        <TextView
+            android:id="@+id/points_mall_item_details_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/points_mall_item_details_btn_icon"
+            android:drawablePadding="9dp"
+            android:gravity="center"
+            android:textColor="@color/text_color_fb5150"
+            android:textSize="@dimen/text_size_32"/>
+
+        <TextView
+            android:id="@+id/points_mall_item_details_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/points_mall_item_details_btn_selecter"
+            android:gravity="center"
+            android:text="兑换"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_32"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

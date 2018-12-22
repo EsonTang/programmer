@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prize.boot"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <!-- 以下是使用wifi访问网络所需要的权限 --> 
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/> 
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/> 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>  
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:name="com.prize.boot.WelcomeApplication">
+        
+        <activity android:name=".WizardActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter android:priority="19" >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|layoutDirection|keyboardHidden|orientation|screenSize|mcc|mnc"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.prize.boot" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".LanguageSetActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="locale|layoutDirection|keyboardHidden|orientation|screenSize|mcc|mnc"
+            android:launchMode="singleTop"
+            android:clearTaskOnLaunch="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.prize.boot.LANGUAGE_SETTING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 开机引导 -->
+        <activity
+            android:name="com.prize.boot.BootUpAccountActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WifiSetActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.prize.boot.WIFI_SETTING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TermsActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.prize.boot.USE_TERMS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OtherSetActivity"
+            android:screenOrientation="portrait">
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.prize.boot.OTHER_SETTING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+        <activity
+            android:name=".SetOverActivity"
+            android:screenOrientation="portrait">
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.prize.boot.OVER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+        <activity
+            android:name=".WebviewActivity"
+            android:screenOrientation="portrait" >
+        	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 开机引导 -->
+        <service android:name="com.prize.boot.OnClikSimService"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000" />
+
+    </application>
+
+</manifest>

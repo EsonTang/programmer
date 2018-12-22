@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/OnScreenFacebeautyIcon">
+    
+    <com.android.camera.ui.RotateImageView
+		android:id="@+id/facebeauty_entry_icon"
+		style="@style/OnScreenFacebeautyFixed"
+		android:layout_height="0dp"
+		android:layout_width="0dp" />
+</LinearLayout>

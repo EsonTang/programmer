@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_switch_padding">0.0px</dimen>
+     <dimen name="switchbar_margin_start">24dp</dimen>
+    <dimen name="switchbar_margin_end">24dp</dimen>
+    <dimen name="global_screenshot_bg_padding">20dp</dimen>
+    <dimen name="match_parent">-1px</dimen>
+    <dimen name="standard_notification_panel_width">416dp</dimen>
+    <dimen name="notification_panel_width">@dimen/match_parent</dimen>
+    <dimen name="notification_max_height">284dp</dimen>
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="listitem_height">48dp</dimen>
+    <dimen name="listitem_margin">6dp</dimen>
+    <dimen name="start_margin">14dp</dimen>
+    <dimen name="right_margin">9dp</dimen>
+    <dimen name="item_divide_height">12dp</dimen>
+    <dimen name="item_textsize">15dp</dimen>
+    <dimen name="dialog_height">60dp</dimen>
+    
+     <dimen name="small_width">80dip</dimen>
+    <dimen name="small_height">60dip</dimen>
+    
+    
+    
+</resources>

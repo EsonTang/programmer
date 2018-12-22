@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+	<!--Prize-add by liyu-for fingerprint factory test-20160621-start-->
+	<dimen name="density_40dp">40dip</dimen>
+	<dimen name="density_10dp">10dip</dimen>
+	<dimen name="density_17dp">17dip</dimen>
+	<dimen name="density_15dp">15dip</dimen>
+	<dimen name="big_front">16sp</dimen>
+	<dimen name="normal_front">14sp</dimen>
+	<dimen name="density_30dp">30dip</dimen>
+	<dimen name="density_20dp">20dip</dimen>
+	<!--Prize-add by liyu-for fingerprint factory test-20160621-end-->
+</resources>

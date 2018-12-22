@@ -1,0 +1,59 @@
+<resources>
+    <!-- dialpad_fragment -->
+    <!-- dialpad_fragment_action_container -->
+    <dimen name="prize_dialpad_fragment_action_container_height">70dp</dimen>
+
+    <!-- dialtacts bottom -->
+    <dimen name="prize_dialtacts_bottom_container_height">49dp</dimen>
+    <dimen name="prize_dialtacts_bottom_container_margin">7dp</dimen>
+    <dimen name="prize_dialtacts_bottom_container_text_size">11sp</dimen>
+    <dimen name="prize_dialtacts_bottom_line_height">3dp</dimen>
+
+    <!-- dialtacts top -->
+    <dimen name="prize_dialtacts_actionbar_bottom_line_height">3dp</dimen>
+    <dimen name="prize_dialtacts_top_calllog_item_height">48dp</dimen>
+    <dimen name="prize_dialtacts_top_calllog_item_padding1">20dp</dimen>
+    <dimen name="prize_dialtacts_top_calllog_item_padding2">20dp</dimen>
+    <dimen name="prize_dialtacts_top_calllog_item_text_size">14sp</dimen>
+
+    <!-- call_log_list_item -->
+    <dimen name="prize_dialer_call_log_list_item1_margin_start">14dp</dimen>
+    <dimen name="prize_dialer_call_log_list_item1_margin_top">10dp</dimen>
+    <dimen name="prize_dialer_call_log_list_item1_info_margin_start">9dp</dimen>
+    <dimen name="prize_dialer_call_log_list_item1_height">60dp</dimen>
+    <dimen name="prize_dialer_call_log_list_item2_height">50dp</dimen>
+    <dimen name="prize_dialer_call_log_list_item2_padding1">55dp</dimen>
+    <dimen name="prize_dialer_call_log_list_item2_padding2">70dp</dimen>
+    <dimen name="prize_dialer_call_log_list_item2_text_size">12sp</dimen>
+
+    <!-- dialer_phone_number_list -->
+    <dimen name="prize_dialer_phone_number_list_item_height1">60dp</dimen>
+    <dimen name="prize_dialer_phone_number_list_item_height2">46dp</dimen>
+    <dimen name="prize_dialer_phone_number_list_item_margin1">25dp</dimen>
+    <dimen name="prize_dialer_phone_number_list_item_margin2">15dp</dimen>
+
+    <!-- PRIZE-Add-TMSDK_Call_Mark-wangzhong-2017_5_5-start -->
+    <dimen name="prize_calllog_item_call_mark_text_size">12sp</dimen>
+    <dimen name="prize_primary_call_info_call_mark_text_size">16dp</dimen>
+    <dimen name="prize_primary_call_info_call_mark_tag_text_size">12dp</dimen>
+    <!-- PRIZE-Add-TMSDK_Call_Mark-wangzhong-2017_5_5-end -->
+
+    <!-- PRIZE-Add-DialerV8_InCallWindow-wangzhong-2017_7_19-start -->
+    <dimen name="prize_incallwindow_text_size">6dp</dimen>
+    <dimen name="prize_incallwindow_height">20dp</dimen>
+    <!-- PRIZE-Add-DialerV8_InCallWindow-wangzhong-2017_7_19-end -->
+    
+    <!-- PRIZE- add-yuandailin-2015-9-12-start -->
+    <dimen name="prize_bigtitle_text_size">16sp</dimen>
+    <dimen name="prize_title_text_size">14sp</dimen>
+    <dimen name="prize_content_text_size">12sp</dimen>
+    <dimen name="prize_floating_action_button_height">50.6dp</dimen>
+    <!-- PRIZE- add-yuandailin-2015-9-12-end -->
+    <!-- prize-add-huangliemin-2016-6-13 -->
+    <dimen name="prize_dividerHeight">1px</dimen>
+    <!-- prize-add-huangliemin-2016-6-13 -->
+    <!-- PRIZE- change-yuandailin-2016-8-4-start -->
+    <dimen name="prize_calllog_list_item_view_date_size">12sp</dimen>
+    <!-- PRIZE- change-yuandailin-2016-8-4-end -->
+    
+</resources>

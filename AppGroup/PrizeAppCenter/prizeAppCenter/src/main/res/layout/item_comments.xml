@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="156dp">
+
+    <RelativeLayout
+        android:id="@+id/top_id"
+        android:layout_width="244dp"
+        android:layout_height="69dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="12dp">
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/item_rlyt"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="3dp"-->
+        <!--android:layout_toLeftOf="@+id/game_download_btn">-->
+
+        <com.prize.appcenter.ui.widget.CustomImageView
+            android:id="@+id/game_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/alert_title"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_icon"
+            android:transitionName="robot"
+            app:iv_radius="5dp" />
+
+        <!--<com.prize.appcenter.ui.widget.ProgressNoGiftButton-->
+        <!--android:id="@+id/game_download_btn"-->
+        <!--style="@style/game_item_progressButton"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="12dp" />-->
+        <com.prize.appcenter.ui.widget.progressbutton.AnimDownloadProgressButton
+            android:id="@+id/game_download_btn"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:progressbtn_radius="12dp"
+            app:progressbtn_show_progress="true"
+            app:progressbtn_text_size="12dp" />
+
+        <TextView
+            android:id="@+id/game_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/game_iv"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/game_download_btn"
+            android:layout_toRightOf="@id/game_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_30"
+            tools:text="微信" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_id"
+            style="@style/smallRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/game_iv"
+            android:layout_alignLeft="@id/game_name_tv"
+            android:clickable="false"
+            android:focusable="false"
+            android:isIndicator="true"
+            android:numStars="5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_id"
+        android:layout_width="244dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/top_id"
+        android:layout_marginRight="5dp"
+        android:alpha="0.6"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/comment_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="30dp"
+            android:maxLines="2"
+            android:textColor="@color/text_color_6c6c6c"
+            android:textSize="@dimen/text_size_micro" />
+
+        <TextView
+            android:id="@+id/model_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_6c6c6c"
+            android:textSize="@dimen/text_size_micro" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/comments_corner" />
+
+</RelativeLayout>

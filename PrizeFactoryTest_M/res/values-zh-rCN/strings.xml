@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">工厂测试</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_main">工厂测试</string>
+    <string name="phonetest">整机测试</string>
+    <string name="pcbatest">PCBA测试</string>
+    <string name="phonetest_confirm">是否开启整机测试?</string>
+	<string name="pcbatest_confirm">是否开启PCBA测试?</string>
+    <string name="testreport">测试报告</string>
+   
+    <string name="listtest">单项测试</string>
+    <string name="factoryset">出厂重置</string>
+    <string name="factoryset_confirm">恢复出厂重置并关机?</string>
+    <string name="softinfo">软件信息</string>
+    <string name="lsensor_data">0</string>
+    <string name="sn_name">信息</string>
+    <!-- Common string -->
+    <string name="ok">OK</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="pass">成功</string>
+    <string name="fail">失败</string>
+    <string name="again">重测</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="start">开始</string>
+    <string name="scan">启动</string>
+    <string name="test_confirm">请选择</string>
+    <string name="device_open_fail">设备启动失败!</string>
+    <string name="service_get_fail">服务启动失败!</string>
+    <string name="sensor_get_fail">传感器启动失败!</string>
+    <string name="sensor_register_fail">传感器注册失败!</string>
+    <string name="test_pass">测试通过</string>
+    <string name="shake_hint_l">在强光和黑暗地方观察数值变化</string>    <string name="shake_hint_p">请将手接近和离开感应区观看数值变化</string>
+    <string name="sdcard_wait">请等待读取SD卡...</string>
+    <string name="remove_headset">请取下耳机</string>
+    <string name="insert_headset">请插入耳机</string>
+    <string name="stop">停止</string>
+    <string name="play">播放</string>
+    <string name="record">录音</string>
+    <string name="time_out">时间到!</string>
+    <!-- TouchPanelEdge -->
+    <string name="touchpanel_edge_name">触屏</string>
+    <string name="touchpanel_edge_linearity">线性测试：</string>
+    <string name="touchpanel_edge_accuracy">精度测试：</string>
+    <string name="touchpanel_edge_sensivicity">灵敏度测试：</string>
+    <string name="touchpanel_edge_deazone">边缘测试：</string>
+    <string name="touchpanel_edge_zoom">手势测试：</string>
+    <string name="touchpanel_edge_free">自由划线测试：</string>
+	<string name="touchpanel_edge_linearityHorizontal">线性水平测试：</string>
+    <string name="touchpanel_edge_linearityVertical">线性垂直测试：</string>
+    <string name="touchpanel_edge_pass">通过！</string>
+    <string name="touchpanel_edge_fail">未通过！</string>
+    <!-- Version -->
+    <string name="Version_name">版本</string>
+	<string name="calibration">\n校准：</string>
+    <string name="calibration_yes">已校准</string>
+    <string name="calibration_no">未校准</string>
+	<string name="no_test">未测试</string>
+	<string name="is_test">已测试</string>
+	<string name="mobile_cit">整机CIT：</string>
+    <!-- SIM -->
+    <string name="sim_name">SIM</string>
+    <!-- Led -->
+    <string name="keypadbacklight_confirm">确认</string>
+    <string name="led_name">LED</string>
+    <string name="lcd_name">LCD 测试</string>
+    <string name="led_flick">LED 闪烁</string>
+    <string name="led_tri_text">LED 测试确认: 红色，绿色，蓝色</string>
+    <string name="led_dual_text">LED 测试确认: 红色，绿色</string>
+    <string name="led_confirm">LED 颜色 正确?</string>
+	<!-- YCD -->
+	<string name="ycd_name">YCD</string>
+    <!-- Flashlight -->
+    <string name="flashlight_name">闪光灯</string>
+	<string name="flashlight_front_name">闪光灯</string>
+    <string name="flashlight_confirm">闪光灯是否开启?</string>
+    <!-- Key -->
+    <string name="key_name">按键</string>
+    <string name="key_text">请按以下按键</string>
+    <string name="key_volume_up">音量上键</string>
+    <string name="key_volume_down">音量下键</string>
+    <string name="key_menu">菜单键</string>
+    <string name="key_home">桌面键</string>
+    <string name="key_back">返回键</string>
+    <!-- CameraBack -->
+    <string name="cameraback_name">后摄像头</string>
+    <string name="cameraback_takepicture">拍照</string>
+    <string name="cameraback_fail_open">相机开启失败，请检查安装摄像头正确！</string>
+    <string name="autofocus_fail">自动对焦失败</string>
+    <!-- CameraFront -->
+    <string name="camerafront_name">前摄像头</string>
+    <string name="camerafront_takepicture">拍照</string>
+    <string name="camerabacksub_name">副后摄像头</string>
+    <!-- Vibrator -->
+    <string name="vibrate_name">马达震动</string>
+    <!-- GSensor -->
+    <string name="gsensor_name">重力传感器</string>
+    <!-- MSensor -->
+    <string name="msensor_name">磁力传感器</string>
+    <string name="msensor_tip">转动方向观察数值变化</string>
+    <string name="msensor_data">磁力传感器</string>
+	<!-- CSensor -->
+    <string name="csensor_name">计步器</string>
+    <string name="csensor_tip">晃动或走动观察数值变化</string>
+    <string name="csensor_data">计步器</string>
+        <!-- GYSensor -->
+    <string name="gysensor_name">陀螺仪传感器</string>
+    <string name="gysensor_tip">转动方向观察数值变化</string>
+    <string name="gysensor_data">陀螺仪传感器</string>
+
+    <!-- PSensor -->
+    <string name="psensor_name">距离传感器</string>
+    <string name="psensor_result">(0:接近 1：远离)：</string>
+    <!-- LSensor -->
+    <string name="lsensor_name">光传感器</string>
+    <string name="lsensor_result">精度：3</string>
+    <!-- Phone -->
+    <string name="phone_name">电话</string>
+    
+    <!-- brightness -->
+    <string name="brightness_name">背光</string>
+    <string name="brightness_strong">强背光</string>
+    <string name="brightness_slow">弱背光</string>
+    <!-- SDCard -->
+    <string name="sdcard_name">T 卡</string>
+    <string name="sdcard_confirm">是否插入SD卡?</string>
+    <string name="sdcard_to_remove">请拔出SD卡</string>
+    <string name="sdcard_to_insert">请插入SD卡</string>
+    <!-- RAM -->
+    <string name="ram_name">内存</string>
+    <!-- Bluetooth -->
+    <string name="bluetooth_name">蓝牙</string>
+    <string name="bluetooth_open">蓝牙已经打开</string>
+    <string name="bluetooth_scan_start">启动服务...</string>
+    <string name="bluetooth_scan_finish">完成扫描</string>
+    <string name="bluetooth_turning_on">蓝牙开启中...</string>
+    <string name="bluetooth_scan_null">没有找到设备</string>
+    <!-- WiFi -->
+    <string name="wifi_name">WiFi</string>
+    <string name="wifi_open">WiFi已经打开</string>
+    <string name="wifi_text">WiFi测试将在30秒内完成，请稍候.</string>
+    <string name="wifi_scan_failed">扫描失败!</string>
+    <string name="wifi_is_closing">WiFi关闭，请一段时间后重试.</string>
+    <string name="wifi_scan_null">没有找到任何AP!</string>
+    <string name="wifi_state_unknown">无线网络状态未知，请重试。.</string>
+    <!-- Receiver -->
+    <string name="receiver_name">听筒</string>
+    <string name="receiver_hint">听筒</string>
+    <string name="receiver_playing">声音播放中，请靠近听筒</string>
+    <string name="receiver_recording">录音中，请对着麦克说话。5S后录音结束，或点击停止按键</string>
+    <string name="transmitter_receiver_playing">播放录音中，请确认是否有声音.</string>
+    <string name="transmitter_receiver_confirm">您是否听到声音?</string>
+    <string name="transmitter_receiver_record_first">请先录音</string>
+    <string name="transmitter_receiver_replay_end">已结束.</string>
+    <string name="transmitter_receiver_to_record">录音中，请对着麦克说话。5S后录音结束，或点击停止按键</string>
+    <!-- Headset -->
+    <string name="headset_name">耳机</string>
+    <string name="headset_hint">耳机</string>
+    <string name="headset_recording">录音中，请对着麦克说话。5S后录音结束，或点击停止按键</string>
+    <string name="headset_playing">播放录音中，请确认听筒是否有声音.</string>
+    <string name="headset_confirm">您是否听到声音?</string>
+    <string name="headset_record_first">请按录音键</string>
+    <string name="headset_replay_end">播放结束.</string>
+    <string name="headset_to_record">录音中，请对着麦克说话。5S后录音结束，或点击停止按键</string>
+    <string name="headset_insert">请插入耳机进行测试</string>
+    <string name="headset_tip">请对着麦克风说话</string>
+    <!-- Speaker -->
+    <string name="speaker_name">喇叭</string>
+    <string name="speaker_hint">喇叭</string>
+    <string name="speaker_playing">喇叭播放中</string>
+    <string name="speaker_confirm">您是否听到声音？</string>
+    <string name="speaker_play_first">已结束</string>
+    <string name="speaker_to_play">点击播放按键.</string>
+    <string name="speaker_recording">现在开始录音,请说话。</string>
+    <!-- MIC -->
+    <string name="mic_name">MIC</string>
+    <string name="mic_tip">请对着手机麦克风说话，并耳朵靠近听筒。</string>
+    <string name="mic_recording">开始录音</string>
+    <string name="mic_stop_recording">停止录音并播放</string>
+    <string name="mic_stop_playing">停止播放</string>
+    <!-- FM -->
+    <string name="fm_name">FM</string>
+    <string name="fm_search">搜索</string>
+    <string name="fm_confirm">您是否听到声音?</string>
+    <!-- Charger -->
+    <string name="Charger_name">充电</string>
+    <string name="charger_state">充电状态</string>
+    <string name="not_charging">未充电</string>
+    <string name="charging">充电中</string>
+    <string name="charging_finish">充电已完成</string>
+    <string name="current_electricity">当前电量</string>
+    <string name="charger_max">最大电量</string>
+    <string name="battery_temperature">电池温度</string>
+    <string name="battery_type">电池类型</string>
+    <string name="current_voltage">当前电压</string>
+    <string name="charger_current">充电电流</string>
+    <!-- Finger -->
+    <string name="Finger_name">指纹识别</string>
+    <string name="Finger_result">测试结果</string>
+    <string name="Finger_start_show_tips">开始</string>
+    <string name="Finger_end_show_tips">停止</string>
+    <string name="Finger_adjust">调整中</string>
+    <string name="Finger_pass">测试完成</string>
+
+    <!-- GPS -->
+    <string name="gps_enable_first">开启GPS</string>
+    <string name="gps_name">GPS</string>
+    <string name="gps_open">GPS已经打开</string>
+    <string name="gps_pos">GPS搜星中</string>
+
+    <!-- Hall -->
+    <string name="hall_name">霍尔传感器</string>
+    <string name="result_tip">(0:接近   1:远离)：</string>
+    <string name="operation_tips">请将皮套合上再打开 或者 用磁铁靠近在离开感应区 观察数字变化！</string>
+    <string name="torch_tip">闪光灯已开启</string>
+ 	<!-- Infrared -->
+    <string name="infrared_name">红外</string> 
+    <string name="ir_send">发送指令</string>
+    <string name="ir_get_freqs">载波频率</string>   
+    
+    <!--prize-language switch-add-liuweiquan-201510130-start-->
+    <!--single test-->
+    <string name="switchlanguage">Switch to English</string>
+	<string name="rear_camera_sub">副后摄像头</string>
+    <string name="camera_back_sub_tip">景深亮度</string>
+    <string name="rear_camera">后摄像头</string>
+    <string name="front_camera">前摄像头</string>
+    <string name="prize_led">LED</string>
+	<string name="prize_ycd">验钞灯</string>
+    <string name="prize_lcd">LCD</string>
+    <string name="touch_screen">触屏</string>
+    <string name="battery">电源</string>
+    <string name="keys">按键</string>
+    <string name="speaker">喇叭</string>
+	<string name="microphone_loop">麦克风(回路)</string>
+    <string name="microphone">麦克风</string>
+    <string name="headset">耳机</string>
+    <string name="radio">收音机</string>
+    <string name="receiver">听筒</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="motor">震动</string>
+    <string name="rang_sensor">距离传感器</string>
+    <string name="light_sensor">光传感器</string>
+    <string name="phone">电话</string>
+    <string name="backlight">背光</string>
+    <string name="TF_card">TF卡</string>
+    <string name="ram">内存</string>
+    <string name="prize_sim">SIM</string>
+    <string name="prize_wifi">WiFi</string>
+    <string name="gravity_sensor">重力传感器</string>
+    <string name="magnetic_sensor">磁力传感器</string>
+    <string name="step_counter_sensor">计步器</string>
+    <string name="gyroscope_sensor">陀螺仪传感器</string>
+    <string name="fingerprint">指纹识别</string>
+    <string name="prize_gps">GPS</string>
+    <string name="flash_lamp">闪光灯</string>
+    <string name="flash_lamp_front">前闪光灯</string>
+    <string name="hall_sensor">霍尔传感器</string>
+    <string name="infrared">红外</string>
+    <!--resultcode-->
+    <string name="result_normal">pass</string>
+    <string name="result_error">fail</string>
+    <!--testreport-->
+    <string name="date_format">yyyy年MM月dd日HH:mm:ss</string>
+    <!--bluetooth-->
+    <string name="bt_name">蓝牙名称：</string>
+    <string name="bt_address">蓝牙地址：</string>
+    <string name="bt_rssi">信号强度：</string>
+    <string name="bt_start_time">开启蓝牙用时</string>
+    <string name="bt_seconds">秒</string>
+    <!--battery charger-->
+    <string name="degrees_centigrade">摄氏度</string>
+    <!--gps-->
+    <string name="latitude">纬度：</string>
+    <string name="longitude">经度：</string>
+    <string name="speed">速度：</string>
+    <string name="altitude">海拔：</string>
+    <string name="bearing">方位：</string>
+    <string name="nr_satellites">卫星数目：</string>
+    <string name="satellite">卫星</string>
+    <string name="pr_noice">伪随机噪声码：</string>
+    <string name="sn_ratio">信噪比：</string>
+    <!-- ram -->
+    <string name="total_memory">总内存：</string>
+    <string name="available_memory">可用内存：</string>
+    <!-- SDCard -->
+    <string name="sdcard">SD卡：</string>
+    <string name="internal_storage">内置存储：</string>
+    <string name="detected">已检测</string>
+    <string name="not_detected">未检测</string>
+    <string name="total_volume">总容量：</string>
+    <string name="available_volume">可用容量：</string>
+    <string name="media_mounted">SD卡成功挂载</string>
+    <string name="media_unmounted">SD 卡已移除</string>
+    <!--prize-language switch-add-liuweiquan-201510130-end-->
+    <!-- aging test -->
+    <string name="aging_title">老化测试</string>
+    <string name="agingtest_notice">以下六项进行串行测试，每项测试时间相同</string>
+    <string name="serial_agingtest_notice">重启和亮灭屏测试项</string>
+    <string name="serial_agingtest_reboot">重启</string>
+    <string name="serial_agingtest_sleep">亮灭屏</string>
+    <string name="duration">持续时间：</string>
+    <string name="agingtest_testreport">测试报告</string>
+    <string name="reboot_agingtest_testreport">重启：失败</string>
+    <string name="sleep_agingtest_testreport">亮灭屏：失败</string>
+    <string name="duration_def_hour">3</string>
+    <string name="duration_hour">小时</string>
+    <string name="duration_def_minute">0</string>
+    <string name="serial_duration_def_minute">20</string>
+    <string name="duration_minute">分钟</string>
+    <string name="last_duration_detail">最后一次持续时间：</string>
+    <string name="start_agingtest">开始</string>
+    <string name="select_none_notice">请至少选择一个测试项！</string>
+    <string name="elapse_time_show">00:00:00</string>
+    <string name="duration_none_notice">持续时间不能为0！</string>
+    <string name="no_vieofile_notice">没有找到视频文件！</string>
+    <string name="copy_video_notice">请稍等，正在准备视频文件！</string>
+    <string name="path">/sdcard/ykzzldx.mp4</string>
+    <string name="otg">OTG</string>
+    <!-- <string name="agingtest_warning_title">warning</string> -->
+    <!-- <string name="agingtest_warning">warning:\n1.Make sure no lock pattern or password is set on the device:Settings > Security > Screen lock = None\n2.Usb must be connected\n3.Select:Settings > Developer options > Stay Awake\n4.Do not press any keys on the device while the AgingTest is running</string> -->
+	
+    <!--Prize-add by liyu-for fingerprint factory test-20160621-start-->
+    <string name="fp_password_setting">密码设置</string>
+    <string name="capture_put_finger_on">放置手指</string>
+    <string name="register_title">指纹采集</string>
+    <string name="guide_notice">将同一手指放在手机指纹触控区域再移开</string>
+    <!--Prize-add by liyu-for fingerprint factory test-20160621-end-->
+    <string name="phone_test_result">整机测试结果:</string>
+    <string name="no_calibration">耦合未测试成功</string>
+    <string name="prize_nfc">NFC</string>
+    <string name="prize_nfc_notice">请将NFC卡贴近手机背部</string>
+
+</resources>

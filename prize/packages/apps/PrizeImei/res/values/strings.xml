@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prize IMEI</string>
+    <string name="invalid_imei1">串号1无效。</string>
+    <string name="invalid_imei2">串号2无效。</string>
+    <string name="write_imei_fail1">写新串号1失败。</string>
+    <string name="write_imei_fail1_double">写新串号1失败，写新串号2成功。</string>
+    <string name="write_imei_fail2">写新串号1成功，写新串号2失败。</string>
+    <string name="write_imei_fail12">写新串号1、2都失败。</string>
+    <string name="write_imei_success">写新串号成功，从新启动手机后检查是否生效。</string>
+    <string name="title_dual_imei">dual串号</string>
+    <string name="title_sim1_imei">sim1串号</string>
+    <string name="title_sim2_imei">sim2串号</string>
+    <string name="button_write">写入</string>
+    <string name="ok">确认</string>
+    <string name="write_success">成功</string>
+    <string name="write_fail">失败</string>
+    <string name="success_content_sim1">IMEI码 写入成功</string>
+    <string name="success_content_sim2">Sim2 IMEI码 写入成功</string>
+    <string name="fail_content_sim1">IMEI码 写入失败</string>
+    <string name="fail_content_sim2">Sim2 IMEI码 写入失败</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="divideColor">#e0e0e0</color>
+    <color name="update_title_color">#6d6e71</color>
+    <color name="traffic_setting_color">#394652</color>
+    
+    <!-- john 2015.8.22 start -->
+    <color name="bg_theme_color">#F0F0F0</color>
+    <color name="bg_item_divider_color">#E0E0E0</color>
+    
+    
+    <color name="home_theme_color" >#088A3F</color>
+    
+    <color name="setting_theme_color" >#088A3F</color>
+    
+    <color name="optimizing_theme_color" >#088A3F</color>
+    <color name="optimizing_line_color" >#E0E0E0</color>
+    
+    <color name="intercept_theme_color" >#0880A3</color>
+    <color name="windowBackground" >#21b5c0</color>
+    <!-- john 2015.8.22 end -->
+
+</resources>

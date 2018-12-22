@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/sync_restore_header_LLyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sync_restore_header_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="13dp"
+            android:text="可恢复 0款应用"
+            android:textColor="@color/text_color_404040"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:background="@color/bg_gray_color"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sync_restore_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sync_restore_oneKey_down_Rlyt"
+        android:layout_below="@+id/sync_restore_header_LLyt"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/sync_restore_oneKey_down_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:visibility="visible" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:background="@color/bg_head_gray_color" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/sync_restore_oneKey_down_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@drawable/app_sync_restore_onkey_btn_selector"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="@dimen/text_size_medium" />-->
+
+        <com.prize.appcenter.ui.widget.PrizeCommButton
+            android:id="@+id/sync_restore_oneKey_down_btn"
+            android:layout_width="231dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:btn_radius="20dp"
+            app:btn_text_color="#ffffff"
+            app:btn_content="恢复应用到本机"
+            app:btn_text_size="@dimen/text_size_small" />
+    </RelativeLayout>
+
+</RelativeLayout>

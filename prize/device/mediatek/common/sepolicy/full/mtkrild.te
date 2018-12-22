@@ -1,0 +1,10 @@
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+# For MAL MFI
+
+typeattribute mtkrild mtkimsapdomain;
+
+set_prop(mtkrild, persist_mtk_main_attach)
+# For MultiSim dynamic switch
+set_prop(mtkrild, usp_prop)

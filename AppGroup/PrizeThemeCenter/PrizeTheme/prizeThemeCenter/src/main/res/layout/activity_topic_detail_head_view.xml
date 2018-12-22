@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/topic_detail_Iv"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="@dimen/topic_banner_h" />
+
+    <RelativeLayout
+        android:id="@+id/relativity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic_detail_Iv">
+        
+     <!--  <TextView
+            android:id="@+id/title_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/textsize_large"
+            android:visibility="gone"/>-->
+       
+        <TextView
+            android:id="@+id/description_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp"
+            android:lineSpacingExtra="2dp"
+            android:lineSpacingMultiplier="1.2"
+            android:gravity="center"
+            android:textColor="@color/text_color_969696"
+            android:textSize="@dimen/text_size_small" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

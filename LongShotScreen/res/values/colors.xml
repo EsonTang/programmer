@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_menu_text_normal">#969696</color>
+    <color name="main_menu_text_pressed">#ff28c698</color>
+    <color name="main_menu_text_disable">#ff666666</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#55000000</color>
+    <color name="actions_background">#99000000</color>
+    <color name="rect_line_color">#ffa500</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ff979797</color>
+    <color name="gray_disable">#ff9c999c</color>
+    <color name="pressed_text_color">#ff28c698</color>
+
+</resources>

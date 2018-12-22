@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+    <string name="str_db_playlist_name">Менің жазбалары</string>
+    <string name="alert_device_error">Аудио құрылғысында қате орын алды</string>
+    <string name="ext_media_badremoval_notification_title">SD картасы кенеттен шығарылды</string>
+    <string name="error_sdcard_access">SD картасына қатынасу мүмкін емес</string>
+    <string name="confirm_device_info_full">SD картасында бос орын жоқ, жазба сақталды.</string>
+    <string name="confirm_save_info_saved_to">Жазбалар мыналардың ішінде сақталған</string>
+    <string name="reminder">Еске салғыш</string>
+    <string name="enable_ims_dialog_message">IMS қоңырауы өшірулі, оны қосу қажет пе?</string>
+    <string name="call_duration_title">Қоңырау аяқталды</string>
+    <string name="call_duration_format">"<xliff:g id="HOURS">%1$s</xliff:g> сағат <xliff:g id="MINUTES">%2$s</xliff:g> минут <xliff:g id="SECONDS">%3$s</xliff:g> секунд"</string>
+    <string name="volte_ss_not_avaliable_tips">Операцияны аяқтау үшін деректер байланысын ашу қажет.</string>
+    <string name="outgoing_call_failed">Қоңырау жіберілмеді.</string>
+    <string name="volte_ss_not_available_tips">Операцияны аяқтау үшін <xliff:g id="sub_name">%s</xliff:g> деректер байланысын ашу қажет.</string>
+    <string name="call_waiting_indication">Басқа тарап қоңырау шалуда, күте тұрыңыз...</string>
+    <string name="incall_error_supp_service_unknown">Қызметке қолдау көрсетілмейді.</string>
+    <string name="incall_error_supp_service_separate">Қоңырауларды бөлу мүмкін емес.</string>
+    <string name="incall_error_supp_service_transfer">Қоңырауды ауыстыру мүмкін емес.</string>
+    <string name="incall_error_supp_service_reject">Қоңыраудан бас тарту мүмкін емес.</string>
+    <string name="incall_error_supp_service_hangup">Қоңырау(лар)ды ажырату мүмкін емес.</string>
+    <string name="mo_code_call_forwarded">Қоңыраудың бағыты өзгертілді</string>
+    <string name="mo_code_cug_call">Жабықпайдаланушытобы</string>
+    <string name="mo_code_incoming_calls_barred">Кіріс қоңырауына басқа жағында тыйым салынған</string>
+    <string name="mo_code_clir_suppression_rejected">Қоңырау шалушының идентификаторын жіберу қызметін тексеру</string>
+    <string name="mo_code_call_deflected">Қоңырау тасымалданды</string>
+    <string name="mo_code_call_forwarding">Қоңыраубұрылуда...</string>
+    <string name="mt_code_forwarded_call">Бұл - бағыты өзгертілген қоңырау</string>
+    <string name="mt_code_cug_call">Жабықпайдаланушытобы</string>
+    <string name="mt_code_call_on_hold">Қоңырау ұсталды</string>
+    <string name="mt_code_call_retrieved">Қоңырау қалпына келтірілді</string>
+    <string name="mt_code_multi_party_call">Конференциялыққоңырау</string>
+    <string name="mt_code_on_hold_call_released">Ұсталған қоңырау босатылды</string>
+    <string name="mt_code_forward_check_received">Бағыт өзгертуді тексерудің SS хабары қабылданды</string>
+    <string name="mt_code_call_connecting_ect">Қоңырауды тасымалдау</string>
+    <string name="mt_code_call_connected_ect">Қоңырауды тасымалдау белсенді</string>
+    <string name="mt_code_deflected_call">Бұл - бас тартылған қоңырау</string>
+    <string name="mt_code_additional_call_forwarded">Қосымша кіріс қоңырауының бағыты өзгертілді</string>
+    <string name="mt_code_forwarded_cf">Қоңыраудың бағыты өзгертілді</string>
+    <string name="mt_code_forwarded_cf_uncond">Қоңыраудың бағытын өзгерту күйі шартсыз</string>
+    <string name="mt_code_forwarded_cf_cond">Қоңыраудың бағытын өзгерту күйі шартты</string>
+    <string name="mt_code_forwarded_cf_busy">Бос емес қоңырауының бағыты өзгертілді </string>
+    <string name="mt_code_forwarded_cf_no_reply">Бағыты өзгертілген қоңырауға жауап берілмейді</string>
+    <string name="mt_code_forwarded_cf_not_reachable">Бағыты өзгертілген қоңырау қолжетімсіз</string>
+    <string name="mo_code_unconditional_cf_active">Қоңырау бұру\nшартсыз белсендірілді</string>
+    <string name="mo_code_some_cf_active">Қоңырау бұру\nШартты</string>
+    <string name="mo_code_outgoing_calls_barred">Қоңырауға тыйым салынған</string>
+</resources>

@@ -1,0 +1,2 @@
+allow priv_app data_fonts_file:dir { r_dir_perms };
+allow priv_app data_fonts_file:file { getattr read };

@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="banner_bar_hight3">140dp</dimen>
+    <dimen name="dimen_148dp">130dp</dimen>
+    <dimen name="banner_bar_hight">200dp</dimen>
+    <dimen name="dimen_195dp">187dp</dimen>
+
+</resources>

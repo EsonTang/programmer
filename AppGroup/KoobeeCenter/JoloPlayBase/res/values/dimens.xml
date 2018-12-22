@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>   
+    <!-- youmen-->
+    <dimen name="actionbar_height">45dip</dimen>
+    <dimen name="actionbar_item_height">45dip</dimen>
+    <dimen name="actionbar_item_width">45dip</dimen>
+    
+    <dimen name="umeng_textsize_large">16sp</dimen>
+    <dimen name="umeng_textsize_medium">14sp</dimen>
+    <dimen name="umeng_textsize_small">12sp</dimen>
+     <!-- youmen-->
+</resources>

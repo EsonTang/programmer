@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">酷比中心</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="system_update">系统升级</string>
+    <string name="sale_service">售后服务</string>
+    <string name="feedback">意见反馈</string>   
+    <string name="problemback">问题反馈</string>
+    <string name="flag_store">使用说明书</string>
+    <string name="visit_koobee">访问koobee</string>
+    <string name="company_name">深圳酷比通信股份有限公司</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_after_sale">AfterSaleActivity</string>
+    <string name="title_activity_aftersales">AftersalesActivity</string>
+    <string name="hotline">全国统一客户服务热线</string>
+    <string name="title_activity_hotline">HotlineActivity</string>
+    <string name="title_activity_outlets_in_city">OutletsInCityActivity</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <!-- 反馈相关 -->
+    <string name="power_and_heat">耗电与发热</string>
+    <string name="signal_and_communicate">信号与通话</string>
+    <string name="shutdow_and_restart">死机与重启</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="camara">相机</string>
+    <string name="wlan">WLAN</string>
+    <string name="gps">GPS</string>
+    <string name="advice">建议</string>
+    <string name="application">应用</string>
+    <string name="pl_input_advice">为了方便定位和解决问题，请详细描述问题反馈。</string>
+    <string name="pl_input_tip">请详细描述您的建议，我们将认真处理。</string>
+    <string name="pl_input_phone_or_email">为方便联系，请输入您的手机号。</string>
+    <string name="send">提交</string>
+
+    <!-- 提交反馈信息返回提示语 -->
+    <string name="commit_success">提交成功</string>
+    <string name="illegal_imei">非法IMEI号，暂不能提交</string>
+    <string name="sys_busy">系统繁忙，请重新提交。</string>
+     <string name="error_commit">提交出错，请重新提交。</string>
+    <string name="illegal_operate_type">反馈类型错误，请重新提交。</string>
+
+    <!-- 网络相关提示语 -->
+    <string name="netInfo">提示</string>
+    <string name="netError_pl_check">网络不好，请重新提交。</string>
+
+    <!-- 酷比官网 及 酷比天猫网 -->
+    <string name="koobee_official_website">http://www.koobeemobile.com/</string>
+    <string name="koobee_tmall_website">http://koobee.tmall.com/</string>
+    <string name="pl_select_number">请选择号码</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    
+     <!-- prize-add-by-yanghao-20150914-start -->
+     <string name="company_address">地址：深圳市福田区深南中路6009号绿景广场B座27楼A</string>
+     <string name="map_address">地址：深圳市福田区深南中路6009号绿景广场B座</string>
+     <string name="map_activity_not_found">未找到地图程序，无法查看!</string> 
+     <string name="toMap">查看地图</string>
+     <!-- prize-add-by-yanghao-20150914-end -->
+     
+     
+     <string name="toastcontent">输入内容不能为空！</string>
+     <string name="choice_problem">请选择问题类型</string>
+     <string name="system_feedback">系统</string>
+     <string name="batrry_feedback">电池</string>
+     <string name="signal_feedback">信号</string>
+     <string name="camera_feedback">相机</string>
+     <string name="koobe_machine_feedback">小酷机器人</string>
+     <string name="call_feedback">通话</string>
+     <string name="other_feedback">其他</string>
+     <string name="advice_feedback">意见建议</string>
+     
+      <string name="advice_message_one">例如容易卡顿、经常重启</string>
+       <string name="advice_message_two">例如容易发烫、比较耗电</string>
+        <string name="advice_message_three">例如信号较差、网络不强</string>
+         <string name="advice_message_four">例如像素较差、定焦迟缓</string>
+          <string name="advice_message_five">例如反应较慢、功能较少</string>
+           <string name="advice_message_six">例如音量较小、画质模糊</string>
+            <string name="advice_message_seven">例如定位不准、主题较少</string>
+              
+                  <string name="contnet_tip_two">请输入11位手机号</string>
+                  <string name="suggestion">意见建议</string>
+            
+             <string name="thankrequest">感谢酷友的反馈，我们将尽快处理。</string>
+             <string name="sucessrequest">反馈成功</string>
+             <string name="tiptip">提示</string>
+             <string name="netiswrong">网络不好，请重新提交。</string>
+             <string name="closethis">关闭</string>
+             <string name="numbertipthree">请输入正确的手机号</string>
+     
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3" >
+
+    <!-- Far-right screen [4] -->
+
+
+    <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
+
+
+    <!-- 拨号 -->
+    <favorite
+        launcher:className="com.android.dialer.DialtactsActivity"
+        launcher:container="-101"
+        launcher:packageName="com.android.dialer"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="0" />
+    <!-- 短信 -->
+    <favorite
+        launcher:className="com.android.mms.ui.BootActivity"
+        launcher:container="-101"
+        launcher:packageName="com.android.mms"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="0" />
+    <!-- 照相机 -->
+    <favorite
+        launcher:className="com.android.camera.CameraLauncher"
+        launcher:container="-101"
+        launcher:packageName="com.android.gallery3d"
+        launcher:screen="2"
+        launcher:x="2"
+        launcher:y="0" />
+
+    <!-- 联系人 -->
+    <favorite
+        launcher:className="com.android.contacts.activities.PeopleActivity"
+        launcher:container="-101"
+        launcher:packageName="com.android.contacts"
+        launcher:screen="3"
+        launcher:x="3"
+        launcher:y="0" />
+<!--天气小插件  -->
+    <appwidget
+launcher:className="com.prize.weather.widget.WeatherWidgetProvider_4x2"
+launcher:packageName="com.prize.weather"
+        launcher:screen="0"
+        launcher:spanX="4"
+        launcher:spanY="2"
+        launcher:x="0"
+        launcher:y="0" />
+
+    <!-- 日历 -->
+    <favorite
+        launcher:className="com.android.calendar.AllInOneActivity"
+        launcher:packageName="com.android.calendar"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="4" />
+
+    <!-- 时钟 -->
+    <favorite
+        launcher:className="com.android.deskclock.DeskClock"
+        launcher:packageName="com.android.deskclock"
+        launcher:screen="0"
+        launcher:x="1"
+        launcher:y="4" />
+
+    <!-- 音乐 -->
+    <favorite
+        launcher:className="com.android.music.MusicBrowserActivity"
+        launcher:packageName="com.android.music"
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="4" />
+    <!-- 图库 -->
+    <favorite
+        launcher:className="com.android.gallery3d.app.GalleryActivity"
+        launcher:packageName="com.android.gallery3d"
+        launcher:screen="0"
+        launcher:x="3"
+        launcher:y="4" />
+
+</favorites>

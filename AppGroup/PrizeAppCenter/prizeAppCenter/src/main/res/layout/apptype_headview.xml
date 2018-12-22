@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/recommand_notice_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:horizontalSpacing="0dip"
+        android:numColumns="5" />
+
+    <com.prize.appcenter.ui.widget.ScrollGridView
+        android:id="@+id/mClassify"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:horizontalSpacing="4dip"
+        android:numColumns="2"
+        android:paddingTop="10dp"
+        android:verticalSpacing="4dp"/>
+</LinearLayout>

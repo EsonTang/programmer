@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="auto_time_entries">
+    <item>نیٹورک کا فراہم کردہ وقت استعمال کریں</item>
+    <item>GPS کا فراہم کردہ وقت استعمال کریں</item>
+    <item>بند</item>
+  </string-array>
+  <string-array name="sim_slot">
+    <item>(واضح نہيں کیا گيا)</item>
+    <item>Sim خانہ 1</item>
+    <item>Sim خانہ 2</item>
+  </string-array>
+  <string-array name="wfd_resolution_entry">
+    <item>1080p FHD(برائے ویڈیوز)</item>
+    <item>720p HD (برائے گیمز)</item>
+  </string-array>
+</resources>

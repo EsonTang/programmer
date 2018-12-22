@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/prize_divide_gray"
+        />
+    
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/prize_event_dialog_item_textview"
+        android:paddingLeft="20sp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:background="@drawable/prize_evnet_dialog_item_bg_selector"
+        />
+    
+    
+
+</LinearLayout>

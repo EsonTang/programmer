@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res/com.android.launcher3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <com.android.launcher3.BubbleTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/focusable_view_bg"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/search_icon" />
+    
+    
+
+    <TextView
+        android:id="@+id/TvPinyinAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/TvDialContactName"
+        android:textAppearance="?android:attr/textAppearanceSmall" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/TvNumAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvPinyinAddr"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceSmall" >
+    </TextView>
+
+</LinearLayout>

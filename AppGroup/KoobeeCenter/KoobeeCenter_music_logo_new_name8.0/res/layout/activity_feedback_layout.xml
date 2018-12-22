@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_feedback_three"
+        android:background="@color/feedback_status_color" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/banner" />
+    </RelativeLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_feedback_two" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_feedback_zero" >
+
+            <TextView
+                android:id="@+id/power_and_heat_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/feed_back_drawablePadding"
+                android:drawableTop="@drawable/power_and_heat_selector"
+                android:text="@string/power_and_heat"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_micro" />
+
+            <TextView
+                android:id="@+id/signal_and_communicate_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/feed_back_margin_oritation2"
+                android:drawablePadding="@dimen/feed_back_drawablePadding"
+                android:drawableTop="@drawable/signal_and_comm_selector"
+                android:text="@string/signal_and_communicate"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_micro" />
+
+            <TextView
+                android:id="@+id/shutdow_and_restart_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/feed_back_margin_oritation2"
+                android:drawablePadding="@dimen/feed_back_drawablePadding"
+                android:drawableTop="@drawable/off_and_restart_selector"
+                android:text="@string/shutdow_and_restart"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_micro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feed_back_margin_top"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_feedback_one" >
+
+            <TextView
+                android:id="@+id/bluetooth_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/feed_back_drawablePadding"
+                android:drawableTop="@drawable/bluetooth_selector"
+                android:gravity="center"
+                android:text="@string/bluetooth"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_micro" />
+
+            <TextView
+                android:id="@+id/camara_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/feed_back_margin_oritation_long"
+                android:drawablePadding="@dimen/feed_back_drawablePadding"
+                android:drawableTop="@drawable/camara_selector"
+                android:gravity="center"
+                android:text="@string/camara"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_micro" />
+
+            <TextView
+                android:id="@+id/wlan_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/feed_back_margin_oritation_long"
+                android:drawablePadding="@dimen/feed_back_drawablePadding"
+                android:drawableTop="@drawable/wlan_selector"
+                android:gravity="center"
+                android:text="@string/wlan"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_micro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feed_back_margin_top"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_feedback_one" >
+
+            <TextView
+                android:id="@+id/gps_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/feed_back_drawablePadding"
+                android:drawableTop="@drawable/gps_selector"
+                android:gravity="center"
+                android:text="@string/gps"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_micro" />
+
+            <TextView
+                android:id="@+id/advice_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/feed_back_margin_oritation_long"
+                android:drawablePadding="@dimen/feed_back_drawablePadding"
+                android:drawableTop="@drawable/advice_item_selector"
+                android:gravity="center"
+                android:text="@string/advice"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_micro" />
+
+            <TextView
+                android:id="@+id/application_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/feed_back_margin_oritation_long"
+                android:drawablePadding="@dimen/feed_back_drawablePadding"
+                android:drawableTop="@drawable/application_item_selector"
+                android:gravity="center"
+                android:text="@string/application"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_micro" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

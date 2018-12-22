@@ -1,0 +1,3 @@
+allow bluetooth data_fonts_file:dir create_dir_perms;
+allow bluetooth data_fonts_file:file create_file_perms;
+allow bluetooth data_fonts_file:file { read write getattr open };

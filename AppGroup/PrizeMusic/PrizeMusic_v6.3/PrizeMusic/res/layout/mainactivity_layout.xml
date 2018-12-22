@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normal_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    android:orientation="vertical" >
+
+   <!--  android:background="@drawable/app_bg" -->
+    
+    <FrameLayout
+        android:id="@+id/container_Fryt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_action_bar_height" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" >
+
+        <fragment
+            android:id="@+id/bottomactionbar_new"
+            android:name="com.prize.music.ui.fragments.BottomActionBarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/main_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_action_bar_height"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View
+                android:id="@+id/bottom_action_bar_info_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/line_separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/main_mEdit_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/icon_add_selector"
+                    android:gravity="center"
+                    android:text="@string/add"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_micro" />
+
+                <TextView
+                    android:id="@+id/main_mEdit_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/icon_delete_selector"
+                    android:gravity="center"
+                    android:text="@string/delete"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_micro" />
+
+                <TextView
+                    android:id="@+id/main_mEdit_bell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/icon_bell_selector"
+                    android:gravity="center"
+                    android:text="@string/rings"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_micro" />
+
+                <TextView
+                    android:id="@+id/main_mEdit_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="25dp"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/icon_love_selector"
+                    android:gravity="center"
+                    android:text="@string/sort"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

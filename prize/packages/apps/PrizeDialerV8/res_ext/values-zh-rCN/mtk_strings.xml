@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">IP 呼叫 <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g></string>
+    <string name="select_account">"选择帐户"</string>
+    <string name="all_accounts">"所有帐户"</string>
+    <string name="call_log_via_sim_name_notice">\"<xliff:g id="sim_name">%s</xliff:g>\"相关的通话记录</string>
+    <string name="imei_invalid">无效</string>
+    <string name="conf_call_member_list">参与者列表</string>
+    <string name="conf_call_participant_answered">已接</string>
+    <string name="conf_call_participant_missed">未接</string>
+    <string name="calls_over_wifi">电话将通过Wi-Fi发起</string>
+    <string name="connect_to_wifi">连接Wi-Fi进行通话</string>
+    <string name="wfc_notification_summary">点击进入偏好设置</string>
+    <string name="wfc_notification_summary_fail">点击查看可用网络</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP电话"</string>
+    <!-- M: unblock number failed tip -->
+    <string name="snackbar_number_unblocked_failed">
+       <xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g>
+       取消屏蔽失败</string>
+    <string name="button_evs_title">增强型高清通话</string>
+    <string name="button_evs_summary">开启此功能可享受更清晰的通话</string>
+    <string name="others_settings_title" >"其他"</string>
+</resources>

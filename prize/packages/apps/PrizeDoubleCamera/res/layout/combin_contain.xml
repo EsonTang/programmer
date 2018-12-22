@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/combinItemTop"
+    android:id="@+id/prize_mode_picker_layout"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="#000000">
+
+    <com.android.camera.ui.RotateImageView
+        android:id="@+id/combin_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/combin_backbg"
+        android:visibility="gone"/>
+
+    <GridView
+        android:id="@+id/combin_gridView"
+        android:layout_width="248dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:layout_marginTop="140dp"
+        android:focusableInTouchMode="true"
+        android:numColumns="2" />
+   
+</LinearLayout>

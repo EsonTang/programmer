@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<com.prize.left.page.ui.SearchFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    >
+    <com.android.launcher3.view.LauncherBackgroudView
+        android:layout_width="match_parent"  
+	    android:layout_height="match_parent"
+	    android:id="@+id/view_bg"
+	    />
+	<RelativeLayout  
+	    android:layout_width="match_parent"  
+	    android:layout_height="match_parent"  
+	    android:id="@+id/left_frame"
+	    android:background="@android:color/transparent"
+	    >  
+	  	<TableRow android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/search_lay"
+	        android:layout_marginStart="@dimen/search_left_margin"
+	        android:layout_marginEnd="@dimen/search_left_margin"
+	        android:layout_marginTop="@dimen/search_left_margin"
+	        android:background="@drawable/left_search_bg"
+	        android:layout_marginBottom="@dimen/search_left_margin"
+	        >
+	        <EditText android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:id="@+id/txt_query"
+	            android:layout_weight="1"
+	            android:hint="@string/str_search_hint"
+		        android:gravity="center_vertical"
+		        android:layout_marginEnd="@dimen/search_left_margin"
+		        android:background="@android:color/transparent"
+		        android:drawableStart="@drawable/left_ico_query"
+		        android:imeOptions="actionSearch"
+		        android:singleLine="true"
+	            />
+	        
+	        <ImageView android:contentDescription="@null"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:id="@+id/img_clear"
+	            android:src="@drawable/left_ico_clear_selector"
+	            android:visibility="gone"
+	            />
+	        
+	        <TextView android:layout_width="60dp"
+	            android:layout_height="match_parent"
+	            android:id="@+id/txt_search"
+	            android:text="@string/cancel"
+	            android:gravity="center"
+	            style="@style/left_btn_txt_style"
+	            android:visibility="gone"
+	            />
+	    </TableRow>
+	    
+	    <android.support.v7.widget.RecyclerView  
+	        android:id="@+id/recycle_list"  
+	        android:layout_width="match_parent"  
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/search_lay"
+	        />
+	    
+	    <Button android:layout_width="match_parent"  
+	        android:layout_height="wrap_content"
+	        android:id="@+id/btn_search_net"  
+	        android:layout_alignParentBottom="true"
+	        android:text="@string/str_search_net"
+	        android:visibility="invisible"
+	        />
+	</RelativeLayout>
+</com.prize.left.page.ui.SearchFrameLayout>

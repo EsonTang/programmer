@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Action bar background -->
+    <item name="actionbar_bg" type="drawable">@color/status_color</item>
+    <item name="trash_clear_title_bg" type="drawable">@color/trash_clear_title_color</item>
+    <item name="trash_clear_done_title_bg" type="drawable">@color/trash_clear_done_title_color</item>
+
+</resources>

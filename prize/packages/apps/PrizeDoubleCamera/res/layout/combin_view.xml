@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- combin picture -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/shutter_group_height"
+        android:layout_alignParentBottom="true"
+        android:splitMotionEvents="false" >
+
+        <RelativeLayout
+            android:id="@+id/combin_picker_contain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.android.camera.ui.PickerButton
+        android:id="@+id/combin_picker"
+        style="@style/ShutterButton"
+        android:layout_width="@dimen/combin_width"
+        android:layout_height="@dimen/combin_width"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/combin_picker_marginend"
+        android:src="@drawable/effect_menu"
+        android:layout_marginTop="@dimen/picker_group_margintop"/>
+
+</RelativeLayout>

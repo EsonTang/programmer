@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">SIM-kontakter kan inte slås samman.</string>
+    <string name="menu_done">"Klar"</string>
+    <string name="menu_deleteContact">"Tabort"</string>
+    <string name="menu_select_all">"Markeraallt"</string>
+    <string name="menu_select_none">"Avmarkeraalla"</string>
+    <string name="menu_new_contact_action_bar">"Ny"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> markerade</string>
+    <string name="multichoice_no_select_alert">Inget objekt har valts.</string>
+    <string name="aas_phone_type_none">"Ingen"</string>
+    <string name="aas_custom_title">Anpassade etiketter</string>
+    <string name="aas_new_dialog_title">Lägg till en ny etikett</string>
+    <string name="ass_rename_dialog_title">Redigera etikett</string>
+    <string name="aas_delele_dialog_message">Om en eller flera etiketter tas bort kommer det att påverka alla ytterligare nummer som är kopplade till etiketten. Är du säker?</string>
+    <string name="aas_name_invalid">Etikettnamnet är ogiligt. Vänligen ange ett annat namn.</string>
+    <string name="aas_name_exist">Etiketten finns redan.</string>
+    <string name="aas_usim_full">Det finns inget utrymme för nya etiketter.</string>
+    <string name="ass_edit_assert_message">Om en eller flera etiketter modiferas kommer det att påverka alla ytterligare nummer som är kopplade till etiketten. Är du säker?</string>
+    <string name="aas_new_fail">Kunde inte skapa en ny etikett.</string>
+    <string name="aas_edit_fail">Kunde inte byta namn <xliff:g id="aas">%s</xliff:g> .</string>
+    <string name="aas_delete_fail">Borttagning av <xliff:g id="aas">%s</xliff:g> misslyckades.</string>
+    <string name="aas_phone_primary">Primärt nummer</string>
+    <string name="aas_phone_additional">Ytterligare nummer</string>
+</resources>

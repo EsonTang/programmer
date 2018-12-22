@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mostBeautiful_Llyt_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="28dp"
+    android:orientation="vertical" >
+
+    <TextView style="@style/tv_divide" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/mostBeautiful_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/zuimei_tag_icon" />
+
+        <TextView
+            android:id="@+id/mostBeautiful_title"
+            style="@style/detail_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="title" />
+
+        <TextView
+            android:id="@+id/mostBeautiful_subtitle"
+            style="@style/detail_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mostBeautiful_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="subtitle" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mostBeautiful_digest"
+        style="@style/detail_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp" >
+
+        <WebView
+            android:id="@+id/mostBeautiful_web_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+</LinearLayout>

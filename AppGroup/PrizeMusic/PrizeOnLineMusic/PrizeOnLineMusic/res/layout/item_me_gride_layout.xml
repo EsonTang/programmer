@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gridview_item_width"
+    android:layout_height="@dimen/seven_fivedp" >
+
+    <ImageView
+        android:id="@+id/action_bar_album_art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/action_bar_album_name"
+        style="@style/textView_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/action_bar_album_art"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/action_bar_album_art"
+        android:ellipsize="end"
+        android:gravity="center|start"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/song_count"
+        style="@style/textView_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/action_bar_album_art"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/action_bar_album_art"
+        android:ellipsize="end"
+        android:gravity="center|start"
+        android:singleLine="true"
+        />
+
+</RelativeLayout>

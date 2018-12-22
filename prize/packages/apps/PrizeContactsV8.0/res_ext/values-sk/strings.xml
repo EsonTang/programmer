@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">Kontakty na karte SIM nemožno zlúčiť.</string>
+    <string name="menu_done">"Hotovo"</string>
+    <string name="menu_deleteContact">"Odstrániť"</string>
+    <string name="menu_select_all">"Vybraťvšetko"</string>
+    <string name="menu_select_none">"Zrušiťvýbervšetkých"</string>
+    <string name="menu_new_contact_action_bar">"Nové"</string>
+    <string name="selected_item_count">Vybraná je <xliff:g id="count">%d</xliff:g></string>
+    <string name="multichoice_no_select_alert">Žiadna položka nie je vybraná.</string>
+    <string name="aas_phone_type_none">"Žiadnaakcia"</string>
+    <string name="aas_custom_title">Vlastné označenia</string>
+    <string name="aas_new_dialog_title">Pridať nové označenie</string>
+    <string name="ass_rename_dialog_title">Upraviť označenie</string>
+    <string name="aas_delele_dialog_message">Odstránením označenia(-í) budú ovplyvnené všetky ďalšie čísla, ktoré sú spojené s týmto označením(-iami). Naozaj ich chcete odstrániť?</string>
+    <string name="aas_name_invalid">Názov označenia je neplatný. Zadajte iný názov.</string>
+    <string name="aas_name_exist">Toto označenie už existuje.</string>
+    <string name="aas_usim_full">Pre nové označenia nie je voľné miesto.</string>
+    <string name="ass_edit_assert_message">Úpravou označenia budú ovplyvnené všetky ďalšie čísla, ktoré sú spojené s týmto označením. Naozaj ho chcete upraviť?</string>
+    <string name="aas_new_fail">Nové označenie sa nepodarilo vytvoriť.</string>
+    <string name="aas_edit_fail">Nepodarilo sa premenovať <xliff:g id="aas">%s</xliff:g> .</string>
+    <string name="aas_delete_fail">Odstránenie <xliff:g id="aas">%s</xliff:g> zlyhalo.</string>
+    <string name="aas_phone_primary">Primárne číslo</string>
+    <string name="aas_phone_additional">Ďalšie číslo</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent"
+	android:layout_alignParentLeft="true"
+	android:layoutDirection="ltr"
+	android:layout_marginLeft="5dip">
+    <com.gangyun.camera.FilterSeekBar
+	android:id="@+id/gy_beatifySeekBar"
+	android:layout_width="wrap_content"
+	android:layout_height="170dip"
+	android:maxHeight="7dip"
+	android:minHeight="7dip"
+	android:paddingLeft="4dip"
+	android:paddingRight="4dip" 
+	android:layout_alignParentLeft="true"
+	android:layout_marginLeft="1dip"
+	android:layout_centerVertical="true"
+	android:progressDrawable="@drawable/gy_seekbar_default"
+	android:thumb="@drawable/gy_seekbar_thumb_normal18"
+	android:visibility="gone" />
+	<TextView 
+	android:id="@+id/gy_exposureTextView"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/gy_exposure_tips"
+	android:textColor="#FFFFFF"
+	android:layout_toLeftOf="@id/gy_beatifySeekBar"
+	android:layout_centerVertical="true"
+	android:visibility="gone"/>
+</RelativeLayout>

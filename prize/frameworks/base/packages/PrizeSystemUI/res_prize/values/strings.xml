@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_recents_item_dismissed">%s dismissed.</string>
+    <string name="accessibility_recents_item_will_be_dismissed">Remove %s.</string>
+    <string name="prize_forbid_lock_toast_message">Locking is not supported by this app</string>
+    <string name="prize_lock_too_much_toast_message">The maximum number has been reached. Please unlock first</string>
+    <string name="prize_smart_enable_forbid_lock_message">App locking is not supported in \"Power Saving\" Mode</string>
+    <string name="copy_verify_code">Verification Code</string>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/prize_layout_bg_color">   <!--prize add zhaojian 8.0 2017725-->
+
+        <!--prize modify zhaojian 8.0 2017725 start-->
+        <!--<ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/prize_floating_action_button_height"
+            android:layout_marginEnd="20dip"
+            android:layout_marginStart="20dip"
+            android:dividerHeight="1px" />-->
+       
+        <!--prize modify zhaojian 8.0 2017725 end-->
+
+        <RelativeLayout
+            android:id="@+id/prize_bottom_button"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_bottom_button_shadow_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+			<ImageView 
+			    android:src="@drawable/prize_upper_shadow"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"/>
+            
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_floating_action_button_height"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/prize_bottom_button_bg_color">   <!--prize add hpf 8.0 2017725-->
+
+                <LinearLayout
+                    android:id="@+id/prize_rename_btn_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/rename_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/prize_rename_dark" />
+                    <!--prize modify background zhaojian 8.0 2017725-->
+
+                    <TextView
+                        android:id="@+id/rename_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:duplicateParentState="true"
+                        android:text="@string/prize_rename_text"
+                        android:textColor="@color/prize_button_text_dark_color"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/prize_delete_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/delete_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/callrecords_delete_dark" />
+                    <!--prize modify background zhaojian 8.0 2017725-->
+
+                    <TextView
+                        android:id="@+id/delete_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:duplicateParentState="true"
+                        android:text="@string/prize_contacts_delete_text_string"
+                        android:textColor="@color/prize_button_text_dark_color"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+        
+         <LinearLayout
+            android:layout_above="@id/prize_bottom_button"
+            android:id="@+id/list_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/prize_card_layout_padding_top"
+            android:layout_marginBottom="@dimen/prize_card_layout_padding_top"
+            android:layout_marginStart="@dimen/prize_card_layout_padding_left_right"
+            android:layout_marginEnd="@dimen/prize_card_layout_padding_left_right">
+            <ListView
+                android:scrollbars="@null"
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/prize_content_padding"
+                android:paddingRight="@dimen/prize_content_padding"
+                android:background="@drawable/prize_card_layout_bg_normal"
+                android:dividerHeight="1px" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

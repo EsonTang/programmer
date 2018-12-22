@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/suspend_relativelayout"
+    android:layout_width="@dimen/suspend_back_width"
+    android:layout_height="@dimen/suspend_back_height"
+    android:background="@drawable/suspend_backgroud_img" >
+
+    
+
+    <SeekBar
+        android:id="@+id/suspend_seekBar_id"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="91dp"
+        android:paddingTop="@dimen/suspend_dot_margintop"
+        android:max="1000"
+        android:progressDrawable="@drawable/suspend_progressbar_item"
+        android:thumb="@drawable/thumb_up"/>
+
+    <TextView
+        android:id="@+id/suspend_progress_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/suspend_seekBar_id"
+        android:layout_marginStart="17.5dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/suspend_totaltime_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/suspend_seekBar_id"
+        android:paddingRight="17.5dp"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:id="@+id/suspend_previous_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="25dp"
+            android:contentDescription="@null"
+            android:background="@drawable/suspend_previous_selector" />
+
+        <ImageButton
+            android:id="@+id/suspend_play_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@null"
+            android:background="@drawable/suspend_play_selector" />
+
+        <ImageButton
+            android:id="@+id/suspend_next_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="25dp"
+            android:contentDescription="@null"
+            android:background="@drawable/suspend_next_selector" />
+    </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"     
+        android:paddingRight="@dimen/suspend_margin"
+        android:background="@null"        
+        android:layout_alignParentEnd="true">
+        <ImageButton
+	        android:id="@+id/suspend_close_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentStart="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="@dimen/suspend_margin"	
+	        android:layout_marginStart="@dimen/suspend_margin"        
+	        android:contentDescription="@null"
+	        android:background="@drawable/suspend_close_selector" />
+        <TextView
+	        android:id="@+id/trackName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:singleLine="true"
+	        android:maxEms="8"
+	        android:textSize="14sp" />
+        <ImageButton
+	        android:id="@+id/suspend_enter_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"      
+	        android:layout_alignParentEnd="true"      
+	        android:layout_alignParentTop="true"
+	        android:contentDescription="@null"
+	         android:layout_marginTop="@dimen/suspend_margin"
+	        android:background="@drawable/suspend_enter_selector" />
+    </RelativeLayout>
+</RelativeLayout>

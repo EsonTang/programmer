@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:gravity="center_horizontal"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_tab_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:translationZ="1dp">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:background="@color/bg_gray_color" />
+
+        <com.prize.appcenter.ui.widget.indicator.TabTextImagePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_centerInParent="true"
+            android:paddingLeft="11dp"
+            android:paddingRight="10.5dp" />
+
+        <TextView
+            android:id="@+id/caution_update_Iv"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/main_tab_red_point"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/icon_update"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/linearLayout"
+        layout="@layout/include_comm_head_third" />
+
+    <com.prize.appcenter.ui.widget.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/linearLayout" />
+
+    <com.prize.appcenter.ui.animation.ParabolaView
+        android:id="@+id/parabolaView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

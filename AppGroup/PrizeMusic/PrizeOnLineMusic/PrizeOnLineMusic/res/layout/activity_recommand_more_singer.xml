@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.ocean.gamecenter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:padding="0dp" >
+
+            <RelativeLayout
+                android:id="@+id/action_bar_no_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_bar_height"
+                android:background="@color/text_color_f0f0f0" >
+
+                <ImageButton
+                    android:id="@+id/action_bar_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/action_bar_back_selector" />
+
+                <TextView
+                    android:id="@+id/action_bar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/action_bar_back"
+                    android:paddingBottom="0dip"
+                    android:text="@string/search_singer"
+                    android:textColor="@color/text_color_323232"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <!-- 最右边 不显示,只用来以他为最右边的标尺 -->
+
+                <TextView
+                    android:id="@+id/action_bar_menu_right"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true" />
+
+                <ImageButton
+                    android:id="@+id/action_bar_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/action_bar_menu_right"
+                    android:background="@drawable/action_bar_search_selector" />
+            </RelativeLayout>
+
+            <com.prize.music.views.indicator.TabTextPageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/action_bar_no_tab"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="18dp" />
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/indicator"
+                android:background="@color/divider" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottomactionbar_new"
+                android:layout_below="@+id/viewLine" />
+            
+        <fragment
+            android:id="@+id/bottomactionbar_new"
+            android:name="com.prize.music.ui.fragments.BottomActionBarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

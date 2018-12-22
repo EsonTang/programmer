@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/news_item_vertical_pad"
+    android:background="@drawable/left_item_click_selector"
+    android:id="@+id/contact_item"
+    >
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    <ImageView
+	        android:id="@+id/img_head"
+	        android:layout_alignParentStart="true"
+	        android:contentDescription="@null"
+	        android:src="@drawable/ico_person_head" 
+	        android:layout_marginEnd="@dimen/news_item_img_end"
+	        style="@style/contact_head_img_style"
+	        />
+	
+	    <TextView
+	        android:id="@+id/txt_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:layout_toEndOf="@id/img_head"
+	        style="@style/news_title_style"
+	        />
+	
+	    <TextView
+	        android:id="@+id/txt_phone_num"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/txt_name"
+	        android:maxLines="2"
+	        android:ellipsize="end"
+	        android:layout_toEndOf="@id/img_head"
+	        style="@style/news_substract_style"
+	        />
+	    
+	    <ImageView
+	        android:id="@+id/img_sms"
+	        style="@style/contact_img_style"
+	        android:src="@drawable/left_ico_mms_selector" 
+	        android:contentDescription="@null"
+	        android:layout_toLeftOf="@+id/img_seperator"
+	        android:layout_centerVertical="true"
+	        />
+	    
+	    <ImageView
+	        android:id="@+id/img_seperator"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@null"
+	        android:layout_toLeftOf="@+id/img_phone"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        />
+	    
+	    <ImageView
+	        android:id="@+id/img_phone"
+	        android:src="@drawable/left_ico_phone_selector" 
+	        android:contentDescription="@null"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        style="@style/contact_img_style"
+	        android:layout_marginEnd="10dp"
+	        />
+	</RelativeLayout>
+	
+	<View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/bottom_line"
+        android:background="@color/divider_color"
+        android:layout_marginTop="@dimen/news_item_vertical_pad"
+        />
+</LinearLayout>

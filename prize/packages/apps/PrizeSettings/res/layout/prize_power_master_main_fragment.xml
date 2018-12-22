@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@drawable/prize_power_master_background" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/prize_power_master_canvas_color">
+		<View
+			android:id="@+id/top_background"
+			android:layout_width="match_parent"
+			android:layout_height="20dp"
+			android:background="@color/prize_power_master_canvas_color"/>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/top_background">
+			<ImageButton
+				android:id="@+id/prize_back_arrow"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@null"
+				android:src="@drawable/ic_ab_white_material_prize"
+				android:layout_alignParentStart="true"/>
+			<TextView
+				android:layout_centerInParent="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/power_save_manager_title"
+				android:textSize="@dimen/front_big_size"
+				android:textColor="@color/white" />
+		</RelativeLayout>
+	</RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp">
+
+        <com.android.settings.powermaster.PrizeDynamicWaveView
+            android:id="@+id/wava_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- <include -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+			
+            <!-- layout="@layout/prize_power_master_quantity" /> -->
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:layout_marginLeft="@dimen/prize_preferencefragment_card_maginleft"
+			android:layout_marginRight="@dimen/prize_preferencefragment_card_maginright"
+			android:layout_marginBottom="@dimen/prize_preferencefragment_card_maginleft"
+            android:background="@drawable/toponepreferencecategory_selector"
+            android:orientation="vertical" >
+
+            <!-- 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:text="@string/power_save_mode"
+                android:textColor="@color/dashboard_category_title_textcolor"
+                android:textSize="@dimen/front_small_size" />
+        </LinearLayout>
+
+            <include
+                android:id="@+id/fast_function_ll"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+				android:layout_marginBottom="4dp"
+                layout="@layout/prize_power_master_operation_item_one"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+				android:layout_marginLeft="@dimen/prize_preferencefragment_padding_start"
+				android:layout_marginRight="@dimen/prize_preferencefragment_pading_end"
+                android:layout_height="1px"
+                android:background="@color/settings_background_lines" />
+
+            <include
+                android:id="@+id/normal_mode_ll"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+				android:layout_marginBottom="4dp"
+                layout="@layout/prize_power_master_operation_item_one" />
+
+            <TextView
+				android:layout_marginLeft="@dimen/prize_preferencefragment_padding_start"
+				android:layout_marginRight="@dimen/prize_preferencefragment_pading_end"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/settings_background_lines" />
+
+            <include
+                android:id="@+id/noopsyche_save_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_marginBottom="4dp"
+                layout="@layout/prize_power_master_operation_item_one" />
+
+            <TextView
+				android:layout_marginLeft="@dimen/prize_preferencefragment_padding_start"
+				android:layout_marginRight="@dimen/prize_preferencefragment_pading_end"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/settings_background_lines" />
+
+            <include
+                android:id="@+id/super_power_save_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_marginBottom="4dp"
+                layout="@layout/prize_power_master_operation_item_one" />
+				
+			<TextView
+				android:layout_marginLeft="@dimen/prize_preferencefragment_padding_start"
+				android:layout_marginRight="@dimen/prize_preferencefragment_pading_end"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/settings_background_lines" />
+
+            <!-- 2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="@string/power_rank_details"
+                    android:textColor="@color/dashboard_category_title_textcolor"
+                    android:textSize="@dimen/front_small_size" />
+            </LinearLayout>
+			 <TextView
+				android:layout_marginLeft="@dimen/prize_preferencefragment_padding_start"
+				android:layout_marginRight="@dimen/prize_preferencefragment_pading_end"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/settings_background_lines" />
+            <include
+                android:id="@+id/power_rank_ll"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+				android:layout_marginBottom="4dp"
+                layout="@layout/prize_power_master_operation_item_two" />
+			 <TextView
+				android:layout_marginLeft="@dimen/prize_preferencefragment_padding_start"
+				android:layout_marginRight="@dimen/prize_preferencefragment_pading_end"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/settings_background_lines" />
+            <LinearLayout
+                android:id="@+id/block_third_app_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+					>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingStart="15dp"
+                        android:text="@string/power_other_settings"
+                        android:textColor="@color/dashboard_category_title_textcolor"
+                        android:textSize="@dimen/front_small_size"
+                        android:id="@+id/textView3" />
+                </LinearLayout>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_marginLeft="@dimen/prize_preferencefragment_padding_start"
+					android:layout_marginRight="@dimen/prize_preferencefragment_pading_end"
+					android:layout_height="1px"
+					android:background="@color/settings_background_lines" />
+                <include
+                    android:id="@+id/block_third_app_wake_up_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/prize_power_master_operation_item_three" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

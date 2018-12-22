@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="backgroud_img_height">296dp</dimen>
+    <dimen name="tv_margintop">270dp</dimen>
+    <dimen name="bt_login_margintop">88dp</dimen>
+    <dimen name="bt_register_margintop">24dp</dimen>
+    <dimen name="bt_next_margintop">85dp</dimen>
+    <dimen name="tv_login_height">44dp</dimen>
+    <dimen name="img_height">257dp</dimen>
+    <dimen name="img_head_margintop_one">76dp</dimen>
+    <dimen name="img_head_margintop_two">78dp</dimen>
+    <dimen name="tv_content_margintop">62dp</dimen>
+    <dimen name="bt_outlogin_margintop">185dp</dimen>
+    <dimen name="bt_bindsuccess_margintop">145dp</dimen>
+    <dimen name="dialog_margingground">18dp</dimen>
+    <dimen name="pop_height">183dp</dimen>
+    <dimen name="btn_margintop">9dp</dimen>
+</resources>

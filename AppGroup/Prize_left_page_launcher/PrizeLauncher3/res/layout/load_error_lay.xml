@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/error_lay"
+    android:layout_centerInParent="true"
+    android:visibility="gone"
+    >
+    
+    <ImageView android:contentDescription="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reload_icon"
+        />
+	
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="13sp"
+        android:text="@string/web_error"
+        android:paddingTop="15dp"
+        />
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="@string/web_error_reason"
+        />
+    
+    <TableRow android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="15dp"
+    	>
+        <Button android:text="@string/web_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:background="@drawable/web_btn_selector"
+            android:textColor="@color/web_progress_color"
+            android:id="@+id/btn_reload"
+            android:onClick="onClick"
+            android:textSize="12sp"
+            />
+        
+        <Button android:text="@string/set_network"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:background="@drawable/web_btn_selector"
+            android:textColor="@color/web_progress_color"
+            android:layout_marginLeft="12dp"
+            android:textSize="12sp"
+            android:id="@+id/btn_set_net"
+            android:onClick="onClick"
+            />
+    </TableRow>
+</LinearLayout>

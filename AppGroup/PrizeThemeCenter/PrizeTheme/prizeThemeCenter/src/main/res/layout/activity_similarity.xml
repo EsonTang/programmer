@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prize.prizethemecenter.activity.similarityActivity">
+
+
+    <GridView
+        android:layout_marginTop="8dp"
+        android:scrollbars="none"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:listSelector="@color/transparent"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="5dp"
+        android:id="@+id/gv_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/container_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/container_reload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

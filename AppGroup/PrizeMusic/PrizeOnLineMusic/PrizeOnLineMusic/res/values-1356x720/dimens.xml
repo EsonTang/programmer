@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="song_love_title_container_margintop">23dp</dimen>
+    <dimen name="song_love_line_margintop">79dp</dimen>
+</resources>

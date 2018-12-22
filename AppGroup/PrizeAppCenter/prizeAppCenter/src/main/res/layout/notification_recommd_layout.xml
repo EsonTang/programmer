@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/big_Iv"
+        style="@style/push_image"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/default_icon"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/big_Iv"
+        android:layout_alignTop="@+id/big_Iv"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toRightOf="@+id/big_Iv" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/now_update_Tv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_small" />
+
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:alpha="0.5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_micro"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/new_version_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_micro" />
+
+        <TextView
+            android:id="@+id/now_update_Tv"
+            style="@style/game_item_progressButton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/push_btn_selector"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:text="@string/now_update"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_micro"/>
+    </RelativeLayout>
+
+</RelativeLayout>

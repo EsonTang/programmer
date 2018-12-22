@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_avitivity_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_40dp"
+        android:background="@color/title_header_bg_color"
+        android:paddingLeft="@dimen/density_10dp" >
+
+        <RelativeLayout
+            android:id="@+id/left_click_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/back_image_view"
+                android:layout_width="@dimen/density_17dp"
+                android:layout_height="@dimen/density_15dp"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:enabled="false"
+                android:background="@drawable/back_button_selector"  />
+				
+				<TextView
+					android:id="@+id/title_header_view"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/back_image_view"
+					android:layout_marginLeft="@dimen/density_10dp"
+					android:layout_centerVertical="true"
+					android:textColor="@color/title_text_color"
+					android:textSize="@dimen/big_front" />
+        </RelativeLayout>
+        
+        <TextView
+                android:id="@+id/mid_title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/big_front" />
+        
+        <RelativeLayout
+            android:id="@+id/right_click_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/density_10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/right_operation_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/fp_password_setting"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/normal_front"
+                android:clickable="false"
+                android:enabled="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

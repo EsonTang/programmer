@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.prize.prizethemecenter.ui.widget.GridViewWithHeaderAndFooter
+        android:id="@+id/classify_id_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:paddingRight="@dimen/margin_left_right"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:listSelector="@color/transparent"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="5dp">
+    </com.prize.prizethemecenter.ui.widget.GridViewWithHeaderAndFooter>
+
+    <FrameLayout
+        android:id="@+id/container_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

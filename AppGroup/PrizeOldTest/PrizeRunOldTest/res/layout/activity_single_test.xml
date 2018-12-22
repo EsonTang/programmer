@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/lcd" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lcd" />
+        <Button
+            android:id="@+id/flashlight" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flashlight" />
+        <Button
+            android:id="@+id/playvideo" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playvideo" />
+        <Button 
+            android:id="@+id/sr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/srtest"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/emmc" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emmc" />
+        <Button
+            android:id="@+id/i2c" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i2c" />
+        <Button
+            android:id="@+id/audio" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/audio" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/tp" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tp" />
+        <Button
+            android:id="@+id/camera" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera" />
+        <Button
+            android:id="@+id/test3d" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test3d" />
+        <Button
+            android:id="@+id/reboot" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reboot" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/rwbgpower" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rwbgpower" />
+        <Button
+            android:id="@+id/sensor" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sensor" />
+        <Button
+            android:id="@+id/ddr" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ddr" />
+    </LinearLayout>
+
+</LinearLayout>

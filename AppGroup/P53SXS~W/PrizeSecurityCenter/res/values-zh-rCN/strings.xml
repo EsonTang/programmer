@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">安全中心</string>
+    <string name="action_settings">设置</string>
+    <string name="accept_perm">允许</string>
+    <string name="deny_perm">禁止</string>
+    <string name="clean_filecahce">文件清理</string>
+    <string name="select_province">选择省份</string>
+    <string name="select_city">选择地区</string>
+    <string name="select_carry">选择运营商</string>
+    <string name="select_brands">选择sim卡类型</string>
+    
+    
+    <string name="viruses_scan">病毒扫描</string>
+    <string name="malicious_software">恶意软件</string>
+    <string name="result_security">安全</string>
+    <string name="hidden_software">隐患软件</string>
+    <string name="hack_risk">盗号风险</string>
+    <string name="ad_plugin">广告插件</string>
+    <string name="viruse_scan_start">开始扫描</string>
+    <string name="viruse_scan_stop">停止扫描</string>
+    <string name="viruse_scan_completed">扫描完成</string>
+    <string name="scan_result_jre">当前运行环境安全</string>
+    <string name="scan_result_ne">网络环境安全</string>
+    <string name="scan_result_pe">支付环境安全</string>
+    <string name="scan_result_se">系统环境安全</string>
+    <string name="scan_result_des">您的系统是安全的</string>
+    <string name="scan_cutomdialog_title">安全卫士提示你</string>
+    <string name="scan_cutomdialog_message">杀毒扫描即将完成，能有效查杀木马，避免恶意扣费。您确定要取消？</string>
+    <string name="scan_cutomdialog_cancel">取消</string>
+    <string name="scan_cutomdialog_ok">确定</string>
+    
+    <!-- 流量监控 -->
+    <string name="no_sim_reminder">请插入手机sim卡</string>
+    <string name="today_traffic">今日流量</string>
+    <string name="mothy_traffic">本月已用</string>
+    <string name="mothy_traffic_remain">本月剩余</string>
+    <string name="traffic_setting">流量设置</string>
+    <string name="traffic_details">流量详单</string>
+    <string name="traffic_control">流量监控</string>
+    <string name="setting_location">设置归属地</string>
+    <string name="sim_01">卡1</string>
+    <string name="sim_02">卡2</string> 
+    <string name="sim_setting_commits">开机启动自动运行</string> 
+    <string name="traffic_month_total">每月流量总额</string> 
+    <string name="traffic_month_remain">本月剩余流量</string> 
+    <string name="traffic_month_clean">月结算日</string> 
+    <string name="traffic_location">归属地</string> 
+    <string name="traffic_monitor_often">实时流量监控</string> 
+    <string name="traffic_over_reminid">超额提醒</string> 
+
+    <!-- 垃圾清理 -->
+    <string name="garbage_remove">清理加速</string>
+    <string name="garbage_cache_file">缓存文件</string>
+    <string name="garbage_system_file">系统垃圾</string>
+    <string name="garbage_install_file">多余安装包</string>
+    <string name="garbage_uninstall_file">卸载残留</string>
+    <string name="garbage_clean_pause_bt">暂停扫描</string>
+    <string name="garbage_clean_fast_bt">一键清理</string>
+    <string name="garbage_clean_repeat_bt">清理完成</string>
+    <string name="garbage_status_title1">可清理</string>
+    <string name="garbage_status_title2">已帮您清理</string>
+    <string name="garbage_status_cleaned">您刚刚清理过哦，休息一下吧</string>
+    
+    
+
+    <!-- 数据更新 -->
+    <string name="update_title_txt">数据更新</string>
+    <string name="update_autorun_txt">开机应用自动运行</string>
+    <string name="update_resoult">你的数据库是最新的</string>
+    <string name="update_check">检查更新</string>
+    <string name="update_checking">正在查询数据信息</string>
+    <string name="update_checked">更新完成</string>
+    <string name="update_data">更新数据</string>
+    <string name="update_dialog_message">正在检查更新，请稍后&#8230;</string>
+    <string name="update_result">已经更新数据信息</string>
+    
+    
+    
+    <!-- john 2015.8.22 start -->
+    <!-- Setting -->
+    <string name="setting_title">设置</string>
+    <string name="setting_des1">开机应用自动运行</string>
+    <string name="setting_intercept_harass">拦截骚扰</string>
+    <string name="setting_sms_des">正在开会，不方便接电话，抱歉！</string>
+
+    <!-- Optimizing -->
+    <string name="optimizing_title">优化加速</string>
+    <string name="optimizing">点击加速</string>
+    
+    
+    <!-- Intercept -->
+    <string name="intercept_title">拦截引擎</string>
+    
+    <!-- Blacknumber -->
+    <string name="blacknumber_title">黑名单</string>
+    <!-- john 2015.8.22 end -->
+    
+    
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="half_transp2">#2f000000</color>
+    <color name="half_transp">#4f000000</color>
+    <color name="app_background_color">#ffffff</color>
+    <color name="app_background_separator">#2C2F32</color>
+    <color name="text_color_gray">#7fffffff</color>
+    <!-- A transparent black -->
+    <color name="transparent_black">#aa000000</color>
+    
+    <!-- selected tab text -->
+    <color name="selected_tabtext">#bb000000</color>
+    
+    <!-- non selected tab text -->
+    <color name="unselected_tabtext">#77000000</color>
+
+    <!-- A semi-transparent dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    
+    <color name="shuffle_grey">#ffdedede</color>
+
+    <color name="background_grey">#ffdedede</color>
+    
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+
+    <!-- Black -->
+    <color name="black">#ff000000</color>
+
+    <!-- White -->
+    <color name="white">#ffffffff</color>
+    
+    <!-- Quick Queue line seperator -->
+    <color name="actionbar_text">#eeffffff</color>
+
+    <!-- Quick Queue line seperator -->
+    <color name="queue_callout_line">#99ffffff</color>
+  <color name="gray_black">#323232</color>
+  <color name="edittext_hint">#c8c8c8</color>
+</resources>

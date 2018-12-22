@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false" >
+    <ImageView 
+	    android:id="@+id/register_id"
+	    android:layout_width="match_parent"
+        android:layout_height="@dimen/backgroud_img_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/register_my_koobee"/>
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#21b5c0"
+        android:drawableLeft="@drawable/back_normal"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:onClick="onBackClk"
+        android:text="@string/my_koobee"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/textsize_large" />
+    <TextView
+        android:id="@+id/koobee_tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margintop"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textsize_medium"
+        android:text="@string/one_koobee_account"/>
+    
+    <TextView
+	    android:id="@+id/login_id"
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:text="@string/login"
+	    android:textSize="@dimen/textsize_medium"
+	    android:textColor="@color/prize_text_default"
+	    android:background="@drawable/login_selector"
+	    android:clickable="true"
+	    android:gravity="center"
+	    android:onClick="onComplete"
+	    android:layout_below="@+id/register_id"
+	    android:layout_marginTop="@dimen/bt_login_margintop"/>
+    
+    <TextView
+	    android:id="@+id/regist_new_id"
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:text="@string/regist_new_account"
+	    android:textSize="@dimen/textsize_medium"
+	    android:background="@drawable/login_selector"
+	    android:clickable="true"
+	    android:gravity="center"
+	    android:onClick="onComplete"
+	    android:layout_below="@+id/login_id"
+	    android:textColor="@color/prize_text_default"
+	    android:layout_marginTop="@dimen/bt_register_margintop"/>
+
+</RelativeLayout>

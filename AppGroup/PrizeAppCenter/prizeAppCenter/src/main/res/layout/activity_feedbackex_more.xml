@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background">
+
+    <LinearLayout
+        android:id="@+id/ll0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/reason_class"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_small"/>
+
+        <LinearLayout
+            android:id="@+id/select_Llyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginRight="12.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/feedback_editor_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/select_class_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_up"
+                android:hint="@string/pls_select_reason_class"
+                android:textColor="@color/text_color_404040"
+                android:textSize="@dimen/text_size_small"/>
+            <!--<TextView-->
+            <!--android:id="@+id/sub_title_Tv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:maxLength="350"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:textColor="@color/text_color_9a9a9a"-->
+            <!--android:textCursorDrawable="@null"-->
+            <!--android:textSize="@dimen/text_size_micro"-->
+            <!--android:visibility="visible" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/feedback_content"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_small"/>
+
+        <EditText
+            android:id="@+id/fedbck_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/feedback_editor_bg"
+            android:gravity="top"
+            android:hint="@string/pls_input_feedback"
+            android:maxLength="350"
+            android:minLines="6"
+            android:padding="12.5dp"
+            android:textColor="@color/text_color_404040"
+            android:textColorHint="@color/text_color_9a9a9a"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/fedbck_contact_tip"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+        <Button
+            android:id="@+id/add_Btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_add"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll2"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/contact_et"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/feedback_editor_bg"
+            android:ellipsize="end"
+            android:hint="@string/contact_hint"
+            android:maxLength="350"
+            android:paddingLeft="12.5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_404040"
+            android:textColorHint="@color/text_color_9a9a9a"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+            android:id="@+id/feedback_more_nomsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12.5dp"
+            android:textColor="@color/text_color_red"
+            android:textSize="@dimen/text_size_20"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/feedback_send_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:background="@drawable/cloud_next_selector"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/feedback_send_text"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/text_size_small"/>-->
+
+    <com.prize.appcenter.ui.widget.PrizeCommButton
+        android:id="@+id/feedback_send_btn"
+        android:layout_width="304dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:btn_radius="20dp"
+        app:btn_content="@string/feedback_send_text"
+        app:btn_text_size="@dimen/text_size_small" />
+
+</RelativeLayout>

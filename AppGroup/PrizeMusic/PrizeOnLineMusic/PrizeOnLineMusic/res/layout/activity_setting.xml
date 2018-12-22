@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="@null" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <!-- 头部 -->
+
+        <RelativeLayout
+            android:id="@+id/action_bar_no_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_bar_height"
+            android:background="@color/text_color_f0f0f0" >
+
+            <ImageButton
+                android:id="@+id/action_bar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/action_bar_back_selector" />
+
+            <TextView
+                android:id="@+id/action_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/action_bar_back"
+                android:paddingBottom="0dip"
+                android:text="@string/setting"
+                android:textColor="@color/text_color_323232"
+                android:textSize="@dimen/text_size_15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:background="@color/bg_gray_color" />
+
+        <!-- 下载设置 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/text_color_f0f0f0"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/listview_padding"
+            android:text="@string/setting_download_method"
+            android:textColor="@color/text_color_9a9a9a"
+            android:textSize="@dimen/text_size_micro" />
+        <!-- 边听变下载 -->
+
+        <RelativeLayout
+            android:id="@+id/download_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/download_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_download_title"
+                    android:textColor="@color/text_color_323232"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_download_detail"
+                    android:textColor="@color/text_color_969696"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/download_set_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/setting"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding"
+            android:background="@color/bg_gray_color" />
+
+        <!-- WiFi setting -->
+
+        <RelativeLayout
+            android:id="@+id/wify_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_less_height"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding" >
+
+            <TextView
+                android:id="@+id/wify_set_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/wifi_download_auto"
+                android:textColor="@color/item_common_edit_color"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <Switch
+                android:id="@+id/wify_set_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_background" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding"
+            android:background="@color/bg_gray_color" />
+
+        <!-- 下载提醒 -->
+
+        <RelativeLayout
+            android:id="@+id/download_hint_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/download_hint_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_hint"
+                    android:textColor="@color/text_color_323232"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_detail"
+                    android:textColor="@color/text_color_969696"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/download_hint_set_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/setting"
+                android:textOff=""
+                android:textOn=""
+                android:track="@drawable/switch_track_material" />
+        </RelativeLayout>
+
+        <!-- 播放设置 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/text_color_f0f0f0"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/listview_padding"
+            android:text="@string/play_setting"
+            android:visibility="gone"
+            android:textColor="@color/text_color_9a9a9a"
+            android:textSize="@dimen/text_size_micro" />
+
+        <!-- 定时播放 -->
+
+        <RelativeLayout
+            android:id="@+id/wifi_set_RL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:visibility="gone"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding" >
+
+            <RelativeLayout
+                android:id="@+id/clock"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_less_height"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/stop_by_set_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/stop_by_yourself"
+                    android:textColor="@color/text_color_323232"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/clock_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/stop_by_set_tv"
+                    android:drawableLeft="@drawable/setting_clock"
+                    android:drawablePadding="3dp"
+                    android:text="00:00"
+                    android:textColor="@color/text_color_323232"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:visibility="gone" />
+
+                <Switch
+                    android:id="@+id/time_stop_sw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/setting"
+                    android:textOff=""
+                    android:textOn=""
+                    android:track="@drawable/switch_track_material" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clock_rlt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_less_height"
+                android:layout_below="@+id/clock"
+                android:layout_marginRight="6dp"
+                android:visibility="gone" >
+
+                <com.prize.music.ui.widgets.PrizeHorizontalTimeView
+                    android:id="@+id/timeview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 其他 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/app_title"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/listview_padding"
+            android:text="@string/others"
+            android:textColor="@color/text_color_9a9a9a"
+            android:textSize="@dimen/text_size_micro" />
+
+        <!-- 清理缓存 -->
+
+        <RelativeLayout
+            android:id="@+id/clear_data_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_less_height"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding" >
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/clear_data_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/clear_data"
+                    android:textColor="@color/text_color_323232"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/cache_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ll"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_323232"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:text="@string/clear_cache_content"
+                android:textColor="@color/text_color_9a9a9a"
+                android:textSize="@dimen/text_size_micro"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding"
+            android:background="@color/bg_gray_color" />
+
+        <!-- 意见反馈 -->
+
+        <RelativeLayout
+            android:id="@+id/feedback_RL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_less_height"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding" >
+
+            <TextView
+                android:id="@+id/feedback_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/feedback"
+                android:textColor="@color/text_color_323232"
+                android:textSize="@dimen/text_size_15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding"
+            android:background="@color/bg_gray_color" />
+
+        <!-- 版本更新 -->
+
+        <RelativeLayout
+            android:id="@+id/update_version_RL"
+            android:layout_width="match_parent"
+            android:onClick="checkNewVersion"
+            android:layout_height="@dimen/item_less_height"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding" >
+
+            <TextView
+                android:id="@+id/update_version_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/check_update"
+                android:textColor="@color/text_color_323232"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/current_version_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/recommand_more"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:text="@string/version_num_is"
+                android:textColor="@color/text_color_969696"
+                android:textSize="@dimen/text_size_micro" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="@dimen/listview_padding"
+            android:layout_marginRight="@dimen/listview_padding"
+            android:background="@color/bg_gray_color" />
+
+        <TextView
+            android:id="@+id/login_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_corner_selector"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="#404040"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+</ScrollView>

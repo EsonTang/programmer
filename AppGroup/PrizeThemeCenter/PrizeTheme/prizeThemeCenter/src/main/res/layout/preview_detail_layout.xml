@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/wall_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.prize.prizethemecenter.ui.zoomcropimage.CropImageLayout
+            android:id="@+id/image_preview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_RL_container_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:id="@+id/scroll_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/topic_margin_20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/screen_preview_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/screen_preview_selector"
+                        android:gravity="center"
+                        android:text="@string/screen_preview"
+                        android:textColor="@color/text_color_33cccc"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/launcher_preview_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/screen_preview_TV"
+                        android:background="@drawable/launcher_preview_selector"
+                        android:gravity="center"
+                        android:text="@string/launcher_preview"
+                        android:textColor="@color/text_color_33cccc"
+                        android:textSize="@dimen/text_size_small" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/isScroll_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/choice_preview_selector"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/is_scroll"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_RL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scroll_LL">
+
+                <TextView
+                    android:id="@+id/cancel_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="33dp"
+                    android:background="@drawable/wallpaper_bg_white"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/text_color_33cccc"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/use_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/cancel_TV"
+                    android:background="@drawable/wallpaper_bg_color"
+                    android:gravity="center"
+                    android:text="@string/use"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:paddingTop="25dp"
+        android:scaleType="matrix"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lock_LL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/time_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginTop="41dp"
+            android:textColor="@color/white"
+            android:textSize="67sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/days_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/week_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/days_TV"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

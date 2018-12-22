@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+	android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/key_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15px"
+        android:text="@string/key_text"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/volume_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5px"
+        android:gravity="center_horizontal"
+        android:text="@string/key_volume_up"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/volume_down"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5px"
+        android:gravity="center_horizontal"
+        android:text="@string/key_volume_down"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5px"
+        android:gravity="center_horizontal"
+        android:text="@string/key_menu"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5px"
+        android:gravity="center_horizontal"
+        android:text="@string/key_home"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5px"
+        android:gravity="center_horizontal"
+        android:text="@string/key_back"
+        android:textSize="20dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <include layout="@layout/bottom_bar" />
+
+</LinearLayout>

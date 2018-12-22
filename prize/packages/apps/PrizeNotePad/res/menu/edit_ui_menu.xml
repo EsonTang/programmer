@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 
+    <item
+        android:id="@+id/id_create_new_one"
+        android:title="@string/menu_create_new_one" />
+    <item
+        android:id="@+id/id_font"
+        android:title="@string/menu_font_size" />
+    <item
+        android:id="@+id/id_delet"
+        android:title="@string/menu_delete_page" />
+-->
+    <!-- 
+    <item
+        android:id="@+id/id_sent_to_desk"
+        android:title="@string/menu_send_to_desktop" />
+ 	-->
+</menu>

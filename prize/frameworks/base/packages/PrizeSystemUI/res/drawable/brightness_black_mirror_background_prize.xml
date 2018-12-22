@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+*版权所有©2016,深圳市铂睿智恒科技有限公司
+*
+*内容摘要：亮度调节滚动条的背景
+*当前版本：V1.0
+*作	者：liufan
+*完成日期：2016-06-13
+*修改记录：
+*修改日期：
+*版 本 号：
+*修 改 人：
+*修改内容：
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#de000000" />
+    <corners
+        android:topLeftRadius="@dimen/notification_material_rounded_rect_radius"
+        android:topRightRadius="@dimen/notification_material_rounded_rect_radius"
+        android:bottomLeftRadius="@dimen/notification_material_rounded_rect_radius"
+        android:bottomRightRadius="@dimen/notification_material_rounded_rect_radius"/>
+</shape>

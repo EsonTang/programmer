@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="prize_worker">colleague</string>
+	<string name="prize_family">family</string>
+	<string name="prize_friends">friend</string>
+	<string name="prize_schoolmate">Classmate</string>
+
+
+	<!--prize add by zhaojian 20171123 start-->
+	<string name="prize_sim_processor_label">Scanning Sim Cards</string>
+	<!--prize add by zhaojian 20171123 end-->
+</resources>

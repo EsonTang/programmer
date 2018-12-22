@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+--><!-- prize change all view zhangzhonghao 20160323 -->
+<com.android.contacts.widget.TouchlessScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_scroller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:fillViewport="true">
+
+    <!-- All the cards should be inserted into this LinearLayout -->
+
+    <LinearLayout
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/prize_card_layout_padding_top"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/prize_card_layout_padding_left_right"
+        android:paddingStart="@dimen/prize_card_layout_padding_left_right">
+
+        <!-- prize-change-huangliemin-2016-7-15-start -->
+
+        <com.android.contacts.quickcontact.ExpandingEntryCardView
+            android:id="@+id/recent_card"
+            style="@style/ExpandingEntryCardStyle"
+            android:layout_marginTop="@dimen/prize_card_layout_padding_top"
+            android:visibility="gone"
+            cardview:cardCornerRadius="@dimen/expanding_entry_card_card_corner_radius" />
+
+        <!-- prize-change-huangliemin-2016-7-16-@string/prize_quickcontact_recent_notice -->
+
+        <TextView
+            android:id="@+id/prizeQuickContactRecentNotice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_single_content_height"
+            android:layout_marginTop="@dimen/prize_card_layout_padding_top"
+            android:background="@drawable/prize_card_layout_bg_normal"
+            android:drawableEnd="@drawable/prize_selector_ic_advance"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/prize_content_padding"
+            android:text="@string/prize_more_call_log"
+            android:textColor="@color/prize_content_title_color"
+            android:textSize="15sp" />
+
+        <!-- prize-change-huangliemin-2016-7-15-end -->
+
+        <!-- prize-change-huangpengfei-2016-8-20-start -->
+
+        <!-- <com.android.contacts.quickcontact.ExpandingEntryCardView
+            android:layout_marginRight="20dp"
+            android:id="@+id/no_contact_data_card"
+            style="@style/ExpandingEntryCardStyle"
+            android:visibility="gone"
+            cardview:cardCornerRadius="@dimen/expanding_entry_card_card_corner_radius" /> -->
+
+        <LinearLayout
+            android:id="@+id/no_contact_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/prize_card_layout_padding_top"
+            android:background="@drawable/prize_card_layout_bg_normal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/no_contact_data_text_add_phone_num"
+                style="@style/SelectableItem"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@color/divider_line_color_light" />
+
+            <TextView
+                android:id="@+id/no_contact_data_add_email_address"
+                style="@style/SelectableItem"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp" />
+
+        </LinearLayout>
+        <!-- prize-change-huangpengfei-2016-8-20-end -->
+
+        <com.android.contacts.quickcontact.ExpandingEntryCardView
+            android:id="@+id/communication_card"
+            style="@style/ExpandingEntryCardStyle"
+            android:visibility="gone"
+            cardview:cardBackgroundColor="@color/prize_layout_bg_color"
+            cardview:cardCornerRadius="@dimen/expanding_entry_card_card_corner_radius"
+            />
+
+        <!-- prize-add for dido os8.0-huangpengfei-2017-8-9-start -->
+
+        <RelativeLayout
+            android:id="@+id/prize_video_call"
+            style="@style/SelectableItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_single_content_height"
+            android:layout_marginTop="@dimen/prize_card_layout_padding_top"
+            android:background="@drawable/prize_selector_card_btn_bg"
+            android:paddingStart="@dimen/prize_content_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/prize_video_call_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/prize_video_call"
+                android:textColor="@color/prize_content_title_color" />
+
+            <ImageView
+                android:id="@+id/prize_video_call_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp" />
+        </RelativeLayout>
+        <!-- prize-add for dido os8.0-huangpengfei-2017-8-9-end -->
+
+
+        <RelativeLayout
+            android:id="@+id/mDefaultMusic"
+            style="@style/SelectableItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_single_content_height"
+            android:layout_marginTop="@dimen/prize_card_layout_padding_top"
+            android:background="@drawable/prize_selector_card_btn_bg"
+            android:paddingEnd="@dimen/prize_content_padding"
+            android:paddingStart="@dimen/prize_content_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/mDefaultMusicTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/default_music"
+                android:textSize="@dimen/prize_single_content_size"
+                android:textColor="@color/prize_content_title_color" />
+
+            <TextView
+                android:id="@+id/mDefaultMusicName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/prize_single_content_size"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxEms="12" />
+            <!--prize add singleLine and modify maxEms by zhaojian for bug-55851 20180419-->
+        </RelativeLayout>
+
+        <!-- prize add layout huangpengfei 2016-08-12 start -->
+        <LinearLayout
+            android:id="@+id/prize_group_content"
+            style="@style/SelectableItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/prize_card_layout_padding_top"
+            android:background="@drawable/prize_card_layout_bg_normal"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/prize_content_padding"
+            android:paddingStart="@dimen/prize_content_padding">
+
+            <TextView
+                android:id="@+id/prize_group_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/prize_content_title_color"
+                android:textSize="@dimen/prize_single_content_size" />
+
+            <TextView
+                android:id="@+id/prize_group_subTitles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/prize_sub_title_text_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+        <!-- prize add layout huangpengfei 2016-08-12 end -->
+
+        <LinearLayout
+            android:id="@+id/mTwoDeminsionCode"
+            style="@style/SelectableItem"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/mTwoDeminsionCodeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                android:text="@string/twodeminsioncode"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/mTwoDeminsionCodeImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/twodeminsioncode" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/mDivider2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/divider_line_color_light"
+            android:visibility="gone" />
+
+        <!-- prize-change-huangliemin-2016-7-15-start -->
+        <!--
+        <TextView
+            android:id="@+id/prizeQuickContactRecentNotice"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="@string/prize_quickcontact_recent_notice"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/mDivider3"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#e3e3e3" />
+
+        <com.android.contacts.quickcontact.ExpandingEntryCardView
+            style="@style/ExpandingEntryCardStyle"
+            android:id="@+id/recent_card"
+            android:visibility="gone"
+            cardview:cardCornerRadius="@dimen/expanding_entry_card_card_corner_radius" />
+        -->
+        <!-- prize-change-huangliemin-2016-7-15-end -->
+
+        <com.android.contacts.quickcontact.ExpandingEntryCardView
+            android:id="@+id/about_card"
+            style="@style/ExpandingEntryCardStyle"
+            android:visibility="gone"
+            cardview:cardCornerRadius="@dimen/expanding_entry_card_card_corner_radius"
+            />
+
+        <include layout="@layout/quickcontact_collapsed_suggestion_card" />
+
+        <include layout="@layout/quickcontact_expand_suggestion_card" />
+
+    </LinearLayout>
+
+</com.android.contacts.widget.TouchlessScrollView>

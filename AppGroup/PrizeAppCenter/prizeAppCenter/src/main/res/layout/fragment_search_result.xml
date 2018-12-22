@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+
+    <LinearLayout
+        android:id="@+id/no_match_Llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/searchresult_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#fee8b2"
+            android:gravity="center"
+            android:textColor="@color/text_color_6c6c6c"
+            android:textSize="@dimen/text_size_12"/>
+
+        <TextView
+            android:id="@+id/searchnoresult_Tvv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="试试这些"
+            android:textColor="@color/text_color_6c6c6c"
+            android:textSize="@dimen/text_size_12"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#e4e4e4"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/waiting_view"
+        android:visibility="gone"/>
+
+    <include
+        layout="@layout/reload_layout"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/no_match_Llyt"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:paddingBottom="10dp"
+        android:scrollbars="none">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/bottom_Llyt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#E6ffffff"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:textColor="@color/text_color_404040"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="大家还在搜："
+            android:textSize="@dimen/text_size_30"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:id="@+id/container_Llyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

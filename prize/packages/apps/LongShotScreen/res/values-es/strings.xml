@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Capturas de pantalla súper</string>
+    <string name="action_settings">establecer</string>
+    <string name="scroll_shot">Capturas de pantalla largas</string>
+    <string name="funny_shot">Imágenes divertidas</string>
+    <string name="screen_record">grabación de pantalla</string>
+    <string name="nextpage">en la siguiente pantalla</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">cancelado</string>
+    <string name="rect_shot">Capturas de pantalla rectangulares</string>
+    <string name="lasso_shot">Lasso capturas de pantalla</string>
+    <string name="daub_shot">Capturas de pantalla Graffiti</string>
+    <string name="redo">rehacer</string>
+    <string name="undo">revocación</string>
+    <string name="exit">dejar</string>
+    <string name="scrawl">grafiti</string>
+    <string name="app_restrict_capture_screen">Desde el límite de aplicación, la interfaz no puede ser capturas de pantalla</string>
+    <string name="drag_to_select_capture_area">En arrastrar y soltar seleccionado captura de pantalla ventana</string>
+    <string name="not_support_screen_orientation_change">Proceso de captura de pantalla no es compatible con cambio de pantalla horizontal y vertical</string>
+    <string name="screenshot_saved">Imágenes capturadas</string>
+    <string name="screenshot_saved_to_tf_card">Los archivos guardados en "Almacenamiento del teléfono / capturas de pantalla Super" carpeta.</string>
+    <string name="screenshot_saved_to_sd_card">Los archivos guardados en "tarjeta SD / capturas de pantalla Super" carpeta.</string>
+    <string name="lasso_guide">Dibujar imágenes región comenzó las capturas Lasso</string>
+    <string name="scrollcapture_is_running">Capturas de pantalla de larga ejecución</string>
+    <string name="scrollcapture_is_saving_please_wait">Las capturas de pantalla largas actuales de ahorro, por favor espere.</string>
+    <string name="hit_the_bottom">En el extremo de la corredera</string>
+    <string name="content_un_extended">La sección transversal no soporta imágenes largas</string>
+    <string name="maximum_to_ten_pages">Hasta el 10 de interceptación pantalla</string>
+    <string name="saving">Saving ...</string>
+    <string name="screenshot_saving">Ahorro de pantalla ...</string>
+    <string name="hava_not_start_daub">Usted no se ha pintado, pintado y, por favor, haga clic en Guardar.</string>
+    <string name="move">móvil</string>
+    
+    <string name="turn_off_long_screenshots">Por favor salga de las capturas largas</string>
+    <string name="turn_off_interest_screenshots">Por favor salga de las capturas interesantes</string>
+    
+</resources>

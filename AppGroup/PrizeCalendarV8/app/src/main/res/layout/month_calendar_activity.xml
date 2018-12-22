@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/month"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <!-- <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/prize_divide_line_default"/> -->
+    <include
+        android:id="@+id/day_names"
+        layout="@layout/full_month_header"
+        android:visibility="gone"/>
+
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/month_view_height"
+        android:drawSelectorOnTop="false"
+        android:background="@color/calendar_background" >
+    </android.support.v4.view.ViewPager>-->
+    <com.android.calendar.animation.CalendarViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false">
+        <!--android:background="@color/prize_background_white"
+        android:background="@color/calendar_background"
+        android:layout_height="@dimen/month_view_height"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/square_bg_main"-->
+    </com.android.calendar.animation.CalendarViewPager>
+
+
+
+</LinearLayout>

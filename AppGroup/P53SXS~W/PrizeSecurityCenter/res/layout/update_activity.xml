@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#21b5c0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_bg" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sl_update_result"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:background="@android:color/white"
+        android:paddingTop="15dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/content_shower"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#808080"
+            android:textSize="@dimen/smallTxtSize" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_update_result"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/telephone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="13dp" />
+
+            <TextView
+                android:id="@+id/tv_update_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" >
+            </View>
+
+            <TextView
+                android:id="@+id/tv_data_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.55"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+       <!--  <View
+            android:layout_width="@dimen/viruse_divide_width"
+            android:layout_height="@dimen/viruse_divide_height"
+            android:layout_gravity="center"
+            android:theme="@style/viruseDevide" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" /> -->
+
+        <Button
+            android:id="@+id/check_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/update_bt_bg"
+            android:gravity="center"
+            android:text="@string/update_checking"
+            android:textColor="#333333"
+            android:textSize="@dimen/largeTxtSize" />
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/update_bt_bg"
+            android:gravity="center"
+            android:text="@string/update_data"
+            android:textColor="#333333"
+            android:textSize="@dimen/largeTxtSize"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+# view res/layout/main_operation_manual.xml #generated:54
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class com.freeme.operationManual.ui.MainOperationManualActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.freeme.operationManual.ui.ManualItemActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.freeme.operationManual.ui.OperationManualDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.freeme.operationManual.ui.SearchActivity { <init>(...); }
+

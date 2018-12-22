@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">Llamada IP  <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g>  </string>
+    <string name="select_account">"Seleccionar cuenta"</string>
+    <string name="all_accounts">"Todas las cuentas"</string>
+    <string name="call_log_via_sim_name_notice">REGISTROS DE LLAMADAS a través de <xliff:g id="name">%s</xliff:g></string>
+    <string name="imei_invalid">Invalid</string>
+    <string name="conf_call_member_list">Lista de miembros</string>
+    <string name="conf_call_participant_answered">Respondido</string>
+    <string name="conf_call_participant_missed">"Perdidas"</string>
+    <string name="calls_over_wifi">LasllamadasserealizaránatravésdeWi-Fi</string>
+    <string name="connect_to_wifi">Conectarse a Wi-Fi para hacer llamadas</string>
+    <string name="wfc_notification_summary">Pulseaquíparaaccederalaspreferencias</string>
+    <string name="wfc_notification_summary_fail">Pulsar aquí para ver las redes disponibles</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Llamada SIP"</string>
+    <string name="snackbar_number_unblocked_failed">Error al desbloquear <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g></string>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string-array name="overlay_icon_package" translatable="false">
+        <!-- 电话 -->
+        <item>com.android.dialer;com.android.dialer.dialtactsactivity;phone</item>
+        <!-- 通讯录 -->
+        <item>com.android.contacts;com.android.contacts.activities.peopleactivity;contacts</item>
+        <!-- 信息 -->
+        <item>com.android.mms;com.android.mms.ui.bootactivity;sms</item>
+        <!-- 浏览器 
+        <item>com.android.browser;com.android.browser.browseractivity;browser</item>-->
+        <!-- 设置 -->
+        <item>com.android.settings;com.android.settings.settings;settings</item>
+        <!-- 相机 -->
+        <item>com.android.gallery3d;com.android.camera.cameralauncher;camera</item>
+        <!-- 图库 -->
+        <item>com.android.gallery3d;com.android.gallery3d.app.galleryactivity;gallery</item>
+        <!-- 时钟 -->
+        <item>com.android.deskclock;com.android.deskclock.deskclock;clock</item>
+        <!-- 计算器 -->
+        <item>com.android.calculator2;com.android.calculator2.calculator;calculator</item>
+        <!-- 日历 -->
+        <item>com.android.calendar;com.android.calendar.allinoneactivity;calendar</item>
+        <!-- 邮件 -->
+        <item>com.android.email;com.android.email.activity.welcome;email</item>
+        <!-- 音乐 -->
+        <item>com.duomi.android;com.duomi.android.dmlauncher;duomi</item>
+        <!-- 录音机 -->
+        <item>com.android.soundrecorder;com.android.soundrecorder.soundrecorder;record</item>
+        <!-- 视频 -->
+        <!--<item>com.android.gallery3d;com.android.gallery3d.app.videoactivity;video</item>-->
+        <!-- 记事本 -->
+        <item>com.mediatek.notebook;com.mediatek.notebook.noteslist;notepad</item>
+        <!-- 文件管理 -->
+        <item>com.aliyunos.filemanager;com.aliyunos.filemanager.filemanagerappframe;filemanager</item>
+        <!-- 收音机 -->
+        <item>com.mediatek.fmradio;com.mediatek.fmradio.fmradioactivity;fmradio</item>
+        <!-- 手电筒 -->
+        <item>com.devuni.flashlight;com.devuni.flashlight.mainactivity;flashlight</item>
+        <!-- 市场 -->
+        <item>com.release_udz.appstore;com.skymobi.appstore.activity.logoactivity;market</item>
+        <!-- 主题 -->
+        <item>com.prize.prizethemecenter;com.prize.prizethemecenter.activity.initlogoactivity;themes</item>
+        <!-- 天气 -->
+        <item>com.metek.customzqweathertest;com.metek.customzqweather.activity.welcomeactivity;weather</item>
+        <!-- 指南针 -->
+        <item>com.topwise.compass;com.topwise.compass.compass;com.android.quicksearchbox.searchactivity;compass</item>
+        <!-- 搜索 -->
+        <item>com.android.quicksearchbox;com.android.quicksearchbox.searchactivity;search</item>
+        <!-- 下载 -->
+        <item>com.android.documentsui;com.android.documentsui.launcheractivity;download</item>
+        <!-- 手电筒 -->
+        <item>com.prize.flash;com.prize.flash.flashlightmainactivity;light</item>
+        <!-- 音乐 -->
+        <item>com.prize.music;com.prize.music.activities.welcomeactivity;music</item>
+        <!-- 天气 -->
+        <item>com.tianqiwhite;com.tianqiyubao2345.activity.coveryactivity;weather</item>
+        <!-- 桌面美化 -->
+        <item>com.nqmobile.live.base;com.nqmobile.livesdk.commons.ui.storecontrolact;nqmobile</item>
+        <!-- 指南针 -->
+        <item>com.android.compass;com.android.compass.compassactivity;compass</item>
+        <!-- 一键锁屏 -->
+        <item>com.prize.lockscreen;com.prize.lockscreen.controlactivity;locker</item>
+        <!-- sim 应用 -->
+        <item>com.android.stk;com.android.stk.stkmain;SIMToolkit</item>
+        <!-- 文件管理 -->
+        <item>com.mediatek.filemanager;com.mediatek.filemanager.main.mainactivity;folder</item>
+        <!-- 随手便签 -->
+        <item>com.android.notepad;com.android.notepad.notepadactivity;Memo</item>
+        <!-- 天气 -->
+        <item>com.prize.weather;com.prize.weather.weatherhomeactivity;weather</item>
+        <!-- 安全中心 -->
+        <item>com.pr.scuritycenter;com.pr.scuritycenter.activity.mainactivity;mobilesafe</item>
+        <!-- 安全中心 -->
+        <item>com.pr.scuritycenter;com.pr.scuritycenter.mainactivity;mobilesafe</item>
+        <!-- 遥控精灵 -->
+        <item>com.assistant.icontrol;com.tiqiaa.icontrol.welcomeactivity;icontrol</item>
+        <!-- 应用市场 -->
+        <item>com.prize.appcenter;com.prize.appcenter.playplusclientactivity;androidMarket</item>
+        <!-- 电子保卡 -->
+        <!-- UIM-->
+        <item>com.android.utk;com.android.utk.utklauncheractivity;uim</item>
+        <!-- 收音机 -->
+        <item>com.android.fmradio;com.android.fmradio.fmmainactivity;fmradio</item>
+        <!-- 指纹 -->
+        <item>com.silead.fp;com.prize.activity.mainactivity;fingerLock;fingerLock</item>
+        <!-- 酷比中心 -->
+        <item>com.koobee.koobeecenter02;com.koobee.koobeecenter.mainactivity;koobee</item>
+         <!-- 指纹 -->
+        <item>com.goodix.fpsetting;com.goodix.fpsetting.mainactivity;fingerLock</item>
+        <!-- 指纹 -->
+        <item>com.android.settings;com.android.settings.securitysettings;fingerLock</item>
+        <!-- 指纹 -->
+        <item>com.cdfinger;com.cdfinger.activity.mainactivity;fingerLock</item>
+        <!-- 指纹 -->
+        <item>ma.fprint;com.prize.activity.mainactivity;fingerLock</item>
+        <!-- 音乐 -->
+        <item>com.prize.music;com.prize.music.activities.mainactivity;music</item>
+         <!-- 指南针 -->
+        <item>com.prize.compass;com.prize.compass.compassactivity;compass</item>
+         <!-- 相机 -->
+        <item>com.mediatek.camera;com.android.camera.cameralauncher;camera</item>
+        <!-- 信息 -->
+        <item>com.android.mms;com.android.mms.ui.conversationlist;sms</item>
+        <!-- 信息 -->
+        <item>com.android.mms;com.android.mms.ui.bootactivity;sms</item>
+        <!-- 相机 -->
+        <item>com.mediatek.camera;com.android.camera.cameraactivity;camera</item>
+        <!-- 相机 -->
+        <item>com.android.gallery3d;com.android.camera.cameraactivity;camera</item>
+        <!-- 邮件 -->
+        <item>com.android.email;com.android.email2.ui.mailactivityemail;email</item>
+        <!-- sim 应用 -->
+        <item>com.android.stk;com.android.stk.stkmenuactivity;SIMToolkit</item>
+        <!-- 视频 -->
+        <!-- <item>com.prize.videoc;com.prize.videoc.localactivity;video</item> -->
+         <!-- 主题商店 -->
+		 <item>com.prize.prizethemecenter;com.snowfish.cn.ganga.offline.helper.sfgamesplashactivity;themes</item>
+         <!-- 视频-->
+		 <item>com.tencent.qqlive;com.tencent.qqlive.ona.activity.welcomeactivity;video</item>
+         <!-- 浏览器-->
+		 <item>sogou.mobile.explorer.koobee;sogou.mobile.explorer.nodisplayactivity;sougoubrowser</item>
+        <!-- qq分身 -->
+        <item>com.tencent.mobileqq;com.tencent.mobileqq.activity.splashactivitys;qq1</item>
+        <!-- 微信分身 -->
+        <item>com.tencent.mm;com.tencent.mm.ui.launcheruis;wechat2</item>
+	        <!-- qq -->
+        <item>com.tencent.mobileqq;com.tencent.mobileqq.activity.splashactivity;qq</item>
+        <!-- 微信 -->
+        <item>com.tencent.mm;com.tencent.mm.ui.launcherui;wechat</item>
+        <!-- 浏览器 -->
+        <item>com.prize.browser;com.prize.browser.main.splash.splashactivity;browser</item>
+        <!-- 游戏中心 -->
+        <item>com.prize.gamecenter;com.prize.gamecenter.activity.welcomactivity;game</item>
+        <!-- 提示 -->
+        <item>com.prize.prizenavigation;com.prize.prizenavigation.mainactivity;tips</item>
+		<!--网易邮箱大师-->
+
+		<item>com.netease.mail;com.netease.mobimail.activity.launchactivity;163mail</item>
+		
+
+    </string-array>
+
+</resources>

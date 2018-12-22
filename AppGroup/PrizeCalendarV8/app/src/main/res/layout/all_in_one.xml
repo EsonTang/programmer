@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pain_bg">
+
+    <!--<RelativeLayout
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_agenda_item_meeting_h"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        &lt;!&ndash; <ImageView
+            android:id="@+id/prize_create_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:src="@drawable/prize_button_create_event" /> &ndash;&gt;
+    </RelativeLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_month_title" />
+
+        <include
+            layout="@layout/full_month_header" />
+        <!--android:id="@+id/day_names"-->
+    </LinearLayout>
+
+    <com.android.calendar.animation.CalendarRelativeLayout
+        android:id="@+id/calendar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:layout_marginLeft="@dimen/prize_pane_margin"
+        android:layout_marginRight="@dimen/prize_pane_margin"
+        android:orientation="vertical"
+        android:background="@color/event_info_content_color">
+
+        <TextView
+            android:id="@+id/home_time"
+            android:layout_width="match_parent"
+            android:layout_height="16dip"
+            android:background="@color/calendar_date_banner_background"
+            android:gravity="center_vertical|right"
+            android:paddingRight="8dip"
+            android:textSize="12sp"
+            android:visibility="gone" />
+            <com.android.calendar.animation.MainLinearLayout
+                android:id="@+id/main_pane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_bg_main"/>
+        <!--android:background="@drawable/square_bg_main"
+                android:background="@color/event_info_content_color"-->
+
+        <LinearLayout
+            android:id="@+id/secondary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--android:layout_height="@dimen/prize_listview_month_height"
+            android:layout_height="@dimen/prize_listview_month_height_new"-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/square_bg_bottom"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_pane_marginTop"
+                android:background="@color/pain_bg"/>
+            <FrameLayout
+                android:id="@+id/secondary_pane"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/square_bg"/>
+            <!--android:background="@drawable/square_bg"-->
+        </LinearLayout>
+
+        </com.android.calendar.animation.CalendarRelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_preferences_bg_height2_double"
+        android:layout_alignParentBottom="true"
+        android:background="@color/event_info_title_bg"
+        android:orientation="horizontal"
+        android:paddingTop="1px"
+        android:weightSum="3"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/new_agenda"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/new_agenda_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/new_aganda_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/new_agenda_iv"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/new_agenda"
+                    android:textColor="@color/prize_black_3"
+                    android:textSize="@dimen/prize_nav_title" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/go_to_today"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/go_to_today_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/to_today_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/go_to_today_iv"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/goto_today"
+                    android:textColor="@color/prize_black_3"
+                    android:textSize="@dimen/prize_nav_title" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/get_more"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/get_more_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/get_more_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/get_more_iv"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/get_more"
+                    android:textColor="@color/prize_black_3"
+                    android:textSize="@dimen/prize_nav_title" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@id/bottom_nav"
+        android:background="@drawable/prizenavigationbar_lines"/>
+    <!--android:background="@drawable/prizenavigationbar_lines"-->
+    <!-- The views after this are retained to prevent crashes.
+        TODO: Remove if the app can handle them not being there. -->
+    <View
+        android:id="@+id/mini_month_container"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/mini_month"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/calendar_list"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:visibility="gone"/>
+    <!--</FrameLayout>-->
+</RelativeLayout>

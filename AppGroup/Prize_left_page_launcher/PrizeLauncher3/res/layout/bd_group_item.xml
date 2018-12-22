@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/group_item"
+    android:background="@drawable/left_item_click_selector"
+    android:paddingTop="@dimen/news_item_vertical_pad"
+    >
+    
+    <ImageView android:contentDescription="@null"
+        android:id="@+id/img_left"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/news_item_img_end"
+        style="@style/food_left_img_style"
+        android:src="@color/white_64"
+        android:scaleType="fitXY"
+        />
+    
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/dp_16"
+        android:layout_toEndOf="@id/img_left"
+        android:id="@+id/title_lay"
+        >
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:singleLine="true"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/txt_name"
+	        style="@style/news_title_style"
+	        />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:singleLine="true"
+	        android:layout_height="match_parent"
+	        android:id="@+id/txt_distance"
+	        style="@style/foods_describ_style"
+	        android:gravity="center_vertical"
+	        />
+    </TableRow>
+    
+    <TextView android:layout_toEndOf="@id/img_left"
+        android:layout_below="@id/title_lay"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_substract"
+        android:paddingRight="@dimen/dp_16"
+        style="@style/foods_describ_style"
+        />
+    
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/dp_16"
+        android:layout_toEndOf="@id/img_left"
+        android:layout_below="@+id/txt_substract"
+        android:id="@+id/other_lay"
+        android:layout_alignBottom="@id/img_left"
+        >
+	    <TextView android:layout_width="wrap_content"
+	        android:singleLine="true"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/txt_current_price"
+	        style="@style/left_groupon_curr_price_style"
+	        android:gravity="bottom"
+	        />
+	    
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:singleLine="true"
+	        android:layout_height="match_parent"
+	        android:id="@+id/txt_market_price"
+	        style="@style/left_groupon_market_price_style"
+	        android:gravity="bottom"
+	        android:layout_marginLeft="8dp"
+	        />
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:singleLine="true"
+	        android:layout_height="match_parent"
+	        android:id="@+id/txt_score"
+	        style="@style/foods_describ_style"
+	        android:gravity="bottom"
+	        />
+    </TableRow>
+    
+	<View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"
+        android:layout_marginTop="@dimen/news_item_vertical_pad"
+        android:layout_below="@id/img_left"
+        android:id="@+id/bottom_line"
+        />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:oneshot="false">
+    <item android:drawable="@drawable/move_yangsha_45"  android:duration="150"></item>
+    <item android:drawable="@drawable/move_yangsha_46"  android:duration="150"></item>
+    <item android:drawable="@drawable/move_yangsha_47"  android:duration="150"></item>
+    <item android:drawable="@drawable/move_yangsha_48"  android:duration="150"></item>
+    <item android:drawable="@drawable/move_yangsha_49"  android:duration="150"></item>
+    <item android:drawable="@drawable/move_yangsha_50"  android:duration="150"></item>
+</animation-list>

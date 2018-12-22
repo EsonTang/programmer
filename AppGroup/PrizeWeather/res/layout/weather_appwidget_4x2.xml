@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- 2015.7.18  - begin -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextClock
+                android:id="@+id/the_clock"
+                style="@style/widget_big_thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-16dp"
+                android:layout_weight="1"
+                android:format12Hour="@string/main_widget_12_hours_format"
+                android:format24Hour="@string/clock_24_hours_format" />
+
+            <TextClock
+                style="@style/widget_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:format12Hour="a"
+                android:format24Hour=""
+                android:textSize="@dimen/small_textsize" />
+        </LinearLayout>
+
+        <TextClock
+            android:id="@+id/date"
+            style="@style/widget_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="@string/full_wday_month_day_no_year"
+            android:format24Hour="@string/full_wday_month_day_no_year"
+            android:gravity="center"
+            android:paddingLeft="10dp" />
+        <!-- 2015.7.20  - end -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weather_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_widget_weathweicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/weather_widget_clear_to_overcast" />
+
+            <ImageButton
+                android:id="@+id/ib_widget_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ib_widget_refresh"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_widget_weathwetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/widget_label"
+                android:textSize="@dimen/widget_temp_textsize" />
+
+            <TextView
+                android:id="@+id/tv_widget_weatherdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:maxEms="4"
+                android:singleLine="true"
+                android:theme="@style/widget_label"
+                android:textSize="@dimen/widget_temp_textsize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/city_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/widget_label" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/set_title" />
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_small"
+        android:text="@string/wifi_select"
+        android:textColor="@color/disable"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="-21dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/content_lsw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_waiting_for_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/waiting_for_wifi_hint"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="@dimen/btn_continue_lenght"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginBottom="@dimen/btn_v_padding"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/skip_normal"
+        android:textColor="@color/btn_continue_color"
+        android:textSize="@dimen/textsize_next"/>
+        <!-- android:background="@drawable/btn_continue_selector" -->
+
+</LinearLayout>

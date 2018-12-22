@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <item android:state_checked="false" android:drawable="@drawable/power_master_checkbox_unchecked"/>
+    <item android:state_checked="true" android:drawable="@drawable/power_master_checkbox_checked" />
+    -->
+    <item android:drawable="@drawable/power_master_checkbox_unchecked" android:state_checked="false"/>
+    <item android:drawable="@drawable/power_master_checkbox_checked" android:state_checked="true"/>
+    <item android:drawable="@drawable/power_master_checkbox_unchecked"/>
+
+</selector>

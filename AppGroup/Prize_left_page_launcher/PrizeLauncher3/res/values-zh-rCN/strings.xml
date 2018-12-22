@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+ --><resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ 	<!-- prize-uninstall-xiaxuefeng-2015-8-3-start -->
+    <string name="uninstall_success">"卸载成功"</string>
+    <string name="uninstall_failed">"卸载失败"</string>
+    <!-- prize-uninstall-xiaxuefeng-2015-8-3-end -->
+    <string name="application_name" msgid="5181331383435256801">"dido launcher"</string>
+    <string name="home" msgid="7658288663002113681">"主屏幕"</string>
+    <string name="uid_name" msgid="7820867637514617527">"Android 核心应用"</string>
+    <!-- PRIZE-default_name-xiaxuefeng-2015-7-2-start -->
+    <!-- <string name="folder_name" msgid="7371454440695724752"></string> -->
+    <string name="folder_name" msgid="7371454440695724752">"文件夹"</string>
+    <!-- PRIZE-default_name-xiaxuefeng-2015-7-2-end -->
+    <string name="wallpaper_instructions" msgid="563973358787555519">"设置壁纸"</string>
+  <plurals name="number_of_items_selected">
+    <item quantity="zero" msgid="7464587177007785408">"已选择%1$d项"</item>
+    <item quantity="one" msgid="142482526010824029">"已选择%1$d项"</item>
+    <item quantity="other" msgid="1418352074806573570">"已选择%1$d项"</item>
+  </plurals>
+    <string name="wallpaper_accessibility_name" msgid="1655953108132967972">"第%1$d张壁纸，共%2$d张"</string>
+    <string name="announce_selection" msgid="8338254712932127413">"已选择<xliff:g id="LABEL">%1$s</xliff:g>"</string>
+    <string name="wallpaper_delete" msgid="8095005658756613921">"删除"</string>
+    <string name="pick_image" msgid="1272073934062909527">"选择图片"</string>
+    <string name="pick_wallpaper" msgid="8179698221502010609">"壁纸"</string>
+    <string name="crop_wallpaper" msgid="8334345984491368009">"剪裁壁纸"</string>
+    <string name="activity_not_found" msgid="8071924732094499514">"未安装该应用。"</string>
+    <string name="widgets_tab_label" msgid="2921133187116603919">"小部件"</string>
+    <string name="widget_adder" msgid="3201040140710381657">"小部件"</string>
+    <string name="toggle_weight_watcher" msgid="5645299835184636119">"显示内存空间"</string>
+    <string name="long_press_widget_to_add" msgid="7699152356777458215">"触摸并按住可选取小部件。"</string>
+    <string name="market" msgid="2619650989819296998">"购买"</string>
+    <string name="widget_dims_format" msgid="2370757736025621599">"%1$d × %2$d"</string>
+    <string name="external_drop_widget_error" msgid="3165821058322217155">"无法将相关内容拖放到此主屏幕上。"</string>
+    <string name="external_drop_widget_pick_title" msgid="3486317258037690630">"选择要创建的小部件"</string>
+    <string name="rename_folder_label" msgid="3727762225964550653">"文件夹名称"</string>
+    <string name="rename_folder_title" msgid="3771389277707820891">"重命名文件夹"</string>
+    <string name="rename_action" msgid="5559600076028658757">"确定"</string>
+    <string name="cancel_action" msgid="7009134900002915310">"取消"</string>
+    <string name="menu_item_add_item" msgid="1264911265836810421">"添加到主屏幕"</string>
+    <string name="group_applications" msgid="3797214114206693605">"应用"</string>
+    <string name="group_shortcuts" msgid="6012256992764410535">"快捷方式"</string>
+    <string name="group_widgets" msgid="1569030723286851002">"小部件"</string>
+    <string name="completely_out_of_space" msgid="6106288382070760318">"您的主屏幕上没有空间了。"</string>
+    <string name="out_of_space" msgid="4691004494942118364">"此主屏幕上已没有空间。"</string>
+    <string name="hotseat_out_of_space" msgid="9139760413395605841">"底部区域已无空间。"</string>
+    <string name="invalid_hotseat_item" msgid="1211534262129849507">"该小部件太大，超出基座区域可用空间。"</string>
+    <string name="shortcut_installed" msgid="1701742129426969556">"已创建“<xliff:g id="NAME">%s</xliff:g>”快捷方式。"</string>
+    <string name="shortcut_uninstalled" msgid="8176767991305701821">"已删除“<xliff:g id="NAME">%s</xliff:g>”快捷方式。"</string>
+    <string name="shortcut_duplicate" msgid="9167217446062498127">"“<xliff:g id="NAME">%s</xliff:g>”快捷方式已存在。"</string>
+    <string name="title_select_shortcut" msgid="6680642571148153868">"选择快捷方式"</string>
+    <string name="title_select_application" msgid="3280812711670683644">"选择应用"</string>
+    <string name="all_apps_button_label" msgid="9110807029020582876">"应用"</string>
+    <string name="all_apps_home_button_label" msgid="252062713717058851">"主屏幕"</string>
+    <string name="delete_zone_label_workspace" msgid="4009607676751398685">"删除"</string>
+    <string name="delete_zone_label_all_apps" msgid="8083826390278958980">"卸载"</string>
+    <string name="delete_target_label" msgid="1822697352535677073">"删除"</string>
+    <string name="delete_target_uninstall_label" msgid="5100785476250872595">"卸载"</string>
+    <string name="info_target_label" msgid="8053346143994679532">"应用信息"</string>
+    <string name="accessibility_search_button" msgid="1628520399424565142">"搜索"</string>
+    <string name="accessibility_voice_search_button" msgid="4637324840434406584">"语音搜索"</string>
+    <string name="accessibility_all_apps_button" msgid="2603132375383800483">"应用"</string>
+    <string name="accessibility_delete_button" msgid="6466114477993744621">"删除"</string>
+    <string name="delete_zone_label_all_apps_system_app" msgid="449755632749610895">"卸载更新"</string>
+    <string name="cab_menu_delete_app" msgid="7435191475867183689">"卸载该应用"</string>
+    <string name="cab_menu_app_info" msgid="8593722221450362342">"应用详情"</string>
+    <string name="cab_app_selection_text" msgid="374688303047985416">"选中了 1 个应用"</string>
+    <string name="cab_widget_selection_text" msgid="1833458597831541241">"已选中 1 个小部件"</string>
+    <string name="cab_folder_selection_text" msgid="7999992513806132118">"已选中 1 个文件夹"</string>
+    <string name="cab_shortcut_selection_text" msgid="2103811025667946450">"已选中 1 个快捷方式"</string>
+    <string name="permlab_install_shortcut" msgid="5632423390354674437">"安装快捷方式"</string>
+    <string name="permdesc_install_shortcut" msgid="923466509822011139">"允许应用自行添加快捷方式。"</string>
+    <string name="permlab_uninstall_shortcut" msgid="864595034498083837">"卸载快捷方式"</string>
+    <string name="permdesc_uninstall_shortcut" msgid="5134129545001836849">"允许应用自行删除快捷方式，而无需用户干预。"</string>
+    <string name="permlab_read_settings" msgid="1941457408239617576">"读取主屏幕的设置和快捷方式"</string>
+    <string name="permdesc_read_settings" msgid="5833423719057558387">"允许应用读取主屏幕中的设置和快捷方式。"</string>
+    <string name="permlab_write_settings" msgid="3574213698004620587">"写入主屏幕的设置和快捷方式"</string>
+    <string name="permdesc_write_settings" msgid="5440712911516509985">"允许应用更改主屏幕中的设置和快捷方式。"</string>
+    <string name="gadget_error_text" msgid="6081085226050792095">"加载小部件时出现问题"</string>
+    <string name="uninstall_system_app_text" msgid="4172046090762920660">"这是系统应用，无法卸载。"</string>
+    <string name="dream_name" msgid="1530253749244328964">"Rocket Launcher"</string>
+    <string name="folder_hint_text" msgid="6617836969016293992">"未命名文件夹"</string>
+    <string name="workspace_description_format" msgid="2950174241104043327">"主屏幕 %1$d"</string>
+    <string name="default_scroll_format" msgid="7475544710230993317">"第 %1$d 页，共 %2$d 页"</string>
+    <string name="workspace_scroll_format" msgid="8458889198184077399">"主屏幕 %1$d（共 %2$d 个）"</string>
+    <string name="apps_customize_apps_scroll_format" msgid="370005296147130238">"应用：第 %1$d 页，共 %2$d 页"</string>
+    <string name="apps_customize_widgets_scroll_format" msgid="3106209519974971521">"小部件：第 %1$d 页，共 %2$d 页"</string>
+    <string name="first_run_cling_title" msgid="7257389003637362144">"欢迎！"</string>
+    <string name="first_run_cling_description" msgid="6447072552696253358">"您的主屏幕您做主。"</string>
+    <string name="first_run_cling_custom_content_hint" msgid="6090628589029352439"/>
+    <string name="first_run_cling_search_bar_hint" msgid="5909062802402452582"/>
+    <string name="first_run_cling_create_screens_hint" msgid="6950729526680114157">"添加更多屏幕来容纳应用和文件夹"</string>
+    <string name="workspace_cling_title" msgid="5626202359865825661">"整理您的空间"</string>
+    <string name="workspace_cling_move_item" msgid="528201129978005352">"触摸并按住背景，即可管理壁纸、小部件和设置。"</string>
+    <string name="all_apps_cling_title" msgid="34929250753095858">"选择一些应用"</string>
+    <string name="all_apps_cling_add_item" msgid="400866858451850784">"要将某个应用添加到主屏幕，请触摸并按住该应用。"</string>
+    <string name="folder_cling_title" msgid="3894908818693254164">"这是一个文件夹"</string>
+    <string name="folder_cling_create_folder" msgid="6158215559475836131">"要创建一个类似的文件夹，请触摸并按住某个应用，然后将其移至另一个应用上。"</string>
+    <string name="cling_dismiss" msgid="8962359497601507581">"确定"</string>
+    <string name="folder_opened" msgid="94695026776264709">"文件夹已打开，尺寸为 <xliff:g id="WIDTH">%1$d</xliff:g> × <xliff:g id="HEIGHT">%2$d</xliff:g>"</string>
+    <string name="folder_tap_to_close" msgid="1884479294466410023">"触摸可关闭文件夹"</string>
+    <string name="folder_tap_to_rename" msgid="9191075570492871147">"触摸可保存重命名"</string>
+    <string name="folder_closed" msgid="4100806530910930934">"文件夹已关闭"</string>
+    <string name="folder_renamed" msgid="1794088362165669656">"已将文件夹重命名为“<xliff:g id="NAME">%1$s</xliff:g>”"</string>
+    <string name="folder_name_format" msgid="6629239338071103179">"文件夹：<xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="custom_workspace_cling_title_1" msgid="3750880082935033085"/>
+    <string name="custom_workspace_cling_description_1" msgid="939966842147696724"/>
+    <string name="custom_workspace_cling_title_2" msgid="662588444436552198"/>
+    <string name="custom_workspace_cling_description_2" msgid="8097921091798539310"/>
+    <string name="widget_button_text" msgid="2880537293434387943">"插件"</string>
+    <string name="wallpaper_button_text" msgid="8404103075899945851">"壁纸"</string>
+    <string name="settings_button_text" msgid="8119458837558863227">"设置"</string>
+    <string name="themeset_button_text">"主题"</string>
+    <string name="theme_is_change">"             正在切换主题                          "</string>
+    <string name="themeshow_button_text">"特效"</string>
+    <string name="def">"默认"</string>
+    <string name="swirl">"旋风"</string>
+    <string name="rotateY">"Y轴旋转"</string>
+    <string name="rotateX">"X轴旋转"</string>
+    <string name="fadeout">"淡出"</string>
+    <string name="random">"随机"</string>
+    <string name="oppo">"青春时尚"</string>
+    <string name="more">"更多"</string>
+    <string name="easy_launcher"> " 简易桌面" </string>
+    <string name="huawei">"中国风"</string>
+    <string name="apple">"苹果优雅"</string>
+    <string name="moxiu">"魔幻小米"</string>
+    <string name="default_theme">"默认"</string>
+    <string name="effects">"特效"</string>
+    <string name="apps_animation">"动画"</string>
+    
+     <string name="Layout_5">"5x4"</string>
+    <string name="Layout_4">"4x4"</string>
+        <string name="normals">"标准"</string>
+    <string name="stack">"波浪"</string>
+    <string name="page">"翻转"</string>
+    <string name="zoom_in">"淡入"</string>
+    <string name="cube_out">"盒子(外)"</string>
+    <string name="carousel_l">"旋转木马(左)"</string>
+    <string name="carousel_r">"旋转木马(右)"</string>
+    <string name="windmill">"大风车"</string>
+    <string name="uninstall_reminder">"卸载后所有的数据也将被删除"</string>
+    <string name="shake_reminder">"摇一摇可自动对齐图标"</string>
+     <!-- Values for Launcher特效-->
+    <string-array name="zyc_theme_effects">
+        <!-- 普通 仿三星 -->
+        <item>默认</item>
+        <!--大风车 -->
+        <item>大风车</item>
+        <!-- 滚来滚去 -->
+        <item>翻来滚去</item>
+        <!-- 立方体 -->
+    </string-array>    
+	
+    <string name="folder_name_tools" msgid="2758258454975288387">"小工具"</string>
+    <string name="folder_name_music" msgid="2758258454975288385">"影音"</string>
+    <string name="folder_name_network" msgid="2758258454975288384">"网络"</string>
+    <string name="folder_name_games" msgid="2758258454975288386">"游戏"</string>
+    <string name="menu_manage_apps">管理应用</string>
+    <string name="disband">解散</string>
+    <string name="launcher_settings">"桌面设置"</string>
+    <string name="set_cycle_slide">循环</string>
+    <string name="set_folder_effect">文件夹特效</string>
+    <string name="folder_name_toast">文件名已经达到最大长度</string>
+
+    <string-array name="set_folder_effect_entries">
+        <item>玻璃效果</item>
+        <item>金典效果</item>
+    </string-array>
+    <string-array name="set_folder_effect_entries_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="set_folder_effect_summary">此选项可以选择文件夹的展示效果</string>
+       <!-- xieweiwei_20150309_add_begin -->
+    <string name="low_battery_for_finish">电量低，打开失败</string>
+    <!-- xieweiwei_20150309_add_end -->
+    
+    <string name="dialog_loading">正在加载，请等待</string>
+    <string name="search_hint">搜索应用，联系人，短信…</string>
+    <string name="recent">近期任务</string>
+    <string name="contacts">联系人</string>
+    <string name="mms">短信</string>
+    <string name="notes">便签</string>
+    <string name="apps">应用</string>
+    <string name="music">音乐</string>
+    <string name="internet">互联网搜索</string>
+    <string name="usb_owned">USB被占有，主题还原</string>
+    
+    <string name="alignment">整理</string>
+    <string name="alignment_up">向上对齐</string>
+    <string name="batch_edit_icon">批量编辑图标</string>
+    <string name="alignment_down">向下对齐</string>
+    <string name="gallery">图库</string>
+    <string name="str_tool">"工具箱"</string>
+    <string name="RecommendedApp">"推荐应用"</string>
+    <string name="news">"资讯阅读"</string>
+    <string name="game">"游戏娱乐"</string>
+    
+    <!-- simple launcher start -->
+    <string name="prize_lunar_fest_chunjie">春节</string>
+    <string name="prize_lunar_fest_duanwu">端午节</string>
+    <string name="prize_lunar_fest_zhongqiu">中秋节</string>
+    <string name="prize_lunar_fest_yuandan">元旦</string>
+    <string name="prize_lunar_fest_laodong">劳动节</string>
+    <string name="prize_lunar_fest_guoqing">国庆节</string>
+    <string name="prize_lunar_fest_yuanxiao">元宵节</string>
+    <string name="prize_lunar_fest_qixi">七夕</string>
+    <string name="prize_lunar_fest_chongyang">重阳节</string>
+    <string name="prize_lunar_fest_qingnian">青年节</string>
+    <string name="prize_lunar_fest_qingren">情人节</string>
+    <string name="prize_lunar_fest_funv">妇女节</string>
+    <string name="prize_lunar_fest_zhishu">植树节</string>
+    <string name="prize_lunar_fest_yuren">愚人节</string>
+    <string name="prize_lunar_fest_ertong">儿童节</string>
+    <string name="prize_lunar_fest_jiandang">建党节</string>
+    <string name="prize_lunar_fest_jianjun">建军节</string>
+    <string name="prize_lunar_fest_jiaoshi">教师节</string>
+    <string name="prize_lunar_fest_shengdan">圣诞节</string>
+    
+    <string name="prize_tc_lunar_fest_chunjie">春节</string>
+    <string name="prize_tc_lunar_fest_duanwu">端午节</string>
+    <string name="prize_tc_lunar_fest_zhongqiu">中秋节</string>
+    
+    <string name="prize_lunar_hours">时</string>
+    <string name="prize_lunar_minuts">分</string>
+    
+    <!-- simple launcher end -->
+    <string name="simple_add_contact">"添加联系人"</string>
+    <string name="simple_lu_year_date">"%1$s年     %2$s"</string>
+    
+    <string name="simple_all_app">"所有应用"</string>
+    <string name="simple_settings">"设置"</string>
+    <string name="simple_sys_settings">"系统设置"</string>
+    <string name="simple_desk_manager">"桌面管理"</string>
+    <string name="simple_exit_desk">"退出桌面"</string>
+    <string name="simple_safe_lock">"安心锁"</string>
+    <string name="simple_safe_lock_hint">"安心锁锁住后，用户无法改变桌面内容及软件设置，可以安心使用．"</string>
+    <string name="simple_locked">"已锁住"</string>
+    <string name="simple_unlock">"未锁住"</string>
+    
+    
+    <!-- left page start fanjunchen -->
+    <string name="web_error">"哎呀，网络出错了！"</string>
+    <string name="web_error_reason">"可能的原因有：\n无法连接网络\n该页面不存在或出现故障"</string>
+    <string name="web_reload">"刷新页面"</string>
+    <string name="set_network">"设置网络"</string>
+    <string name="loading">"加载中&#8230;"</string>
+    
+    <string name="str_manager_card">"管理卡片"</string>
+    <string name="str_normal_set_add">"常用位置设定"</string>
+    <string name="str_version_check">"版本更新"</string>
+    <string name="str_local_version">"当前版本"</string>
+    <string name="str_feedback">"意见反馈"</string>
+    <string name="str_no_img">"无图模式"</string>
+
+    <string name="str_loc_ing">"定位中&#8230;"</string>
+    <string name="str_loc_fail">"定位失败!"</string>
+    <string name="str_loc_fail_nonet">"定位失败，请打开网络！"</string>
+    <string name="str_search_hint">"搜你想搜"</string>
+    
+    <string name="str_more">"更多"</string>
+    
+    <string name="str_expand">"展开"</string>
+    <string name="str_unexpand">"收起"</string>
+    
+    <string name="feedback_content">问题描述</string>
+    <string name="pls_input_feedback">请详细描述你遇到的问题</string>
+    <string name="fedbck_contact_tip">反馈附图(可填)</string>
+    <string name="send_fedbck_tip">感谢您的意见和建议，内容已发送~</string>
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_msg_empty">请输入您的建议或者疑问</string>
+    <string name="feedback_send">提交</string>
+    <string name="nonet_connect">暂无网络连接</string>
+    <string name="questing">请求中,请不要重复操作</string>
+    <string name="committing">提交中&#8230;</string>
+    
+    <string name="str_complete">"完成"</string>
+    
+    <string name="str_home">"家里"</string>
+    <string name="str_company">"公司"</string>
+    
+    <string name="str_fill_home">"请填写家里地址!"</string>
+    <string name="str_fill_company">"请填写公司地址!"</string>
+    
+    <string name="str_search">"搜索"</string>
+    
+    <string name="str_search_net">"搜索网页"</string>
+    
+    <string name="str_recent_contact">"最近联系人"</string>
+    <string name="str_contact">"联系人"</string>
+    
+    <string name="str_used_app">"常用应用"</string>
+    <string name="str_app">"应用"</string>
+    
+    <string name="str_channel">"频道"</string>
+    <string name="str_add_channel">"添加/取消 频道"</string>
+    
+    <string name="click_update_to_install">安装包已经准备好了</string>
+    <string name="current_net_is_nowifi">当前为移动数据流量,建议切换至WIFI环境更新！</string>
+    <string name="after_do">以后再说</string>
+    <string name="now_update">立即更新</string>
+      <string name="new_version">新版本上线了</string>
+    <string name="update_remind">记得及时更新升级哦~</string>
+    <string name="net_error">网络错误，请检查网络</string>
+    <string name="new_version_name">→   %1$s</string>
+    <string name="str_new">"New"</string>
+    <string name="str_add_card">"添加卡片"</string>
+    <string name="str_drag_hint">"按住右边可拖动排序"</string>
+    <string name="str_navi_building">"建设中,敬请期待!"</string>
+    <string name="str_no_update">"暂无版本更新!"</string>
+    <string name="str_left_login">"登录"</string>
+      <!--   <string name="wechat_clone">"WeChat Clone"</string>
+        <string name="qq_clone">"QQ Clone"</string>
+        <string name="weibo_clone">"Weibo Clone"</string> -->
+        <string name="wechat_clone">"微信分身"</string>
+        <string name="qq_clone">"QQ分身"</string>
+        <string name="weibo_clone">"微博分身"</string>
+	<string name="reason_class">"问题类型(必填)"</string>
+   <string name="pls_select_reason_class">"请选择您的问题类型"</string>
+   <string name="contact_hint">"您的联系方式:邮箱/QQ/手机号(选填)"</string>
+   
+   <string name="title_feed3">"用起来卡,容易崩溃"</string>
+    <string name="title_feed4">"搜索问题"</string>
+    <string name="title_feed5">"其他"</string>
+    <string name="title_feed6">"新功能建议"</string>
+    
+    <string name="sub_title_feed4">"操作的时候卡\,不流畅,应用市场崩溃了,长时间出现白屏"</string>
+    <string name="sub_title_feed5">"找不到想要的结果,想要的结果排在了后面,出现了相同的结果无法选择,搜索结果慢,其他搜索问题"</string>
+    <string name="sub_title_feed6">"无法退出\,总是在后台运行,连不上网\,加载不了,控件清理遇到问题"</string>
+    <string name="pl_select_class">请选择反馈类型</string>
+    <string name="str_ok">确认</string>
+    <string name="tip">提示</string>
+    <string name="caution_content">您已编辑，是否舍弃本条反馈？</string>
+    
+    <string name="str_recent_use">常用</string>
+    
+    <string name="str_del_from">移除</string>
+    <string name="str_add_to">添加</string>
+    <string name="str_added_hint_title">"已经添加至首页"</string>
+    <string name="app_recommend">"应用推荐"</string>
+    <string name="reader">"阅读资讯"</string>
+    <string name="video">"影音天地"</string>
+    <string name="video_reader">"影音.阅读"</string>
+    
+     <string name="wallpaper_dlg_title">壁纸应用为</string>
+    <string-array name="applytype">
+        <item>锁屏</item>
+        <item>桌面</item>
+        <item>同时应用</item>
+    </string-array>
+     <string name="str_left_account">"账号"</string>
+     <string name="str_left_no_login">"账号未登录"</string>
+     <string name="update_information">"桌面有最新版本，请更新"</string>
+   
+    <!-- left page end  -->
+    
+    
+    <!-- 下载 -->
+    
+    <string name="installing">安装中</string>
+        <string name="waiting">"等待中"</string>
+        <string name="downloading">"下载中"</string>
+        <string name="pause">"暂停"</string>
+        <string name="like">"猜你喜欢"</string>
+        <string name="empty">"该页暂无数据"</string>
+    <string name="toast_tip_download_only_wifi">当前处于2G/3G/4G网络，下载将耗费流量,是否继续下载 ？</string>
+    <!--  下载-->
+</resources>

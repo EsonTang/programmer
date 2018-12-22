@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.prize.appcenter"
+    android:versionCode="32"
+    android:versionName="3.3.1.release"
+    tools:ignore="ProtectedPermissions">
+
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <!-- oumeng shareSDK permission -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <!-- 【必须】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 360清理新增权限 -->
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+
+
+    <!-- 数据升级依赖的权限 -->
+    <permission android:name="com.qihoo.antivirus.update.permission.clear_sdk_7000098" />
+
+    <uses-permission android:name="com.qihoo.antivirus.update.permission.clear_sdk_7000098" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.prize.appcenter.MainApplication"
+        android:allowBackup="true"
+        android:icon="${APP_ICON}"
+        android:label="${APP_NAME}"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="561c648167e58eb165000906" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 请将value改为MTA分配的appkey < -->
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="AYB4VFH8I87H" />
+        <!-- 请将value改为app发布对应的MTA渠道，不同的发布渠道使用不同的名字 < -->
+        <meta-data
+            android:name="InstallChannel"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <!-- 百度地图开发者申请的Key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="${BAIDU_AK_VALUE}" />
+
+        <activity
+            android:name="com.prize.appcenter.PlayPlusClientActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/welcome_Style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.appcenter.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.prize.appcenter.activity.OneKeyFragmentActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.prize.appcenter.activity.GiftCenterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.prize.appcenter.activity.CategoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.prize.appcenter.activity.TrashClearActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.prize.appcenter.activity.SafeTrashClearActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.prize.appcenter.activity.TrashClearDoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.TrashClearRestActivity"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity-alias
+            android:name="TestAndroidAlias"
+            android:icon="@drawable/ic_launcher_game"
+            android:label="@string/gameCenter"
+            android:targetActivity="com.prize.appcenter.activity.MainActivity" >
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        -->
+
+        <activity
+            android:name="com.prize.appcenter.activity.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!-- about -->
+        <activity
+            android:name="com.prize.appcenter.activity.AboutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.prize.appcenter.activity.CategoryAppListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 意见反馈（常见问题） -->
+        <activity
+            android:name="com.prize.appcenter.activity.FeedbackExActivity"
+            android:screenOrientation="portrait" />
+        <!-- 意见反馈（常见问题详情） -->
+        <activity
+            android:name="com.prize.appcenter.activity.FeedbackDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 意见反馈 -->
+        <activity
+            android:name="com.prize.appcenter.activity.FeedbackExMoreActivity"
+            android:screenOrientation="portrait" />
+        <!-- 每日签到 -->
+        <activity
+            android:name="com.prize.appcenter.activity.SignInEverydayActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.prize.appcenter.activity.MessageCenterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.prize.appcenter.activity.MessageCenterPersonalActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.prize.appcenter.activity.AppFeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.prize.appcenter.activity.SingleGameActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.TopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.BeautiApplActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.TopicDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.CategoryAppGameListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.RequiredSoftActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.RankOverViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.RankListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.AppDetailImgActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.prize.appcenter.activity.AppDownLoadQueenActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.AppUninstallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.AppSyncAssistantActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--2.0积分系统 start-->
+        <activity
+            android:name=".activity.PersonalConvertRecordsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonalEarnPointsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonalPointsMallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonalPointsMallItemDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonalPointsMallAddressActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--2.0积分系统 end-->
+
+
+        <activity
+            android:name="com.prize.appcenter.activity.AppSyncAssistantrestoreActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.AppUpdateActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.AppDetailActivity"
+            android:exported="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.appcenter.activity.GameGiftActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.MyGameGiftActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.GameGiftDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.AppCommentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.AppDetailInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.TagListActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.prize.appcenter.activity.MoreAppListActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan|stateHidden" />-->
+        <activity
+            android:name="com.prize.appcenter.activity.UucListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.CommonCategoryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.OnlineGameListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.appcenter.activity.OneKeyUpdateActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.prize.appcenter.activity.OneKeyActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan|stateHidden"/>-->
+        <activity
+            android:name="com.prize.appcenter.activity.FolderActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:icon="@drawable/ic_al_no_app"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.prize"
+            android:theme="@style/folder_Style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.appcenter.activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <!-- added by longbaoxiu  2.5版本 2017/02/21-->
+        <activity
+            android:name="com.prize.appcenter.activity.AwardsProgramActivity"
+            android:screenOrientation="portrait" />
+
+        <!--start- add by nieligang  2.6版本 2017/04/18-->
+        <activity
+            android:name="com.prize.appcenter.activity.NewGameListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--end- add by nieligang  2.6版本 2017/04/18-->
+
+        <!-- added by fanjunchen -->
+
+        <!-- 垃圾清理 安装包扫描依赖的服务 -->
+        <service
+            android:name="com.prize.qihoo.cleandroid.sdk.ApkScanService"
+            android:exported="false"
+            android:label="ApkScanService"
+            android:process=":apk_scan" />
+
+        <!-- 垃圾清理 数据升级依赖的服务 -->
+        <service
+            android:name="com.qihoo.antivirus.update.UpdateService"
+            android:process=":update" />
+
+        <service
+            android:name="com.prize.appcenter.service.PrizeAppCenterService"
+            android:enabled="true"
+            android:exported="true"
+            android:process="@string/remote_process_name">
+            <intent-filter android:priority="1000">
+                <action android:name="com.prize.appcenter.service.PrizeAppCenterService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.prize.appcenter.receiver.BootCompletedReceiver"
+            android:process="@string/remote_process_name">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.prize.appcenter.receiver.NetStateReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.prize.appcenter.receiver.CompleteReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.prize.appcenter.receiver.AppBroadcast">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!--prize_shortCut_build对应UserBroadcast.SHORTCUT_ACTION-->
+        <receiver android:name="com.prize.appcenter.receiver.UserBroadcast">
+            <intent-filter android:priority="1000">
+                <action android:name="net_error" />
+                <action android:name="prize_shortCut_build" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.prize.appcenter.receiver.RequestAlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process="@string/remote_process_name">
+            <intent-filter>
+                <action android:name="prize_cancel_all_notification" />
+            </intent-filter>
+        </receiver>
+
+        <!-- @prize added by fanjunchen print log receiver -->
+        <!--<receiver android:name="com.prize.appcenter.receiver.PrintLogReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="prize_appcenter_log_on" />-->
+        <!--<action android:name="prize_appcenter_log_off" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!-- @prize end -->
+        <receiver android:name="com.prize.appcenter.receiver.AdminReceiver">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:permission="android.permission.BIND_DEVICE_ADMIN"
+                android:resource="@xml/my_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.prize.appcenter.provider.AppInfoProvider"
+            android:authorities="com.prize.appcenter.provider.appstore"
+            android:exported="true" />
+
+        <provider
+            android:name="com.tencent.mid.api.MidProvider"
+            android:authorities="com.prize.appcenter.TENCENT.MID.V3"
+            android:exported="true" />
+
+        <!-- ###################注册友盟SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.renn.rennsdk.oauth.OAuthActivity"
+            android:configChanges="orientation|navigation|keyboardHidden" />
+
+
+        <!-- 云账号  start -->
+        <activity
+            android:name="com.prize.cloud.activity.StartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.cloud.activity.LoginActivityNew"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.cloud.activity.ForgotPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.cloud.activity.RegActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.cloud.activity.CodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.prize.cloud.activity.WebviewActivity"
+            android:screenOrientation="portrait" />
+        <!-- 云帐号   end -->
+
+
+        <!-- 信鸽push start -->
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v3">
+            <intent-filter android:priority="0x7fffffff">
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- APP实现的Receiver，用于接收消息和结果反馈 2.3版本新增-->
+        <!-- com.tencent.android.xgpushdemo.CustomPushReceiver需要改为自己的Receiver -->
+        <receiver
+            android:name="com.prize.appcenter.receiver.MyXGReceiver"
+            android:exported="true">
+            <intent-filter>
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理 -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="false">
+            <intent-filter>
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushServiceV3"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v3" />
+        <!-- 【必须】 增强xg_service存活率  -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGDaemonService"
+            android:process=":xg_service_v3" />
+        <!-- 【必须】 通知service，此选项有助于提高抵达率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.prize.appcenter.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+        <!-- 【必须】 【注意】authorities修改为 包名.AUTH_XGPUSH, 如demo的包名为：com.qq.xgdemo-->
+        <provider
+            android:name="com.tencent.android.tpush.XGPushProvider"
+            android:authorities="com.prize.appcenter.AUTH_XGPUSH"
+            android:exported="true" />
+
+        <!-- 【必须】 【注意】authorities修改为 包名.TPUSH_PROVIDER, 如demo的包名为：com.qq.xgdemo-->
+        <provider
+            android:name="com.tencent.android.tpush.SettingsContentProvider"
+            android:authorities="com.prize.appcenter.TPUSH_PROVIDER"
+            android:exported="false" />
+
+        <!-- 【必须】 【注意】authorities修改为 包名.TENCENT.MID.V3, 如demo的包名为：com.qq.xgdemo-->
+        <provider
+            android:name="com.tencent.mid.api.MidProvider"
+            android:authorities="com.prize.appcenter.TENCENT.MID.V3"
+            android:exported="true" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":bdremote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+
+        <!--Mqtt Service-->
+        <!--<service-->
+        <!--android:name="org.eclipse.paho.android.service.MqttService"-->
+        <!--android:process="@string/remote_process_name" />-->
+        <!--android:persistent="true"-->
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100191682" />
+        <!-- 上线使用这个          android:value="2100191682" /> -->
+        <!-- 测试使用这个               android:value="2100208153" /> 帐号：2785287712   密码：sharePri2e-->
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A6DPV9N762WQ" />
+        <!-- 上线使用这个            android:value="A6DPV9N762WQ" /> -->
+        <!-- 测试使用这个               android:value="AAAB293V1C9W" /> 帐号：2785287712   密码：sharePri2e-->
+        <!-- 信鸽push start -->
+    </application>
+
+</manifest>

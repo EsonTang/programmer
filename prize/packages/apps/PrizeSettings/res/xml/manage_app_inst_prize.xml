@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app multi instances feature. prize-linkh-20151229 -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/app_inst_settings">
+    <PreferenceCategory android:key="supported_apps_key"
+            android:title="@string/supported_apps_title">
+     </PreferenceCategory>
+</PreferenceScreen>

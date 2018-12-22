@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Colors specific to Material themes. -->
+<resources>
+ <!--prize-Preference_category-huangdianjun-20150422-start-->
+ <color name="prize_settings_category">#f4f4f4f4</color>
+<color name="prize_category_textColor_category">#69696969</color> 
+  <!--prize-Preference_category-huangdianjun-20150422-end-->
+  <!--prize-dialog-xiaxuefeng-2015-05-16-start-->
+  <color name="my_white">#f8f8f8</color>
+  <!--prize-dialog-xiaxuefeng-2015-05-16-end-->
+  <!--prize-OS8.0_Shutdown-add-yangming-2017_8_12-start-->
+  <color name="prize_white">#ffffff</color>
+  <color name="prize_black">#000000</color>
+  <!--prize-OS8.0_Shutdown-add-yangming-2017_8_12-end-->
+  <!-- prize-add for mms OP01 pluginExt 8.0-yangming-2018_4_11-start -->
+  <color name="prize_preferences_bg_color_gray">#DCDCDC</color>
+  <color name="prize_preferences_bg_solid_color">#F5F5F5</color>
+  <color name="prize_preferences_bg_solid_color_pressed">#E7E7E7</color>
+  <color name="prize_divider_color_gray7">#E5E5E5</color>
+  <color name="prize_preferences_title_text_color">#000000</color>
+  <!-- prize-add for mms OP01 pluginExt 8.0-yangming-2018_4_11-end -->
+</resources>

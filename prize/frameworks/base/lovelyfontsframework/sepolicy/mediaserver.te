@@ -1,0 +1,4 @@
+allow mediaserver data_fonts_file:dir { r_dir_perms };
+allow mediaserver data_fonts_file:file { getattr read };
+
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/mine_loaded_ll"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:fillViewport="true"
+              android:orientation="vertical">
+
+
+   <!-- <View
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_height"
+        android:background="@color/bg_gray_color"/>-->
+
+    <com.prize.prizethemecenter.ui.widget.view.PagerSlidingTabStripExtends
+        android:id="@+id/slidingtabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_top_40dp"
+        android:layout_gravity="center_vertical"
+        app:pstsSelectedTabTextColor="@color/text_color_33cccc"
+        app:pstsSelectedTabTextSize="@dimen/text_size_medium"
+        app:pstsUnderlineHeight="@dimen/common_line_height"
+        app:pstsTabTextColor="@color/bg_gray_color"
+        app:pstsTabTextSize="@dimen/text_size_medium" />
+
+    <com.prize.prizethemecenter.ui.widget.view.CustomViewPager
+        android:id="@+id/slidingpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/slidingtabs"/>
+
+
+</LinearLayout>

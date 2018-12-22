@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- 手势 -->
+	<string name="gy_accessibility_switch_to_vdetect">Zur V-Anerkennung wechseln</string>
+	<string name="gy_gesture_guide_capture">V-Anerkennung</string>
+	<!-- 美颜 -->
+	<string name="gy_accessibility_switch_to_faceart">Zur Schönheit wechseln</string>
+	<string name="gy_faceart_guide_capture">Echtzeit-Schönheit</string>
+        <string name="gy_faceart_guide_capture_off">Echtzeit-Schönheit geschlossen</string>
+	<!-- 美肤级别 -->
+	<string name="gy_exposure_tips">Schönere Haut-Ebene</string>
+	<!-- 美白 -->
+	<string name="gy_whitening_tips">Aufhellen</string>
+	<!-- 磨皮 -->
+	<string name="gy_smooth_tips">Puffereinrichtung</string>
+
+        <string name="gy_accessibility_switch_to_self">Zu dem hinteren Selbstauslöser wechseln</string>
+
+	<string name="pref_camera_gyself_title">Hinterer Selbstauslöser</string>
+	<string name="pref_camera_gyage_title">Alterserkennung</string>
+	<!-- <string name="pref_camera_gysmile_title">笑脸拍照</string>  -->
+	<string name="pref_camera_gyage_year">Jahre</string>
+	<string name="pref_camera_gyage_male">"Männlich"</string>
+	<string name="pref_camera_gyage_female">"Weiblich"</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include
+        layout="@layout/wait_view" />
+
+    <include
+        layout="@layout/reloading_layout"
+        android:visibility="gone" />
+
+   <!-- 
+     <com.prize.music.views.pulltorefresh.PullToRefreshGridView
+        android:id="@+id/id_stickynavlayout_innerscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:horizontalSpacing="5dp"
+        ptr:ptrDrawable="@drawable/progress_indeterminte_ring_bg" />
+ -->
+ 
+     <ListView
+        android:id="@+id/id_stickynavlayout_innerscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:listSelector="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none" />
+
+</LinearLayout>

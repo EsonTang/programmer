@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Based off frameworks/base/core/res/res/layout/preference_material.xml
+     except that this has the negative margin on the image removed. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dashboard_category_height_prize"
+    android:gravity="center_vertical"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:background="@android:color/white"
+    android:clipToPadding="false">
+
+	<TextView android:id="@android:id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:paddingBottom="8dp"
+            android:gravity="bottom"
+            android:background="@android:color/white"
+            android:textSize="@dimen/dashboard_category_title_textsize"
+			android:textColor="@color/dashboard_category_title_textcolor"
+            android:textAlignment="viewStart"
+            />
+ 
+</LinearLayout>

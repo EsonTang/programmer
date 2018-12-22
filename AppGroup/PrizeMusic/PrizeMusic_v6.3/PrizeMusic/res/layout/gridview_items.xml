@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/gridview_item_fullheight"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/gridview_item_padding_right_left" 
+    android:paddingRight="@dimen/gridview_item_padding_right_left"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+     >
+
+        <com.prize.music.views.TrackBrowserImageView
+            android:id="@+id/gridview_image"
+            android:layout_width="@dimen/gridview_image_width"
+            android:layout_height="@dimen/gridview_image_width"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/no_art_small" />
+
+        <LinearLayout
+            android:id="@+id/gridview_outershell"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gridview_item_ccontainer_height"
+            android:layout_toRightOf="@+id/gridview_image"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/gridview_info_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/gridview_item_ccontainer_padding_left"
+                android:paddingRight="@dimen/gridview_item_ccontainer_padding_right" >
+
+                <TextView
+                    android:id="@+id/gridview_line_one"
+                    style="@style/GridViewTextItem"
+                   />
+
+                <TextView
+                    android:id="@+id/gridview_line_two"
+                    style="@style/GridViewTextItem"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/peak_one"
+            style="@style/PeakMeter"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/peak_meter_padding_bottom"
+            android:paddingRight="@dimen/peak_meter_one_padding_right"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/peak_two"
+            style="@style/PeakMeter"
+            android:layout_centerInParent="true"
+            android:paddingRight="@dimen/peak_meter_two_padding_right" />
+    </RelativeLayout>
+
+</LinearLayout>

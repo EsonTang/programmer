@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- PRIZE-相册-liudong-2015-7-2-start -->
+    <item android:state_enabled="true" android:drawable="@drawable/prize_album_cut_disable" />
+    <item android:state_enabled="false"  android:drawable="@drawable/prize_album_cut_press" />
+    <!-- PRIZE-相册-liudong-2015-7-2-end -->
+
+
+
+</selector>

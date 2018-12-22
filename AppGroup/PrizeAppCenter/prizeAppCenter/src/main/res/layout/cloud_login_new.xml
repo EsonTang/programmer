@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_f5f5f5" >
+
+        <ImageView
+            android:id="@+id/actionbar_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="4dp"
+            android:src="@drawable/action_bar_back_normal"/>
+
+        <TextView
+            android:id="@+id/title_id"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:onClick="onBackClk"
+            android:text="@string/login_account"
+            android:textColor="#555"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/cloud_common_edit_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="28dp"
+        android:paddingRight="25dp" >
+
+        <ImageView
+            android:id="@+id/cloud_phone_connection_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/phone_connection" />
+
+        <EditText
+            android:id="@+id/username_id"
+            style="@style/cloud_phone_num_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cloud_phone_connection_iv"
+            android:hint="@string/username_hint" >
+        </EditText>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/passwordedit_id"
+        style="@style/cloud_login_password_style"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/cloud_common_edit_bg"
+        android:digits="@string/symbol"
+        android:ems="10"
+        android:hint="@string/input_password_hint" >
+    </EditText>
+
+    <!--
+    <ImageView
+        android:id="@+id/password_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/cloud_show_password_selector" >
+    </ImageView>
+    -->
+
+    <TextView
+        android:id="@+id/regist_agree_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_size_30"
+        android:drawableLeft="@drawable/cloud_agree"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/agree"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="17dp" >
+
+        <TextView
+            android:id="@+id/lost_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/lost_password"
+            android:textColor="@color/text_color_12b7f5"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loginbtn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/cloud_next_selector"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_size_30" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/fast_registration_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cloud_next_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/regist"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_size_30" >
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <Preference 
+        android:key="import_from_sd_card"
+        android:title="@string/prize_import_from_sd_card"
+        android:icon="@null"/>
+    <!--
+    <Preference 
+        android:key="import_from_other_phone"
+        android:title="@string/prize_import_from_other_phone"
+        android:icon="@null"/>
+    -->
+    
+    <Preference 
+        android:key="import_form_sim"
+        android:title="@string/prize_sim_contacts"
+        android:icon="@null"/>
+    
+    <Preference 
+        android:key="export_contacts"
+        android:title="@string/prize_export_contacts"
+        android:icon="@null"/>
+    
+
+</PreferenceScreen>

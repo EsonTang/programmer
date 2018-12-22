@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nav bar color customized feature. prize-linkh-2017.07.13 -->
+<!-- Created by prize-zhaojian -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/current_text"
+                android:textSize="15sp"
+                android:textColor="@color/current_new_text_color" />
+
+            <TextView
+                android:id="@+id/current_color_tv"
+                android:layout_width="@dimen/current_new_view_width"
+                android:layout_height="@dimen/current_new_view_height"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/new_color_tv"
+                android:layout_width="@dimen/current_new_view_width"
+                android:layout_height="@dimen/current_new_view_height"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/new_text"
+                android:textSize="15sp"
+                android:textColor="@color/current_new_text_color" />
+        </LinearLayout>
+
+        <com.android.settings.PrizeNavBarColorPickerView
+            android:id="@+id/colorPickerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_nav_bar_view_height" 
+            android:layout_marginTop="20dp"/>
+			
+			<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/recent_use_text"
+            android:textColor="@color/recent_text_color"
+            android:layout_alignBottom="@id/colorPickerView"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+  
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recent_ll_height"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/recent_image_one"
+            android:layout_width="@dimen/recent_view_width"
+            android:layout_height="@dimen/recent_view_height"
+            android:layout_marginLeft="@dimen/recent_view_margin_left"
+            android:src="@drawable/recent_circle"
+            android:background="@drawable/recent_circle_linearlayout"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:id="@+id/recent_image_two"
+            android:layout_width="@dimen/recent_view_width"
+            android:layout_height="@dimen/recent_view_height"
+            android:layout_marginLeft="@dimen/recent_view_margin_left"
+            android:src="@drawable/recent_circle"
+			android:background="@drawable/recent_circle_linearlayout"
+            android:clickable="true"
+             />
+
+        <ImageView
+            android:id="@+id/recent_image_three"
+            android:layout_width="@dimen/recent_view_width"
+            android:layout_height="@dimen/recent_view_height"
+            android:layout_marginLeft="@dimen/recent_view_margin_left"
+            android:src="@drawable/recent_circle"
+			android:background="@drawable/recent_circle_linearlayout"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:id="@+id/recent_image_four"
+            android:layout_width="@dimen/recent_view_width"
+            android:layout_height="@dimen/recent_view_height"
+            android:layout_marginLeft="@dimen/recent_view_margin_left"
+            android:src="@drawable/recent_circle"
+			android:background="@drawable/recent_circle_linearlayout"
+            android:clickable="true"
+             />
+
+        <ImageView
+            android:id="@+id/recent_image_five"
+            android:layout_width="@dimen/recent_view_width"
+            android:layout_height="@dimen/recent_view_height"
+            android:layout_marginLeft="@dimen/recent_view_margin_left"
+            android:src="@drawable/recent_circle"
+			android:background="@drawable/recent_circle_linearlayout"
+            android:clickable="true"
+             />
+
+        <ImageView
+            android:id="@+id/recent_image_six"
+            android:layout_width="@dimen/recent_view_width"
+            android:layout_height="@dimen/recent_view_height"
+            android:layout_marginLeft="@dimen/recent_view_margin_left"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/recent_circle"
+			android:background="@drawable/recent_circle_linearlayout"
+            android:clickable="true"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="17.5dp"
+        android:layout_marginRight="17.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/buttonPressGray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/cancel_button_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/reply_button_cancel_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel_text"
+            android:textColor="@color/cancel_confirm_text_color"
+            android:textSize="@dimen/cancel_text_size" />
+
+        <TextView
+            android:id="@+id/finish_tv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/confirm_button_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/reply_button_confirm_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/confirm_text"
+            android:textColor="@color/cancel_confirm_text_color"
+            android:textSize="@dimen/confirm_text_size" />
+    </LinearLayout>
+</LinearLayout>

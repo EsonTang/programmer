@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.ui.SettingSublistLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:camera="http://schemas.android.com/apk/res/com.mediatek.camera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    android:clickable="true">
+    <RelativeLayout
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false"
+        >
+        
+<!--        <FrameLayout
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_diaglog_bottom_height"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:paddingTop="@dimen/setting_diaglog_bottom_padding_top"
+            android:layout_marginStart="@dimen/setting_btn_margin_left"
+            android:layout_marginEnd="@dimen/setting_btn_margin_left"/>-->
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/setting_btn_margin_left"
+            android:layout_marginEnd="@dimen/setting_btn_margin_left">
+            
+<!--             <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/list_divider_prize" /> -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_diaglog_bottom_view_height"
+                android:background="@color/alpht"
+                android:paddingTop="@dimen/setting_diaglog_bottom_padding_top" >
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/setting_btn_margin_top"
+                    android:paddingBottom="@dimen/setting_btn_margin_top"
+                    android:background="@drawable/sel_dialog_single"
+                    android:gravity="center"
+                    android:text="@string/review_cancel"
+                    android:textColor="@color/setting_dialog_text_btn_cancel"
+                    android:textSize="@dimen/textsize_medium_setting" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container"
+            style="@style/SettingDialog"
+            android:layout_marginStart="@dimen/setting_btn_margin_left"
+            android:layout_marginEnd="@dimen/setting_btn_margin_left"
+            android:layout_above="@id/bottom"
+            android:splitMotionEvents="false" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/SettingSubTitle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/list_divider_prize" />
+
+            <ListView
+                android:id="@+id/settingList"
+                style="@style/SettingItemList"
+                android:divider="@null"
+                android:splitMotionEvents="false" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/container"
+            android:background="@color/setting_dialog_top" >
+        </FrameLayout>
+        
+
+    </RelativeLayout>
+</com.android.camera.ui.SettingSublistLayout>

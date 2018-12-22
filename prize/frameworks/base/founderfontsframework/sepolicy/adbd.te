@@ -1,0 +1,1 @@
+allow adbd data_fonts_file:file r_file_perms;

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/realyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_receive_code_suc">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:text="@string/received_ok"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/realyt"
+        android:layout_alignRight="@+id/realyt"
+        android:layout_below="@+id/realyt"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tip_gfit_option"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_micro" />
+
+        <TextView
+            android:id="@+id/copy_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="1212121"
+            android:textColor="@color/text_color_ff7500"
+            android:textSize="@dimen/text_size_micro" />
+
+        <TextView
+            android:id="@+id/usage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/copy_edit"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/usage"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_micro" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/usage"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/not_login"
+            android:textColor="@color/text_color_737373"
+            android:textSize="@dimen/text_size_micro" />
+
+        <View
+            android:id="@+id/game_image_tag"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="5dp"
+            android:background="@color/bg_gray_color" />
+
+        <Button
+            android:id="@+id/copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/usage"
+            android:layout_alignRight="@+id/textView3"
+            android:background="@drawable/btn_copy_selector"
+            android:gravity="center"
+            android:text="@string/copy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_micro" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_cancel_selector"
+                android:gravity="center"
+                android:text="@string/cancel_gift_game"
+                android:textColor="@color/text_color_737373"
+                android:textSize="@dimen/text_size_micro" />
+
+            <Button
+                android:id="@+id/open_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_sure_selector"
+                android:gravity="center"
+                android:text="@string/open_gift_game"
+                android:textColor="@color/text_color_737373"
+                android:textSize="@dimen/text_size_micro" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

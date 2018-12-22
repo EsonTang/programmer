@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categoryName_Tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/icon_radio_category_selector"
+    android:gravity="center"
+    android:textColor="@color/radio_category_color_selector"
+    android:textSize="@dimen/text_size_small" >
+
+</TextView>

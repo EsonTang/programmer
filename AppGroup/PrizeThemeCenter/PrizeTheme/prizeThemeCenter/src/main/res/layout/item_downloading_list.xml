@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/RL_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <com.prize.prizethemecenter.ui.widget.CornerImageView
+            android:id="@+id/image_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_theme" />
+
+        <RelativeLayout
+            android:layout_width="214dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16.5dp"
+            android:layout_toRightOf="@+id/image_iv">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.3dp"
+                android:singleLine="true"
+                android:maxEms="9"
+                android:ellipsize="end"
+                android:textColor="@color/text_color_404040"
+                android:textSize="15dp" />
+
+            <ProgressBar
+                android:id="@+id/pb_current"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:progressDrawable="@drawable/progress_drawable" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="0KB/s"
+                    android:textColor="@color/textcolor_969696"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="start"
+                    android:text="@string/pause"
+                    android:textColor="@color/textcolor_969696"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_load"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11.04M"
+                        android:textColor="@color/textcolor_969696"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/15.0M"
+                        android:textColor="@color/textcolor_969696"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.prize.prizethemecenter.ui.widget.DownLoadButton
+            android:background="@null"
+            android:id="@+id/bt_manage"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/bt_delete"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@+id/bt_manage"
+            android:background="@drawable/btn_delete_downloading_selector"
+            android:focusable="false" />
+
+    </RelativeLayout>
+</RelativeLayout>

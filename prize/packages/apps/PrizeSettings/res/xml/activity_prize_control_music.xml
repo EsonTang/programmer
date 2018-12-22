@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/sleep_gesture" >
+
+    <PreferenceScreen
+        android:key="sleep_previous_music"
+        android:title="@string/sleep_previous_music" />
+    <PreferenceScreen
+        android:key="sleep_play_pause_music"
+        android:title="@string/sleep_play_pause_music" />
+    <PreferenceScreen
+        android:key="sleep_next_music"
+        android:title="@string/sleep_next_music" />
+    
+</PreferenceScreen>

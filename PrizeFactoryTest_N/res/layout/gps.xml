@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gps_open" />
+
+    <TextView
+        android:id="@+id/gps_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+		
+	<TextView
+        android:id="@+id/gps_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+		android:textSize="22sp"/>
+
+    <ListView
+        android:id="@+id/gps_list"
+        android:layout_width="400dp"
+        android:layout_height="280dp" >
+    </ListView>
+
+    <include layout="@layout/bottom_bar" />
+
+    <!--
+    TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingBottom="10dip"
+        android:fillViewport="true"
+        android:layout_weight="0">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:id="@+id/gps_start"
+                android:text="@string/start"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_margin="5dip"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/gps_stop"
+                android:text="@string/stop"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_margin="5dip"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout
+    -->
+
+</LinearLayout>

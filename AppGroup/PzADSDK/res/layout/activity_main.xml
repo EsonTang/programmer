@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/slot_rl"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#f8f8f8" >
+
+        <!-- android:layout_marginBottom="45dp" -->
+        <!-- android:layout_marginLeft="30dp" -->
+        <!-- android:layout_marginRight="30dp" -->
+        <!-- android:layout_marginTop="45dp" -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bg_rl" >
+
+            <ImageView
+                android:id="@+id/slot_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/slot_ad_bg_deful" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/slot_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#55e8e8e8"
+                    android:padding="3dp"
+                    android:text="精选推荐"
+                    android:textColor="#65586c" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bg_rl"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e8e8e8"
+            android:paddingLeft="38dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:id="@+id/slot_tv_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/skip_bg"
+                android:gravity="center"
+                android:text="关闭"
+                android:textColor="#4B4B4B" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/welcome_android_slogan"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.PrizeTickerViewPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ticker_view_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ticker_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/ticker_top_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/status_bar_height"
+            android:layout_marginTop="@dimen/prize_ticker_top_view_padding" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prize_ticker_bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/prize_ticker_padding">
+
+            <LinearLayout
+                android:id="@+id/ticker_header_and_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--
+                    android:background="@drawable/prize_ticker_header"
+                -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/prize_ticker_header_height"
+                    android:layout_marginEnd="@dimen/prize_ticker_margin"
+                    android:layout_marginStart="@dimen/prize_ticker_margin"
+                    android:layout_marginTop="@dimen/prize_ticker_header_margin_top"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/prize_ticker_padding_start">
+
+                    <ImageView
+                        android:id="@+id/ticker_app_icon"
+                        android:layout_width="@dimen/prize_ticker_smallicon_size"
+                        android:layout_height="@dimen/prize_ticker_smallicon_size"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/ticker_app_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/prize_ticker_title_margin_start"
+                        android:gravity="center"
+                        android:textColor="@color/prize_ticker_content_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="2dp"
+                        android:gravity="center"
+                        android:singleLine="true" />
+
+                    <DateTimeView
+                        android:id="@+id/ticker_ticker_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/prize_ticker_date_margin_end"
+                        android:gravity="right"
+                        android:textColor="@color/prize_ticker_content_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/prize_ticker_margin"
+                    android:paddingStart="@dimen/prize_ticker_padding_start">
+
+                    <LinearLayout
+                        android:id="@+id/content_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/ticker_large_icon_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/prize_ticker_content_margin_bottom"
+                        android:paddingEnd="@dimen/prize_ticker_content_margin_end"
+                        android:paddingTop="@dimen/prize_ticker_content_margin_top">
+
+                        <TextView
+                            android:id="@+id/ticker_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:maxLines="1"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/prize_ticker_title_color"
+                            android:textSize="14sp" />
+
+                        <com.android.internal.widget.ImageFloatingTextView
+                            android:id="@+id/ticker_summary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/prize_ticker_content_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ticker_large_icon_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/content_text"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/content_text"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/prize_ticker_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingRight="@dimen/prize_ticker_right_icon_padding_end">
+
+                        <ImageView
+                            android:id="@+id/ticker_large_icon"
+                            android:layout_width="@dimen/prize_ticker_largeicon_size"
+                            android:layout_height="@dimen/prize_ticker_largeicon_size"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY" />
+
+                        <View
+                            android:id="@+id/additional_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_gravity="center"
+                            android:background="#ffd1d3d3"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/additional"
+                            android:layout_width="@dimen/prize_additional_width"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:paddingEnd="@dimen/prize_additional_padding"
+                            android:paddingStart="@dimen/prize_additional_padding"
+                            android:textColor="@color/prize_ticker_content_color"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/ticker_tail_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_ticker_tail_height"
+                android:layout_marginEnd="@dimen/prize_ticker_margin"
+                android:layout_marginStart="@dimen/prize_ticker_margin">
+
+                <LinearLayout
+                    android:id="@+id/ticker_tail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ticker_action1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:textColor="@color/prize_ticker_action_color"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/ticker_action2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:textColor="@color/prize_ticker_action_color"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/ticker_action3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:textColor="@color/prize_ticker_action_color"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.android.systemui.statusbar.phone.PrizeTickerViewPanel>

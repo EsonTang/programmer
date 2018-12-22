@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">SIM အဆက်အသွယ်များကို မပေါင်းနိုင်ပါ။</string>
+    <string name="menu_done">ပြီးပြီ</string>
+    <string name="menu_deleteContact">ဖျက်ရန်</string>
+    <string name="menu_select_all">"အားလုံးကိုရွေးရန်"</string>
+    <string name="menu_select_none">"အားလုံးရွေးထားမှုဖျက်ပါ"</string>
+    <string name="menu_new_contact_action_bar">အသစ်</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> ရွေးချယ်ပြီး </string>
+    <string name="multichoice_no_select_alert">မည်သည့်အကြောင်းအရာမှ ရွေးချယ်မထားပါ။</string>
+    <string name="aas_phone_type_none">"တစ်ခုမှမလို"</string>
+    <string name="aas_custom_title">စိတ်ကြိုက်လေဘယ်များ</string>
+    <string name="aas_new_dialog_title">အမှတ်အသား အသစ်တစ်ခု ပေါင်းထည့်သည်</string>
+    <string name="ass_rename_dialog_title">လေဘယ်တည်းဖြတ်ပါ</string>
+    <string name="aas_delele_dialog_message">အညွှန်း(များ)ဖျက်ခြင်းသည် အညွှန်း(များ)နှင့် ချိတ်ထားသေော နာက်ထပ် နံပါတ်များအားလုံးကို သက်ရောက် စေလိမ့်မည်။ သင်သေချာပါသလား။</string>
+    <string name="aas_name_invalid">လေဘယ်အမည်မှာ အသုံးမရှိပါ။ အခြားအမည်တစ်ခုထည့်ပါ။ </string>
+    <string name="aas_name_exist">အမှတ်အသားမှာ ရှိနှင့်ပြီး ဖြစ်ပါသည်။</string>
+    <string name="aas_usim_full">လေဘယ်အသစ်အတွက် နေရာလွတ်မရှိပါ။</string>
+    <string name="ass_edit_assert_message">အညွှန်းကို မွမ်းမံခြင်းသည် အညွှန်းနှင့် ချိတ်ထားသော နောက်ထပ် နံပါတ်များအားလုံးကို သက်ရောက် စေလိမ့်မည်။ သေချာပါသလား။</string>
+    <string name="aas_new_fail">အမှတ်အသား အသစ်ဖန်တီးရန် မအောင်မြင်ပါ။</string>
+    <string name="aas_edit_fail"><xliff:g id="aas">%s</xliff:g> ကို အမည်ပြောင်းရန် မအောင်မြင်ပါ။</string>
+    <string name="aas_delete_fail"> <xliff:g id="aas">%s</xliff:g> အား ဖျက်ခြင်းမအောင်မြင်ပါ။</string>
+    <string name="aas_phone_primary">ပထမ နံပါတ်</string>
+    <string name="aas_phone_additional">ထပ်ပေါင်းထားသည့် နံပါတ်</string>
+</resources>

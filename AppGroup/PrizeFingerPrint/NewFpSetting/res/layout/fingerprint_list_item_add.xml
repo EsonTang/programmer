@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/btn_add"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/password_number_color"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/density_5dp"
+        android:text="@string/touchid_add_new_fingerprint"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/apple_blue" />
+    
+        <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/density_1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/btn_add"
+        android:background="@color/gray_level_two" />
+
+</RelativeLayout>

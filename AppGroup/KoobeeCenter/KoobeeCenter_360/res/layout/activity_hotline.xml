@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_h" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_h"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/layout_margin"
+        android:text="@string/company_name"
+        android:textColor="@color/color_323232"
+        android:textSize="@dimen/textsize_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_e0e0e0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hotline_row_h"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/address" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/text_to_leftimage"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="2.5dp"
+            android:paddingRight="@dimen/hotline_text_to_rightbtn"
+            android:text="@string/company_address"
+            android:textColor="@color/color_323232"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/litter_btn_slt"
+            android:text="@string/toMap"
+            android:textColor="#000000"
+            android:visibility="visible"
+            android:onClick="toMap"/> 
+            
+        	<!--prize-add-by-yanghao-20150914-start-->
+        	<!-- android:onClick="toMap" -->
+        	<!--prize-add-by-yanghao-20150914-end-->
+        	
+            <!--prize-add-by-yanghao-20150911-start-->
+            <!-- 
+            	android:textColor="#000000"
+            	android:visibility="visible"
+            	android:onClick="toBaiduMap"
+             -->
+            <!--prize-add-by-yanghao-20150911-end-->
+ 
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:background="@color/color_e0e0e0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_to_leftimage"
+            android:layout_weight="1"
+            android:autoLink="phone"
+            android:includeFontPadding="false"
+            android:paddingRight="@dimen/hotline_text_to_rightbtn"
+            android:text="@string/hotline_num"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/textsize_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:background="@color/color_e0e0e0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/url" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_to_leftimage"
+            android:text="@string/url_key"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:includeFontPadding="false"
+            android:paddingRight="@dimen/hotline_text_to_rightbtn"
+            android:text="@string/url_value"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/textsize_14" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:background="@color/color_e0e0e0" />
+
+</LinearLayout>

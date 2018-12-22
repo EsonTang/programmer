@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- application name and title of error dialogs-->
+    <string name="app_name">Sound Recorder</string>
+
+    <!-- Screen title before and during recording -->
+    <string name="record_your_message">Record your message</string>
+    <!-- Screen title after recording -->
+    <string name="message_recorded">Message recorded</string>
+    <!-- Screen title while playing back a recording -->
+    <string name="review_message">Review message</string>
+    <!-- Label shown during recording -->
+    <string name="recording">Recording</string>
+    <!-- Label shown when the recording is stopped for a reason other than the user stopping it (e.g. the sd card was removed) -->
+    <string name="recording_stopped">Recording stopped</string>
+    <!-- label shown when there is not enough space to record something -->
+    <string name="storage_is_full">Storage is full</string>
+    <!-- label shown when the recording has reached maximum allowed file size -->
+    <string name="max_length_reached">Maximum length reached</string>
+    <!-- label shown when there is no sd card available to record to [CHAR LIMIT=30] -->
+    <string name="insert_sd_card" product="nosdcard">Mount USB storage</string>
+    <!-- label shown when there is no sd card available to record to -->
+    <string name="insert_sd_card" product="default">Insert an SD card</string>
+    <!-- label shown when there is more than 1 minute but less than 9 minutes of space left to record -->
+    <string name="min_available"><xliff:g id="minutes">%d</xliff:g> min available</string>
+    <!-- label shown when there is less than 1 minute of space left to record -->
+    <string name="sec_available"><xliff:g id="seconds">%d</xliff:g>s available</string>
+
+    <!-- button to accept the current recording and return it to the caller -->
+    <string name="accept">Done</string>
+    <!-- button to discard the current recording and return to the caller -->
+    <string name="discard">Discard</string>
+    <!-- acknowlegement button in a number of dialogs -->
+    <string name="button_ok">OK</string>
+    <!-- Do not translate. Format of the timer that shows how much has been recorded so far -->
+    <string name="timer_format" translatable="false"><xliff:g id="format">%02d:%02d:%02d</xliff:g></string>
+    <string name="timer_format_floatwm" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+
+    <!-- the name under which recordings will be visible in the media database is formatted like this --> 
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <!-- all recordings will show up in the media database with this 'artist' name -->
+    <string name="audio_db_artist_name">Your recordings</string>
+    <!-- all recordings will show up in the media database with this 'album' name -->
+    <string name="audio_db_album_name">Audio recordings</string>
+    <!-- all recordings will show up in the media database in a playlist with this name -->
+    <string name="audio_db_playlist_name">My recordings</string>
+   
+    <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+    <string name="error_sdcard_access" product="nosdcard">Can\'t access USB storage.</string>
+    <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+    <string name="error_sdcard_access" product="default">Can\'t access SD card.</string>
+    <!-- shown as the message in a dialog when the app encountered an unspecified internal error -->
+    <string name="error_app_internal">Internal application error.</string>
+    <!-- shown as the message in a dialog when the recording could not be added to the media database -->
+    <string name="error_mediadb_new_record">Couldn\'t save recorded audio.</string>
+    <!-- shown as the message if the permission deny with never ask again  -->
+    <string name="error_permission_never_ask">Permission denied. You can change it in Settings->Apps.</string>
+    <!-- prize-ui modify-liguizeng-2015-4-15 -->
+    <string name="help_click">Click</string>
+    <string name="help_startrecord">to start record</string>
+    <string name="help_continuerecord">to continue record</string>
+    
+    <!-- prize-Add sound recording list interface -liufan-2015-4-22-start-->
+    <string name="recorder_file_list_title">Recordings</string>
+    <string name="recorder_top_layout_selectall_txt">Select All</string>
+    <string name="recorder_top_layout_deselectall_txt">Deselect All</string>
+    <string name="recorder_bottom_layout_rename_btn">Rename</string>
+    <string name="recorder_bottom_layout_delete_txt">Delete</string>
+    <string name="dialog_title_rename">Recording for renaming</string>
+    <string name="dialog_title_delete">Are you sure to delete the selected recordings?</string>
+    <string name="delete_failed">Failed to delete recordings</string>
+    <string name="prize_selected_num">"%1$s selected"</string>
+    <string name="prize_no_install_file_browser">"Pls install File Browser APK, First!"</string>
+    <!-- prize-Add sound recording list interface -liufan-2015-4-22-end-->
+    <string name="zero_time">00:00</string>
+    <string name="str_file_name_exist">"The file name existed, Pls enter other."</string>
+    <string name="str_file_name_limit">"The number of characters exceeds the limit."</string>
+    <!-- PRIZE-Add-PrizeSoundRecorder-wangzhong-2016_7_25-start -->
+    <string name="prize_record_status_recording">recording</string>
+    <string name="prize_record_status_pause_wm">pause</string>
+    <string name="prize_record_status_pause">pause</string>
+    <string name="prize_record_status_playing">playing</string>
+    <string name="prize_record_status_completed">completed</string>
+    <!-- PRIZE-Add-PrizeSoundRecorder-wangzhong-2016_7_25-end-->
+	<plurals name="number_of_items_selected">
+        <item quantity="zero">%1$d selected</item>
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+<string name="edit">Edit</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="send">Send out</string>
+  <string name="set_as_bell">Set as bell</string>
+  <string name="set_as_ringtone">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" has been set for the phone ring tones</string>
+    <string name="save_tip">The recording has been saved to the list</string>
+</resources>

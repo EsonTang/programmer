@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- prize-change-huangliemin-android:layout_height="?attr/list_item_header_height"
+android:paddingStart="?attr/list_item_padding_left"
+    android:paddingEnd="?attr/list_item_padding_right"
+    android:paddingTop="4dp"
+    android:paddingBottom="8dp" -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_profile_header"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- prize remove profile title zhangzhonghao 20160305 -->
+    <!-- <TextView android:id="@+id/profile_title"
+        android:layout_width="@dimen/contact_list_section_header_width"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:singleLine="true"
+        android:text="@string/user_profile_contacts_list_header"
+        android:ellipsize="end"
+        android:textAppearance="@style/SectionHeaderStyle"
+        android:gravity="start|center_vertical" /> -->
+
+    <Button android:id="@+id/user_profile_button"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:paddingStart="?attr/list_item_padding_left"
+        android:paddingEnd="?attr/list_item_padding_right"
+        android:background="?android:attr/selectableItemBackground"
+        android:singleLine="true"
+        android:text="@string/profile_display_name"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:gravity="start|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <!-- prize-add-huangliemin-2016-6-8 -->
+    <Button android:id="@+id/select_all"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:paddingStart="?attr/list_item_padding_left"
+        android:paddingEnd="?attr/list_item_padding_right"
+        android:background="?android:attr/selectableItemBackground"
+        android:singleLine="true"
+        android:text="@string/menu_select_all"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:gravity="start|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+    <!-- prize-add-huangliemin-2016-6-8 -->
+    
+    <!-- prize-add-manager-groups-huangliemin-2016-7-13-start -->
+    <Button android:id="@+id/manager_groups"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_gourp_button_hight"
+        android:paddingStart="@dimen/prize_contacts_list_item_view_bound_offset"
+        android:paddingEnd="@dimen/prize_contacts_list_item_view_bound_offset"
+        android:background="?android:attr/selectableItemBackground"
+        android:singleLine="true"
+        android:text="@string/prize_manager_groups"
+        android:ellipsize="end"
+        android:textSize="@dimen/prize_contact_list_item_text_size"
+        android:textColor="@color/prize_black_color"
+        android:gravity="start|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <!-- prize-add-manager-group-huangliemin-2016-7-13-end -->
+
+    <!-- prize-remove-hpf 2017-12-21-start -->
+    <!--<View
+        android:layout_marginStart="@dimen/prize_contacts_list_item_view_bound_offset"
+        android:layout_marginEnd="@dimen/prize_contacts_list_item_view_bound_offset"
+    	android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_line_color_light"/>-->
+    <!-- prize-remove-hpf 2017-12-21-end -->
+
+</LinearLayout>

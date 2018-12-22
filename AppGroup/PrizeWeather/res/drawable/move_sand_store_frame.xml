@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:oneshot="false">
+    <item android:drawable="@drawable/move_sha_36"  android:duration="150"></item>
+    <item android:drawable="@drawable/move_sha_37"  android:duration="150"></item>
+    <item android:drawable="@drawable/move_sha_38"  android:duration="150"></item>
+    <item android:drawable="@drawable/move_sha_39"  android:duration="150"></item>
+    <item android:drawable="@drawable/move_sha_40"  android:duration="150"></item>
+    <item android:drawable="@drawable/move_sha_41"  android:duration="150"></item>
+
+</animation-list>

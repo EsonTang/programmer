@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FingerprintApplock</string>
+    <string name="hello">FingerprintLock</string>
+
+    <string name="header_text">&#160;has been locked</string>
+    <string name="cancel_text">Cancel</string>
+
+    <string name="cipher_input_status_correct">Password is correct</string>
+    <string name="cipher_input_status_error">Password mistake</string>
+    <string name="fingerprint_error_status_unknown">Unknown</string>
+	<string name="lockpattern_need_to_unlock_wrong">Wrong pattern</string>
+	<string name="lockpattern_need_to_unlock_right">Correct pattern</string>
+
+</resources>

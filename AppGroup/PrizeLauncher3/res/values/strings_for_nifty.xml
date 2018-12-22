@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nifty_button_bg">drawable/button_selctr</string>
+    <string name="nifty_icon">drawable/app_icon</string>
+     <string name="ic_launcher_backuprestore_op">drawable/ic_launcher_backuprestore_op</string>
+    <string name="ic_launcher_download_op">drawable/ic_launcher_download_op</string>
+    <string name="ic_launcher_oppo_contacts_op">drawable/ic_launcher_oppo_contacts_op</string>
+    <string name="ic_launcher_dialer_op">drawable/ic_launcher_dialer_op</string>
+    <string name="ic_launcher_music_op">drawable/ic_launcher_music_op</string>
+    <string name="ic_launcher_smsmms_op">drawable/ic_launcher_smsmms_op</string>
+    <string name="ic_launcher_settings_op">drawable/ic_launcher_settings_op</string>
+    <string name="ic_launcher_email_op">drawable/ic_launcher_email_op</string>
+    <string name="ic_launcher_calcultor_op">drawable/ic_launcher_calcultor_op</string>
+    <string name="ic_launcher_recorder_op">drawable/ic_launcher_recorder_op</string>
+    <string name="ic_launcher_calender_op">drawable/ic_launcher_calender_op</string>
+    <string name="ic_launcher_clock_op">drawable/ic_launcher_clock_op</string>
+    <string name="ic_launcher_video_op">drawable/ic_launcher_video_op</string>
+    <string name="ic_launcher_radio_op">drawable/ic_launcher_radio_op</string>
+    <string name="ic_launcher_camera_op">drawable/ic_launcher_camera_op</string>
+    <string name="ic_launcher_gallery3d_op">drawable/ic_launcher_gallery3d_op</string>
+    <string name="ic_launcher_filemanager_op">drawable/ic_launcher_filemanager_op</string>
+    <string name="ic_launcher_nearme_note_op">drawable/ic_launcher_nearme_note_op</string>
+    <string name="search_app_icon_op">drawable/ic_launcher_search_op</string>
+    <string name="ic_launcher_market_op">drawable/ic_launcher_market_op</string> 
+    <string name="ic_launcher_browser_op">drawable/ic_launcher_browser_op</string> 
+    <string name="x3_bbm">drawable/x3_bbm</string> 
+    <string name="x3_ebuddy">drawable/x3_ebuddy</string> 
+    <string name="translate">drawable/translate</string> 
+    <string name="x3_fruit">drawable/x3_fruit</string> 
+    <string name="x3_messenger">drawable/x3_messenger</string> 
+    <string name="x3_opera">drawable/x3_opera</string> 
+    <string name="x3_tencent">drawable/x3_tencent</string> 
+    <string name="x3_what_app_mi">drawable/x3_what_app_mi</string> 
+    <string name="x3_ic_launcher_twitter_zyc_1">drawable/x3_ic_launcher_twitter_zyc_1</string> 
+    <string name="x3_flashlight">drawable/x3_flashlight</string> 
+    <string name="x3_quickstartguide">drawable/x3_quickstartguide</string> 
+    <string name="x3_oobe">drawable/x3_oobe</string> 
+    <string name="x3_buzz_widget">drawable/x3_buzz_widget</string> 
+    <string name="x3_google_settings">drawable/x3_google_settings</string> 
+    <string name="x3_flipboard">drawable/x3_flipboard</string> 
+    <string name="x3_youtube">drawable/x3_youtube</string> 
+    <string name="x3_movie_studio">drawable/x3_movie_studio</string> 
+    <string name="x3_ic_launcher_wallpaper_theme">drawable/x3_ic_launcher_wallpaper_theme</string> 
+    <string name="x3_ic_launcher_gplus_zyc_1">drawable/x3_ic_launcher_gplus_zyc_1</string> 
+    <string name="x3_pl">drawable/x3_pl</string> 
+    <string name="x3_katana">drawable/x3_katana</string> 
+    <string name="x3_voip">drawable/x3_voip</string> 
+    <string name="x3_google_map">drawable/x3_google_map</string> 
+    <string name="x3_gm">drawable/x3_gm</string> 
+    <string name="x3_usim_tow">drawable/x3_usim_tow</string> 
+    <string name="x3_usim_one">drawable/x3_usim_one</string> 
+    <string name="x3_birdjump">drawable/x3_birdjump</string> 
+    <string name="x3_chrome">drawable/x3_chrome</string> 
+    <string name="x3_ic_launcher_locknow">drawable/x3_ic_launcher_locknow</string>
+    <string name="x3_ic_launcher_wifi_hotspot_mi">drawable/x3_ic_launcher_wifi_hotspot_mi</string>
+    <string name="x3_ic_launcher_wps_moffice_eng">drawable/x3_ic_launcher_wps_moffice_eng</string>
+    <string name="x3_local_map">drawable/x3_local_map</string>
+    <string name="x3_nav">drawable/x3_nav</string>
+    <string name="x3_google">drawable/x3_google</string>
+    <string name="x3_stop_watch">drawable/x3_stop_watch</string>
+    <string name="x3_battery">drawable/x3_battery</string>
+    <string name="intercept">drawable/intercept</string>
+    <string name="nodisturbmodeapp">drawable/nodisturbmodeapp</string>
+    <string name="voip">drawable/voip</string>
+    <string name="lockscreenapp">drawable/lockscreenapp</string>
+    
+    <string name="ic_launcher_speechassist">drawable/ic_launcher_speechassist</string>
+    
+    
+    <string name="wallpaper">drawable/wallpaper</string> 
+    <string name="icon_background">drawable/icon_background</string>
+    <string name="icon_folder">drawable/icon_folder</string>
+    <string name="icon_all_apps">drawable/icon_all_apps</string>
+    <string name="verify">string/verify</string>
+    <string name="title">string/title</string>
+    
+    
+</resources>

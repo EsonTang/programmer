@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recorder_bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:background="@color/recorder_white"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="top"
+        android:background="@color/list_view_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_marginStart="@dimen/bottom_btn_area_padding"
+        android:layout_marginEnd="@dimen/bottom_btn_area_padding"
+        >
+
+        <com.android.soundrecorder.CombinationView
+                android:id="@+id/cb_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:text="@string/send"
+                app:icon="@drawable/sel_send_out"
+                />
+
+            
+            <com.android.soundrecorder.CombinationView
+                android:id="@+id/cb_rename"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:text="@string/recorder_bottom_layout_rename_btn"
+                app:icon="@drawable/sel_rename"
+                />
+
+            <com.android.soundrecorder.CombinationView
+                android:id="@+id/cb_set_as_bell"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:text="@string/set_as_bell"
+                app:icon="@drawable/sel_set_bell"/>
+            
+            <com.android.soundrecorder.CombinationView
+                android:id="@+id/cb_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:text="@string/recorder_bottom_layout_delete_txt"
+                app:icon="@drawable/sel_delete"/>
+            
+    </LinearLayout>
+
+</LinearLayout>

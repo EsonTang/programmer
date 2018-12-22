@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.soundrecorder"
+    android:sharedUserId="android.uid.system" >
+
+    <original-package android:name="com.android.soundrecorder" />
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="22" />
+
+    <!-- oversea's new request:all function will be opened default -->
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.STOP_APP_SWITCHES" />
+
+    <application
+        android:icon="@mipmap/ic_launcher_soundrecorder_am"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SoundRecorder"
+        android:usesCleartextTraffic="false" >
+
+        <!-- Nav bar color customized feature. prize-linkh-2017.08.31 -->
+        <!-- add DisableNavBarColorCustInStartingWin theme for disable nav bar color cust in starting win. -->
+        <activity
+            android:name="SoundRecorder"
+            android:configChanges="orientation|screenSize|keyboardHidden|mnc|mcc"
+            android:launchMode="singleTop"
+            android:process=":app"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SoundRecorder.DisableNavBarColorCustInStartingWin"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- category android:name="android.intent.category.OPENABLE" / -->
+                <data android:mimeType="audio/amr" />
+                <data android:mimeType="audio/3gpp" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.soundrecorder.SoundRecorder" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.MediaStore.RECORD_SOUND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--
+            intent-filter>
+                 <action android:name="android.intent.action.VIEW" />
+                 <category android:name="android.intent.category.DEFAULT" />
+                 <data android:scheme="file" />
+                 <data android:mimeType="audio/amr" />
+                 <data android:mimeType="audio/3gpp" />
+            </intent-filter
+            -->
+        </activity>
+        <activity
+            android:name="RecordingFileList"
+            android:clearTaskOnLaunch="false"
+            android:configChanges="orientation|screenSize|keyboardHidden|mnc|mcc"
+            android:label="@string/recording_file_list"
+            android:launchMode="singleTop"
+            android:process=":app"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SoundRecorderFileList" >
+            <intent-filter>
+                <action android:name="com.android.soundrecorder.RecordingFileList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="SoundRecorderService"
+            android:process=":app" >
+        </service>
+        <!-- @prize fanjunchen 2015-05-15 { -->
+        <receiver
+            android:name=".MediaButtonReceiver"
+            android:process=":app" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <!-- @prize end } -->
+    </application>
+
+</manifest>

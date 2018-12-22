@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">Chiamata IP  <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g>  </string>
+    <string name="select_account">"Seleziona account"</string>
+    <string name="all_accounts">"Tutti gli account"</string>
+    <string name="call_log_via_sim_name_notice">REGISTRI CHIAMATE VIA \"<xliff:g id="sim_name">%s</xliff:g>\"</string>
+    <string name="imei_invalid">Non valido</string>
+    <string name="conf_call_member_list">Elenco membri</string>
+    <string name="conf_call_participant_answered">Risposto</string>
+    <string name="conf_call_participant_missed">"Perse"</string>
+    <string name="calls_over_wifi">ChiamateeffettuabilitramiteWi-Fi</string>
+    <string name="connect_to_wifi">Connetti a Wi-Fi per chiamare</string>
+    <string name="wfc_notification_summary">Toccarequiperaccedereallepreferenze</string>
+    <string name="wfc_notification_summary_fail">Tocca qui per visualizzare le reti disponibili</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Chiamata SIP"</string>
+    <string name="snackbar_number_unblocked_failed">Sblocco <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> non riuscito</string>
+</resources>

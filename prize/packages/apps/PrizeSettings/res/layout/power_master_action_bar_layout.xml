@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingStart="11dp"
+    android:paddingEnd="17dp" >
+
+    <RelativeLayout
+        android:id="@+id/back_click_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:paddingEnd="11dp" >
+
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:background="@drawable/ic_ab_back_material_prize" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/left_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/mid_title"
+        android:layout_toEndOf="@+id/back_click_rl"
+        android:textSize="@dimen/front_big_size"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/mid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/front_big_size"
+        android:textColor="@color/prize_actionbar_textcolor" />
+
+    <RelativeLayout
+        android:id="@+id/operation_click_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/operation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/power_master_operation_selector"
+            android:clickable="false"
+            android:textSize="@dimen/front_big_size"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

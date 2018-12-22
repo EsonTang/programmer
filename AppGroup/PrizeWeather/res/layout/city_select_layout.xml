@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <GridView
+            android:id="@+id/provGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:listSelector="#0099ff"
+            android:numColumns="4"
+            android:stretchMode="columnWidth" />
+
+        <GridView
+            android:id="@+id/cityGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:listSelector="#0099ff"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:visibility="gone"
+             />
+
+        <GridView
+            android:id="@+id/countyGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:listSelector="#0099ff"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/selectBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

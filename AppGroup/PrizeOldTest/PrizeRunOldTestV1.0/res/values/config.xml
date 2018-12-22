@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <string name="cpu_time">20</string>
+   <string name="lcd_time">10</string>
+   <string name="Threed_time">10</string>
+   <string name="emmc_time">20</string>
+   <string name="sr_circle">150</string>
+   <string name="video_time">30</string>
+   <string name="camera_circle">30</string>
+   <string name="reboot_circle">20</string>
+   <string name="ddr_cricle">1</string> -->
+   
+   <!--  <string name="cpu_time">1</string>
+   <string name="lcd_time">1</string>
+   <string name="Threed_time">1</string>
+   <string name="emmc_time">1</string>
+   <string name="sr_circle">2</string>
+   <string name="video_time">1</string>
+   <string name="camera_circle">1</string>
+   <string name="reboot_circle">2</string>
+   <string name="ddr_cricle">1</string> -->
+   
+   
+  <string name="cpu_time">22</string>
+   <string name="lcd_time">12</string>
+   <string name="Threed_time">15</string>
+   <string name="emmc_time">26</string>
+   <string name="sr_circle">80</string>
+   <string name="video_time">50</string>
+   <string name="camera_circle">45</string>
+   <string name="reboot_circle">25</string>
+   <string name="ddr_cricle">1</string> 
+   
+   
+    <string name="cpu_time_four">15</string>
+   <string name="lcd_time_four">8</string>
+   <string name="Threed_time_four">10</string>
+   <string name="emmc_time_four">20</string>
+   <string name="sr_circle_four">60</string>
+   <string name="video_time_four">38</string>
+   <string name="camera_circle_four">35</string>
+   <string name="reboot_circle_four">15</string>
+   <string name="ddr_cricle_four">1</string> 
+   
+   
+</resources>

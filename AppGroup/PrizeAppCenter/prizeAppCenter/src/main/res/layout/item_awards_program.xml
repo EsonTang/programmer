@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/banner_Iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/award_program_banner_hight"
+        android:contentDescription="@string/alert_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7.5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner_default"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/over_program_cover_Iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/banner_Iv"
+        android:layout_alignRight="@+id/banner_Iv"
+        android:layout_alignLeft="@+id/banner_Iv"
+        android:layout_alignTop="@+id/banner_Iv"
+        android:visibility="gone"
+        android:background="#4D000000"
+        />
+
+    <ImageView
+        android:id="@+id/coming_program_Iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/banner_Iv"
+        android:layout_alignTop="@id/banner_Iv"
+        android:layout_marginTop="-2.5dp"
+        android:visibility="gone"
+        android:layout_marginLeft="-2.5dp"
+        android:background="@drawable/icon_coming_program"
+         />
+
+    <ImageView
+        android:id="@+id/over_program_Iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/banner_Iv"
+        android:layout_alignRight="@+id/banner_Iv"
+        android:layout_margin="15dp"
+        android:visibility="gone"
+        android:background="@drawable/icon_over_program"
+         />
+
+</RelativeLayout>

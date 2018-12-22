@@ -1,0 +1,149 @@
+com.prize.cloud.BaseActivity:
+    protected static final java.lang.String EXITAPP
+com.prize.cloud.BuildConfig
+com.prize.cloud.CodeActivity:
+    public static final java.lang.String PARAM_ACCOUNT
+    public static final java.lang.String PARAM_TYPE
+    public static final java.lang.String PARAM_TITLE
+    129:136:private void verifyClk(android.view.View)
+com.prize.cloud.LoginActivity:
+    public static final java.lang.String HIDE_LOSTBTN
+    private static final java.lang.String LOGIN_ACTION
+com.prize.cloud.LogonActivity:
+    private android.widget.ImageView mainBackgroud
+    private static final int CANCEL
+    private static final int SURE
+    public static final java.lang.String OUTLOGIN_ACTION
+    public static final java.lang.String RELOGIN_ACTION
+    134:140:public void sendBroadCast()
+com.prize.cloud.MainActivity:
+    private static final java.lang.String RELOGIN_ACTION
+    private android.widget.TextView login_id
+    private android.widget.TextView regist_new_id
+com.prize.cloud.PersonActivity:
+    private static final int IMAGE_CODE
+    private static final int PHOTO_REQUEST_CUT
+    private static final int PHOTO_REQUEST_CAREMA
+    private static final int CANCEL
+    private static final int SURE
+    private static final int TAKE_PHOTO
+    private static final int PHOTOS
+    private static final int MAN
+    private static final int WOMAN
+com.prize.cloud.R:
+    10:10:public R()
+com.prize.cloud.R$anim
+com.prize.cloud.R$attr
+com.prize.cloud.R$color
+com.prize.cloud.R$dimen
+com.prize.cloud.R$drawable
+com.prize.cloud.R$id
+com.prize.cloud.R$layout
+com.prize.cloud.R$string
+com.prize.cloud.R$style
+com.prize.cloud.R$styleable:
+    431:431:public R$styleable()
+com.prize.cloud.WebviewActivity:
+    public static final java.lang.String EXTRA_TITLE
+    public static final java.lang.String EXTRA_URL
+com.prize.cloud.app.AppManager:
+    47:48:public android.app.Activity currentActivity()
+    55:57:public void finishActivity()
+    63:68:public void finishActivity(android.app.Activity)
+    74:79:public void finishActivity(java.lang.Class)
+    98:105:public void AppExit(android.content.Context)
+com.prize.cloud.bean.CloudAccount:
+    private int id
+    34:34:public int getId()
+    38:39:public void setId(int)
+com.prize.cloud.bean.Person:
+    55:55:public int getTableId()
+    59:60:public void setTableId(int)
+com.prize.cloud.bean.Respond:
+    43:44:public void setCode(int)
+    51:52:public void setMsg(java.lang.String)
+    55:55:public java.lang.Object getData()
+    59:60:public void setData(java.lang.Object)
+    63:63:public java.lang.Object convert(org.codehaus.jackson.type.TypeReference)
+com.prize.cloud.db.DbManager:
+    private static final java.lang.String DB_NAME
+com.prize.cloud.provider.AccountProvider:
+    public static final java.lang.String AUTHORITY
+    private static final int PERSON
+    private static final int ACCOUNT
+    private static final int EMAIL
+com.prize.cloud.receiver.PollMgr:
+    public static final long IntervalMillis
+    34:34:public PollMgr()
+    55:62:public static void stopPollingService(android.content.Context,java.lang.Class,java.lang.String)
+com.prize.cloud.task.CodeType
+com.prize.cloud.task.NetTask:
+    public static final int ERROR_TIMEOUT
+    public static final int ERROR_FAILURE
+    public static final int ERROR_NETWORK
+    public static final int ERROR_UNIFIED
+    public static final java.lang.String NETWORK_OK
+    public static final int NETWORK_TIMEOUT
+    public static final java.lang.String HOST
+    public abstract void doExecute()
+com.prize.cloud.task.ProfileTask:
+    62:63:public void setIcon(java.lang.String)
+com.prize.cloud.task.pojo.CodePojo
+com.prize.cloud.task.pojo.KeyPojo:
+    35:36:public void setKey(java.lang.String)
+com.prize.cloud.task.pojo.LoginInfo:
+    37:38:public void setRealName(java.lang.String)
+    45:46:public void setPhone(java.lang.String)
+    53:54:public void setAvatar(java.lang.String)
+    61:62:public void setUserId(java.lang.String)
+    69:70:public void setEmail(java.lang.String)
+    77:78:public void setPassport(java.lang.String)
+    85:86:public void setGender(int)
+com.prize.cloud.util.CloudIntent
+com.prize.cloud.util.DeviceUuidFactory:
+    protected static final java.lang.String PREFS_FILE
+    protected static final java.lang.String PREFS_DEVICE_ID
+com.prize.cloud.util.GObjectMapper:
+    31:31:private GObjectMapper()
+com.prize.cloud.util.ImagePathUtils:
+    35:35:public ImagePathUtils()
+com.prize.cloud.util.Utils:
+    52:52:public Utils()
+    300:304:public static void savePref(android.content.Context,java.lang.String,boolean)
+    313:313:public static boolean getBoolean(android.content.Context,java.lang.String)
+com.prize.cloud.vp.CodePresenter:
+    73:76:public void onDestroy()
+com.prize.cloud.vp.OwnPresenter:
+    private java.util.Timer mTimer
+    private static final long POLLING_PERIOD
+    private static final java.lang.String SMS_CONTENT
+    144:152:private void connecting(android.content.Context,java.lang.String,java.lang.String)
+    55:55:static synthetic java.util.Timer access$0(com.prize.cloud.vp.OwnPresenter)
+    55:55:static synthetic void access$1(com.prize.cloud.vp.OwnPresenter,java.util.Timer)
+    58:58:static synthetic boolean access$3(com.prize.cloud.vp.OwnPresenter)
+    58:58:static synthetic void access$4(com.prize.cloud.vp.OwnPresenter,boolean)
+com.prize.cloud.vp.OwnPresenter$PollingTask
+com.prize.cloud.vp.OwnPresenter$PollingTask$1
+com.prize.cloud.widgets.CircleImageView:
+    private static final int COLORDRAWABLE_DIMENSION
+    private static final int DEFAULT_BORDER_WIDTH
+    private static final int DEFAULT_BORDER_COLOR
+com.prize.cloud.widgets.NickNameDialog:
+    private static final int CANCEL
+    private static final int SURE
+    48:49:public NickNameDialog(android.content.Context,int)
+    74:75:public void setEditText(java.lang.String)
+com.prize.cloud.widgets.OutLoginDialog:
+    private static final int CANCEL
+    private static final int SURE
+com.prize.cloud.widgets.ProDialog:
+    33:34:public ProDialog(android.content.Context)
+    37:38:public ProDialog(android.content.Context,int)
+com.prize.cloud.widgets.SelectImgDialog:
+    private static final int CANCEL
+    private static final int TAKE_PHOTO
+    private static final int PHOTOS
+com.prize.cloud.widgets.SelectSexDialog:
+    private static final int CANCEL
+    private static final int TAKE_PHOTO
+    private static final int PHOTOS

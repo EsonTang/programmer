@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">IP zvans <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g></string>
+    <string name="select_account">"Konta atlase"</string>
+    <string name="all_accounts">"Visi konti"</string>
+    <string name="imei_invalid">Nederīgs</string>
+    <string name="call_log_via_sim_name_notice">ZVANU ŽURNĀLI, IZMANTOJOT \"<xliff:g id="sim_name">%s</xliff:g>\"</string>
+    <string name="conf_call_member_list">Dalībnieku saraksts</string>
+    <string name="conf_call_participant_answered">Atbildēts</string>
+    <string name="conf_call_participant_missed">"Neatb."</string>
+    <string name="calls_over_wifi">ZvanitiksveiktiWi-Fitīklā</string>
+    <string name="connect_to_wifi">Pievienoties Wi-Fi, lai zvanītu</string>
+    <string name="wfc_notification_summary">Pieskarietiesšeit,laipiekļūtupreferencēm</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP zvans"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> atbloķēt neizdevās</string>
+</resources>

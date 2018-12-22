@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.prize.appcenter.ui.widget.CustomImageView
+        android:id="@+id/game_iv"
+        style="@style/game_item_image"
+        android:layout_margin="6dp"
+        android:contentDescription="@string/alert_title"
+        android:src="@drawable/default_icon"
+        android:transitionName="robot"
+        app:iv_radius="5dp" />
+
+    <TextView
+        android:id="@+id/game_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/game_iv"
+        android:layout_alignRight="@id/game_iv"
+        android:layout_below="@id/game_iv"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/text_color_404040"
+        android:textSize="@dimen/text_size_26" />
+
+
+    <View
+        android:layout_width="75dp"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_above="@+id/state_tv"
+        android:layout_marginTop="5dp"
+        android:background="#e4e4e4" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="75dp"
+        android:layout_height="3dp"
+        android:layout_above="@+id/state_tv"
+        android:layout_marginTop="5dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/state_tv"
+        android:layout_width="75dp"
+        android:layout_height="29dp"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="安装"
+        android:textColor="@color/text_color_12b7f5"
+        android:textSize="@dimen/text_size_micro" />
+</merge>

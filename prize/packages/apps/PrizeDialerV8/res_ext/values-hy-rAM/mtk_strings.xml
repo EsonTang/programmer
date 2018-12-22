@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">IP կանչ <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g></string>
+    <string name="select_account">"Ընտրեք հաշիվ"</string>
+    <string name="all_accounts">Բոլոր հաշիվները</string>
+    <string name="call_log_via_sim_name_notice">ԶԱՆԳԵՐԻ ԳՐԱՆՑՈՒՄՆԵՐ՝ \"<xliff:g id="sim_name">%s</xliff:g>\"</string>
+    <string name="imei_invalid">Անվավեր</string>
+    <string name="conf_call_member_list">Անդամների ցանկ</string>
+    <string name="conf_call_participant_answered">Պատասխանվեց</string>
+    <string name="conf_call_participant_missed">"Բաց թողնված"</string>
+    <string name="calls_over_wifi">ԶանգերըկկատարվենWi-Fi-ով</string>
+    <string name="connect_to_wifi">Զանգեր կատարելու համար միացեք Wi-Fi-ին</string>
+    <string name="wfc_notification_summary">Հպեքայստեղ`նախապատվություններըբացելուհամար</string>
+    <string name="wfc_notification_summary_fail">Հպեք այստեղ` մատչելի ցանցերը դիտելու համար</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP զանգ"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> արգելաբացումը ձախողվեց</string>
+</resources>

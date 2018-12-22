@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:padding="10dp"
+		android:text="今日生活指数"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/large_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_separator_view_height"
+        android:theme="@style/viewStyle" />
+        <!-- <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cloth" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/wfi_dressing_brief"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天气舒适" 
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/wfi_dressing_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议穿长袖牛仔裤等服装"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout> -->
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weather_living_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/wfi_dressing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/indexofliving_dressing"
+            android:text="@string/no_data"
+            android:theme="@style/LiveTextStyle" 
+            android:textSize="@dimen/medium_textsize"/>
+
+        <View
+            android:layout_width="@dimen/detail_separator_view_height"
+            android:layout_height="match_parent"
+            android:theme="@style/viewStyle" />
+
+        <TextView
+            android:id="@+id/wfi_travel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/indexofliving_travel"
+            android:text="@string/no_data"
+            android:theme="@style/LiveTextStyle"
+            android:textSize="@dimen/medium_textsize"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:theme="@style/viewStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/wfi_car_washing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/indexofliving_car_washing"
+            android:text="@string/no_data"
+            android:theme="@style/LiveTextStyle"
+            android:textSize="@dimen/medium_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:theme="@style/viewStyle" />
+
+        <TextView
+            android:id="@+id/wfi_flu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/indexofliving_flu"
+            android:text="@string/no_data"
+            android:theme="@style/LiveTextStyle"
+            android:textSize="@dimen/medium_textsize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:theme="@style/viewStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/wfi_shopping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/indexofliving_shopping"
+            android:text="@string/no_data"
+            android:theme="@style/LiveTextStyle"
+            android:textSize="@dimen/medium_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:theme="@style/viewStyle" />
+
+        <TextView
+            android:id="@+id/wfi_traffic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/indexofliving_traffic"
+            android:text="@string/no_data"
+            android:theme="@style/LiveTextStyle" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:theme="@style/viewStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/wfi_morning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/indexofliving_morning"
+            android:text="@string/no_data"
+            android:theme="@style/LiveTextStyle"
+            android:textSize="@dimen/medium_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:theme="@style/viewStyle" />
+
+        <TextView
+            android:id="@+id/wfi_air"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/indexofliving_air"
+            android:text="@string/no_data"
+            android:theme="@style/LiveTextStyle"
+            android:textSize="@dimen/medium_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

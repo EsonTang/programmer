@@ -1,0 +1,11 @@
+<resources>
+
+    <dimen name="banner_bar_hight3">125dp</dimen>
+    <dimen name="dimen_148dp">116dp</dimen>
+    <dimen name="banner_bar_hight">180dp</dimen>
+    <dimen name="dimen_195dp">165dp</dimen>
+    <dimen name="pop_height">183dp</dimen>
+    <dimen name="dialog_margingground">18dp</dimen>
+
+
+</resources>

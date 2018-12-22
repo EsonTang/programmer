@@ -1,0 +1,5 @@
+allow zygote data_fonts_file:dir { r_dir_perms };
+allow zygote data_fonts_file:file { getattr read };
+
+allow zygote system_fonts_file:dir { r_dir_perms };
+allow zygote system_fonts_file:file { getattr read };

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--PRIZE-English version-modify string.xml Chinese to English-liuweiquan -2015-10-8 -->
+    <string name="app_name">factory testing</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">factory testing</string>
+    <string name="phonetest">Moblie Test</string>
+	<string name="pcbatest">PCBA Test</string>
+	
+	<string name="listtest">Single Test</string>
+    <string name="phonetest_confirm">Whether to open the machine testing?</string>
+	<string name="pcbatest_confirm">Whether to open the PCBA testing?</string>
+    <string name="testreport">Test Report</string>
+    <string name="factoryset">Factory Reset</string>
+    <string name="factoryset_confirm">Restore the factory reset and shutdown?</string>
+    <string name="softinfo">Software Info</string>
+    <string name="lsensor_data">0</string>
+	<string name="sn_name">information</string>
+    <!-- Common string -->
+    <string name="ok">OK</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="pass">pass</string>
+    <string name="fail">fail</string>
+    <string name="again">resurvey</string>
+    <string name="confirm">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="start">start</string>
+    <string name="scan">scan</string>
+    <string name="test_confirm">please choose</string>
+    <string name="device_open_fail">Start equipment failure!</string>
+    <string name="service_get_fail">Start the service failure!</string>
+    <string name="sensor_get_fail">Sensor start-up failure!</string>
+    <string name="sensor_register_fail">Sensors registration failure!</string>
+    <string name="test_pass">pass-test</string>
+    <string name="shake_hint_l">Observation value changes in light and dark place</string>
+    <string name="shake_hint_p">Please put your hand close to and leave the sensing area,and watching the numerical change</string>
+    <string name="sdcard_wait">Please wait for read SD card...</string>
+    <string name="remove_headset">Please remove the headset</string>
+    <string name="insert_headset">Please insert the headset</string>
+    <string name="stop">stop</string>
+    <string name="play">play</string>
+    <string name="record">record</string>
+    <string name="time_out">time out!</string>
+    <!-- TouchPanelEdge -->
+    <string name="touchpanel_edge_name">Touch Screen</string>
+    <string name="touchpanel_edge_linearity">Linearity Test:</string>
+    <string name="touchpanel_edge_accuracy">Accuracy Test:</string>
+    <string name="touchpanel_edge_sensivicity">Sensitivity Test:</string>
+    <string name="touchpanel_edge_deazone">Marginal Test:</string>
+    <string name="touchpanel_edge_zoom">Gestures Test:</string>
+    <string name="touchpanel_edge_free">Free Marking Test:</string>
+	<string name="touchpanel_edge_linearityHorizontal">Linearity Horizontal Test:</string>
+    <string name="touchpanel_edge_linearityVertical">Linearity Vertical Test:</string>
+    <string name="touchpanel_edge_pass">success!</string>
+    <string name="touchpanel_edge_fail">fail!</string>
+    <!-- Version -->
+    <string name="Version_name">version</string>
+	<string name="calibration">\ncalibration:</string>
+    <string name="calibration_yes">Calibrated</string>
+    <string name="calibration_no">uncalibrated</string>
+	<string name="no_test">Not Done</string>
+	<string name="is_test">Has Tested</string>
+	<string name="mobile_cit">Mobile CIT:</string>
+    <!-- SIM -->
+    <string name="sim_name">SIM</string>
+    <!-- Led -->
+    <string name="keypadbacklight_confirm">confirm</string>
+    <string name="led_name">LED</string>
+    <string name="lcd_name">LCD test</string>
+    <string name="led_flick">LED blink</string>
+    <string name="led_tri_text">LED test confirm:red,green,blue</string>
+    <string name="led_dual_text">LED test confirm:red,green</string>
+    <string name="led_confirm">LED colour correct?</string>
+	<!-- YCD -->
+	<string name="ycd_name">YCD</string>	
+    <!-- Flashlight -->
+    <string name="flashlight_name">flash lamp</string>
+	<string name="flashlight_front_name">flash lamp front</string>
+    <string name="flashlight_confirm">If the flash open?</string>
+    <!-- Key -->
+    <string name="key_name">key</string>
+    <string name="key_text">Please click the button below</string>
+    <string name="key_volume_up">volume up key</string>
+    <string name="key_volume_down">volume down key</string>
+    <string name="key_menu">menu key</string>
+    <string name="key_home">home key</string>
+    <string name="key_back">back key</string>
+    <!-- CameraBack -->
+    <string name="cameraback_name">rear-view camera</string>
+    <string name="cameraback_takepicture">take pictures</string>
+    <string name="cameraback_fail_open">Camera open failure,Please check the camera!
+</string>
+    <string name="autofocus_fail">Autofocus failure</string>
+    <!-- CameraFront -->
+    <string name="camerafront_name">the front camera</string>
+    <string name="camerafront_takepicture">take pictures</string>
+	
+    <string name="camerabacksub_name">rear-view camera sub</string>
+	
+    <!-- Vibrator -->
+    <string name="vibrate_name">motor running</string>
+    <!-- GSensor -->
+    <string name="gsensor_name">gravity sensor</string>
+    <!-- MSensor -->
+    <string name="msensor_name">Magnetic Sensor</string>
+    <string name="msensor_tip">Rotation direction and observe the numerical change </string>
+    <string name="msensor_data">Magnetic Sensor</string>
+	<!-- CSensor -->
+    <string name="csensor_name">step counter Sensor</string>
+    <string name="csensor_tip">shake or move the numerical change </string>
+    <string name="csensor_data">step counter Sensor</string>
+    <!-- PSensor -->
+    <!-- GySensor -->
+    <string name="gysensor_name">Gyroscope Sensor</string>
+    <string name="gysensor_tip">Rotation direction and observe the numerical change </string>
+    <string name="gysensor_data">Gyroscope Sensor</string>
+    <!-- GYSensor -->
+
+    <string name="psensor_name">range sensor</string>
+    <string name="psensor_result">(0:come near 1:far away):</string>
+    <!-- LSensor -->
+    <string name="lsensor_name">Light sensor</string>
+    <string name="lsensor_result">accuracy:3</string>
+    <!-- Phone -->
+    <string name="phone_name">phone</string>
+    
+    <!-- brightness -->
+    <string name="brightness_name">Backlight</string>
+    <string name="brightness_strong">Strong backlight</string>
+    <string name="brightness_slow">Weak backlight</string>
+    <!-- SDCard -->
+    <string name="sdcard_name">TF card</string>
+    <string name="sdcard_confirm">Insert SD card?</string>
+    <string name="sdcard_to_remove">Please pull out the SD card</string>
+    <string name="sdcard_to_insert">Please insert the SD card</string>
+    <!-- RAM -->
+    <string name="ram_name">memory</string>
+    <!-- Bluetooth -->
+    <string name="bluetooth_name">Bluetooth</string>
+    <string name="bluetooth_open">Bluetooth already open</string>
+    <string name="bluetooth_scan_start">Start Service...</string>
+    <string name="bluetooth_scan_finish">the scanning is completed</string>
+    <string name="bluetooth_turning_on">Open the bluetooth...</string>
+    <string name="bluetooth_scan_null">Could not find bluetooth</string>
+    <!-- WiFi -->
+    <string name="wifi_name">WiFi</string>
+    <string name="wifi_open">WiFi already open</string>
+    <string name="wifi_text">The WiFi test will be completed within 30 seconds,please wait.</string>
+    <string name="wifi_scan_failed">scan fail!</string>
+    <string name="wifi_is_closing">WiFi close,Please try again after a period of time.</string>
+    <string name="wifi_scan_null">not find any AP!</string>
+    <string name="wifi_state_unknown">The wireless network status is unknown,please try again.</string>
+    <!-- Receiver -->
+    <string name="receiver_name">receiver</string>
+    <string name="receiver_hint">receiver</string>
+    <string name="receiver_playing">In playing, please close to the receiver</string>
+    <string name="receiver_recording">In the recording, please speak to the microphone.Recording end after 5 second,or click the stop button</string>
+    <string name="transmitter_receiver_playing">Playing the recording,please confirm whether there is sound.</string>
+    <string name="transmitter_receiver_confirm">Hear the sound?</string>
+    <string name="transmitter_receiver_record_first">Please first recording</string>
+    <string name="transmitter_receiver_replay_end">play end.</string>
+    <string name="transmitter_receiver_to_record">In the recording,please speak to the microphone.Recording end after 5 second,or click the stop button</string>
+    <!-- Headset -->
+    <string name="headset_name">headset</string>
+    <string name="headset_hint">headset</string>
+    <string name="headset_recording">In the recording,please speak to the microphone.Recording end after 5 second,or click the stop button</string>
+    <string name="headset_playing">Playing the recording,please confirm if there is a sound receiver.</string>
+    <string name="headset_confirm">Hear the sound?</string>
+    <string name="headset_record_first">Please press the recording key</string>
+    <string name="headset_replay_end">play end.</string>
+    <string name="headset_to_record">In the recording, please speak to the microphone.Recording end after 5 second,or click the stop button</string>
+    <string name="headset_insert">Please insert the headset for testing</string>
+    <string name="headset_tip">Please speak to the microphone</string>
+    <!-- Speaker -->
+    <string name="speaker_name">Speaker</string>
+    <string name="speaker_hint">Speaker</string>
+    <string name="speaker_playing">Speaker playing</string>
+    <string name="speaker_confirm">Hear the sound?</string>
+    <string name="speaker_play_first">end</string>
+    <string name="speaker_to_play">Click the play button.</string>
+    <string name="speaker_recording">Now on the tape, please speak.</string>
+    <!-- MIC -->
+    <string name="mic_name">MIC</string>
+    <string name="mic_tip">please speak to the microphone,and ears close to the receiver.</string>
+    <string name="mic_recording">start recording</string>
+    <string name="mic_stop_recording">Stop the recording and playback</string>
+    <string name="mic_stop_playing">stop playing</string>
+    <!-- FM -->
+    <string name="fm_name">FM</string>
+    <string name="fm_search">search</string>
+    <string name="fm_confirm">Hear the sound?</string>
+    <!-- Charger -->
+    <string name="Charger_name">Battery charging</string>
+    <string name="charger_state">Charging state</string>
+    <string name="not_charging">Not charging</string>
+    <string name="charging">In charging</string>
+    <string name="charging_finish">Charging has been completed</string>
+    <string name="current_electricity">The current battery level</string>
+    <string name="charger_max">Maximum battery level</string>
+    <string name="battery_temperature">Battery temperature</string>
+    <string name="battery_type">Battery type</string>
+    <string name="current_voltage">Current voltage</string>
+    <string name="charger_current">Charging current</string>
+    <!-- Finger -->
+    <string name="Finger_name">Fingerprint recognition</string>
+    <string name="Finger_result">test result</string>
+    <string name="Finger_start_show_tips">start</string>
+    <string name="Finger_end_show_tips">stop</string>
+    <string name="Finger_adjust">adjusting</string>
+    <string name="Finger_pass">Test complete</string>
+
+    <!-- GPS -->
+    <string name="gps_enable_first">Enable GPS</string>
+    <string name="gps_name">GPS</string>
+    <string name="gps_open">GPS already open</string>
+    <string name="gps_pos">GPS is searching the star</string>
+
+    <!-- Hall -->
+    <string name="hall_name">Hall sensor</string>
+    <string name="result_tip">(0:come near 1:far away):</string>
+    <string name="operation_tips">Please close and open the holster,or with the magnet near and leave the induction area,and watch digital change!</string>
+    <string name="torch_tip">Flash lamp has been open</string>
+ 	<!-- Infrared -->
+    <string name="infrared_name">Infrared</string> 
+    <string name="ir_send">sends command</string>
+    <string name="ir_get_freqs">carrier frequency</string>
+	<!--single test-->
+	<string name="switchlanguage">切换到中文</string>
+    <string name="rear_camera_sub">rear camera sub</string>
+    <string name="camera_back_sub_tip">jing shen value</string>
+    <string name="rear_camera">rear camera</string>
+    <string name="front_camera">front camera</string>
+    <string name="prize_led">LED</string>
+	<string name="prize_ycd">YCD</string>
+    <string name="prize_lcd">LCD</string>
+    <string name="touch_screen">touch screen</string>
+    <string name="battery">battery</string>
+    <string name="keys">keys</string>
+    <string name="speaker">speaker</string>
+	<string name="microphone_loop">microphone(loop)</string>
+    <string name="microphone">microphone</string>
+    <string name="headset">headset</string>
+    <string name="radio">radio</string>
+    <string name="receiver">receiver</string>
+    <string name="bluetooth">bluetooth</string>
+    <string name="motor">motor</string>
+    <string name="rang_sensor">rang sensor</string>
+    <string name="light_sensor">light sensor</string>
+    <string name="phone">phone</string>
+    <string name="backlight">backlight</string>
+    <string name="TF_card">TF card</string>
+    <string name="ram">RAM</string>
+    <string name="prize_sim">SIM</string>
+    <string name="prize_wifi">WiFi</string>
+    <string name="gravity_sensor">gravity sensor</string>
+    <string name="magnetic_sensor">magnetic sensor</string>
+    <string name="step_counter_sensor">step counter sensor</string>
+    <string name="gyroscope_sensor">gyroscope sensor</string>
+    <string name="fingerprint">fingerprint</string>
+    <string name="prize_gps">GPS</string>
+    <string name="flash_lamp">flash lamp</string>
+    <string name="flash_lamp_front">flash lamp front</string>
+    <string name="hall_sensor">hall sensor</string>
+    <string name="infrared">infrared</string>
+    <!--resultcode-->
+    <string name="result_normal">pass</string>
+    <string name="result_error">fail</string>
+    <!--testreport-->
+    <string name="date_format">yyyy-MM-dd HH:mm:ss</string>
+    <!--bluetooth-->
+    <string name="bt_name">Bluetooth name:</string>
+    <string name="bt_address">Bluetooth address:</string>
+	<string name="bt_rssi">Signal strength:</string>
+	<string name="bt_start_time">Open the bluetooth in</string>
+	<string name="bt_seconds">seconds</string>
+    <!--battery charger-->
+    <string name="degrees_centigrade">degrees centigrade</string>
+    <!--gps-->
+    <string name="latitude">latitude:</string>
+    <string name="longitude">longitude:</string>
+    <string name="speed">speed:</string>
+    <string name="altitude">altitude:</string>
+    <string name="bearing">bearing:</string>
+    <string name="nr_satellites">number of satellites:</string>
+    <string name="satellite">satellite</string>
+    <string name="pr_noice">pseudo random noice:</string>
+    <string name="sn_ratio">signal noise ratio:</string>
+    <!-- ram -->
+    <string name="total_memory">Total Memory:</string>
+    <string name="available_memory">Available Memory:</string>
+    <!-- SDCard -->
+    <string name="sdcard">SD card:</string>
+    <string name="internal_storage">Internal storage:</string>
+    <string name="detected">detected</string>
+    <string name="not_detected">not detected</string>
+    <string name="total_volume">Total volume:</string>
+    <string name="available_volume">Available volume:</string>
+    <string name="media_mounted">SD card mounted successfully</string>
+    <string name="media_unmounted">SD card unmounted</string>
+    <!-- aging test -->
+    <string name="aging_title">aging test</string>
+    <string name="agingtest_notice">The following six serial test, the same test each time</string>
+    <string name="serial_agingtest_notice">On Off screen restart and test items</string>
+    <string name="serial_agingtest_reboot">reboot</string>
+    <string name="serial_agingtest_sleep">sleep</string>
+    <string name="duration">duration:</string>
+    <string name="agingtest_testreport">Test report</string>
+    <string name="reboot_agingtest_testreport">reboot:fail</string>
+    <string name="sleep_agingtest_testreport">sleep:fail</string>
+    <string name="duration_def_hour">3</string>
+    <string name="duration_hour">hour</string>
+    <string name="duration_def_minute">0</string>
+    <string name="serial_duration_def_minute">20</string>
+    <string name="duration_minute">minute</string>
+    <string name="last_duration_detail">The last time duration:</string>
+    <string name="start_agingtest">start</string>
+    <string name="select_none_notice">Please select at least one test item!</string>
+    <string name="elapse_time_show">00:00:00</string>
+    <string name="duration_none_notice">Duration cannot be zero!</string>
+    <string name="no_vieofile_notice">Video file not found!</string>
+    <string name="copy_video_notice">Please wait a moment, is preparing for video files!</string>
+    <string name="otg">OTG</string>
+    <string name="otg_insert">Please insert the otg line for testing</string>
+    <string name="otg_checking">Checking</string>
+	
+    <!--Prize-add by liyu-for fingerprint factory test-20160621-start-->
+    <string name="fp_password_setting">Password Setting</string>
+    <string name="capture_put_finger_on">Capture Put Finger On</string>
+    <string name="register_title">Register</string>
+    <string name="guide_notice">Put the same finger on the phone and then remove the touch area</string>
+    <!--Prize-add by liyu-for fingerprint factory test-20160621-end-->
+	
+    <string name="phone_test_result">phone test result:</string>
+    <string name="no_calibration">ANT is not test</string>
+    <string name="prize_nfc">NFC</string>
+    <string name="prize_nfc_notice">Please close the NFC card phone back</string>
+</resources>

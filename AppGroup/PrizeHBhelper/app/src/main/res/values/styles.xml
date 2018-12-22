@@ -1,0 +1,78 @@
+<resources>
+
+    <!--<style name="ActionBar" parent="android:Theme.Material.Light">
+         <item name="android:statusBarInverse">gray</item>
+     </style>-->
+
+    <!--prize add zhaojian 8.0 2017819 start-->
+    <!--<style name="ActionBarTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarSize">@dimen/prize_action_bar_size</item>
+        <item name="android:contentInsetStart">0dp</item>
+        <item name="android:contentInsetEnd">0dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>-->
+    <!--prize add zhaojian 8.0 2017819 end-->
+
+    <style name="Sn1.Widget.ActionMode" parent="@android:style/Theme.Holo">
+        <item name="android:actionModeCloseDrawable">@drawable/delete</item>
+        <item name="android:actionModeCloseButtonStyle">@null</item>
+        <item name="android:actionBarStyle">@style/Sn1.Widget.ActionBar.None</item>
+    </style>
+    <style name="Sn1.Widget.ActionBar.None" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:displayOptions"></item>
+        <item name="android:height">37dp</item>
+    </style>
+
+
+    <style name="QR_Dialog_Theme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="hongbao" parent="AlertDialog.AppCompat.Light">
+
+    </style>
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+
+    <!--prize add zhaojian 8.0 2017807 start-->
+    <style name="PrizeRedPacketTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:switchPreferenceStyle">@style/Preference</item>-->
+
+    </style>
+
+    <!--<style name="Preference">
+        <item name="android:layout">@layout/preference_material_settings</item>
+        <item name="android:widgetLayout">@layout/preference_widget_right_arrow</item>
+    </style>-->
+    <!--prize add zhaojian 8.0 2017807 end-->
+
+</resources>

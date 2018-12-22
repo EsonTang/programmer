@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- prize-右边按钮背景图-lixing-2015-7-8-start -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/prize_done_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/prize_done_normal"/>
+
+</selector>
+<!-- prize-右边按钮背景图-lixing-2015-7-8-end -->

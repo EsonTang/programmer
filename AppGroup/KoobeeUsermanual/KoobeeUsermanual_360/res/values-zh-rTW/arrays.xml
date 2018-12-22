@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_items">
+        <item>快速指南</item>
+        <item>完整說明</item>
+        <item>產品和安全資訊</item>
+        <item>搜索</item>
+    </string-array>
+</resources>

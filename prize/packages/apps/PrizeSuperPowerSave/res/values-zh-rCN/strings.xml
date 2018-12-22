@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">超级省电</string>
+    <string name="exit_super_power_mode">退出超级省电模式</string>
+    <string name="time_example">17:30</string>
+    <string name="date_example">6月4日</string>
+    <string name="week_example">星期三</string>     
+    <string-array name="week_days">
+	    <item>星期日</item>
+	    <item>星期一</item>
+	    <item>星期二</item>
+	    <item>星期三</item>
+	    <item>星期四</item>
+	    <item>星期五</item>
+	    <item>星期六</item>
+    </string-array>
+    
+    <string name="contacts">联系人</string>
+    <string name="messages">信息</string>
+    <string name="phone">电话</string>
+    <string name="clock">时钟</string>
+    
+    <string name="time_24_hour">MM月dd日	HH:mm</string>  
+    <string name="time_12_hour">MM月dd日	hh:mm</string>  
+       
+   <!-- <string name="powersave_mode">省电模式</string> 
+    <string name="intelligent_powersave">智能省电</string> 
+    <string name="super_powersave">超级省电</string>
+    -->
+</resources>

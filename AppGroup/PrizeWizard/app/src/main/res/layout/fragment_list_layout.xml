@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/fra_list_partingline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/partingline"
+        android:background="@color/partingline_color"
+        android:layout_alignParentTop="true"
+        />
+
+    <ListView
+        android:id="@+id/fra_title_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fra_list_partingline"
+        android:background="@color/bg_list_item_color"
+        ></ListView>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 
+    <item android:id="@+id/menu_list_export"
+        android:title="@string/menu_list_backup" />
+    <item android:id="@+id/menu_list_multidelete"
+        android:title="@string/menu_list_multidelete" />
+    -->
+    <!-- xieyan for oversea version  -->
+    <!-- <item android:id="@+id/menu_list_guide"
+        android:title="@string/menu_list_guide" /> -->
+</menu>

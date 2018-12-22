@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/points_mall_address_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/cloud_common_edit_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <ImageView
+                android:id="@+id/cloud_phone_connection_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/phone_connection" />
+
+            <EditText
+                android:id="@+id/points_mall_address_user_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/cloud_phone_connection_iv"
+                android:background="#f5f5f5"
+                android:hint="@string/points_mall_fill_address_hint"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/text_color_6c6c6c"
+                android:textColorHint="@color/prize_text_default"
+                android:textSize="@dimen/text_size_30"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/cloud_common_edit_bg"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <ImageView
+                android:id="@+id/cloud_return_codes_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/regist_phone_num"
+                android:contentDescription="@string/points_mall_address_icon"
+                android:scaleType="fitXY" />
+
+            <EditText
+                android:id="@+id/points_mall_address_phone_et"
+                style="@style/cloud_phone_num_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cloud_return_codes_iv"
+                android:ems="11"
+                android:hint="@string/points_mall_phone_hint" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/cloud_common_edit_bg"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <ImageView
+                android:id="@+id/points_mall_code_post_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/points_mall_code_post"
+                android:contentDescription="@string/points_mall_address_icon"
+                android:scaleType="fitXY" />
+
+            <EditText
+                android:id="@+id/points_mall_address_code_post_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/points_mall_code_post_iv"
+                android:background="#f5f5f5"
+                android:ems="6"
+                android:hint="@string/points_mall_postcode_hint"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="@color/text_color_6c6c6c"
+                android:textColorHint="@color/prize_text_default"
+                android:textSize="@dimen/text_size_30"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/cloud_common_edit_bg"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <ImageView
+                android:id="@+id/points_mall_address_full_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/points_mall_full_address"
+                android:contentDescription="@string/points_mall_address_icon"
+                android:scaleType="fitXY" />
+
+            <EditText
+                android:id="@+id/points_mall_address_full_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/points_mall_address_full_iv"
+                android:background="#f5f5f5"
+                android:ems="11"
+                android:hint="@string/points_mall_full_address_hint"
+                android:singleLine="true"
+                android:textColor="@color/text_color_6c6c6c"
+                android:textColorHint="@color/prize_text_default"
+                android:textSize="@dimen/text_size_30" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/points_mall_address_submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/cloud_next_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/reset_password_submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_30"></TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/points_mall_address_defalutRlyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/points_mall_address_defaultImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/noloading_bee" />
+
+        <TextView
+            android:id="@+id/points_mall_address_default_tv"
+            style="@style/detail_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/points_mall_address_defaultImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="出错啦，点击重新加载" />
+    </RelativeLayout>
+
+</RelativeLayout>

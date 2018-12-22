@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- vdetect -->
+	<string name="gy_accessibility_switch_to_vdetect">switch to V Gesture Detect</string>
+	<string name="gy_gesture_guide_capture">V Gesture Detect</string>
+	<!-- beauty -->
+	<string name="gy_accessibility_switch_to_faceart">Face beauty mode</string>
+	<string name="gy_faceart_guide_capture">FaceBeauty</string>
+        <string name="gy_faceart_guide_capture_off">FaceBeauty off</string>
+	<!-- beauty level -->
+	<string name="gy_exposure_tips">Beautify Skin Level</string>
+        <string name="pref_gybeauty_entry_off">off</string>
+        <string name="pref_gybeauty_entry_on">on</string>
+
+        <string name="gy_accessibility_switch_to_self">After the self-timer</string>
+
+    <string name="pref_gyself_mode_default">off</string>
+	<string name="pref_camera_gyself_title">self caputre</string>
+	<string name="pref_camera_gyage_title">age</string>
+	<string name="pref_camera_gyage_year">" years-old"</string>
+	<string name="pref_camera_gyage_male">"male "</string>
+	<string name="pref_camera_gyage_female">"female "</string>
+	<string name="pref_gyage_mode_default">off</string>
+
+        <!--add by gangyun tech-->    
+        <string name="gy_accessibility_switch_to_bokeh">SLR</string>
+
+        <string name="pref_gybokeh_mode_default">off</string>
+	<string name="pref_camera_gybokeh_title">SLR</string>
+	<string name="pref_gyage_entry_off">off</string>
+	<string name="pref_gyage_entry_on">on</string>
+	 <!--add by gangyun tech-->    
+
+</resources>

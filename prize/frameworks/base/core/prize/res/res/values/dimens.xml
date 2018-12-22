@@ -1,0 +1,28 @@
+<resources>    
+    <!-- app multi instances feature. prize-linkh-20151222 -->
+    <dimen name="max_collapsed_height_for_app_inst">192dp</dimen>
+    <dimen name="max_collapsed_height_small_for_app_inst">56dp</dimen>
+    <!-- end.....-->
+    <!--PRIZE-insert sim, reset os-wangxianzhen-2016-07-26-start-->
+    <dimen name="siminsert_textview_height">64dip</dimen>
+    <dimen name="siminsert_textview_textsize">19dip</dimen>
+    <dimen name="reset_text_textview_height">80dip</dimen>
+    <dimen name="reset_text_textview_linespace">12dip</dimen>
+    <dimen name="reset_text_textview_padding1">12dip</dimen>
+    <dimen name="reset_text_textview_padding2">17dip</dimen>
+    <dimen name="button_textsize">17dip</dimen>
+    <dimen name="button_margin">16dip</dimen>
+    <dimen name="button_width">307dip</dimen>
+    <dimen name="bottom_linearlayout_height">115dip</dimen>
+    <!--PRIZE-insert sim, reset os-wangxianzhen-2016-07-26-end-->
+	<!-- prize-add for mms OP01 pluginExt 8.0-yangming-2018_4_11-start -->
+	<dimen name="prize_preferences_bg_stroke_height">0.5dp</dimen>
+	<dimen name="prize_preferences_bg_height2">48dp</dimen>
+	<dimen name="prize_divider_height2">0.5dp</dimen>
+	<dimen name="prize_preferences_bg_margin4">20dp</dimen>
+	<dimen name="prize_preferences_text_size2">14sp</dimen>
+	<dimen name="prize_preferences_text_size1">12sp</dimen>
+	<dimen name="prize_preferences_bg_margin1">6dp</dimen>
+	<dimen name="prize_preferences_bg_margin3">-1dp</dimen>
+	<!-- prize-add for mms OP01 pluginExt 8.0-yangming-2018_4_11-end -->
+</resources>

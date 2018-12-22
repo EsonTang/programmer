@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/action_bar_LL"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <!-- Tab 的标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/action_bar_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height_47dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/back_IBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/prize_more_nomal"/>
+
+        <TextView
+            android:id="@+id/bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:paddingBottom="0dip"
+            android:textColor="@color/text_color_969696"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <ImageButton
+            android:id="@+id/action_bar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/action_go_downQueen"
+            android:background="@drawable/prize_more_nomal"/>
+
+        <ImageButton
+            android:id="@+id/action_go_downQueen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/prize_more_nomal"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_gray_color"/>
+    </RelativeLayout>
+
+    <!-- Not Tab 标题栏 无跳转到下载队列的图标 -->
+
+    <RelativeLayout
+        android:id="@+id/action_bar_no_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height_47dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/action_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:clickable="true"
+            android:background="@drawable/btn_back_selector"/>
+
+        <TextView
+            android:id="@+id/action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_color_323232"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <TextView
+            android:id="@+id/action_bar_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:enabled="true"
+            android:layout_marginLeft="14dp"
+            android:padding="2dp"
+            android:layout_toRightOf="@id/action_bar_back"
+            android:text=""
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="gone"
+            />
+
+
+
+
+        <!-- 最右边 不显示,只用来以他为最右边的标尺 -->
+        <TextView
+            android:id="@+id/action_bar_menu_right"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"/>
+        <ImageButton
+            android:id="@+id/bar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@id/action_bar_menu_right"
+            android:background="@drawable/btn_search_selector"/>
+        <TextView
+            android:id="@+id/action_bar_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/bar_search"
+            android:text=""
+            android:textSize="@dimen/text_size_medium"
+            android:padding="2dp"
+            android:visibility="gone"
+            />
+
+        <View
+            android:id="@+id/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/bg_gray_color"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

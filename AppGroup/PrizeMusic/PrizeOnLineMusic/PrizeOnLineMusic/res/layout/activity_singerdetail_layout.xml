@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@id/id_stickynavlayout_topview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" >
+
+        <ImageView
+            android:id="@+id/img_Iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_detail_head_img" />
+
+        <ImageView
+            android:id="@+id/headmask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_detail_headmask" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignBottom="@+id/headmask"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/action_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/icon_detailback_white_selector"
+                android:drawablePadding="3dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/action_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:src="@drawable/icon_detailsearch_white_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/icon_detail_footermask" >
+
+            <TextView
+                android:id="@+id/xiami_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icon_xiami"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="虾米音乐"
+                android:textColor="@color/text_color_ff5f00"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/play_count_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="13dp"
+                android:gravity="center"
+                android:text="虾米音乐"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_micro"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/numsong_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/play_count_Tv"
+                android:drawablePadding="3dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_micro" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/icon_detail_love_nomal"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.prize.music.ui.widgets.StickyNavLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="57dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/id_stickynavlayout_topview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@android:color/transparent" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@id/id_stickynavlayout_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_item_height"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hotsongs_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="热门歌曲"
+                android:textColor="@color/text_color_ff5f00"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/album_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="@string/tab_albums"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/statusbar_color" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/id_stickynavlayout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" >
+        </android.support.v4.view.ViewPager>
+    </com.prize.music.ui.widgets.StickyNavLayout>
+
+    <fragment
+        android:id="@+id/bottomactionbar_new"
+        android:name="com.prize.music.ui.fragments.BottomActionBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    
+    <com.prize.music.views.ParabolaView 
+          android:id="@+id/parabolaView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_centerHorizontal="true"  
+          android:layout_centerVertical="true"/>
+</RelativeLayout>

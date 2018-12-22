@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="1dp">
+
+    <com.prize.appcenter.ui.widget.CustomImageView
+        android:id="@+id/appItem_img_id"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:contentDescription="@string/alert_title"
+        android:transitionName="robot"
+        app:iv_radius="7dp" />
+
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/appItem_name_id"
+        android:layout_width="60dp"
+        android:layout_height="19.5dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:maxLines="1"
+        tools:text="支付宝"
+        android:textColor="@color/common_app_title"
+        android:textSize="@dimen/text_size_micro" />
+
+    <com.prize.appcenter.ui.widget.progressbutton.AnimDownloadProgressButton
+        android:id="@+id/progressButton_id"
+        style="@style/progressButton_wide_hight"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:progressbtn_radius="12dp"
+        app:progressbtn_show_progress="true"
+        app:progressbtn_text_size="12dp" />
+
+</LinearLayout>

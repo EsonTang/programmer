@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用颜色 -->
+    <color name="cmmn_black">#212121</color>
+    <color name="cmmn_green">#6c9421</color>
+    <color name="cmmn_gray">#636363</color>
+    <color name="cmmn_orange">#ff5b00</color>
+    <color name="cmmn_red">#ed1c24</color>
+    <color name="cmmn_green_detail">#12c444</color>
+    <color name="cmmn_bg_gray">#f5f5f5</color>
+    <color name="common_actionbar_bg_gray">#e5e5e5</color>
+
+    <!-- textView 字体 -->
+    <color name="text_color_e6691e">#e6691e</color>
+    <color name="text_color_616161">#616161</color>
+    <color name="text_color_333333">#333333</color>
+    <color name="text_color_a2a2a3">#a2a2a3</color>
+    <color name="color_tv">#a3a3a3</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="text_color_a5c4">#00a5c4</color>
+    <color name="text_color_33cccc">#ff33cccc</color>
+    <color name="text_color_373737">#373737</color>
+    <color name="text_color_737373">#737373</color>
+    <color name="text_color_ff511b">#ff511b</color>
+    <color name="text_color_404040">#2b2b2b</color>
+    <color name="text_color_ff8a00">#ff8a00</color>
+    <color name="text_color_262626">#262626</color>
+    <color name="text_color_48ffffff">#ccffffff</color>
+    <color name="text_color_5d5d5d">#5d5d5d</color>
+    <color name="text_color_9a9a9a">#a1a1a1</color>
+    <color name="text_color_3ac2cf">#3ac2cf</color>
+    <color name="text_color_3ac3cf">#3ac3cf</color>
+    <color name="text_color_red">#ff0000</color>
+    <color name="text_color_ff6600">#ff6600</color>
+    <color name="text_color_ff7500">#ff7500</color>
+    <color name="text_color_ff9600">#ff9600</color>
+    <color name="text_color_fa9543">#fa9543</color>
+    <color name="text_color_ff8126">#ff8126</color>
+    <color name="text_color_ff616161">#ff616161</color>
+    <color name="text_color_aeaeae">#aeaeae</color>
+    <color name="text_color_000000">#000000</color>
+    <color name="text_color_898989">#898989</color>
+    <color name="text_color_3bb25d">#3bb25d</color>
+    <color name="text_color_009616">#009616</color>
+    <color name="text_color_35cdcd">#35cdcd</color>
+    <color name="text_color_dddddd">#dd0000</color>
+    <color name="text_color_fef7d9">#fef7d9</color>
+    <color name="text_color_ff594e">#ff594e</color>
+    <color name="text_color_24aa42">#24aa42</color>
+    <color name="text_color_747474">#747474</color>
+    <color name="text_color_6c6c6c">#6c6c6c</color>
+    <color name="text_color_f5f5f5">#f5f5f5</color>
+    <color name="text_color_fea53c">#fea53c</color>
+    <color name="text_color_a0a0a0">#a0a0a0</color>
+    <color name="text_color_12b7f5">#12b7f5</color>
+    <color name="text_color_ff9732">#ff9732</color>
+    <color name="text_color_fb5150">#fb5150</color>
+    <color name="text_color_fa514f">#fa514f</color>
+    <color name="text_color_686868">#686868</color>
+    <color name="text_color_9fa6af">#9fa6af</color>
+    <color name="text_color_fefefe">#fefefe</color>
+    <!-- 应用分类里面排行榜等级数字颜色 -->
+    <color name="text_color_ff101b">#ff101b</color>
+    <color name="text_color_a2a2a2">#a2a2a2</color>
+    <color name="text_color_ff663d">#ff663d</color>
+    <!-- 应用tab字体颜色 -->
+    <color name="text_color_blue">#12b7f5</color>
+    <color name="text_color_gray">#6c6c6c</color>
+    <color name="text_color_header">#12b7f5</color>
+    <!-- 对话框tv -->
+    <color name="dlg_tv_color">#3C3C3C</color>
+    <!-- listview 分割线 -->
+    <color name="lv_divider_color">#ededed</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <color name="translucence">#88000000</color>
+    <!-- grid的标题 -->
+    <color name="grid_title_color">#424242</color>
+    <!-- 文字颜色 -->
+    <color name="black_text_color">#3C3C3C</color>
+
+    <!-- 游戏详情相关颜色定义 start -->
+    <color name="community_user_bg">#00000000</color>
+    <color name="gamedetail_yellow">#FFC700</color>
+    <color name="gamedetail_yellow2">#FF6600</color>
+    <color name="gamedetail_black">#000000</color>
+    <color name="gamedetail_black2">#333333</color>
+    <color name="gamedetail_grey1">#959595</color>
+    <color name="gamedetail_grey2">#666666</color>
+    <color name="gamedetail_ec_color">#9AD801</color>
+    <color name="gamedetail_cover_bg">#c8c8c8</color>
+    <color name="gamedetail_comment_item_title">#39a5ec</color>
+    <color name="gamedetail_comment_item_context">#646464</color>
+    <!-- 游戏详情相关颜色定义 end -->
+
+
+    <!-- 个人空间&我玩 -->
+    <color name="menu_text_color">#eeeeee</color>
+
+    <!-- 菜单选中 -->
+    <color name="menu_select_color">#A4A4A4</color>
+
+    <!-- 排行和列表item颜色 -->
+    <color name="game_ranking_down">#a3a3a3</color>
+    <color name="gameRanking_titleRB_color">#787878</color>
+    <color name="game_ranking_title">#323232</color>
+    <color name="base_bg">#dbdbdb</color>
+    <color name="notification_bg">#18181818</color>
+
+    <!-- 游戏详情安全面板 -->
+    <color name="gamedetail_safe_green">#68b602</color>
+    <color name="gamedetail_safe_red">#ff0000</color>
+    <color name="gamedetail_safe_yellow">#ff9600</color>
+    <color name="status_color">#f5f5f5</color>
+    <color name="trash_clear_title_color">#f79058</color>
+    <color name="trash_clear_done_title_color">#54c590</color>
+    <color name="bg_gray_color">#d7d7d7</color>
+    <color name="linecolor_d9d9d9d">#d9d9d9</color>
+    <color name="bg_head_gray_color">#c2c2c3</color>
+    <color name="base_line">#e0e0e0</color>
+    <color name="app_title">#f4f4f4</color>
+    <color name="textcolor_9e9e9e">#9e9e9e</color>
+
+    <!-- @prize added by fanjunchen -->
+    <color name="web_progress_color">#33cccc</color>
+    <color name="web_bottom_bg_color">#e5ffffff</color>
+    <color name="text_color_e0e0e0">#e0e0e0</color>
+    <color name="text_color_969696">#969696</color>
+    <!-- @prize end -->
+
+    <color name="textcolor_ff7500">#ff7500</color>
+    <color name="twenty_percent_black">#33000000</color>
+    <color name="textcolor_3ac3cf">#3ac3cf</color>
+    <color name="textcolor_ebebeb">#ebebeb</color>
+    <color name="textcolor_cccccc">#cccccc</color>
+    <color name="text_color_a6a6a6">#a6a6a6</color>
+    <color name="text_color_5ccbfe">#5ccbfe</color>
+    <color name="text_color_009def">#009def</color>
+
+    
+     <color name="text_color_ff5d31">#ff5d31</color>
+     <color name="text_color_dujia">#8d86d9</color>
+    <color name="text_color_shoufa">#feffff</color>
+    <color name="text_color_customer">#ff9732</color>
+
+
+    <!-- PagerSlidingTabStripExtends -->
+    <color name="background_tab_pressed">#00ffffff</color>
+
+    <!-- PRIZE-标签位置的颜色值-longbaoxiu-20160709-start -->
+
+    <color name="tag_one_color">#4dc9bf</color>
+    <color name="tag_two_color">#fe7455</color>
+    <color name="tag_three_color">#966aaa</color>
+    <color name="tag_four_color">#6a71bb</color>
+
+    <!-- PRIZE-标签位置的颜色值-longbaoxiu-20160709-end -->
+
+    <!-- PRIZE-游戏页精彩游戏卡片背景-nieligang-20170411-start -->
+    <color name="wonderful_top_bg0">#81a5c9</color>
+    <color name="wonderful_top_bg1">#56bcb2</color>
+    <color name="wonderful_top_bg2">#d6c195</color>
+    <color name="wonderful_top_bg3">#60cd84</color>
+    <color name="wonderful_top_bg4">#52abc8</color>
+    <color name="wonderful_bottom_bg0">#7494b5</color>
+    <color name="wonderful_bottom_bg1">#4da9a0</color>
+    <color name="wonderful_bottom_bg2">#c0ad86</color>
+    <color name="wonderful_bottom_bg3">#56b877</color>
+    <color name="wonderful_bottom_bg4">#4a9ab4</color>
+    <!-- PRIZE-游戏页精彩游戏卡片背景-nieligang-20170411-end -->
+
+
+    <!-- start云账号 -->
+    <color name="prize_text_default">#b2b2b2</color>
+    <color name="prize_line">#DCDCDC</color>
+    <color name="prize_text_high">#1283CF</color>
+    <color name="other_color">#1283c0</color>
+    <color name="login_color">#FF9500</color>
+    <!-- end云账号 -->
+    <color name="common_app_title">#222222</color>
+</resources>

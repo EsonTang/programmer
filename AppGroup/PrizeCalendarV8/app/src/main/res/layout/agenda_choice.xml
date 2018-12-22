@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/square_bg"
+    android:layout_marginTop="@dimen/prize_event_info_margin_top"
+    android:layout_marginLeft="@dimen/prize_event_info_margin_left"
+    android:layout_marginRight="@dimen/prize_event_info_margin_left"
+    android:layout_marginBottom="@dimen/prize_event_info_margin_top">
+
+    <FrameLayout
+        android:id="@+id/agenda_choice_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

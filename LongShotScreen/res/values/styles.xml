@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light" />
+
+    <style name="main_float_menu">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">110dp</item>
+    </style>
+
+    <style name="main_float_menu_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="main_float_menu_tx">
+        <item name="android:textColor">@color/main_menu_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="funnyshot_rectshot_menu">
+        <item name="android:textColor">@color/funnyshot_text_color</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="scrollshot_menu">
+        <item name="android:textColor">@color/scrollshot_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">5.0dip</item>
+    </style>
+
+    <style name="float_anim" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/anim_float_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_float_out</item>
+    </style>
+
+    <style name="funnyshot_anim" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/anim_shot_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_shot_out</item>
+    </style>
+
+</resources>

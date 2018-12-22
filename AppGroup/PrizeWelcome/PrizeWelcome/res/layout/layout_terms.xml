@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/set_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/toTerms_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:drawableRight="@drawable/terms_arrow_slt"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="@dimen/h_padding"
+                android:paddingRight="@dimen/h_padding"
+                android:text="@string/protocolAndterms"
+                android:textColor="@color/prize_text_default"
+                android:textSize="@dimen/textsize_medium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/h_padding"
+                android:layout_marginRight="@dimen/h_padding"
+                android:background="@color/divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h_padding"
+                android:layout_marginRight="@dimen/h_padding"
+                android:text="@string/need_read"
+                android:textColor="@color/divider"
+                android:textSize="@dimen/textsize_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/btn_v_padding"
+            android:layout_marginLeft="@dimen/h_padding"
+            android:layout_marginRight="@dimen/h_padding"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/unAgree_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/terms_lbtn_slt"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/ungree_text"
+                android:textColor="@color/prize_text_default"
+                android:textSize="@dimen/textsize_medium" />
+
+            <TextView
+                android:id="@+id/next_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/terms_rbtn_slt"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@color/tonal"
+                android:textSize="@dimen/textsize_medium" 
+                android:onClick="onClick"
+                android:text="@string/agree_text"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

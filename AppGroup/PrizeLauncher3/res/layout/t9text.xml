@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.tsearch.SearchView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.android.launcher3.view.SearchViewPager
+        android:id="@+id/myviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_gravity="center_vertical" />
+
+
+    <com.android.launcher3.view.Indicator
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="#00000000"
+        android:orientation="horizontal" />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="20dip"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+    
+    
+    <com.android.launcher3.tsearch.NumberView
+        android:id="@+id/key_gard"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+</com.android.launcher3.tsearch.SearchView>

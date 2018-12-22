@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.prize.prizethemecenter.ui.widget.view.ScollerGridView
+        android:id="@+id/classify_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:numColumns="2"
+        android:horizontalSpacing="11dp"
+        android:verticalSpacing="11dp"
+        android:scrollbars="none" />
+
+</ScrollView>

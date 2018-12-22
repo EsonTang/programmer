@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffff">
+	<ImageView 
+	    android:id="@+id/kb_main_backgroud_id"
+	    android:layout_width="match_parent"
+        android:layout_height="@dimen/img_height"
+        android:layout_alignParentTop="true"
+        android:onClick="headClick"
+        android:background="@drawable/cloud_kb_main_backgroud"/>
+
+	 <TextView
+        android:id="@+id/title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:drawableLeft="@drawable/cloud_back_normal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/textsize_large"
+        android:onClick="onBackClk"
+        android:layout_alignParentTop="true"/>
+
+	<com.prize.cloud.widgets.CircleImageView
+	    android:id="@+id/head_img_id"
+	    android:layout_width="94dp"
+	    android:layout_height="94dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="@dimen/img_head_margintop_two"
+	    android:background="@drawable/cloud_man"/>
+	<ImageView
+	    android:id="@+id/head_img_back_id"
+	    android:layout_width="98dp"
+	    android:layout_height="98dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="@dimen/img_head_margintop_one" />
+
+	<TextView
+	    android:id="@+id/nickname_id"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/head_img_id"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="11dp"
+	    android:textColor="#ffffff"
+	    android:textSize="@dimen/textsize_large"/>
+
+	<TextView
+	    android:id="@+id/kb_id"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/nickname_id"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="5dp"
+	    android:textSize="@dimen/textsize_medium"
+	    android:textColor="#77ffffff"/>
+	<TextView
+	    android:id="@+id/tv_one"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="@dimen/tv_content_margintop"
+	    android:textSize="@dimen/textsize_medium"
+	    android:textColor="@color/prize_text_default"
+	    android:layout_below="@+id/kb_main_backgroud_id"
+	    android:text="@string/kb_msg_one" />
+	<TextView
+	    android:id="@+id/tv_two"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="11dp"
+	    android:textSize="@dimen/textsize_medium"
+	    android:textColor="@color/prize_text_default"
+	    android:layout_below="@+id/tv_one"
+	    android:text="@string/kb_msg_two" />
+	<TextView
+	    android:id="@+id/tv_three"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="11dp"
+	    android:textSize="@dimen/textsize_medium"
+	    android:textColor="@color/prize_text_default"
+	    android:layout_below="@+id/tv_two"
+	    android:text="@string/kb_msg_three" />
+	<TextView
+        android:id="@+id/back_loginbtn_id"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/bt_outlogin_margintop"
+        android:text="@string/back_login"
+        android:layout_below="@+id/kb_main_backgroud_id"
+        android:textSize="@dimen/textsize_medium"
+        android:gravity="center"
+        android:background="@drawable/cloud_next_selector"
+        android:textColor="@color/login_color"
+        android:clickable="true"
+        ></TextView>
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/about_settings">
+
+        <!-- System update settings - launches activity -->
+    <PreferenceScreen
+        android:key="prize_logo"
+        android:layout="@layout/prize_preference_image"
+        android:icon="@drawable/didoos_logo_prize">
+    </PreferenceScreen>
+    <com.android.settings.applications.SpacePreference
+        android:layout_height="@dimen/prize_preferencefragment_card_magintop"
+        android:key="storage_space" />
+        <PreferenceScreen android:key="system_update_settings"
+                android:title="@string/system_update_settings_list_item_title"
+                android:summary="@string/system_update_settings_list_item_summary">
+            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+        </PreferenceScreen>
+
+
+        <PreferenceScreen android:key="additional_system_update_settings"
+                          android:title="@string/additional_system_update_settings_list_item_title">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="@string/additional_system_update"
+                    android:targetClass="@string/additional_system_update_menu" />
+        </PreferenceScreen>
+
+        <!-- fota start -->
+        <PreferenceScreen android:key="adupsfota_software_update"
+                android:title="Wireless update">
+            <intent android:targetPackage="com.adups.fota"
+                    android:targetClass="com.adups.fota.GoogleOtaClient"/>
+        </PreferenceScreen>
+        <!-- fota end -->
+        <!--prize-add-user_Manual-by-zhongweilin-20150808-start-->
+        <PreferenceScreen android:key="operation_manual"
+            android:title="@string/operation_manual_title">
+            <intent android:targetPackage="com.freeme.operationManual"
+                android:targetClass="com.freeme.operationManual.ui.MainOperationManualActivity"/>
+        </PreferenceScreen>
+        <!--prize-add-user_Manual-by-zhongweilin-20150808-end-->
+	<!--///M: MTK_SYSTEM_UPDATE -->
+	<PreferenceScreen
+	     android:key="mtk_system_update">
+	</PreferenceScreen>
+
+	<!--///M: MTK_SYSTEM_UPDATE_SUPPORT -->
+	<PreferenceScreen
+	     android:key="mtk_software_update"
+	     android:title="@string/software_updates_more_title" 
+	     android:summary="@string/software_updates_more_summary" >
+	</PreferenceScreen>
+
+        <!-- Device status - launches activity -->
+        <PreferenceScreen android:key="status_info"
+                android:title="@string/device_status"
+                android:summary="@string/device_status_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.Settings$StatusActivity" />
+        </PreferenceScreen>
+
+        <!-- Legal Information -->
+        <PreferenceScreen
+                android:key="container"
+                android:title="@string/legal_information"
+                android:fragment="com.android.settings.LegalSettings" />
+
+	<!--prize-add-prize_legal_information-hdj-20150708-start-->
+		<!-- Prize Legal Information -->
+        <PreferenceScreen
+                android:key="prize_container"
+                android:title="@string/legal_information"
+				android:fragment="com.android.settings.PrizeLegalInformationSettings"	/>
+		<!--prize-add-prize_legal_information-hdj-20150708-end-->
+		
+        <PreferenceScreen
+                android:key="regulatory_info"
+                android:title="@string/regulatory_information">
+            <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
+        </PreferenceScreen>
+
+        <!-- Feedback on the device -->
+        <PreferenceScreen android:key="device_feedback"
+                android:title="@string/device_feedback">
+        </PreferenceScreen>
+
+        <!-- Device hardware model -->
+        <com.android.settings.PrizeNoRightArrowPreference android:key="device_model"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/model_number"
+                android:summary="@string/device_info_default"/>
+
+            <!-- add 'system version' item. prize-linkh-20150518  -->
+        <com.android.settings.PrizeNoRightArrowPreference android:key="system_version" 
+                style="?android:preferenceInformationStyle"
+                android:title="@string/system_version_title"
+                android:summary="@string/system_version_number"/>
+		<!--prize-add_cpu_info-hdj-20150706-start-->
+        <com.android.settings.LeatekCpuCorePreference 
+            	android:key="cpu_core_number"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/cpu_core"
+                android:summary="@string/cpu_core_number"/>
+		<!--prize-add_cpu_info-hdj-20150706-end-->
+		
+	<!--prize-add-by-yanghao-20160303-start -->
+	<com.android.settings.PrizeNoRightArrowPreference android:key="ram_info" 
+                style="?android:preferenceInformationStyle"
+                android:title="@string/ram_info_title"
+                android:summary="@string/ram_info_default"/>
+
+	  <!-- 
+      <PreferenceScreen android:key="rom_info"
+                android:title="@string/rom_info_title" 
+                android:summary="@string/rom_info_default" 
+                android:fragment="com.android.settings.deviceinfo.PrizeMemorySummary" />
+		-->
+		
+		<PreferenceScreen android:key="rom_info"
+                android:title="@string/rom_info_title" 
+				android:widgetLayout="@null"
+                android:summary="@string/rom_info_default" />
+        <PreferenceScreen android:key="resolving_power"
+        android:title="@string/prize_resolving_power"
+        android:widgetLayout="@null" />
+		
+	<!--prize-add-by-yanghao-20160303-end -->
+                
+        <!-- Device firmware version -->
+        <com.android.settings.PrizeNoRightArrowPreference android:key="firmware_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/firmware_version"
+                android:summary="@string/device_info_default"/>
+
+        <!-- Security patch level -->
+        <com.android.settings.PrizeNoRightArrowPreference android:key="security_patch"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/security_patch"
+                android:summary="@string/device_info_default"/>
+
+        <!-- Device FCC equipment id -->
+        <Preference android:key="fcc_equipment_id"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/fcc_equipment_id"
+                android:summary="@string/device_info_default"/>
+
+        <!-- Device Baseband version -->
+        <com.android.settings.PrizeNoRightArrowPreference android:key="baseband_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/baseband_version"
+                android:summary="@string/device_info_default"/>
+
+        <!-- ///M: Device Baseband version2 -->
+        <com.android.settings.PrizeNoRightArrowPreference android:key="baseband_version_2"
+            style="?android:preferenceInformationStyle" 
+            android:title="@string/baseband_version"
+            android:summary="@string/device_info_default" />
+
+        <!-- Device Kernel version -->
+        <com.android.settings.PrizeNoRightArrowPreference android:key="kernel_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/kernel_version"
+                android:summary="@string/device_info_default"/>
+        
+        <!-- <Preference android:key="kernel_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/kernel_version"
+                android:summary="@string/device_info_default"/> -->
+
+        <!-- Detailed build version -->
+        <com.android.settings.PrizeNoRightArrowPreference android:key="build_number"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/build_number"
+                android:summary="@string/device_info_default"/>
+
+        <!-- SELinux status information -->
+        <Preference android:key="selinux_status"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/selinux_status"
+                android:summary="@string/selinux_status_enforcing"/>
+        <!--prize-display_custom_build_version_hdj-20150718-start-->
+        <!-- ///M: Custom build version -->
+        <!-- <Preference android:key="custom_build_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/custom_build_version"
+                android:summary="@string/device_info_default" />-->
+        <!--prize-display_custom_build_version_hdj-20150718-end-->
+
+</PreferenceScreen>

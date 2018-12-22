@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prize_bottom_button"
+    android:visibility="gone"
+    android:background="@color/prize_bottom_button_bg_color"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/prize_floating_action_button_height">
+
+	<!-- <LinearLayout 
+	    android:background="@color/prize_actionbar_bg_color"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/prize_floating_action_button_height"
+	    android:orientation="horizontal"
+	    android:paddingStart="@dimen/prize_content_padding"
+	    android:paddingEnd="@dimen/prize_content_padding">
+	
+	    <TextView
+	        android:layout_marginStart="@dimen/prize_card_layout_padding_left_right"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="center"
+	        android:id="@+id/prize_bottom_cancel"
+	        android:layout_width="@dimen/prize_bottom_button_width"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/prize_left_button"
+	        android:textSize="@dimen/prize_botttom_button_text_size"
+	        android:textColor="@color/prize_button_text_default_color" />
+	
+	    <TextView
+	        android:layout_marginEnd="@dimen/prize_card_layout_padding_left_right"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="center"
+	        android:id="@+id/prize_bottom_ok"
+	        android:layout_width="@dimen/prize_bottom_button_width"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/prize_botttom_button_text_size"
+	        android:textColor="@color/prize_button_text_default_color"
+	        android:background="@drawable/prize_right_button" />
+	
+	</LinearLayout> -->
+	
+
+	<TextView 
+	    android:id="@+id/prize_bottom_ok"
+	    android:gravity="center"
+	    android:layout_centerHorizontal="true"
+	    android:textSize="@dimen/prize_botttom_button_text_size"
+	    android:textColor="@drawable/prize_selector_text_color_btn"
+	    android:layout_height="match_parent"
+	    android:layout_width="wrap_content"
+	    android:minWidth="@dimen/prize_bottom_text_botton_width"/>
+		
+	
+</RelativeLayout>

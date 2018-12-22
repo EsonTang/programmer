@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cootek_background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/webview_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible">
+
+            <com.cootek.smartdialer.websearch.WebSearchWebView
+                android:id="@+id/websearch_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:focusable="true" />
+        </RelativeLayout>
+
+        <include layout="@layout/cootek_comp_error_container" />
+
+        <include layout="@layout/cootek_comp_loading_container" />
+
+        <ImageView
+            android:id="@+id/progress_bar"
+            android:layout_width="0dip"
+            android:layout_height="2dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/cootek_external_webpage_progress_bar" />
+    </FrameLayout>
+</LinearLayout>

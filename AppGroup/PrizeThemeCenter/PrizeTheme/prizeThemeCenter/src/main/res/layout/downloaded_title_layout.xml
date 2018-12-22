@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_top_40dp">
+
+    <TextView
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/download_completed"
+        android:textColor="@color/text_color_33cccc"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_marginTop="18dp"
+        android:id="@+id/all_delete_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/delete_all"
+        android:textColor="@color/text_color_33cccc"
+        android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">IP کال \u200e <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g>  </string>
+    <string name="select_account">اکاؤنٹ منتخب کریں</string>
+    <string name="all_accounts">سبھی اکاؤنٹس</string>
+    <string name="call_log_via_sim_name_notice">کال لاگز بذریعہ \"<xliff:g id="sim_name">%s</xliff:g>\"</string>
+    <string name="imei_invalid">غلط</string>
+    <string name="conf_call_member_list">ممبر کی فہرست</string>
+    <string name="conf_call_participant_answered">جواب دیا ہوا</string>
+    <string name="conf_call_participant_missed">چھوٹا ہوا</string>
+    <string name="calls_over_wifi">کالیںWi-Fiپرکیجائیںگی</string>
+    <string name="connect_to_wifi">کالیں کرنے کے لیے  Wi-Fi سے مربوط ہوں</string>
+    <string name="wfc_notification_summary">ترجیحاتتکرسائیکرنےکےلئےیہاںٹیپکریں</string>
+    <string name="wfc_notification_summary_fail">دستیاب نیٹ ورکس دیکھنے کے لیے یہاں تھپکی دیں</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> ان بلاک کرنا ناکام ہوگیا</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">שיחת IP ‏  <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g>  </string>
+    <string name="select_account">"בחר חשבון"</string>
+    <string name="all_accounts">"כל החשבונות"</string>
+    <string name="call_log_via_sim_name_notice">יומן שיחות דרך \"<xliff:g id="sim_name">%s</xliff:g>\"</string>
+    <string name="imei_invalid">לא חוקי</string>
+    <string name="conf_call_member_list">רשימת חברים</string>
+    <string name="conf_call_participant_answered">שנענו</string>
+    <string name="conf_call_participant_missed">"שיחה שלא נענתה"</string>
+    <string name="calls_over_wifi">שיחותיבוצעוב-Wi-Fi</string>
+    <string name="connect_to_wifi">התחבר ל-Wi-Fi כדי להוציא שיחות</string>
+    <string name="wfc_notification_summary">הקשכאןכדילגשתלהעדפות</string>
+    <string name="wfc_notification_summary_fail">גע פה כדי לראות רשתות זמינות</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"‏שיחת SIP"</string>
+    <string name="snackbar_number_unblocked_failed">ביטול החסימה של <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> נכשל</string>
+</resources>

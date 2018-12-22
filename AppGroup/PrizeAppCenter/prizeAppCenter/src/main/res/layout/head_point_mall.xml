@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/banner_Iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/point"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_pointmall_head" />
+
+    <TextView
+        android:id="@+id/ponit_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:drawableLeft="@drawable/points_mall_item_point"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_26"
+        tools:text="积分" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/banner_Iv"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/sign_everyday_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/icon_sign_erveryday"
+            android:gravity="center"
+            android:onClick="goToIntent"
+            android:text="@string/sign_everyday"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_12" />
+
+
+        <TextView
+            android:id="@+id/hasgift_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/icon_install_gift"
+            android:gravity="center"
+            android:onClick="goToIntent"
+            android:text="@string/has_gift"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/game_gift_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/icon_game_gift"
+            android:gravity="center"
+            android:onClick="goToIntent"
+            android:text="@string/game_gift"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_12" />
+
+    </LinearLayout>
+
+</RelativeLayout>

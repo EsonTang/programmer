@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScreenRecorder</string>
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <string name="show_cordinate">显示触摸</string>
+    <string name="hide_cordinate">关闭触摸</string>
+    <string name="share">分享</string>
+    <string name="screenrecord_recording_ticker">屏幕录像中</string>
+    <string name="screenrecord_recording_title">正在屏幕录像</string>
+    <string name="screenrecord_recording_text">"最大时长:180秒"</string>
+    <string name="screenrecord_saved_ticker">保存屏幕录像</string>
+    <string name="screenrecord_saved_title">已保存屏幕录像</string>
+    <string name="screenrecord_saved_text">触摸可以查看您的屏幕录像。</string>
+    <string name="screenrecord_duration_text">时长:</string>
+</resources>

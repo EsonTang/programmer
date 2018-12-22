@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<LinearLayout
+	    android:id="@+id/popu_add_linearlayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/radius_img"
+	    android:layout_gravity="center"
+	    android:orientation="vertical">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:textSize="@dimen/text_size_small"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="@dimen/listview_items_padding_left_right"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="@color/gray_black"
+	        android:gravity="center_vertical"
+	        android:text="@string/add_to" />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:background="@drawable/icon_line"/>
+	    <ListView 
+	        android:id="@+id/popul_list"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:divider="@drawable/icon_line"
+       		android:dividerHeight="0.5dp"
+       		android:paddingLeft="@dimen/listview_items_padding_left_right"
+        	android:paddingRight="@dimen/listview_items_padding_left_right"
+	        android:layout_width="match_parent">  
+	    </ListView>
+	</LinearLayout>
+    
+	<TextView
+	    android:id="@+id/popu_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/gray_black"
+        android:background="@drawable/radius_img"
+        android:layout_marginBottom="10dp"
+        android:text="@string/cancel" />
+</LinearLayout>

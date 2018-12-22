@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    
+    <View 
+        android:id="@+id/dialog_devider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/edittext_hint"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+      
+    <ImageView 
+        android:id="@+id/addmusic_to_table_dialog_item_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_to_table_dialog_default_ico"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        
+        />
+    <TextView 
+        android:id="@+id/addmusic_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/text_color_323232"       
+        android:gravity="center|start"
+        android:layout_toEndOf="@id/addmusic_to_table_dialog_item_ico"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        />
+    
+</RelativeLayout>

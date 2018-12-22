@@ -1,0 +1,11 @@
+<resources>
+    <string name="header_text">已加锁</string>
+    <string name="cancel_text">取消</string>
+
+    <string name="cipher_input_status_correct">密码正确</string>
+    <string name="cipher_input_status_error">密码错误</string>
+    <string name="fingerprint_error_status_unknown">无法识别</string>
+	<string name="lockpattern_need_to_unlock_wrong">"图案错误"</string>
+	<string name="lockpattern_need_to_unlock_right">"图案正确"</string>
+
+</resources>

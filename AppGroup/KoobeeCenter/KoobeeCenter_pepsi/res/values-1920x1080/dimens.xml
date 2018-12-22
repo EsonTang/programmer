@@ -1,0 +1,10 @@
+<resources>
+    
+    <dimen name="activity_main_seven">40dp</dimen> 
+    
+    <!-- prize-add-by-yanghao-20151113-start-->
+    <dimen name="activity_main_two">115dp</dimen>  
+    <dimen name="activity_main_nine">40dp</dimen>
+    <!-- prize-add-by-yanghao-20151113-end-->
+
+</resources>

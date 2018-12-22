@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.android.gallery3d"  
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:baselineAligned="false"
+              android:orientation="vertical"
+              android:animateLayoutChanges="false"
+              android:visibility="visible"
+               >
+
+    <FrameLayout android:id="@+id/state_panel_container"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:visibility="visible"
+                 android:layout_gravity="top"
+                 android:layout_weight="1" />
+
+    <FrameLayout android:id="@+id/category_panel_container"
+                 android:layout_width="match_parent"
+                 android:visibility="visible"
+                 android:layout_height="0dip"
+                 android:layout_gravity="center"
+                 android:layout_weight="1"/>
+
+    <View
+            android:background="@color/toolbar_separation_line"
+            android:layout_height="1dip"
+            android:layout_width="match_parent"
+            android:visibility="gone"/>
+
+
+             <LinearLayout android:layout_width="match_parent"
+                 android:id="@+id/bottom_panel"
+                      android:layout_height="@dimen/photoeditor_bottom_height"
+                      android:orientation="horizontal"
+                      android:layout_gravity="bottom"
+                      android:paddingTop="@dimen/photoeditor_bottom_padding_top">
+
+                 <com.android.gallery3d.filtershow.ui.BottomView
+                android:id="@+id/fxButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                attr:bottomview_icon="@drawable/prize_sel_photoeditor_effects"
+                attr:bottomview_text="@string/filter"
+                attr:bottomview_textColor="@drawable/sel_bottom_view"
+                />
+            
+            <com.android.gallery3d.filtershow.ui.BottomView
+                android:id="@+id/borderButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                attr:bottomview_icon="@drawable/prize_sel_photoeditor_border"
+                attr:bottomview_text="@string/borders"
+                attr:bottomview_textColor="@drawable/sel_bottom_view"
+                />
+            
+            <com.android.gallery3d.filtershow.ui.BottomView
+                android:id="@+id/geometryButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                attr:bottomview_icon="@drawable/prize_sel_photoeditor_fix"
+                attr:bottomview_text="@string/cut_image"
+                attr:bottomview_textColor="@drawable/sel_bottom_view"
+                />
+            
+            <com.android.gallery3d.filtershow.ui.BottomView
+                android:id="@+id/colorsButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                attr:bottomview_icon="@drawable/prize_sel_photoeditor_color"
+                attr:bottomview_text="@string/enhance"
+                attr:bottomview_textColor="@drawable/sel_bottom_view"
+                />
+            <!-- PRIZE-watermark-wanzhijuan-2016-1-21-start-->
+            <com.android.gallery3d.filtershow.ui.BottomView
+                android:id="@+id/stickerButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                attr:bottomview_icon="@drawable/prize_sel_photoeditor_watermark"
+                attr:bottomview_text="@string/watermark"
+                attr:bottomview_textColor="@drawable/sel_bottom_view"
+                />
+	    <!-- PRIZE-watermark-wanzhijuan-2016-1-21-end-->
+        </LinearLayout>
+
+
+</LinearLayout>

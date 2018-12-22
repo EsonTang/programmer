@@ -1,0 +1,4 @@
+include ':xutils3', ':prizepushlib'
+include ':joloplaybase'
+include ':prizeCloud'
+include ':prizeThemeCenter'

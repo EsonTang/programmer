@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    >
+       <!--  android:background="@drawable/playinglistviewfragment_bg" 
+       android:divider="@drawable/audioplay_songs_white_line_separator"-->
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="80dp"
+        android:background="@color/transparent"
+        android:cacheColorHint="@color/transparent"        
+        android:drawSelectorOnTop="false"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none" 
+        android:divider="@drawable/list_halfdivider"
+        android:dividerHeight="1px"
+        android:footerDividersEnabled="true"
+        />
+</LinearLayout>
+

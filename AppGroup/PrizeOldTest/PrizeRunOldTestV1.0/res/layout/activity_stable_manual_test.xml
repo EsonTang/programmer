@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/stable_sv_testitem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#44C579"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/separate_line"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:showDividers="middle" >
+
+            <RelativeLayout
+                android:id="@+id/stable_rl_lcdtest"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/stable_tv_lcdtest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Lcd Test : "
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/stable_et_lcdtest"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@id/stable_tv_lcdtest"
+                    android:layout_toEndOf="@id/stable_tv_lcdtest"
+                    android:layout_toRightOf="@id/stable_tv_lcdtest"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/defaults"
+                    android:inputType="number"
+                    android:textColor="#ff8c00"
+                    android:textSize="21sp"
+                    android:textStyle="bold" 
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    />
+
+                <TextView
+                    android:id="@+id/stable_tv_lcdtesttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/stable_et_lcdtest"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@id/stable_et_lcdtest"
+                    android:layout_toRightOf="@id/stable_et_lcdtest"
+                    android:text="@string/circle"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/stable_rl_lighttest"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/stable_tv_lighttest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Light Test : "
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/stable_et_lighttest"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@id/stable_tv_lighttest"
+                    android:layout_toEndOf="@id/stable_tv_lighttest"
+                    android:layout_toRightOf="@id/stable_tv_lighttest"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/defaults"
+                    android:inputType="number"
+                    android:textColor="#ff8c00"
+                    android:textSize="21sp"
+                    android:textStyle="bold" 
+                     android:textCursorDrawable="@drawable/color_cursor"
+                    />
+
+                <TextView
+                    android:id="@+id/stable_tv_lighttesttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/stable_et_lighttest"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@id/stable_et_lighttest"
+                    android:layout_toRightOf="@id/stable_et_lighttest"
+                    android:text="@string/circle"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/stable_rl_vb"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/stable_tv_vbtest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Vibrate Test : "
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/stable_et_vbtest"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@id/stable_tv_vbtest"
+                    android:layout_toEndOf="@id/stable_tv_vbtest"
+                    android:layout_toRightOf="@id/stable_tv_vbtest"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/defaults"
+                    android:inputType="number"
+                    android:textColor="#ff8c00"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                     android:textCursorDrawable="@drawable/color_cursor"
+                     />
+
+                <TextView
+                    android:id="@+id/stable_tv_vbCysles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/stable_et_vbtest"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@id/stable_et_vbtest"
+                    android:layout_toRightOf="@id/stable_et_vbtest"
+                    android:text="@string/circle"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/stable_camera_test"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/stable_tv_cameratest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Camera Test:"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/stable_et_cameratest"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@id/stable_tv_cameratest"
+                    android:layout_toEndOf="@id/stable_tv_cameratest"
+                    android:layout_toRightOf="@id/stable_tv_cameratest"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/defaults"
+                    android:inputType="number"
+                    android:textColor="#ff8c00"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                     android:textCursorDrawable="@drawable/color_cursor"
+                     />
+
+                <TextView
+                    android:id="@+id/stable_tv_cameratesttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/stable_et_cameratest"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@id/stable_et_cameratest"
+                    android:layout_toRightOf="@id/stable_et_cameratest"
+                    android:text="@string/circle"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/stable_rl_emmctest"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/stable_tv_emmctest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" EMMC Test : "
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/stable_et_emmctest"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@id/stable_tv_emmctest"
+                    android:layout_toEndOf="@id/stable_tv_emmctest"
+                    android:layout_toRightOf="@id/stable_tv_emmctest"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/defaults"
+                    android:inputType="number"
+                    android:textColor="#ff8c00"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                     android:textCursorDrawable="@drawable/color_cursor"
+                     />
+
+                <TextView
+                    android:id="@+id/stable_tv_emmctesttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/stable_et_emmctest"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@id/stable_et_emmctest"
+                    android:layout_toRightOf="@id/stable_et_emmctest"
+                    android:text="@string/circle"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stable_sv_testitem"
+        android:layout_marginTop="30dp" >
+
+        <Button
+            android:id="@+id/stable_bt_ok"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:onClick="sendMessage"
+            android:text="OK"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:background="@drawable/shape" />
+        
+        <Button
+            android:id="@+id/stable_bt_cancel"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/stable_bt_ok"
+            android:layout_toEndOf="@id/stable_bt_ok"
+            android:layout_toRightOf="@id/stable_bt_ok"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:background="@drawable/shape" />
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stable_sv_testitem"
+        android:layout_marginTop="30dp" >
+
+        <Button
+            android:id="@+id/stable_bt_ok"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/shape"
+            android:onClick="sendMessage"
+            android:text="OK"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/stable_bt_cancel"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/shape"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

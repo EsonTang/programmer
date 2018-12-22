@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">рекордер экрана</string>
+    <string name="start">начать</string>
+    <string name="stop">остановить</string>
+    <string name="show_cordinate">сенсорный дисплей</string>
+    <string name="hide_cordinate">Закрыть сенсорный</string>
+    <string name="share">доля</string>
+    <string name="screenrecord_recording_ticker">Видеоэкран</string>
+    <string name="screenrecord_recording_title">Screen Recorder является</string>
+    <string name="screenrecord_recording_text">"Максимальная продолжительность: 180 секунд."</string>
+    <string name="screenrecord_saved_ticker">Сохранить Запись экрана</string>
+    <string name="screenrecord_saved_title">Сохраненный Recorder экрана</string>
+    <string name="screenrecord_saved_text">Нажмите для просмотра записи экрана.</string>
+    <string name="screenrecord_duration_text">Продолжительность:</string>
+</resources>

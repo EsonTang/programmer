@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="blur_applications">
+        <item>相机</item>
+        <item>美拍</item>
+        <item>camera</item>
+        <item>百度魔拍</item>
+        <item>美图秀秀</item>
+        <item>百度美秀</item>
+        <item>bank</item>
+        <item>支付</item>
+        <item>钱包</item>
+        <item>理财</item>
+        <item>银行</item>
+        <item>pay</item>
+        <item>财付通</item>
+        <item>信用卡</item>
+    </string-array>
+    <string-array name="clear_white_list">
+        <item>com.android.phone</item>
+        <item>com.pr.scuritycenter</item>
+        <item>com.android.deskclock</item>
+        <item>com.android.settings</item>
+        <item>com.android.systemui</item>
+        <item>com.reliancejio.mobilesecurity</item>
+        <item>com.jiochat.jiochatapp</item>
+        <item>com.jio.join</item>
+    </string-array>
+    <string-array name="forbid_lock_applications">
+        <item>com.android.contacts</item>   <!-- 联系人 -->
+        <item>com.android.mms</item>   <!-- 短信 -->
+        <item>com.mediatek.camera</item>   <!-- 相机 -->
+        <item>com.android.calendar</item>   <!-- 日历 -->
+        <item>com.android.deskclock</item>   <!-- 时钟 -->
+        <item>com.prize.weather</item>   <!-- 天气 -->
+        <item>com.android.settings</item>   <!-- 设置 -->
+        <item>com.tencent.tvoem</item>   <!-- 腾讯视频白牌包 -->
+        <item>com.tencent.tvoem.koobee</item>   <!-- 腾讯视频白牌包 -->
+        <item>com.android.gallery3d</item>   <!-- 图库 -->
+        <item>com.pr.scuritycenter</item>   <!-- 安全中心 -->
+        <item>com.mediatek.filemanager</item>   <!-- 文件管理 -->
+        <item>com.android.calculator2</item>   <!-- 计算器 -->
+        <item>com.prize.compass</item>   <!-- 指南针 -->
+        <item>com.android.notepad</item>   <!-- 便签 -->
+        <item>com.koobee.koobeecenter02</item>   <!-- 酷比中心 -->
+        <item>com.qihoo.appstore</item>   <!-- 360手机助手 -->
+        <item>com.baidu.appsearch</item>   <!-- 百度手机助手 -->
+        <item>com.pp.assistant</item>   <!-- PP助手-->
+        <item>com.sogou.androidtool</item>   <!-- 搜狗手机助手 -->
+        <item>com.taobao.appcenter</item>   <!-- 淘宝手机助手 -->
+        <item>com.dragon.android.pandaspace</item>   <!-- 91助手 -->
+        <item>com.nd.assistance</item>  <!-- 91助手 -->
+        <item>com.tencent.qqpimsecure</item>   <!-- qq手机管家-->
+        <item>com.qihoo360.mobilesafe</item>   <!-- 360手机卫士 -->
+        <item>com.qihoo.cleandroid_cn</item>   <!-- 360清理大师 -->
+        <item>com.qihoo.antivirus</item>   <!-- 360卫士极客版 -->
+        <item>com.qihoo.mkiller</item>   <!-- 360手机急救箱 -->
+        <item>com.qihoo.permmgr</item>   <!-- 360超级root -->
+        <item>com.qihoo360.pe</item>
+        <item>com.qihoo360.mobilesafe.opti.powerctl</item>   <!-- 360优化大师 -->
+        <item>com.qihoo360.mobilesafe.opti</item>   <!-- 360优化大师 -->
+    </string-array>
+    <string-array name="kill_restart_service_list">
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mobileqq</item>
+    </string-array>
+    <string-array name="kill_restart_service_list_exp">
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.zing.zalo</item>
+        <item>com.facebook.orca</item>
+        <item>com.facebook.katana</item>
+        <item>com.instagram.android</item>
+        <item>jp.naver.line.android</item>
+        <item>com.whatsapp</item>
+        <item>com.bbm</item>
+        <item>com.skype.raider</item>
+        <item>com.viber.voip</item>
+        <item>com.path</item>
+        <item>com.facebook.lite</item>
+        <item>com.truecaller</item>
+        <item>com.bsb.hike</item>
+        <item>com.snapchat.android</item>
+        <item>com.twitter.android</item>
+        <item>com.imo.android.imoim</item>
+        <item>com.google.android.gm</item>
+    </string-array>
+    <string-array name="lock_applications">
+        <item>com.tencent.mm#0</item>
+        <item>com.tencent.mm#1</item>
+        <item>com.tencent.mobileqq#0</item>
+        <item>com.tencent.mobileqq#1</item>
+    </string-array>
+    <string-array name="lock_applications_exp">
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.zing.zalo</item>
+        <item>com.facebook.orca</item>
+        <item>com.facebook.katana</item>
+        <item>com.instagram.android</item>
+        <item>jp.naver.line.android</item>
+        <item>com.whatsapp</item>
+        <item>com.bbm</item>
+        <item>com.skype.raider</item>
+        <item>com.viber.voip</item>
+        <item>com.path</item>
+        <item>com.facebook.lite</item>
+        <item>com.truecaller</item>
+        <item>com.bsb.hike</item>
+        <item>com.snapchat.android</item>
+        <item>com.twitter.android</item>
+        <item>com.imo.android.imoim</item>
+        <item>com.google.android.gm</item>
+        <item>com.tencent.mobileqq#0</item>
+        <item>com.tencent.mobileqq#999</item>
+        <item>com.whatsapp#999</item>
+        <item>com.bbm#999</item>
+        <item>jp.naver.line.android#999</item>
+        <item>com.facebook.orca#999</item>
+    </string-array>
+    <string-array name="redundant_tasks">
+        <item>com.tencent.mm.plugin.appbrand.ui.AppBrandUI</item>
+        <item>com.tencent.mm.plugin.appbrand.ui.AppBrandInToolsUI</item>
+    </string-array>
+    <string-array name="remove_relative_tasks_pkgs">
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mobileqq</item>
+    </string-array>
+    <array name="remove_task_filter_list" />
+    <array name="remove_task_filter_list_exp" />
+</resources>

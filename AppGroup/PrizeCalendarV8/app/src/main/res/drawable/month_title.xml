@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@drawable/to_today_pressed"></item>
+    <item android:drawable="@drawable/to_today_normal"></item>
+
+</selector>
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/background"
+        android:gravity="center">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/white" />
+
+            <size
+                android:height="40dp"
+                android:width="50dp" >
+            </size>
+        </shape>
+    </item>
+    <item
+        android:id="@+id/title"
+        android:drawable="@drawable/to_today_normal"
+        android:gravity="center" android:right="2dp"/>
+
+</layer-list>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">Nie można łączyć kontaktów na karcie SIM.</string>
+    <string name="menu_done">"Gotowe"</string>
+    <string name="menu_deleteContact">"Usuń"</string>
+    <string name="menu_select_all">"Zaznaczwszystko"</string>
+    <string name="menu_select_none">"Anulujwybórwszystkich"</string>
+    <string name="menu_new_contact_action_bar">"Nowa"</string>
+    <string name="selected_item_count">Wybrano <xliff:g id="count">%d</xliff:g></string>
+    <string name="multichoice_no_select_alert">Nie wybrano żadnego elementu.</string>
+    <string name="aas_phone_type_none">"Brak"</string>
+    <string name="aas_custom_title">Etykiety własne</string>
+    <string name="aas_new_dialog_title">Dodaj nową etykietę</string>
+    <string name="ass_rename_dialog_title">Edytuj etykietę</string>
+    <string name="aas_delele_dialog_message">Usunięcie etykiet wpłynie na wszystkie powiązane z nimi dodatkowe numery. Kontynuować?</string>
+    <string name="aas_name_invalid">Nazwa etykiety jest nieprawidłowa. Wprowadź inną.</string>
+    <string name="aas_name_exist">Etykieta już istnieje.</string>
+    <string name="aas_usim_full">Brak miejsca na nowe etykiety.</string>
+    <string name="ass_edit_assert_message">Modyfikacja etykiety wpłynie na wszystkie powiązane z nią dodatkowe numery. Kontynuować?</string>
+    <string name="aas_new_fail">Nie udało się utworzyć nowej etykiety.</string>
+    <string name="aas_edit_fail">Nie udało się zmienić nazwy <xliff:g id="aas">%s</xliff:g> .</string>
+    <string name="aas_delete_fail">Nie udało się usunąć <xliff:g id="aas">%s</xliff:g> .</string>
+    <string name="aas_phone_primary">Numer podstawowy</string>
+    <string name="aas_phone_additional">Numer dodatkowy</string>
+</resources>

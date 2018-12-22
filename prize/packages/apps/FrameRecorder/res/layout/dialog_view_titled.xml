@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="24dp"
+    android:layout_marginStart="24dp"
+    android:background="@drawable/square_bg_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_line_height"
+        android:gravity="center"
+        android:textColor="@color/dialog_text_color"
+        android:textSize="@dimen/big_textsize" />
+
+    <TextView
+        android:id="@+id/seperate"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dialog_line_height"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:lineSpacingMultiplier="1.4"
+        android:textColor="@color/dialog_text_color"
+        android:textSize="@dimen/main_textsize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_bg_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dia_neg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_selector"
+            android:gravity="center"
+            android:text="@string/no"
+            android:textColor="@color/one_key_textcolor"
+            android:textSize="@dimen/big_textsize" />
+
+        <View
+            android:id="@+id/divide_line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line" />
+
+        <Button
+            android:id="@+id/dia_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_selector"
+            android:gravity="center"
+            android:text="@string/yes"
+            android:textColor="@color/one_key_textcolor"
+            android:textSize="@dimen/big_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

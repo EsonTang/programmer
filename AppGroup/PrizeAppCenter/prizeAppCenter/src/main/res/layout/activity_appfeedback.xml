@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <com.prize.appcenter.ui.widget.ScrollGridView
+        android:id="@+id/recommand_notice_gv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:horizontalSpacing="0dip"
+        android:numColumns="2"
+        android:verticalSpacing="8dp" >
+    </com.prize.appcenter.ui.widget.ScrollGridView>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_below="@+id/recommand_notice_gv"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="25dp"
+        android:visibility="invisible"
+        android:background="@color/bg_gray_color" />
+
+    <EditText
+        android:id="@+id/fedbck_content_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/commit_Llyt"
+        android:layout_below="@+id/line"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:hint="@string/pls_input_feedback"
+        android:maxLength="350"
+        android:minLines="6"
+        android:padding="14dp"
+        android:visibility="invisible"
+        android:textColor="@color/text_color_404040"
+        android:textColorHint="@color/text_color_6c6c6c"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/text_size_small" />
+
+    <LinearLayout
+        android:id="@+id/commit_Llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_background"
+        android:gravity="center" >
+
+        <!--<TextView-->
+            <!--android:id="@+id/feedback_send_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/btn_sendcomplain_sl"-->
+            <!--android:text="@string/feedback_send_text"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="@dimen/text_size_small" />-->
+
+        <com.prize.appcenter.ui.widget.PrizeCommButton
+            android:id="@+id/feedback_send_btn"
+            android:layout_width="257dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:btn_radius="20dp"
+            app:btn_content="@string/feedback_send_text"
+            app:btn_text_size="@dimen/text_size_small" />
+    </LinearLayout>
+
+</RelativeLayout>

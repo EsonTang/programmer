@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/default_Llyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/recommand_Llyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="71dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/relatede_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:background="@color/app_background"
+                android:gravity="left"
+                android:text="@string/recommend_update"
+                android:textColor="@color/text_color_404040"
+                android:textSize="@dimen/text_size_small" />
+
+            <GridView
+                android:id="@+id/gridView_hot_id"
+                style="@style/detail_gridview"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="false"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/recommand_Llyt"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/default_head_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/default_contentone_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/congratulation"
+                android:textColor="@color/game_ranking_down"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/default_contenttwo_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/your_app_is_new_version"
+                android:textColor="@color/game_ranking_down"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:animationCache="false"
+        android:cacheColorHint="@color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true"
+        android:touchscreenBlocksFocus="true"/>
+
+    <RelativeLayout
+        android:id="@+id/oneKey_down_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:background="@color/bg_head_gray_color" />
+        <com.prize.appcenter.ui.widget.PrizeCommButton
+            android:id="@+id/oneKey_install_Btn"
+            android:layout_width="238dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:btn_content="@string/oneKey_install"
+            app:btn_radius="20dp"
+            app:btn_text_color="#ffffff"
+            app:btn_text_size="@dimen/text_size_small" />
+
+    </RelativeLayout>
+
+</LinearLayout>

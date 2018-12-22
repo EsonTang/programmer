@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/flash_bg"
+    android:background="@drawable/flashlight_open_close_seletor">
+    <com.prize.flash.FlashSwitch
+       android:id="@+id/flash_switch"
+       android:layout_width="wrap_content"
+  	   android:layout_height="wrap_content"
+       android:layout_marginBottom="@dimen/flash_button_bottommargin"
+       android:layout_gravity="bottom|center_horizontal"
+  	   android:background="@drawable/flashligh_switch_bg">
+	<ImageView 
+	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+  	    android:background="@drawable/thumb"/>
+       
+   </com.prize.flash.FlashSwitch>
+</FrameLayout>

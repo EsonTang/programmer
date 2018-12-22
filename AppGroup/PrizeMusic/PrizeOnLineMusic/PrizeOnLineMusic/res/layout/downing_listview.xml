@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/nota_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="2000dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/icon_no_downdata"
+            android:gravity="center"
+            android:text="@string/no_downdata"
+            android:textColor="@color/text_color_969696"
+            android:textSize="@dimen/text_size_15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/all_pause_Tv"
+            style="@style/textView_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/icon_pause_sl"
+            android:text="@string/all_pause" />
+
+        <LinearLayout
+            android:id="@+id/all_down_Llyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/all_down_Tv"
+                style="@style/textView_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/icon_download_sl"
+                android:text="@string/all_down" />
+
+            <TextView
+                android:id="@+id/num_downtask_Tv"
+                style="@style/textView_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/statusbar_color" />
+
+    <ListView
+        android:id="@+id/rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@color/divider"
+        android:dividerHeight="1px"
+        android:drawSelectorOnTop="false"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:headerDividersEnabled="false"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:scrollbars="none" />
+    <!--
+        android:paddingLeft="@dimen/listview_items_padding_left_right"
+        android:paddingRight="@dimen/listview_items_padding_left_right"
+    -->
+
+</LinearLayout>

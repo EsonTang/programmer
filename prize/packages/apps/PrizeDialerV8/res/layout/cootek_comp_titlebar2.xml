@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/function_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cootek_funcbar_height"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cootek_funcbar_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/titlebar_back"
+            android:layout_width="@dimen/cootek_header_back_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/cootek_header_padding1"
+            android:gravity="center_vertical"
+            android:textColor="@color/cootek_title_color"
+            android:textSize="@dimen/cootek_header_back_textsize" />
+
+        <TextView
+            android:id="@+id/titlebar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/titlebar_back"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:textColor="@color/cootek_TextColorWhite"
+            android:textSize="@dimen/cootek_header_title_textsize" />
+
+        <TextView
+            android:id="@+id/titlebar_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/cootek_header_padding1"
+            android:gravity="center_vertical"
+            android:textColor="@color/cootek_TextColorWhite"
+            android:textSize="@dimen/cootek_header_logged_textsize" />
+
+        <TextView
+            android:id="@+id/titlebar_setting"
+            android:layout_width="36dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/cootek_header_padding1"
+            android:gravity="center_vertical"
+            android:textColor="@color/cootek_TextColorWhite"
+            android:textSize="24dp" />
+    </RelativeLayout>
+</LinearLayout>
+

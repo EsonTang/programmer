@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="48dp"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_icon_size"
+        android:gravity="center_horizontal"
+        >
+    
+    <ImageView android:layout_width="@dimen/nav_icon_size"
+        android:layout_height="@dimen/nav_icon_size"
+        android:contentDescription="@null"
+        android:id="@+id/img_ico"
+        android:scaleType="fitXY"
+        />
+    </RelativeLayout>
+    
+    
+	<TextView android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:singleLine="true"
+	    android:id="@+id/txt_name"
+	    style="@style/navi_card_item_name_style"
+	    android:layout_marginTop="@dimen/dp_8"
+	    />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.prize.applock.fingerprintapplock"
+		  android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="24"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:resizeableActivity="false"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <activity android:name=".LockUI"
+            android:excludeFromRecents="true"
+            android:theme="@style/PrizeLockUITheme"
+            android:screenOrientation ="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation|touchscreen|uiMode|navigation|screenSize"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bubble_width">50dp</dimen>
+    <dimen name="bubble_height">50dp</dimen>
+    <dimen name="bubble_bitmap_size">30dp</dimen>
+    <dimen name="notice_list_height">500dip</dimen>
+    <dimen name="notice_list_item_height">60dip</dimen>
+    <dimen name="app_icon_size">48dip</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_default">14sp</dimen>
+    <dimen name="text_size_middle">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <!-- liufan add 07-30 -->
+    <dimen name="setting_content_textsize">10sp</dimen>
+    <dimen name="setting_title_textsize">8sp</dimen>
+    <dimen name="open_lockscreen_text_textsize">16sp</dimen>
+    <dimen name="lock_pattern_dot_line_width">3dp</dimen>
+    <dimen name="lock_pattern_dot_size">12dp</dimen>
+    <dimen name="lock_pattern_dot_size_activated">28dp</dimen>
+    <dimen name="number_view_width">50dip</dimen>
+    <dimen name="number_view_height">50dip</dimen>
+    <dimen name="number_view_text_textsize">16sp</dimen>
+
+    <!-- The size of the dots in the PIN unlock method. -->
+    <dimen name="password_dot_size">9dp</dimen>
+
+    <!-- The padding between chars of the password view. -->
+    <dimen name="password_char_padding">8dp</dimen>
+    <!-- Width of the sliding KeyguardSecurityContainer (includes 2x keyguard_security_view_margin) -->
+    <dimen name="keyguard_security_width">320dp</dimen>
+    
+    <dimen name="time_margin_top">75dp</dimen>
+    
+    <dimen name="list_height">200dp</dimen>
+    <!-- default dimen fanjunchen start -->
+    <dimen name="phone_margin_bottom">-304dp</dimen>  
+	
+	<dimen name="home_margin_bottom">-266dp</dimen>
+	
+	<dimen name="camera_margin_bottom">-324dp</dimen>
+	
+	<dimen name="top_ry_height">30dp</dimen>
+	<!-- 左边三角形的高度 -->
+	<dimen name="left_train_height">131dp</dimen>
+	<!-- 右边三角形的高度 -->
+	<dimen name="right_train_height">131dp</dimen>
+	<!-- 左边三角形的角度 -->
+	<integer name="left_corner">60</integer>
+	<!-- 右边三角形的角度 -->
+	<integer name="right_corner">60</integer>
+	
+	<dimen name="pin_lay_height">440dp</dimen>
+	
+	<dimen name="dot_pading">10dp</dimen>
+	<dimen name="circle_radius">3dp</dimen>
+	<dimen name="circle_big_radius">15dp</dimen>
+	
+	<!-- 下方按钮区left rigint padding -->
+    <dimen name="bottom_btn_area_padding">20dp</dimen>
+    <dimen name="bottom_txt_height">36dp</dimen>
+    <dimen name="bottom_txt_size">13sp</dimen>
+    
+    <dimen name="font_size_15">15sp</dimen>
+    
+    <dimen name="view_line_height">0.5dp</dimen>
+    <dimen name="item_text_nomol">16sp</dimen>
+    <dimen name="item_text_small">13sp</dimen>
+    <dimen name="item_sw_height">72dp</dimen>
+    <dimen name="item_height">55dp</dimen>
+    <dimen name="margin">15dp</dimen>
+    <dimen name="padding">20dp</dimen>
+	<!-- default dimen fanjunchen end -->
+</resources>

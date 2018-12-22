@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- #ClearAllEvents# -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:listSelector="#00000000"
+        android:cacheColorHint="#00000000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/prize_left_btn_marginbottom"
+        android:gravity="center_horizontal"
+        >
+        <!-- style="@android:style/Holo.ButtonBar" -->
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_gravity="center|end"
+            android:gravity="center"
+            android:layout_width="@dimen/prize_left_btn_width"
+            android:layout_height="@dimen/prize_left_btn_height"
+            android:background="@drawable/prize_left_btn_selector"
+            android:text="@android:string/cancel" 
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_gravity="center|start"
+            android:gravity="center"
+            android:layout_width="@dimen/prize_left_btn_width"
+            android:layout_height="@dimen/prize_left_btn_height"
+            android:background="@drawable/prize_right_btn_selector"
+            android:text="@android:string/ok" 
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">enregistreur d\'écran</string>
+    <string name="start">commencer</string>
+    <string name="stop">Stop</string>
+    <string name="show_cordinate">Écran tactile</string>
+    <string name="hide_cordinate">Fermer tactile</string>
+    <string name="share">part</string>
+    <string name="screenrecord_recording_ticker">L\'écran vidéo</string>
+    <string name="screenrecord_recording_title">Screen Recorder est</string>
+    <string name="screenrecord_recording_text">"Durée maximale: 180 secondes."</string>
+    <string name="screenrecord_saved_ticker">Enregistrer l\'écran d\'enregistrement</string>
+    <string name="screenrecord_saved_title">Screen Recorder Saved</string>
+    <string name="screenrecord_saved_text">Touchez pour afficher votre enregistrement d\'écran.</string>
+    <string name="screenrecord_duration_text">Durée:</string>
+</resources>

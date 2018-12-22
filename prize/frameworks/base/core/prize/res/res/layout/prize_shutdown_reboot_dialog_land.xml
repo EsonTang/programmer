@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/blurLayout"
+    android:fitsSystemWindows="true">
+    
+
+    <LinearLayout
+        android:id="@+id/shutdownLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="180dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:transitionName="shutdown"
+		android:layout_alignParentLeft="true"
+        >
+    <ImageView 
+        android:id="@+id/shutdownImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/prize_small_shutdown_background"/>
+    
+    <TextView
+        android:id="@+id/shutdown_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp"
+        android:text="@string/shutdown"
+		android:textColor="@color/prize_white"/>
+
+    <TextView
+        android:id="@+id/shutdown_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/shutdown_reminder"
+        android:layout_centerHorizontal="true"
+        android:textSize="11sp"
+        android:textColor="@color/prize_white"
+        android:alpha="0.5"
+        android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rebootLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="70dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_toRightOf="@id/shutdownLinear"
+        android:transitionName="reboot">
+    <ImageView 
+        android:id="@+id/rebootImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/prize_small_reboot_background"/>
+    
+    <TextView
+        android:id="@+id/reboot_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp"
+		android:textColor="@color/prize_white"
+        android:text="@string/restart"/>
+
+    <TextView
+        android:id="@+id/reboot_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/restart_reminder"
+        android:layout_centerHorizontal="true"
+        android:textSize="11sp"
+        android:textColor="@color/prize_white"
+        android:alpha="0.5"
+        android:visibility="invisible"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/cancelLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="70dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+		android:layout_marginTop="133dp"
+		>
+    <ImageView 
+        android:id="@+id/cancelImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/prize_cancel_white_normal"/>
+
+    <TextView
+        android:id="@+id/cancel_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp"
+		android:textColor="@color/prize_white"
+        android:text="@string/reset_cancel"
+		/>
+     </LinearLayout>
+	 
+	<!-- 3-20 -->
+	 <ImageView
+	    android:id="@+id/big_image_anim" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:visibility="gone"/>
+		
+</RelativeLayout>

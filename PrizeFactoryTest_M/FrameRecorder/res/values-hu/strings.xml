@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">képernyő felvevő</string>
+    <string name="start">kezdődik</string>
+    <string name="stop">Stop</string>
+    <string name="show_cordinate">Touch kijelző</string>
+    <string name="hide_cordinate">szoros kapcsolatot</string>
+    <string name="share">részvény</string>
+    <string name="screenrecord_recording_ticker">A kivetítő</string>
+    <string name="screenrecord_recording_title">Screen Recorder</string>
+    <string name="screenrecord_recording_text">"Maximális időtartama: 180 másodperc."</string>
+    <string name="screenrecord_saved_ticker">Save Képernyő felvétel</string>
+    <string name="screenrecord_saved_title">Mentett Screen Recorder</string>
+    <string name="screenrecord_saved_text">Érintsd megtekintheti a képernyő felvétel.</string>
+    <string name="screenrecord_duration_text">Időtartam:</string>
+</resources>

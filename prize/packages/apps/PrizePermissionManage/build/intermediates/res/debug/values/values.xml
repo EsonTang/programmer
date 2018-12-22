@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Z:/k5701code/ALPS-MP-N1.MP18-V2_PRI6739_66_N1/packages/apps/PrizePermissionManage/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="backgroundcolor">#ffffff</color>
+    <color name="edittextcolor">#3478f6</color>
+    <color name="grey">#f0f0f0</color>
+    <!-- From: file:/Z:/k5701code/ALPS-MP-N1.MP18-V2_PRI6739_66_N1/packages/apps/PrizePermissionManage/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Z:/k5701code/ALPS-MP-N1.MP18-V2_PRI6739_66_N1/packages/apps/PrizePermissionManage/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">action_settings</string>
+    <string name="app_name">Permission</string>
+    <string name="hello_world">Hello World</string>
+    <!-- From: file:/Z:/k5701code/ALPS-MP-N1.MP18-V2_PRI6739_66_N1/packages/apps/PrizePermissionManage/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

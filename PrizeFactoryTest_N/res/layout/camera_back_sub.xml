@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:keepScreenOn="true"
+	>
+
+    <SurfaceView
+        android:id="@+id/mSurfaceView"
+        android:layout_width="360dp"
+        android:layout_height="480dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10px"
+        android:layout_marginLeft="10px"
+		android:layout_marginBottom="10px"
+        android:orientation="horizontal" >
+
+        <!--<Button
+            android:id="@+id/take_picture"
+            android:layout_width="120dp"
+            android:layout_height="81dp"
+			android:gravity="center"
+			android:layout_weight="1.0"
+            android:text="@string/cameraback_takepicture"
+            android:textSize="22sp" />-->
+
+        <Button
+            android:id="@+id/camera_pass"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+			android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/pass"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/camera_fail"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+			android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/fail"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

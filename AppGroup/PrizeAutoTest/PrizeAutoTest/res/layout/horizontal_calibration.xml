@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <TextView
+            android:id="@+id/calibrationAttention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/calibration_attention_init"
+            android:textColor="#000000"
+            android:textSize="@dimen/prize_horizontal_calibration_textview_size" />
+    
+    <Button
+            android:id="@+id/calibration"
+            android:layout_width="@dimen/prize_horizontal_calibration_button_width"
+            android:layout_height="@dimen/prize_horizontal_calibration_button_height"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/prize_sensor_calibration"
+            android:text="@string/calibration_button" 
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/calibration"
+        android:layout_below="@id/calibrationAttention"
+        >
+    <com.prize.autotest.horcali.HorizontalCalibrationView
+        android:id="@+id/main_horizontalcalibrationview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+  </RelativeLayout>
+
+</RelativeLayout>

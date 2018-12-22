@@ -1,0 +1,70 @@
+<!-- This file defines the base public resources exported by the
+     platform, which must always exist. -->
+
+<!-- ***************************************************************
+     ***************************************************************
+     IMPORTANT NOTE FOR ANYONE MODIFYING THIS FILE
+     READ THIS BEFORE YOU MAKE ANY CHANGES
+
+     This file defines the binary compatibility for resources.  As such,
+     you must be very careful when making changes here, or you will
+     completely break backwards compatibility with old applications.
+
+     To avoid breaking compatibility, all new resources must be placed
+     at the end of the list of resources of the same type.  Placing a resource
+     in the middle of type will cause all following resources to be
+     assigned new resource numbers, breaking compatibility.
+
+     ***************************************************************
+     *************************************************************** -->
+
+<!-- 
+    prize-framework-res.apk
+    Version:1.0
+    Author:wangxianzhen
+    Date:2016-10-20
+-->
+<resources>
+
+    <!-- We don't want to publish private symbols in com.prize.R as part of
+    the SDK.  Instead, put them here. -->
+    <!-- ===============================================================
+    Resources for version 1 of the platform.
+    =============================================================== -->
+    <eat-comment />
+
+    <!-- Here if you need to modify, please refer to the 
+    frameworks\base\core\res\res\values\public.xml and the following recommendations -->
+
+    <!--  <public type="attr"         name="prize_theme"        id="0x03010000" /> add prize attr below-->
+
+    <!--  <public type="id"           name="prize_id"           id="0x03020000" /> add prize id below-->
+
+    <!--  <public type="style"        name="prize_style"        id="0x03030000" /> add prize style below-->
+
+    <!--  <public type="string"       name="prize_string"       id="0x03040000" /> add prize string below-->
+
+    <!--  <public type="dimen"        name="prize_dimen"        id="0x03050000" /> add prize dimen below-->
+
+    <!--  <public type="color"        name="prize_color"        id="0x03060000" /> add prize color below-->
+
+    <!--  <public type="array"        name="prize_array"        id="0x03070000" /> add prize array below-->
+
+    <!--  <public type="drawable"     name="prize_drawable"     id="0x03080000" /> add prize drawable below-->
+
+    <!--  <public type="layout"       name="prize_layout"       id="0x03090000" /> add prize layout below-->
+	
+    <!--  <public type="anim"         name="prize_anim"         id="0x030a0000" /> add prize anim below-->
+
+    <!--  <public type="animator"     name="prize_animator"     id="0x030b0000" /> add prize animator below-->
+
+    <!--  <public type="interpolator" name="prize_interpolator" id="0x030c0000" /> add prize interpolator below-->
+
+    <!--  <public type="mipmap"       name="prize_mipmap"       id="0x030d0000" /> add prize mipmap below-->
+
+    <!--  <public type="integer"      name="prize_integer"      id="0x030e0000" /> add prize integer below-->
+
+    <!--  <public type="transition"   name="prize_transition"   id="0x030f0000" /> add prize transition below-->
+
+    <!--  <public type="raw"          name="prize_raw"          id="0x03100000" /> add prize raw below-->
+</resources>

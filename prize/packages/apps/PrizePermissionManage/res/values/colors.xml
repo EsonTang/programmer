@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundcolor">#ffffff</color>
+    <color name="grey">#f0f0f0</color>
+    <color name="transparent">#00000000</color>
+    <color name="edittextcolor">#3478f6</color>
+    <color name="prize_text_tab_unselected">#AAAAAB</color>
+    <color name="prize_text_tab_selected">#393939</color>
+    <color name="settings_background">#f5f5f5</color>
+    <color name="settings_statusbar_background">#fafafa</color>
+    <color name="settings_layout_background">#e6e6e6</color>
+    <color name="settings_background_lines">#dcdcdc</color>
+    <color name="text_tab_unselected">#AAAAAB</color>
+    <color name="text_tab_selected">#393939</color>
+
+</resources>

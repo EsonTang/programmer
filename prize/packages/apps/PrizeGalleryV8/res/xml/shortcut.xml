@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/new_photo"
+        android:shortcutDisabledMessage="@string/shortcutnewphoto_disabled"
+        android:shortcutId="shortcut_id_newphoto"
+        android:shortcutLongLabel="@string/shortcutnewphoto_long"
+        android:shortcutShortLabel="@string/shortcutnewphoto_short">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.gallery3d"
+            android:targetClass="com.android.gallery3d.app.GalleryActivity"
+            />
+      
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+</shortcuts>

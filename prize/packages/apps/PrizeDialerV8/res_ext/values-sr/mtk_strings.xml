@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">IP позив <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g></string>
+    <string name="select_account">"Изаберите налог"</string>
+    <string name="all_accounts">"Сви налози"</string>
+    <string name="call_log_via_sim_name_notice">ЕВИДЕНЦИЈА ПОЗИВА ПРЕКО \"<xliff:g id="sim_name">%s</xliff:g>\"</string>
+    <string name="imei_invalid">Неважеће</string>
+    <string name="conf_call_member_list">Lista članova</string>
+    <string name="conf_call_participant_answered">Odgovoreno</string>
+    <string name="conf_call_participant_missed">"Пропуштени"</string>
+    <string name="calls_over_wifi">ПозивићебитиобављенипрекоWi-Fi-ја</string>
+    <string name="connect_to_wifi">Повежите се са Wi-Fi-јем да бисте обавили позиве</string>
+    <string name="wfc_notification_summary">Додирнитеовдедабистеприступилижељенимпоставкама</string>
+    <string name="wfc_notification_summary_fail">Додирните овде да бисте погледали доступне мреже</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP позив"</string>
+    <string name="snackbar_number_unblocked_failed">Деблокирање није успело за <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> </string>
+</resources>

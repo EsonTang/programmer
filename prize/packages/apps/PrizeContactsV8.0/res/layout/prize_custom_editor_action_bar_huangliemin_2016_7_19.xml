@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/prize_actionbar_custom_height"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    
+    <LinearLayout
+        android:id="@+id/back_container"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:gravity="center">
+	    <TextView 
+	        android:id="@+id/back"
+	        android:layout_marginStart="@dimen/prize_actionbar_padding_left_right"
+	        android:duplicateParentState="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/prize_editor_menu_text_size"
+	        android:text="@string/prize_cancle"
+	        android:textColor="@drawable/prize_selector_actionbar_text_btn"
+	        android:gravity="center"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/prize_title_text_size"
+        android:text="@string/prize_contacts_title"
+        android:textColor="@color/prize_black_color"
+        android:layout_centerInParent="true"/>
+    
+    <LinearLayout 
+        android:id="@+id/save_container"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+	    <TextView 
+	        android:id="@+id/save"
+	        android:layout_marginEnd="@dimen/prize_actionbar_padding_left_right"
+	        android:duplicateParentState="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/prize_editor_menu_text_size"
+	        android:text="@string/prize_save"
+	        android:gravity="center"
+	        android:textColor="@drawable/prize_selector_actionbar_text_btn"/>
+    </LinearLayout>
+    
+
+</RelativeLayout>

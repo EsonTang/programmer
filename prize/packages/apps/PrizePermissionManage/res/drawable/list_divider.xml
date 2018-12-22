@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/prize_preferencefragment_dividerlines_maginleft"
+    android:insetRight="@dimen/prize_preferencefragment_dividerlines_maginright">
+	<shape android:shape="rectangle">
+	<size android:height="1px"/>
+	<solid android:color="@color/settings_background_lines"/>
+	</shape>
+</inset>

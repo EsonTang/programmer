@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_rank_overview_class"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/text_color_404040"
+        android:textSize="@dimen/text_size_30"
+        />
+
+    <com.prize.appcenter.ui.widget.ScrollListView
+        android:id="@+id/mScrollListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/moreTv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/permissionTv_id"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/detail_more_selector"
+        android:paddingBottom="13dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="13dp"
+        android:layout_marginTop="-10dp"
+        android:text="@string/see_more"
+        android:textColor="@color/text_color_12b7f5"
+        android:textSize="@dimen/text_size_small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/seprate_View"
+        android:background="#d7d7d7" />
+</LinearLayout>

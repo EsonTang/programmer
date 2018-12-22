@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SelectableItem"
+    class="com.android.contacts.quickcontact.ExpandingEntryCardView$EntryView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/expanding_entry_card_item_padding_bottom"
+    android:paddingEnd="@dimen/expanding_entry_card_item_padding_end"
+    android:paddingStart="@dimen/expanding_entry_card_item_padding_start"
+    android:paddingTop="@dimen/expanding_entry_card_item_padding_top">
+    <!--prize modify android:layout_height="@dimen/prize_double_content_height" as wrap_content by zhaojian for bug 41593 20171107-->
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/expanding_entry_card_item_icon_height"
+        android:layout_height="@dimen/expanding_entry_card_item_icon_width"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/expanding_entry_card_item_image_spacing"
+        android:layout_marginTop="@dimen/expanding_entry_card_item_icon_margin_top"
+        android:scaleType="fitCenter" />
+
+    <!-- M: ALPS02136311 android:textDirection="locale" -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/expanding_entry_card_header_margin_bottom"
+        android:paddingEnd="15dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/quickcontact_entry_header_text_color"
+        android:textDirection="locale"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="15sp" />
+        <!--prize modify android:paddingEnd="50dp" as 15dp by zhaojian 20171107-->
+        <!--prize add android:maxEms="13"android:singleLine="true"android:ellipsize="end"  by hpf 20171208-->
+
+    <TextView
+        android:id="@+id/sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:textAlignment="viewStart"
+        android:textColor="@color/quickcontact_entry_sub_header_text_color"
+        android:textSize="13sp"/>
+    
+    <!--  prize-remove-huangpengfei-2016-10-27-start
+      android:layout_toEndOf="@+id/icon_sub_header"
+      android:layout_toStartOf="@+id/icon_alternate"
+      prize-remove-huangpengfei-2016-10-27-end	 -->
+
+    <ImageView
+        android:id="@+id/icon_sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="@dimen/expanding_entry_card_item_sub_header_icon_margin_bottom"
+        android:layout_marginEnd="@dimen/expanding_entry_card_item_sub_header_icon_margin_right"
+        android:layout_toEndOf="@+id/icon" />
+
+    <ImageView
+        android:id="@+id/icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_header"
+        android:layout_marginEnd="@dimen/expanding_entry_card_item_text_icon_margin_right"
+        android:layout_marginTop="@dimen/expanding_entry_card_item_text_icon_margin_top"
+        android:layout_toEndOf="@+id/icon" />
+
+    <!-- M: add sim avatar to indicate with which sim the call is maked  -->
+    <ImageView
+        android:id="@+id/icon_sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_header"
+        android:layout_marginEnd="@dimen/expanding_entry_card_item_text_icon_margin_right"
+        android:layout_toEndOf="@+id/icon_text" />
+
+    <!-- M: add text for sim name, ALPS01765770 -->
+    <LinearLayout
+        android:id="@+id/sim_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sub_header"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sim_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/quickcontact_entry_sub_header_text_color" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/quickcontact_entry_sub_header_text_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- prize-add-huangliemin-2016-7-18-start 
+    android:visibility="gone"
+    -->
+
+    <ImageView
+        android:id="@+id/icon_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/expanding_entry_card_item_alternate_icon_start_margin"
+        android:layout_toStartOf="@+id/icon_one_divider_layout"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/prize_selector_ic_dialer_btn"
+        android:visibility="gone" />
+
+    <!-- prize-remove for dido os8.0-hpf-2017-7-25-start -->
+         <!-- android:paddingTop="@dimen/expanding_entry_card_item_icon_margin_top"
+         android:paddingBottom="@dimen/expanding_entry_card_item_alternate_icon_margin_bottom" -->
+    <!-- prize-remove for dido os8.0-hpf-2017-7-25-end -->
+    <LinearLayout
+        android:id="@+id/icon_one_divider_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_toStartOf="@+id/icon_alternate"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/icon_one_divider"
+            android:layout_width="1px"
+            android:layout_height="@dimen/prize_contacts_divider_height"
+            android:background="@color/prize_button_text_default_color"
+            android:visibility="gone" />
+
+    </LinearLayout>
+         
+    <!-- prize-add-huangliemin-2016-7-18-end -->
+
+    <ImageView
+        android:id="@+id/third_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toStartOf="@+id/icon_alternate"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:paddingBottom="@dimen/expanding_entry_card_item_icon_margin_bottom"
+        android:paddingEnd="@dimen/expanding_entry_card_item_icon_margin_right"
+        android:paddingStart="@dimen/expanding_entry_card_item_icon_margin_left"
+        android:paddingTop="15dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_alternate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:paddingEnd="@dimen/expanding_entry_card_item_icon_margin_right"
+        android:paddingStart="@dimen/expanding_entry_card_item_icon_margin_left"
+        android:visibility="gone" />
+    <!-- prize-remove for dido os8.0-hpf-2017-7-25-start -->
+    <!-- android:paddingTop="@dimen/expanding_entry_card_item_icon_margin_top"
+    android:paddingBottom="@dimen/expanding_entry_card_item_icon_margin_bottom" -->
+    <!-- prize-remove for dido os8.0-hpf-2017-7-25-end -->
+</view>

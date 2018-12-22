@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/intelligent_accessibility_settings" >
+    <!-- add by liuweiquan for v7.0 20160711 start -->
+    <PreferenceCategory android:key="personalise_category"
+            android:title="@string/personalise_category">
+            <!-- prize-add-by-zhongweilin-20160130-start  -->
+			<Preference android:key="red_packet_helper" 
+				android:summary="@string/red_packet_helper_summary"
+				android:title="@string/red_packet_helper">
+				<intent android:action="com.android.settings.RED_PACKET_HELPER"/>
+			</Preference>	
+			<!-- prize-add-by-zhongweilin-20160130-end  -->
+			<!--add for nav bar. prize-linkh-20150724  -->
+	        <Preference
+	            android:key="navigation_bar"
+	            android:title="@string/navigation_bar"
+	            android:fragment="com.android.settings.NavigationBarSettings"/>
+	       <!-- end... -->
+		  
+	       <Preference
+                android:key="app_inst_settings"
+                android:title="@string/app_inst_settings"
+                android:fragment="com.android.settings.PrizeManageAppInstances"/>
+	        <Preference
+                android:key="power_settings"
+                android:title="@string/schedule_power_on_off_settings_title">
+	        	<intent android:action="com.android.settings.SCHEDULE_POWER_ON_OFF_SETTING" />
+	        </Preference>
+            <!--prize-add-yangming2016-8-12-start-->
+            <SwitchPreference
+                android:key="prize_float_window_preference"
+                android:title="@string/prize_float_window_tit"
+                android:summary="@string/prize_float_window_tit_summary"
+                android:persistent="false"/>
+            <!--prize-add-yangming-2016-8-12-end-->	
+            <!-- PRIZE BEGIN -->
+            <!-- ID : PRIZE_BARRAGE_WINDOW -->
+            <!-- AUTHOR : yueliu -->
+            <SwitchPreference
+                android:key="prize_barrage_window_preference"
+                android:title="@string/prize_barrage_window_title"
+                android:summary="@string/prize_barrage_window_title_summary"
+                android:persistent="false"/>
+            <!-- PRIZE END -->
+            <Preference
+	            android:key="prize_new_float_window_preference"
+	            android:title="@string/prize_new_floatwindow"/>
+	</PreferenceCategory>    
+	<PreferenceCategory android:key="gesture_somatosensory_category"
+            android:title="@string/gesture_somatosensory_category">
+	</PreferenceCategory>    
+    <!-- add by liuweiquan for v7.0 20160711 end -->
+	
+	<!--add liup 20150520 sleepgesture start-->
+	<Preference android:key="sleep_gesture" 
+		android:summary="@string/sleep_gesture_summary"
+		android:title="@string/sleep_gesture">
+		<intent android:action="com.android.settings.SLEEP_GESTURE"/>
+	</Preference>	
+	<!--add liup 20150520 sleepgesture end-->
+	
+        <SwitchPreference
+            android:key="flip_silent_preference"
+            android:title="@string/flip_silent_settings"
+            android:summary="@string/flip_silent_settings_summary"
+            android:persistent="false"/>
+        <SwitchPreference
+            android:key="smart_dialing_preference"
+            android:title="@string/smart_dialing_settings"
+            android:summary="@string/smart_dialing_settings_summary"
+            android:persistent="false"/>
+        <SwitchPreference
+            android:key="smart_answer_call_preference"
+            android:title="@string/smart_answer_call_settings"
+            android:summary="@string/smart_answer_call_settings_summary"
+            android:persistent="false"/>
+		<SwitchPreference
+            android:key="slide_screenshot_preference"
+            android:title="@string/slide_screenshot_settings"
+            android:summary="@string/slide_screenshot_settings_summary"
+            android:persistent="false"/>
+		<SwitchPreference
+            android:key="prize_slide_split_screen__preference"
+            android:title="@string/prize_slide_split_screen"
+            android:summary="@string/prize_slide_split_screen_summary"
+            android:persistent="false"/>
+		<SwitchPreference
+            android:key="dblclick_sleep_preference"
+            android:title="@string/dblclick_sleep_settings"
+            android:summary="@string/dblclick_sleep_summary"
+            android:persistent="false"/>
+		<SwitchPreference
+            android:key="lockscreen_open_torch_preference"
+            android:title="@string/lockscreen_open_torch_settings"
+            android:summary="@string/lockscreen_open_torch_summary"
+            android:persistent="false"/>
+		<SwitchPreference
+            android:key="pocket_mode_preference"
+            android:title="@string/pocket_mode_settings"
+            android:summary="@string/pocket_mode_settings_summary"
+            android:persistent="false"/>
+		<!--<PreferenceScreen
+	        android:id="@+id/sensor_calibration_settings"
+            android:title="@string/sensor_calibration_settings"
+            android:fragment="com.android.settings.SensorCalibrationSettings"/>-->
+		<!--PRIZE-OneHandMode-liyu-2016-01-04-start-->
+		<PreferenceScreen
+			android:key="one_hand_mode"
+			android:title="@string/one_hand_mode"
+			android:fragment="com.android.settings.OneHandModeSettings"/>
+		<!--PRIZE-OneHandMode-liyu-2016-01-04-end-->
+        <SwitchPreference
+            android:key="antifake_touch_preference"
+            android:title="@string/antifake_touch_settings"
+            android:summary="@string/antifake_touch_settings_summary"
+            android:persistent="false"/>
+
+        <PreferenceScreen
+            android:key="non_touch_operation"
+            android:id="@+id/non_touch_operation_preference"
+            android:title="@string/non_touch_operation_title"
+            android:fragment="com.android.settings.NonTouchOperation"/>
+ 
+</PreferenceScreen>
+

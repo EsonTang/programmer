@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="phone_margin_bottom">-304dp</dimen>  
+	
+	<dimen name="home_margin_bottom">-266dp</dimen>
+	
+	<dimen name="camera_margin_bottom">-324dp</dimen>
+	<!-- 左边三角形的高度 -->
+	<dimen name="left_train_height">131dp</dimen>
+	<!-- 右边三角形的高度 -->
+	<dimen name="right_train_height">131dp</dimen>
+	<!-- 左边三角形的角度 -->
+	<integer name="left_corner">60</integer>
+	<!-- 右边三角形的角度 -->
+	<integer name="right_corner">60</integer>
+</resources>

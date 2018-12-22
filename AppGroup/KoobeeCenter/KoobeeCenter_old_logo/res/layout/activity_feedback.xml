@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.47"
+        android:background="@color/feedback_status_color" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/banner" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/mGridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.53"
+        android:layout_marginLeft="@dimen/activity_main_six"
+        android:layout_marginRight="@dimen/activity_main_six"
+        android:layout_marginTop="@dimen/activity_feedback_two"
+        android:numColumns="3"
+        android:scrollbars="@null"
+        android:verticalSpacing="@dimen/gridview_verticalspacing" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 桌面的宽高 -->
+    <dimen name="desktop_w">300dp</dimen>
+    <dimen name="desktop_h">390dp</dimen>
+    <dimen name="marge_top_dp">30dp</dimen>
+    <!-- 圆形下载进度的字体大小 -->
+    <dimen name="rpb_font_size">11sp</dimen>
+
+    <!-- 分类页 -->
+    <dimen name="type_icon_width">40dp</dimen>
+    <dimen name="type_icon_height">40dp</dimen>
+    <dimen name="type_tilte_maxwidth">120dp</dimen>
+
+    <!-- 替换游戏checkbox文字和图片的距离 -->
+    <dimen name="replace_checkbox_left">20dip</dimen>
+    <dimen name="mygiftcode_w">160dp</dimen>
+    <dimen name="game_size_txt_sp">12sp</dimen>
+    <dimen name="ranking_txt_download_minwidth">62dp</dimen>
+    <dimen name="list_size_minwidth">45dp</dimen>
+    <dimen name="banner_bar_txt_px">24px</dimen>
+    <dimen name="banner_bar_txt_w">200dp</dimen>
+    <dimen name="updateall_text_size">16px</dimen>
+    <dimen name="detail_list_item_W">60dp</dimen>
+    <dimen name="onekey_dlg_height">423dp</dimen>
+    <dimen name="onekey_dlg_margin">13dp</dimen>
+    <dimen name="onekey_dlg_top">17dp</dimen>
+    <dimen name="imgview_width">53dip</dimen>
+    <!-- detail -->
+    <dimen name="dialog_height">266dp</dimen>
+    <dimen name="edit_height">133dp</dimen>
+    <dimen name="dialog_top">18.5dp</dimen>
+    <dimen name="foodRatingBar_width">62dip</dimen>
+    <dimen name="ViewPager_height">40dp</dimen>
+    <dimen name="bottom_height">62dp</dimen>
+    <dimen name="comment_height">380dp</dimen>
+
+    <!-- 个人中心 -->
+    <dimen name="cicle_width_height">53dp</dimen>
+    <dimen name="paddingTop">35dp</dimen>
+    <dimen name="top_padding">11dp</dimen>
+    <dimen name="tab_height_46dp">41dp</dimen>
+    <dimen name="down_queen_50dp">44dp</dimen>
+    <dimen name="cache_tv">32dp</dimen>
+    <dimen name="cache_content">66dp</dimen>
+    <dimen name="cache_top">22dp</dimen>
+    <dimen name="toggle_width">32dp</dimen>
+    <dimen name="toggle_height">16dp</dimen>
+
+    <!-- 榜单 -->
+    <dimen name="rank_margin_top">62dp</dimen>
+    <dimen name="rank_left_right_height">96dp</dimen>
+    <dimen name="rank_left_right_margintop">60dp</dimen>
+    <dimen name="rank_text_to_top">31dp</dimen>
+    <dimen name="rank_img_to_top">16dp</dimen>
+    <dimen name="rank_one_height">107dp</dimen>
+    <dimen name="rank_one_margintop">48dp</dimen>
+    <dimen name="rank_text_top">40dp</dimen>
+    <dimen name="rank_img_top">45dp</dimen>
+    <dimen name="three_six_dp">32dp</dimen>
+    <dimen name="onekey_dialog_top">337dp</dimen>
+    <dimen name="item_horizontalSpacing">10dp</dimen>
+    <dimen name="item_W">80dp</dimen>
+    <dimen name="gridview_H">250dp</dimen>
+    <dimen name="icon_width">60dp</dimen>
+    <dimen name="icon_height">60dp</dimen>
+    <dimen name="text_size">19px</dimen>
+    <dimen name="zuimei_banner_height">175dp</dimen>
+    <dimen name="detail_icon_margintop">1.5dp</dimen>
+    <dimen name="update_text_paddingleft">22.5px</dimen>
+    <dimen name="topic_banner_h">182dp</dimen>
+    <dimen name="topic_decs_h">110dp</dimen>
+    <dimen name="flow_rightMargin">3px</dimen>
+
+    <!-- 卡片 -->
+    <dimen name="card_margin_top_12dp">11dp</dimen>
+    <dimen name="card_margin_left_15dp">13dp</dimen>
+    <dimen name="card_margin_right_15dp">10dp</dimen>
+    <dimen name="card_margin_top_15dp">13dp</dimen>
+    <dimen name="card_margin_top_8dp">7dp</dimen>
+    <dimen name="card_margin_left_32dp">28dp</dimen>
+    <dimen name="card_margin_right_32dp">28dp</dimen>
+    <dimen name="card_margin_top_11dp">11dp</dimen>
+    <dimen name="card_margin_bottom_15dp">13dp</dimen>
+    <dimen name="card_margin_top_20dp">10dp</dimen>
+    <dimen name="card_img_height">114dp</dimen>
+    <dimen name="card_head_img_205dp">180dp</dimen>
+    <dimen name="card_margin_top_85dp">75dp</dimen>
+    <dimen name="progressbar_margin_right">30dp</dimen>
+    <dimen name="progressbutton_margin_right">10dp</dimen>
+    <dimen name="downloadsize_margin_top">9dp</dimen>
+
+    <!-- 一键装机 -->
+    <dimen name="onekey_img_height">143dp</dimen>
+    <dimen name="onekey_tv_marging_bottom">43dp</dimen>
+    <dimen name="onekey_gridview_margin_top">36dp</dimen>
+    <dimen name="onekey_gridview_margin_left">40dp</dimen>
+    <dimen name="onekey_gridview_margin_right">30dp</dimen>
+    <dimen name="onekey_install_tv_margin_top">34dp</dimen>
+    <dimen name="onekey_wifi_tv_margin_top">13dp</dimen>
+    <dimen name="onekey_jump_tv_margin_top">10dp</dimen>
+    <dimen name="nav_img_height">75dp</dimen>
+    <!-- home地栏Tab的高度 -->
+    <dimen name="main_tab_height">49dp</dimen>
+    <!-- home地栏小红点的宽度 -->
+    <dimen name="main_tab_red_point">30dp</dimen>
+    <dimen name="detail_imgs_margin_left">10dp</dimen>
+    <dimen name="imgview_onekey_width">65dip</dimen>
+    <dimen name="imgview_onekey_higth">55dip</dimen>
+    <dimen name="imgview_onekey_textwidth">70dip</dimen>
+    <dimen name="card_topicmagin_22dp">5dp</dimen>
+
+    <!--push图标大小-->
+
+    <dimen name="push_icon_width_small">60dp</dimen>
+
+    <dimen name="hight_app_game_banner">80dp</dimen>
+    <dimen name="award_program_banner_hight">113dp</dimen>
+
+    <dimen name="card_sinview_marginLeft">155.5dp</dimen>
+    <dimen name="card_sinview_right_bootom_marginLeft">153.5dp</dimen>
+
+    <dimen name="game_card_menu_hight">100dp</dimen>
+
+    <dimen name="home_broadcast_width">180dp</dimen>
+
+    <dimen name="one_hundred_seven_five">190dp</dimen>
+
+    <dimen name="verticalSpacingoneKey_oneKey">40dp</dimen>
+    <dimen name="layout_marginBottom_oneKey">108dp</dimen>
+    <dimen name="layout_marginBottom_head_oneKey">29dp</dimen>
+
+    <dimen name="tag_padding_top">2dp</dimen>
+    <dimen name="rank_tabpadding">18dp</dimen>
+    <dimen name="card_margin_right">0dp</dimen>
+
+    <dimen name="game_header_netgame_gift_enter_width">151dp</dimen>
+    <dimen name="game_header_netgame_gift_enter_hight">80dp</dimen>
+
+    <dimen name="update_btn_width">217dp</dimen>
+
+    <dimen name="folder_gridview_horizontalSpacing">20.5dp</dimen>
+    <dimen name="folder_gridview_verticalSpacing">30.5dp</dimen>
+    <dimen name="detail_recommd_line_margintop">24dp</dimen>
+</resources>

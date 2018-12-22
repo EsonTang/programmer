@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    android:paddingRight="15dp" >
+    
+    <ImageView 
+        android:id="@+id/gift_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gift"
+        
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/gift_image"
+        android:gravity="left"
+        android:text="@string/gift"
+        android:textColor="@color/text_color_404040"
+        android:textSize="@dimen/text_size_small" />
+    
+     <com.prize.appcenter.ui.widget.GiftButton
+        android:id="@+id/check"
+        style="@style/gift_copy_btn_item"
+        android:layout_alignParentRight="true" 
+        android:layout_alignTop="@id/title"/>
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@id/title"
+        android:layout_toLeftOf="@id/check"
+        android:layout_marginTop="1dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:gravity="left"
+        android:text="@string/gift_more"
+        android:textColor="@color/text_color_9a9a9a"
+        android:textSize="@dimen/text_size_micro" />
+
+
+</RelativeLayout>

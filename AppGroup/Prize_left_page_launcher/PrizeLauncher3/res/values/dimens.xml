@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+<!-- Dynamic Grid -->
+    <dimen name="dynamic_grid_edge_margin">6dp</dimen>
+    <dimen name="dynamic_grid_search_bar_max_width">500dp</dimen>
+    <dimen name="dynamic_grid_search_bar_height">48dp</dimen>
+    <dimen name="dynamic_grid_page_indicator_height">24dp</dimen>
+
+<!-- Wallpaper picker -->
+    <dimen name="wallpaperThumbnailWidth">106.5dp</dimen>
+    <dimen name="wallpaperThumbnailHeight">94.5dp</dimen>
+    <dimen name="wallpaperItemIconSize">24dp</dimen>
+    <dimen name="wallpaperThumbnailSize">70dp</dimen>
+
+<!-- Cling -->
+    <dimen name="folderClingMarginTop">20dp</dimen>
+    <!-- The offset for the text in the cling -->
+    <dimen name="cling_text_block_offset_x">0dp</dimen>
+    <dimen name="cling_text_block_offset_y">0dp</dimen>
+    <!-- entries for custom clings, will be set in overlays -->
+    <add-resource type="dimen" name="custom_cling_margin_top" />
+    <add-resource type="dimen" name="custom_cling_margin_right" />
+    <add-resource type="dimen" name="custom_cling_margin_left" />
+
+<!-- Workspace -->
+    <dimen name="workspace_max_gap">16dp</dimen>
+    <dimen name="workspace_overscroll_drawable_padding">0dp</dimen>
+    
+    
+	<!--modify by zhouerlong-->
+    <dimen name="overview_mode_page_offset">145dp</dimen>
+
+<!-- QSB -->
+    <dimen name="toolbar_button_vertical_padding">4dip</dimen>
+    <dimen name="toolbar_button_horizontal_padding">12dip</dimen>
+    <!-- External toolbar icon size (for bounds) -->
+    <dimen name="toolbar_external_icon_width">36dp</dimen>
+    <dimen name="toolbar_external_icon_height">36dp</dimen>
+
+<!-- AllApps/Customize/AppsCustomize -->
+    <!-- The height of the tab bar - if this changes, we should update the
+         external icon width/height above to compensate -->
+    <dimen name="apps_customize_tab_bar_height">52dp</dimen>
+    <dimen name="apps_customize_tab_bar_margin_top">0dp</dimen>
+    <dimen name="app_icon_size">106dp</dimen>
+    <dimen name="folder_preview_size">106dp</dimen>
+    <dimen name="folder_name_margin_icon">1.5dp</dimen>
+		 <!--add by zhouerlong-->   
+    
+
+    <!-- The AppsCustomize page indicator -->
+    <dimen name="apps_customize_page_indicator_margin">4dp</dimen>
+    <dimen name="apps_customize_page_indicator_offset">12dp</dimen>
+
+    <!-- Drag padding to add to the bottom of drop targets -->
+    <dimen name="drop_target_drag_padding">14dp</dimen>
+
+<!-- Dragging -->
+    <!-- the area at the edge of the screen that makes the workspace go left
+         or right while you're dragging. -->
+    <dimen name="scroll_zone">20dp</dimen>
+
+    <!-- When dragging items on the workspace, the number of dps by which the position of
+     the drag view should be offset from the position of the original view. -->
+    <dimen name="dragViewOffsetX">0dp</dimen>
+    <dimen name="dragViewOffsetY">0dp</dimen>
+    <!--  When dragging an item, how much bigger (fixed dps) the dragged view
+          should be. If 0, it will not be scaled at all. -->
+    <dimen name="dragViewScale">12dp</dimen>
+
+    <!-- Padding applied to AppWidget previews -->
+    <dimen name="app_widget_preview_padding_left">16dp</dimen>
+    <dimen name="app_widget_preview_padding_right">16dp</dimen>
+    <dimen name="app_widget_preview_label_margin_top">4dp</dimen>
+    <dimen name="app_widget_preview_label_margin_left">2dp</dimen>
+    <dimen name="app_widget_preview_label_margin_right">2dp</dimen>
+
+    <!-- Padding applied to shortcut previews -->
+    <dimen name="shortcut_preview_padding_left">0dp</dimen>
+    <dimen name="shortcut_preview_padding_right">0dp</dimen>
+    <dimen name="shortcut_preview_padding_top">0dp</dimen>
+
+<!-- Folders -->
+    <!-- The amount that the preview contents are inset from the preview background -->
+    <dimen name="folder_preview_padding">4dp</dimen>
+    <dimen name="folder_name_padding">10dp</dimen>
+    <dimen name="qsb_margin_top">-25dp</dimen>
+    <dimen name="workspace_margin_top">-33dp</dimen>
+		 <!--add by zhouerlong-->   
+	<dimen name="unread_minWidth">10dp</dimen>
+	<dimen name="hotseat_unread_margin_top">16dp</dimen>
+	<dimen name="hotseat_unread_margin_right">8dp</dimen>
+	<dimen name="folder_unread_margin_top">8dp</dimen>
+	<dimen name="folder_unread_margin_right">9dp</dimen>
+	<dimen name="workspace_unread_margin_top">0dp</dimen>
+	<dimen name="workspace_unread_margin_right">9dp</dimen>
+	<dimen name="app_list_unread_margin_top">4dp</dimen>
+	<dimen name="app_list_unread_margin_right">13dp</dimen>
+	<dimen name="unread_text_margin">8dp</dimen>
+	<dimen name="unread_text_number_size">14sp</dimen>
+	<dimen name="unread_text_plus_size">10sp</dimen>
+	<dimen name="workspace_padding_bottom">30dp</dimen>
+	<dimen name="message_height">30dp</dimen>
+		 <!--add by zhouerlong-->   
+    
+    <dimen name="spring_height">170dp</dimen>
+    <dimen name="wallpaper_margin_top">8dp</dimen>
+    <dimen name="text_focused_size">12sp</dimen>
+    <dimen name="text_normal_size">10sp</dimen>
+    <dimen name="radio_button_width">68dp</dimen>
+    <!--prize-icon_padding-xiaxuefeng-2015-7-22-->
+    <dimen name="icon_drawable_padding">10px</dimen>
+    <dimen name="uninstallExplosion_width">220dp</dimen>
+    <dimen name="uninstallExplosion_height">190dp</dimen>
+    
+    <!-- left page start fanjunchen -->
+    
+    
+    <dimen name="tab_height_47dp">47dp</dimen>
+    
+    <dimen name="text_size_micro">12dp</dimen>
+    <dimen name="text_size_small">14dp</dimen>
+    <dimen name="text_size_medium">16dp</dimen>
+    
+    
+    <!-- menu pop start -->
+	<dimen name="pop_item_font_size">14dp</dimen>
+	<dimen name="pop_item_height">48dp</dimen>
+	<dimen name="pop_item_width">120dp</dimen>
+	<dimen name="pop_item_padding_left">13dp</dimen>
+	<!-- menu pop end -->
+    
+    <dimen name="card_content_pad">10dp</dimen>
+    
+    <dimen name="card_title_height">35dp</dimen>
+    
+    <dimen name="card_more_height">35dp</dimen>
+    
+    <dimen name="card_corner">16dp</dimen>
+    
+    <dimen name="left_img_width">84dp</dimen>
+    
+    <dimen name="left_img_height">63dp</dimen>
+    
+    <!-- main header card start-->
+    <dimen name="search_left_margin">16dp</dimen>
+    <dimen name="search_top_margin">16dp</dimen>
+    <dimen name="addr_txt_top_margin">10dp</dimen>
+    <dimen name="loc_ico_pad">4dp</dimen>
+    
+     <dimen name="dp_2">2dp</dimen>
+     <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_6">5dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_11">11dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    
+    <dimen name="sp_11">11dp</dimen>
+    <dimen name="sp_12">12dp</dimen>
+    
+    <dimen name="sp_14">14dp</dimen>
+    <dimen name="sp_15">15dp</dimen>
+    
+    <dimen name="sp_16">16dp</dimen>
+    
+    <!-- main header card end-->
+	
+	<!-- left menu dialog start -->
+	<dimen name="head_pad_left">16dp</dimen>
+	<dimen name="head_height">163dp</dimen>
+	<dimen name="line_drawable_pad">18dp</dimen>
+	
+	<dimen name="line_pad_top">14dp</dimen>
+	<dimen name="line_pad_left">18dp</dimen>
+	<!-- left menu dialog end -->
+	
+	<!-- news card start -->
+	<dimen name="news_first_img_height">160dp</dimen>
+	<dimen name="news_item_vertical_pad">10dp</dimen>
+	<dimen name="news_item_img_end">10dp</dimen>
+	<!-- news card end -->
+	
+	<!-- navi card start -->
+	<dimen name="grid_vertical_vertical_pad">16dp</dimen>
+	<!-- navi card end -->
+	
+	<dimen name="text_size">28px</dimen>
+	<!-- movie start -->
+	<dimen name="movie_img_height">135dp</dimen>
+	
+	<dimen name="left_head_img_width">56dp</dimen>
+	
+	<dimen name="dp_1">1dp</dimen>
+	<dimen name="dp_48">48dp</dimen>
+	<dimen name="dp_64">64dp</dimen>
+	<dimen name="dp_20">20dp</dimen>
+	<dimen name="dp_17">17dp</dimen>
+	<dimen name="dp_7">7dp</dimen>
+	<dimen name="dp_24">24dp</dimen>
+	<dimen name="dp_200">200dp</dimen>
+	<dimen name="dp_56">56dp</dimen>
+	<!-- left page end -->
+	
+	<!--  play start-->
+	
+    <dimen name="pause_bar_width">0dp</dimen>
+    <dimen name="pause_bar_distance">0dp</dimen>
+    <dimen name="pause_bar_height">0dp</dimen>
+	<!--  play end-->
+</resources>

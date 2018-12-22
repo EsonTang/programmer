@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme.SoundRecorder" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+    
+    <!-- Nav bar color customized feature. prize-linkh-2017.08.31 -->
+    <!-- add FmMainTheme theme for disable nav bar color cust in starting win. -->
+    <style name="Theme.SoundRecorder.DisableNavBarColorCustInStartingWin" parent="Theme.SoundRecorder">
+        <item name="android:disableNavbarColorCustInStartingWin">true</item>
+    </style>
+    
+    <style name="Theme.SoundRecorderFileList" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/prize_actionbar_color</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:statusBarInverse">gray</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+    
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+    </style>
+    
+    <style name="MyActionBar" parent="@android:style/Theme.Material">
+<!--         <item name="android:backgroundStacked">#818999</item> -->
+<!--         <item name="android:background">#818999</item> -->
+    </style>
+    <!-- PRIZE-modify the ActionBar Color -liguizeng-2015-4-10-end -->
+    <style name="MediaButton" parent="@android:style/Widget.Material.MediaRouteButton">
+        <item name="android:background">@android:drawable/btn_default</item>
+    </style>
+	<style name="OnScreenHintTextAppearance">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:textColorHighlight">#FFFF9200</item>
+        <item name="android:textColorHint">#808080</item>
+        <item name="android:textColorLink">#5C5CFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="OnScreenHintTextAppearance.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/secondary_text_dark</item>
+    </style>
+ 
+    <style name="Animation" />
+    <style name="Animation.OnScreenHint">
+        <item name="android:windowEnterAnimation">@anim/on_screen_hint_enter</item>
+        <item name="android:windowExitAnimation">@anim/on_screen_hint_exit</item>
+    </style>
+    <!-- prize-Add sound recording list interface -liufan-2015-4-22-start-->
+    <style name="Dialog" parent="android:style/Theme.Dialog"> 
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item> 
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- prize-Add sound recording list interface -liufan-2015-4-22-end-->
+    <!-- prize fanjunchen 2015-06-03 start -->
+    <style name="select_item_txt">
+        <item name="android:textColor">@color/color_btn_txt</item>
+        <item name="android:textSize">@dimen/select_font_size</item>
+    </style>
+    
+    <style name="pop_item_style">
+        <item name="android:textColor">@color/color_txt_hint</item>
+        <item name="android:textSize">@dimen/pop_item_font_size</item>
+        <item name="android:layout_width">@dimen/pop_item_width</item>
+        <item name="android:layout_height">@dimen/pop_item_height</item>
+        <item name="android:paddingStart">@dimen/pop_item_padding_left</item>
+    </style>
+    
+    <style name="title_style">
+        <item name="android:textColor">@color/gray_white</item>
+        <item name="android:textSize">@dimen/title_font_size</item>
+        <item name="android:layout_height">@dimen/action_bar_height</item>
+    </style>
+    
+    <style name="title_img_style" parent="@android:attr/buttonBarButtonStyle">
+        <item name="android:layout_height">@dimen/action_bar_height</item>
+        <item name="android:paddingStart">@dimen/title_padding_left</item>
+        <item name="android:paddingEnd">@dimen/title_padding_left</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    <style name="title_hint_style">
+        <item name="android:layout_marginTop">@dimen/title_hint_margin_top</item>
+        <item name="android:paddingStart">@dimen/title_hint_padding</item>
+        <item name="android:textColor">@color/gray_white</item>
+        <item name="android:textSize">@dimen/title_hint_font_size</item>
+    </style>
+    
+    <style name="play_time_style">
+        <item name="android:textColor">@color/gray_white</item>
+        <item name="android:textSize">@dimen/play_time_font_size</item>
+    </style>
+    
+    <style name="play_file_style" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/play_file_name</item>
+        <item name="android:textSize">@dimen/play_file_font_size</item>
+    </style>
+    
+    <style name="bottom_btn_style">
+        <item name="android:textColor">@color/bottom_txt_btn</item>
+        <item name="android:textSize">@dimen/bottom_txt_size</item>
+        <item name="android:layout_height">@dimen/bottom_txt_height</item>
+    </style>
+    
+    <style name="dialog_title_style">
+        <item name="android:textColor">@color/color_txt_hint</item>
+        <item name="android:textSize">@dimen/title_txt_size</item>
+        <!-- <item name="android:paddingStart">@dimen/title_paddingleft</item> -->
+        <item name="android:layout_height">@dimen/dialog_title_height</item>
+    </style>
+    
+    <style name="SeekStyle">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress</item>
+	<item name="android:minHeight">2dip</item>
+        <item name="android:maxHeight">2dip</item>
+        <item name="android:thumb">@drawable/ic_seekbar_thumb</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <!-- prize fanjunchen end -->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/prize_popup_margin_left_right"
+        android:layout_marginEnd="@dimen/prize_popup_margin_left_right"
+        android:layout_marginBottom="@dimen/prize_popup_margin_bottom"
+        android:background="@drawable/prize_card_layout_bg_single_normal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/content_main_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_single_content_height"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/prize_content_title_color"
+            android:textSize="@dimen/prize_contact_popupmenuItem_text_size"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/prize_popup_title_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_line_color_light" />
+
+        <com.android.contacts.prize.PrizeScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:id="@+id/prize_popup_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </com.android.contacts.prize.PrizeScrollView>
+        
+        <include
+            android:id="@+id/prize_popup_bottom_button_container" 
+            layout="@layout/prize_bottom_button_layout_2016_7_11" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_single_content_height"
+        android:layout_marginStart="@dimen/prize_popup_margin_left_right"
+        android:layout_marginEnd="@dimen/prize_popup_margin_left_right"
+        android:layout_marginBottom="@dimen/prize_popup_margin_bottom"
+        android:background="@drawable/prize_selector_popup_window_single_btn_bg"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/prize_bottom_cancel"
+        android:textColor="@color/prize_button_text_default_color"
+        android:textSize="@dimen/prize_single_content_size" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fra_comment_rg"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="@dimen/dp_16">
+
+
+    <RadioButton
+        android:id="@+id/fra_praise_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="@color/vp_center_tv_color"
+        android:textSize="@dimen/sp_10"
+        android:drawableTop="@drawable/fragment_btn_praise_selector"
+        android:layout_marginRight="@dimen/dp_35"
+        android:text="@string/fragment_img_praise" />
+
+    <RadioButton
+        android:id="@+id/fra_blame_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:gravity="center"
+        android:textSize="@dimen/sp_10"
+        android:textColor="@color/vp_center_tv_color"
+        android:drawableTop="@drawable/fragment_btn_blame_selector"
+        android:text="@string/fragment_img_blame"
+        />
+
+</RadioGroup>

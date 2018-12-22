@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="title_feed">下载</string>
+    <string name="title_feed1">安装</string>
+    <string name="title_feed2">搜索</string>
+    <string name="title_feed3">升级/更新</string>
+    <string name="title_feed4">新功能建议</string>
+    <string name="title_feed5">其他</string>
+    <string name="sub_title_feed1">"应用下不下来","修改下载\/安装位置","下载速度慢"</string>
+    <string name="sub_title_feed2">新应用安装不上,升级时安装不上,升级提示有问题</string>
+    <string name="sub_title_feed3">网游相关问题问题,应用\/游戏有问题\(用不了\/骗积分),找不到需要的应用游戏</string>
+    <string name="sub_title_feed4">操作的时候卡\,不流畅,应用市场崩溃了,长时间出现白屏</string>
+    <string name="sub_title_feed5">找不到想要的结果,想要的结果排在了后面,出现了相同的结果无法选择,搜索结果慢,其他搜索问题</string>
+</resources>

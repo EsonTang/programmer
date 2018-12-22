@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="twodeminsioncode">二维码名片</string>
+    <string name="default_music">来电铃声</string>
+    <string name="scan_QR">二维码扫描</string>
+    <string name="text_tip1">扫一扫“二维码名片”</string>
+    <string name="text_tip2">即可添加我的联系方式到联系人</string>
+    <string name="no_name">无姓名</string>
+    <string name="prize_worker">同事</string>
+    <string name="prize_family">家人</string>
+    <string name="prize_friends">朋友</string>
+    <string name="prize_schoolmate">同学</string>
+    <string name="prize_VIP">贵宾</string>
+    <string name="prize_bottom_cancel">取消</string>
+    <string name="prize_bottom_ok">确认</string>
+    <string name="prize_select_all_contacts">全选</string>
+    <string name="prize_cancel_all_contacts">取消全选</string>
+    <string name="prize_delete_contacts">选择联系人</string>
+    <string name="prize_delete_contact">删除联系人</string>
+    <string name="prize_recents_delete_confirm">确认删除通话记录？</string>
+    <string name="prize_recents_delete_prompt">提示</string>
+    <string name="prize_recents_delete_ok">确认</string>
+    <string name="prize_recents_delete_cancel">取消</string>
+    <string name="prize_recordcard_title">通话详情</string>
+    <string name="prize_quickcontact_title">联系人详情</string>
+    <string name="prize_quickcontact_recent_notice">通话记录</string>
+    <string name="prize_hours">小时</string>
+    <string name="prize_minutes">分</string>
+    <string name="prize_seconds">秒</string>
+    <string name="prize_incall">呼入</string>
+    <string name="prize_outcall">呼出</string>
+    <string name="prize_callnotice">响铃 未接通</string>
+    <string name="prize_editor_delete_contact">删除联系人</string>
+    <string name="contact_add_to_blacklist">添加到黑名单</string>
+    <string name="contact_delete_from_blacklist">从黑名单移除</string>
+    <string name="no_contacts_is_selected">请至少选择一个联系人</string>
+    <string name="please_wait_join">合并中，请稍候...</string>
+
+    <plurals name="prize_group_list_num_contacts_in_group" formatted="false">
+        <item quantity="other"><xliff:g id="COUNT_1">%1$d</xliff:g> 人</item>
+        <item quantity="one"><xliff:g id="COUNT_0">%1$d</xliff:g> 人</item>
+    </plurals>
+
+    <string name="prize_add_other_item">添加其他项目</string>
+    <string name="prize_ok_title">确定</string>
+    <string name="prize_cancel_title">取消</string>
+    <string name="prize_sim_invalid">Sim卡联系人读取中或Sim卡未插入!</string>
+    <string name="prize_sd_card">内部存储设备</string>
+    <string name="prize_no_other_account">无其他可用账户</string>
+    <string name="prize_manager_groups">我的群组</string>
+
+    <string name="prize_search_hint">搜索</string>
+
+    <string name="prize_set_my_info">设置我的名片资料</string>
+    <string name="prize_new_group">新建</string>
+    <string name="prize_new_group_dialog_hint">新建群组名称</string>
+    <string name="prize_new_group_dialog_title">新建群组</string>
+    <string name="prize_new_group_name_toast">群组名不能为空</string>
+    <string name="prize_new_group_name_toast_2">"创建群组失败"</string>
+    <string name="prize_repeat_group_name_toast">"已存在该群组"</string>
+    <string name="prize_group_edit">编辑</string>
+    <string name="prize_group_manager">群组管理</string>
+    <string name="prize_more_call_log">更多通话记录</string>
+    <string name="prize_more">更多</string>
+    <string name="prize_add_to_black_number">加入黑名单</string>
+    <string name="prize_send_two_dimens_code">发送二维码名片</string>
+    <string name="prize_show_in_Launcher">显示到桌面</string>
+    <string name="action_menu_dialpad_button">"拨号键盘"</string>
+    <string name="prize_dialer_text_string">拨号</string>
+    <string name="prize_contacts_text_string">联系人</string>
+    <string name="prize_contacts_editor_text_string">编辑</string>
+    <string name="prize_contacts_new_text_string">新建联系人</string>
+    <string name="prize_contacts_delete_text_string">删除</string>
+    <string name="prize_contacts_more_menu_text_string">更多</string>
+    <string name="prize_contacts_add_to_contacts_string">保存至已有</string>
+    <string name="prize_contacts_calllog_title">通话记录</string>
+    <string name="prize_contacts_title">联系人</string>
+    <string name="prize_group_manager_title">群组管理</string>
+    <string name="prize_rename_text">重命名</string>
+    <string name="prize_rename_group_dialog_title">重命名群组</string>
+    <string name="prize_rename_group_hint_text">重命名群组名称</string>
+    <string name="prize_unselect_all">反选</string>
+    <string name="prize_add_group">添加到群组</string>
+    <string name="prize_outside_sd_card">外部存储设备</string>
+
+    <string name="prize_clear_call_log">清除记录</string>
+    <string name="prize_clear_call_log_tips">是否刪除所有通话记录</string>
+
+    <string name="prize_contacts_manager">联系人管理</string>
+    <string name="prize_select_contacts_source">选择您要复制的联系人来源</string>
+    <string name="prize_copy_contacts_to">复制联系人到</string>
+    <string name="prize_phone_info_lable">个人信息</string>
+    <string name="prize_add_field_btn_invalid_tips">当前为SIM储存方式，最多只能存2个号码</string>
+    <string name="prize_add_photo_invalid_tips">当前为SIM储存方式，不能添加自定义头像</string>
+    <string name="prize_add_email_invalid_tips">当前为SIM储存方式，最多只能存1个邮箱</string>
+    <string name="prize_video_call">视频通话</string>
+
+
+    <string name="prize_finished_amount">已完成 : </string>
+    <string name="prize_not_saved_toast">未保存联系人</string>
+    <string name="prize_removing_message">正在删除联系人</string>
+    <string name="prize_copying_message">正在复制联系人</string>
+
+    <string name="prize_cancel_confirmation_dialog_message">要舍弃您所做的更改吗？</string>
+
+    <string name="prize_quickcontact_suggestion_link_button">关联</string>
+
+    <string name="prize_phone_type_name">手机</string>
+    <string name="prize_no_contacts">无联系人</string>
+    <string name="prize_contacts_email">邮箱</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScreenRecorder</string>
+    <string name="start">zahájit</string>
+    <string name="stop">přestat</string>
+    <string name="show_cordinate">dotykový displej</string>
+    <string name="hide_cordinate">úzkém kontaktu</string>
+    <string name="share">podíl</string>
+    <string name="screenrecord_recording_ticker">Obrazovka Video</string>
+    <string name="screenrecord_recording_title">Screen Recorder je</string>
+    <string name="screenrecord_recording_text">"Maximální doba trvání: 180 sekund."</string>
+    <string name="screenrecord_saved_ticker">Uložit Recording Screen</string>
+    <string name="screenrecord_saved_title">Uložen Screen Recorder</string>
+    <string name="screenrecord_saved_text">Dotykem zobrazit nahrávání obrazovky.</string>
+    <string name="screenrecord_duration_text">Doba trvání:</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.prize.music"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.prize.music.views.GalleryFlow
+            android:id="@+id/recommand_galleryflow"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:soundEffectsEnabled="false" >
+        </com.prize.music.views.GalleryFlow>
+
+        <com.prize.music.views.FlowIndicator
+            android:id="@+id/flowIndicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:point_normal_color="#33ffffff"
+            app:point_radius="3dip"
+            android:visibility="gone"
+            android:layout_marginTop="132dp"
+            app:point_seleted_color="#e6691e"
+            app:point_size="5dip"
+            app:space="10dip" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_xiami" >
+
+            <TextView
+                android:id="@+id/xiami_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:drawableLeft="@drawable/audio_play_xiami_ico"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="虾米音乐"
+                android:textColor="@color/text_color_ff5f00"
+                android:textSize="9sp" />
+       </RelativeLayout>
+      
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/margin_left_right"
+    android:paddingLeft="@dimen/margin_left_right">
+
+    <RelativeLayout
+        android:id="@+id/screen_lock_RL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_66dp" >
+
+        <TextView
+            android:id="@+id/screen_lock_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_for_screenlock"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color_323232"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screen_lock_TV"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_color_969696"
+            android:text="@string/use_for_screenlock_hint"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:background="@color/bg_gray_color"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/launcher_TV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50dp"
+        android:text="@string/use_for_launcher"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color_323232"
+        android:textSize="@dimen/text_size_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:background="@color/bg_gray_color"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/all_TV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50dp"
+        android:text="@string/use_all"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color_323232"
+        android:textSize="@dimen/text_size_medium" />
+
+
+</LinearLayout>

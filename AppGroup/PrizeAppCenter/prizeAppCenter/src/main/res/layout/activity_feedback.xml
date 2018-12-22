@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <!--activity_feedback_header-->
+    <ListView
+        android:background="@color/white"
+        android:id="@+id/fedbck_common_tips_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:divider="@null"
+        android:layout_above="@+id/feedback_footer_tv"
+        android:scrollbars="none">
+    </ListView>
+    <!--activity_feedback_footer-->
+
+    <TextView
+        android:id="@+id/feedback_footer_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_above="@+id/feedback_to_more_btn_rlyt"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="@string/feedback_more"
+        android:textColor="@color/text_color_9fa6af"
+        android:textSize="@dimen/text_size_min"/>
+
+    <RelativeLayout
+        android:id="@+id/feedback_to_more_btn_rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:background="#e4e4e4"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/feedback_to_more_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/cloud_next_selector"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/feedback_need_more"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/text_size_small"/>-->
+
+
+        <com.prize.appcenter.ui.widget.PrizeCommButton
+            android:id="@+id/feedback_to_more_btn"
+            android:layout_width="304dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:btn_radius="20dp"
+            app:btn_text_color="#ffffff"
+            app:btn_content="@string/feedback_need_more"
+            app:btn_text_size="@dimen/text_size_small" />
+    </RelativeLayout>
+</RelativeLayout>

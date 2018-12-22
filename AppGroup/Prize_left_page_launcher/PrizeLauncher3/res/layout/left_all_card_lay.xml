@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/left_act_title_lay"/>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_line_color"
+        android:layout_below="@id/title_lay"
+        android:id="@+id/line_divider"
+        />
+    
+    <android.support.v7.widget.RecyclerView  
+        android:id="@+id/recycle_list"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_divider"
+        android:listDivider="@color/divider_line_color"
+        android:layout_marginStart="@dimen/dp_18"
+        />
+    
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- 手势 -->
+	<string name="gy_accessibility_switch_to_vdetect">Переключиться на распознавание V</string>
+	<string name="gy_gesture_guide_capture">Распознавание V</string>
+	<!-- 美颜 -->
+	<string name="gy_accessibility_switch_to_faceart">Переключить на красоту</string>
+	<string name="gy_faceart_guide_capture">Красота в режиме реального времени</string>
+        <string name="gy_faceart_guide_capture_off">Красота в режиме реального времени закрыта</string>
+	<!-- 美肤级别 -->
+	<string name="gy_exposure_tips">Уровень красоты кожи</string>
+	<!-- 美白 -->
+	<string name="gy_whitening_tips">Отбеливание</string>
+	<!-- 磨皮 -->
+	<string name="gy_smooth_tips">Пилинг</string>
+
+        <string name="gy_accessibility_switch_to_self">Переключиться на автоспуск с обратным отсчетом</string>
+
+	<string name="pref_camera_gyself_title">Автоспуск с обратным отсчетом</string>
+	<string name="pref_camera_gyage_title">Распознавание возраста</string>
+	<!--<string name="pref_camera_gysmile_title">笑脸拍照</string>-->
+	<string name="pref_camera_gyage_year">Лет</string>
+	<string name="pref_camera_gyage_male">"Мужчина"</string>
+	<string name="pref_camera_gyage_female">"Женщина"</string>
+</resources>

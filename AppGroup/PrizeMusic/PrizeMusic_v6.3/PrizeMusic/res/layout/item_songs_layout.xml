@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_item_height"
+    android:layout_gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center" 
+    android:background="@color/white" 
+    >
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/select_Llyt"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        
+    <TextView
+        android:id="@+id/listview_item_line_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingRight="@dimen/listview_items_padding_right"
+        android:singleLine="true"
+        android:textColor="@color/gray_black"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/listview_item_line_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingRight="@dimen/listview_items_padding_right"
+        android:singleLine="true"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size_micro" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/select_Llyt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true" >
+
+        <ImageView
+            android:id="@+id/peak_two"
+            style="@style/PeakMeter"
+            android:layout_marginBottom="5dp"
+           android:layout_marginRight="5dp"
+       />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@drawable/icon_checkbox_edit_list_selector"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="invisible"
+            android:focusableInTouchMode="false" />
+    </LinearLayout>
+
+</RelativeLayout>

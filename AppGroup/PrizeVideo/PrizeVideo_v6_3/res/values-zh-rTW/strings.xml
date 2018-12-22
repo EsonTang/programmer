@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">視頻</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit">編輯</string>
+    <string name="delete">刪除</string>
+    <string name="back">返回</string>
+    <string name="lastplay">播放歷史</string>
+    <string name="no_play">無最近播放記錄</string>
+    <string name="net_videos">線上視頻</string>
+    <string name="local_videos">我的視頻</string>
+    <string name="iqiyi_videos">愛奇藝</string>
+    <string name="youku_videos">優酷視頻</string>
+    <string name="tencent_videos">騰訊視頻</string>
+
+</resources>

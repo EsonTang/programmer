@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_80dp" >
+
+        <com.prize.appcenter.ui.widget.CircleImageViewTwo
+            android:id="@+id/game_iv"
+           android:layout_height="47dp"
+           android:layout_width="47dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/alert_title">
+        </com.prize.appcenter.ui.widget.CircleImageViewTwo>
+
+        <TextView
+            android:id="@+id/game_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/game_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="我叫MT"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_below="@+id/real"
+        android:background="@color/bg_gray_color" />
+
+</RelativeLayout>

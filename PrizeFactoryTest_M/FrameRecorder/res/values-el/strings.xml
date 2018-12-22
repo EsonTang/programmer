@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">καταγραφής οθόνης</string>
+    <string name="start">Ξεκινήστε</string>
+    <string name="stop">Stop</string>
+    <string name="show_cordinate">Οθόνη αφής</string>
+    <string name="hide_cordinate">Κλείστε Touch</string>
+    <string name="share">μερίδιο</string>
+    <string name="screenrecord_recording_ticker">Η οθόνη βίντεο</string>
+    <string name="screenrecord_recording_title">Καταγραφής οθόνης είναι</string>
+    <string name="screenrecord_recording_text">"Μέγιστη διάρκεια: 180 δευτερόλεπτα."</string>
+    <string name="screenrecord_saved_ticker">Αποθήκευση καταγραφής οθόνης</string>
+    <string name="screenrecord_saved_title">Recorder έσωσε οθόνης</string>
+    <string name="screenrecord_saved_text">Πατήστε για να δείτε την καταγραφή της οθόνης σας.</string>
+    <string name="screenrecord_duration_text">διάρκεια:</string>
+</resources>

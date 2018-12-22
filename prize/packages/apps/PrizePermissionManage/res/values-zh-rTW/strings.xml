@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">權限管理</string>
+    <string name="hello_world">Hello World</string>
+    <string name="action_settings">action_settings</string>
+    <string name="prize_permission_app_sort">按應用分類</string>
+    <string name="prize_permission_sort">按權限分類</string>
+    <string name="prize_permission_count_name" msgid="4787239772223699263">"<xliff:g id="COUNT_0">%1$d</xliff:g> 項權限"</string>
+    <string name="prize_app_permission_count_name" msgid="4787239772223699263">"<xliff:g id="COUNT_0">%1$d</xliff:g> 個應用"</string>
+    <string name="prize_mode_grant">允許</string>
+    <string name="prize_mode_ask">詢問</string>
+    <string name="prize_mode_block">禁止</string>
+    <string name="prize_forbid_modify_system_permission">禁止修改系統權限</string>
+
+</resources>

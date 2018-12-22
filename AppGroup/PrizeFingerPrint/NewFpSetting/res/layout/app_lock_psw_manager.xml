@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/first_function_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/margr_bg_color"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/density_4dp"
+            android:paddingLeft="@dimen/density_20dp"
+            android:paddingTop="@dimen/density_4dp"
+            android:text="@string/fp_and_app_manage"
+            android:textColor="@color/margr_bg_text_color"
+            android:textSize="@dimen/normal_front" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/density_05dp"
+            android:background="@drawable/list_view_divier" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/list_view_divier"
+        android:listSelector="@drawable/list_view_bg_color_selector" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_05dp"
+        android:background="@drawable/list_view_divier" />
+</LinearLayout>

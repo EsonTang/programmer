@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- created by liuweiquan-20160708 -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/notification_statusbar_settings_title" >
+        
+     <Preference
+	     android:key="notification_centre_settings"                
+	     android:title="@string/notification_centre_settings" >
+     	<intent android:action="com.android.settings.NOTIFICATION_CENTRE" />
+     </Preference>
+     
+     <PreferenceCategory 
+       	  android:key="statusbar_settings_category"
+          android:title="@string/statusbar_settings_category">
+     </PreferenceCategory>
+     <PreferenceCategory 
+         android:key="other_category"
+         android:title="@string/other_category_title">
+	     	<SwitchPreference
+		        android:key="lockscreen_drop_down_statusbar"
+		        android:title="@string/lockscreen_drop_down_statusbar"/>
+	     	<SwitchPreference
+		        android:key="lockscreen_bright_screen"
+		        android:title="@string/lockscreen_bright_screen"/>
+     </PreferenceCategory>
+</PreferenceScreen> 

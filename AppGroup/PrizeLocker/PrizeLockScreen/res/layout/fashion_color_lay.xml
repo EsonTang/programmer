@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.lockscreen.widget.ColorBubbleView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+
+     <TextView
+         android:id="@+id/text_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="80dp"
+         android:layout_marginTop="28dp"
+         style="@style/time_sty" />
+
+     <TextView
+         android:id="@+id/text_date"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@id/text_time"
+         style="@style/date_sty" />
+	
+     <com.prize.lockscreen.widget.SlideCutListView
+          android:id="@+id/notice_list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/text_date"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="60dp"
+          android:divider="@null"
+          android:listSelector="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_scroll_unlock"
+        android:textColor="#ffffffff"
+        android:layout_alignParentBottom="true"
+    	android:layout_centerHorizontal="true"
+    	android:paddingBottom="10dp"
+        android:textSize="16sp" />
+
+</com.prize.lockscreen.widget.ColorBubbleView>

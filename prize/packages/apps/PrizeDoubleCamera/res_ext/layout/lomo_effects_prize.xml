@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/mode_scrollview_marginBottom"
+    android:layout_marginTop="@dimen/effect_layout_margintop"
+    >
+
+        <com.prize.ui.CenterHorizontalScroll
+        android:id="@+id/chs_effect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/center_item_height"
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.prize.ui.CenterHorizontalScroll>
+    
+    <TextView 
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_small"
+        android:background="@drawable/ic_close_mode"
+        android:layout_marginTop="@dimen/close_top_margin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/close_filter"
+        android:gravity="center"
+        android:paddingTop="@dimen/close_top_padding"
+        android:paddingBottom="@dimen/close_top_padding"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

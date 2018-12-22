@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="can_not_switch_account_during_call">Vaihtaminen ensisijaiseen SIM-korttiin puheluita varten ei onnistu puhelun aikana.</string>
+    <string name="can_not_switch_account_temporarily">Vaihtaminen ensisijaiseen SIM-korttiin puheluita varten ei väliaikaisesti onnistu.</string>
+    <string name="call_account_switch_tips"><xliff:g id="name1" example="CT1">^1</xliff:g> ei toimi väliaikaisesti, ja jos jokin oletuspuhelu, -SMS, -Data kohteessa <xliff:g id="name2" example="CT1">^2</xliff:g> muutetaan muotoon <xliff:g id="name3" example="CT2">^3</xliff:g> sen mukaisesti.</string>
+</resources>

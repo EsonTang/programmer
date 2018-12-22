@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <skip/>
+    <string name="application_name">Launcher3</string>
+    <string name="home">Басты экран</string>
+    <string name="uid_name">Android негізгі қолданбалары</string>
+    <string name="folder_name"/>
+    <string name="wallpaper_instructions">түсқағаз орнату</string>
+    <plurals name="number_of_items_selected">
+        <item quantity="zero">%1$d таңдалды </item>
+        <item quantity="one">%1$d таңдалды </item>
+        <item quantity="other">%1$d таңдалды </item>
+    </plurals>
+    <string name="wallpaper_accessibility_name">%1$d/%2$d тұсқағаз</string>
+    <string name="announce_selection"><xliff:g id="label" example="3/10тұсқағаз">%1$s</xliff:g> таңдалды</string>
+    <string name="wallpaper_delete">Жою</string>
+    <string name="pick_image">Кескінді таңдау</string>
+    <string name="pick_wallpaper">Тұсқағаздар</string>
+    <string name="crop_wallpaper">Тұсқағазды қиып алу</string>
+    <string name="activity_not_found">Қолданба орнатылмады.</string>
+    <string name="widgets_tab_label">Виджеттер</string>
+    <string name="widget_adder">Виджеттер</string>
+    <string name="toggle_weight_watcher">Жадты көрсету</string>
+    <string name="long_press_widget_to_add">Виджетті таңдау үшін түртіп, ұстап тұрыңыз.</string>
+    <string name="market">Дүкен</string>
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+    <string name="external_drop_widget_error">Басты экранға бұл элементті қою мүмкін болмады.</string>
+    <string name="external_drop_widget_pick_title">Виджетті таңдау</string>
+    <skip/>
+    <string name="rename_folder_label">Қалта аты</string>
+    <string name="rename_folder_title">Қалта атын өзгерту</string>
+    <string name="rename_action">OK</string>
+    <string name="cancel_action">Болдырмау</string>
+    <skip/>
+    <string name="menu_item_add_item">Басты экранға қосу</string>
+    <string name="group_applications">Қолданбалар</string>
+    <string name="group_shortcuts">Ярлыктар</string>
+    <string name="group_widgets">Виджеттер</string>
+    <string name="completely_out_of_space">Басты экрандарда бос бөлме жоқ.</string>
+    <string name="out_of_space">Бұл басты экрандарда бос бөлме жоқ.</string>
+    <string name="hotseat_out_of_space">Слотта бос орын жоқ.</string>
+    <string name="invalid_hotseat_item">Слот үшін бұл виджет өте үлкен.</string>
+    <string name="shortcut_installed">\"<xliff:g id="name" example="Browser">%s</xliff:g>\" ярлыгы жасалды.</string>
+    <string name="shortcut_uninstalled">\"<xliff:g id="name" example="Browser">%s</xliff:g>\" ярлыгы жойылды.</string>
+    <string name="shortcut_duplicate">\"<xliff:g id="name" example="Browser">%s</xliff:g>\" ярлыгы бар.</string>
+    <string name="title_select_shortcut">Ярлыкты таңдау</string>
+    <string name="title_select_application">Қолданба таңдау</string>
+    <string name="all_apps_button_label">Қолданбалар</string>
+    <string name="all_apps_home_button_label">Басты экран</string>
+    <string name="delete_zone_label_workspace">Жою</string>
+    <string name="delete_zone_label_all_apps">Жою</string>
+    <string name="delete_target_label">Жою</string>
+    <string name="delete_target_uninstall_label">Жою</string>
+    <string name="info_target_label">қолданба туралы ақпарат</string>
+    <string name="accessibility_search_button">Іздеу</string>
+    <string name="accessibility_voice_search_button">Дыбыстық іздеу</string>
+    <string name="accessibility_all_apps_button">Қолданбалар</string>
+    <string name="accessibility_delete_button">Жою</string>
+    <string name="delete_zone_label_all_apps_system_app">Жаңартуды жою</string>
+    <skip/>
+    <string name="cab_menu_delete_app">Бағдарламаны жою</string>
+    <string name="cab_menu_app_info">Қолданба туралы мәлімет</string>
+    <string name="cab_app_selection_text">1 қолданба таңдалды</string>
+    <string name="cab_widget_selection_text">1 виджет таңдалды</string>
+    <string name="cab_folder_selection_text">1 қалта таңдалды</string>
+    <string name="cab_shortcut_selection_text">1 ярлык таңдалды</string>
+    <skip/>
+    <string name="permlab_install_shortcut">ярлыктарды орнату</string>
+    <string name="permdesc_install_shortcut">Пайдаланушының араласуынсыз ярлыктарды қосуға мүмкіндік береді.</string>
+    <string name="permlab_uninstall_shortcut">ярлыктарды жою</string>
+    <string name="permdesc_uninstall_shortcut">Пайдаланушының араласуынсыз ярлыктарды жоюға мүмкіндік береді.</string>
+    <string name="permlab_read_settings">Басты бет параметрлері мен ярлыктарын оқу</string>
+    <string name="permdesc_read_settings">Қолданба басты беттің параметрлерін және ярлыктарын оқи алады.</string>
+    <string name="permlab_write_settings">Басты бет параметрлері мен ярлыктарын жазу</string>
+    <string name="permdesc_write_settings">Қолданба басты беттегі параметрлер мен ярлыктарды өзгерте алады.</string>
+    <skip/>    
+    <string name="gadget_error_text">Виджетті жүктеу ақаулығы</string>
+    <string name="uninstall_system_app_text">Бұл жүйе қолданбасы және оны жою мүмкін емес.</string>
+    <string name="dream_name">Фейерверк</string>
+    <string name="folder_hint_text">Аты жоқ қалта</string>
+    <skip/>
+    <string name="workspace_description_format">Басты экран %1$d</string>
+    <string name="default_scroll_format">%d бет</string>
+    <string name="workspace_scroll_format">Басты бет %1$d / %2$d</string>
+    <string name="apps_customize_apps_scroll_format">Қолданба беті %1$d / %2$d</string>
+    <string name="apps_customize_widgets_scroll_format">Виджеттер беті %1$d / %2$d</string>
+    <string name="first_run_cling_title">Қош келдіңіз!</string>
+    <string name="first_run_cling_description">Өз үйіңіздегідей сезініңіз.</string>
+    <string name="first_run_cling_custom_content_hint"/>
+    <string name="first_run_cling_search_bar_hint"/>
+    <string name="first_run_cling_create_screens_hint">Бағдарламалар және қалталар үшін қосымша экрандар жасау</string>
+    <string name="workspace_cling_title">Өзіндік кеңістікті ұйымдастыру</string>
+    <string name="workspace_cling_move_item">Тұсқағазды, виджеттерді және параметрлерді басқару үшін фонды түрту және ұстап тұру</string>
+    <string name="all_apps_cling_title">Бірнеше қолданба таңдаңыз</string>
+    <string name="all_apps_cling_add_item">Қолданбаны басты бетке орналастыру үшін, түртіп, ұстап тұрыңыз.</string>
+    <string name="folder_cling_title">Қалта осы жерде</string>
+    <string name="folder_cling_create_folder">Осыған ұқсас қалта жасау үшін, қолданбаны түртіңіз және ұстап тұрыңыз, содан кейін басқасы арқылы жылжытыңыз.</string>
+    <string name="cling_dismiss">OK</string>
+    <string name="dummy_custom_cling_error_message">Error: custom workspace layout passed in but custom cling was not overwritten</string>
+    <add-resource type="string" name="default_folder_name"/>
+    <string name="folder_opened">Қалта ашылды, <xliff:g id="width" example="5">%1$d</xliff:g> by <xliff:g id="height" example="3">%2$d</xliff:g></string>
+    <string name="folder_tap_to_close">Қалтаны жабу үшін, түртіңіз.</string>
+    <string name="folder_tap_to_rename">Өзгертілген атты сақтау үшін, түртіңіз</string>
+    <string name="folder_closed">"Жабық"</string>
+    <string name="folder_renamed">Қалтаның аты <xliff:g id="name" example="Games">%1$s</xliff:g> болып өзгертілді</string>
+    <string name="folder_name_format">Қалта: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+    <string name="custom_workspace_cling_title_1"/>
+    <string name="custom_workspace_cling_description_1"/>
+    <string name="custom_workspace_cling_title_2"/>
+    <string name="custom_workspace_cling_description_2"/>
+    <string name="debug_memory_activity">* HPROF</string>
+    <string name="widget_button_text">Виджеттер</string>
+    <string name="wallpaper_button_text">Тұсқағаздар</string>
+    <string name="settings_button_text">Параметрлер</string>
+</resources>

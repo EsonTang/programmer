@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_list_item_color"
+    android:gravity="center|left"
+    android:minHeight="@dimen/fragment_list_item_height"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_list_item_height"
+        android:background="@color/bg_list_item_color"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fra_list_iv"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginEnd="@dimen/dp_13"
+            android:layout_marginStart="@dimen/dp_20"
+            android:scaleType="center"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:fadeDuration="300"
+            fresco:placeholderImage="@color/base_color"
+            fresco:placeholderImageScaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/fra_list_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:text="红包助手"
+            android:textColor="@color/vp_center_title_tv_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/partingline"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:background="@color/partingline_color"
+        />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.android.providers.settings"
+        coreApp="true"
+        android:sharedUserId="android.uid.system">
+
+    <application android:allowClearUserData="false"
+                 android:label="@string/app_label"
+                 android:process="system"
+                 android:backupAgent="SettingsBackupAgent"
+                 android:killAfterRestore="false"
+                 android:icon="@mipmap/ic_launcher_settings"
+                 android:defaultToDeviceProtectedStorage="true"
+                 android:directBootAware="true">
+
+        <provider android:name="SettingsProvider"
+                  android:authorities="settings"
+                  android:multiprocess="false"
+                  android:exported="true"
+                  android:singleUser="true"
+                  android:initOrder="100" />
+		  	<provider
+            android:name="PrizeSleepGestureProvider"
+            android:authorities="com.prize.sleepgesture"
+			android:multiprocess="false"
+            android:exported="true" />
+
+    <!-- PRIZE-add by lihuangyuan for fingerapplock-start-->
+    <provider
+        android:authorities="com.android.settings.provider.fpdata.share"
+        android:exported="true"
+        android:name="com.android.providers.settings.fingerprint.PrizeFpShareProvider" />
+    <!-- PRIZE-add by lihuangyuan for fingerapplock-end-->
+	<!-- yang-add-setting_magazine_lockscreen-2017_10_10-start -->
+    	<provider 
+    	    android:authorities="com.android.settings.wallpaper.PrizeMagazineNetworkProvider"
+    	    android:name="com.android.providers.settings.magazinenetworkstate.PrizeMagazineNetworkProvider"
+    	    android:exported="true">
+    	</provider>
+    <!-- yang-add-setting_magazine_lockscreen-2017_10_10-end -->
+    </application>
+</manifest>

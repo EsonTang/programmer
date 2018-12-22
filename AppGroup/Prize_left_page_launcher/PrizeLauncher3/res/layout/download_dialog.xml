@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:text="@string/toast_tip_download_only_wifi"
+        android:gravity="center_horizontal"
+        android:id="@+id/title"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/black_87"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/col_e8e8e8"/>
+
+    <LinearLayout
+        android:id="@+id/btn_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel_uninstall_ex"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/btn_wallpaper_cancel_selector"
+            android:gravity="center"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/uninstall_ex"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textSize="15sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/left_add_card_bg_selector"
+            android:text="@android:string/ok" />
+    </LinearLayout>
+
+</LinearLayout>

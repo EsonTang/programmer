@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_splash_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   
+    <ImageView
+        android:id="@+id/ad_splash_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/welcome_logo" />
+
+       <TextView
+        android:id="@+id/ad_splash_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:gravity="center"   
+        android:text="广告"    
+        android:padding="3dp"
+        android:background="#59cccccc"
+        android:textColor="#000000"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/ad_splash_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_margin="10dp"
+        android:background="@drawable/ad_splash_clock_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#cccccc"       
+        android:visibility="gone" />
+    
+      <TextView
+        android:id="@+id/ad_splash_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:gravity="center"   
+        android:text="prize"    
+        android:textSize="15dp"
+        android:padding="3dp"
+        android:background="#59cccccc"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+</FrameLayout>

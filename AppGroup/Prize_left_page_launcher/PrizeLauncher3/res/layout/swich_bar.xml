@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.view.PrizeSwitchView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/swich_bar"
+    >
+    
+    <TableRow android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	style="@style/left_card_title_style"
+    	>
+	    <TextView android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:drawableStart="@null"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="30dp"
+	        android:id="@+id/txt_title"
+	        android:text="@string/like"
+	        android:singleLine="true"
+	        android:gravity="center_vertical"
+	        style="@style/card_name_style"
+	        />
+		
+	    <Switch android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:contentDescription="@null"
+	        android:id="@+id/swich_id"
+	        />
+    </TableRow>
+</com.android.launcher3.view.PrizeSwitchView>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_FRly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        android:id="@+id/head_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/headImg_id"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/headImg_conver"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/Img_conver"
+            android:layout_width="match_parent"
+            android:layout_height="310.5dp"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <com.prize.appcenter.ui.widget.NotifyingScrollView
+        android:id="@+id/parentScrollView_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/tab_height_40dp"
+        android:fitsSystemWindows="true"
+        android:focusable="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/content_Llyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/headLayout_two"
+                layout="@layout/fragment_parent_oldhead" />
+
+            <ViewStub
+                android:id="@+id/mViewstub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/fragment_parent_newstyle_head"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/container_wait"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@+id/reload_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@+id/fragment_detail_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.prize.appcenter.ui.widget.NotifyingScrollView>
+
+    <RelativeLayout
+        android:id="@+id/action_bar_no_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingTop="19dp">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height_40dp"
+            android:clickable="true">
+
+            <ImageButton
+                android:id="@+id/action_bar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/action_bar_back_selector" />
+
+            <TextView
+                android:id="@+id/app_title_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/action_bar_search"
+                android:layout_toRightOf="@id/action_bar_back"
+                android:singleLine="true"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/action_bar_menu_right"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true" />
+
+            <ImageButton
+                android:id="@+id/action_bar_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/action_goToComment"
+                android:background="@drawable/action_bar_search_selector" />
+
+            <ImageButton
+                android:id="@+id/action_goToComment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:paddingRight="8dp"
+                android:src="@drawable/btn_comment_sl" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

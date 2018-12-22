@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+
+    <item android:drawable="@drawable/terms_rbtn_0" android:state_pressed="true"/>
+    <!-- <item android:state_enabled="false" android:drawable="@drawable/terms_rbtn_0"/> -->
+    <item android:drawable="@drawable/terms_rbtn"/>
+
+</selector>

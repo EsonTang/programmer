@@ -1,0 +1,5 @@
+java -jar signapk.jar platform.x509.pem platform.pk8
+
+java -jar signapk.jar platform.x509.pem platform.pk8 Cloud.apk  PrizeCloud.apk
+java -jar signapk.jar platform.x509.pem platform.pk8 MUSIC.apk  PrizeMusic.apk
+java -jar signapk.jar platform.x509.pem platform.pk8 AppCenter.apk  PrizeAppCenter.apk

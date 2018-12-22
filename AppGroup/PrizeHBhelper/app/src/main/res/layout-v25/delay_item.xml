@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:text="@string/delay"
+        android:textColor="#323232"
+        android:textSize="@dimen/header_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/devider_color" />
+
+    <RelativeLayout
+        android:id="@+id/delay_null"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/side_margin"
+            android:text="@string/delay_no"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/textsize_15" />
+
+        <ImageView
+            android:id="@+id/no_delay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/side_margin"
+            android:background="@drawable/delay_select_v8"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginRight="@dimen/side_margin"
+        android:background="@color/devider_color" />
+
+    <RelativeLayout
+        android:id="@+id/delay_0.5s"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/side_margin"
+            android:text="@string/delay_half"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/textsize_15" />
+
+        <ImageView
+            android:id="@+id/half_second_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/side_margin"
+            android:background="@drawable/delay_select_v8"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginRight="@dimen/side_margin"
+        android:background="@color/devider_color" />
+
+    <RelativeLayout
+        android:id="@+id/delay_1s"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/side_margin"
+            android:text="@string/delay_one"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/textsize_15" />
+
+        <ImageView
+            android:id="@+id/one_second_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/side_margin"
+            android:background="@drawable/delay_select_v8"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginRight="@dimen/side_margin"
+        android:background="@color/devider_color" />
+
+    <RelativeLayout
+        android:id="@+id/delay_random"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/side_margin"
+            android:text="@string/delay_random"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/textsize_15" />
+
+        <ImageView
+            android:id="@+id/random_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/side_margin"
+            android:background="@drawable/delay_select_v8"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

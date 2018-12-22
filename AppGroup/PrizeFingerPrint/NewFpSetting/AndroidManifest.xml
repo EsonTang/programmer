@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goodix.fpsetting"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="GF_1.1.07" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+	<uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+	<uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FINGERPRINT_ENROLL" />
+    <uses-permission android:name="android.permission.FINGERPRINT_VERIFY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CONTROL_KEYGUARD" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACkAGES" />
+    <uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
+    
+    <!-- AppLock Permission Start -->
+    <uses-permission android:name="android.permission.SET_ACTIVITY_WATCHER" />
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_DETAILED_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <!-- AppLock Permission End -->
+    
+    <application
+        android:name="com.goodix.application.FpApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.goodix.fpsetting.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+             	<!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EntryManageVerificActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".RelatedManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style">
+        </activity>
+        <activity
+            android:name=".AppLockPswManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style">
+        </activity>
+        <activity
+            android:name=".AppLockPswSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style">
+        </activity>
+        <activity
+            android:name=".PINCodeVerificActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style">
+        </activity>
+        <activity
+            android:name=".ComplexCodeVerificActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
+            android:theme="@style/Activity_style">
+        </activity>
+        
+        <activity
+            android:name="com.goodix.fpsetting.AppLockManagerActivity"
+            android:label="@string/app_lock"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style" >
+            <intent-filter>
+                <action android:name="com.goodix.fp.action.VIEW" />
+                <category android:name="com.goodix.fp.category.appsmanager" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.goodix.fpsetting.LockVerificationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style" >
+            <intent-filter>
+                <action android:name="android.intent.action.APP_LOCK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.goodix.fpsetting.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.goodix.fpsetting.FingerFactoryTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />               
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.goodix.fpsetting.TouchIDActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_style" >
+            <intent-filter>
+                <action android:name="com.goodix.fp.setting.Settings.ACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.goodix.fpsetting.EditFpActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.goodix.service.FpDBContentProvider"
+            android:authorities="com.goodix.service.fpdbcontentprovider"
+            android:exported="true" />
+        <service
+            android:name="com.goodix.service.FingerprintHandleService"
+            android:enabled="true"
+            android:permission="com.fingerprint.FP_HANDLE_PERMISSION" >
+        </service>
+        <service
+            android:name="com.goodix.service.FingerprintManagerService"
+            android:enabled="true"
+            android:permission="com.fingerprint.FP_MANAGER_PERMISSION" >
+            <intent-filter>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.goodix.service.FpBackUpService"
+            android:exported="false" >
+            <intent-filter>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.goodix.service.ServiceStartReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.Service_Start_Service" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.goodix.service.LockScreenService"
+            android:enabled="true"
+            android:permission="com.fingerprint.FP_LOCKSCREEN_PERMISSION" >
+        </service>
+
+    </application>
+
+</manifest>

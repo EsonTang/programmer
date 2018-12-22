@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-04-14-start -->
+    <string name="global_super_saver">超級省電</string>
+    <string name="global_super_saver_quit">退出超級省電</string>
+    <string name="global_into_super_saver">是否開啟超級省電模式？</string>
+    <string name="global_quit_super_saver">是否退出超級省電模式？</string>
+    <string name="not_available_power_extend_mode_hint">超級省電模式下不可用。</string>
+    <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-04-14-end -->
+    <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-05-08-start -->
+    <string name="global_action_super_saver_mode_on_status">已開啟超級省電</string>
+    <string name="global_action_super_saver_mode_off_status">已關閉超級省電</string>
+    <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-05-08-end -->
+	<!-- PRIZE- reboot- xiaxuefeng-2015-3-24 -start -->
+    <string name="global_action_reboot">重新啟動</string>
+    <string name="global_action_title">手機選項</string>
+    <!-- PRIZE- reboot- xiaxuefeng-2015-3-24 -end -->
+    
+    <!-- app multi instances feature. prize-linkh-20151120 -->
+	<string name="clone_app_str">分身</string>
+    <string name="clone_app_variable_str">分身 <xliff:g>%1$d</xliff:g></string>        
+
+    <!--PRIZE-insert sim, reset os-wangxianzhen-2016-07-26-start-->
+    <string name="reboot_alert">為保證SIM卡功能正常，手機將在%s秒鐘后重新啟動。</string>
+    <string name="reset_alter">系統檢測到新SIM卡插入，為了防止隱私洩露，請重置手機。</string>
+    <string name="reset_ok">確定</string>
+    <string name="reset_cancel">取消</string>
+    <string name="siminsert">已添加SIM卡</string>
+    <string name="reboot">立即重啟</string>
+    <!--PRIZE-insert sim, reset os-wangxianzhen-2016-07-26-end-->
+	
+	<!--prize liup 20161118 change icon&label start-->
+	<string name="prize_baidumap">地圖</string>
+	<string name="prize_reader">閱讀</string>
+	<string name="prize_search">搜索</string>
+	<string name="prize_news">新聞</string>
+	<string name="prize_yidian">快報</string>
+	<string name="prize_sogou_browser">搜狗瀏覽器</string>
+	<string name="prize_tencent_vedio">視頻</string>
+	<!--prize liup 20161118 change icon&label end-->
+    <!--prize-OS8.0_Shutdown-add-yangming-2017_8_12-start-->
+	<string name="shutdown">關機</string>
+    <string name="restart">重啓</string>
+	<string name="shutdown_reminder">再次點擊關閉手機</string>
+    <string name="restart_reminder">再次點擊重啓手機</string>
+    <!--prize-OS8.0_Shutdown-add-yangming-2017_8_12-start-->
+    <!--PRIZE-Add-SMS_Reminder-wangzhong-2017_3_27-start-->
+    <string name="prize_sms_control_message">"&lt;b&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/b&gt;正在發送短信。是否允許該應用繼續發送短信？"</string>
+    <!--PRIZE-Add-SMS_Reminder-wangzhong-2017_3_27-end-->
+	<!--prize-xuchunming-20180620-bugid:62789-start-->
+	<string name="clone_app_wenxin_camera_waringinfo">微信分屏模式下不支持相機相關操作</string>
+	<!--prize-xuchunming-20180620-bugid:62789-end-->
+</resources>

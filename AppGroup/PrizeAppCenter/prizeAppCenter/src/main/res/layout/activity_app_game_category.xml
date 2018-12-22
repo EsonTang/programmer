@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/app_game_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="@dimen/verticalSpacing5dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:paddingBottom="@dimen/padding10dp"
+        android:paddingLeft="@dimen/padding14dp"
+        android:paddingRight="@dimen/padding14dp"
+        android:paddingTop="@dimen/padding10dp"
+        android:verticalSpacing="@dimen/verticalSpacing5dp" >
+    </GridView>
+
+    <View
+        android:id="@+id/app_game_viewline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:background="@color/bg_head_gray_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/reload_layout" />
+
+        <include layout="@layout/waiting_view" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:fastScrollAlwaysVisible="false"
+            android:fastScrollEnabled="false"
+            android:focusable="true"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:scrollbars="none"
+            android:touchscreenBlocksFocus="true" >
+        </ListView>
+    </FrameLayout>
+
+</LinearLayout>

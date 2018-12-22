@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_recents_item_dismissed">已删除%s</string>
+    <string name="accessibility_recents_item_will_be_dismissed">移除%s。</string>
+    <string name="prize_forbid_lock_toast_message">此应用不支持加锁</string>
+    <string name="prize_lock_too_much_toast_message">数量已经达上限，请先解锁</string>
+    <string name="prize_smart_enable_forbid_lock_message">“省电”下应用不支持加锁</string>
+    <string name="copy_verify_code">验证码</string>
+</resources>

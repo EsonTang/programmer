@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="?attr/prizeActiobBarStyle">
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/action_bar_container_prize"
+    android:background="@color/transparent"
+    >
+    <TextView
+        android:id="@+id/actionbar_title_prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:layout_marginEnd="25dp"
+        android:ellipsize="end"
+		android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <View
+	
+	
+    	android:id="@+id/actionbar_divider_prize"
+		android:background="#c8c8c8"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+		android:layout_alignParentBottom="true"
+		/>
+    </RelativeLayout>
+    <View
+		android:background="@drawable/prizeactionbar_lines"
+		android:layout_width="match_parent"
+		android:layout_height="3dp"/>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">"Неможливо об'єднати контакти з SIM."</string>
+    <string name="menu_done">"Готово"</string>
+    <string name="menu_deleteContact">"Видалити"</string>
+    <string name="menu_select_all">"Вибративсе"</string>
+    <string name="menu_select_none">"Скасувативсе"</string>
+    <string name="menu_new_contact_action_bar">"Нове"</string>
+    <string name="selected_item_count">вибрано <xliff:g id="count">%d</xliff:g></string>
+    <string name="multichoice_no_select_alert">Не вибрано пункту.</string>
+    <string name="aas_phone_type_none">"Нічого"</string>
+    <string name="aas_custom_title">Особисті ярлики</string>
+    <string name="aas_new_dialog_title">Додати новий ярлик</string>
+    <string name="ass_rename_dialog_title">Редагувати ярлик</string>
+    <string name="aas_delele_dialog_message">"Видалення ярлика(ів) вплине на додаткові пов'язані з ярликами номери. Бажаєте продовжити?"</string>
+    <string name="aas_name_invalid">Назва ярлика недійсна. Введіть іншу, будь ласка.</string>
+    <string name="aas_name_exist">Цей ярлик вже існує.</string>
+    <string name="aas_usim_full">Нема місця для нових ярликів.</string>
+    <string name="ass_edit_assert_message">"Модифікація ярлика(ів) вплине на додаткові пов'язані з ярликами номери. Бажаєте продовжити?"</string>
+    <string name="aas_new_fail">Не створено новий ярлик.</string>
+    <string name="aas_edit_fail">Не перейменовано <xliff:g id="aas">%s</xliff:g>.</string>
+    <string name="aas_delete_fail">Не видалено <xliff:g id="aas">%s</xliff:g>.</string>
+    <string name="aas_phone_primary">Первинний номер</string>
+    <string name="aas_phone_additional">Додатковий номер</string>
+</resources>

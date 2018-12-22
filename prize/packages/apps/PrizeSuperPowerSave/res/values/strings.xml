@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SuperSaver</string>
+    <string name="exit_super_power_mode">Quit super power saving mode</string>
+    <string name="time_example">17:30</string>
+    <string name="date_example">june 4</string>
+    <string name="week_example">Wensday</string>     
+    <string-array name="week_days">
+	    <item>SUN</item>   
+	    <item>MON</item>
+	    <item>TUE</item>
+	    <item>WED</item>
+	    <item>THU</item>
+	    <item>FRI</item>
+	    <item>SAT</item>
+    </string-array>
+    
+    <string name="contacts">Contacts</string>
+    <string name="messages">Messages</string>
+    <string name="phone">Phone</string>
+    <string name="clock">Clock</string>       
+    <string name="time_24_hour">MM月dd日    HH:mm</string>
+    <string name="time_12_hour">MM月dd日    hh:mm</string>
+
+   <!-- <string name="powersave_mode">省电模式</string> 
+    <string name="intelligent_powersave">智能省电</string> 
+    <string name="super_powersave">超级省电</string>
+    -->
+</resources>

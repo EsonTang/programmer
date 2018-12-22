@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dynamically hiding nav bar feature. prize-linkh-20161114 -->
+<com.android.systemui.statusbar.policy.KeyButtonView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:systemui="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hide"
+    android:layout_width="@dimen/navigation_side_padding"
+    android:layout_height="match_parent"
+    android:layout_weight="0"
+    android:src="@drawable/ic_hide_navbar_prize"
+    android:scaleType="center"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="-1dp"  
+/>
+

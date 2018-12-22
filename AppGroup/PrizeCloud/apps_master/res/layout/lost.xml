@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#21b5c0"
+        android:drawableLeft="@drawable/back_normal"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="onBackClk"
+        android:paddingLeft="20dp"
+        android:text="@string/retrieve_password"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textsize_large" />
+
+    <TextView
+        android:id="@+id/tip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/input_your_account"
+        android:textColor="@color/prize_text_default"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/regist_password_edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shurukuang"
+        android:gravity="center_vertical"
+        android:hint="@string/input_phone_or_email"
+        android:maxLength="18"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/prize_text_default"
+        android:textColorHint="#c8c8c8"
+        android:textSize="@dimen/textsize_medium" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/regist_next_id"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/next_selector"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/login_color"
+        android:textSize="@dimen/textsize_medium" >
+    </TextView>
+
+</LinearLayout>

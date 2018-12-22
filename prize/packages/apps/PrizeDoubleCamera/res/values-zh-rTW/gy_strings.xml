@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- 手勢 -->
+	<string name="gy_accessibility_switch_to_vdetect">V字識別</string>
+	<string name="gy_gesture_guide_capture">V字識別</string>
+	<!-- 美顏 -->
+	<string name="gy_accessibility_switch_to_faceart">美顏</string>
+	<string name="gy_faceart_guide_capture">即時美顏</string>
+        <string name="gy_faceart_guide_capture_off">即時美顏關閉</string>
+	<!-- 美膚級別 -->
+	<string name="gy_exposure_tips">美\n膚\n級\n別</string>
+	<!-- 美白 -->
+	<string name="gy_whitening_tips">美\n白</string>
+	<!-- 磨皮 -->
+	<string name="gy_smooth_tips">磨\n皮</string>
+
+    <string name="gy_accessibility_switch_to_self">後自拍</string>
+
+	<string name="pref_camera_gyself_title">後自拍</string>
+	<string name="pref_camera_gyage_title">年齡識別</string>
+	<string name="pref_camera_gysmile_title">笑臉拍照</string>
+	<string name="pref_camera_gyage_year">歲</string>
+	<string name="pref_camera_gyage_male">"男 "</string>
+	<string name="pref_camera_gyage_female">"女 "</string>
+	<string name="gy_accessibility_switch_to_bokeh">單反</string>
+	<string name="pref_camera_gybokeh_title">單反</string>
+</resources>

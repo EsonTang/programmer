@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/topic_detail_Iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_four_zero_dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/relativity"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/topic_detail_Iv"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/beauty_detail_Iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_icon" />
+
+        <TextView
+            android:id="@+id/description_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/beauty_detail_Iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="dddd"
+            android:textColor="@color/text_color_737373"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.prize.appcenter.ui.widget.ProgressButton
+            android:id="@+id/game_download_btn"
+            style="@style/game_item_progressButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false" />
+    </RelativeLayout>
+</RelativeLayout>

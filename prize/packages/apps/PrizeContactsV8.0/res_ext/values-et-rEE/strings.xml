@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">SIM kontakte ei saa ühendada.</string>
+    <string name="menu_done">"Valmis"</string>
+    <string name="menu_deleteContact">"Kustuta"</string>
+    <string name="menu_select_all">"Valikõik"</string>
+    <string name="menu_select_none">"Tühistakõikidevalik"</string>
+    <string name="menu_new_contact_action_bar">"Uus"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> valitud</string>
+    <string name="multichoice_no_select_alert">Ühtegi üksust pole valitud.</string>
+    <string name="aas_phone_type_none">"Puudub"</string>
+    <string name="aas_custom_title">Kohandatud sildid</string>
+    <string name="aas_new_dialog_title">Lisa uus silt</string>
+    <string name="ass_rename_dialog_title">Redigeeri silti</string>
+    <string name="aas_delele_dialog_message">Sildi (siltide) kustutamine mõjutab kõiki lisanumbreid, mis on sildiga (siltidega) seotud. Kas olete kindel?</string>
+    <string name="aas_name_invalid">Sildi nimi on vigane. Palun sisestage mõni muu.</string>
+    <string name="aas_name_exist">See silt on juba olemas.</string>
+    <string name="aas_usim_full">Uute siltide jaoks pole ruumi</string>
+    <string name="ass_edit_assert_message">Sildi muutmine mõjutab kõiki täiendavaid numbreid, mis on sildiga seotud. Kas olete kindel?</string>
+    <string name="aas_new_fail">Uue sildi loomine ebaõnnestus.</string>
+    <string name="aas_edit_fail">Üksuse <xliff:g id="aas">%s</xliff:g> ümbernimetamine ebaõnnestus.</string>
+    <string name="aas_delete_fail">Üksuse <xliff:g id="aas">%s</xliff:g> kustutamine ebaõnnestus.</string>
+    <string name="aas_phone_primary">Põhinumber</string>
+    <string name="aas_phone_additional">Lisanumber</string>
+</resources>

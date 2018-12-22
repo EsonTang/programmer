@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#232323</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#3478f6</color>
+    <color name="blue_click">#663478f6</color>
+    <color name="divide_color">#dedede</color>
+    <color name="gray">#c8c8c8</color>
+    <color name="select_tvcolor">#969696</color>
+    <color name="half_trans">#591e1e1e</color>
+    <color name="itempress_color">#ededed</color>
+    <color name="status_color">#39a0d7</color>
+    <color name="statusbar_inverse">#fafafa</color>
+    <color name="windows_bg">#e6e6e6</color>
+	<color name="abc_color_highlight_material">#fafafa</color>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="56dp"
+	    android:orientation="horizontal"
+	    >
+	    <ImageView android:layout_width="wrap_content"
+	    	android:layout_height="match_parent"
+	    	android:scaleType="centerInside"
+	    	android:id="@+id/img_del"
+	    	android:contentDescription="@null"
+	    	android:src="@drawable/left_ico_del_selector"
+	    	/>
+	    
+	    <TextView android:gravity="center_vertical"
+	        android:layout_width="0dp"
+	    	android:layout_height="match_parent"
+	    	android:layout_weight="1"
+	    	android:singleLine="true"
+	    	android:id="@+id/txt_card_title"
+	    	style="@style/manage_card_txt_style"
+	        />
+	    
+	    <ImageView android:layout_width="wrap_content"
+	    	android:layout_height="match_parent"
+	    	android:scaleType="centerInside"
+	    	android:id="@+id/img_drag"
+	    	android:contentDescription="@null"
+	    	android:src="@drawable/ic_menu_24dp"
+	    	/>
+	</LinearLayout>
+	<View android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:id="@+id/bottom_line"
+      android:background="@color/divider_line_color"
+      />
+</LinearLayout>

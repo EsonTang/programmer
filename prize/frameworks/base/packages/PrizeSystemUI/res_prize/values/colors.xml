@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="prize_ticker_content_color">#ff323232</color>
+    <color name="prize_ticker_title_color">#cc000000</color>
+    <color name="prize_ticker_action_color">#ff3478f6</color>
+    <color name="prize_dialer_number_color">#cc000000</color>
+    <color name="prize_dialer_location_color">#cc000000</color>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Супер скриншоты</string>
+    <string name="action_settings">устанавливать</string>
+    <string name="scroll_shot">Длинные скриншоты</string>
+    <string name="funny_shot">Забавные скриншоты</string>
+    <string name="screen_record">Запись экрана</string>
+    <string name="nextpage">на следующем экране</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">отменен</string>
+    <string name="rect_shot">Прямоугольные скриншоты</string>
+    <string name="lasso_shot">Лассо скриншоты</string>
+    <string name="daub_shot">граффити скриншоты</string>
+    <string name="redo">переделывать</string>
+    <string name="undo">отзыв</string>
+    <string name="exit">выход</string>
+    <string name="scrawl">граффити</string>
+    <string name="app_restrict_capture_screen">Так как предел приложения, интерфейс не может быть скриншоты</string>
+    <string name="drag_to_select_capture_area">В перетаскивания выбранный экран окно кадра</string>
+    <string name="not_support_screen_orientation_change">Процесс захвата экрана не поддерживает горизонтального и вертикального переключения экрана</string>
+    <string name="screenshot_saved">Захваченные скриншоты</string>
+    <string name="screenshot_saved_to_tf_card">Файлы, сохраненные в "память телефона / Super скриншотов" папку.</string>
+    <string name="screenshot_saved_to_sd_card">Файлы, сохраненные на "SD-карта / Super скриншоты" папку.</string>
+    <string name="lasso_guide">Нарисуйте скриншоты области начала Лассо скриншоты</string>
+    <string name="scrollcapture_is_running">Длинные ходовые скриншоты</string>
+    <string name="scrollcapture_is_saving_please_wait">Текущие длинные скриншоты Сохранение, пожалуйста, подождите.</string>
+    <string name="hit_the_bottom">В конце ползуна</string>
+    <string name="content_un_extended">Поперечное сечение не поддерживает длинные скриншоты</string>
+    <string name="maximum_to_ten_pages">До 10 экрана перехвата</string>
+    <string name="saving">Сохранение ...</string>
+    <string name="screenshot_saving">Сохранение картинки ...</string>
+    <string name="hava_not_start_daub">Вы не покрашены, покрашены, а затем нажмите кнопку Сохранить.</string>
+    <string name="move">мобильный</string>
+    
+    <string name="turn_off_long_screenshots">Пожалуйста, выйдите длинные скриншоты</string>
+    <string name="turn_off_interest_screenshots">Пожалуйста, выйдите интересные скриншоты</string>
+    
+</resources>

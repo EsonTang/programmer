@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/white">
+
+    <com.prize.prizethemecenter.ui.widget.GridViewWithHeaderAndFooter
+        android:id="@+id/gridview"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:listSelector="@color/transparent"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:paddingRight="@dimen/margin_left_right"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="30dp"
+        android:background="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_default"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_dafaultImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/noloading_bee" />
+
+        <TextView
+            android:id="@+id/tv_default"
+            style="@style/detail_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_dafaultImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="@string/no_downloading" />
+    </RelativeLayout>
+
+
+</FrameLayout>

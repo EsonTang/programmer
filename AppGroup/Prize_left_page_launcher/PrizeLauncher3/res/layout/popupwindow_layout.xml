@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+    
+    <ExpandableListView
+        android:id="@+id/expandView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_feedback_pop"
+        android:cacheColorHint="@android:color/transparent"
+        android:paddingTop="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

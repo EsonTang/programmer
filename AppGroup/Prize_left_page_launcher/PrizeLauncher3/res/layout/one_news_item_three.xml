@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/one_news_three"
+    >
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        style="@style/news_title_style"
+        />
+    
+    <LinearLayout android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/txt_title"
+    	android:id="@+id/img_lay"
+    	>
+        <ImageView
+	        android:id="@+id/img_one"
+	        android:contentDescription="@null"
+	        android:src="@drawable/ic_launcher" 
+	        android:layout_marginEnd="@dimen/news_item_img_end"
+	        style="@style/food_left_img_style"
+	        android:layout_weight="1"
+	        />
+        <ImageView
+	        android:id="@+id/img_two"
+	        android:contentDescription="@null"
+	        android:src="@drawable/ic_launcher" 
+	        android:layout_marginEnd="@dimen/news_item_img_end"
+	        style="@style/food_left_img_style"
+	        android:layout_weight="1"
+	        />
+        <ImageView
+	        android:id="@+id/img_three"
+	        android:contentDescription="@null"
+	        android:src="@drawable/ic_launcher" 
+	        android:layout_marginEnd="@dimen/news_item_img_end"
+	        style="@style/food_left_img_style"
+	        android:layout_weight="1"
+	        />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color"
+        android:layout_below="@id/img_lay"
+        android:layout_marginTop="@dimen/news_item_vertical_pad"
+        android:layout_marginBottom="@dimen/news_item_vertical_pad"
+        />
+
+</RelativeLayout>

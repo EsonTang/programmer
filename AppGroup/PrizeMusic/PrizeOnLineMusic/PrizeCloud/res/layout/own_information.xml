@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false" >
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#21b5c0"
+        android:drawableLeft="@drawable/cloud_back_normal"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/own_information"
+        android:textColor="#ffffff"
+        android:onClick="onBackClk"
+        android:textSize="@dimen/textsize_large" />
+    <TextView
+        android:id="@+id/tip_id"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/base_information"
+        android:background="#F8F8F8"
+        android:textColor="#969696"
+        android:textSize="12sp" />
+    
+    <RelativeLayout
+        android:id="@+id/relay_head_id"
+        android:layout_width="match_parent"
+        android:layout_height="67dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/head_icon"
+            android:textColor="@color/prize_text_default"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsize_medium" />
+		<com.prize.cloud.widgets.CircleImageView
+		    android:id="@+id/head_img_id"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignRight="@+id/enter_id"
+            android:layout_marginRight="21dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cloud_man_small"/>
+		<ImageView
+		    android:id="@+id/head_img_back_id"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignRight="@+id/enter_id"
+            android:layout_marginRight="19dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cloud_person_headimg_backgroud"/>
+        <TextView
+            android:id="@+id/enter_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+             android:layout_centerVertical="true"
+            android:background="@drawable/cloud_enter"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/prize_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relay_nickname_id"
+        android:layout_width="match_parent"
+        android:layout_height="67dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/nickname"
+            android:textColor="@color/prize_text_default"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsize_medium" />
+        <TextView
+            android:id="@+id/nickname_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:textColor="@color/prize_text_default"
+            android:textSize="@dimen/textsize_medium"
+            android:drawableRight="@drawable/cloud_enter"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/prize_line"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relay_sex_id"
+        android:layout_width="match_parent"
+        android:layout_height="67dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/sex"
+            android:textColor="@color/prize_text_default"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsize_medium" />
+        <TextView
+            android:id="@+id/sex_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:textColor="@color/prize_text_default"
+            android:textSize="@dimen/textsize_medium"
+            android:drawableRight="@drawable/cloud_enter"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/account_information"
+        android:background="#F8F8F8"
+        android:textColor="#969696"
+        android:textSize="12sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/kb_id"
+            android:textColor="@color/prize_text_default"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsize_medium" />
+        <TextView
+            android:id="@+id/kb_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/prize_text_default"
+            android:textSize="@dimen/textsize_medium"/>
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/prize_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/safe_phone"
+            android:textColor="@color/prize_text_default"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsize_medium" />
+        <TextView
+            android:id="@+id/safe_phone_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/prize_text_default"
+            android:textSize="@dimen/textsize_medium"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/prize_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relay_bind_id"
+        android:layout_width="match_parent"
+        android:layout_height="67dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/bind_email"
+            android:textColor="@color/prize_text_default"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsize_medium" />
+        <TextView
+            android:id="@+id/bind_email_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:textColor="@color/prize_text_default"
+            android:textSize="@dimen/textsize_medium"
+            android:drawableRight="@drawable/cloud_enter"
+            android:text="@string/unbind_email"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/prize_line"/>
+    </RelativeLayout>
+</LinearLayout>

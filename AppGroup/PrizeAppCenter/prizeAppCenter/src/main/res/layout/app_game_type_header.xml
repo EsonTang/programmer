@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.prize.appcenter.ui.widget.GalleryFlow
+            android:id="@+id/recommand_galleryflow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_bar_hight3"
+            android:soundEffectsEnabled="false" >
+        </com.prize.appcenter.ui.widget.GalleryFlow>
+
+        <com.prize.appcenter.ui.widget.FlowIndicator
+            android:id="@+id/flowIndicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_148dp"
+            android:gravity="center"
+            app:point_normal_color="#33ffffff"
+            app:point_radius="3dip"
+            android:visibility="gone"
+            app:point_seleted_color="#e6691e"
+            app:space="10dip" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/recommand_notice_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:horizontalSpacing="0dip" >
+    </GridView>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:background="@color/bg_gray_color"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/contact_opt_lay"
+    android:visibility="invisible"
+    >
+    
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:id="@+id/img_phone"
+        android:src="@drawable/left_ico_phone_selector"
+        style="@style/contact_opt_sty"
+        />
+    
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:id="@+id/img_mms"
+        android:src="@drawable/left_ico_mms_selector"
+        style="@style/contact_opt_sty"
+        />
+    
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:id="@+id/img_info"
+        android:src="@drawable/left_ico_info_selector"
+        style="@style/contact_opt_sty"
+        />
+</LinearLayout>

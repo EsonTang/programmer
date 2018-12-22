@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/game_big_image"
+        android:layout_width="118dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/welfare_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/game_download_Rlyt"
+        android:layout_toRightOf="@id/game_big_image">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/text_color_6c6c6c"
+            android:textSize="@dimen/text_size_micro"
+            tools:text="就快了发福建就快了发福建就快了发福建" />
+
+        <com.prize.appcenter.ui.widget.CustomImageView
+            android:id="@+id/game_iv"
+            android:layout_width="20.5dp"
+            android:layout_height="20.5dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="6dp"
+            android:contentDescription="@string/alert_title"
+            android:scaleType="fitXY"
+            android:transitionName="robot"
+            app:iv_radius="5dp" />
+
+        <TextView
+            android:id="@+id/game_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/game_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_micro"
+            tools:text="微信" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/game_download_Rlyt"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp">
+
+        <!--<com.prize.appcenter.ui.widget.ProgressWelfareButton-->
+        <!--android:id="@+id/game_download_btn"-->
+        <!--style="@style/game_item_progressButton"-->
+
+        <!--android:layout_centerVertical="true" />-->
+        <com.prize.appcenter.ui.widget.progressbutton.GiftDownloadProgressButton
+            android:id="@+id/game_download_btn"
+            android:layout_width="64dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:progressbtn_backgroud_color="#ff9732"
+            app:progressbtn_radius="12dp"
+            app:progressbtn_show_progress="true"
+            app:progressbtn_text_color="#ff9732"
+            app:progressbtn_text_covercolor="@android:color/white"
+            app:progressbtn_text_size="12dp" />
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_download_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textColor="#ff5224"
+            android:textSize="@dimen/text_size_micro" />
+    </RelativeLayout>
+
+</merge>

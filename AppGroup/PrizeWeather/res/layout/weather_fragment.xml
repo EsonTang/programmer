@@ -1,0 +1,94 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+<!--     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+	   	<RelativeLayout
+		    android:id="@+id/rl_nodata"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:visibility="gone" >
+		
+		    <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:src="@drawable/weather_bg_default_nodata" />
+		    
+		</RelativeLayout>
+    
+	    <com.prize.weather.view.BlurScrollView
+	        android:id="@+id/blur_scroll"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:overScrollMode="never"
+	        android:scrollbars="none"
+	        android:visibility="gone" >
+		    
+	        <LinearLayout
+	            android:id="@+id/ll_havedata"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            main
+	            <include layout="@layout/weather_fragment_main"/>
+	            
+	            <include layout="@layout/weather_fragment_detail"/>
+	        </LinearLayout>
+	    </com.prize.weather.view.BlurScrollView>
+    
+	</LinearLayout> -->
+
+    <com.prize.weather.view.BlurScrollView
+        android:id="@+id/blur_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+	    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+		   	<RelativeLayout
+			    android:id="@+id/rl_nodata"
+			    android:layout_width="match_parent"
+			    android:layout_height="fill_parent"
+			    android:visibility="gone" >
+			
+			    <ImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerHorizontal="true"
+			        android:layout_centerVertical="true"
+			        android:src="@drawable/weather_bg_default_nodata" />
+			    
+			</RelativeLayout>
+        
+	        <LinearLayout
+	            android:id="@+id/ll_havedata"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:visibility="gone" >
+	
+	            <!-- main -->
+	            <include layout="@layout/weather_fragment_main"/>
+	            
+	            <include layout="@layout/weather_fragment_detail"/>
+	            
+	        </LinearLayout>
+	    </LinearLayout>
+
+    </com.prize.weather.view.BlurScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

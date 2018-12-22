@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">IP ေခၚဆိုမႈ<xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g></string>
+    <string name="select_account">အေကာင့္ကို ေရြးခ်ယ္ပါ</string>
+    <string name="all_accounts">အေကာင့္မ်ား အားလံုး</string>
+    <string name="call_log_via_sim_name_notice">\"<xliff:g id="sim_name">%s</xliff:g>\" မွ ေခၚဆိုမႈ မွတ္တမ္းမ်ား</string>
+    <string name="imei_invalid">မမွန္ကန္ပါ</string>
+    <string name="conf_call_member_list">အဖြဲ႕ဝင္စာရင္း</string>
+    <string name="conf_call_participant_answered">ေျဖၿပီးၿပီ</string>
+    <string name="conf_call_participant_missed">လြတ္သြားေသာ</string>
+    <string name="calls_over_wifi">ေခၚဆိုမႈမ်ားကိုWi-Fiေပၚမွျပဳလုပ္လိမ့္မည္</string>
+    <string name="connect_to_wifi">ေခၚဆိုမႈမ်ား ျပဳလုပ္ရန္ Wi-Fi သို႔ ခ်ိတ္ဆက္ပါ</string>
+    <string name="wfc_notification_summary">ပိုႏွစ္သက္မႈမ်ားကိုအသံုးျပဳရန္ဤေနရာကိုႏွိပ္ပါ</string>
+    <string name="wfc_notification_summary_fail">ရႏိုင္ေသာ ကြန္ရက္မ်ားကို ၾကည့္ရန္ ဤေနရာကို ႏွိပ္ပါ</string>
+    <string name="dialer_call_type_label_sip">အင္တာနက္ ေခၚဆိုမႈ</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> တားျမစ္မႈဖြင့္ျခင္း မေအာင္ျမင္ပါ</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+    
+    <TextView 
+        android:id="@+id/divideTv_id"
+        style="@style/tv_divide" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/down_queen_50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="@string/download_task"
+        android:textColor="@color/textcolor_9e9e9e"
+        android:textSize="@dimen/text_size_micro"
+        android:layout_below="@+id/divideTv_id" />
+
+    <TextView
+        android:id="@+id/all_suspended_id"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/down_queen_50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/oneKey_download"
+        android:textColor="@color/onekey_down_inquee"
+        android:textSize="@dimen/text_size_micro"
+        android:layout_below="@+id/divideTv_id" />
+    
+     <View
+        android:id="@+id/game_image_tag"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/pad_left_right_15dp"
+        android:paddingRight="@dimen/pad_left_right_15dp"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_gray_color" />
+
+</RelativeLayout>

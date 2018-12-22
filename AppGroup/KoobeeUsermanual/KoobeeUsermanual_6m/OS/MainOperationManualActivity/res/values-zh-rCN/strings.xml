@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">说明书</string>
+    <string name="tutorial">教程</string>
+    <string name="relate_question">相关问题:</string>
+    <string name="login_username">欢迎使用说明书</string>
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
+    <string name="no_match">无结果</string>
+    <string name="search_num">搜索结果共有 %d 条</string>
+    <string name="welcome">感谢您使用koobee智能手机！</string>
+    <string name="model">koobee</string>
+    <string name="manual">产品说明书</string>
+    <string name="empty_str" />
+    <string name="search_hint">搜索说明书</string>
+    <string name="quick_guide">快速指南</string>
+    <string name="particular">完整说明</string>
+    <string name="product_info">产品和安全信息</string>
+    <string name="search">搜索</string>
+    <string name="search_empty">无匹配项</string>
+</resources>

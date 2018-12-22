@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.prize.prizethemecenter.ui.widget.SearchView
+        android:id="@+id/main_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:background="@color/status_color"/>
+
+    <RelativeLayout
+        android:id="@+id/pager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_search_layout"
+        android:background="@color/white">
+
+        <com.prize.prizethemecenter.ui.widget.indicator.TabTextPageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_height="40dp" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_below="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:background="@color/bg_gray_color" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewLine" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

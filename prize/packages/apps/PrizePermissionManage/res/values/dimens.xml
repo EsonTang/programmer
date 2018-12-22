@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="header_subsettings_margin_start">72dp</dimen>
+    <dimen name="header_subsettings_margin_end">16dp</dimen>
+    <dimen name="prize_preferencefragment_card_magintop">12dp</dimen>
+    <dimen name="prize_preferencefragment_card_maginbottom">12dp</dimen>
+    <dimen name="prize_preferencefragment_card_maginleft">6dp</dimen>
+    <dimen name="prize_preferencefragment_card_maginright">6dp</dimen>
+    <dimen name="prize_preferencefragment_card_radius">4dp</dimen>
+    <dimen name="prize_preferencefragment_dividerlines_maginleft">14dp</dimen>
+    <dimen name="prize_preferencefragment_dividerlines_maginright">14dp</dimen>
+</resources>

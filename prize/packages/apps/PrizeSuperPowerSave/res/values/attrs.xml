@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- XML attributes used by unread_support_shortcuts.xml -->
+    <declare-styleable name="UnreadShortcut">
+        <attr name="unreadPackageName" format="string" />
+        <attr name="unreadClassName" format="string" />
+        <attr name="unreadKey" format="string" />
+        <attr name="unreadType" format="integer" />
+    </declare-styleable>
+
+</resources>

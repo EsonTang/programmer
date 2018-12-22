@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="40dp"
+             android:paddingLeft="@dimen/pad_left_right_15dp"
+             android:paddingRight="@dimen/pad_left_right_15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/fedbck_common_tips_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="1、"
+            android:textColor="@color/text_color_747474"
+            android:textSize="@dimen/text_size_small"/>
+        <TextView
+            android:id="@+id/fedbck_common_tips_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="意见反馈常见问题答疑"
+            android:textColor="@color/text_color_747474"
+            android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e4e4e4"/>
+
+</RelativeLayout>

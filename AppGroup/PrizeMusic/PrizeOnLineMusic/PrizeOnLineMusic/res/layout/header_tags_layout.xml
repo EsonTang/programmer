@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_back_Rlyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:textColor="@color/text_color_323232"
+        android:textSize="@dimen/text_size_15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:gravity="center"
+        android:text="@string/select_category" />
+
+    <ImageView
+        android:id="@+id/back_Iv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/icon_x_back_selector" />
+
+    <TextView
+        android:id="@+id/all_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/back_Iv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/icon_selectall_selector"
+        android:gravity="center"
+        android:text="@string/all"
+        style="@style/textView_three"
+        android:textColor="@color/radio_category_color_selector"
+       />
+    <!-- android:background="@drawable/icon_selectall_selector" -->
+
+</RelativeLayout>

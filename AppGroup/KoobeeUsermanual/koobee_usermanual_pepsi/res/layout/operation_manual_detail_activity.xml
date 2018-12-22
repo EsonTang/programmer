@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/contene_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background_color" >
+
+    <RelativeLayout
+        android:id="@id/content_title_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/webview_bar"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@id/previousItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/arrow_title_left"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@id/content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ff5a5e69"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@id/nextItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/arrow_title_right"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/relatedInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/relate_info"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@id/relatedQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginTop="6.0dip"
+            android:text="@string/relate_question"
+            android:textColor="#ff5a5e68"
+            android:textSize="14.0sp" />
+
+        <GridView
+            android:id="@id/relatedListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="18.0dip"
+            android:paddingTop="10.0dip"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@id/mainScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relatedInfo"
+        android:layout_below="@id/content_title_view" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <WebView
+                android:id="@id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

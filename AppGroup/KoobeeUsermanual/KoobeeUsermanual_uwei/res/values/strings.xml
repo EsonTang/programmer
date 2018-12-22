@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">User Manual</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="relate_question">Realated question:</string>
+    <string name="login_username">Welcome to use manual</string>
+    <string name="ok">ok</string>
+    <string name="cancle">cancel</string>
+    <string name="no_match">No match</string>
+    <string name="search_num">%d item mached</string>
+    <string name="welcome">Thanks for use me！</string>
+    <string name="model">koobee</string>
+    <string name="manual">User Manual</string>
+    <string name="empty_str" />
+    <string name="search_hint">Search manual</string>
+    <string name="network">Network</string>
+    <string name="quick_guide">Quick_guide</string>
+    <string name="particular">Particular</string>
+    <string name="product_info">Product_info</string>
+    <string name="search">Search</string>
+    <string name="search_empty">No matches</string>
+</resources>

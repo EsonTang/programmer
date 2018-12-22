@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--lifeservice-->
+    <!-- recharge -->
+    <dimen name="cootek_lifeservice_recharge_number_padding_top">18dp</dimen>
+
+
+    <!--individual-->
+    <dimen name="cootek_individual_relativelayout_height">74dp</dimen>
+    <dimen name="cootek_individual_relativelayout_width">179dp</dimen>
+    <dimen name="cootek_individual_listitem_height">50dp</dimen>
+    <dimen name="cootek_individual_listitem_padding0">18dp</dimen>
+    <dimen name="cootek_individual_listitem_padding1">12dp</dimen>
+    <dimen name="cootek_individual_listitem_padding3">4dp</dimen>
+    <dimen name="cootek_individual_item_remain_height">40dp</dimen>
+    <dimen name="cootek_individual_item_remain_height2">34dp</dimen>
+    <dimen name="cootek_individual_item_remain_marginleft">40dp</dimen>
+
+
+    <dimen name="service_rate_width">30dip</dimen>
+    <dimen name="service_rate_height">14dip</dimen>
+    <dimen name="service_rate_margin_right">2dip</dimen>
+    <dimen name="service_rate_margin_top">4dip</dimen>
+
+    <!--native yp-->
+    <dimen name="cootek_native_items_width">320dp</dimen>
+    <dimen name="cootek_native_permission_height">40dp</dimen>
+    <dimen name="cootek_native_net_pic_height">120dp</dimen>
+    <dimen name="cootek_native_net_btn_width">250dp</dimen>
+    <dimen name="cootek_native_net_btn_height">80dp</dimen>
+
+</resources>

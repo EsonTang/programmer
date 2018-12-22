@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Σούπερ screenshots</string>
+    <string name="action_settings">Ρύθμιση</string>
+    <string name="scroll_shot">Long screenshots</string>
+    <string name="funny_shot">Fun screenshots</string>
+    <string name="screen_record">Καταγραφή οθόνης</string>
+    <string name="nextpage">στην επόμενη οθόνη</string>
+    <string name="save">Αποθήκευση</string>
+    <string name="cancel">ακυρώθηκε</string>
+    <string name="rect_shot">Ορθογώνιο screenshots</string>
+    <string name="lasso_shot">Lasso screenshots</string>
+    <string name="daub_shot">Γκράφιτι screenshots</string>
+    <string name="redo">ξανακάνω</string>
+    <string name="undo">ανάκληση</string>
+    <string name="exit">Κλείστε</string>
+    <string name="scrawl">γκράφιτι</string>
+    <string name="app_restrict_capture_screen">Δεδομένου ότι το όριο εφαρμογής, το περιβάλλον εργασίας δεν μπορεί να είναι screenshots</string>
+    <string name="drag_to_select_capture_area">Σε drag and drop επιλεγμένα πυροβόλησε παράθυρο οθόνης</string>
+    <string name="not_support_screen_orientation_change">Διαδικασία καταγραφής οθόνης δεν υποστηρίζει την οριζόντια και κάθετη διακόπτη οθόνης</string>
+    <string name="screenshot_saved">συλλαμβάνονται εικόνες</string>
+    <string name="screenshot_saved_to_tf_card">Τα αρχεία αποθηκεύονται στο "αποθήκευση Τηλέφωνο / Super screenshots" φάκελο.</string>
+    <string name="screenshot_saved_to_sd_card">Τα αρχεία αποθηκεύονται σε «κάρτα SD / Super screenshots" φάκελο.</string>
+    <string name="lasso_guide">Ισοπαλία screenshots περιοχή άρχισε Lasso screenshots</string>
+    <string name="scrollcapture_is_running">Long screenshots λειτουργία</string>
+    <string name="scrollcapture_is_saving_please_wait">Οι σημερινές μεγάλες εικόνες Αποταμίευση, παρακαλώ περιμένετε.</string>
+    <string name="hit_the_bottom">Στο τέλος του ολισθητήρα</string>
+    <string name="content_un_extended">Η διατομή δεν υποστηρίζει καιρό screenshots</string>
+    <string name="maximum_to_ten_pages">Έως 10 υποκλοπή της οθόνης</string>
+    <string name="saving">Αποθήκευση ...</string>
+    <string name="screenshot_saving">Αποθήκευση screenshot ...</string>
+    <string name="hava_not_start_daub">Δεν είναι βαμμένο, βαμμένο και, στη συνέχεια, κάντε κλικ στην επιλογή Αποθήκευση.</string>
+    <string name="move">κινητός</string>
+    
+    <string name="turn_off_long_screenshots">Παρακαλώ βγείτε από καιρό screenshots</string>
+    <string name="turn_off_interest_screenshots">Παρακαλώ βγείτε από ενδιαφέρουσες εικόνες</string>
+    
+</resources>

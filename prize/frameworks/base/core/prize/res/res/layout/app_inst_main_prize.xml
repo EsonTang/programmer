@@ -1,0 +1,46 @@
+<!--  app multi instances feature. prize-linkh-20151222  -->
+
+<com.android.internal.widget.ResolverDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:maxWidth="@*android:dimen/resolver_max_width"  
+    android:id="@*android:id/contentPanel"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:id="@+id/header">
+        <TextView android:id="@android:id/title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:minHeight="56dp"
+                  android:textAppearance="?android:attr/textAppearanceMedium"
+                  android:gravity="start|center_vertical"
+                  android:paddingStart="?android:attr/dialogPreferredPadding"
+                  android:paddingEnd="?android:attr/dialogPreferredPadding"
+                  android:paddingTop="8dp"
+                  android:textSize="16sp"
+                  android:paddingBottom="8dp" />
+     </LinearLayout>
+     
+     <GridView
+        android:id="@+id/appInstGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="8dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:background="@android:color/white"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="15dp" >
+     </GridView>
+</com.android.internal.widget.ResolverDrawerLayout>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="default_sleep_gesture_array">
+        <item>0xcc,DoubleClick,awake, ,亮屏,1</item>
+        <item>0xba,Up,unlock, ,亮屏解锁,1</item>
+        <item>0xab,Down,com.mediatek.camera,com.android.camera.CameraLauncher,相机,1</item>
+        <item>0x6f,o,com.android.calculator2,com.android.calculator2.Calculator,计算器,1</item>
+        <item>0x65,e,com.mediatek.filemanager,com.mediatek.filemanager.main.MainActivity,文件管理器,1</item>
+        <item>0x77,w,com.android.settings,com.android.settings.Settings,设置,1</item>
+        <item>0x63,c,com.android.dialer,com.android.dialer.DialtactsActivity,拨号,1</item>
+    </string-array>
+
+</resources>
+
+<!--
+item<a,b,c,d,e,f>
+c，w，m，e，o，上，下，左，右，双击
+0X63,0X77,0x6D,0x65,0x6F,0xba,0xab,0xbb,0xaa,0xcc
+a:item b:name c:packagename d:classname e:label f:onoff
+label通过包名类名获取，这里只是提示作用
+音乐播放暂停：<item>x,x,mPlayPauseMusic,x,x,1</item>
+音乐上一首：<item>x,x,mPreviousMusic,x,x,1</item>
+音乐下一首：<item>x,x,mNextMusic,x,x,1</item>
+亮屏：<item>x,x,awake,x,x,1</item>
+亮屏解锁：<item>x,x,unlock,x,x,1</item>
+    <string-array name="default_sleep_gesture_array">
+        <item>0xCC,DoubleClick,com.android.mms,com.android.mms.ui.ConversationList,Message,1</item>
+        <item>0xBA,Up,com.android.contacts,com.android.contacts.activities.PeopleActivity,Contacts,1</item>
+        <item>0xAB,Down,com.android.dialer,com.android.dialer.DialtactsActivity,Dialer,1</item>
+        <item>0xBB,Left,com.android.settings,com.android.settings.Settings,Settings,1</item>
+        <item>0xAA,Right,com.android.gallery3d,com.android.camera.CameraLauncher,Camera,1</item>
+        <item>0x6F,o,com.lyt.lyttorch,com.lyt.lyttorch.LytTorchActivity,Torch,1</item>
+        <item>0x65,e,com.tencent.mm,com.tencent.mm.ui.LauncherUI,微信,1</item>
+        <item>0x73,s,com.android.deskclock,com.android.deskclock.DeskClock,DeskClock,1</item>
+        <item>0x6D,m,com.android.music,com.android.music.MusicBrowserOppoActivity,Music,1</item>
+        <item>0x77,w,com.mediatek.filemanager,com.mediatek.filemanager.FileManagerTabActivity,File Manager,1</item>
+        <item>0x63,c,com.baidu.searchbox_coolpad,com.baidu.searchbox.MainActivity,百度搜索,1</item>
+        <item>0x5E,^,com.tencent.mobileqq,com.tencent.mobileqq.activity.LoginActivity,QQ,1</item>
+        <item>0x7A,z,com.android.quicksearchbox,com.android.quicksearchbox.SearchActivity,QQ,1</item>
+        <item>0x76,v, , , ,1</item>
+    </string-array>
+-->

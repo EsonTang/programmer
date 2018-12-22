@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header_item_Rlyt"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <com.prize.appcenter.ui.widget.CustomImageView
+        android:id="@+id/game_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@string/alert_title"
+        android:scaleType="fitXY"/>
+
+    <com.prize.appcenter.ui.widget.progressbutton.AnimDownloadProgressButton
+        android:id="@+id/game_download_btn"
+        android:layout_width="50dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:progressbtn_radius="12dp"
+        app:progressbtn_show_progress="true"
+        app:progressbtn_text_size="12dp" />
+
+    <LinearLayout
+        android:id="@+id/game_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/game_download_btn"
+        android:layout_toRightOf="@id/game_iv"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/game_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/common_app_title"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/ad_flag_Tv"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:background="@drawable/bg_ad_flag"
+                android:text="@string/advertising"
+                android:visibility="visible"
+                android:textColor="@color/text_color_969696"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/game_size_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:minWidth="@dimen/list_size_minwidth"
+            android:singleLine="true"
+            android:textColor="@color/text_color_737373"
+            android:textSize="@dimen/text_size_micro" />
+
+    </LinearLayout>
+</RelativeLayout>

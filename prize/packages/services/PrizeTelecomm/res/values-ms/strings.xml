@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="telecommAppLabel" product="default">Pengurusan Panggilan</string>
+    <string name="userCallActivityLabel" product="default">Telefon</string>
+    <string name="unknown">"Tidakdiketahui"</string>
+    <string name="notification_missedCallTitle">Panggilantidakdijawab</string>
+    <string name="notification_missedWorkCallTitle">Panggilan kerja terlepas</string>
+    <string name="notification_missedCallsTitle">Panggilan terlepas</string>
+    <string name="notification_missedCallsMsg">"<xliff:g id="NUM_MISSED_CALLS">%s</xliff:g> panggilan tidak dijawab"</string>
+    <string name="notification_missedCallTicker">"Panggilan tidak dijawab daripada <xliff:g id="MISSED_CALL_FROM">%s</xliff:g>"</string>
+    <string name="notification_missedCall_call_back">Panggilbalik</string>
+    <string name="notification_missedCall_message">Mesej</string>
+    <string name="accessibility_call_muted">"Panggilan diredam."</string>
+    <string name="accessibility_speakerphone_enabled">"Telefon pembesar suara didayakan."</string>
+    <string name="respond_via_sms_canned_response_1">Tidak dapat bercakap sekarang. Apa cerita?</string>
+    <string name="respond_via_sms_canned_response_2">Saya akn segera hubungi awak nanti.</string>
+    <string name="respond_via_sms_canned_response_3">Saya akan hubungi awak kemudian.</string>
+    <string name="respond_via_sms_canned_response_4">Tidak dapat bercakap sekarang. Hubungi saya nanti?</string>
+    <string name="respond_via_sms_setting_title">"Respons pantas"</string>
+    <string name="respond_via_sms_setting_title_2">"Edit respons pantas"</string>
+    <string name="respond_via_sms_setting_summary"/>
+    <string name="respond_via_sms_edittext_dialog_title">"Respons pantas"</string>
+    <string name="respond_via_sms_confirmation_format">"Mesej dihantar ke <xliff:g id="PHONE_NUMBER">%s</xliff:g>."</string>
+    <string name="enable_account_preference_title">"Akaun panggilan"</string>
+    <string name="outgoing_call_not_allowed_user_restriction">Hanya panggilan kecemasan dibenarkan.</string>
+    <string name="outgoing_call_not_allowed_no_permission">Aplikasi ini tidak boleh membuat panggilan keluar tanpa kebenaran Telefon.</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">Untukmembuatpanggilan,masukkannomboryangsah.</string>
+    <string name="duplicate_video_call_not_allowed">"Panggilan tidak boleh ditambahkan pada masa ini."</string>
+    <string name="no_vm_number">"Nombor mel suara tiada"</string>
+    <string name="no_vm_number_msg">"Tidak ada nombor mel suara disimpan pada kad SIM."</string>
+    <string name="add_vm_number_str">"Tambah nombor"</string>
+    <string name="change_default_dialer_dialog_title">Tukar apl Pendail lalai?</string>
+    <string name="change_default_dialer_with_previous_app_set_text">Gunakan <xliff:g id="new_app">%1$s</xliff:g> sebagai ganti <xliff:g id="current_app">%2$s</xliff:g> sebagai apl pendail lalai anda?</string>
+    <string name="change_default_dialer_no_previous_app_set_text">Gunakan <xliff:g id="new_app">%s</xliff:g> sebagai apl pendail lalai anda?</string>
+    <string name="blocked_numbers">Nombor disekat</string>
+    <string name="blocked_numbers_msg">Anda tidak akan menerima panggilan atau mesej teks daripada nombor yang disekat.</string>
+    <string name="block_number">Tambah nombor</string>
+    <string name="unblock_dialog_body">Nyahsekat <xliff:g id="number_to_block">%1$s</xliff:g>?</string>
+    <string name="unblock_button">Nyahsekat</string>
+    <string name="add_blocked_dialog_body">Sekat panggilan dan mesej teks daripada</string>
+    <string name="add_blocked_number_hint">"Nombor telefon"</string>
+    <string name="block_button">"Sekat"</string>
+    <string name="non_primary_user">Hanya pemilik peranti boleh melihat dan mengurus nombor yang disekat.</string>
+    <string name="delete_icon_description">Nyahsekat</string>
+    <string name="blocked_numbers_butter_bar_title">Sekatan dimatikan sementara</string>
+    <string name="blocked_numbers_butter_bar_body">Selepas anda mendail atau menghantar mesej teks kepada nombor kecemasan, sekatan dimatikan untuk memastikan perkhidmatan kecemasan itu dapat menghubungi anda.</string>
+    <string name="blocked_numbers_butter_bar_button">Dayakan semula sekarang</string>
+    <string name="blocked_numbers_number_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> disekat</string>
+    <string name="blocked_numbers_number_unblocked_message"><xliff:g id="unblocked_number">%1$s</xliff:g> dinyahsekat</string>
+    <string name="blocked_numbers_block_emergency_number_message">Tidak dapat menyekat nombor kecemasan.</string>
+    <string name="blocked_numbers_number_already_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> sudah disekat.</string>
+    <string name="test_account_0_label"/>
+    <string name="test_account_1_label"/>
+    <string name="test_account_2_label"/>
+    <string name="test_account_3_label"/>
+    <string name="test_account_0_short_description"/>
+    <string name="test_account_1_short_description"/>
+    <string name="test_account_2_short_description"/>
+    <string name="test_account_3_short_description"/>
+    <string name="handle_restricted"/>
+    <string name="toast_personal_call_msg">Menggunakan pendail peribadi untuk membuat panggilan</string>
+</resources>

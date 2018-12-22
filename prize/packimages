@@ -1,0 +1,258 @@
+#!/bin/bash
+# file    : packimages.sh
+# author  : dingjun
+# date    : 2015-07-09
+# version : v1.0.0
+# function: Collected images for download into flash.
+MYDATE=`date +%d/%m/%Y`
+THIS_HOST=`hostname -s`
+USER=`whoami`
+    tput clear
+cat <<MAYDAY
+------------------------------------------------------------------------------
+  User: $USER            Host: $THIS_HOST            Date: $MYDATE
+  [CMD]:     packimages
+  [PROJECT]: pri6750_66_m  
+  [usage]:   ./packimages pri6750_66_m
+------------------------------------------------------------------------------
+MAYDAY
+
+echo "  Packaging Images..."
+AOSPPATH=$(pwd)
+MT6737="6737"
+MT6750="6750"
+MT6739="6739"
+MT6763="6763"
+PROJECTNAME=${TARGET_PRODUCT#*_}
+
+if [ -z $PROJECTNAME ]; then
+	PROJECTNAME="pri6763_66_n1"
+	TARGET_PRODUCT="*6763*"
+fi
+echo "  PROJECTNAME = $PROJECTNAME "
+echo "  TARGET_PRODUCT = $TARGET_PRODUCT "
+
+SRCCODE_DATE=`date +%Y.%m.%d.%H.%M`
+CUSTOM_SW_VERSION=$(grep "^BUILD_DISPLAY_ID_CUSTOM" $AOSPPATH/device/prize/$PROJECTNAME/ProjectConfig.mk | sed -e 's/.$(shell date +%m%d)//')
+# echo "[1] $CUSTOM_SW_VERSION"
+CUSTOM_SW_VERSION=$(echo "$CUSTOM_SW_VERSION" | cut -d = -f 2 | sed 's/^[ \t]*//g' | sed -e 's/ /_/g')
+# echo "[2] $CUSTOM_SW_VERSION"
+PRIZE_HW_NAME=$(grep "^PRIZE_HW_PROJECT_NAME" $AOSPPATH/device/prize/$PROJECTNAME/ProjectConfig.mk | sed -e 's/.$(shell date +%m%d)//')
+# echo "[1] $CUSTOM_SW_VERSION"
+PRIZE_HW_NAME=$(echo "$PRIZE_HW_NAME" | cut -d = -f 2 | sed -e 's/ *//')
+# echo "[2] $CUSTOM_SW_VERSION"
+
+if [ -z $PROJECTNAME ]; then
+    echo "  [ERROR]: Please enter project name!!! EXIT!"
+    exit 1
+fi
+
+if [ -z $CUSTOM_SW_VERSION ]; then
+    echo "  [ERROR]: Custom software version is NULL, Please write in ProjectConfig.mk <-- [PRIZE_CUSTOM_VERSION is existed?]"
+    CUSTOM_SW_VERSION="KOOBEE"
+    echo "  CUSTOM_SW_VERSION = $CUSTOM_SW_VERSION "
+#    exit 1
+fi
+
+
+MTK_MCU_PLATFORM=$(grep "^CONFIG_ARCH_MT[0-9]\{4\}" $AOSPPATH/kernel-3.18/arch/arm64/configs/${PROJECTNAME}_defconfig | cut -d = -f 1 | sed -e 's/CONFIG_ARCH_//')
+if [ -z $MTK_MCU_PLATFORM ]; then
+MTK_MCU_PLATFORM=$(grep "^CONFIG_ARCH_MT[0-9]\{4\}" $AOSPPATH/kernel-4.4/arch/arm64/configs/${PROJECTNAME}_defconfig | cut -d = -f 1 | sed -e 's/CONFIG_ARCH_//')
+fi
+echo "  MTK_MCU_PLATFORM=$MTK_MCU_PLATFORM"
+
+DATABASE_DIR=database
+IMAGES_DES_DIR=${PRIZE_HW_NAME}_$CUSTOM_SW_VERSION.$SRCCODE_DATE
+echo "  IMAGES_DES_DIR = $IMAGES_DES_DIR"
+
+mkdir -p $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+IMAGE_SRC_DIR=$AOSPPATH/out/target/product/$PROJECTNAME
+
+echo "  IMAGE_SRC_DIR = $IMAGE_SRC_DIR"
+if [[ $TARGET_PRODUCT =~ $MT6737 ]]; then
+    echo "  This is Mt6737 !!!"
+    # copy modem database
+    find $AOSPPATH/vendor/mediatek/proprietary/custom/$PROJECTNAME/modem/ -name "BPLGUInfoCustomApp*" | xargs -i cp {} "$IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR"
+    find $AOSPPATH/vendor/mediatek/proprietary/custom/$PROJECTNAME/modem/ -name "BPMdMetaDatabase*" | xargs -i cp {} "$IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR"
+    find $AOSPPATH/vendor/mediatek/proprietary/custom/$PROJECTNAME/modem/ -name "DbgInfo_*" | xargs -i cp {} "$IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR"
+
+    # copy AP database
+    if [ ! -d out/target/product/ ]; then
+    	echo "  AP database is not exist, please check!!!"
+   	    exit 1
+    fi
+
+    find $AOSPPATH/out/target/product/$PROJECTNAME/obj/CGEN/ -name "APDB_MT6735_S01_alps-mp-m0.mp1_W[0-9][0-9].[0-9][0-9]" | xargs -i cp {} "$IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR"
+
+    if [[ $TARGET_PRODUCT =~ "6737t" ]]; then
+        imgfilenames=("md1arm7.img" "md1dsp.img" "md1rom.img" "md3rom.img" "boot.img" "cache.img" "lk.bin" "logo.bin" "MT6737T_Android_scatter.txt" "preloader_$PROJECTNAME.bin" "recovery.img" "secro.img" "system.img" "trustzone.bin" "userdata.img")
+    else
+        imgfilenames=("md1arm7.img" "md1dsp.img" "md1rom.img" "md3rom.img" "boot.img" "cache.img" "lk.bin" "logo.bin" "MT6737M_Android_scatter.txt" "preloader_$PROJECTNAME.bin" "recovery.img" "secro.img" "system.img" "trustzone.bin" "userdata.img")
+    fi
+	# cpoy tools
+	pkgtools=("CHECKSUM.bat" "CheckSum_Gen.exe" "FlashToolLib.dll" "FlashToolLib.v1.dll" "FlashToolLibEx.dll")
+elif [[ $TARGET_PRODUCT =~ $MT6750 ]]; then
+    echo "  This is Mt6750 !!!"
+    # copy modem database
+    find $AOSPPATH/vendor/mediatek/proprietary/custom/$PROJECTNAME/modem/ -name "MDDB.C2K.META_MT6750*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/vendor/mediatek/proprietary/custom/$PROJECTNAME/modem/ -name "MDDB.META_MT6750*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/vendor/mediatek/proprietary/custom/$PROJECTNAME/modem/ -name "MDDB_InfoCustomApp*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/vendor/mediatek/proprietary/custom/$PROJECTNAME/modem/ -name "DbgInfo_*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+
+    # copy AP database
+    if [ ! -d out/target/product/ ]; then
+        echo "  AP database is not exist, please check!!!"
+        exit 1
+    fi
+
+    find $AOSPPATH/out/target/product/$PROJECTNAME/obj/CGEN/ -name "APDB_MT6755_S01_alps-mp-m0.mp7_W[0-9][0-9].[0-9][0-9]" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+
+
+    IMAGE_DEV_SRC_DIR=$AOSPPATH/out/target/product/$PROJECTNAME/dev
+    DEV_DIR=dev
+    VMLINUX_DIR=$AOSPPATH/out/target/product/$PROJECTNAME/obj/KERNEL_OBJ/vmlinux
+    
+    # cpoy dev for mt6750
+    mkdir -p $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DEV_DIR
+    devfilenames=("charger.BQ24296.dat" "device.parameters.xml" "flash-driver-parser.exe" "switchingcharger.xml")
+    for i in ${devfilenames[@]}
+    do
+        if [ -e "$IMAGE_DEV_SRC_DIR/$i" ]; then
+            echo "  $IMAGE_DEV_SRC_DIR/$i"
+            cp -f $IMAGE_DEV_SRC_DIR/$i $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DEV_DIR
+	else
+	    echo "  [ERROR]: $IMAGE_DEV_SRC_DIR/$i is not find! Copy failed!"
+	    exit 1
+	fi
+    done
+
+    imgfilenames=("md1arm7.img" "md1dsp.img" "md1rom.img" "md3rom.img" "boot.img" "cache.img" "lk.bin" "logo.bin" "MT6750_Android_scatter.txt" "preloader_$PROJECTNAME.bin" "recovery.img" "secro.img" "system.img" "trustzone.bin" "userdata.img")
+	# cpoy tools
+	pkgtools=("CHECKSUM.bat" "CheckSum_Gen.exe" "FlashToolLib.dll" "FlashToolLib.v1.dll" "FlashToolLibEx.dll")
+elif [[ $TARGET_PRODUCT =~ $MT6739 ]]; then
+    echo "  This is Mt6739 !!!"
+	
+    # copy AP database
+    if [ ! -d out/target/product/ ]; then
+        echo "  AP database is not exist, please check!!!"
+        exit 1
+    fi
+
+    # copy modem database
+    find $AOSPPATH/out/target/product/$PROJECTNAME/system/vendor/etc/mddb/ -name "MDDB.META.ODB_MT6739*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/out/target/product/$PROJECTNAME/system/vendor/etc/mddb/ -name "MDDB.META_MT6739*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/out/target/product/$PROJECTNAME/system/vendor/etc/mddb/ -name "MDDB_InfoCustomApp*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/out/target/product/$PROJECTNAME/system/vendor/etc/mddb/ -name "DbgInfo_*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/out/target/product/$PROJECTNAME/system/vendor/etc/mddb/ -name "mdm_layout*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+	
+    find $AOSPPATH/out/target/product/$PROJECTNAME/obj/CGEN/ -name "APDB_MT6739_S01_alps-mp-n1.mp18_W[0-9][0-9].[0-9][0-9]" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+
+
+    IMAGE_DEV_SRC_DIR=$AOSPPATH/out/target/product/$PROJECTNAME/dev
+    DEV_DIR=dev
+    VMLINUX_DIR=$AOSPPATH/out/target/product/$PROJECTNAME/obj/KERNEL_OBJ/vmlinux
+    
+    # cpoy dev for mt6739
+    mkdir -p $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DEV_DIR
+    devfilenames=("charger.BQ24296.dat" "device.parameters.xml" "flash-driver-parser.exe" "switchingcharger.xml")
+    for i in ${devfilenames[@]}
+    do
+        if [ -e "$IMAGE_DEV_SRC_DIR/$i" ]; then
+            echo "  $IMAGE_DEV_SRC_DIR/$i"
+            cp -f $IMAGE_DEV_SRC_DIR/$i $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DEV_DIR
+	else
+	    echo "  [ERROR]: $IMAGE_DEV_SRC_DIR/$i is not find! Copy failed!"
+	    #exit 1
+	fi
+    done
+
+    imgfilenames=("md1arm7.img" "md1dsp.img" "md1rom.img" "spmfw.bin" "tinysys-sspm.bin"  "md3rom.img" "boot.img" "cache.img" "lk.bin" "logo.bin" "MT6739_Android_scatter.txt" "preloader_$PROJECTNAME.bin" "recovery.img" "secro.img" "system.img" "trustzone.bin" "userdata.img")
+	# cpoy tools
+	pkgtools=("CHECKSUM.bat" "CheckSum_Gen.exe" "FlashToolLib.dll" "FlashToolLib.v1.dll" "FlashToolLibEx.dll" "CheckSum_Gen.ilk" "CheckSum_Gen.pdb")
+elif [[ $TARGET_PRODUCT =~ $MT6763 ]]; then
+    echo "  This is Mt6763 !!!"
+	
+    # copy AP database
+    if [ ! -d out/target/product/ ]; then
+        echo "  AP database is not exist, please check!!!"
+        exit 1
+    fi
+
+    # copy modem database
+    find $AOSPPATH/out/target/product/$PROJECTNAME/system/vendor/etc/mddb/ -name "MDDB.META.ODB_MT6763*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/out/target/product/$PROJECTNAME/system/vendor/etc/mddb/ -name "MDDB.META_MT6763*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/out/target/product/$PROJECTNAME/system/vendor/etc/mddb/ -name "MDDB_InfoCustomApp*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/out/target/product/$PROJECTNAME/system/vendor/etc/mddb/ -name "DbgInfo_*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+    find $AOSPPATH/out/target/product/$PROJECTNAME/system/vendor/etc/mddb/ -name "mdm_layout*" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+	
+    find $AOSPPATH/out/target/product/$PROJECTNAME/obj/CGEN/ -name "APDB_MT6763_S01_alps-mp-n1.mp[0-9][0-9]_W[0-9][0-9].[0-9][0-9]" | xargs -i cp {} $IMAGES_DES_DIR/$IMAGES_DES_DIR/$DATABASE_DIR
+
+
+    IMAGE_DEV_SRC_DIR=$AOSPPATH/out/target/product/$PROJECTNAME/dev
+    DEV_DIR=dev
+    VMLINUX_DIR=$AOSPPATH/out/target/product/$PROJECTNAME/obj/KERNEL_OBJ/vmlinux
+    
+    imgfilenames=("md1arm7-verified.img" "md1dsp-verified.img" "md1rom-verified.img" "spmfw-verified.bin" "tinysys-sspm-verified.bin"   "md3rom-verified.img" "boot-verified.img" "cache.img" "lk-verified.bin" "logo-verified.bin" "MT6763_Android_scatter.txt" "preloader_$PROJECTNAME.bin" "recovery-verified.img" "secro.img" "system.img" "trustzone-verified.bin" "userdata.img")
+
+	# cpoy tools
+	pkgtools=("CHECKSUM.bat" "CheckSum_Gen.exe" "FlashToolLib.dll" "FlashToolLib.v1.dll" "FlashToolLibEx.dll" "CheckSum_Gen.ilk" "CheckSum_Gen.pdb")
+else
+    echo "Sorry, This shell no compatibility this platform. Please modify shell."
+    exit 1
+fi
+
+for i in ${imgfilenames[@]}
+do
+    if [ -e "$IMAGE_SRC_DIR/$i" ]; then
+        echo "  $IMAGE_SRC_DIR/$i"
+        cp -f $IMAGE_SRC_DIR/$i $IMAGES_DES_DIR/$IMAGES_DES_DIR
+    else
+        echo "  [ERROR]: $IMAGE_SRC_DIR/$i is not find! Copy failed!"
+        #exit 1
+    fi
+done
+
+
+VMLINUX_DIR=$AOSPPATH/out/target/product/$PROJECTNAME/obj/KERNEL_OBJ/vmlinux
+cp -f $VMLINUX_DIR $IMAGES_DES_DIR
+echo "  $VMLINUX_DIR"
+SOFTWARE_VERSION=$(grep "^ro.build.display.id" out/target/product/$PROJECTNAME/system/build.prop | cut -d = -f 2 | sed -e 's/ //g')
+if [ -e $AOSPPATH/out/target/product/$PROJECTNAME/target_files-package.zip ];then 
+       echo "cp target_files-package.zip-->target_files-package_${SOFTWARE_VERSION}_${COMPILE_TIME}.zip"
+        cp --preserve -f $AOSPPATH/out/target/product/$PROJECTNAME/target_files-package.zip  $IMAGES_DES_DIR/target_files-package_${SOFTWARE_VERSION}.zip
+    fi
+
+echo "  Package Images Successfully! Done."
+cp  -rf  $IMAGES_DES_DIR/$IMAGES_DES_DIR $IMAGES_DES_DIR/$IMAGES_DES_DIR.bak
+#checksum
+cp --preserve -f ./prize_project/checksum_linux/* $IMAGES_DES_DIR/$IMAGES_DES_DIR
+cd $IMAGES_DES_DIR/$IMAGES_DES_DIR
+echo "CheckSum.."
+./CheckSum_Gen  > CheckSum.log
+rm -fr CheckSum_Gen libflashtool.so libflashtool.v1.so libflashtoolEx.so CheckSum.log Log
+
+#Zip
+echo 'Zip..'
+#echo "DES_DIR.zip=$DES_DIR.zip"
+#echo "DES_DIR=$DES_DIR"
+
+
+#echo "pwd=$PWD"
+cd ..
+#echo "pwd=$PWD"
+zip -r $IMAGES_DES_DIR.zip $IMAGES_DES_DIR >> zip.log
+#rm Checksum.ini
+rm zip.log	
+
+cd ..
+
+trim()
+{
+    trimmed=$1
+        trimmed=${trimmed%% }
+    trimmed=${trimmed## }
+
+
+    echo $trimmed
+}
+

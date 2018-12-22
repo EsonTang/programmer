@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="config_hide_packages">
+        <item>com.qihoo.appstore|360appstore</item>
+        <item>com.qihoo360.mobilesafe|360MobileSafe</item>
+        <item>com.qihoo.browser|360mse</item>
+        <item>com.autonavi.minimap|amap</item>
+        <item>com.chaozh.iReaderFree|iReader</item>
+        <item>com.tencent.android.qqdownloader|tencentmobileassistant</item>
+        <item>com.UCMobile|UC</item>
+        <item>com.iyd.reader.ReadingJoy|Readingjoy</item>
+        <item>com.wandoujia.phoenix2|wandoujia</item>
+        <item>com.baidu.appsearch|baiduappsearch</item>
+        <item>com.dianping.v1|Dianping</item>
+    </string-array>
+    <string-array name="config_built_in_packages">
+        <item>com.qihoo.appstore</item>
+        <item>com.qihoo360.mobilesafe</item>
+        <item>com.qihoo.browser</item>
+        <item>com.autonavi.minimap</item>
+        <item>com.chaozh.iReaderFree</item>
+        <item>com.tencent.android.qqdownloader</item>
+        <item>com.UCMobile</item>
+        <item>com.iyd.reader.ReadingJoy</item>
+        <item>com.wandoujia.phoenix2</item>
+        <item>com.baidu.appsearch</item>
+        <item>com.android.browser</item>
+        <item>com.tencent.qqpimsecure</item>
+        <item>com.tencent.qqlive</item>
+        <item>com.qiyi.video</item>
+        <item>com.ss.android.article.news</item>
+        <item>com.sohu.inputmethod.sogou</item>
+        <item>com.baidu.BaiduMap</item>
+        <item>com.assistant.icontrol</item>
+        <item>com.andreader.prein</item>
+        <item>com.tencent.news</item>
+        <item>com.jiami.quickmj.kubi3</item>
+        <item>com.zengame.rylxx.p365you</item>
+        <item>com.zengame.ttddzzrb.p365you</item>
+        <item>com.iflytek.inputmethod</item>
+        <item>com.tencent.reading</item>
+    </string-array>
+    <string-array name="config_built_in_packages_realvercode">
+        <item>com.dianping.v1</item>
+        <item>com.baidu.searchbox</item>
+        <item>com.sankuai.meituan</item>
+    </string-array>
+</resources>

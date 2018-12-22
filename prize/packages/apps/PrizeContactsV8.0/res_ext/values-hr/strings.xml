@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">SIM kontakti ne mogu se spojiti.</string>
+    <string name="menu_done">"Gotovo"</string>
+    <string name="menu_deleteContact">"Izbriši"</string>
+    <string name="menu_select_all">"Odaberisve"</string>
+    <string name="menu_select_none">"Poništiodabirsvega"</string>
+    <string name="menu_new_contact_action_bar">"Novo"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> odabrano</string>
+    <string name="multichoice_no_select_alert">Nema odabrane stavke.</string>
+    <string name="aas_phone_type_none">"Ništa"</string>
+    <string name="aas_custom_title">Prilagođene oznake</string>
+    <string name="aas_new_dialog_title">Dodaj novu oznaku</string>
+    <string name="ass_rename_dialog_title">Uredi oznaku</string>
+    <string name="aas_delele_dialog_message">Brisanje oznaka utječe na dodatne brojeve koji su povezani s oznakom/oznakama. Jeste li sigurni?</string>
+    <string name="aas_name_invalid">Naziv oznake nije valjan. Unesite drugi naziv.</string>
+    <string name="aas_name_exist">Oznaka već postoji.</string>
+    <string name="aas_usim_full">Nema mjesta za nove oznake.</string>
+    <string name="ass_edit_assert_message">Promjena oznake će utjecati na dodatne brojeve koji su povezani s oznakom. Jeste li sigurni?</string>
+    <string name="aas_new_fail">Nije uspjelo stvaranje nove oznake.</string>
+    <string name="aas_edit_fail">Nije uspjelo preimenovanje <xliff:g id="aas">%s</xliff:g> .</string>
+    <string name="aas_delete_fail">Nije uspjelo brisanje <xliff:g id="aas">%s</xliff:g>.</string>
+    <string name="aas_phone_primary">Primarni broj</string>
+    <string name="aas_phone_additional">Dodatni broj</string>
+</resources>

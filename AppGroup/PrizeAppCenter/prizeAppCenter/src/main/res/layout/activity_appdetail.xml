@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    android:transitionName="relayout">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_id"
+        android:focusableInTouchMode="true" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/reload_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/bottom_id"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_gray_color" />
+
+        <com.prize.appcenter.ui.widget.progressbutton.DetailDownloadProgressButton
+            android:id="@+id/detailinfo_download_id"
+            android:layout_width="280dp"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:progressbtn_show_progress="true"
+            app:progressbtn_radius="20dp"
+            app:progressbtn_text_size="14dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

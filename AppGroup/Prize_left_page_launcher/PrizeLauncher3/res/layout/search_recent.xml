@@ -1,0 +1,30 @@
+<com.android.launcher3.search.data.recent.RecentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<LinearLayout
+        android:id="@+id/head_view"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" > 
+        
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/group_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/recent"
+        android:textColor="#FFFFFF" />
+    <com.android.launcher3.search.data.MyGridView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:numColumns="3" >
+    </com.android.launcher3.search.data.MyGridView>
+    </LinearLayout>
+
+</com.android.launcher3.search.data.recent.RecentRelativeLayout>

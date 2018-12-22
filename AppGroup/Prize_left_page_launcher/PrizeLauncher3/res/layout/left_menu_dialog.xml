@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.prize.left.page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/head_pad_left"
+        android:background="@color/head_bg_color"
+        >
+        
+        <com.prize.cloud.widgets.CircleImageView
+            android:id="@+id/head_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ico_person_head"
+            android:minHeight="@dimen/dp_48"
+            android:minWidth="@dimen/dp_48"
+            android:layout_marginTop="31dp"
+            />
+        
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/txt_person_name"
+	        android:visibility="visible"
+	        android:textColor="@color/white_87"
+	        android:layout_marginTop="@dimen/dp_16"
+	        android:layout_marginBottom="6dp"
+	        android:layout_above="@+id/txt_person_account"
+	        android:textSize="14sp"
+	        />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/txt_person_account"
+	        android:visibility="visible"
+	        android:textColor="@color/white_54"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="20dp"
+	        android:textSize="12sp"
+	        />
+	    
+	    <!-- <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/str_left_login"
+	        android:id="@+id/btn_login"
+	        android:visibility="visible"
+	        android:textColor="@drawable/left_navi_item_name_selector"
+	        android:layout_marginTop="@dimen/dp_17"
+	        android:layout_below="@id/head_img"
+	        android:layout_marginStart="@dimen/dp_7"
+	        /> -->
+    </RelativeLayout>
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="vertical"
+	    android:background="@android:color/white"
+	    >
+	    <View android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/divider_line_color"
+	        />
+	
+		<TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="@dimen/dp_48"
+	        android:drawableStart="@drawable/ico_manage_card"
+	        android:drawablePadding="@dimen/line_drawable_pad"
+	        android:layout_marginTop="@dimen/dp_8"
+	        android:paddingLeft="@dimen/line_pad_left"
+	        android:id="@+id/txt_manager_card"
+	        android:text="@string/str_manager_card"
+	        android:gravity="center_vertical"
+	        android:visibility="gone"
+	        style="@style/left_dialog_txt_style"
+	        />
+		
+		<TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="@dimen/dp_48"
+	        android:drawableStart="@drawable/ico_loc_manage"
+	        android:id="@+id/txt_addr_set"
+	        android:paddingTop="@dimen/line_pad_top"
+	        android:paddingBottom="@dimen/line_pad_top"
+	        android:drawablePadding="@dimen/line_drawable_pad"
+	        android:paddingStart="@dimen/line_pad_left"
+	        android:text="@string/str_normal_set_add"
+	        android:gravity="center_vertical"
+	        style="@style/left_dialog_txt_style"
+	        />
+		
+		<TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawableStart="@drawable/ico_no_img"
+	        android:id="@+id/txt_no_img"
+	        android:paddingTop="@dimen/line_pad_top"
+	        android:paddingBottom="@dimen/line_pad_top"
+	        android:drawablePadding="@dimen/line_drawable_pad"
+	        android:paddingStart="@dimen/line_pad_left"
+	        android:text="@string/str_no_img"
+	        android:gravity="center_vertical"
+	        android:visibility="gone"
+	        style="@style/left_dialog_txt_style"
+	        />
+		<View android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@color/divider_line_color"
+	        />
+		
+		<TableRow android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="@dimen/dp_48"
+	        android:id="@+id/lay_version_check"
+	        android:layout_marginTop="@dimen/dp_8"
+	        android:background="@drawable/left_menu_dialog_item_selector"
+	        >
+			<TextView android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:drawableStart="@drawable/ico_version_check"
+		        android:paddingTop="@dimen/line_pad_top"
+		        android:paddingBottom="@dimen/line_pad_top"
+		        android:drawablePadding="@dimen/line_drawable_pad"
+		        android:paddingStart="@dimen/line_pad_left"
+		        android:id="@+id/txt_version_check"
+		        android:text="@string/str_version_check"
+		        android:gravity="center_vertical"
+		        android:layout_weight="1"
+		        style="@style/left_dialog_txt_style"
+		        android:background="@null"
+		        />
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/txt_new"
+			    android:background="@drawable/bg_new_version"
+			    android:visibility="visible"
+			    android:layout_gravity="center_vertical"
+			    android:gravity="center"
+			    android:layout_marginEnd="16dp"
+			    />
+		</TableRow>
+		<TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="@dimen/dp_48"
+	        android:drawableStart="@drawable/ico_feedback"
+	        android:paddingTop="@dimen/line_pad_top"
+	        android:paddingBottom="@dimen/line_pad_top"
+	        android:drawablePadding="@dimen/line_drawable_pad"
+	        android:paddingStart="@dimen/line_pad_left"
+	        android:id="@+id/txt_feedback"
+	        android:text="@string/str_feedback"
+	        android:gravity="center_vertical"
+	        style="@style/left_dialog_txt_style"
+	        />
+	</LinearLayout>
+</LinearLayout>

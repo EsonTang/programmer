@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><!--<merge xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="29dp">
+
+    <RelativeLayout
+        android:id="@+id/game_download_Rlyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <!--<com.prize.appcenter.ui.widget.ProgressButton-->
+        <!--android:id="@+id/game_download_btn"-->
+        <!--style="@style/game_item_progressButton"-->
+        <!--android:layout_centerVertical="true" />-->
+        <com.prize.appcenter.ui.widget.progressbutton.AnimDownloadProgressButton
+            android:id="@+id/game_download_btn"
+            android:layout_width="50dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:progressbtn_show_progress="true"
+            app:progressbtn_radius="10.5dp"
+            app:progressbtn_text_size="11dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@id/game_download_Rlyt">
+
+        <com.prize.appcenter.ui.widget.CustomImageView
+            android:id="@+id/game_iv"
+            style="@style/game_item_image_40dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/alert_title"
+            android:src="@drawable/default_icon"
+            android:transitionName="robot"
+            app:iv_radius="5dp" />
+
+        <LinearLayout
+            android:id="@+id/game_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/game_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/game_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/common_app_title"
+                android:textSize="@dimen/text_size_micro"
+                tools:text="微信" />
+
+            <TextView
+                android:id="@+id/game_size_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:minWidth="@dimen/list_size_minwidth"
+                android:singleLine="true"
+                android:textColor="#5d5d5d"
+                android:textSize="@dimen/text_size_20"
+                tools:text="50M" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

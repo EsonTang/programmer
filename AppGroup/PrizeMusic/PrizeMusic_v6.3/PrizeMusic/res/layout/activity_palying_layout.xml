@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normal_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    android:orientation="vertical" >
+   <!--  android:background="@drawable/app_bg" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.9"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/audio_player_album_art_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/background_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/three_six_zero_h"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/background_IV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/three_six_zero_h"
+                android:scaleType="fitXY" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/three_six_zero_h" />
+
+          	<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/audioplay_top"
+                android:scaleType="fitXY" />
+			
+            <RelativeLayout
+                android:id="@+id/relat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="17dp"
+                android:paddingTop="34dp" >
+
+                <ImageView
+                    android:id="@+id/action_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/btn_back_selector_white"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/action_add_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:layout_toLeftOf="@+id/action_setSound"
+                    android:src="@drawable/icon_favourite_nomal_white" />
+
+                <ImageView
+                    android:id="@+id/action_setSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/icon_sound_effect_selector" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/audio_control_margintop3"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/dot_one_Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_dot_selector" />
+
+            <ImageView
+                android:id="@+id/dot_two_Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_dot_selector" />
+
+            <ImageView
+                android:id="@+id/dot_three_Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_dot_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <include layout="@layout/audio_controls" />
+    </LinearLayout>
+
+</LinearLayout>

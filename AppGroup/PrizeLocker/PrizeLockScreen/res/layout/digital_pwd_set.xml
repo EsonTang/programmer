@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.lockscreen.widget.PwdSetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/pwd_set_lay"
+    >
+    <include layout="@layout/merge_header"/>
+    
+    <TextView android:layout_height="30dp"
+	    android:layout_width="wrap_content"
+	    android:id="@+id/txt_hint"
+	    android:layout_centerHorizontal="true"
+	    style="@style/style_pwd_hint"
+	    android:text="@string/enter_pwd"
+	    android:gravity="center"
+	    android:layout_below="@+id/header_lay"
+	    android:layout_marginTop="100dp"
+	    /> 
+				    
+    <EditText android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/edt_pwd"
+        android:inputType="numberPassword"
+        android:singleLine="true"
+        android:maxLength="4"
+        android:gravity="center"
+        android:imeOptions="flagForceAscii"
+        android:layout_below="@+id/txt_hint"
+        android:background="@null"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+    <View
+           android:id="@+id/divider"
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/gray_b"
+           android:layout_below="@+id/edt_pwd"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           />
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_area"
+        >
+
+        <TextView
+            android:id="@+id/try_txt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bottom_left_selector"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/cancel"
+            style="@style/bottom_btn_style"
+            />
+        
+        <TextView
+            android:id="@+id/go_on_txt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bottom_right_selector"
+            android:gravity="center"
+            android:padding="1dp"
+            android:enabled="false"
+            android:text="@string/go_on"
+            style="@style/bottom_btn_style" />
+    </LinearLayout>
+</com.prize.lockscreen.widget.PwdSetLayout>

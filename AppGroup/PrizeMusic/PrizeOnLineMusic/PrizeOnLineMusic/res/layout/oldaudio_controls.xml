@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/music_name_Tv"
+            style="@style/AudioPlayerText"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@android:id/progress"
+            android:layout_toLeftOf="@+id/icon_mode_Llyt"
+            android:ellipsize="marquee"
+            android:paddingLeft="@dimen/audio_player_info_container_padding"
+            android:paddingRight="@dimen/audio_player_info_container_padding"
+            android:singleLine="true"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/music_singer_Tv"
+            style="@style/AudioPlayerText"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/music_name_Tv"
+            android:layout_marginTop="9dp"
+            android:paddingLeft="@dimen/audio_player_info_container_padding"
+            android:paddingRight="@dimen/audio_player_info_container_padding"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:id="@+id/icon_mode_Llyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/audio_player_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/cd_repeat"
+                android:paddingTop="5dp"
+                android:src="@drawable/oldapollo_holo_light_repeat_all" />
+
+            <ImageButton
+                android:id="@+id/audio_player_shuffle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/holo_selector"
+                android:contentDescription="@string/cd_shuffle"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/audio_control_margintop" >
+
+        <TextView
+            android:id="@+id/audio_player_current_time"
+            style="@style/AudioPlayerText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/audio_player_info_container_padding"
+            android:text="@string/audio_player_current_time_text_default"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_micro" />
+
+        <TextView
+            android:id="@+id/audio_player_total_time"
+            style="@style/AudioPlayerText"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/audio_player_info_container_padding"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_micro" />
+
+        <SeekBar
+            android:id="@android:id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/audio_player_total_time"
+            android:layout_toRightOf="@+id/audio_player_current_time"
+            android:progressDrawable="@drawable/oldaudio_player_seekbar"
+            android:thumb="@drawable/oldthumb_up" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/audio_control_margintop2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.prize.music.ui.widgets.RepeatingImageButton
+            android:id="@+id/audio_player_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="35dp"
+            android:background="@null"
+            android:src="@drawable/oldplay_previous_selector" />
+
+        <ImageButton
+            android:id="@+id/audio_player_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="@string/cd_play"
+            android:src="@drawable/oldplay_play_selector" />
+
+        <com.prize.music.ui.widgets.RepeatingImageButton
+            android:id="@+id/audio_player_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:background="@null"
+            android:src="@drawable/oldplay_next_selector" />
+    </LinearLayout>
+
+</LinearLayout>

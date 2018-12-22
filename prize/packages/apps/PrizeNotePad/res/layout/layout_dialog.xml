@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/dialog_shape"
+		android:orientation="vertical" >
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/density_48dp"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:id="@+id/title_icon"
+				android:layout_width="@dimen/density_25dp"
+				android:layout_height="@dimen/density_25dp"
+				android:layout_centerVertical="true"
+				android:contentDescription="@null"
+				android:visibility="gone" />
+
+			<TextView
+				android:id="@+id/title_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_centerInParent="true"
+				android:layout_toEndOf="@+id/title_icon"
+				android:textColor="@color/dialog_front_color"
+				android:textSize="16sp" />
+		</RelativeLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:background="@color/divide_line_color" />
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:overScrollMode="never">
+		
+			<LinearLayout
+				android:id="@+id/content_ll"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/density_192dp"
+				android:orientation="vertical">
+
+				<RelativeLayout
+					android:id="@+id/item1_rl"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/density_48dp"
+					android:paddingStart="@dimen/density_15dp"
+					android:paddingEnd="@dimen/density_15dp">
+
+					<TextView
+						android:id="@+id/front_1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:clickable="false"
+						android:focusable="false"
+						android:textColor="@color/dialog_front_color"
+						android:textSize="@dimen/normal_text_size" />
+
+					<CheckBox
+						android:id="@+id/front_1_chexk_box"
+						android:layout_width="@dimen/density_32dp"
+						android:layout_height="@dimen/density_32dp"
+						android:layout_alignParentEnd="true"
+						android:layout_centerVertical="true"
+						android:background="@drawable/dialog_check_box_selector"
+						android:button="@null"
+						android:checked="false"
+						android:clickable="false"
+						android:focusable="false" />				
+				</RelativeLayout>
+				
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="1px"
+					android:background="@color/divide_line_color"
+					android:clickable="false"
+					android:focusable="false" />
+
+				<RelativeLayout
+					android:id="@+id/item2_rl"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/density_48dp"
+					android:paddingStart="@dimen/density_15dp"
+					android:paddingEnd="@dimen/density_15dp">
+
+					<TextView
+						android:id="@+id/front_2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:clickable="false"
+						android:focusable="false"
+						android:textColor="@color/dialog_front_color"
+						android:textSize="@dimen/normal_text_size" />
+
+					<CheckBox
+						android:id="@+id/front_2_chexk_box"
+						android:layout_width="@dimen/density_32dp"
+						android:layout_height="@dimen/density_32dp"
+						android:layout_alignParentEnd="true"
+						android:layout_centerVertical="true"
+						android:background="@drawable/dialog_check_box_selector"
+						android:button="@null"
+						android:checked="false"
+						android:clickable="false"
+						android:focusable="false" />					
+				</RelativeLayout>
+				
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="1px"
+					android:background="@color/divide_line_color"
+					android:clickable="false"
+					android:focusable="false" />
+
+				<RelativeLayout
+					android:id="@+id/item3_rl"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/density_48dp"
+					android:paddingStart="@dimen/density_15dp"
+					android:paddingEnd="@dimen/density_15dp">
+
+					<TextView
+						android:id="@+id/front_3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:clickable="false"
+						android:focusable="false"
+						android:textColor="@color/dialog_front_color"
+						android:textSize="@dimen/normal_text_size" />
+
+					<CheckBox
+						android:id="@+id/front_3_chexk_box"
+						android:layout_width="@dimen/density_32dp"
+						android:layout_height="@dimen/density_32dp"
+						android:layout_alignParentEnd="true"
+						android:layout_centerVertical="true"
+						android:background="@drawable/dialog_check_box_selector"
+						android:button="@null"
+						android:checked="false"
+						android:clickable="false"
+						android:focusable="false" />
+					
+				</RelativeLayout>
+				
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="1px"
+					android:background="@color/divide_line_color"
+					android:clickable="false"
+					android:focusable="false" />
+
+				<RelativeLayout
+					android:id="@+id/item4_rl"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/density_48dp"
+					android:paddingStart="@dimen/density_15dp"
+					android:paddingEnd="@dimen/density_15dp">
+
+					<TextView
+						android:id="@+id/front_4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:clickable="false"
+						android:focusable="false"
+						android:textColor="@color/dialog_front_color"
+						android:textSize="@dimen/normal_text_size" />
+
+					<CheckBox
+						android:id="@+id/front_4_chexk_box"
+						android:layout_width="@dimen/density_32dp"
+						android:layout_height="@dimen/density_32dp"
+						android:layout_alignParentEnd="true"
+						android:layout_centerVertical="true"
+						android:background="@drawable/dialog_check_box_selector"
+						android:button="@null"
+						android:checked="false"
+						android:clickable="false"
+						android:focusable="false" />
+				</RelativeLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+				
+    <LinearLayout
+        android:id="@+id/button_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_48dp"
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="10dp"
+		android:background="@drawable/dialog_shape"		
+		android:orientation="horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/positive_button"
+            android:layout_width="0dp"
+			android:layout_weight="1"
+            android:layout_height="@dimen/density_48dp"
+            android:gravity="center"
+            android:text="@string/dialog_confirm"
+            android:textColor="@drawable/edit_text_color"
+            android:textSize="@dimen/normal_text_size"
+			android:visibility="gone"/>
+			
+        <TextView
+            android:id="@+id/negative_button"
+            android:layout_width="0dp"
+			android:layout_weight="1"
+            android:layout_height="@dimen/density_48dp"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:textColor="@drawable/edit_text_color"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- PRIZE-photoeditor UI-wanzhijuan-2015-11-20-start-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:minWidth="322dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photoeditor_dialog_title_height"
+         >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="17dp" 
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/export_flattened"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/photoeditor_dialog_title_margin_top"
+                android:text="@string/select_output_settings"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/photoeditor_diliver" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:text="@string/size" 
+            />
+
+        <EditText
+            android:id="@+id/editableWidth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:inputType="number" 
+            android:layout_weight="2"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/x" 
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/editableHeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:inputType="number" 
+            android:layout_weight="2"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/estimadedSize"
+            android:layout_gravity="end|center_vertical"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+		</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quality" 
+                android:layout_gravity="start|center_vertical"
+                />
+
+            <SeekBar
+                android:id="@+id/qualitySeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:max="100"
+                android:progress="100" 
+                style="@style/FilterShowSeek"/>
+
+            <TextView
+                android:id="@+id/qualityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                />
+        </LinearLayout>
+    
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/photoeditor_diliver" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/export_dialog_height_size"
+        android:orientation="horizontal" 
+        android:layout_gravity="center_horizontal"
+       
+        >
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/export_dialog_height_size"
+            android:text="@string/cancel" 
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/export_dialog_left"
+            android:textSize="@dimen/export_dialog_font_size"
+            android:textColor="@color/bottom_btn_normal"/>
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/export_dialog_height_size"
+            android:text="@string/done"     
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/export_dialog_right"
+            android:textSize="@dimen/export_dialog_font_size"
+            android:textColor="@color/bottom_btn_normal"
+            />
+    </LinearLayout>
+<!-- PRIZE-photoeditor UI-wanzhijuan-2015-11-20-end-->
+</LinearLayout>

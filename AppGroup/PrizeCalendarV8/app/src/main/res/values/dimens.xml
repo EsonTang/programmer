@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <dimen name="day_label_text_size">13sp</dimen>
+    <dimen name="all_day_bottom_margin">8dip</dimen>
+    <dimen name="one_day_header_height">0dip</dimen>
+    <dimen name="day_header_bottom_margin">4dip</dimen>
+    <dimen name="date_header_text_size">12sp</dimen>
+    <dimen name="hours_text_size">12sp</dimen>
+    <dimen name="allday_text_size">12sp</dimen>
+    <dimen name="ampm_text_size">10sp</dimen>
+    <dimen name="day_view_event_text_size">12sp</dimen>
+    <dimen name="week_view_event_text_size">12sp</dimen>
+    <dimen name="event_text_vertical_margin">2dp</dimen>
+    <dimen name="event_text_horizontal_margin">4dp</dimen>
+    <dimen name="event_min_height">24dip</dimen>
+    <!-- minimum size of hours column in day/week view -->
+    <dimen name="min_hours_width">24dip</dimen>
+    <!-- margins size of hours column in day/week view -->
+    <!--<dimen name="hours_left_margin">20dip</dimen>
+    <dimen name="hours_right_margin">4dip</dimen>-->
+    <dimen name="hours_left_margin">0dip</dimen>
+    <dimen name="hours_right_margin">0dip</dimen>
+    <!-- size of day header in day and week views  -->
+    <dimen name="day_header_height">16dip</dimen>
+    <dimen name="widget_day_num_size">36sp</dimen>
+    <dimen name="widget_day_num_top_padding">-4dip</dimen>
+    <dimen name="action_bar_date_text_size">22sp</dimen>
+    <dimen name="new_event_hint_text_size">12sp</dimen>
+    <dimen name="edit_event_view_width">800dip</dimen>
+    <dimen name="edit_event_view_padding_left">80dip</dimen>
+    <dimen name="edit_event_view_padding_right">80dip</dimen>
+    <dimen name="edit_reminder_min_size">36dip</dimen>
+    <dimen name="event_info_text_size">14dip</dimen>
+    <dimen name="event_info_desc_margin_left">0dip</dimen>
+    <dimen name="event_info_desc_margin_right">0dip</dimen>
+    <dimen name="event_info_padding">0dip</dimen>
+    <dimen name="calendar_controls_width">280dip</dimen>
+    <dimen name="min_portrait_calendar_controls_width">300dip</dimen>
+    <dimen name="max_portrait_calendar_controls_width">350dip</dimen>
+    <dimen name="calendar_controls_height">300dip</dimen>
+    <dimen name="agenda_item_right_margin">4dip</dimen>
+    <dimen name="today_icon_text_size">7sp</dimen>
+    <dimen name="color_view_touch_area_increase">16dp</dimen>
+
+    <dimen name="recurrence_picker_height">340dp</dimen>
+    <dimen name="recurrence_picker_width">300dp</dimen>
+    <dimen name="prize_edit_reminder_min_size">55dip</dimen>
+    
+    <!-- PRIZE-用720P为默认值界面调整 wanzhijuan 2015-7-3 start -->
+    <dimen name="day_select_wheel_height">215dp</dimen>
+    <dimen name="day_select_name_height">28dp</dimen>
+    <dimen name="day_select_time_height">24dp</dimen>
+    <dimen name="day_select_top_margin">20dp</dimen>
+    <dimen name="day_select_wheel_margin">10dp</dimen>
+    <dimen name="day_select_bottom_top_wheel">13dp</dimen>
+    <dimen name="day_select_bottom_margin">15dp</dimen>
+    <dimen name="day_select_bottom_wheel">30dp</dimen>
+    <dimen name="day_select_button_width">142dp</dimen>
+    <dimen name="day_select_button_height">37.5dp</dimen>
+    <dimen name="day_select_wheel_width_year">120dp</dimen>
+    <dimen name="day_select_wheel_width_day">98dp</dimen>
+    <dimen name="day_select_height">385dp</dimen>
+    <dimen name="day_select_flag_width">4dp</dimen>
+    <dimen name="day_select_flag_bottom_padding">1dp</dimen>
+    <dimen name="list_item_height">48dp</dimen>
+    <dimen name="day_select_top_height">80dp</dimen>
+    <dimen name="day_select_bottom_height">80dp</dimen>
+    
+    <dimen name="agenda_day_item_height">30dp</dimen>
+    <dimen name="agenda_item_height">71dp</dimen>
+    <dimen name="agenda_item_load_height">25dp</dimen>
+    <dimen name="today_padding_top">4dp</dimen>
+    <dimen name="month_view_height">300dp</dimen>
+    <dimen name="edit_event_right_margin">15dp</dimen>
+    <dimen name="edit_event_left_margin">15dp</dimen>
+    <dimen name="edit_event_time_width">20dp</dimen>
+    <dimen name="edit_event_time_height">20dp</dimen>
+    <dimen name="edit_event_arrow_right_margin">10dp</dimen>
+    <dimen name="edit_event_time_padding">6dp</dimen>
+    <dimen name="edit_event_all_time_padding">6dp</dimen>
+    <dimen name="ch_y">12dp</dimen>
+    <dimen name="en_y">5dp</dimen>
+    
+    <!-- PRIZE-用720P为默认值界面调整 wanzhijuan 2015-7-3 end -->
+    
+    <!-- prize-add_agenda_dimens-by-wangzhong-2015-04-22-start -->
+    <dimen name="prize_agenda_header_h">22dip</dimen>
+    <dimen name="prize_agenda_item_day_h">25dip</dimen>
+    <dimen name="prize_agenda_item_meeting_h">51dip</dimen>
+    
+    <dimen name="prize_text_agenda_header">11sp</dimen>
+    <dimen name="prize_text_agenda_item_primary">16sp</dimen>
+    <dimen name="prize_text_agenda_item_secondary">11sp</dimen>
+    <!-- prize-add_agenda_dimens-by-wangzhong-2015-04-22-end -->
+    
+    <!-- prize-添加720P资源-lixing-2015-7-4-start -->
+    <dimen name="prize_eventinfo_item_marginleft">16dp</dimen>
+    <dimen name="prize_eventinfo_headline_item_heigh">60dp</dimen>
+    <dimen name="prize_eventinfo_remind_spring_heigh">50dp</dimen>
+    <dimen name="prize_eventinfo_remindcontainer_margintop">10dp</dimen>
+    <dimen name="prize_evnetinfo_deletebt_width">320dp</dimen>
+    <dimen name="prize_eventinfo_deletebt_height">42dp</dimen>   
+    
+    <dimen name="prize_left_btn_width">160dp</dimen>
+    <dimen name="prize_left_btn_height">42dp</dimen>
+    <dimen name="prize_left_btn_marginbottom">12.5dp</dimen>
+    
+    
+    <dimen name="prize_title">18sp</dimen>
+    <dimen name="prize_normal">15sp</dimen>
+    <dimen name="prize_content">12sp</dimen>
+    <!-- prize-添加720P资源-lixing-2015-7-4-end -->
+    
+    <dimen name="prize_underline">1dp</dimen>
+    <dimen name="list_item">55dp</dimen>
+    
+    <dimen name="dashboard_category_height_prize">40dp</dimen>
+    <dimen name="dashboard_category_title_textsize">12sp</dimen>
+    <dimen name="prize_bottom_nav_height">51dp</dimen>
+    <dimen name="prize_margin_default">15dp</dimen>
+    <dimen name="main_title_font_size">15sp</dimen>
+    <dimen name="sub_title_font_size">13sp</dimen>
+    <dimen name="actionbar_height_prize">40dp</dimen>
+    <dimen name="prize_single_line_height">50dp</dimen>
+    <dimen name="prize_double_line_height">60dp</dimen>
+    <dimen name="month_title_icon_text_size">24sp</dimen>
+    <dimen name="month_title_padding_top">2dp</dimen>
+    <dimen name="prize_nav_title">10sp</dimen>
+
+    <dimen name="prize_event_info_title">15sp</dimen>
+    <dimen name="prize_event_info_nomal">12sp</dimen>
+    <dimen name="prize_event_info_margin_left">6dp</dimen>
+    <dimen name="prize_event_info_margin_top">14dp</dimen>
+    <dimen name="prize_event_info_normal_height">43dp</dimen>
+    <dimen name="prize_event_info_title_height">55dp</dimen>
+    <dimen name="prize_event_info_content_padding">16dp</dimen>
+    <dimen name="prize_event_info_statusbar_height">60dp</dimen>
+    <!--<dimen name="prize_week_height">60dp</dimen>-->
+    <dimen name="prize_week_height">50dp</dimen>
+    <dimen name="prize_pane_margin">6dp</dimen>
+    <dimen name="prize_pane_marginTop">12dp</dimen>
+    <dimen name="prize_title_main_ts">40sp</dimen>
+    <dimen name="prize_title_submain_ts">14sp</dimen>
+    <dimen name="prize_blanck_agenda_tx">18.3sp</dimen>
+
+    <dimen name="prize_navigation_margin">589dp</dimen>
+    <dimen name="prize_between_pane_margin">5dp</dimen>
+
+    <!--<dimen name="prize_listview_marginbottom">400dp</dimen>-->
+    <dimen name="prize_listview_layout_marginbottom">320dp</dimen>
+    <dimen name="prize_listview_marginbottom">305dp</dimen>
+    <dimen name="prize_listview_layout_marginbottom_navi">362dp</dimen>
+    <dimen name="prize_listview_marginbottom_navi">347dp</dimen>
+    <dimen name="prize_listview_month_height">180dp</dimen>
+    <dimen name="prize_listview_month_height_new">5000dp</dimen>
+
+    <!-- preferences -->
+    <dimen name="prize_preferences_bg_stroke_height">0.5dp</dimen>
+    <dimen name="prize_preferences_bg_corners">6dp</dimen>
+    <dimen name="prize_preferences_bg_margin1">7dp</dimen>
+    <dimen name="prize_preferences_bg_margin2">15dp</dimen>
+    <dimen name="prize_preferences_bg_margin3">-1dp</dimen>
+    <dimen name="prize_preferences_bg_margin4">20dp</dimen>
+    <dimen name="prize_preferences_bg_margin5">22dp</dimen>
+    <dimen name="prize_preferences_bg_margin6">12dp</dimen>
+    <dimen name="prize_preferences_bg_height1">30dp</dimen>
+    <dimen name="prize_preferences_bg_height2">48dp</dimen>
+    <dimen name="prize_preferences_bg_height2_double">61dp</dimen>
+    <dimen name="prize_preferences_bg_height2_bottom">73dp</dimen>
+    <dimen name="prize_preferences_text_size1">13sp</dimen>
+    <dimen name="prize_preferences_text_size2">15sp</dimen>
+    <dimen name="prize_divider_height2">0.5dp</dimen>
+
+
+    <dimen name="actionbar_title_font_size">16sp</dimen>
+    <dimen name="prizeactionbar_lines">1.5dp</dimen>
+</resources>

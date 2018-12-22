@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mine_loaded_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.prize.prizethemecenter.ui.widget.GridViewWithHeaderAndFooter
+        android:id="@+id/gridview"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:layout_marginTop="12dp"
+        android:listSelector="@color/transparent"
+        android:paddingLeft="@dimen/margin_padding_14"
+        android:paddingRight="@dimen/margin_padding_6"
+        android:verticalSpacing="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="30dp"/>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/mine_loaded_delete_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_gray_color" />
+
+        <RadioButton
+            android:id="@+id/mine_loaded_delete_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/common_text_color_selector"
+            android:text="@string/common_delete_text"
+            android:textSize="@dimen/text_size_small"
+            android:drawablePadding="-6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:button="@null"
+            android:drawableTop="@drawable/icon_delete_selector"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

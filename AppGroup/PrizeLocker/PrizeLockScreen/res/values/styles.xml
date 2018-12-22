@@ -1,0 +1,127 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- <item name="android:colorPrimary">@color/color_title</item>
+        <item name="android:navigationBarColor">@color/color_title</item> 
+        <item name="android:statusBarColor">@color/color_title</item> -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="pwd_set_theme">
+        <!-- <item name="android:statusBarColor">@android:color/transparent</item> -->                                                                                                         
+        <item name="android:windowIsTranslucent">false</item>                                                                                                                         
+        <!-- <item name="android:statusBarInverse">gray</item> -->
+    </style>
+
+    <style name="open_lockscreen_text_style">
+        <item name="android:textSize">@dimen/open_lockscreen_text_textsize</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingRight">20dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:background">@drawable/setting_listview_item_selector</item>
+    </style>
+    <style name="number_view_style">
+        <item name="android:textSize">@dimen/number_view_text_textsize</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/setting_listview_item_selector</item>
+    </style>
+    
+    <!-- Keyguard PIN pad styles -->
+    <style name="Widget.TextView.NumPadKey" parent="@android:style/Widget.TextView">
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#bfffffff</item>
+        <item name="android:paddingBottom">-16dp</item>
+    </style>
+    <style name="Widget.TextView.NumPadKey.Klondike" parent="Widget.TextView.NumPadKey">
+        <item name="android:textSize">8sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#bfffffff</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+    
+    <style name="style_emc">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#7fffffff</item>
+    </style>
+    
+    <style name="style_str_hint">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#e0ffffff</item>
+    </style>
+    
+    <!-- Keyguard PIN dimsiss button styles -->
+    <style name="DismissPadKey"
+            parent="@*android:style/Widget.Button">
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    
+    
+    <style name="style_prize_setting_main">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    
+    <style name="style_prize_setting_sub">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#e0000000</item>
+    </style>
+    
+    <style name="PasswordTheme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:colorControlNormal">#80ffffff</item>
+        <item name="android:colorControlActivated">#80ffffff</item>
+    </style>
+    
+    <style name="style_pwd_hint">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#7fffffff</item>
+    </style>
+    
+    <style name="bottom_btn_style">
+        <item name="android:textColor">@color/bottom_txt_btn</item>
+        <item name="android:textSize">@dimen/bottom_txt_size</item>
+        <item name="android:layout_height">@dimen/bottom_txt_height</item>
+    </style>
+    
+    <style name="style_item_name">
+        <item name="android:textColor">@drawable/grid_item_txt_selector</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="time_sty">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">80sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="date_sty">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+</resources>

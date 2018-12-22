@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+    android:title="@string/call_settings">
+
+    <!--<PreferenceCategory
+        android:key="prize_call_feature_list_category_key"
+        android:layout="@layout/prize_preference_category"
+        android:title="@string/prize_call_feature_settings_header">-->
+
+    <PreferenceScreen
+        android:key="button_voicemail_category_key"
+        android:layout="@layout/prize_preference_top_item"
+        android:title="@string/voicemail"/>
+
+    <PreferenceScreen
+        android:key="phone_account_settings_preference_screen"
+        android:layout="@layout/prize_preference_mid_item"
+        android:title="@string/phone_accounts">
+
+        <intent
+            android:targetClass="com.android.phone.settings.PhoneAccountSettingsActivity"
+            android:targetPackage="com.android.phone"/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="button_fdn_key"
+        android:layout="@layout/prize_preference_mid_item"
+        android:persistent="false"
+        android:title="@string/fdn"/>
+
+    <PreferenceScreen
+        android:key="@string/wifi_calling_settings_key"
+        android:layout="@layout/prize_preference_mid_item"
+        android:title="@string/wifi_calling">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.settings.Settings$WifiCallingSettingsActivity"
+            android:targetPackage="com.android.settings"/>
+    </PreferenceScreen>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="button_enable_video_calling"
+        android:layout="@layout/prize_preference_mid_item"
+        android:persistent="true"
+        android:title="@string/enable_video_calling_title"/>
+
+    <CheckBoxPreference
+        android:key="button_auto_retry_key"
+        android:layout="@layout/prize_preference_mid_item"
+        android:persistent="false"
+        android:summary="@string/auto_retry_mode_summary"
+        android:title="@string/auto_retry_mode_title"/>
+
+    <!-- M: Add for [IpPrefix] -->
+    <PreferenceScreen
+        android:key="button_ip_prefix_key"
+        android:layout="@layout/prize_preference_mid_item"
+        android:persistent="false"
+        android:summary="@string/ip_prefix_setting_sum"
+        android:title="@string/ip_prefix_setting">
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="button_gsm_more_expand_key"
+        android:layout="@layout/prize_preference_mid_item"
+        android:persistent="false"
+        android:summary="@string/sum_gsm_call_settings"
+        android:title="@string/labelGSMMore"/>
+
+    <PreferenceScreen
+        android:key="button_cdma_more_expand_key"
+        android:layout="@layout/prize_preference_bottom_item"
+        android:persistent="false"
+        android:summary="@string/sum_cdma_call_settings"
+        android:title="@string/labelCDMAMore"/>
+    <!--</PreferenceCategory>-->
+</PreferenceScreen>

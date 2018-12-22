@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/content_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_color_9a9a9a"
+            android:textSize="@dimen/text_size_min" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView"
+        style="@style/game_item_image"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:scaleType="fitXY" />
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="0.5dp"
+        android:layout_height="66dp"
+        android:layout_alignParentRight="true"
+        android:background="#e6e6e6" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">IP 통화  <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g>  </string>
+    <string name="select_account">"계정 선택"</string>
+    <string name="all_accounts">"모든 계정"</string>
+    <string name="call_log_via_sim_name_notice">\"<xliff:g id="sim_name">%s</xliff:g>\"을(를) 통해 로그 호출</string>
+    <string name="imei_invalid">유효하지 않음</string>
+    <string name="conf_call_member_list">구성원 목록</string>
+    <string name="conf_call_participant_answered">응답됨</string>
+    <string name="conf_call_participant_missed">"부재중 전화"</string>
+    <string name="calls_over_wifi">Wi-Fi를통해전화걸기</string>
+    <string name="connect_to_wifi">Wi-Fi에 연결하여 통화</string>
+    <string name="wfc_notification_summary">기본설정에액세스하려면여기를누르십시오</string>
+    <string name="wfc_notification_summary_fail">여기를 눌러 이용 가능한 네트워크 보기</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"SIP 통화"</string>
+    <string name="snackbar_number_unblocked_failed"> <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> 차단 해제 실패</string>
+</resources>

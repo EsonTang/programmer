@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cootek_TextColorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cootek_individual_listitem_height"
+        android:background="@drawable/cootek_listitem_bg"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/cootek_item_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/cootek_individual_listitem_padding0"
+                android:layout_marginRight="@dimen/cootek_individual_listitem_padding1"
+                android:textColor="@color/cootek_individual_listitem_icon"
+                android:textSize="36dp" />
+
+            <TextView
+                android:id="@+id/cootek_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/cootek_item_logo"
+                android:text="@string/cootek_action_about"
+                android:textColor="@color/cootek_individual_listitem_textcolor"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/cootek_item_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/cootek_individual_listitem_padding3"
+                android:layout_toRightOf="@id/cootek_item_text"
+                android:textColor="@color/cootek_individual_listitem_notice"
+                android:textSize="@dimen/cootek_individual_listitem_notice_textsize"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cootek_item_notice_voip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/cootek_individual_listitem_padding3"
+                android:layout_toRightOf="@id/cootek_item_text"
+                android:textColor="@color/cootek_individual_listitem_notice_voip"
+                android:textSize="@dimen/cootek_individual_listitem_notice_textsize"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/cootek_item_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/cootek_individual_listitem_padding0"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/cootek_individual_listitem_more"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/cootek_listitem_divider_individual"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip" />
+
+</LinearLayout>

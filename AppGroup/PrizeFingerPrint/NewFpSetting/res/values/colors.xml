@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#FFFF0000</color>
+    <color name="gray_level_one">#FFEEEEEE</color>
+    <color name="gray_level_two">#FFDDDDDD</color>
+    <color name="gray_level_three">#FFAAAAAA</color>
+    <color name="no_color">#00000000</color>
+    <color name="blue_level">#FF5D7CD6</color>
+    <color name="button_red">#FFFF9CAF</color>
+    <color name="apple_blue">#3E8BDD</color>
+    <color name="white_half">#32FFFFFF</color>
+    <color name="half_black">#aa000000</color>
+    <color name="press_red">#FFFC86A0</color>
+    <color name="half_gray_one">#FF000000</color>
+    <color name="half_gray_two">#33999999</color>
+    <color name="half_apple_blue">#FF00A5C4</color>
+    <color name="black">#FF000000</color>
+    <color name="green"> #0ff</color>
+    <color name="yellow"> #FFFFE0</color>
+    <color name="white"> #FFFFFFFF</color>
+    <color name="violet"> #8A2BE2</color>
+    <color name="blue"> #7EC0EE</color>
+    <color name="selected">#30000050</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="grey">#FFECECEC</color>
+    <color name="transparent">#00000000</color>
+    <color name="title_header_bg_color">#FF00A5C4</color>
+    <color name="add_fp_prompt_text_color">#FFC8C8C8</color>
+    <color name="divider_color">#FFECECEC</color>
+    <color name="dialog_text_color">#FF323232</color>
+    <color name="text_color">#FF323232</color>
+    <color name="dialog_edit_text_line_color">#FFB3E4DE</color>
+    <color name="app_unlock_text_color">#FF323232</color>
+    <color name="key_pressed_color">#FFE0E0E0</color>
+    <color name="margr_bg_color">#FFF4F4F4</color>
+    <color name="margr_bg_text_color">#FF7D7D7D</color>
+    <color name="instruction_text_color">#FF535353</color>
+    <color name="lock_app_text_color">#FF535353</color>
+
+</resources>

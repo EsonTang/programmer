@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:prize="http://schemas.android.com/apk/res-auto">
+
+    <com.prize.appcenter.ui.widget.CustomImageView
+        android:id="@+id/appImgs_Iv"
+        android:layout_width="39.5dp"
+        android:layout_height="39.5dp"
+        prize:iv_radius="5dp" />
+
+    <TextView
+        android:id="@+id/appName_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:background="@drawable/card_sinview_textview_bg"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="9dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_26" />
+
+</merge>

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/event_info_loading_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ProgressBar
+            android:id="@+id/event_info_progress_bar"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_info_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:focusable="false"
+            android:text="@string/loading" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/event_info_error_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/event_not_found" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:id="@+id/event_info_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:animateLayoutChanges="true"
+            android:fadingEdge="none"
+            android:orientation="vertical"
+            android:background="@color/event_info_content_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                  >
+
+                <!--<ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/prize_upper_shadow"/>-->
+                <!--
+                  Container for the event's headline
+                  Name, Date, Time & Location
+                -->
+
+                <include layout="@layout/event_info_headline" />
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/prize_eventinfo_item_marginleft"
+					android:paddingEnd="@dimen/prize_eventinfo_item_marginleft"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/prize_event_info_margin_top"
+                    android:layout_marginLeft="@dimen/prize_event_info_margin_left"
+                    android:layout_marginRight="@dimen/prize_event_info_margin_left"
+                    android:background="@drawable/square_bg">
+                    <!--android:background="@color/event_info_content_color"-->
+                
+                <!-- RESPONSE -->
+                <LinearLayout
+                    android:id="@+id/response_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/response_label"
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:focusable="false"
+                        android:paddingLeft="8dip"
+                        android:paddingRight="8dip"
+                        android:text="@string/view_event_response_label"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/event_info_label_color" />
+
+                    <RadioGroup
+                        android:id="@+id/response_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:minHeight="52dip"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dip"
+                        android:paddingRight="8dip" >
+
+                        <RadioButton
+                            android:id="@+id/response_yes"
+                            style="?android:attr/textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/response_yes"
+                            android:textColor="@color/event_info_body_color" />
+
+                        <RadioButton
+                            android:id="@+id/response_maybe"
+                            style="?android:attr/textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/response_maybe"
+                            android:textColor="@color/event_info_body_color" />
+
+                        <RadioButton
+                            android:id="@+id/response_no"
+                            style="?android:attr/textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/response_no"
+                            android:textColor="@color/event_info_body_color" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                
+                
+                <!-- EMAIL GUESTS -->
+                <LinearLayout
+                    android:id="@+id/email_attendees_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="?android:attr/listDivider" />
+
+                    <Button
+                        android:id="@+id/email_attendees_button"
+                        style="@style/TextAppearance.EditEvent_LabelSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="0dip"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="0dip"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableLeft="@drawable/event_info_mail_button"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="0dp"
+                        android:text="@string/email_guests_label"
+                        android:textAllCaps="false"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/prize_normal" />
+                </LinearLayout>
+
+                
+                
+                <!-- LAUNCH CUSTOM APP -->
+                <LinearLayout
+                    android:id="@+id/launch_custom_app_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="?android:attr/listDivider" />
+
+                    <Button
+                        android:id="@+id/launch_custom_app_button"
+                        style="@style/TextAppearance.EditEvent_LabelSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="0dip"
+                        android:layout_marginTop="0dip"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="0dp"
+                        android:textAllCaps="false"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/prize_normal" />
+                </LinearLayout>
+
+                
+                
+                <!-- GUEST LIST -->
+                <com.android.calendar.event.AttendeesView
+                    android:id="@+id/long_attendee_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:textColor="@color/event_info_body_color"
+                    android:visibility="gone" />
+				
+                
+                
+                <!-- REMINDERS 提醒-->	
+                <!--  style="?android:attr/listSeparatorTextViewStyle" 
+                 android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--  
+				-->
+				
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+                 <!-- <TextView                  
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/prize_eventinfo_remind_spring_heigh"
+                    android:focusable="false"
+                    android:gravity="center|start"
+                    android:layout_gravity="center|top"
+                    android:text="@string/event_info_reminders_label"                   
+                    android:textColor="@color/prize_black_3" 
+                    android:textSize="@dimen/prize_normal"
+                    /> -->
+                    
+                <RelativeLayout
+                    android:id="@+id/view_add_reminders_prize"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_item_height"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/reminders_group_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/event_info_reminders_label"
+                        android:textColor="@color/prize_black_3"
+                        android:textSize="@dimen/main_title_font_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/prize_divide_line_default" />
+
+                    <TextView
+                        android:id="@+id/tv_show_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/reminders_group_label"
+                        android:drawableEnd="@drawable/prize_go_to_setting"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/prize_black_9"
+                        android:text="@string/no_remind"
+                        android:textSize="@dimen/sub_title_font_size" />
+                </RelativeLayout>
+                    
+			     <LinearLayout
+                    android:id="@+id/reminder_items_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"   
+                   	android:layout_gravity="center|top"
+                    />
+			</LinearLayout>
+			
+			<!-- <View
+			    android:layout_width="match_parent"
+			    android:layout_height="0.5dp"
+			    android:background="@color/prize_divide_gray"
+			    android:visibility="gone" /> -->
+
+			<!-- <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:minHeight="@dimen/prize_eventinfo_headline_item_heigh"
+			    android:orientation="horizontal" >
+
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="@dimen/prize_eventinfo_remind_spring_heigh"
+			        android:layout_gravity="center|top"
+			        android:focusable="false"
+			        android:gravity="center_vertical|start"
+			        android:text="@string/event_info_reminders_label"
+			        android:textColor="@color/prize_black_3"
+			        android:textSize="@dimen/prize_normal" />
+
+			    <TextView
+			        android:id="@+id/reminder_items_tv"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_gravity="center|top"
+			        android:gravity="center_vertical|right"
+			        android:layout_marginLeft="14dip"
+			        android:drawableEnd="@drawable/prize_go_to_setting" />
+			</LinearLayout> -->
+
+			<!-- <View
+			    android:layout_width="match_parent"
+			    android:layout_height="1px"
+			    android:background="@color/prize_divide_line_default" /> -->
+			    
+			    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <!-- Calendar Owner -->
+                    <LinearLayout
+                        android:id="@+id/calendar_container"
+                        android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:minHeight="@dimen/prize_eventinfo_remind_spring_heigh"
+					    android:orientation="horizontal"
+                       	 >
+
+                        <TextView
+                            android:id="@+id/calendar_label"
+                            android:layout_width="wrap_content"
+					        android:layout_height="@dimen/prize_eventinfo_remind_spring_heigh"
+					        android:layout_gravity="center|top"
+					        android:focusable="false"
+					        android:gravity="center_vertical|start"
+					        android:text="@string/event_info_calendar_label"
+					        android:textColor="@color/prize_black_3"
+					        android:textSize="@dimen/main_title_font_size" />
+
+                        <TextView
+                            android:id="@+id/calendar_name"
+                            android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+					        android:layout_gravity="center|top"
+					        android:layout_marginLeft="14dip"
+					        android:gravity="center_vertical|right"
+					        android:textColor="@color/prize_black_9"
+					        android:layout_marginRight="20dp"
+                            android:textSize="@dimen/sub_title_font_size" />
+                    </LinearLayout>
+
+                    <!-- Organizer -->
+                    <LinearLayout
+                        android:id="@+id/organizer_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/organizer_label"
+                            style="?android:attr/textAppearanceSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:singleLine="true"
+                            android:text="@string/event_info_organizer"
+                            android:textColor="@color/event_info_organizer_color"
+                            android:textSize="@dimen/main_title_font_size" />
+
+                        <TextView
+                            android:id="@+id/organizer"
+                            style="?android:attr/textAppearanceSmall"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dip"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:singleLine="true"
+                            android:textColor="@color/event_info_organizer_color"
+                            android:textIsSelectable="true"
+                            android:textSize="@dimen/sub_title_font_size" />
+                    </LinearLayout>
+
+                    <!-- DESCRIPTION -->
+                    <!-- <include
+                        android:id="@+id/description"
+                        layout="@layout/expandable_textview" /> -->
+                </LinearLayout>
+
+                <!-- style="@style/TextAppearance.EditEvent_LabelSmall" 
+                android:layout_marginBottom="0dip"
+                    android:layout_marginTop="0dip"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/prize_divide_line_default" />
+
+                <Button
+                    android:id="@+id/reminder_add"    
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/prize_eventinfo_remind_spring_heigh"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center|start"                    
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/accessibility_add_reminder"
+                    android:minHeight="20dip"
+                    android:text="@string/reminders_label"
+                    android:textAllCaps="false"
+                    android:textColor="@color/prize_black_3"
+                    android:textSize="@dimen/prize_normal" 
+                    android:visibility="gone"/>
+                	
+            </LinearLayout>
+           </LinearLayout>
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/prize_preferences_bg_height2_double"
+            android:gravity="center|bottom"
+            android:background="@color/event_info_title_bg">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/prizenavigationbar_lines"/>
+            <Button
+                android:id="@+id/reminder_del"
+                android:background="@drawable/eventinfo_deletebutton_selector"
+                android:layout_height="@dimen/prize_eventinfo_deletebt_height"
+                android:layout_width="@dimen/prize_evnetinfo_deletebt_width"
+                android:layout_marginBottom="12dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/delete_label" 
+                android:textSize="@dimen/prize_normal"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:weightSum="2" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/event_edit_ll"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/event_info_edit_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/edit_label"
+                            android:textColor="@color/prize_black_3"
+                            android:textSize="@dimen/prize_nav_title" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/event_delete_ll"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/event_info_delete_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/delete_label"
+                            android:textColor="@color/prize_black_3"
+                            android:textSize="@dimen/prize_nav_title" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
+

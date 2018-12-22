@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="function_items">
+        <item>纯净后台</item>
+        <item>自启管理</item>
+        <item>应用权限</item>
+        <item>病毒扫描</item>
+        <item>垃圾清理</item>
+        <item>通知管理</item>
+    </string-array>
+    <string-array name="function_items_expansion">
+        <item>数据更新</item>
+        <item>网络控制</item>
+        <!-- <item>网络防火墙</item> -->
+    </string-array>
+
+    <!-- john 2015.8.22 start -->
+    <string-array name="array_home_content">
+        <item>垃圾清理</item>
+        <item>数据更新</item>
+        <item>病毒扫描</item>
+        <item>权限监控</item>
+        <item>流量监控</item>
+        <item>拦截引擎</item>
+    </string-array>
+
+    <!-- Setting -->
+    <string-array name="array_setting_list">
+        <item>黑名单</item>
+        <item>白名单</item>
+        <item>拦截关键字</item>
+        <item>回复短信</item>
+        <item>拦截隐藏号码来电</item>
+    </string-array>
+
+    <!-- Optimizing -->
+    <string-array name="array_optimizing_parent">
+        <item>安全加固</item>
+        <item>清除缓存</item>
+        <item>速度提升</item>
+        <item>结束进程</item>
+    </string-array>
+    <!-- john 2015.8.22 end -->
+
+</resources>

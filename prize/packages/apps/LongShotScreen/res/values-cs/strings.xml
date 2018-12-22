@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Super screenshoty</string>
+    <string name="action_settings">založit</string>
+    <string name="scroll_shot">dlouhé screenshoty</string>
+    <string name="funny_shot">zábavné screenshoty</string>
+    <string name="screen_record">nahrávání obrazovky</string>
+    <string name="nextpage">na další obrazovce</string>
+    <string name="save">Uložit</string>
+    <string name="cancel">zrušený</string>
+    <string name="rect_shot">obdélníkové screenshoty</string>
+    <string name="lasso_shot">Lasso screenshoty</string>
+    <string name="daub_shot">graffiti screenshoty</string>
+    <string name="redo">předělat</string>
+    <string name="undo">odvolání</string>
+    <string name="exit">přestat</string>
+    <string name="scrawl">grafiti</string>
+    <string name="app_restrict_capture_screen">Vzhledem k tomu, mezi aplikace, rozhraní nemůže být screenshoty</string>
+    <string name="drag_to_select_capture_area">V přetahovat vybrané okno snímku obrazovky</string>
+    <string name="not_support_screen_orientation_change">Snímání obrazovky proces nepodporuje horizontální a vertikální přepínač obrazovky</string>
+    <string name="screenshot_saved">zachycené screenshoty</string>
+    <string name="screenshot_saved_to_tf_card">Soubory uložené do "paměť telefonu / Super obrazovky" složky.</string>
+    <string name="screenshot_saved_to_sd_card">Soubory uložené do "SD karta / Super obrazovky" složky.</string>
+    <string name="lasso_guide">Kreslit screenshoty region začal laso screenshotů</string>
+    <string name="scrollcapture_is_running">Dlouhá běžecká screenshoty</string>
+    <string name="scrollcapture_is_saving_please_wait">Současné dlouhé screenshoty Ukládání, čekejte prosím.</string>
+    <string name="hit_the_bottom">Na konci jezdce</string>
+    <string name="content_un_extended">Průřez nepodporuje dlouhé screenshotů</string>
+    <string name="maximum_to_ten_pages">Až 10 obrazovky odposlechu</string>
+    <string name="saving">Ukládání ...</string>
+    <string name="screenshot_saving">Ukládání snímku obrazovky ...</string>
+    <string name="hava_not_start_daub">Nejste natřené, natřené a poté klikněte na Uložit.</string>
+    <string name="move">mobilní</string>
+    
+    <string name="turn_off_long_screenshots">Prosím ukončit dlouhé screenshotů</string>
+    <string name="turn_off_interest_screenshots">Ukončete prosím zajímavých screenshotů</string>
+    
+</resources>

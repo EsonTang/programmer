@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">Контактите на SIM картата не могат да бъдат смесвани.</string>
+    <string name="menu_done">"Готово"</string>
+    <string name="menu_deleteContact">"Изтриване"</string>
+    <string name="menu_select_all">"Избираненавсичко"</string>
+    <string name="menu_select_none">"Премахваненаизбораотвсички"</string>
+    <string name="menu_new_contact_action_bar">"Ново"</string>
+    <string name="selected_item_count">Избрани <xliff:g id="count">%d</xliff:g></string>
+    <string name="multichoice_no_select_alert">Няма избран елемент</string>
+    <string name="aas_phone_type_none">"Нищо"</string>
+    <string name="aas_custom_title">Потребителски етикети</string>
+    <string name="aas_new_dialog_title">Добавяне на нов етикет</string>
+    <string name="ass_rename_dialog_title">Редактиране на етикет</string>
+    <string name="aas_delele_dialog_message">Изтриването на етикет(и) ще засегне допълнителните номера, свързани с етикетите. Сигурни ли сте?</string>
+    <string name="aas_name_invalid">Името на етикета е невалидно. Въведете друго име.</string>
+    <string name="aas_name_exist">Този етикет вече съществува.</string>
+    <string name="aas_usim_full">Няма място за нови етикети.</string>
+    <string name="ass_edit_assert_message">Промяната на етикета ще засегне допълнителните номера, свързани с етикета. Сигурни ли сте?</string>
+    <string name="aas_new_fail">Неуспешно създаване на нов етикет.</string>
+    <string name="aas_edit_fail">Неуспешно преименуване на <xliff:g id="aas">%s</xliff:g> .</string>
+    <string name="aas_delete_fail">Изтриване на <xliff:g id="aas">%s</xliff:g> failed.</string>
+    <string name="aas_phone_primary">Основен номер</string>
+    <string name="aas_phone_additional">Допълнителен номер</string>
+</resources>

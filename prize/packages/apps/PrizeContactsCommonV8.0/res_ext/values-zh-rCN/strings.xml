@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The message of toast when switch account between two CDMA cards during a call -->
+    <string name = "can_not_switch_account_during_call">通话中无法切换默认通话账户。</string>
+    <!-- The message of alert dialog when switch account but it is not allowed -->
+    <string name = "can_not_switch_account_temporarily">暂时无法切换默认通话账户。</string>
+    <!-- The message of alert dialog when switch account between two CDMA sim cards -->
+    <string name="call_account_switch_tips"><xliff:g id="name" example="CT1">^1</xliff:g> 將暂时无法通讯。原本设置为
+        <xliff:g id="name" example="CT1">^2</xliff:g>的通话、短信、数据网络设置也將切换为<xliff:g id="name" example="CT2">^3</xliff:g></string>
+
+</resources>

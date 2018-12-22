@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="applicationLabel">"Kenalan"</string>
+    <string name="launcherActivityLabel">"Kenalan"</string>
+    <string name="quickContactActivityLabel">"Lihat kenalan"</string>
+    <string name="editContactActivityLabel">"Edit kenalan"</string>
+    <string name="contactsList">"Kenalan"</string>
+    <string name="shortcutContact">"kenalan"</string>
+    <string name="shortcutDialContact">"Dail terus"</string>
+    <string name="shortcutMessageContact">"Mesej langsung"</string>
+    <string name="shortcutActivityTitle">"Pilih pintasan kenalan"</string>
+    <string name="callShortcutActivityTitle">"Pilih nombor untuk memanggil"</string>
+    <string name="messageShortcutActivityTitle">"Pilih nombor untuk menghantar mesej"</string>
+    <string name="contactInsertOrEditActivityTitle">"Tambah ke kenalan"</string>
+    <string name="contactPickerActivityTitle">"Pilih kenalan"</string>
+    <string name="header_entry_contact_list_adapter_header_title">"Buatkenalanbaharu"</string>
+    <string name="starredList">"Dibintangkan"</string>
+    <string name="frequentList">"Kerap"</string>
+    <string name="strequentList">"Kegemaran"</string>
+    <string name="viewContactTitle">"Butiran kenalan"</string>
+    <string name="editContactDescription">"Edit kenalan"</string>
+    <string name="insertContactDescription">"Wujudkan kenalan"</string>
+    <string name="editGroupDescription">"Edit kumpulan"</string>
+    <string name="insertGroupDescription">"Buat kumpulan"</string>
+    <string name="contactDetailAbout">"Mengenai"</string>
+    <string name="contactDetailUpdates">"Kemas kini"</string>
+    <string name="searchHint">"Cari dalam kenalan"</string>
+    <string name="menu_viewContact">"Lihat kenalan"</string>
+    <string name="menu_addStar">"Tambah ke kegemaran"</string>
+    <string name="menu_removeStar">Alih keluar daripada kegemaran</string>
+    <string name="description_action_menu_remove_star">"Disembunyikan daripada kegemaran"</string>
+    <string name="description_action_menu_add_star">Ditambah ke kegemaran</string>
+    <string name="menu_editContact">"Edit"</string>
+    <string name="menu_deleteContact">"Padam"</string>
+    <string name="menu_change_photo">Tukar foto</string>
+    <string name="menu_create_contact_shortcut">"Letakkan pada skrin Utama"</string>
+    <string name="menu_call">"Panggil kenalan"</string>
+    <string name="menu_sendSMS">"SMS kepada kenalan"</string>
+    <string name="menu_splitAggregate">Nyahpaut</string>
+    <string name="menu_editGroup">"Edit"</string>
+    <string name="menu_deleteGroup">"Padam"</string>
+    <string name="menu_new_contact_action_bar">"Tambah kenalan"</string>
+    <string name="menu_new_group_action_bar">"Tambah Kumpulan"</string>
+    <string name="splitConfirmation">Nyahpaut kenalan ini menjadi beberapa kenalan?</string>
+    <string name="splitConfirmation_positive_button">Nyahpaut</string>
+    <string name="splitConfirmationWithPendingChanges">Adakah anda ingin menyimpan perubahan yang telah dibuat dan menyahpaut kenalan ini menjadi beberapa kenalan?</string>
+    <string name="splitConfirmationWithPendingChanges_positive_button">Simpan dan Nyahpaut</string>
+    <string name="joinConfirmation">Adakah anda ingin menyimpan perubahan yang telah dibuat dan memaut dengan kenalan yang dipilih?</string>
+    <string name="joinConfirmation_positive_button">Simpan dan Paut</string>
+    <string name="menu_joinAggregate">"pautan"</string>
+    <string name="menu_save">"Simpan"</string>
+    <string name="titleJoinContactDataWith">Paut kenalan</string>
+    <string name="blurbJoinContactDataWith">Pilih kenalan yang ingin dipaut dengan <xliff:g id="name">%s</xliff:g>:</string>
+    <string name="showAllContactsJoinItem">"Tunjukkan semua kenalan"</string>
+    <string name="separatorJoinAggregateSuggestions">"Kenalan cadangan"</string>
+    <string name="separatorJoinAggregateAll">"Semua kenalan"</string>
+    <string name="contactsJoinedMessage">Kenalan dipaut</string>
+    <plurals name="contacts_deleted_toast">
+        <item quantity="one">Kenalan dipadamkan</item>
+        <item quantity="other">Kenalandipadamkan</item>
+    </plurals>
+    <string name="menu_set_ring_tone">"Ttpkn nd dering"</string>
+    <string name="menu_redirect_calls_to_vm">"Semua panggilan ke mel suara"</string>
+    <string name="readOnlyContactWarning">Kenalan daripada akaun baca sahaja tidak boleh dipadamkan tetapi boleh disembunyikan.</string>
+    <string name="readOnlyContactWarning_positive_button">"Sembunyi"</string>
+    <string name="readOnlyContactDeleteConfirmation">Kenalan yang akan dipadamkan mempunyai butiran daripada beberapa akaun. Butiran daripada akaun baca sahaja akan disembunyikan, bukan dipadamkan.</string>
+    <string name="batch_link_single_contact_warning">Anda memerlukan sekurang-kurangnnya dua kenalan yang dipilih untuk melakukan pautan.</string>
+    <string name="batch_link_confirmation">Paut kenalan yang dipilih?</string>
+    <string name="batch_link_confirmation_positive_button">"pautan"</string>
+    <string name="single_delete_confirmation">Padam kenalan ini?</string>
+    <string name="batch_delete_confirmation">Padam kenalan yang dipilih?</string>
+    <string name="batch_delete_read_only_contact_confirmation">Kenalan daripada akaun baca sahaja tidak boleh dipadamkan tetapi boleh disembunyikan.</string>
+    <string name="batch_delete_multiple_accounts_confirmation">Kenalan yang akan dipadamkan mempunyai butiran daripada beberapa akaun. Butiran daripada akaun baca sahaja akan disembunyikan, bukan dipadamkan.</string>
+    <string name="multipleContactDeleteConfirmation">Pemadaman kenalan ini akan turut memadamkan butiran daripada berbilang akaun.</string>
+    <string name="deleteConfirmation">Padam kenalan ini?</string>
+    <string name="deleteConfirmation_positive_button">"Padam"</string>
+    <string name="menu_discard">"Buang perubahan"</string>
+    <string name="invalidContactMessage">Kenalan tidak wujud.</string>
+    <string name="createContactShortcutSuccessful_NoName">Kenalan telah ditambahkan pada Skrin utama.</string>
+    <string name="createContactShortcutSuccessful"><xliff:g id="name">%s</xliff:g> ditambahkan pada Skrin utama.</string>
+    <string name="pickerNewContactHeader">"Buatkenalanbaharu"</string>
+    <string name="pickerNewContactText">"Buatkenalanbaharu"</string>
+    <skip/>
+    <string-array name="otherLabels">
+        <item>"Organisasi"</item>
+        <item>"Nota"</item>
+    </string-array>
+    <string name="photoPickerNotFoundText" product="tablet">"Tiada gambar yang tersedia pada tablet."</string>
+    <string name="photoPickerNotFoundText" product="default">"Tidak ada gambar yang tersedia pada telefon."</string>
+    <string name="attach_photo_dialog_title">fotokenalan</string>
+    <string name="customLabelPickerTitle">"Label nama peribadi"</string>
+    <string name="send_to_voicemail_checkbox">"Hantar panggilan terus ke peti suara"</string>
+    <string name="removePhoto">"Alih keluar foto"</string>
+    <string name="noContacts">"Tiada kenalan"</string>
+    <string name="noGroups">"Tiada kumpulan."</string>
+    <string name="noAccounts">"Anda memerlukan akaun untuk membuat kumpulan."</string>
+    <string name="emptyGroup">"Tiada orang dalam kumpulan ini."</string>
+    <string name="addPeopleToGroup">"Untuk menambah beberapa orang, edit kumpulan itu."</string>
+    <string name="savingContact">Menyimpan kenalan\u2026</string>
+    <string name="contactSavedToast">Kenalan disimpan</string>
+    <string name="contactUnlinkedToast">Kenalan dinyahpaut</string>
+    <string name="contactSavedErrorToast">Tidak dapat menyimpan perubahan kenalan.</string>
+    <string name="contactUnlinkErrorToast">Tidak dapat menyahpaut kenalan.</string>
+    <string name="contactJoinErrorToast">Tidak dapat memaut kenalan.</string>
+    <string name="contactGenericErrorToast">Ralat menyimpan kenalan.</string>
+    <string name="contactPhotoSavedErrorToast">Tidak dapat menyimpan perubahan foto kenalan.</string>
+    <string name="groupSavedToast">"Kumpulan sudah disimpan."</string>
+    <string name="groupSavedErrorToast">Tidak dapat menyimpan perubahan kumpulan.</string>
+    <plurals name="listTotalPhoneContacts">
+        <item quantity="one">"1 kenalan dengan nombor telefon"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> kenalan dengan nombor telefon"</item>
+    </plurals>
+    <string name="listTotalPhoneContactsZero">"Tiada kenalan dengan nombor telefon"</string>
+    <plurals name="listFoundAllContacts">
+        <item quantity="one">"1 ditemui"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> ditemui"</item>
+    </plurals>
+    <string name="listFoundAllContactsZero">"Tiada kenalan"</string>
+    <plurals name="searchFoundContacts">
+        <item quantity="one">"1 ditemui"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> ditemui"</item>
+    </plurals>
+    <string name="all_contacts_tab_label">"Semua"</string>
+    <string name="favorites_tab_label">"Kegemaran"</string>
+    <string name="callBack">Panggilbalik</string>
+    <string name="callAgain">"Panggil semula"</string>
+    <string name="returnCall">"Balas panggilan"</string>
+    <string name="add_contact_dlg_message_fmt">Tambahkan \"<xliff:g id="email">%s</xliff:g>\" pada kenalan?</string>
+    <string name="description_contact_photo">fotokenalan</string>
+    <string name="description_plus_button">"tambah"</string>
+    <string name="exporting_contact_list_progress">"<xliff:g id="CURRENT_NUMBER">%s</xliff:g> daripada <xliff:g id="TOTAL_NUMBER">%s</xliff:g> kenalan"</string>
+    <string name="search_settings_description">"Nama kenalan anda"</string>
+    <string name="quickcontact_missing_app">"Tiada aplikasi ditemui untuk mengendalikan tindakan ini."</string>
+    <string name="quickcontact_transparent_view_description">Klik untuk kembali ke skrin sebelumnya</string>
+    <string name="quickcontact_add_phone_number">Tambah nombor telefon</string>
+    <string name="quickcontact_add_email">Tambah e-mel</string>
+    <string name="missing_app">"Tiada aplikasi ditemui untuk mengendalikan tindakan ini."</string>
+    <string name="menu_share">"Kongsi"</string>
+    <string name="menu_add_contact">"Tambah ke kenalan"</string>
+    <string name="share_via">"Kongsi gambar melalui"</string>
+    <string name="dialog_new_group_account">"Buat kumpulan di bawah akaun"</string>
+    <string name="audio_chat">"Sembang suara"</string>
+    <string name="video_chat">"Sembang video"</string>
+    <string name="connections">"Sambungan"</string>
+    <string name="add_connection_button">"Tambah sambungan"</string>
+    <string name="recent" msgid="2062236709538790412">"Terbaru"</string>
+    <string name="recent_updates" msgid="2018245636796411442">"Kemas kini terbaru"</string>
+    <string name="account_type_format">"<xliff:g id="SOURCE">%1$s</xliff:g> kenalan"</string>
+    <string name="google_account_type_format">Akaun<xliff:g id="sourceexample=Google">%1$s</xliff:g></string>
+    <string name="from_account_format" translate="false">  <xliff:g id="source" example="user@gmail.com">%1$s</xliff:g>  </string>
+    <string name="contact_read_only">"Tidak boleh diedit dari aplikasi ini."</string>
+    <string name="group_read_only">"Tidak boleh diedit pada peranti ini."</string>
+    <string name="take_photo">"Ambil foto"</string>
+    <string name="take_new_photo">"Ambil foto baru"</string>
+    <string name="pick_photo">Pilih foto</string>
+    <string name="pick_new_photo">Pilih foto baru</string>
+    <string name="upgrade_in_progress">"Senarai kenalan sedang dikemas kini."</string>
+    <string name="search_results_searching">Mencari\u2026</string>
+    <string name="menu_display_selected">"Tunjukkan pilihan"</string>
+    <string name="menu_display_all">Tunjukkansemua</string>
+    <string name="menu_select_all">"Pilihsemua"</string>
+    <string name="menu_select_none">"Nyahpilihsemua"</string>
+    <string name="add_new_entry_for_section">"Tambah baru"</string>
+    <string name="add_organization">"Tambah organisasi"</string>
+    <string name="event_edit_field_hint_text">"Tarikh"</string>
+    <string name="group_edit_field_hint_text">"Nama kumpulan"</string>
+    <string name="change_photo">Tukar</string>
+    <string name="primary_photo">"Foto utama"</string>
+    <string name="description_star">"kegemaran"</string>
+    <string name="edit_contact">"Edit kenalan"</string>
+    <string name="aggregation_suggestion_join_dialog_message">Paut kenalan semasa dengan kenalan pilihan?</string>
+    <string name="aggregation_suggestion_edit_dialog_message">"Bertukar kepada mengedit kenalan pilihan? Maklumat yang anda masukkan setakat ini akan disalin."</string>
+    <string name="menu_copyContact">"Salin ke Kenalan Saya"</string>
+    <string name="add_to_my_contacts">"Tambahkan pada Kenalan Saya"</string>
+    <string name="contact_directory_description">"Direktori <xliff:g id="TYPE">%1$s</xliff:g>"</string>
+    <string name="list_filter_custom">"Peribadi"</string>
+    <string name="activity_title_settings">Tetapan</string>
+    <string name="menu_settings" msgid="377929915873428211">Tetapan</string>
+    <string name="menu_help">"Bantuan &amp; maklum balas"</string>
+    <string name="preference_displayOptions">"Pilihan paparan"</string>
+    <string name="organization_company_and_title">"<xliff:g id="COMPANY_0">%2$s</xliff:g>, <xliff:g id="COMPANY_1">%1$s</xliff:g>"</string>
+    <string name="non_phone_caption">"Nombor telefon"</string>
+    <string name="non_phone_add_to_contacts">"Tambah ke kenalan"</string>
+    <string name="activity_title_confirm_add_detail">"Tambah ke kenalan"</string>
+    <string name="non_phone_close">"Tutup"</string>
+    <string name="widget_name_and_phonetic">"<xliff:g id="DISPLAY_NAME">%1$s</xliff:g> (<xliff:g id="PHONETIC_NAME">%2$s</xliff:g>)"</string>
+    <string name="date_year_toggle">Sertakan tahun</string>
+    <string name="social_widget_label">"kenalan"</string>
+    <string name="social_widget_loading">Memuatkan\u2026</string>
+    <string name="contacts_unavailable_create_contact">"Buat kenalan baru"</string>
+    <string name="contacts_unavailable_add_account">"Tambah akaun"</string>
+    <string name="contacts_unavailable_import_contacts">"Import kenalan"</string>
+    <string name="create_group_dialog_title">"Buat kumpulan baharu"</string>
+    <string name="create_group_item_label">"Buat kumpulan baharu"</string>
+    <plurals name="num_groups_in_account">
+        <item quantity="one">"1 kumpulan"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%0$d</xliff:g> kumpulan"</item>
+    </plurals>
+    <string name="delete_group_dialog_message">Padam kumpulan \"<xliff:g id="group_label" example="Friends">%1$s</xliff:g>\"? (Kenalan tidak akan dipadamkan.)</string>
+    <plurals name="num_contacts_in_group">
+        <item quantity="one">"<xliff:g id="COUNT_0">%1$d</xliff:g> orang daripada <xliff:g id="ACCOUNT_TYPE">%2$s</xliff:g>"</item>
+        <item quantity="other">"<xliff:g id="COUNT_0">%1$d</xliff:g> orang daripada <xliff:g id="ACCOUNT_TYPE">%2$s</xliff:g>"</item>
+    </plurals>
+    <plurals name="group_list_num_contacts_in_group">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> orang"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> orang"</item>
+    </plurals>
+    <string name="toast_join_with_empty_contact">Taip nama kenalan sebelum memaut dengan yang lain.</string>
+    <string name="copy_text">"Salin ke papan keratan"</string>
+    <string name="set_default">"Tetapkan lalai"</string>
+    <string name="clear_default">"Kosongkan lalai"</string>
+    <string name="toast_text_copied">"Teks yang disalin"</string>
+    <string name="cancel_confirmation_dialog_message">Buang perubahan dan keluar daripada mengedit?</string>
+    <string name="cancel_confirmation_dialog_cancel_editing_button">"Buang"</string>
+    <string name="cancel_confirmation_dialog_keep_editing_button">Teruskan mengedit</string>
+    <string name="call_type_and_date">"<xliff:g id="CALL_TYPE">%1$s</xliff:g> <xliff:g id="CALL_SHORT_DATE">%2$s</xliff:g>"</string>
+    <string name="profile_display_name">"Sediakan profil saya"</string>
+    <string name="enter_contact_name">Taip nama orang</string>
+    <string name="group_name_hint">Nama kumpulan</string>
+    <string name="local_profile_title">"Profil setempat saya"</string>
+    <string name="external_profile_title">"Profil <xliff:g id="EXTERNAL_SOURCE">%1$s</xliff:g> saya"</string>
+    <string name="toast_displaying_all_contacts">"Memaparkan semua kenalan"</string>
+    <string name="generic_no_account_prompt">"Pastikan kenalan anda selamat walaupun jika anda kehilangan telefon anda: segerakkan dengan perkhidmatan dalam talian."</string>
+    <string name="generic_no_account_prompt_title">"Tambah akaun"</string>
+    <string name="contact_editor_prompt_zero_accounts">Kenalan baru anda tidak akan disandarkan. Tambahkan akaun yang menyandarkan kenalan dalam talian?</string>
+    <string name="contact_editor_prompt_one_account">Kenalan baharu anda akan disimpan pada <xliff:g id="account_name">%1$s</xliff:g>.</string>
+    <string name="contact_editor_prompt_multiple_accounts">Pilih akaun lalai untuk kenalan baru:</string>
+    <string name="contact_editor_title_new_contact">Tambah kenalan baru</string>
+    <string name="contact_editor_title_existing_contact">"Edit kenalan"</string>
+    <string name="keep_local">"Simpan setempat"</string>
+    <string name="add_account">"Tambah akaun"</string>
+    <string name="add_new_account">"Tambah akaun baharu"</string>
+    <string name="menu_export_database">"Eksport fail pangkalan data"</string>
+    <string name="action_menu_add_new_contact_button">Tambah kenalan baru</string>
+    <string name="expanding_entry_card_view_see_more">Lihat banyak</string>
+    <string name="expanding_entry_card_view_see_less">Lihat kurang</string>
+    <string name="expanding_entry_card_view_see_all">"Lihat semua"</string>
+    <string name="recent_card_title">"Terbaru"</string>
+    <string name="about_card_title">"Mengenai"</string>
+    <string name="send_message">Hantar mesej</string>
+    <string name="toast_making_personal_copy">Mencipta salinan peribadi…</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="tomorrow">"esok"</string>
+    <string name="today">Hariini</string>
+    <string name="today_at_time_fmt">"Hari ini pada <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <string name="tomorrow_at_time_fmt">"Esok pada <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <string name="date_time_fmt">"<xliff:g id="DATE">%s</xliff:g>, <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <string name="untitled_event">(Peristiwa tidak bertajuk)</string>
+    <string name="date_time_set">Tetapkan</string>
+    <string name="header_im_entry">"IM"</string>
+    <string name="header_organization_entry">"Organisasi"</string>
+    <string name="header_nickname_entry">"Nama samaran"</string>
+    <string name="header_note_entry">"Nota"</string>
+    <string name="header_website_entry">"Tapakweb"</string>
+    <string name="header_event_entry">Acara</string>
+    <string name="header_relation_entry">Hubungan</string>
+    <string name="header_account_entry">"Akaun"</string>
+    <string name="header_name_entry">Nama</string>
+    <string name="header_email_entry">"E-mel"</string>
+    <string name="header_phone_entry">Telefon</string>
+    <string name="header_photo_entry">Foto</string>
+    <string name="content_description_expand_editor">"Klik untuk kembangkan editor kenalan."</string>
+    <string name="content_description_collapse_editor">"Klik untuk runtuhkan editor kenalan."</string>
+    <string name="content_description_directions">arah ke lokasi</string>
+    <string name="content_description_recent_sms">"sms terbaharu. <xliff:g id="MESSAGE_BODY">%s</xliff:g>. <xliff:g id="PHONE_NUMBER">%s</xliff:g>. <xliff:g id="DATE">%s</xliff:g>. klik untuk membalas"</string>
+    <string name="content_description_recent_call_type_incoming">masuk</string>
+    <string name="content_description_recent_call_type_outgoing">keluar</string>
+    <string name="content_description_recent_call_type_missed">"Tidak dijawab"</string>
+    <string name="content_description_recent_call">"panggilan terbaharu. <xliff:g id="CALL_TYPE">%s</xliff:g>. <xliff:g id="PHONE_NUMBER">%s</xliff:g>. <xliff:g id="DATE">%s</xliff:g>. klik untuk memanggil balik"</string>
+    <string name="message_from_you_prefix">Anda: <xliff:g id="sms_body">%s</xliff:g></string>
+    <string name="contact_editor_hangouts_im_alert">Hangouts berfungsi lebih baik apabila anda memasukkan pengecam Hangouts orang itu ke dalam medan e-mel atau medan telefon.</string>
+    <string name="compact_editor_more_fields">LagiMedan</string>
+    <string name="compact_editor_change_photo_content_description">Tukarfoto</string>
+    <string name="compact_editor_failed_to_load">Gagal membuka editor.</string>
+    <string name="compact_editor_account_selector_title">Menyimpan ke</string>
+    <string name="compact_editor_account_selector_description">Menyimpan ke <xliff:g id="account_name">%s</xliff:g> pada masa ini. Ketik dua kali untuk memilih akaun lain.</string>
+    <plurals name="compact_editor_linked_contacts_selector_title">
+        <item quantity="one">Kenalan terpaut</item>
+        <item quantity="other">Kenalan terpaut (<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <string name="quickcontact_contacts_number"><xliff:g id="count">%d</xliff:g> kenalan terpaut</string>
+    <string name="quick_contact_display_name_with_phonetic">"<xliff:g id="DISPLAY_NAME">%s</xliff:g>(<xliff:g id="PHONETIC_NAME">%s</xliff:g>)"</string>
+    <string name="quickcontact_suggestion_link_button">PAUT KENALAN</string>
+    <string name="quickcontact_suggestion_cancel_button">BATAL</string>
+    <plurals name="quickcontact_suggestion_card_title">
+        <item quantity="one">1 kemungkinan pendua</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> Kemungkinan pendua</item>
+    </plurals>
+    <plurals name="quickcontact_suggestions_number">
+        <item quantity="one">1 kenalan terpaut</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> kenalan terpaut</item>
+    </plurals>
+    <plurals name="quickcontact_suggestion_account_type_number">
+        <item quantity="one"/>
+        <item quantity="other">(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <string name="quickcontact_suggestion_account_type"><xliff:g id="account_type">%s</xliff:g><xliff:g id="account_type_number">%s</xliff:g></string>
+    <string name="suggestion_card_this_contact_title">Kenalan ini</string>
+    <string name="suggestion_card_duplicates_title">Kemungkinan pendua</string>
+    <string name="suggestion_card_help_message">Kenalan ini mungkin orang yang sama. Anda boleh memautnya bersama-sama sebagai satu kenalan.</string>
+    <string name="compact_editor_linked_contacts_title">Kenalan terpaut</string>
+    <string name="from_your_accounts">Daripada akaun anda</string>
+    <string name="take_a_photo_button">"Ambil foto"</string>
+    <string name="all_photos_button">Semua foto</string>
+    <string name="photo_picker_title">Pilih foto</string>
+    <string name="contact_from_account_name">Daripada <xliff:g id="account_name">%s</xliff:g></string>
+    <string name="editor_delete_view_description">Padam <xliff:g id="data_type">%s </xliff:g><xliff:g id="data_kind">%s</xliff:g></string>
+    <string name="editor_delete_view_description_short">Padam <xliff:g id="data_kind">%s</xliff:g></string>
+    <string name="photo_view_description_not_checked">Foto daripada <xliff:g id="account_type">%s </xliff:g><xliff:g id="user_name">%s </xliff:g>tidak disemak</string>
+    <string name="photo_view_description_checked">Foto daripada <xliff:g id="account_type">%s </xliff:g><xliff:g id="user_name">%s </xliff:g>disemak</string>
+    <string name="photo_view_description_not_checked_no_info">Foto daripada akaun yang tidak diketahui tidak disemak</string>
+    <string name="photo_view_description_checked_no_info">Foto daripada akaun yang tidak diketahui disemak</string>
+    <string name="locale_change_in_progress">Senarai kenalan sedang dikemas kini untuk menggambarkan penukaran bahasa.\n\nSila tunggu...</string>
+    <string name="menu_blocked_numbers">Nombor disekat</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/fourbytwo_app_widget"
+    android:minHeight="65dp"
+    android:minWidth="308dp"
+    android:updatePeriodMillis="1000" />

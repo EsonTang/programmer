@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="telecommAppLabel" product="default">Call Management</string>
+    <string name="userCallActivityLabel" product="default">Phone</string>
+    <string name="unknown">Unknown</string>
+    <string name="notification_missedCallTitle">Missedcall</string>
+    <string name="notification_missedWorkCallTitle">Missed work call</string>
+    <string name="notification_missedCallsTitle">Missed calls</string>
+    <string name="notification_missedCallsMsg"><xliff:g id="num_missed_calls">%s</xliff:g> missed calls</string>
+    <string name="notification_missedCallTicker">Missed call from <xliff:g id="missed_call_from">%s</xliff:g></string>
+    <string name="notification_missedCall_call_back">Callback</string>
+    <string name="notification_missedCall_message">Message</string>
+    <string name="accessibility_call_muted">Call muted.</string>
+    <string name="accessibility_speakerphone_enabled">Speakerphone enabled.</string>
+    <!-- PRIZE-Change-DialerV8-wangzhong-2017_7_19-start -->
+    <!--<string name="respond_via_sms_canned_response_1">Can\'t talk now. What\'s up?</string>
+    <string name="respond_via_sms_canned_response_2">I\'ll call you right back.</string>
+    <string name="respond_via_sms_canned_response_3">I\'ll call you later.</string>
+    <string name="respond_via_sms_canned_response_4">Can\'t talk now. Call me later?</string>-->
+    <string name="respond_via_sms_canned_response_1">"I'm in a meeting right now.I'll call you later."</string>
+    <string name="respond_via_sms_canned_response_2">"Sorry,I'm driving,I will contact you later."</string>
+    <string name="respond_via_sms_canned_response_3">"I have a little something.I'll call you later."</string>
+    <string name="respond_via_sms_canned_response_4">"Wait a moment.I'll be right now."</string>
+    <!-- PRIZE-Change-DialerV8-wangzhong-2017_7_19-end -->
+    <string name="respond_via_sms_setting_title">Quick responses</string>
+    <string name="respond_via_sms_setting_title_2">Edit quick responses</string>
+    <string name="respond_via_sms_setting_summary"/>
+    <string name="respond_via_sms_edittext_dialog_title">Quick response</string>
+    <string name="respond_via_sms_confirmation_format">Message sent to <xliff:g id="phone_number">%s</xliff:g>.</string>
+    <string name="enable_account_preference_title">Calling accounts</string>
+    <string name="outgoing_call_not_allowed_user_restriction">Only emergency calls are allowed.</string>
+    <string name="outgoing_call_not_allowed_no_permission">This application cannot make outgoing calls without the Phone permission.</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">To place a call, enter a valid number.</string>
+    <string name="duplicate_video_call_not_allowed">Call cannot be added at this time.</string>
+    <string name="no_vm_number">Missing voicemail number</string>
+    <string name="no_vm_number_msg">No voicemail number is stored on the SIM card.</string>
+    <string name="add_vm_number_str">Add number</string>
+    <string name="change_default_dialer_dialog_title">Change default Dialer app?</string>
+    <string name="change_default_dialer_with_previous_app_set_text">Use <xliff:g id="new_app">%1$s</xliff:g> instead of <xliff:g id="current_app">%2$s</xliff:g> as your default dialer app?</string>
+    <string name="change_default_dialer_no_previous_app_set_text">Use <xliff:g id="new_app">%s</xliff:g> as your default dialer app?</string>
+    <string name="blocked_numbers">Blocked numbers</string>
+    <string name="blocked_numbers_msg">You won\'t receive calls or texts from blocked numbers.</string>
+    <string name="block_number">Add a number</string>
+    <string name="unblock_dialog_body">Unblock <xliff:g id="number_to_block">%1$s</xliff:g>?</string>
+    <string name="unblock_button">Unblock</string>
+    <string name="add_blocked_dialog_body">Block calls and texts from</string>
+    <string name="add_blocked_number_hint">Phone number</string>
+    <string name="block_button">Block</string>
+    <string name="non_primary_user">Only the device owner can view and manage blocked numbers.</string>
+    <string name="delete_icon_description">Unblock</string>
+    <string name="blocked_numbers_butter_bar_title">Blocking temporarily off</string>
+    <string name="blocked_numbers_butter_bar_body">After you dial or text an emergency number, blocking is turned off to ensure that emergency services can contact you.</string>
+    <string name="blocked_numbers_butter_bar_button">Re-enable now</string>
+    <string name="blocked_numbers_number_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> blocked</string>
+    <string name="blocked_numbers_number_unblocked_message"><xliff:g id="unblocked_number">%1$s</xliff:g> unblocked</string>
+    <string name="blocked_numbers_block_emergency_number_message">Unable to block emergency number.</string>
+    <string name="blocked_numbers_number_already_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> is already blocked.</string>
+    <string name="test_account_0_label"/>
+    <string name="test_account_1_label"/>
+    <string name="test_account_2_label"/>
+    <string name="test_account_3_label"/>
+    <string name="test_account_0_short_description"/>
+    <string name="test_account_1_short_description"/>
+    <string name="test_account_2_short_description"/>
+    <string name="test_account_3_short_description"/>
+    <string name="handle_restricted"/>
+    <string name="toast_personal_call_msg">Using the personal dialer to make the call</string>
+</resources>

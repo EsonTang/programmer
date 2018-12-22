@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialer_menu_popwindow_layout"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@color/calllog_popwindow_background"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c8c8c8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#c8c8c8" />
+
+        <TextView
+            android:id="@+id/delete_some_calls"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/popwindow_selector"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="13dp"
+            android:text="@string/delete_some_calls_label"
+            android:textColor="@color/prize_calllog_pop_window_title_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c8c8c8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#c8c8c8" />
+
+        <TextView
+            android:id="@+id/menu_call_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/popwindow_selector"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="13dp"
+            android:text="@string/dialer_settings_label"
+            android:textColor="@color/prize_calllog_pop_window_title_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c8c8c8" />
+
+</LinearLayout>

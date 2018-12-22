@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/apps_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:divider="@drawable/list_view_divier"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="@dimen/density_10dp"
+        android:horizontalSpacing="@dimen/density_10dp"
+        android:listSelector="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/density_10dp" />
+
+    <RelativeLayout
+        android:id="@+id/app_lock_psw_setting_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_55dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/density_1dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/list_view_divier" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/app_lock_psw_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/app_lock_psw_setting_selector"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/app_lock_psw_setting"
+                android:text="@string/action_settings"
+                android:textColor="@color/lock_app_text_color"
+                android:textSize="@dimen/normal_front" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

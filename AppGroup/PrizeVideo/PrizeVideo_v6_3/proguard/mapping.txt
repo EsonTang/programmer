@@ -1,0 +1,2279 @@
+com.lidroid.xutils.BitmapUtils -> com.lidroid.xutils.a:
+    boolean pauseTask -> a
+    boolean cancelAllTask -> b
+    java.lang.Object pauseTaskLock -> c
+    android.content.Context context -> d
+    com.lidroid.xutils.bitmap.BitmapGlobalConfig globalConfig -> e
+    com.lidroid.xutils.bitmap.BitmapDisplayConfig defaultDisplayConfig -> f
+    94:95:com.lidroid.xutils.BitmapUtils configDefaultLoadingImage(android.graphics.drawable.Drawable) -> a
+    99:100:com.lidroid.xutils.BitmapUtils configDefaultLoadingImage(int) -> a
+    104:105:com.lidroid.xutils.BitmapUtils configDefaultLoadingImage(android.graphics.Bitmap) -> a
+    109:110:com.lidroid.xutils.BitmapUtils configDefaultLoadFailedImage(android.graphics.drawable.Drawable) -> b
+    114:115:com.lidroid.xutils.BitmapUtils configDefaultLoadFailedImage(int) -> b
+    119:120:com.lidroid.xutils.BitmapUtils configDefaultLoadFailedImage(android.graphics.Bitmap) -> b
+    124:125:com.lidroid.xutils.BitmapUtils configDefaultBitmapMaxSize(int,int) -> a
+    129:130:com.lidroid.xutils.BitmapUtils configDefaultBitmapMaxSize(com.lidroid.xutils.bitmap.core.BitmapSize) -> a
+    134:135:com.lidroid.xutils.BitmapUtils configDefaultImageLoadAnimation(android.view.animation.Animation) -> a
+    139:140:com.lidroid.xutils.BitmapUtils configDefaultAutoRotation(boolean) -> a
+    144:145:com.lidroid.xutils.BitmapUtils configDefaultShowOriginal(boolean) -> b
+    149:150:com.lidroid.xutils.BitmapUtils configDefaultBitmapConfig(android.graphics.Bitmap$Config) -> a
+    154:155:com.lidroid.xutils.BitmapUtils configDefaultDisplayConfig(com.lidroid.xutils.bitmap.BitmapDisplayConfig) -> a
+    159:160:com.lidroid.xutils.BitmapUtils configDownloader(com.lidroid.xutils.bitmap.download.Downloader) -> a
+    164:165:com.lidroid.xutils.BitmapUtils configDefaultCacheExpiry(long) -> a
+    169:170:com.lidroid.xutils.BitmapUtils configDefaultConnectTimeout(int) -> c
+    174:175:com.lidroid.xutils.BitmapUtils configDefaultReadTimeout(int) -> d
+    179:180:com.lidroid.xutils.BitmapUtils configThreadPoolSize(int) -> e
+    184:185:com.lidroid.xutils.BitmapUtils configMemoryCacheEnabled(boolean) -> c
+    189:190:com.lidroid.xutils.BitmapUtils configDiskCacheEnabled(boolean) -> d
+    194:195:com.lidroid.xutils.BitmapUtils configDiskCacheFileNameGenerator(com.lidroid.xutils.cache.FileNameGenerator) -> a
+    199:200:com.lidroid.xutils.BitmapUtils configBitmapCacheListener(com.lidroid.xutils.bitmap.BitmapCacheListener) -> a
+    206:207:void display(android.view.View,java.lang.String) -> a
+    210:212:void displayFromVideo(android.view.View,java.lang.String) -> b
+    215:216:void display(android.view.View,java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig) -> a
+    219:220:void display(android.view.View,java.lang.String,com.lidroid.xutils.bitmap.callback.BitmapLoadCallBack) -> a
+    223:278:void display(android.view.View,java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig,com.lidroid.xutils.bitmap.callback.BitmapLoadCallBack) -> a
+    283:284:void clearCache() -> a
+    287:288:void clearMemoryCache() -> b
+    291:292:void clearDiskCache() -> c
+    295:296:void clearCache(java.lang.String) -> a
+    299:300:void clearMemoryCache(java.lang.String) -> b
+    303:304:void clearDiskCache(java.lang.String) -> c
+    307:308:void flushCache() -> d
+    311:312:void closeCache() -> e
+    315:315:java.io.File getBitmapFileFromDiskCache(java.lang.String) -> d
+    319:322:android.graphics.Bitmap getBitmapFromMemCache(java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig) -> a
+    329:329:boolean supportPause() -> f
+    334:334:boolean supportResume() -> g
+    339:339:boolean supportCancel() -> h
+    344:346:void pause() -> i
+    350:354:void resume() -> j
+    358:363:void cancel() -> k
+    367:367:boolean isPaused() -> l
+    372:372:boolean isCancelled() -> m
+    379:386:com.lidroid.xutils.BitmapUtils$BitmapLoadTask getBitmapTaskFromContainer(android.view.View,com.lidroid.xutils.bitmap.callback.BitmapLoadCallBack) -> b
+    390:400:boolean bitmapLoadTaskExist(android.view.View,java.lang.String,com.lidroid.xutils.bitmap.callback.BitmapLoadCallBack) -> b
+    48:48:java.lang.Object access$0(com.lidroid.xutils.BitmapUtils) -> a
+    46:46:boolean access$1(com.lidroid.xutils.BitmapUtils) -> b
+    47:47:boolean access$2(com.lidroid.xutils.BitmapUtils) -> c
+    51:51:com.lidroid.xutils.bitmap.BitmapGlobalConfig access$3(com.lidroid.xutils.BitmapUtils) -> d
+    378:378:com.lidroid.xutils.BitmapUtils$BitmapLoadTask access$4(android.view.View,com.lidroid.xutils.bitmap.callback.BitmapLoadCallBack) -> a
+com.lidroid.xutils.BitmapUtils$BitmapLoadTask -> com.lidroid.xutils.a$a:
+    java.lang.String uri -> b
+    java.lang.ref.WeakReference containerReference -> c
+    com.lidroid.xutils.bitmap.callback.BitmapLoadCallBack callBack -> d
+    com.lidroid.xutils.bitmap.BitmapDisplayConfig displayConfig -> e
+    com.lidroid.xutils.bitmap.callback.BitmapLoadFrom from -> f
+    int PROGRESS_LOAD_STARTED -> g
+    int PROGRESS_LOADING -> h
+    com.lidroid.xutils.BitmapUtils this$0 -> a
+    425:450:android.graphics.Bitmap doInBackground(java.lang.Object[]) -> a
+    454:455:void updateProgress(long,long) -> a
+    462:478:void onProgressUpdate(java.lang.Object[]) -> b
+    482:498:void onPostExecute(android.graphics.Bitmap) -> a
+    502:505:void onCancelled(android.graphics.Bitmap) -> b
+    508:515:android.view.View getTargetContainer() -> a
+    1:1:void onPostExecute(java.lang.Object) -> a
+    1:1:void onCancelled(java.lang.Object) -> b
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> c
+    404:404:java.lang.String access$3(com.lidroid.xutils.BitmapUtils$BitmapLoadTask) -> a
+com.lidroid.xutils.DbUtils -> com.lidroid.xutils.b:
+    java.util.HashMap daoMap -> a
+    android.database.sqlite.SQLiteDatabase database -> b
+    com.lidroid.xutils.DbUtils$DaoConfig daoConfig -> c
+    boolean debug -> d
+    boolean allowTransaction -> e
+    java.util.concurrent.locks.Lock writeLock -> f
+    boolean writeLocked -> g
+    com.lidroid.xutils.DbUtils$FindTempCache findTempCache -> h
+    63:91:com.lidroid.xutils.DbUtils getInstance(com.lidroid.xutils.DbUtils$DaoConfig) -> b
+    95:96:com.lidroid.xutils.DbUtils create(android.content.Context) -> a
+    100:102:com.lidroid.xutils.DbUtils create(android.content.Context,java.lang.String) -> a
+    106:109:com.lidroid.xutils.DbUtils create(android.content.Context,java.lang.String,java.lang.String) -> a
+    113:117:com.lidroid.xutils.DbUtils create(android.content.Context,java.lang.String,int,com.lidroid.xutils.DbUtils$DbUpgradeListener) -> a
+    121:126:com.lidroid.xutils.DbUtils create(android.content.Context,java.lang.String,java.lang.String,int,com.lidroid.xutils.DbUtils$DbUpgradeListener) -> a
+    130:130:com.lidroid.xutils.DbUtils create(com.lidroid.xutils.DbUtils$DaoConfig) -> a
+    134:135:com.lidroid.xutils.DbUtils configDebug(boolean) -> a
+    139:140:com.lidroid.xutils.DbUtils configAllowTransaction(boolean) -> b
+    144:144:android.database.sqlite.SQLiteDatabase getDatabase() -> a
+    148:148:com.lidroid.xutils.DbUtils$DaoConfig getDaoConfig() -> b
+    155:164:void saveOrUpdate(java.lang.Object) -> a
+    167:180:void saveOrUpdateAll(java.util.List) -> a
+    184:193:void replace(java.lang.Object) -> b
+    196:209:void replaceAll(java.util.List) -> b
+    213:222:void save(java.lang.Object) -> c
+    225:238:void saveAll(java.util.List) -> c
+    241:252:boolean saveBindingId(java.lang.Object) -> d
+    256:271:void saveBindingIdAll(java.util.List) -> d
+    274:284:void deleteById(java.lang.Class,java.lang.Object) -> a
+    287:297:void delete(java.lang.Object) -> e
+    300:310:void delete(java.lang.Class,com.lidroid.xutils.db.sqlite.WhereBuilder) -> a
+    313:325:void deleteAll(java.util.List) -> e
+    328:329:void deleteAll(java.lang.Class) -> a
+    332:342:void update(java.lang.Object,java.lang.String[]) -> a
+    345:355:void update(java.lang.Object,com.lidroid.xutils.db.sqlite.WhereBuilder,java.lang.String[]) -> a
+    358:370:void updateAll(java.util.List,java.lang.String[]) -> a
+    373:385:void updateAll(java.util.List,com.lidroid.xutils.db.sqlite.WhereBuilder,java.lang.String[]) -> a
+    389:416:java.lang.Object findById(java.lang.Class,java.lang.Object) -> b
+    421:445:java.lang.Object findFirst(com.lidroid.xutils.db.sqlite.Selector) -> a
+    449:449:java.lang.Object findFirst(java.lang.Class) -> b
+    454:480:java.util.List findAll(com.lidroid.xutils.db.sqlite.Selector) -> b
+    484:484:java.util.List findAll(java.lang.Class) -> c
+    488:500:com.lidroid.xutils.db.table.DbModel findDbModelFirst(com.lidroid.xutils.db.sqlite.SqlInfo) -> a
+    504:518:com.lidroid.xutils.db.table.DbModel findDbModelFirst(com.lidroid.xutils.db.sqlite.DbModelSelector) -> a
+    522:536:java.util.List findDbModelAll(com.lidroid.xutils.db.sqlite.SqlInfo) -> b
+    540:556:java.util.List findDbModelAll(com.lidroid.xutils.db.sqlite.DbModelSelector) -> b
+    560:565:long count(com.lidroid.xutils.db.sqlite.Selector) -> c
+    569:569:long count(java.lang.Class) -> d
+    635:647:android.database.sqlite.SQLiteDatabase createDatabase(com.lidroid.xutils.DbUtils$DaoConfig) -> c
+    652:663:void saveOrUpdateWithoutTransaction(java.lang.Object) -> f
+    666:679:boolean saveBindingIdWithoutTransaction(java.lang.Object) -> g
+    686:699:long getLastAutoIncrementId(java.lang.String) -> c
+    703:711:void createTableIfNotExist(java.lang.Class) -> e
+    714:736:boolean tableIsExist(java.lang.Class) -> f
+    740:759:void dropDb() -> c
+    762:766:void dropTable(java.lang.Class) -> g
+    769:774:void close() -> d
+    778:781:void debugSql(java.lang.String) -> d
+    787:793:void beginTransaction() -> e
+    796:799:void setTransactionSuccessful() -> f
+    802:809:void endTransaction() -> g
+    813:823:void execNonQuery(com.lidroid.xutils.db.sqlite.SqlInfo) -> c
+    826:832:void execNonQuery(java.lang.String) -> a
+    835:839:android.database.Cursor execQuery(com.lidroid.xutils.db.sqlite.SqlInfo) -> d
+    844:848:android.database.Cursor execQuery(java.lang.String) -> b
+com.lidroid.xutils.DbUtils$DaoConfig -> com.lidroid.xutils.b$a:
+    android.content.Context context -> a
+    java.lang.String dbName -> b
+    int dbVersion -> c
+    com.lidroid.xutils.DbUtils$DbUpgradeListener dbUpgradeListener -> d
+    java.lang.String dbDir -> e
+    587:587:android.content.Context getContext() -> a
+    591:591:java.lang.String getDbName() -> b
+    595:598:void setDbName(java.lang.String) -> a
+    601:601:int getDbVersion() -> c
+    605:606:void setDbVersion(int) -> a
+    609:609:com.lidroid.xutils.DbUtils$DbUpgradeListener getDbUpgradeListener() -> d
+    613:614:void setDbUpgradeListener(com.lidroid.xutils.DbUtils$DbUpgradeListener) -> a
+    617:617:java.lang.String getDbDir() -> e
+    626:627:void setDbDir(java.lang.String) -> b
+com.lidroid.xutils.DbUtils$DbUpgradeListener -> com.lidroid.xutils.b$b:
+    void onUpgrade(com.lidroid.xutils.DbUtils,int,int) -> a
+com.lidroid.xutils.DbUtils$FindTempCache -> com.lidroid.xutils.b$c:
+    java.util.concurrent.ConcurrentHashMap cache -> b
+    long seq -> c
+    com.lidroid.xutils.DbUtils this$0 -> a
+    868:871:void put(java.lang.String,java.lang.Object) -> a
+    874:874:java.lang.Object get(java.lang.String) -> a
+    878:882:void setSeq(long) -> a
+com.lidroid.xutils.HttpUtils -> com.lidroid.xutils.c:
+    com.lidroid.xutils.http.HttpCache sHttpCache -> a
+    org.apache.http.impl.client.DefaultHttpClient httpClient -> b
+    org.apache.http.protocol.HttpContext httpContext -> c
+    com.lidroid.xutils.http.callback.HttpRedirectHandler httpRedirectHandler -> d
+    java.lang.String responseTextCharset -> e
+    long currentRequestExpiry -> f
+    int DEFAULT_CONN_TIMEOUT -> g
+    int DEFAULT_RETRY_TIMES -> h
+    java.lang.String HEADER_ACCEPT_ENCODING -> i
+    java.lang.String ENCODING_GZIP -> j
+    int DEFAULT_POOL_SIZE -> k
+    com.lidroid.xutils.task.PriorityExecutor EXECUTOR -> l
+    146:146:org.apache.http.client.HttpClient getHttpClient() -> a
+    152:155:com.lidroid.xutils.HttpUtils configResponseTextCharset(java.lang.String) -> a
+    159:160:com.lidroid.xutils.HttpUtils configHttpRedirectHandler(com.lidroid.xutils.http.callback.HttpRedirectHandler) -> a
+    164:165:com.lidroid.xutils.HttpUtils configHttpCacheSize(int) -> a
+    169:171:com.lidroid.xutils.HttpUtils configDefaultHttpCacheExpiry(long) -> a
+    175:176:com.lidroid.xutils.HttpUtils configCurrentHttpCacheExpiry(long) -> b
+    180:181:com.lidroid.xutils.HttpUtils configCookieStore(org.apache.http.client.CookieStore) -> a
+    185:186:com.lidroid.xutils.HttpUtils configUserAgent(java.lang.String) -> b
+    190:193:com.lidroid.xutils.HttpUtils configTimeout(int) -> b
+    197:199:com.lidroid.xutils.HttpUtils configSoTimeout(int) -> c
+    203:204:com.lidroid.xutils.HttpUtils configRegisterScheme(org.apache.http.conn.scheme.Scheme) -> a
+    208:210:com.lidroid.xutils.HttpUtils configSSLSocketFactory(org.apache.http.conn.ssl.SSLSocketFactory) -> a
+    214:215:com.lidroid.xutils.HttpUtils configRequestRetryCount(int) -> d
+    219:220:com.lidroid.xutils.HttpUtils configRequestThreadPoolSize(int) -> e
+    227:227:com.lidroid.xutils.http.HttpHandler send(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    232:235:com.lidroid.xutils.http.HttpHandler send(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,com.lidroid.xutils.http.RequestParams,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    239:239:com.lidroid.xutils.http.ResponseStream sendSync(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String) -> a
+    243:246:com.lidroid.xutils.http.ResponseStream sendSync(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,com.lidroid.xutils.http.RequestParams) -> a
+    253:253:com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    258:258:com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,boolean,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    263:263:com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,boolean,boolean,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    268:268:com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    273:273:com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,boolean,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    278:278:com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,boolean,boolean,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    283:283:com.lidroid.xutils.http.HttpHandler download(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    288:288:com.lidroid.xutils.http.HttpHandler download(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,boolean,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    294:309:com.lidroid.xutils.http.HttpHandler download(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,boolean,boolean,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    315:325:com.lidroid.xutils.http.HttpHandler sendRequest(com.lidroid.xutils.http.client.HttpRequest,com.lidroid.xutils.http.RequestParams,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    330:336:com.lidroid.xutils.http.ResponseStream sendSyncRequest(com.lidroid.xutils.http.client.HttpRequest,com.lidroid.xutils.http.RequestParams) -> a
+com.lidroid.xutils.HttpUtils$1 -> com.lidroid.xutils.d:
+    com.lidroid.xutils.HttpUtils this$0 -> a
+    103:106:void process(org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext) -> process
+com.lidroid.xutils.HttpUtils$2 -> com.lidroid.xutils.e:
+    com.lidroid.xutils.HttpUtils this$0 -> a
+    112:125:void process(org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext) -> process
+com.lidroid.xutils.ViewUtils -> com.lidroid.xutils.f:
+    45:46:void inject(android.view.View) -> a
+    49:50:void inject(android.app.Activity) -> a
+    53:54:void inject(android.preference.PreferenceActivity) -> a
+    57:58:void inject(java.lang.Object,android.view.View) -> a
+    61:62:void inject(java.lang.Object,android.app.Activity) -> a
+    65:66:void inject(java.lang.Object,android.preference.PreferenceGroup) -> a
+    69:70:void inject(java.lang.Object,android.preference.PreferenceActivity) -> a
+    75:170:void injectObject(java.lang.Object,com.lidroid.xutils.view.ViewFinder) -> a
+com.lidroid.xutils.bitmap.BitmapCacheListener -> com.lidroid.xutils.a.a:
+    void onInitMemoryCacheFinished() -> a
+    void onInitDiskFinished() -> b
+    void onClearCacheFinished() -> c
+    void onClearMemoryCacheFinished() -> d
+    void onClearDiskCacheFinished() -> e
+    void onClearCacheFinished(java.lang.String) -> a
+    void onClearMemoryCacheFinished(java.lang.String) -> b
+    void onClearDiskCacheFinished(java.lang.String) -> c
+    void onFlushCacheFinished() -> f
+    void onCloseCacheFinished() -> g
+com.lidroid.xutils.bitmap.BitmapCommonUtils -> com.lidroid.xutils.a.b:
+    com.lidroid.xutils.bitmap.core.BitmapSize screenSize -> a
+    35:39:com.lidroid.xutils.bitmap.core.BitmapSize getScreenSize(android.content.Context) -> a
+    43:72:com.lidroid.xutils.bitmap.core.BitmapSize optimizeMaxSizeByView(android.view.View,int,int) -> a
+    76:88:int getImageViewFieldValue(java.lang.Object,java.lang.String) -> a
+com.lidroid.xutils.bitmap.BitmapDisplayConfig -> com.lidroid.xutils.a.c:
+    com.lidroid.xutils.bitmap.core.BitmapSize bitmapMaxSize -> a
+    android.view.animation.Animation animation -> b
+    android.graphics.drawable.Drawable loadingDrawable -> c
+    android.graphics.drawable.Drawable loadFailedDrawable -> d
+    boolean autoRotation -> e
+    boolean showOriginal -> f
+    android.graphics.Bitmap$Config bitmapConfig -> g
+    com.lidroid.xutils.bitmap.factory.BitmapFactory bitmapFactory -> h
+    com.lidroid.xutils.task.Priority priority -> i
+    42:42:com.lidroid.xutils.bitmap.core.BitmapSize getBitmapMaxSize() -> a
+    46:47:void setBitmapMaxSize(com.lidroid.xutils.bitmap.core.BitmapSize) -> a
+    50:50:android.view.animation.Animation getAnimation() -> b
+    54:55:void setAnimation(android.view.animation.Animation) -> a
+    58:58:android.graphics.drawable.Drawable getLoadingDrawable() -> c
+    62:63:void setLoadingDrawable(android.graphics.drawable.Drawable) -> a
+    66:66:android.graphics.drawable.Drawable getLoadFailedDrawable() -> d
+    70:71:void setLoadFailedDrawable(android.graphics.drawable.Drawable) -> b
+    74:74:boolean isAutoRotation() -> e
+    78:79:void setAutoRotation(boolean) -> a
+    82:82:boolean isShowOriginal() -> f
+    86:87:void setShowOriginal(boolean) -> b
+    90:90:android.graphics.Bitmap$Config getBitmapConfig() -> g
+    94:95:void setBitmapConfig(android.graphics.Bitmap$Config) -> a
+    98:98:com.lidroid.xutils.bitmap.factory.BitmapFactory getBitmapFactory() -> h
+    102:103:void setBitmapFactory(com.lidroid.xutils.bitmap.factory.BitmapFactory) -> a
+    106:106:com.lidroid.xutils.task.Priority getPriority() -> i
+    110:111:void setPriority(com.lidroid.xutils.task.Priority) -> a
+    115:115:java.lang.String toString() -> toString
+    120:130:com.lidroid.xutils.bitmap.BitmapDisplayConfig cloneNew() -> j
+com.lidroid.xutils.bitmap.BitmapGlobalConfig -> com.lidroid.xutils.a.d:
+    java.lang.String diskCachePath -> c
+    int MIN_MEMORY_CACHE_SIZE -> a
+    int memoryCacheSize -> d
+    int MIN_DISK_CACHE_SIZE -> b
+    int diskCacheSize -> e
+    boolean memoryCacheEnabled -> f
+    boolean diskCacheEnabled -> g
+    com.lidroid.xutils.bitmap.download.Downloader downloader -> h
+    com.lidroid.xutils.bitmap.core.BitmapCache bitmapCache -> i
+    int DEFAULT_POOL_SIZE -> j
+    com.lidroid.xutils.task.PriorityExecutor BITMAP_LOAD_EXECUTOR -> k
+    com.lidroid.xutils.task.PriorityExecutor DISK_CACHE_EXECUTOR -> l
+    long defaultCacheExpiry -> m
+    int defaultConnectTimeout -> n
+    int defaultReadTimeout -> o
+    com.lidroid.xutils.cache.FileNameGenerator fileNameGenerator -> p
+    com.lidroid.xutils.bitmap.BitmapCacheListener bitmapCacheListener -> q
+    android.content.Context mContext -> r
+    java.util.HashMap configMap -> s
+    80:89:com.lidroid.xutils.bitmap.BitmapGlobalConfig getInstance(android.content.Context,java.lang.String) -> a
+    96:99:void initBitmapCache() -> u
+    102:102:java.lang.String getDiskCachePath() -> a
+    106:113:com.lidroid.xutils.bitmap.download.Downloader getDownloader() -> b
+    117:118:void setDownloader(com.lidroid.xutils.bitmap.download.Downloader) -> a
+    121:121:long getDefaultCacheExpiry() -> c
+    125:126:void setDefaultCacheExpiry(long) -> a
+    129:129:int getDefaultConnectTimeout() -> d
+    133:134:void setDefaultConnectTimeout(int) -> a
+    137:137:int getDefaultReadTimeout() -> e
+    141:142:void setDefaultReadTimeout(int) -> b
+    145:148:com.lidroid.xutils.bitmap.core.BitmapCache getBitmapCache() -> f
+    152:152:int getMemoryCacheSize() -> g
+    156:164:void setMemoryCacheSize(int) -> c
+    170:177:void setMemCacheSizePercent(float) -> a
+    180:180:int getDiskCacheSize() -> h
+    184:190:void setDiskCacheSize(int) -> d
+    193:193:int getThreadPoolSize() -> i
+    197:198:void setThreadPoolSize(int) -> e
+    201:201:com.lidroid.xutils.task.PriorityExecutor getBitmapLoadExecutor() -> j
+    205:205:com.lidroid.xutils.task.PriorityExecutor getDiskCacheExecutor() -> k
+    209:209:boolean isMemoryCacheEnabled() -> l
+    213:214:void setMemoryCacheEnabled(boolean) -> a
+    217:217:boolean isDiskCacheEnabled() -> m
+    221:222:void setDiskCacheEnabled(boolean) -> b
+    225:225:com.lidroid.xutils.cache.FileNameGenerator getFileNameGenerator() -> n
+    229:233:void setFileNameGenerator(com.lidroid.xutils.cache.FileNameGenerator) -> a
+    236:236:com.lidroid.xutils.bitmap.BitmapCacheListener getBitmapCacheListener() -> o
+    240:241:void setBitmapCacheListener(com.lidroid.xutils.bitmap.BitmapCacheListener) -> a
+    244:244:int getMemoryClass() -> v
+    362:363:void clearCache() -> p
+    366:367:void clearMemoryCache() -> q
+    370:371:void clearDiskCache() -> r
+    374:375:void clearCache(java.lang.String) -> a
+    378:379:void clearMemoryCache(java.lang.String) -> b
+    382:383:void clearDiskCache(java.lang.String) -> c
+    386:387:void flushCache() -> s
+    390:391:void closeCache() -> t
+    62:62:com.lidroid.xutils.bitmap.BitmapCacheListener access$0(com.lidroid.xutils.bitmap.BitmapGlobalConfig) -> a
+com.lidroid.xutils.bitmap.BitmapGlobalConfig$BitmapCacheManagementTask -> com.lidroid.xutils.a.d$a:
+    int MESSAGE_INIT_MEMORY_CACHE -> a
+    int MESSAGE_INIT_DISK_CACHE -> b
+    int MESSAGE_FLUSH -> c
+    int MESSAGE_CLOSE -> d
+    int MESSAGE_CLEAR -> e
+    int MESSAGE_CLEAR_MEMORY -> f
+    int MESSAGE_CLEAR_DISK -> g
+    int MESSAGE_CLEAR_BY_KEY -> h
+    int MESSAGE_CLEAR_MEMORY_BY_KEY -> i
+    int MESSAGE_CLEAR_DISK_BY_KEY -> j
+    com.lidroid.xutils.bitmap.BitmapGlobalConfig this$0 -> k
+    266:311:java.lang.Object[] doInBackground(java.lang.Object[]) -> a
+    316:358:void onPostExecute(java.lang.Object[]) -> d
+    1:1:void onPostExecute(java.lang.Object) -> a
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> c
+com.lidroid.xutils.bitmap.PauseOnScrollListener -> com.lidroid.xutils.a.e:
+    com.lidroid.xutils.task.TaskHandler taskHandler -> a
+    boolean pauseOnScroll -> b
+    boolean pauseOnFling -> c
+    android.widget.AbsListView$OnScrollListener externalListener -> d
+    60:78:void onScrollStateChanged(android.widget.AbsListView,int) -> onScrollStateChanged
+    82:85:void onScroll(android.widget.AbsListView,int,int,int) -> onScroll
+com.lidroid.xutils.bitmap.callback.BitmapLoadCallBack -> com.lidroid.xutils.a.a.a:
+    com.lidroid.xutils.bitmap.callback.BitmapSetter bitmapSetter -> a
+    35:35:void onPreLoad(android.view.View,java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig) -> a
+    45:45:void onLoadStarted(android.view.View,java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig) -> b
+    57:57:void onLoading(android.view.View,java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig,long,long) -> a
+    void onLoadCompleted(android.view.View,java.lang.String,android.graphics.Bitmap,com.lidroid.xutils.bitmap.BitmapDisplayConfig,com.lidroid.xutils.bitmap.callback.BitmapLoadFrom) -> a
+    void onLoadFailed(android.view.View,java.lang.String,android.graphics.drawable.Drawable) -> a
+    81:82:void setBitmapSetter(com.lidroid.xutils.bitmap.callback.BitmapSetter) -> a
+    85:92:void setBitmap(android.view.View,android.graphics.Bitmap) -> a
+    95:102:void setDrawable(android.view.View,android.graphics.drawable.Drawable) -> a
+    105:110:android.graphics.drawable.Drawable getDrawable(android.view.View) -> a
+com.lidroid.xutils.bitmap.callback.BitmapLoadFrom -> com.lidroid.xutils.a.a.b:
+    com.lidroid.xutils.bitmap.callback.BitmapLoadFrom MEMORY_CACHE -> a
+    com.lidroid.xutils.bitmap.callback.BitmapLoadFrom DISK_CACHE -> b
+    com.lidroid.xutils.bitmap.callback.BitmapLoadFrom URI -> c
+    com.lidroid.xutils.bitmap.callback.BitmapLoadFrom[] ENUM$VALUES -> d
+    1:1:com.lidroid.xutils.bitmap.callback.BitmapLoadFrom[] values() -> values
+    1:1:com.lidroid.xutils.bitmap.callback.BitmapLoadFrom valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.bitmap.callback.BitmapSetter -> com.lidroid.xutils.a.a.c:
+    void setBitmap(android.view.View,android.graphics.Bitmap) -> a
+    void setDrawable(android.view.View,android.graphics.drawable.Drawable) -> a
+    android.graphics.drawable.Drawable getDrawable(android.view.View) -> a
+com.lidroid.xutils.bitmap.callback.DefaultBitmapLoadCallBack -> com.lidroid.xutils.a.a.d:
+    30:35:void onLoadCompleted(android.view.View,java.lang.String,android.graphics.Bitmap,com.lidroid.xutils.bitmap.BitmapDisplayConfig,com.lidroid.xutils.bitmap.callback.BitmapLoadFrom) -> a
+    39:40:void onLoadFailed(android.view.View,java.lang.String,android.graphics.drawable.Drawable) -> a
+    44:50:void animationDisplay(android.view.View,android.view.animation.Animation) -> a
+com.lidroid.xutils.bitmap.core.AsyncDrawable -> com.lidroid.xutils.a.b.a:
+    java.lang.ref.WeakReference bitmapLoadTaskReference -> a
+    android.graphics.drawable.Drawable baseDrawable -> b
+    30:30:com.lidroid.xutils.BitmapUtils$BitmapLoadTask getBitmapWorkerTask() -> a
+    35:38:void draw(android.graphics.Canvas) -> draw
+    42:45:void setAlpha(int) -> setAlpha
+    49:52:void setColorFilter(android.graphics.ColorFilter) -> setColorFilter
+    56:56:int getOpacity() -> getOpacity
+    61:64:void setBounds(int,int,int,int) -> setBounds
+    68:71:void setBounds(android.graphics.Rect) -> setBounds
+    75:78:void setChangingConfigurations(int) -> setChangingConfigurations
+    82:82:int getChangingConfigurations() -> getChangingConfigurations
+    87:90:void setDither(boolean) -> setDither
+    94:97:void setFilterBitmap(boolean) -> setFilterBitmap
+    101:104:void invalidateSelf() -> invalidateSelf
+    108:111:void scheduleSelf(java.lang.Runnable,long) -> scheduleSelf
+    115:118:void unscheduleSelf(java.lang.Runnable) -> unscheduleSelf
+    122:125:void setColorFilter(int,android.graphics.PorterDuff$Mode) -> setColorFilter
+    129:132:void clearColorFilter() -> clearColorFilter
+    136:136:boolean isStateful() -> isStateful
+    141:141:boolean setState(int[]) -> setState
+    146:146:int[] getState() -> getState
+    151:151:android.graphics.drawable.Drawable getCurrent() -> getCurrent
+    156:156:boolean setVisible(boolean,boolean) -> setVisible
+    161:161:android.graphics.Region getTransparentRegion() -> getTransparentRegion
+    166:166:int getIntrinsicWidth() -> getIntrinsicWidth
+    171:171:int getIntrinsicHeight() -> getIntrinsicHeight
+    176:176:int getMinimumWidth() -> getMinimumWidth
+    181:181:int getMinimumHeight() -> getMinimumHeight
+    186:186:boolean getPadding(android.graphics.Rect) -> getPadding
+    191:191:android.graphics.drawable.Drawable mutate() -> mutate
+    196:196:android.graphics.drawable.Drawable$ConstantState getConstantState() -> getConstantState
+com.lidroid.xutils.bitmap.core.BitmapCache -> com.lidroid.xutils.a.b.b:
+    int DISK_CACHE_INDEX -> a
+    com.lidroid.xutils.cache.LruDiskCache mDiskLruCache -> b
+    com.lidroid.xutils.cache.LruMemoryCache mMemoryCache -> c
+    java.lang.Object mDiskCacheLock -> d
+    com.lidroid.xutils.bitmap.BitmapGlobalConfig globalConfig -> e
+    61:81:void initMemoryCache() -> a
+    91:109:void initDiskCache() -> b
+    112:115:void setMemoryCacheSize(int) -> a
+    118:123:void setDiskCacheSize(int) -> b
+    126:131:void setDiskCacheFileNameGenerator(com.lidroid.xutils.cache.FileNameGenerator) -> a
+    135:205:android.graphics.Bitmap downloadBitmap(java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig,com.lidroid.xutils.BitmapUtils$BitmapLoadTask) -> a
+    209:219:android.graphics.Bitmap addBitmapToMemoryCache(java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig,android.graphics.Bitmap,long) -> a
+    230:234:android.graphics.Bitmap getBitmapFromMemCache(java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig) -> a
+    244:244:java.io.File getBitmapFileFromDiskCache(java.lang.String) -> a
+    261:291:android.graphics.Bitmap getBitmapFromDiskCache(java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig) -> b
+    299:301:void clearCache() -> c
+    304:307:void clearMemoryCache() -> d
+    310:322:void clearDiskCache() -> e
+    326:328:void clearCache(java.lang.String) -> b
+    331:337:void clearMemoryCache(java.lang.String) -> c
+    340:349:void clearDiskCache(java.lang.String) -> d
+    356:365:void flush() -> f
+    372:384:void close() -> g
+    393:414:android.graphics.Bitmap decodeBitmapMeta(com.lidroid.xutils.bitmap.core.BitmapCache$BitmapMeta,com.lidroid.xutils.bitmap.BitmapDisplayConfig) -> a
+    418:453:android.graphics.Bitmap rotateBitmapIfNeeded(java.lang.String,com.lidroid.xutils.bitmap.BitmapDisplayConfig,android.graphics.Bitmap) -> a
+com.lidroid.xutils.bitmap.core.BitmapCache$1 -> com.lidroid.xutils.a.b.c:
+    com.lidroid.xutils.bitmap.core.BitmapCache this$0 -> a
+    77:78:int sizeOf(com.lidroid.xutils.bitmap.core.BitmapCache$MemoryCacheKey,android.graphics.Bitmap) -> a
+    1:1:int sizeOf(java.lang.Object,java.lang.Object) -> a
+com.lidroid.xutils.bitmap.core.BitmapCache$BitmapMeta -> com.lidroid.xutils.a.b.b$a:
+    java.io.FileInputStream inputStream -> a
+    byte[] data -> b
+    long expiryTimestamp -> c
+    com.lidroid.xutils.bitmap.core.BitmapCache this$0 -> d
+com.lidroid.xutils.bitmap.core.BitmapCache$MemoryCacheKey -> com.lidroid.xutils.a.b.b$b:
+    java.lang.String uri -> b
+    java.lang.String subKey -> c
+    com.lidroid.xutils.bitmap.core.BitmapCache this$0 -> a
+    467:478:boolean equals(java.lang.Object) -> equals
+    483:483:int hashCode() -> hashCode
+com.lidroid.xutils.bitmap.core.BitmapDecoder -> com.lidroid.xutils.a.b.d:
+    java.lang.Object lock -> a
+    33:33:android.graphics.Bitmap decodeSampledBitmapFromResource(android.content.res.Resources,int,com.lidroid.xutils.bitmap.core.BitmapSize,android.graphics.Bitmap$Config) -> a
+    54:54:android.graphics.Bitmap decodeSampledBitmapFromFile(java.lang.String,com.lidroid.xutils.bitmap.core.BitmapSize,android.graphics.Bitmap$Config) -> a
+    75:75:android.graphics.Bitmap decodeSampledBitmapFromDescriptor(java.io.FileDescriptor,com.lidroid.xutils.bitmap.core.BitmapSize,android.graphics.Bitmap$Config) -> a
+    96:96:android.graphics.Bitmap decodeSampledBitmapFromByteArray(byte[],com.lidroid.xutils.bitmap.core.BitmapSize,android.graphics.Bitmap$Config) -> a
+    117:117:android.graphics.Bitmap decodeResource(android.content.res.Resources,int) -> a
+    131:131:android.graphics.Bitmap decodeFile(java.lang.String) -> a
+    145:145:android.graphics.Bitmap decodeFileDescriptor(java.io.FileDescriptor) -> a
+    159:159:android.graphics.Bitmap decodeByteArray(byte[]) -> a
+    173:192:int calculateInSampleSize(android.graphics.BitmapFactory$Options,int,int) -> a
+com.lidroid.xutils.bitmap.core.BitmapSize -> com.lidroid.xutils.a.b.e:
+    com.lidroid.xutils.bitmap.core.BitmapSize ZERO -> a
+    int width -> b
+    int height -> c
+    24:24:com.lidroid.xutils.bitmap.core.BitmapSize scaleDown(int) -> a
+    31:31:com.lidroid.xutils.bitmap.core.BitmapSize scale(float) -> a
+    35:35:int getWidth() -> a
+    39:39:int getHeight() -> b
+    44:44:java.lang.String toString() -> toString
+com.lidroid.xutils.bitmap.download.DefaultDownloader -> com.lidroid.xutils.a.c.a:
+    49:125:long downloadToStream(java.lang.String,java.io.OutputStream,com.lidroid.xutils.BitmapUtils$BitmapLoadTask) -> a
+com.lidroid.xutils.bitmap.download.Downloader -> com.lidroid.xutils.a.c.b:
+    java.lang.String VIDEOS -> a
+    android.content.Context context -> b
+    long defaultExpiry -> c
+    int defaultConnectTimeout -> d
+    int defaultReadTimeout -> e
+    long downloadToStream(java.lang.String,java.io.OutputStream,com.lidroid.xutils.BitmapUtils$BitmapLoadTask) -> a
+    42:42:android.content.Context getContext() -> a
+    46:47:void setContext(android.content.Context) -> a
+    50:51:void setDefaultExpiry(long) -> a
+    54:54:long getDefaultExpiry() -> b
+    58:58:int getDefaultConnectTimeout() -> c
+    62:63:void setDefaultConnectTimeout(int) -> a
+    66:66:int getDefaultReadTimeout() -> d
+    70:71:void setDefaultReadTimeout(int) -> b
+com.lidroid.xutils.bitmap.factory.BitmapFactory -> com.lidroid.xutils.a.d.a:
+    com.lidroid.xutils.bitmap.factory.BitmapFactory cloneNew() -> a
+    android.graphics.Bitmap createBitmap(android.graphics.Bitmap) -> a
+com.lidroid.xutils.cache.FileNameGenerator -> com.lidroid.xutils.b.a:
+    java.lang.String generate(java.lang.String) -> a
+com.lidroid.xutils.cache.KeyExpiryMap -> com.lidroid.xutils.b.b:
+    long serialVersionUID -> a
+    int DEFAULT_CONCURRENCY_LEVEL -> b
+    52:55:java.lang.Long get(java.lang.Object) -> a
+    61:64:java.lang.Long put(java.lang.Object,java.lang.Long) -> a
+    69:76:boolean containsKey(java.lang.Object) -> containsKey
+    81:81:java.lang.Long remove(java.lang.Object) -> b
+    86:87:void clear() -> clear
+    1:1:java.lang.Object get(java.lang.Object) -> get
+    1:1:java.lang.Object remove(java.lang.Object) -> remove
+    1:1:java.lang.Object put(java.lang.Object,java.lang.Object) -> put
+com.lidroid.xutils.cache.LruDiskCache -> com.lidroid.xutils.b.c:
+    java.lang.String JOURNAL_FILE -> a
+    java.lang.String JOURNAL_FILE_TEMP -> b
+    java.lang.String JOURNAL_FILE_BACKUP -> c
+    java.lang.String MAGIC -> d
+    java.lang.String VERSION -> e
+    long ANY_SEQUENCE_NUMBER -> f
+    char CLEAN -> h
+    char UPDATE -> i
+    char DELETE -> j
+    char READ -> k
+    char EXPIRY_PREFIX -> l
+    java.io.File directory -> m
+    java.io.File journalFile -> n
+    java.io.File journalFileTmp -> o
+    java.io.File journalFileBackup -> p
+    int appVersion -> q
+    long maxSize -> r
+    int valueCount -> s
+    long size -> t
+    java.io.Writer journalWriter -> u
+    java.util.LinkedHashMap lruEntries -> v
+    int redundantOpCount -> w
+    long nextSequenceNumber -> x
+    java.util.concurrent.ThreadPoolExecutor executorService -> g
+    java.util.concurrent.Callable cleanupCallable -> y
+    java.io.OutputStream NULL_OUTPUT_STREAM -> z
+    com.lidroid.xutils.cache.FileNameGenerator fileNameGenerator -> A
+    191:234:com.lidroid.xutils.cache.LruDiskCache open(java.io.File,int,int,long) -> a
+    238:268:void readJournal() -> i
+    271:330:void readJournalLine(java.lang.String) -> e
+    337:353:void processJournal() -> j
+    360:397:void rebuildJournal() -> k
+    400:403:void deleteIfExists(java.io.File) -> a
+    406:412:void renameTo(java.io.File,java.io.File,boolean) -> a
+    415:421:long getExpiryTimestamp(java.lang.String) -> a
+    426:435:java.io.File getCacheFile(java.lang.String,int) -> a
+    440:441:com.lidroid.xutils.cache.LruDiskCache$Snapshot get(java.lang.String) -> b
+    450:505:com.lidroid.xutils.cache.LruDiskCache$Snapshot getByDiskKey(java.lang.String) -> f
+    513:514:com.lidroid.xutils.cache.LruDiskCache$Editor edit(java.lang.String) -> c
+    518:537:com.lidroid.xutils.cache.LruDiskCache$Editor editByDiskKey(java.lang.String,long) -> a
+    544:544:java.io.File getDirectory() -> a
+    552:552:long getMaxSize() -> b
+    560:562:void setMaxSize(long) -> a
+    570:570:long size() -> c
+    574:626:void completeEdit(com.lidroid.xutils.cache.LruDiskCache$Editor,boolean) -> a
+    633:634:boolean journalRebuildRequired() -> l
+    639:640:boolean remove(java.lang.String) -> d
+    650:673:boolean removeByDiskKey(java.lang.String) -> g
+    680:680:boolean isClosed() -> d
+    684:687:void checkNotClosed() -> m
+    693:696:void flush() -> e
+    703:714:void close() -> close
+    717:721:void trimToSize() -> n
+    729:731:void delete() -> f
+    734:734:java.lang.String inputStreamToString(java.io.InputStream) -> b
+    1036:1048:java.lang.String readFully(java.io.Reader) -> a
+    1056:1068:void deleteContents(java.io.File) -> b
+    1216:1216:com.lidroid.xutils.cache.FileNameGenerator getFileNameGenerator() -> g
+    1220:1223:void setFileNameGenerator(com.lidroid.xutils.cache.FileNameGenerator) -> a
+    137:137:java.io.Writer access$0(com.lidroid.xutils.cache.LruDiskCache) -> a
+    716:716:void access$1(com.lidroid.xutils.cache.LruDiskCache) -> b
+    632:632:boolean access$2(com.lidroid.xutils.cache.LruDiskCache) -> c
+    359:359:void access$3(com.lidroid.xutils.cache.LruDiskCache) -> d
+    140:140:void access$4(com.lidroid.xutils.cache.LruDiskCache,int) -> a
+    517:517:com.lidroid.xutils.cache.LruDiskCache$Editor access$5(com.lidroid.xutils.cache.LruDiskCache,java.lang.String,long) -> a
+    733:733:java.lang.String access$6(java.io.InputStream) -> a
+    135:135:int access$7(com.lidroid.xutils.cache.LruDiskCache) -> e
+    129:129:java.io.File access$8(com.lidroid.xutils.cache.LruDiskCache) -> f
+    791:791:java.io.OutputStream access$9() -> h
+    573:573:void access$10(com.lidroid.xutils.cache.LruDiskCache,com.lidroid.xutils.cache.LruDiskCache$Editor,boolean) -> a
+    649:649:boolean access$11(com.lidroid.xutils.cache.LruDiskCache,java.lang.String) -> a
+com.lidroid.xutils.cache.LruDiskCache$1 -> com.lidroid.xutils.b.d:
+    com.lidroid.xutils.cache.LruDiskCache this$0 -> a
+    156:166:java.lang.Void call() -> a
+    1:1:java.lang.Object call() -> call
+com.lidroid.xutils.cache.LruDiskCache$2 -> com.lidroid.xutils.b.e:
+    795:795:void write(int) -> write
+com.lidroid.xutils.cache.LruDiskCache$Editor -> com.lidroid.xutils.b.c$a:
+    com.lidroid.xutils.cache.LruDiskCache$Entry entry -> b
+    boolean[] written -> c
+    boolean hasErrors -> d
+    boolean committed -> e
+    com.lidroid.xutils.cache.LruDiskCache this$0 -> a
+    813:814:void setEntryExpiryTimestamp(long) -> a
+    821:821:java.io.InputStream newInputStream(int) -> a
+    841:842:java.lang.String getString(int) -> b
+    853:853:java.io.OutputStream newOutputStream(int) -> c
+    882:889:void set(int,java.lang.String) -> a
+    896:903:void commit() -> a
+    910:911:void abort() -> b
+    914:920:void abortUnlessCommitted() -> c
+    804:804:void access$0(com.lidroid.xutils.cache.LruDiskCache$Editor,boolean) -> a
+    802:802:com.lidroid.xutils.cache.LruDiskCache$Entry access$2(com.lidroid.xutils.cache.LruDiskCache$Editor) -> a
+    803:803:boolean[] access$3(com.lidroid.xutils.cache.LruDiskCache$Editor) -> b
+com.lidroid.xutils.cache.LruDiskCache$Editor$FaultHidingOutputStream -> com.lidroid.xutils.b.c$a$a:
+    com.lidroid.xutils.cache.LruDiskCache$Editor this$1 -> a
+    930:934:void write(int) -> write
+    939:944:void write(byte[],int,int) -> write
+    949:953:void close() -> close
+    958:962:void flush() -> flush
+com.lidroid.xutils.cache.LruDiskCache$Entry -> com.lidroid.xutils.b.c$b:
+    java.lang.String diskKey -> b
+    long expiryTimestamp -> c
+    long[] lengths -> d
+    boolean readable -> e
+    com.lidroid.xutils.cache.LruDiskCache$Editor currentEditor -> f
+    long sequenceNumber -> g
+    com.lidroid.xutils.cache.LruDiskCache this$0 -> a
+    997:1001:java.lang.String getLengths() -> a
+    1008:1019:void setLengths(java.lang.String[],int) -> a
+    1022:1022:java.io.IOException invalidLengths(java.lang.String[]) -> a
+    1026:1026:java.io.File getCleanFile(int) -> a
+    1030:1030:java.io.File getDirtyFile(int) -> b
+    979:979:boolean access$0(com.lidroid.xutils.cache.LruDiskCache$Entry) -> a
+    969:969:void access$1(com.lidroid.xutils.cache.LruDiskCache$Entry,long) -> a
+    984:984:com.lidroid.xutils.cache.LruDiskCache$Editor access$2(com.lidroid.xutils.cache.LruDiskCache$Entry) -> b
+    967:967:java.lang.String access$3(com.lidroid.xutils.cache.LruDiskCache$Entry) -> c
+    979:979:void access$5(com.lidroid.xutils.cache.LruDiskCache$Entry,boolean) -> a
+    984:984:void access$6(com.lidroid.xutils.cache.LruDiskCache$Entry,com.lidroid.xutils.cache.LruDiskCache$Editor) -> a
+    1007:1007:void access$7(com.lidroid.xutils.cache.LruDiskCache$Entry,java.lang.String[],int) -> a
+    974:974:long[] access$8(com.lidroid.xutils.cache.LruDiskCache$Entry) -> d
+    969:969:long access$9(com.lidroid.xutils.cache.LruDiskCache$Entry) -> e
+    989:989:long access$10(com.lidroid.xutils.cache.LruDiskCache$Entry) -> f
+    989:989:void access$11(com.lidroid.xutils.cache.LruDiskCache$Entry,long) -> b
+com.lidroid.xutils.cache.LruDiskCache$Snapshot -> com.lidroid.xutils.b.c$c:
+    java.lang.String diskKey -> b
+    long sequenceNumber -> c
+    java.io.FileInputStream[] ins -> d
+    long[] lengths -> e
+    com.lidroid.xutils.cache.LruDiskCache this$0 -> a
+    759:759:com.lidroid.xutils.cache.LruDiskCache$Editor edit() -> a
+    766:766:java.io.FileInputStream getInputStream(int) -> a
+    773:773:java.lang.String getString(int) -> b
+    780:780:long getLength(int) -> c
+    785:788:void close() -> close
+com.lidroid.xutils.cache.LruDiskCache$StrictLineReader -> com.lidroid.xutils.b.c$d:
+    byte CR -> b
+    byte LF -> c
+    java.io.InputStream in -> d
+    java.nio.charset.Charset charset -> e
+    byte[] buf -> f
+    int pos -> g
+    int end -> h
+    com.lidroid.xutils.cache.LruDiskCache this$0 -> a
+    1128:1134:void close() -> close
+    1145:1145:java.lang.String readLine() -> a
+    1204:1210:void fillBuf() -> b
+    1076:1076:java.nio.charset.Charset access$0(com.lidroid.xutils.cache.LruDiskCache$StrictLineReader) -> a
+com.lidroid.xutils.cache.LruDiskCache$StrictLineReader$1 -> com.lidroid.xutils.b.f:
+    com.lidroid.xutils.cache.LruDiskCache$StrictLineReader this$1 -> a
+    1170:1174:java.lang.String toString() -> toString
+com.lidroid.xutils.cache.LruMemoryCache -> com.lidroid.xutils.b.g:
+    java.util.LinkedHashMap map -> a
+    int size -> b
+    int maxSize -> c
+    int putCount -> d
+    int createCount -> e
+    int evictionCount -> f
+    int hitCount -> g
+    int missCount -> h
+    com.lidroid.xutils.cache.KeyExpiryMap keyExpiryMap -> i
+    57:59:void setMaxSize(int) -> a
+    68:116:java.lang.Object get(java.lang.Object) -> a
+    128:128:java.lang.Object put(java.lang.Object,java.lang.Object) -> b
+    138:158:java.lang.Object put(java.lang.Object,java.lang.Object,long) -> a
+    169:185:void trimToSize(int) -> b
+    193:210:java.lang.Object remove(java.lang.Object) -> b
+    214:214:boolean containsKey(java.lang.Object) -> c
+    233:233:void entryRemoved(boolean,java.lang.Object,java.lang.Object,java.lang.Object) -> a
+    251:251:java.lang.Object create(java.lang.Object) -> d
+    255:262:int safeSizeOf(java.lang.Object,java.lang.Object) -> c
+    273:273:int sizeOf(java.lang.Object,java.lang.Object) -> a
+    280:282:void evictAll() -> a
+    290:290:int size() -> b
+    299:299:int maxSize() -> c
+    306:306:int hitCount() -> d
+    314:314:int missCount() -> e
+    321:321:int createCount() -> f
+    328:328:int putCount() -> g
+    335:335:int evictionCount() -> h
+    343:343:java.util.Map snapshot() -> i
+    347:349:java.lang.String toString() -> toString
+com.lidroid.xutils.cache.MD5FileNameGenerator -> com.lidroid.xutils.b.h:
+    18:24:java.lang.String generate(java.lang.String) -> a
+    28:36:java.lang.String bytesToHexString(byte[]) -> a
+com.lidroid.xutils.db.annotation.Check -> com.lidroid.xutils.db.annotation.Check:
+    java.lang.String value() -> value
+com.lidroid.xutils.db.annotation.Column -> com.lidroid.xutils.db.annotation.Column:
+    java.lang.String column() -> column
+    java.lang.String defaultValue() -> defaultValue
+com.lidroid.xutils.db.annotation.Finder -> com.lidroid.xutils.db.annotation.Finder:
+    java.lang.String valueColumn() -> valueColumn
+    java.lang.String targetColumn() -> targetColumn
+com.lidroid.xutils.db.annotation.Foreign -> com.lidroid.xutils.db.annotation.Foreign:
+    java.lang.String column() -> column
+    java.lang.String foreign() -> foreign
+com.lidroid.xutils.db.annotation.Id -> com.lidroid.xutils.db.annotation.Id:
+    java.lang.String column() -> column
+com.lidroid.xutils.db.annotation.NoAutoIncrement -> com.lidroid.xutils.db.annotation.NoAutoIncrement:
+com.lidroid.xutils.db.annotation.NotNull -> com.lidroid.xutils.db.annotation.NotNull:
+com.lidroid.xutils.db.annotation.Table -> com.lidroid.xutils.db.annotation.Table:
+    java.lang.String name() -> name
+    java.lang.String execAfterTableCreated() -> execAfterTableCreated
+com.lidroid.xutils.db.annotation.Transient -> com.lidroid.xutils.db.annotation.Transient:
+com.lidroid.xutils.db.annotation.Unique -> com.lidroid.xutils.db.annotation.Unique:
+com.lidroid.xutils.db.converter.BooleanColumnConverter -> com.lidroid.xutils.db.a.a:
+    15:15:java.lang.Boolean getFieldValue(android.database.Cursor,int) -> a
+    20:21:java.lang.Boolean getFieldValue(java.lang.String) -> a
+    26:27:java.lang.Object fieldValue2ColumnValue(java.lang.Boolean) -> a
+    32:32:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.ByteArrayColumnConverter -> com.lidroid.xutils.db.a.b:
+    14:14:byte[] getFieldValue(android.database.Cursor,int) -> a
+    19:19:byte[] getFieldValue(java.lang.String) -> a
+    24:24:java.lang.Object fieldValue2ColumnValue(byte[]) -> a
+    29:29:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.ByteColumnConverter -> com.lidroid.xutils.db.a.c:
+    15:15:java.lang.Byte getFieldValue(android.database.Cursor,int) -> a
+    20:21:java.lang.Byte getFieldValue(java.lang.String) -> a
+    26:26:java.lang.Object fieldValue2ColumnValue(java.lang.Byte) -> a
+    31:31:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.CharColumnConverter -> com.lidroid.xutils.db.a.d:
+    15:15:java.lang.Character getFieldValue(android.database.Cursor,int) -> a
+    20:21:java.lang.Character getFieldValue(java.lang.String) -> a
+    26:27:java.lang.Object fieldValue2ColumnValue(java.lang.Character) -> a
+    32:32:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.ColumnConverter -> com.lidroid.xutils.db.a.e:
+    java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+    java.lang.Object getFieldValue(java.lang.String) -> b
+    java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+com.lidroid.xutils.db.converter.ColumnConverterFactory -> com.lidroid.xutils.db.a.f:
+    java.util.concurrent.ConcurrentHashMap columnType_columnConverter_map -> a
+    19:31:com.lidroid.xutils.db.converter.ColumnConverter getColumnConverter(java.lang.Class) -> a
+    35:39:com.lidroid.xutils.db.sqlite.ColumnDbType getDbColumnType(java.lang.Class) -> b
+    43:44:void registerColumnConverter(java.lang.Class,com.lidroid.xutils.db.converter.ColumnConverter) -> a
+    47:59:boolean isSupportColumnConverter(java.lang.Class) -> c
+com.lidroid.xutils.db.converter.DateColumnConverter -> com.lidroid.xutils.db.a.g:
+    17:17:java.util.Date getFieldValue(android.database.Cursor,int) -> a
+    22:23:java.util.Date getFieldValue(java.lang.String) -> a
+    28:29:java.lang.Object fieldValue2ColumnValue(java.util.Date) -> a
+    34:34:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.DoubleColumnConverter -> com.lidroid.xutils.db.a.h:
+    15:15:java.lang.Double getFieldValue(android.database.Cursor,int) -> a
+    20:21:java.lang.Double getFieldValue(java.lang.String) -> a
+    26:26:java.lang.Object fieldValue2ColumnValue(java.lang.Double) -> a
+    31:31:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.FloatColumnConverter -> com.lidroid.xutils.db.a.i:
+    15:15:java.lang.Float getFieldValue(android.database.Cursor,int) -> a
+    20:21:java.lang.Float getFieldValue(java.lang.String) -> a
+    26:26:java.lang.Object fieldValue2ColumnValue(java.lang.Float) -> a
+    31:31:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.IntegerColumnConverter -> com.lidroid.xutils.db.a.j:
+    15:15:java.lang.Integer getFieldValue(android.database.Cursor,int) -> a
+    20:21:java.lang.Integer getFieldValue(java.lang.String) -> a
+    26:26:java.lang.Object fieldValue2ColumnValue(java.lang.Integer) -> a
+    31:31:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.LongColumnConverter -> com.lidroid.xutils.db.a.k:
+    15:15:java.lang.Long getFieldValue(android.database.Cursor,int) -> a
+    20:21:java.lang.Long getFieldValue(java.lang.String) -> a
+    26:26:java.lang.Object fieldValue2ColumnValue(java.lang.Long) -> a
+    31:31:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.ShortColumnConverter -> com.lidroid.xutils.db.a.l:
+    15:15:java.lang.Short getFieldValue(android.database.Cursor,int) -> a
+    20:21:java.lang.Short getFieldValue(java.lang.String) -> a
+    26:26:java.lang.Object fieldValue2ColumnValue(java.lang.Short) -> a
+    31:31:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.SqlDateColumnConverter -> com.lidroid.xutils.db.a.m:
+    15:15:java.sql.Date getFieldValue(android.database.Cursor,int) -> a
+    20:21:java.sql.Date getFieldValue(java.lang.String) -> a
+    26:27:java.lang.Object fieldValue2ColumnValue(java.sql.Date) -> a
+    32:32:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.converter.StringColumnConverter -> com.lidroid.xutils.db.a.n:
+    14:14:java.lang.String getFieldValue(android.database.Cursor,int) -> a
+    19:19:java.lang.String getFieldValue(java.lang.String) -> a
+    24:24:java.lang.Object fieldValue2ColumnValue(java.lang.String) -> c
+    29:29:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> a
+    1:1:java.lang.Object fieldValue2ColumnValue(java.lang.Object) -> a
+    1:1:java.lang.Object getFieldValue(java.lang.String) -> b
+    1:1:java.lang.Object getFieldValue(android.database.Cursor,int) -> b
+com.lidroid.xutils.db.sqlite.ColumnDbType -> com.lidroid.xutils.db.b.a:
+    com.lidroid.xutils.db.sqlite.ColumnDbType INTEGER -> a
+    com.lidroid.xutils.db.sqlite.ColumnDbType REAL -> b
+    com.lidroid.xutils.db.sqlite.ColumnDbType TEXT -> c
+    com.lidroid.xutils.db.sqlite.ColumnDbType BLOB -> d
+    java.lang.String value -> e
+    com.lidroid.xutils.db.sqlite.ColumnDbType[] ENUM$VALUES -> f
+    18:18:java.lang.String toString() -> toString
+    1:1:com.lidroid.xutils.db.sqlite.ColumnDbType[] values() -> values
+    1:1:com.lidroid.xutils.db.sqlite.ColumnDbType valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.db.sqlite.CursorUtils -> com.lidroid.xutils.db.b.b:
+    29:67:java.lang.Object getEntity(com.lidroid.xutils.DbUtils,android.database.Cursor,java.lang.Class,long) -> a
+    71:79:com.lidroid.xutils.db.table.DbModel getDbModel(android.database.Cursor) -> a
+com.lidroid.xutils.db.sqlite.CursorUtils$EntityTempCache -> com.lidroid.xutils.db.b.b$a:
+    java.util.concurrent.ConcurrentHashMap cache -> a
+    long seq -> b
+    108:109:void put(java.lang.Class,java.lang.Object,java.lang.Object) -> a
+    113:113:java.lang.Object get(java.lang.Class,java.lang.Object) -> a
+    117:121:void setSeq(long) -> a
+com.lidroid.xutils.db.sqlite.CursorUtils$FindCacheSequence -> com.lidroid.xutils.db.b.b$b:
+    long seq -> a
+    java.lang.String FOREIGN_LAZY_LOADER_CLASS_NAME -> b
+    java.lang.String FINDER_LAZY_LOADER_CLASS_NAME -> c
+    91:95:long getSeq() -> a
+com.lidroid.xutils.db.sqlite.DbModelSelector -> com.lidroid.xutils.db.b.c:
+    java.lang.String[] columnExpressions -> a
+    java.lang.String groupByColumnName -> b
+    com.lidroid.xutils.db.sqlite.WhereBuilder having -> c
+    com.lidroid.xutils.db.sqlite.Selector selector -> d
+    48:48:com.lidroid.xutils.db.sqlite.DbModelSelector from(java.lang.Class) -> a
+    52:53:com.lidroid.xutils.db.sqlite.DbModelSelector where(com.lidroid.xutils.db.sqlite.WhereBuilder) -> a
+    57:58:com.lidroid.xutils.db.sqlite.DbModelSelector where(java.lang.String,java.lang.String,java.lang.Object) -> a
+    62:63:com.lidroid.xutils.db.sqlite.DbModelSelector and(java.lang.String,java.lang.String,java.lang.Object) -> b
+    67:68:com.lidroid.xutils.db.sqlite.DbModelSelector and(com.lidroid.xutils.db.sqlite.WhereBuilder) -> b
+    72:73:com.lidroid.xutils.db.sqlite.DbModelSelector or(java.lang.String,java.lang.String,java.lang.Object) -> c
+    77:78:com.lidroid.xutils.db.sqlite.DbModelSelector or(com.lidroid.xutils.db.sqlite.WhereBuilder) -> c
+    82:83:com.lidroid.xutils.db.sqlite.DbModelSelector expr(java.lang.String) -> a
+    87:88:com.lidroid.xutils.db.sqlite.DbModelSelector expr(java.lang.String,java.lang.String,java.lang.Object) -> d
+    92:93:com.lidroid.xutils.db.sqlite.DbModelSelector groupBy(java.lang.String) -> b
+    97:98:com.lidroid.xutils.db.sqlite.DbModelSelector having(com.lidroid.xutils.db.sqlite.WhereBuilder) -> d
+    102:103:com.lidroid.xutils.db.sqlite.DbModelSelector select(java.lang.String[]) -> a
+    107:108:com.lidroid.xutils.db.sqlite.DbModelSelector orderBy(java.lang.String) -> c
+    112:113:com.lidroid.xutils.db.sqlite.DbModelSelector orderBy(java.lang.String,boolean) -> a
+    117:118:com.lidroid.xutils.db.sqlite.DbModelSelector limit(int) -> a
+    122:123:com.lidroid.xutils.db.sqlite.DbModelSelector offset(int) -> b
+    127:127:java.lang.Class getEntityType() -> a
+    132:166:java.lang.String toString() -> toString
+com.lidroid.xutils.db.sqlite.FinderLazyLoader -> com.lidroid.xutils.db.b.d:
+    com.lidroid.xutils.db.table.Finder finderColumn -> a
+    java.lang.Object finderValue -> b
+    25:33:java.util.List getAllFromDb() -> a
+    37:45:java.lang.Object getFirstFromDb() -> b
+com.lidroid.xutils.db.sqlite.ForeignLazyLoader -> com.lidroid.xutils.db.b.e:
+    com.lidroid.xutils.db.table.Foreign foreignColumn -> a
+    java.lang.Object columnValue -> b
+    35:43:java.util.List getAllFromDb() -> a
+    47:55:java.lang.Object getFirstFromDb() -> b
+    59:60:void setColumnValue(java.lang.Object) -> a
+    63:63:java.lang.Object getColumnValue() -> c
+com.lidroid.xutils.db.sqlite.Selector -> com.lidroid.xutils.db.b.f:
+    java.lang.Class entityType -> a
+    java.lang.String tableName -> b
+    com.lidroid.xutils.db.sqlite.WhereBuilder whereBuilder -> c
+    java.util.List orderByList -> d
+    int limit -> e
+    int offset -> f
+    44:44:com.lidroid.xutils.db.sqlite.Selector from(java.lang.Class) -> a
+    48:49:com.lidroid.xutils.db.sqlite.Selector where(com.lidroid.xutils.db.sqlite.WhereBuilder) -> a
+    53:54:com.lidroid.xutils.db.sqlite.Selector where(java.lang.String,java.lang.String,java.lang.Object) -> a
+    58:59:com.lidroid.xutils.db.sqlite.Selector and(java.lang.String,java.lang.String,java.lang.Object) -> b
+    63:64:com.lidroid.xutils.db.sqlite.Selector and(com.lidroid.xutils.db.sqlite.WhereBuilder) -> b
+    68:69:com.lidroid.xutils.db.sqlite.Selector or(java.lang.String,java.lang.String,java.lang.Object) -> c
+    73:74:com.lidroid.xutils.db.sqlite.Selector or(com.lidroid.xutils.db.sqlite.WhereBuilder) -> c
+    78:82:com.lidroid.xutils.db.sqlite.Selector expr(java.lang.String) -> a
+    86:90:com.lidroid.xutils.db.sqlite.Selector expr(java.lang.String,java.lang.String,java.lang.Object) -> d
+    94:94:com.lidroid.xutils.db.sqlite.DbModelSelector groupBy(java.lang.String) -> b
+    98:98:com.lidroid.xutils.db.sqlite.DbModelSelector select(java.lang.String[]) -> a
+    102:106:com.lidroid.xutils.db.sqlite.Selector orderBy(java.lang.String) -> c
+    110:114:com.lidroid.xutils.db.sqlite.Selector orderBy(java.lang.String,boolean) -> a
+    118:119:com.lidroid.xutils.db.sqlite.Selector limit(int) -> a
+    123:124:com.lidroid.xutils.db.sqlite.Selector offset(int) -> b
+    129:145:java.lang.String toString() -> toString
+    149:149:java.lang.Class getEntityType() -> a
+com.lidroid.xutils.db.sqlite.Selector$OrderBy -> com.lidroid.xutils.db.b.f$a:
+    java.lang.String columnName -> b
+    boolean desc -> c
+    com.lidroid.xutils.db.sqlite.Selector this$0 -> a
+    167:167:java.lang.String toString() -> toString
+com.lidroid.xutils.db.sqlite.SqlInfo -> com.lidroid.xutils.db.b.g:
+    java.lang.String sql -> a
+    java.util.LinkedList bindArgs -> b
+    40:40:java.lang.String getSql() -> a
+    44:45:void setSql(java.lang.String) -> a
+    48:48:java.util.LinkedList getBindArgs() -> b
+    52:55:java.lang.Object[] getBindArgsAsArray() -> c
+    59:67:java.lang.String[] getBindArgsAsStrArray() -> d
+    71:76:void addBindArg(java.lang.Object) -> a
+    79:84:void addBindArgWithoutConverter(java.lang.Object) -> b
+    87:92:void addBindArgs(java.lang.Object[]) -> a
+com.lidroid.xutils.db.sqlite.SqlInfoBuilder -> com.lidroid.xutils.db.b.h:
+    36:61:com.lidroid.xutils.db.sqlite.SqlInfo buildInsertSqlInfo(com.lidroid.xutils.DbUtils,java.lang.Object) -> a
+    68:93:com.lidroid.xutils.db.sqlite.SqlInfo buildReplaceSqlInfo(com.lidroid.xutils.DbUtils,java.lang.Object) -> b
+    99:99:java.lang.String buildDeleteSqlByTableName(java.lang.String) -> a
+    103:118:com.lidroid.xutils.db.sqlite.SqlInfo buildDeleteSqlInfo(com.lidroid.xutils.DbUtils,java.lang.Object) -> c
+    122:135:com.lidroid.xutils.db.sqlite.SqlInfo buildDeleteSqlInfo(com.lidroid.xutils.DbUtils,java.lang.Class,java.lang.Object) -> a
+    139:146:com.lidroid.xutils.db.sqlite.SqlInfo buildDeleteSqlInfo(com.lidroid.xutils.DbUtils,java.lang.Class,com.lidroid.xutils.db.sqlite.WhereBuilder) -> a
+    153:185:com.lidroid.xutils.db.sqlite.SqlInfo buildUpdateSqlInfo(com.lidroid.xutils.DbUtils,java.lang.Object,java.lang.String[]) -> a
+    190:218:com.lidroid.xutils.db.sqlite.SqlInfo buildUpdateSqlInfo(com.lidroid.xutils.DbUtils,java.lang.Object,com.lidroid.xutils.db.sqlite.WhereBuilder,java.lang.String[]) -> a
+    224:260:com.lidroid.xutils.db.sqlite.SqlInfo buildCreateTableSqlInfo(com.lidroid.xutils.DbUtils,java.lang.Class) -> a
+    264:271:com.lidroid.xutils.db.table.KeyValue column2KeyValue(java.lang.Object,com.lidroid.xutils.db.table.Column) -> a
+    276:299:java.util.List entity2KeyValueList(com.lidroid.xutils.DbUtils,java.lang.Object) -> d
+com.lidroid.xutils.db.sqlite.WhereBuilder -> com.lidroid.xutils.db.b.i:
+    java.util.List whereItems -> a
+    46:46:com.lidroid.xutils.db.sqlite.WhereBuilder b() -> a
+    58:60:com.lidroid.xutils.db.sqlite.WhereBuilder b(java.lang.String,java.lang.String,java.lang.Object) -> a
+    72:73:com.lidroid.xutils.db.sqlite.WhereBuilder and(java.lang.String,java.lang.String,java.lang.Object) -> b
+    85:86:com.lidroid.xutils.db.sqlite.WhereBuilder or(java.lang.String,java.lang.String,java.lang.Object) -> c
+    90:91:com.lidroid.xutils.db.sqlite.WhereBuilder expr(java.lang.String) -> a
+    95:96:com.lidroid.xutils.db.sqlite.WhereBuilder expr(java.lang.String,java.lang.String,java.lang.Object) -> d
+    100:100:int getWhereItemSize() -> b
+    105:112:java.lang.String toString() -> toString
+    116:238:void appendCondition(java.lang.String,java.lang.String,java.lang.String,java.lang.Object) -> a
+com.lidroid.xutils.db.table.Column -> com.lidroid.xutils.db.c.a:
+    com.lidroid.xutils.db.table.Table table -> f
+    int index -> g
+    java.lang.String columnName -> a
+    java.lang.Object defaultValue -> h
+    java.lang.reflect.Method getMethod -> b
+    java.lang.reflect.Method setMethod -> c
+    java.lang.reflect.Field columnField -> d
+    com.lidroid.xutils.db.converter.ColumnConverter columnConverter -> e
+    57:75:void setValue2Entity(java.lang.Object,android.database.Cursor,int) -> a
+    79:80:java.lang.Object getColumnValue(java.lang.Object) -> a
+    84:101:java.lang.Object getFieldValue(java.lang.Object) -> b
+    105:105:com.lidroid.xutils.db.table.Table getTable() -> a
+    109:110:void setTable(com.lidroid.xutils.db.table.Table) -> a
+    118:118:int getIndex() -> b
+    122:122:java.lang.String getColumnName() -> c
+    126:126:java.lang.Object getDefaultValue() -> d
+    130:130:java.lang.reflect.Field getColumnField() -> e
+    134:134:com.lidroid.xutils.db.converter.ColumnConverter getColumnConverter() -> f
+    138:138:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> g
+com.lidroid.xutils.db.table.ColumnUtils -> com.lidroid.xutils.db.c.b:
+    java.util.HashSet DB_PRIMITIVE_TYPES -> a
+    62:62:boolean isDbPrimitiveType(java.lang.Class) -> a
+    66:83:java.lang.reflect.Method getColumnGetMethod(java.lang.Class,java.lang.reflect.Field) -> a
+    87:104:java.lang.reflect.Method getColumnSetMethod(java.lang.Class,java.lang.reflect.Field) -> b
+    109:129:java.lang.String getColumnNameByField(java.lang.reflect.Field) -> a
+    134:139:java.lang.String getForeignColumnNameByField(java.lang.reflect.Field) -> b
+    143:147:java.lang.String getColumnDefaultValue(java.lang.reflect.Field) -> c
+    151:151:boolean isTransient(java.lang.reflect.Field) -> d
+    155:155:boolean isForeign(java.lang.reflect.Field) -> e
+    159:159:boolean isFinder(java.lang.reflect.Field) -> f
+    163:163:boolean isUnique(java.lang.reflect.Field) -> g
+    167:167:boolean isNotNull(java.lang.reflect.Field) -> h
+    175:179:java.lang.String getCheck(java.lang.reflect.Field) -> i
+    185:189:java.lang.Class getForeignEntityType(com.lidroid.xutils.db.table.Foreign) -> a
+    194:198:java.lang.Class getFinderTargetEntityType(com.lidroid.xutils.db.table.Finder) -> a
+    203:215:java.lang.Object convert2DbColumnValueIfNeeded(java.lang.Object) -> a
+    219:219:boolean isStartWithIs(java.lang.String) -> a
+    223:232:java.lang.reflect.Method getBooleanColumnGetMethod(java.lang.Class,java.lang.String) -> a
+    236:248:java.lang.reflect.Method getBooleanColumnSetMethod(java.lang.Class,java.lang.reflect.Field) -> c
+com.lidroid.xutils.db.table.DbModel -> com.lidroid.xutils.db.c.c:
+    java.util.HashMap dataMap -> a
+    32:32:java.lang.String getString(java.lang.String) -> a
+    36:36:int getInt(java.lang.String) -> b
+    40:44:boolean getBoolean(java.lang.String) -> c
+    48:48:double getDouble(java.lang.String) -> d
+    52:52:float getFloat(java.lang.String) -> e
+    56:56:long getLong(java.lang.String) -> f
+    60:61:java.util.Date getDate(java.lang.String) -> g
+    65:66:java.sql.Date getSqlDate(java.lang.String) -> h
+    70:71:void add(java.lang.String,java.lang.String) -> a
+    77:77:java.util.HashMap getDataMap() -> a
+    85:85:boolean isEmpty(java.lang.String) -> i
+com.lidroid.xutils.db.table.Finder -> com.lidroid.xutils.db.c.d:
+    java.lang.String valueColumnName -> f
+    java.lang.String targetColumnName -> g
+    32:32:java.lang.Class getTargetEntityType() -> h
+    36:36:java.lang.String getTargetColumnName() -> i
+    41:74:void setValue2Entity(java.lang.Object,android.database.Cursor,int) -> a
+    78:78:java.lang.Object getColumnValue(java.lang.Object) -> a
+    83:83:java.lang.Object getDefaultValue() -> d
+    88:88:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> g
+com.lidroid.xutils.db.table.Foreign -> com.lidroid.xutils.db.c.e:
+    java.lang.String foreignColumnName -> f
+    com.lidroid.xutils.db.converter.ColumnConverter foreignColumnConverter -> g
+    44:44:java.lang.String getForeignColumnName() -> h
+    48:48:java.lang.Class getForeignEntityType() -> i
+    54:89:void setValue2Entity(java.lang.Object,android.database.Cursor,int) -> a
+    94:143:java.lang.Object getColumnValue(java.lang.Object) -> a
+    148:148:com.lidroid.xutils.db.sqlite.ColumnDbType getColumnDbType() -> g
+    158:158:java.lang.Object getDefaultValue() -> d
+com.lidroid.xutils.db.table.Id -> com.lidroid.xutils.db.c.f:
+    java.lang.String columnFieldClassName -> f
+    boolean isAutoIncrementChecked -> g
+    boolean isAutoIncrement -> h
+    java.util.HashSet INTEGER_TYPES -> i
+    java.util.HashSet AUTO_INCREMENT_TYPES -> j
+    36:41:boolean isAutoIncrement() -> h
+    45:64:void setAutoIncrementId(java.lang.Object,long) -> a
+    68:76:java.lang.Object getColumnValue(java.lang.Object) -> a
+com.lidroid.xutils.db.table.KeyValue -> com.lidroid.xutils.db.c.g:
+    java.lang.String key -> a
+    java.lang.Object value -> b
+com.lidroid.xutils.db.table.Table -> com.lidroid.xutils.db.c.h:
+    com.lidroid.xutils.DbUtils db -> a
+    java.lang.String tableName -> b
+    com.lidroid.xutils.db.table.Id id -> c
+    java.util.HashMap columnMap -> d
+    java.util.HashMap finderMap -> e
+    java.util.HashMap tableMap -> f
+    boolean checkedDatabase -> g
+    62:69:com.lidroid.xutils.db.table.Table get(com.lidroid.xutils.DbUtils,java.lang.Class) -> a
+    73:75:void remove(com.lidroid.xutils.DbUtils,java.lang.Class) -> b
+    78:93:void remove(com.lidroid.xutils.DbUtils,java.lang.String) -> a
+    98:98:boolean isCheckedDatabase() -> a
+    102:103:void setCheckedDatabase(boolean) -> a
+com.lidroid.xutils.db.table.TableUtils -> com.lidroid.xutils.db.c.i:
+    java.util.concurrent.ConcurrentHashMap entityColumnsMap -> a
+    java.util.concurrent.ConcurrentHashMap entityIdMap -> b
+    35:39:java.lang.String getTableName(java.lang.Class) -> a
+    43:47:java.lang.String getExecAfterTableCreated(java.lang.Class) -> b
+    58:67:java.util.HashMap getColumnMap(java.lang.Class) -> c
+    71:104:void addColumns2Map(java.lang.Class,java.lang.String,java.util.HashMap) -> a
+    108:111:com.lidroid.xutils.db.table.Column getColumnOrId(java.lang.Class,java.lang.String) -> a
+    121:156:com.lidroid.xutils.db.table.Id getId(java.lang.Class) -> d
+    160:161:java.lang.String getPrimaryKeyFieldName(java.lang.Class) -> e
+    165:166:java.lang.String getPrimaryKeyColumnName(java.lang.Class) -> f
+com.lidroid.xutils.exception.BaseException -> com.lidroid.xutils.c.a:
+    long serialVersionUID -> a
+com.lidroid.xutils.exception.DbException -> com.lidroid.xutils.c.b:
+    long serialVersionUID -> a
+com.lidroid.xutils.exception.HttpException -> com.lidroid.xutils.c.c:
+    long serialVersionUID -> a
+    int exceptionCode -> b
+    77:77:int getExceptionCode() -> a
+com.lidroid.xutils.http.HttpCache -> com.lidroid.xutils.d.a:
+    com.lidroid.xutils.cache.LruMemoryCache mMemoryCache -> a
+    int DEFAULT_CACHE_SIZE -> b
+    long DEFAULT_EXPIRY_TIME -> c
+    int cacheSize -> d
+    long defaultExpiryTime -> e
+    java.util.concurrent.ConcurrentHashMap httpMethod_enabled_map -> f
+    65:66:void setCacheSize(int) -> a
+    69:70:void setDefaultExpiryTime(long) -> a
+    73:73:long getDefaultExpiryTime() -> a
+    77:78:void put(java.lang.String,java.lang.String) -> a
+    81:84:void put(java.lang.String,java.lang.String,long) -> a
+    87:87:java.lang.String get(java.lang.String) -> a
+    91:92:void clear() -> b
+    95:98:boolean isEnabled(com.lidroid.xutils.http.client.HttpRequest$HttpMethod) -> a
+    102:105:boolean isEnabled(java.lang.String) -> b
+    109:110:void setEnabled(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,boolean) -> a
+com.lidroid.xutils.http.HttpCache$1 -> com.lidroid.xutils.d.b:
+    com.lidroid.xutils.http.HttpCache this$0 -> a
+    58:59:int sizeOf(java.lang.String,java.lang.String) -> a
+    1:1:int sizeOf(java.lang.Object,java.lang.Object) -> a
+com.lidroid.xutils.http.HttpHandler -> com.lidroid.xutils.d.c:
+    org.apache.http.impl.client.AbstractHttpClient client -> a
+    org.apache.http.protocol.HttpContext context -> b
+    com.lidroid.xutils.http.callback.HttpRedirectHandler httpRedirectHandler -> c
+    java.lang.String requestUrl -> d
+    java.lang.String requestMethod -> e
+    org.apache.http.client.methods.HttpRequestBase request -> f
+    boolean isUploading -> g
+    com.lidroid.xutils.http.callback.RequestCallBack callback -> h
+    int retriedCount -> i
+    java.lang.String fileSavePath -> j
+    boolean isDownloadingFile -> k
+    boolean autoResume -> m
+    boolean autoRename -> n
+    java.lang.String charset -> o
+    com.lidroid.xutils.http.HttpHandler$State state -> p
+    long expiry -> q
+    int UPDATE_START -> r
+    int UPDATE_LOADING -> s
+    int UPDATE_FAILURE -> t
+    int UPDATE_SUCCESS -> u
+    long lastUpdateTime -> v
+    com.lidroid.xutils.http.HttpHandler$NotUseApacheRedirectHandler notUseApacheRedirectHandler -> w
+    48:51:void setHttpRedirectHandler(com.lidroid.xutils.http.callback.HttpRedirectHandler) -> a
+    77:77:com.lidroid.xutils.http.HttpHandler$State getState() -> a
+    83:84:void setExpiry(long) -> a
+    87:88:void setRequestCallBack(com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    91:91:com.lidroid.xutils.http.callback.RequestCallBack getRequestCallBack() -> b
+    98:147:com.lidroid.xutils.http.ResponseInfo sendRequest(org.apache.http.client.methods.HttpRequestBase) -> a
+    154:185:java.lang.Void doInBackground(java.lang.Object[]) -> a
+    196:223:void onProgressUpdate(java.lang.Object[]) -> b
+    227:266:com.lidroid.xutils.http.ResponseInfo handleResponse(org.apache.http.HttpResponse) -> a
+    274:292:void cancel() -> k
+    298:309:boolean updateProgress(long,long,boolean) -> a
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> c
+com.lidroid.xutils.http.HttpHandler$NotUseApacheRedirectHandler -> com.lidroid.xutils.d.c$a:
+    349:349:boolean isRedirectRequested(org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext) -> isRedirectRequested
+    354:354:java.net.URI getLocationURI(org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext) -> getLocationURI
+com.lidroid.xutils.http.HttpHandler$State -> com.lidroid.xutils.d.c$b:
+    com.lidroid.xutils.http.HttpHandler$State WAITING -> a
+    com.lidroid.xutils.http.HttpHandler$State STARTED -> b
+    com.lidroid.xutils.http.HttpHandler$State LOADING -> c
+    com.lidroid.xutils.http.HttpHandler$State FAILURE -> d
+    com.lidroid.xutils.http.HttpHandler$State CANCELLED -> e
+    com.lidroid.xutils.http.HttpHandler$State SUCCESS -> f
+    int value -> g
+    com.lidroid.xutils.http.HttpHandler$State[] ENUM$VALUES -> h
+    321:335:com.lidroid.xutils.http.HttpHandler$State valueOf(int) -> a
+    340:340:int value() -> a
+    1:1:com.lidroid.xutils.http.HttpHandler$State[] values() -> values
+    1:1:com.lidroid.xutils.http.HttpHandler$State valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.http.RequestParams -> com.lidroid.xutils.d.d:
+    java.lang.String charset -> a
+    java.util.List headers -> b
+    java.util.List queryStringParams -> c
+    org.apache.http.HttpEntity bodyEntity -> d
+    java.util.List bodyParams -> e
+    java.util.HashMap fileParams -> f
+    com.lidroid.xutils.task.Priority priority -> g
+    67:67:com.lidroid.xutils.task.Priority getPriority() -> a
+    71:72:void setPriority(com.lidroid.xutils.task.Priority) -> a
+    75:75:java.lang.String getCharset() -> b
+    79:80:void setContentType(java.lang.String) -> a
+    88:92:void addHeader(org.apache.http.Header) -> a
+    101:105:void addHeader(java.lang.String,java.lang.String) -> a
+    113:119:void addHeaders(java.util.List) -> a
+    128:132:void setHeader(org.apache.http.Header) -> b
+    142:146:void setHeader(java.lang.String,java.lang.String) -> b
+    154:160:void setHeaders(java.util.List) -> b
+    163:167:void addQueryStringParameter(java.lang.String,java.lang.String) -> c
+    170:174:void addQueryStringParameter(org.apache.http.NameValuePair) -> a
+    177:185:void addQueryStringParameter(java.util.List) -> c
+    188:192:void addBodyParameter(java.lang.String,java.lang.String) -> d
+    195:199:void addBodyParameter(org.apache.http.NameValuePair) -> b
+    202:210:void addBodyParameter(java.util.List) -> d
+    213:217:void addBodyParameter(java.lang.String,java.io.File) -> a
+    220:224:void addBodyParameter(java.lang.String,java.io.File,java.lang.String) -> a
+    227:231:void addBodyParameter(java.lang.String,java.io.File,java.lang.String,java.lang.String) -> a
+    234:238:void addBodyParameter(java.lang.String,java.io.File,java.lang.String,java.lang.String,java.lang.String) -> a
+    241:245:void addBodyParameter(java.lang.String,java.io.InputStream,long) -> a
+    248:252:void addBodyParameter(java.lang.String,java.io.InputStream,long,java.lang.String) -> a
+    255:259:void addBodyParameter(java.lang.String,java.io.InputStream,long,java.lang.String,java.lang.String) -> a
+    262:271:void setBodyEntity(org.apache.http.HttpEntity) -> a
+    278:307:org.apache.http.HttpEntity getEntity() -> c
+    311:311:java.util.List getQueryStringParams() -> d
+    315:315:java.util.List getHeaders() -> e
+com.lidroid.xutils.http.RequestParams$HeaderItem -> com.lidroid.xutils.d.d$a:
+    boolean overwrite -> a
+    org.apache.http.Header header -> b
+    com.lidroid.xutils.http.RequestParams this$0 -> c
+com.lidroid.xutils.http.ResponseInfo -> com.lidroid.xutils.d.e:
+    org.apache.http.HttpResponse response -> j
+    java.lang.Object result -> a
+    boolean resultFormCache -> b
+    java.util.Locale locale -> c
+    int statusCode -> d
+    org.apache.http.ProtocolVersion protocolVersion -> e
+    java.lang.String reasonPhrase -> f
+    long contentLength -> g
+    org.apache.http.Header contentType -> h
+    org.apache.http.Header contentEncoding -> i
+    31:32:org.apache.http.Header[] getAllHeaders() -> a
+    36:37:org.apache.http.Header[] getHeaders(java.lang.String) -> a
+    41:42:org.apache.http.Header getFirstHeader(java.lang.String) -> b
+    46:47:org.apache.http.Header getLastHeader(java.lang.String) -> c
+com.lidroid.xutils.http.ResponseStream -> com.lidroid.xutils.d.f:
+    org.apache.http.HttpResponse baseResponse -> a
+    java.io.InputStream baseStream -> b
+    java.lang.String charset -> c
+    java.lang.String requestUrl -> d
+    java.lang.String requestMethod -> e
+    long expiry -> f
+    java.lang.String _directResult -> g
+    69:69:java.lang.String getRequestUrl() -> a
+    73:73:java.lang.String getRequestMethod() -> b
+    77:78:void setRequestMethod(java.lang.String) -> a
+    81:81:java.io.InputStream getBaseStream() -> c
+    85:85:org.apache.http.HttpResponse getBaseResponse() -> d
+    89:90:int getStatusCode() -> e
+    94:95:java.util.Locale getLocale() -> f
+    99:100:java.lang.String getReasonPhrase() -> g
+    104:120:java.lang.String readString() -> h
+    124:140:void readFile(java.lang.String) -> b
+    144:145:int read() -> read
+    150:151:int available() -> available
+    156:158:void close() -> close
+    162:164:void mark(int) -> mark
+    168:169:boolean markSupported() -> markSupported
+    174:175:int read(byte[]) -> read
+    180:181:int read(byte[],int,int) -> read
+    186:188:void reset() -> reset
+    192:193:long skip(long) -> skip
+    197:198:long getContentLength() -> i
+com.lidroid.xutils.http.SyncHttpHandler -> com.lidroid.xutils.d.g:
+    org.apache.http.impl.client.AbstractHttpClient client -> a
+    org.apache.http.protocol.HttpContext context -> b
+    com.lidroid.xutils.http.callback.HttpRedirectHandler httpRedirectHandler -> c
+    java.lang.String requestUrl -> d
+    java.lang.String requestMethod -> e
+    java.lang.String charset -> f
+    int retriedTimes -> g
+    long expiry -> h
+    40:41:void setHttpRedirectHandler(com.lidroid.xutils.http.callback.HttpRedirectHandler) -> a
+    59:60:void setExpiry(long) -> a
+    64:98:com.lidroid.xutils.http.ResponseStream sendRequest(org.apache.http.client.methods.HttpRequestBase) -> a
+    104:126:com.lidroid.xutils.http.ResponseStream handleResponse(org.apache.http.HttpResponse) -> a
+com.lidroid.xutils.http.callback.DefaultHttpRedirectHandler -> com.lidroid.xutils.d.a.a:
+    31:40:org.apache.http.client.methods.HttpRequestBase getDirectRequest(org.apache.http.HttpResponse) -> a
+com.lidroid.xutils.http.callback.FileDownloadHandler -> com.lidroid.xutils.d.a.b:
+    31:90:java.io.File handleEntity(org.apache.http.HttpEntity,com.lidroid.xutils.http.callback.RequestCallBackHandler,java.lang.String,boolean,java.lang.String) -> a
+com.lidroid.xutils.http.callback.HttpRedirectHandler -> com.lidroid.xutils.d.a.c:
+    org.apache.http.client.methods.HttpRequestBase getDirectRequest(org.apache.http.HttpResponse) -> a
+com.lidroid.xutils.http.callback.RequestCallBack -> com.lidroid.xutils.d.a.d:
+    int DEFAULT_RATE -> b
+    int MIN_RATE -> c
+    java.lang.String requestUrl -> d
+    java.lang.Object userTag -> a
+    int rate -> e
+    53:56:int getRate() -> a
+    60:61:void setRate(int) -> a
+    64:64:java.lang.Object getUserTag() -> b
+    68:69:void setUserTag(java.lang.Object) -> a
+    72:72:java.lang.String getRequestUrl() -> c
+    76:77:void setRequestUrl(java.lang.String) -> a
+    80:80:void onStart() -> d
+    83:83:void onCancelled() -> e
+    86:86:void onLoading(long,long,boolean) -> a
+    void onSuccess(com.lidroid.xutils.http.ResponseInfo) -> a
+    void onFailure(com.lidroid.xutils.exception.HttpException,java.lang.String) -> a
+com.lidroid.xutils.http.callback.RequestCallBackHandler -> com.lidroid.xutils.d.a.e:
+    boolean updateProgress(long,long,boolean) -> a
+com.lidroid.xutils.http.callback.StringDownloadHandler -> com.lidroid.xutils.d.a.f:
+    30:60:java.lang.String handleEntity(org.apache.http.HttpEntity,com.lidroid.xutils.http.callback.RequestCallBackHandler,java.lang.String) -> a
+com.lidroid.xutils.http.client.DefaultSSLSocketFactory -> com.lidroid.xutils.d.b.a:
+    javax.net.ssl.SSLContext sslContext -> a
+    java.security.KeyStore trustStore -> b
+    com.lidroid.xutils.http.client.DefaultSSLSocketFactory instance -> c
+    34:41:com.lidroid.xutils.http.client.DefaultSSLSocketFactory getSocketFactory() -> a
+    75:75:java.net.Socket createSocket(java.net.Socket,java.lang.String,int,boolean) -> createSocket
+    80:80:java.net.Socket createSocket() -> createSocket
+    1:1:org.apache.http.conn.ssl.SSLSocketFactory getSocketFactory() -> b
+com.lidroid.xutils.http.client.DefaultSSLSocketFactory$1 -> com.lidroid.xutils.d.b.b:
+    com.lidroid.xutils.http.client.DefaultSSLSocketFactory this$0 -> a
+    53:53:java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+    60:60:void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    66:66:void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+com.lidroid.xutils.http.client.HttpRequest -> com.lidroid.xutils.d.b.c:
+    org.apache.http.HttpEntity entity -> a
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod method -> b
+    com.lidroid.xutils.http.client.util.URIBuilder uriBuilder -> c
+    java.nio.charset.Charset uriCharset -> d
+    70:71:com.lidroid.xutils.http.client.HttpRequest addQueryStringParameter(java.lang.String,java.lang.String) -> a
+    75:76:com.lidroid.xutils.http.client.HttpRequest addQueryStringParameter(org.apache.http.NameValuePair) -> a
+    80:85:com.lidroid.xutils.http.client.HttpRequest addQueryStringParams(java.util.List) -> a
+    89:106:void setRequestParams(com.lidroid.xutils.http.RequestParams) -> a
+    109:132:void setRequestParams(com.lidroid.xutils.http.RequestParams,com.lidroid.xutils.http.callback.RequestCallBackHandler) -> a
+    137:146:java.net.URI getURI() -> getURI
+    152:153:void setURI(java.net.URI) -> setURI
+    156:157:void setURI(java.lang.String) -> a
+    161:161:java.lang.String getMethod() -> getMethod
+    166:166:org.apache.http.HttpEntity getEntity() -> getEntity
+    171:172:void setEntity(org.apache.http.HttpEntity) -> setEntity
+    176:177:boolean expectContinue() -> expectContinue
+    182:186:java.lang.Object clone() -> clone
+com.lidroid.xutils.http.client.HttpRequest$HttpMethod -> com.lidroid.xutils.d.b.c$a:
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod GET -> a
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod POST -> b
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod PUT -> c
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod HEAD -> d
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod MOVE -> e
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod COPY -> f
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod DELETE -> g
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod OPTIONS -> h
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod TRACE -> i
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod CONNECT -> j
+    java.lang.String value -> k
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod[] ENUM$VALUES -> l
+    209:209:java.lang.String toString() -> toString
+    1:1:com.lidroid.xutils.http.client.HttpRequest$HttpMethod[] values() -> values
+    1:1:com.lidroid.xutils.http.client.HttpRequest$HttpMethod valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.http.client.RetryHandler -> com.lidroid.xutils.d.b.d:
+    int RETRY_SLEEP_INTERVAL -> a
+    java.util.HashSet exceptionWhiteList -> b
+    java.util.HashSet exceptionBlackList -> c
+    int maxRetries -> d
+    59:103:boolean retryRequest(java.io.IOException,int,org.apache.http.protocol.HttpContext) -> retryRequest
+com.lidroid.xutils.http.client.entity.BodyParamsEntity -> com.lidroid.xutils.d.b.a.a:
+    byte[] content -> a
+    boolean dirty -> b
+    java.lang.String charset -> c
+    java.util.List params -> d
+    72:74:com.lidroid.xutils.http.client.entity.BodyParamsEntity addParameter(java.lang.String,java.lang.String) -> a
+    78:80:com.lidroid.xutils.http.client.entity.BodyParamsEntity addParams(java.util.List) -> a
+    84:92:void refreshContent() -> a
+    95:95:boolean isRepeatable() -> isRepeatable
+    99:100:long getContentLength() -> getContentLength
+    104:105:java.io.InputStream getContent() -> getContent
+    109:115:void writeTo(java.io.OutputStream) -> writeTo
+    123:123:boolean isStreaming() -> isStreaming
+    127:127:java.lang.Object clone() -> clone
+com.lidroid.xutils.http.client.entity.DecompressingEntity -> com.lidroid.xutils.d.b.a.b:
+    java.io.InputStream content -> a
+    long uncompressedLength -> b
+    long uploadedSize -> c
+    com.lidroid.xutils.http.callback.RequestCallBackHandler callBackHandler -> d
+    java.io.InputStream decorate(java.io.InputStream) -> a
+    54:60:java.io.InputStream getDecompressingStream() -> a
+    69:75:java.io.InputStream getContent() -> getContent
+    84:84:long getContentLength() -> getContentLength
+    94:119:void writeTo(java.io.OutputStream) -> writeTo
+    125:126:void setCallBackHandler(com.lidroid.xutils.http.callback.RequestCallBackHandler) -> a
+com.lidroid.xutils.http.client.entity.FileUploadEntity -> com.lidroid.xutils.d.b.a.c:
+    long fileSize -> a
+    long uploadedSize -> b
+    com.lidroid.xutils.http.callback.RequestCallBackHandler callBackHandler -> c
+    42:66:void writeTo(java.io.OutputStream) -> writeTo
+    72:73:void setCallBackHandler(com.lidroid.xutils.http.callback.RequestCallBackHandler) -> a
+com.lidroid.xutils.http.client.entity.GZipDecompressingEntity -> com.lidroid.xutils.d.b.a.d:
+    40:40:java.io.InputStream decorate(java.io.InputStream) -> a
+    50:50:org.apache.http.Header getContentEncoding() -> getContentEncoding
+    1:1:long getContentLength() -> getContentLength
+    1:1:java.io.InputStream getContent() -> getContent
+    1:1:void setCallBackHandler(com.lidroid.xutils.http.callback.RequestCallBackHandler) -> a
+    1:1:void writeTo(java.io.OutputStream) -> writeTo
+com.lidroid.xutils.http.client.entity.InputStreamUploadEntity -> com.lidroid.xutils.d.b.a.e:
+    int BUFFER_SIZE -> a
+    java.io.InputStream content -> b
+    long length -> c
+    long uploadedSize -> d
+    com.lidroid.xutils.http.callback.RequestCallBackHandler callBackHandler -> e
+    50:50:boolean isRepeatable() -> isRepeatable
+    54:54:long getContentLength() -> getContentLength
+    58:58:java.io.InputStream getContent() -> getContent
+    64:107:void writeTo(java.io.OutputStream) -> writeTo
+    110:110:boolean isStreaming() -> isStreaming
+    120:121:void consumeContent() -> consumeContent
+    127:128:void setCallBackHandler(com.lidroid.xutils.http.callback.RequestCallBackHandler) -> a
+com.lidroid.xutils.http.client.entity.UploadEntity -> com.lidroid.xutils.d.b.a.f:
+    void setCallBackHandler(com.lidroid.xutils.http.callback.RequestCallBackHandler) -> a
+com.lidroid.xutils.http.client.multipart.FormBodyPart -> com.lidroid.xutils.d.b.b.a:
+    java.lang.String name -> a
+    com.lidroid.xutils.http.client.multipart.MinimalFieldHeader header -> b
+    com.lidroid.xutils.http.client.multipart.content.ContentBody body -> c
+    73:73:java.lang.String getName() -> a
+    77:77:com.lidroid.xutils.http.client.multipart.content.ContentBody getBody() -> b
+    81:81:com.lidroid.xutils.http.client.multipart.MinimalFieldHeader getHeader() -> c
+    85:89:void addField(java.lang.String,java.lang.String) -> a
+    92:102:void generateContentDisposition(com.lidroid.xutils.http.client.multipart.content.ContentBody) -> a
+    105:112:void generateContentType(com.lidroid.xutils.http.client.multipart.content.ContentBody) -> b
+    115:116:void generateTransferEncoding(com.lidroid.xutils.http.client.multipart.content.ContentBody) -> c
+com.lidroid.xutils.http.client.multipart.HttpMultipart -> com.lidroid.xutils.d.b.b.b:
+    org.apache.http.util.ByteArrayBuffer FIELD_SEP -> a
+    org.apache.http.util.ByteArrayBuffer CR_LF -> b
+    org.apache.http.util.ByteArrayBuffer TWO_DASHES -> c
+    java.lang.String subType -> d
+    java.nio.charset.Charset charset -> e
+    java.lang.String boundary -> f
+    java.util.List parts -> g
+    com.lidroid.xutils.http.client.multipart.HttpMultipartMode mode -> h
+    int[] $SWITCH_TABLE$com$lidroid$xutils$http$client$multipart$HttpMultipartMode -> i
+    42:45:org.apache.http.util.ByteArrayBuffer encode(java.nio.charset.Charset,java.lang.String) -> a
+    50:52:void writeBytes(org.apache.http.util.ByteArrayBuffer,java.io.OutputStream) -> a
+    56:58:void writeBytes(java.lang.String,java.nio.charset.Charset,java.io.OutputStream) -> a
+    62:64:void writeBytes(java.lang.String,java.io.OutputStream) -> a
+    68:72:void writeField(com.lidroid.xutils.http.client.multipart.MinimalField,java.io.OutputStream) -> a
+    76:80:void writeField(com.lidroid.xutils.http.client.multipart.MinimalField,java.nio.charset.Charset,java.io.OutputStream) -> a
+    136:137:void setSubType(java.lang.String) -> a
+    140:140:java.lang.String getSubType() -> a
+    144:144:java.nio.charset.Charset getCharset() -> b
+    148:148:com.lidroid.xutils.http.client.multipart.HttpMultipartMode getMode() -> c
+    152:152:java.util.List getBodyParts() -> d
+    156:160:void addBodyPart(com.lidroid.xutils.http.client.multipart.FormBodyPart) -> a
+    163:163:java.lang.String getBoundary() -> e
+    170:171:void doWriteTo(com.lidroid.xutils.http.client.multipart.HttpMultipartMode,java.io.OutputStream,boolean) -> a
+    179:241:void doWriteTo(com.lidroid.xutils.http.client.multipart.HttpMultipartMode,java.io.OutputStream,com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo,boolean) -> a
+    251:252:void writeTo(java.io.OutputStream,com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo) -> a
+    268:285:long getTotalLength() -> f
+    38:38:int[] $SWITCH_TABLE$com$lidroid$xutils$http$client$multipart$HttpMultipartMode() -> g
+com.lidroid.xutils.http.client.multipart.HttpMultipartMode -> com.lidroid.xutils.d.b.b.c:
+    com.lidroid.xutils.http.client.multipart.HttpMultipartMode STRICT -> a
+    com.lidroid.xutils.http.client.multipart.HttpMultipartMode BROWSER_COMPATIBLE -> b
+    com.lidroid.xutils.http.client.multipart.HttpMultipartMode[] ENUM$VALUES -> c
+    1:1:com.lidroid.xutils.http.client.multipart.HttpMultipartMode[] values() -> values
+    1:1:com.lidroid.xutils.http.client.multipart.HttpMultipartMode valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.http.client.multipart.MIME -> com.lidroid.xutils.d.b.b.d:
+    java.lang.String CONTENT_TYPE -> a
+    java.lang.String CONTENT_TRANSFER_ENC -> b
+    java.lang.String CONTENT_DISPOSITION -> c
+    java.lang.String ENC_8BIT -> d
+    java.lang.String ENC_BINARY -> e
+    java.nio.charset.Charset DEFAULT_CHARSET -> f
+com.lidroid.xutils.http.client.multipart.MinimalField -> com.lidroid.xutils.d.b.b.e:
+    java.lang.String name -> a
+    java.lang.String value -> b
+    35:35:java.lang.String getName() -> a
+    39:39:java.lang.String getBody() -> b
+    44:48:java.lang.String toString() -> toString
+com.lidroid.xutils.http.client.multipart.MinimalFieldHeader -> com.lidroid.xutils.d.b.b.f:
+    java.util.List fields -> a
+    java.util.Map fieldMap -> b
+    35:46:void addField(com.lidroid.xutils.http.client.multipart.MinimalField) -> a
+    49:49:java.util.List getFields() -> a
+    53:61:com.lidroid.xutils.http.client.multipart.MinimalField getField(java.lang.String) -> a
+    65:73:java.util.List getFields(java.lang.String) -> b
+    78:87:int removeFields(java.lang.String) -> c
+    91:114:void setField(com.lidroid.xutils.http.client.multipart.MinimalField) -> b
+    117:117:java.util.Iterator iterator() -> iterator
+    122:122:java.lang.String toString() -> toString
+com.lidroid.xutils.http.client.multipart.MultipartEntity -> com.lidroid.xutils.d.b.b.g:
+    com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo callBackInfo -> a
+    char[] MULTIPART_CHARS -> b
+    com.lidroid.xutils.http.client.multipart.HttpMultipart multipart -> c
+    org.apache.http.Header contentType -> d
+    long length -> e
+    boolean dirty -> f
+    java.lang.String boundary -> g
+    java.nio.charset.Charset charset -> h
+    java.lang.String multipartSubtype -> i
+    43:44:void setCallBackHandler(com.lidroid.xutils.http.callback.RequestCallBackHandler) -> a
+    134:139:void setMultipartSubtype(java.lang.String) -> a
+    144:151:java.lang.String generateContentType(java.lang.String,java.nio.charset.Charset) -> a
+    155:161:java.lang.String generateBoundary() -> a
+    165:167:void addPart(com.lidroid.xutils.http.client.multipart.FormBodyPart) -> a
+    170:171:void addPart(java.lang.String,com.lidroid.xutils.http.client.multipart.content.ContentBody) -> a
+    174:175:void addPart(java.lang.String,com.lidroid.xutils.http.client.multipart.content.ContentBody,java.lang.String) -> a
+    178:184:boolean isRepeatable() -> isRepeatable
+    188:188:boolean isChunked() -> isChunked
+    192:192:boolean isStreaming() -> isStreaming
+    196:200:long getContentLength() -> getContentLength
+    204:204:org.apache.http.Header getContentType() -> getContentType
+    208:208:org.apache.http.Header getContentEncoding() -> getContentEncoding
+    213:217:void consumeContent() -> consumeContent
+    220:220:java.io.InputStream getContent() -> getContent
+    225:227:void writeTo(java.io.OutputStream) -> writeTo
+com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo -> com.lidroid.xutils.d.b.b.g$a:
+    com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo DEFAULT -> a
+    com.lidroid.xutils.http.callback.RequestCallBackHandler callBackHandler -> b
+    long totalLength -> c
+    long pos -> d
+    58:61:boolean doCallBack(boolean) -> a
+com.lidroid.xutils.http.client.multipart.content.AbstractContentBody -> com.lidroid.xutils.d.b.b.a.a:
+    java.lang.String mimeType -> b
+    java.lang.String mediaType -> c
+    java.lang.String subType -> d
+    com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo callBackInfo -> a
+    46:46:java.lang.String getMimeType() -> a
+    50:50:java.lang.String getMediaType() -> b
+    54:54:java.lang.String getSubType() -> c
+    61:62:void setCallBackInfo(com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo) -> a
+com.lidroid.xutils.http.client.multipart.content.ByteArrayBody -> com.lidroid.xutils.d.b.b.a.b:
+    byte[] data -> b
+    java.lang.String filename -> c
+    67:67:java.lang.String getFilename() -> d
+    71:74:void writeTo(java.io.OutputStream) -> a
+    77:77:java.lang.String getCharset() -> e
+    81:81:java.lang.String getTransferEncoding() -> f
+    85:85:long getContentLength() -> g
+com.lidroid.xutils.http.client.multipart.content.ContentBody -> com.lidroid.xutils.d.b.b.a.c:
+    java.lang.String getFilename() -> d
+    void writeTo(java.io.OutputStream) -> a
+    void setCallBackInfo(com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo) -> a
+com.lidroid.xutils.http.client.multipart.content.ContentDescriptor -> com.lidroid.xutils.d.b.b.a.d:
+    java.lang.String getMimeType() -> a
+    java.lang.String getMediaType() -> b
+    java.lang.String getSubType() -> c
+    java.lang.String getCharset() -> e
+    java.lang.String getTransferEncoding() -> f
+    long getContentLength() -> g
+com.lidroid.xutils.http.client.multipart.content.FileBody -> com.lidroid.xutils.d.b.b.a.e:
+    java.io.File file -> b
+    java.lang.String filename -> c
+    java.lang.String charset -> d
+    70:70:java.io.InputStream getInputStream() -> h
+    74:93:void writeTo(java.io.OutputStream) -> a
+    96:96:java.lang.String getTransferEncoding() -> f
+    100:100:java.lang.String getCharset() -> e
+    104:104:long getContentLength() -> g
+    108:108:java.lang.String getFilename() -> d
+    112:112:java.io.File getFile() -> i
+com.lidroid.xutils.http.client.multipart.content.InputStreamBody -> com.lidroid.xutils.d.b.b.a.f:
+    java.io.InputStream in -> b
+    java.lang.String filename -> c
+    long length -> d
+    54:54:java.io.InputStream getInputStream() -> h
+    58:75:void writeTo(java.io.OutputStream) -> a
+    78:78:java.lang.String getTransferEncoding() -> f
+    82:82:java.lang.String getCharset() -> e
+    86:86:long getContentLength() -> g
+    90:90:java.lang.String getFilename() -> d
+com.lidroid.xutils.http.client.multipart.content.StringBody -> com.lidroid.xutils.d.b.b.a.g:
+    byte[] content -> b
+    java.nio.charset.Charset charset -> c
+    40:42:com.lidroid.xutils.http.client.multipart.content.StringBody create(java.lang.String,java.lang.String,java.nio.charset.Charset) -> a
+    51:51:com.lidroid.xutils.http.client.multipart.content.StringBody create(java.lang.String,java.nio.charset.Charset) -> a
+    58:58:com.lidroid.xutils.http.client.multipart.content.StringBody create(java.lang.String) -> a
+    115:115:java.io.Reader getReader() -> h
+    121:135:void writeTo(java.io.OutputStream) -> a
+    138:138:java.lang.String getTransferEncoding() -> f
+    142:142:java.lang.String getCharset() -> e
+    146:146:long getContentLength() -> g
+    150:150:java.lang.String getFilename() -> d
+com.lidroid.xutils.http.client.util.URIBuilder -> com.lidroid.xutils.d.b.c.a:
+    java.lang.String scheme -> a
+    java.lang.String encodedSchemeSpecificPart -> b
+    java.lang.String encodedAuthority -> c
+    java.lang.String userInfo -> d
+    java.lang.String encodedUserInfo -> e
+    java.lang.String host -> f
+    int port -> g
+    java.lang.String path -> h
+    java.lang.String encodedPath -> i
+    java.lang.String encodedQuery -> j
+    java.util.List queryParams -> k
+    java.lang.String fragment -> l
+    java.lang.String encodedFragment -> m
+    64:77:void digestURI(java.net.URI) -> a
+    80:83:java.util.List parseQuery(java.lang.String) -> g
+    92:92:java.net.URI build(java.nio.charset.Charset) -> a
+    96:137:java.lang.String buildString(java.nio.charset.Charset) -> b
+    141:141:java.lang.String encodeUserInfo(java.lang.String,java.nio.charset.Charset) -> a
+    145:145:java.lang.String encodePath(java.lang.String,java.nio.charset.Charset) -> b
+    149:149:java.lang.String encodeQuery(java.util.List,java.nio.charset.Charset) -> a
+    153:153:java.lang.String encodeFragment(java.lang.String,java.nio.charset.Charset) -> c
+    160:161:com.lidroid.xutils.http.client.util.URIBuilder setScheme(java.lang.String) -> a
+    169:173:com.lidroid.xutils.http.client.util.URIBuilder setUserInfo(java.lang.String) -> b
+    181:181:com.lidroid.xutils.http.client.util.URIBuilder setUserInfo(java.lang.String,java.lang.String) -> a
+    188:191:com.lidroid.xutils.http.client.util.URIBuilder setHost(java.lang.String) -> c
+    198:201:com.lidroid.xutils.http.client.util.URIBuilder setPort(int) -> a
+    208:211:com.lidroid.xutils.http.client.util.URIBuilder setPath(java.lang.String) -> d
+    220:223:com.lidroid.xutils.http.client.util.URIBuilder setQuery(java.lang.String) -> e
+    231:237:com.lidroid.xutils.http.client.util.URIBuilder addParameter(java.lang.String,java.lang.String) -> b
+    245:259:com.lidroid.xutils.http.client.util.URIBuilder setParameter(java.lang.String,java.lang.String) -> c
+    267:269:com.lidroid.xutils.http.client.util.URIBuilder setFragment(java.lang.String) -> f
+    273:273:java.lang.String getScheme() -> a
+    277:277:java.lang.String getUserInfo() -> b
+    281:281:java.lang.String getHost() -> c
+    285:285:int getPort() -> d
+    289:289:java.lang.String getPath() -> e
+    293:296:java.util.List getQueryParams() -> f
+    301:301:java.lang.String getFragment() -> g
+    305:317:java.lang.String normalizePath(java.lang.String) -> h
+com.lidroid.xutils.http.client.util.URLEncodedUtils -> com.lidroid.xutils.d.b.c.b:
+    java.lang.String CONTENT_TYPE -> a
+    java.lang.String PARAMETER_SEPARATOR -> b
+    java.lang.String NAME_VALUE_SEPARATOR -> c
+    char[] DELIM -> d
+    java.util.BitSet UNRESERVED -> e
+    java.util.BitSet PUNCT -> f
+    java.util.BitSet USERINFO -> g
+    java.util.BitSet PATHSAFE -> h
+    java.util.BitSet FRAGMENT -> i
+    java.util.BitSet RESERVED -> j
+    java.util.BitSet URLENCODER -> k
+    int RADIX -> l
+    51:61:boolean isEncoded(org.apache.http.HttpEntity) -> a
+    76:83:java.util.List parse(java.net.URI) -> a
+    99:113:void parse(java.util.List,java.util.Scanner) -> a
+    124:138:java.util.List parse(java.lang.String) -> a
+    151:164:java.lang.String format(java.util.List,java.lang.String) -> a
+    178:191:java.lang.String format(java.lang.Iterable,java.nio.charset.Charset) -> a
+    308:327:java.lang.String urlencode(java.lang.String,java.nio.charset.Charset,java.util.BitSet,boolean) -> a
+    342:368:java.lang.String urldecode(java.lang.String,java.nio.charset.Charset,boolean) -> a
+    379:382:java.lang.String decodeFormFields(java.lang.String,java.lang.String) -> a
+    393:396:java.lang.String decodeFormFields(java.lang.String,java.nio.charset.Charset) -> d
+    411:414:java.lang.String encodeFormFields(java.lang.String,java.lang.String) -> b
+    430:433:java.lang.String encodeFormFields(java.lang.String,java.nio.charset.Charset) -> e
+    446:446:java.lang.String encUserInfo(java.lang.String,java.nio.charset.Charset) -> a
+    459:459:java.lang.String encFragment(java.lang.String,java.nio.charset.Charset) -> b
+    472:472:java.lang.String encPath(java.lang.String,java.nio.charset.Charset) -> c
+com.lidroid.xutils.task.Node -> com.lidroid.xutils.e.a:
+    boolean valueAsT -> b
+    com.lidroid.xutils.task.PriorityObject value -> c
+    com.lidroid.xutils.task.Node next -> a
+    618:618:com.lidroid.xutils.task.Priority getPriority() -> a
+    623:628:java.lang.Object getValue() -> b
+    633:641:void setValue(java.lang.Object) -> a
+com.lidroid.xutils.task.Priority -> com.lidroid.xutils.e.b:
+    com.lidroid.xutils.task.Priority UI_TOP -> a
+    com.lidroid.xutils.task.Priority UI_NORMAL -> b
+    com.lidroid.xutils.task.Priority UI_LOW -> c
+    com.lidroid.xutils.task.Priority DEFAULT -> d
+    com.lidroid.xutils.task.Priority BG_TOP -> e
+    com.lidroid.xutils.task.Priority BG_NORMAL -> f
+    com.lidroid.xutils.task.Priority BG_LOW -> g
+    com.lidroid.xutils.task.Priority[] ENUM$VALUES -> h
+    1:1:com.lidroid.xutils.task.Priority[] values() -> values
+    1:1:com.lidroid.xutils.task.Priority valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.task.PriorityAsyncTask -> com.lidroid.xutils.e.c:
+    int MESSAGE_POST_RESULT -> a
+    int MESSAGE_POST_PROGRESS -> b
+    com.lidroid.xutils.task.PriorityAsyncTask$InternalHandler sHandler -> c
+    java.util.concurrent.Executor sDefaultExecutor -> l
+    com.lidroid.xutils.task.PriorityAsyncTask$WorkerRunnable mWorker -> d
+    java.util.concurrent.FutureTask mFuture -> e
+    boolean mExecuteInvoked -> f
+    java.util.concurrent.atomic.AtomicBoolean mCancelled -> g
+    java.util.concurrent.atomic.AtomicBoolean mTaskInvoked -> h
+    com.lidroid.xutils.task.Priority priority -> i
+    50:50:com.lidroid.xutils.task.Priority getPriority() -> c
+    54:55:void setPriority(com.lidroid.xutils.task.Priority) -> a
+    89:93:void postResultIfNotInvoked(java.lang.Object) -> c
+    97:100:java.lang.Object postResult(java.lang.Object) -> d
+    java.lang.Object doInBackground(java.lang.Object[]) -> c
+    126:126:void onPreExecute() -> d
+    141:141:void onPostExecute(java.lang.Object) -> a
+    153:153:void onProgressUpdate(java.lang.Object[]) -> b
+    170:171:void onCancelled(java.lang.Object) -> b
+    186:186:void onCancelled() -> e
+    199:199:boolean isCancelled() -> m
+    213:214:boolean cancel(boolean) -> a
+    219:219:boolean supportPause() -> f
+    224:224:boolean supportResume() -> g
+    229:229:boolean supportCancel() -> h
+    234:234:void pause() -> i
+    238:238:void resume() -> j
+    242:243:void cancel() -> k
+    247:247:boolean isPaused() -> l
+    261:261:java.lang.Object get() -> n
+    279:279:java.lang.Object get(long,java.util.concurrent.TimeUnit) -> a
+    290:290:com.lidroid.xutils.task.PriorityAsyncTask execute(java.lang.Object[]) -> e
+    302:314:com.lidroid.xutils.task.PriorityAsyncTask executeOnExecutor(java.util.concurrent.Executor,java.lang.Object[]) -> a
+    326:327:void execute(java.lang.Runnable) -> a
+    338:339:void execute(java.lang.Runnable,com.lidroid.xutils.task.Priority) -> a
+    355:359:void publishProgress(java.lang.Object[]) -> f
+    362:367:void finish(java.lang.Object) -> e
+    361:361:void access$0(com.lidroid.xutils.task.PriorityAsyncTask,java.lang.Object) -> a
+    45:45:java.util.concurrent.atomic.AtomicBoolean access$1(com.lidroid.xutils.task.PriorityAsyncTask) -> a
+    95:95:java.lang.Object access$2(com.lidroid.xutils.task.PriorityAsyncTask,java.lang.Object) -> b
+    88:88:void access$3(com.lidroid.xutils.task.PriorityAsyncTask,java.lang.Object) -> c
+com.lidroid.xutils.task.PriorityAsyncTask$1 -> com.lidroid.xutils.e.d:
+    com.lidroid.xutils.task.PriorityAsyncTask this$0 -> a
+    63:67:java.lang.Object call() -> call
+com.lidroid.xutils.task.PriorityAsyncTask$2 -> com.lidroid.xutils.e.e:
+    com.lidroid.xutils.task.PriorityAsyncTask this$0 -> a
+    75:84:void done() -> done
+com.lidroid.xutils.task.PriorityAsyncTask$AsyncTaskResult -> com.lidroid.xutils.e.c$a:
+    com.lidroid.xutils.task.PriorityAsyncTask mTask -> a
+    java.lang.Object[] mData -> b
+com.lidroid.xutils.task.PriorityAsyncTask$InternalHandler -> com.lidroid.xutils.e.c$b:
+    378:388:void handleMessage(android.os.Message) -> handleMessage
+com.lidroid.xutils.task.PriorityAsyncTask$WorkerRunnable -> com.lidroid.xutils.e.c$c:
+    java.lang.Object[] mParams -> b
+com.lidroid.xutils.task.PriorityExecutor -> com.lidroid.xutils.e.f:
+    int CORE_POOL_SIZE -> a
+    int MAXIMUM_POOL_SIZE -> b
+    int KEEP_ALIVE -> c
+    java.util.concurrent.ThreadFactory sThreadFactory -> d
+    java.util.concurrent.BlockingQueue mPoolWorkQueue -> e
+    java.util.concurrent.ThreadPoolExecutor mThreadPoolExecutor -> f
+    44:44:int getPoolSize() -> a
+    48:51:void setPoolSize(int) -> a
+    54:54:boolean isBusy() -> b
+    59:60:void execute(java.lang.Runnable) -> execute
+com.lidroid.xutils.task.PriorityExecutor$1 -> com.lidroid.xutils.e.g:
+    java.util.concurrent.atomic.AtomicInteger mCount -> a
+    22:22:java.lang.Thread newThread(java.lang.Runnable) -> newThread
+com.lidroid.xutils.task.PriorityObject -> com.lidroid.xutils.e.h:
+    com.lidroid.xutils.task.Priority priority -> a
+    java.lang.Object obj -> b
+com.lidroid.xutils.task.PriorityObjectBlockingQueue -> com.lidroid.xutils.e.i:
+    long serialVersionUID -> b
+    int capacity -> c
+    java.util.concurrent.atomic.AtomicInteger count -> d
+    com.lidroid.xutils.task.Node head -> a
+    com.lidroid.xutils.task.Node last -> e
+    java.util.concurrent.locks.ReentrantLock takeLock -> f
+    java.util.concurrent.locks.Condition notEmpty -> g
+    java.util.concurrent.locks.ReentrantLock putLock -> h
+    java.util.concurrent.locks.Condition notFull -> i
+    70:77:void signalNotEmpty() -> c
+    83:90:void signalNotFull() -> d
+    93:97:java.lang.Object opQueue(com.lidroid.xutils.task.Node) -> a
+    103:122:void _enqueue(com.lidroid.xutils.task.Node) -> b
+    128:134:java.lang.Object _dequeue() -> e
+    141:143:void fullyLock() -> a
+    149:151:void fullyUnlock() -> b
+    184:184:int size() -> size
+    188:188:int remainingCapacity() -> remainingCapacity
+    192:213:void put(java.lang.Object) -> put
+    218:239:boolean offer(java.lang.Object,long,java.util.concurrent.TimeUnit) -> offer
+    243:263:boolean offer(java.lang.Object) -> offer
+    268:285:java.lang.Object take() -> take
+    289:310:java.lang.Object poll(long,java.util.concurrent.TimeUnit) -> poll
+    314:333:java.lang.Object poll() -> poll
+    337:349:java.lang.Object peek() -> peek
+    359:365:void unlink(com.lidroid.xutils.task.Node,com.lidroid.xutils.task.Node) -> a
+    368:382:boolean remove(java.lang.Object) -> remove
+    386:395:boolean contains(java.lang.Object) -> contains
+    399:409:java.lang.Object[] toArray() -> toArray
+    414:429:java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+    433:446:void clear() -> clear
+    449:449:int drainTo(java.util.Collection) -> drainTo
+    453:489:int drainTo(java.util.Collection,int) -> drainTo
+    493:493:java.util.Iterator iterator() -> iterator
+    567:581:void writeObject(java.io.ObjectOutputStream) -> a
+    589:602:void readObject(java.io.ObjectInputStream) -> a
+com.lidroid.xutils.task.PriorityObjectBlockingQueue$Itr -> com.lidroid.xutils.e.i$a:
+    com.lidroid.xutils.task.Node current -> b
+    com.lidroid.xutils.task.Node lastRet -> c
+    java.lang.Object currentElement -> d
+    com.lidroid.xutils.task.PriorityObjectBlockingQueue this$0 -> a
+    514:514:boolean hasNext() -> hasNext
+    519:518:com.lidroid.xutils.task.Node nextNode(com.lidroid.xutils.task.Node) -> a
+    529:540:java.lang.Object next() -> next
+    544:561:void remove() -> remove
+com.lidroid.xutils.task.PriorityRunnable -> com.lidroid.xutils.e.j:
+    16:17:void run() -> run
+com.lidroid.xutils.task.TaskHandler -> com.lidroid.xutils.e.k:
+    boolean supportPause() -> f
+    boolean supportResume() -> g
+    boolean supportCancel() -> h
+    void pause() -> i
+    void resume() -> j
+    void cancel() -> k
+    boolean isPaused() -> l
+    boolean isCancelled() -> m
+com.lidroid.xutils.util.CharsetUtils -> com.lidroid.xutils.f.a:
+    java.lang.String DEFAULT_ENCODING_CHARSET -> a
+    java.util.List SUPPORT_CHARSET -> b
+    33:37:java.lang.String toCharset(java.lang.String,java.lang.String,int) -> a
+    42:49:java.lang.String getEncoding(java.lang.String,int) -> a
+    54:57:boolean isCharset(java.lang.String,java.lang.String,int) -> b
+com.lidroid.xutils.util.DoubleKeyValueMap -> com.lidroid.xutils.f.b:
+    java.util.concurrent.ConcurrentHashMap k1_k2V_map -> a
+    38:53:void put(java.lang.Object,java.lang.Object,java.lang.Object) -> a
+    56:56:java.util.Set getFirstKeys() -> a
+    60:60:java.util.concurrent.ConcurrentHashMap get(java.lang.Object) -> a
+    64:65:java.lang.Object get(java.lang.Object,java.lang.Object) -> a
+    69:70:java.util.Collection getAllValues(java.lang.Object) -> b
+    74:85:java.util.Collection getAllValues() -> b
+    89:92:boolean containsKey(java.lang.Object,java.lang.Object) -> b
+    96:96:boolean containsKey(java.lang.Object) -> c
+    100:106:int size() -> c
+    110:111:void remove(java.lang.Object) -> d
+    114:118:void remove(java.lang.Object,java.lang.Object) -> c
+    121:127:void clear() -> d
+com.lidroid.xutils.util.IOUtils -> com.lidroid.xutils.f.c:
+    33:39:void closeQuietly(java.io.Closeable) -> a
+    42:48:void closeQuietly(android.database.Cursor) -> a
+com.lidroid.xutils.util.LogUtils -> com.lidroid.xutils.f.d:
+    java.lang.String customTagPrefix -> a
+    boolean allowD -> b
+    boolean allowE -> c
+    boolean allowI -> d
+    boolean allowV -> e
+    boolean allowW -> f
+    boolean allowWtf -> g
+    com.lidroid.xutils.util.LogUtils$CustomLogger customLogger -> h
+    45:50:java.lang.String generateTag(java.lang.StackTraceElement) -> a
+    86:95:void d(java.lang.String) -> a
+    98:107:void d(java.lang.String,java.lang.Throwable) -> a
+    110:119:void e(java.lang.String) -> b
+    122:131:void e(java.lang.String,java.lang.Throwable) -> b
+    134:143:void i(java.lang.String) -> c
+    146:155:void i(java.lang.String,java.lang.Throwable) -> c
+    158:167:void v(java.lang.String) -> d
+    170:179:void v(java.lang.String,java.lang.Throwable) -> d
+    182:191:void w(java.lang.String) -> e
+    194:203:void w(java.lang.String,java.lang.Throwable) -> e
+    206:215:void w(java.lang.Throwable) -> a
+    219:228:void wtf(java.lang.String) -> f
+    231:240:void wtf(java.lang.String,java.lang.Throwable) -> f
+    243:252:void wtf(java.lang.Throwable) -> b
+com.lidroid.xutils.util.LogUtils$CustomLogger -> com.lidroid.xutils.f.d$a:
+    void d(java.lang.String,java.lang.String) -> a
+    void d(java.lang.String,java.lang.String,java.lang.Throwable) -> a
+    void e(java.lang.String,java.lang.String) -> b
+    void e(java.lang.String,java.lang.String,java.lang.Throwable) -> b
+    void i(java.lang.String,java.lang.String) -> c
+    void i(java.lang.String,java.lang.String,java.lang.Throwable) -> c
+    void v(java.lang.String,java.lang.String) -> d
+    void v(java.lang.String,java.lang.String,java.lang.Throwable) -> d
+    void w(java.lang.String,java.lang.String) -> e
+    void w(java.lang.String,java.lang.String,java.lang.Throwable) -> e
+    void w(java.lang.String,java.lang.Throwable) -> a
+    void wtf(java.lang.String,java.lang.String) -> f
+    void wtf(java.lang.String,java.lang.String,java.lang.Throwable) -> f
+    void wtf(java.lang.String,java.lang.Throwable) -> b
+com.lidroid.xutils.util.MimeTypeUtils -> com.lidroid.xutils.f.e:
+    31:37:java.lang.String getMimeType(java.lang.String) -> a
+com.lidroid.xutils.util.OtherUtils -> com.lidroid.xutils.f.f:
+    int STRING_BUFFER_LENGTH -> a
+    javax.net.ssl.SSLSocketFactory sslSocketFactory -> b
+    51:101:java.lang.String getUserAgent(android.content.Context) -> a
+    110:124:java.lang.String getDiskCacheDir(android.content.Context,java.lang.String) -> a
+    129:133:long getAvailableSpace(java.io.File) -> a
+    139:149:boolean isSupportRange(org.apache.http.HttpResponse) -> a
+    153:167:java.lang.String getFileNameFromHttpResponse(org.apache.http.HttpResponse) -> b
+    171:192:java.nio.charset.Charset getCharsetFromHttpRequest(org.apache.http.client.methods.HttpRequestBase) -> a
+    198:212:long sizeOfString(java.lang.String,java.lang.String) -> a
+    217:217:java.lang.String getSubString(java.lang.String,int,int) -> a
+    221:221:java.lang.StackTraceElement getCurrentStackTraceElement() -> a
+    225:225:java.lang.StackTraceElement getCallerStackTraceElement() -> b
+    232:262:void trustAllHttpsURLConnection() -> c
+com.lidroid.xutils.util.OtherUtils$1 -> com.lidroid.xutils.f.g:
+    236:236:java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+    242:242:void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    247:247:void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+com.lidroid.xutils.util.PreferencesCookieStore -> com.lidroid.xutils.f.h:
+    java.lang.String COOKIE_PREFS -> a
+    java.lang.String COOKIE_NAME_STORE -> b
+    java.lang.String COOKIE_NAME_PREFIX -> c
+    java.util.concurrent.ConcurrentHashMap cookies -> d
+    android.content.SharedPreferences cookiePrefs -> e
+    73:87:void addCookie(org.apache.http.cookie.Cookie) -> addCookie
+    92:101:void clear() -> clear
+    105:129:boolean clearExpired(java.util.Date) -> clearExpired
+    134:134:java.util.List getCookies() -> getCookies
+    138:138:org.apache.http.cookie.Cookie getCookie(java.lang.String) -> a
+    143:151:java.lang.String encodeCookie(com.lidroid.xutils.util.PreferencesCookieStore$SerializableCookie) -> a
+    155:165:org.apache.http.cookie.Cookie decodeCookie(java.lang.String) -> b
+    171:179:java.lang.String byteArrayToHexString(byte[]) -> a
+    183:188:byte[] hexStringToByteArray(java.lang.String) -> c
+com.lidroid.xutils.util.PreferencesCookieStore$SerializableCookie -> com.lidroid.xutils.f.h$a:
+    long serialVersionUID -> b
+    org.apache.http.cookie.Cookie cookie -> c
+    org.apache.http.impl.cookie.BasicClientCookie clientCookie -> d
+    com.lidroid.xutils.util.PreferencesCookieStore this$0 -> a
+    203:207:org.apache.http.cookie.Cookie getCookie() -> a
+    211:219:void writeObject(java.io.ObjectOutputStream) -> a
+    222:231:void readObject(java.io.ObjectInputStream) -> a
+com.lidroid.xutils.view.EventListenerManager -> com.lidroid.xutils.view.a:
+    com.lidroid.xutils.util.DoubleKeyValueMap listenerCache -> a
+    50:84:void addEventMethod(com.lidroid.xutils.view.ViewFinder,com.lidroid.xutils.view.ViewInjectInfo,java.lang.annotation.Annotation,java.lang.Object,java.lang.reflect.Method) -> a
+com.lidroid.xutils.view.EventListenerManager$DynamicHandler -> com.lidroid.xutils.view.a$a:
+    java.lang.ref.WeakReference handlerRef -> a
+    java.util.HashMap methodMap -> b
+    95:96:void addMethod(java.lang.String,java.lang.reflect.Method) -> a
+    99:99:java.lang.Object getHandler() -> a
+    103:104:void setHandler(java.lang.Object) -> a
+    108:116:java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]) -> invoke
+com.lidroid.xutils.view.ResLoader -> com.lidroid.xutils.view.b:
+    int[] $SWITCH_TABLE$com$lidroid$xutils$view$ResType -> a
+    14:52:java.lang.Object loadRes(com.lidroid.xutils.view.ResType,android.content.Context,int) -> a
+    11:11:int[] $SWITCH_TABLE$com$lidroid$xutils$view$ResType() -> a
+com.lidroid.xutils.view.ResType -> com.lidroid.xutils.view.c:
+    com.lidroid.xutils.view.ResType Animation -> a
+    com.lidroid.xutils.view.ResType Boolean -> b
+    com.lidroid.xutils.view.ResType Color -> c
+    com.lidroid.xutils.view.ResType ColorStateList -> d
+    com.lidroid.xutils.view.ResType Dimension -> e
+    com.lidroid.xutils.view.ResType DimensionPixelOffset -> f
+    com.lidroid.xutils.view.ResType DimensionPixelSize -> g
+    com.lidroid.xutils.view.ResType Drawable -> h
+    com.lidroid.xutils.view.ResType Integer -> i
+    com.lidroid.xutils.view.ResType IntArray -> j
+    com.lidroid.xutils.view.ResType Movie -> k
+    com.lidroid.xutils.view.ResType String -> l
+    com.lidroid.xutils.view.ResType StringArray -> m
+    com.lidroid.xutils.view.ResType Text -> n
+    com.lidroid.xutils.view.ResType TextArray -> o
+    com.lidroid.xutils.view.ResType Xml -> p
+    com.lidroid.xutils.view.ResType[] ENUM$VALUES -> q
+    1:1:com.lidroid.xutils.view.ResType[] values() -> values
+    1:1:com.lidroid.xutils.view.ResType valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.view.ViewFinder -> com.lidroid.xutils.view.d:
+    android.view.View view -> a
+    android.app.Activity activity -> b
+    android.preference.PreferenceGroup preferenceGroup -> c
+    android.preference.PreferenceActivity preferenceActivity -> d
+    40:40:android.view.View findViewById(int) -> a
+    44:44:android.view.View findViewByInfo(com.lidroid.xutils.view.ViewInjectInfo) -> a
+    48:59:android.view.View findViewById(int,int) -> a
+    64:64:android.preference.Preference findPreference(java.lang.CharSequence) -> a
+    68:71:android.content.Context getContext() -> a
+com.lidroid.xutils.view.ViewInjectInfo -> com.lidroid.xutils.view.e:
+    java.lang.Object value -> a
+    int parentId -> b
+    14:22:boolean equals(java.lang.Object) -> equals
+    27:29:int hashCode() -> hashCode
+com.lidroid.xutils.view.annotation.ContentView -> com.lidroid.xutils.view.annotation.ContentView:
+    int value() -> value
+com.lidroid.xutils.view.annotation.PreferenceInject -> com.lidroid.xutils.view.annotation.PreferenceInject:
+    java.lang.String value() -> value
+com.lidroid.xutils.view.annotation.ResInject -> com.lidroid.xutils.view.annotation.ResInject:
+    int id() -> id
+    com.lidroid.xutils.view.ResType type() -> type
+com.lidroid.xutils.view.annotation.ViewInject -> com.lidroid.xutils.view.annotation.ViewInject:
+    int value() -> value
+    int parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.EventBase -> com.lidroid.xutils.view.annotation.event.EventBase:
+    java.lang.Class listenerType() -> listenerType
+    java.lang.String listenerSetter() -> listenerSetter
+    java.lang.String methodName() -> methodName
+com.lidroid.xutils.view.annotation.event.OnChildClick -> com.lidroid.xutils.view.annotation.event.OnChildClick:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnClick -> com.lidroid.xutils.view.annotation.event.OnClick:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnCompoundButtonCheckedChange -> com.lidroid.xutils.view.annotation.event.OnCompoundButtonCheckedChange:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnFocusChange -> com.lidroid.xutils.view.annotation.event.OnFocusChange:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnGroupClick -> com.lidroid.xutils.view.annotation.event.OnGroupClick:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnGroupCollapse -> com.lidroid.xutils.view.annotation.event.OnGroupCollapse:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnGroupExpand -> com.lidroid.xutils.view.annotation.event.OnGroupExpand:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnItemClick -> com.lidroid.xutils.view.annotation.event.OnItemClick:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnItemLongClick -> com.lidroid.xutils.view.annotation.event.OnItemLongClick:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnItemSelected -> com.lidroid.xutils.view.annotation.event.OnItemSelected:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnKey -> com.lidroid.xutils.view.annotation.event.OnKey:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnLongClick -> com.lidroid.xutils.view.annotation.event.OnLongClick:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnNothingSelected -> com.lidroid.xutils.view.annotation.event.OnNothingSelected:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnPreferenceChange -> com.lidroid.xutils.view.annotation.event.OnPreferenceChange:
+    java.lang.String[] value() -> value
+com.lidroid.xutils.view.annotation.event.OnPreferenceClick -> com.lidroid.xutils.view.annotation.event.OnPreferenceClick:
+    java.lang.String[] value() -> value
+com.lidroid.xutils.view.annotation.event.OnProgressChanged -> com.lidroid.xutils.view.annotation.event.OnProgressChanged:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnRadioGroupCheckedChange -> com.lidroid.xutils.view.annotation.event.OnRadioGroupCheckedChange:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnScroll -> com.lidroid.xutils.view.annotation.event.OnScroll:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnScrollStateChanged -> com.lidroid.xutils.view.annotation.event.OnScrollStateChanged:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnStartTrackingTouch -> com.lidroid.xutils.view.annotation.event.OnStartTrackingTouch:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnStopTrackingTouch -> com.lidroid.xutils.view.annotation.event.OnStopTrackingTouch:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnTabChange -> com.lidroid.xutils.view.annotation.event.OnTabChange:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.lidroid.xutils.view.annotation.event.OnTouch -> com.lidroid.xutils.view.annotation.event.OnTouch:
+    int[] value() -> value
+    int[] parentId() -> parentId
+com.prize.videoc.BuildConfig -> com.prize.videoc.a:
+    boolean DEBUG -> a
+com.prize.videoc.LocalActivity -> com.prize.videoc.LocalActivity:
+    com.prize.videoc.presenter.BroadcastPresenter mBroadcastPresenter -> a
+    com.prize.videoc.presenter.HistoryUpdateBroadcast mHistoryUpdateBroadcast -> b
+    com.prize.videoc.widget.GridViewWith mContentGrid -> c
+    android.widget.TextView mCancelBtn -> d
+    android.widget.TextView mEditBtn -> e
+    com.lidroid.xutils.DbUtils dbUtils -> f
+    com.prize.videoc.LocalActivity$NAdapter mAdapter -> g
+    android.view.View mHeaderView -> h
+    com.lidroid.xutils.BitmapUtils mBitmapUtils -> i
+    com.prize.videoc.to.JumpContext mJumpContext -> j
+    boolean isReadyToDel -> k
+    boolean hasRecord -> l
+    boolean delRecordNeeded -> m
+    java.util.Set toDelIdlist -> n
+    69:132:void onCreate(android.os.Bundle) -> onCreate
+    135:140:void goToAqi() -> a
+    143:148:void loadContent() -> c
+    152:157:void editClk(android.view.View) -> editClk
+    161:165:boolean isAppExist(java.lang.String) -> a
+    168:185:void doDel() -> d
+    188:203:void initDel() -> e
+    207:216:void cancelClk(android.view.View) -> cancelClk
+    220:224:void onBackPressed() -> onBackPressed
+    227:234:void onNoRecord() -> f
+    238:283:void onResume() -> onResume
+    287:290:void onDestroy() -> onDestroy
+    296:296:void onReceive(android.content.Intent) -> a
+    300:302:void onChange() -> b
+    60:60:com.lidroid.xutils.BitmapUtils access$0(com.prize.videoc.LocalActivity) -> a
+    65:65:java.util.Set access$1(com.prize.videoc.LocalActivity) -> b
+    62:62:boolean access$2(com.prize.videoc.LocalActivity) -> c
+    58:58:com.prize.videoc.LocalActivity$NAdapter access$3(com.prize.videoc.LocalActivity) -> d
+    61:61:com.prize.videoc.to.JumpContext access$4(com.prize.videoc.LocalActivity) -> e
+    57:57:com.lidroid.xutils.DbUtils access$5(com.prize.videoc.LocalActivity) -> f
+    64:64:boolean access$6(com.prize.videoc.LocalActivity) -> g
+    64:64:void access$7(com.prize.videoc.LocalActivity,boolean) -> a
+com.prize.videoc.LocalActivity$1 -> com.prize.videoc.b:
+    com.prize.videoc.LocalActivity this$0 -> a
+    99:104:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.prize.videoc.LocalActivity$2 -> com.prize.videoc.c:
+    com.prize.videoc.LocalActivity this$0 -> a
+    116:117:void onClick(android.view.View) -> onClick
+com.prize.videoc.LocalActivity$3 -> com.prize.videoc.d:
+    com.prize.videoc.LocalActivity this$0 -> a
+    int val$id -> b
+    254:256:void onClick(android.view.View) -> onClick
+com.prize.videoc.LocalActivity$4 -> com.prize.videoc.e:
+    com.prize.videoc.LocalActivity this$0 -> a
+    264:271:void onClick(android.view.View) -> onClick
+com.prize.videoc.LocalActivity$NAdapter -> com.prize.videoc.LocalActivity$a:
+    java.util.List mDatas -> b
+    com.prize.videoc.LocalActivity this$0 -> a
+    308:310:void setDatas(java.util.List) -> a
+    314:316:int getCount() -> getCount
+    321:321:java.lang.Object getItem(int) -> getItem
+    327:327:long getItemId(int) -> getItemId
+    332:375:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    307:307:void access$1(com.prize.videoc.LocalActivity$NAdapter,java.util.List) -> a
+    304:304:com.prize.videoc.LocalActivity access$2(com.prize.videoc.LocalActivity$NAdapter) -> a
+com.prize.videoc.LocalActivity$NAdapter$1 -> com.prize.videoc.f:
+    com.prize.videoc.LocalActivity$NAdapter this$1 -> a
+    int val$id -> b
+    android.widget.ImageView val$selImage -> c
+    357:364:void onClick(android.view.View) -> onClick
+com.prize.videoc.LocalActivity$NAdapter$ViewHolder -> com.prize.videoc.LocalActivity$a$a:
+    android.widget.TextView titleText -> a
+    android.widget.ImageView thumbnailImage -> b
+    android.widget.ImageView selImage -> c
+    com.prize.videoc.LocalActivity$NAdapter this$1 -> d
+com.prize.videoc.R -> com.prize.videoc.R:
+com.prize.videoc.R$attr -> com.prize.videoc.R$attr:
+com.prize.videoc.R$dimen -> com.prize.videoc.R$dimen:
+    int activity_horizontal_margin -> activity_horizontal_margin
+    int activity_vertical_margin -> activity_vertical_margin
+com.prize.videoc.R$drawable -> com.prize.videoc.R$drawable:
+    int cancel -> cancel
+    int cancel_press -> cancel_press
+    int cancel_slt -> cancel_slt
+    int ic_launcher -> ic_launcher
+    int icon_aqi -> icon_aqi
+    int icon_loacal_video -> icon_loacal_video
+    int icon_net_video -> icon_net_video
+    int icon_play_record -> icon_play_record
+    int icon_youku -> icon_youku
+    int local_bg -> local_bg
+    int play_slt -> play_slt
+    int play_small_slt -> play_small_slt
+    int sel -> sel
+    int sel_0 -> sel_0
+    int video_play -> video_play
+    int video_play_press -> video_play_press
+    int video_play_small -> video_play_small
+    int video_play_small_press -> video_play_small_press
+    int white -> white
+com.prize.videoc.R$id -> com.prize.videoc.R$id:
+    int action_settings -> action_settings
+    int cancelDel_btn -> cancelDel_btn
+    int clk_image -> clk_image
+    int content_gw -> content_gw
+    int edit_btn -> edit_btn
+    int emptyView -> emptyView
+    int icon_aqi -> icon_aqi
+    int net_videos -> net_videos
+    int sel_image -> sel_image
+    int sub_videos -> sub_videos
+    int thumbnail_image -> thumbnail_image
+    int video_title -> video_title
+com.prize.videoc.R$layout -> com.prize.videoc.R$layout:
+    int activity_local -> activity_local
+    int local_header -> local_header
+    int video_item -> video_item
+com.prize.videoc.R$menu -> com.prize.videoc.R$menu:
+    int local -> local
+com.prize.videoc.R$string -> com.prize.videoc.R$string:
+    int action_settings -> action_settings
+    int app_name -> app_name
+    int back -> back
+    int delete -> delete
+    int edit -> edit
+    int hello_world -> hello_world
+    int lastplay -> lastplay
+    int local_videos -> local_videos
+    int net_videos -> net_videos
+    int no_play -> no_play
+    int youku_videos -> youku_videos
+com.prize.videoc.R$style -> com.prize.videoc.R$style:
+    int AppBaseTheme -> AppBaseTheme
+    int AppTheme -> AppTheme
+com.prize.videoc.application.VideoApp -> com.prize.videoc.application.VideoApp:
+    11:13:void onCreate() -> onCreate
+com.prize.videoc.bean.PVideo -> com.prize.videoc.bean.PVideo:
+    long serialVersionUID -> serialVersionUID
+    int _id -> _id
+    int id -> id
+    java.lang.String title -> title
+    java.lang.String album -> album
+    java.lang.String artist -> artist
+    java.lang.String displayName -> displayName
+    java.lang.String mimeType -> mimeType
+    java.lang.String path -> path
+    long size -> size
+    long duration -> duration
+    long timeStamp -> timeStamp
+    51:51:int getId() -> getId
+    55:56:void setId(int) -> setId
+    59:59:java.lang.String getTitle() -> getTitle
+    63:64:void setTitle(java.lang.String) -> setTitle
+    67:67:java.lang.String getAlbum() -> getAlbum
+    71:72:void setAlbum(java.lang.String) -> setAlbum
+    75:75:java.lang.String getArtist() -> getArtist
+    79:80:void setArtist(java.lang.String) -> setArtist
+    83:83:java.lang.String getDisplayName() -> getDisplayName
+    87:88:void setDisplayName(java.lang.String) -> setDisplayName
+    91:91:java.lang.String getMimeType() -> getMimeType
+    95:96:void setMimeType(java.lang.String) -> setMimeType
+    99:99:java.lang.String getPath() -> getPath
+    103:104:void setPath(java.lang.String) -> setPath
+    107:107:long getSize() -> getSize
+    111:112:void setSize(long) -> setSize
+    115:115:long getDuration() -> getDuration
+    119:120:void setDuration(long) -> setDuration
+    123:123:int get_id() -> get_id
+    127:128:void set_id(int) -> set_id
+    131:131:long getTimeStamp() -> getTimeStamp
+    135:136:void setTimeStamp(long) -> setTimeStamp
+com.prize.videoc.db.DbManager -> com.prize.videoc.a.a:
+    com.prize.videoc.db.DbManager mInstance -> a
+    com.lidroid.xutils.DbUtils db -> b
+    java.lang.String DB_NAME -> c
+    16:16:com.prize.videoc.db.DbManager getInstance() -> a
+    20:24:void createDb(android.content.Context) -> a
+    27:27:com.lidroid.xutils.DbUtils getDb() -> b
+    31:33:com.lidroid.xutils.DbUtils createFinalDb(android.content.Context) -> b
+com.prize.videoc.db.RecordDao -> com.prize.videoc.a.b:
+    12:22:void saveLastPlay(com.lidroid.xutils.DbUtils,com.prize.videoc.bean.PVideo) -> a
+    26:30:com.prize.videoc.bean.PVideo findLastPlay(com.lidroid.xutils.DbUtils) -> a
+    35:39:void delAll(com.lidroid.xutils.DbUtils) -> b
+    42:44:boolean verifyFileExistence(com.prize.videoc.bean.PVideo) -> a
+com.prize.videoc.db.VideoProvider -> com.prize.videoc.a.c:
+    19:58:java.util.List getList(android.content.Context) -> a
+    63:64:int delVideo(android.content.Context,int) -> a
+com.prize.videoc.presenter.BroadcastPresenter -> com.prize.videoc.presenter.a:
+    com.prize.videoc.presenter.IBroadcastView iView -> a
+    com.prize.videoc.presenter.BroadcastPresenter$NContentObserver mObserver -> b
+    android.content.BroadcastReceiver mReceiver -> c
+    24:30:void registerUri(android.content.Context,android.net.Uri) -> a
+    33:47:void register(android.content.Context,java.lang.String[]) -> a
+    62:68:void unRegister(android.content.Context) -> a
+    15:15:com.prize.videoc.presenter.IBroadcastView access$0(com.prize.videoc.presenter.BroadcastPresenter) -> a
+com.prize.videoc.presenter.BroadcastPresenter$1 -> com.prize.videoc.presenter.b:
+    com.prize.videoc.presenter.BroadcastPresenter this$0 -> a
+com.prize.videoc.presenter.BroadcastPresenter$2 -> com.prize.videoc.presenter.c:
+    com.prize.videoc.presenter.BroadcastPresenter this$0 -> a
+    38:39:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.prize.videoc.presenter.BroadcastPresenter$NContentObserver -> com.prize.videoc.presenter.a$a:
+    com.prize.videoc.presenter.BroadcastPresenter this$0 -> b
+    57:58:void onChange(boolean) -> onChange
+com.prize.videoc.presenter.HistoryUpdateBroadcast -> com.prize.videoc.presenter.HistoryUpdateBroadcast:
+    16:18:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.prize.videoc.presenter.IBroadcastView -> com.prize.videoc.presenter.d:
+    void onReceive(android.content.Intent) -> a
+    void onChange() -> b
+com.prize.videoc.to.AutoTo -> com.prize.videoc.b.a:
+    java.lang.String videoPath -> a
+    17:23:void jumpTo(android.content.Context) -> a
+com.prize.videoc.to.ITarget -> com.prize.videoc.b.b:
+    void jumpTo(android.content.Context) -> a
+com.prize.videoc.to.JumpContext -> com.prize.videoc.b.c:
+    com.prize.videoc.to.ITarget mTarget -> a
+    9:10:void setTarget(com.prize.videoc.to.ITarget) -> a
+    13:14:void doJump(android.content.Context) -> a
+com.prize.videoc.to.ToLocalPlayer -> com.prize.videoc.b.d:
+    android.net.Uri uri -> a
+    20:29:void jumpTo(android.content.Context) -> a
+com.prize.videoc.to.ToQiyiPlayer -> com.prize.videoc.b.e:
+    11:11:void jumpTo(android.content.Context) -> a
+com.prize.videoc.widget.GridViewWith -> com.prize.videoc.widget.GridViewWith:
+    boolean DEBUG -> a
+    android.widget.AdapterView$OnItemClickListener mOnItemClickListener -> b
+    android.widget.AdapterView$OnItemLongClickListener mOnItemLongClickListener -> c
+    int mNumColumns -> d
+    android.view.View mViewForMeasureRowHeight -> e
+    int mRowHeight -> f
+    java.lang.String LOG_TAG -> g
+    java.util.ArrayList mHeaderViewInfos -> h
+    java.util.ArrayList mFooterViewInfos -> i
+    android.widget.ListAdapter mOriginalAdapter -> j
+    com.prize.videoc.widget.GridViewWith$ItemClickHandler mItemClickHandler -> k
+    61:61:void initHeaderGridView() -> g
+    80:86:void onMeasure(int,int) -> onMeasure
+    91:91:void setClipChildren(boolean) -> setClipChildren
+    99:100:void setClipChildrenSupper(boolean) -> a
+    113:114:void addHeaderView(android.view.View) -> a
+    129:155:void addHeaderView(android.view.View,java.lang.Object,boolean) -> a
+    158:159:void addFooterView(android.view.View) -> b
+    162:187:void addFooterView(android.view.View,java.lang.Object,boolean) -> b
+    190:190:int getHeaderViewCount() -> a
+    194:194:int getFooterViewCount() -> b
+    205:214:boolean removeHeaderView(android.view.View) -> c
+    225:234:boolean removeFooterView(android.view.View) -> d
+    238:246:void removeFixedViewInfo(android.view.View,java.util.ArrayList) -> a
+    250:261:int getNumColumnsCompatible() -> h
+    268:278:int getColumnWidthCompatible() -> i
+    285:287:void onDetachedFromWindow() -> onDetachedFromWindow
+    290:291:void invalidateRowHeight() -> c
+    294:298:int getHeaderHeight(int) -> a
+    303:318:int getVerticalSpacing() -> getVerticalSpacing
+    323:338:int getHorizontalSpacing() -> getHorizontalSpacing
+    342:366:int getRowHeight() -> d
+    371:377:void tryToScrollToBottomSmoothly() -> e
+    381:387:void tryToScrollToBottomSmoothly(int) -> b
+    391:403:void setAdapter(android.widget.ListAdapter) -> setAdapter
+    411:411:android.widget.ListAdapter getOriginalAdapter() -> f
+    446:452:void setNumColumns(int) -> setNumColumns
+    833:835:void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener) -> setOnItemClickListener
+    839:841:void setOnItemLongClickListener(android.widget.AdapterView$OnItemLongClickListener) -> setOnItemLongClickListener
+    844:847:com.prize.videoc.widget.GridViewWith$ItemClickHandler getItemClickHandler() -> j
+    26:26:android.widget.AdapterView$OnItemClickListener access$0(com.prize.videoc.widget.GridViewWith) -> a
+    249:249:int access$1(com.prize.videoc.widget.GridViewWith) -> b
+    27:27:android.widget.AdapterView$OnItemLongClickListener access$2(com.prize.videoc.widget.GridViewWith) -> c
+com.prize.videoc.widget.GridViewWith$FixedViewInfo -> com.prize.videoc.widget.GridViewWith$a:
+    android.view.View view -> a
+    android.view.ViewGroup viewContainer -> b
+    java.lang.Object data -> c
+    boolean isSelectable -> d
+com.prize.videoc.widget.GridViewWith$FullWidthFixedViewLayout -> com.prize.videoc.widget.GridViewWith$b:
+    com.prize.videoc.widget.GridViewWith this$0 -> a
+    425:431:void onLayout(boolean,int,int,int,int) -> onLayout
+    435:441:void onMeasure(int,int) -> onMeasure
+com.prize.videoc.widget.GridViewWith$HeaderViewGridAdapter -> com.prize.videoc.widget.GridViewWith$c:
+    android.database.DataSetObservable mDataSetObservable -> e
+    android.widget.ListAdapter mAdapter -> f
+    java.util.ArrayList EMPTY_INFO_LIST -> a
+    java.util.ArrayList mHeaderViewInfos -> b
+    java.util.ArrayList mFooterViewInfos -> c
+    int mNumColumns -> g
+    int mRowHeight -> h
+    boolean mAreAllFixedViewsSelectable -> d
+    boolean mIsFilterable -> i
+    boolean mCachePlaceHoldView -> j
+    boolean mCacheFirstHeaderView -> k
+    499:506:void setNumColumns(int) -> a
+    509:510:void setRowHeight(int) -> b
+    513:513:int getHeadersCount() -> a
+    517:517:int getFootersCount() -> b
+    528:528:boolean isEmpty() -> isEmpty
+    532:539:boolean areAllListInfosSelectable(java.util.ArrayList) -> a
+    543:553:boolean removeHeader(android.view.View) -> a
+    557:567:boolean removeFooter(android.view.View) -> b
+    572:575:int getCount() -> getCount
+    581:581:boolean areAllItemsEnabled() -> areAllItemsEnabled
+    585:585:int getAdapterAndPlaceHolderCount() -> d
+    591:609:boolean isEnabled(int) -> isEnabled
+    616:643:java.lang.Object getItem(int) -> getItem
+    649:657:long getItemId(int) -> getItemId
+    662:662:boolean hasStableIds() -> hasStableIds
+    667:724:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    730:773:int getItemViewType(int) -> getItemViewType
+    783:794:int getViewTypeCount() -> getViewTypeCount
+    799:803:void registerDataSetObserver(android.database.DataSetObserver) -> registerDataSetObserver
+    807:811:void unregisterDataSetObserver(android.database.DataSetObserver) -> unregisterDataSetObserver
+    815:818:android.widget.Filter getFilter() -> getFilter
+    823:823:android.widget.ListAdapter getWrappedAdapter() -> getWrappedAdapter
+    827:828:void notifyDataSetChanged() -> c
+com.prize.videoc.widget.GridViewWith$ItemClickHandler -> com.prize.videoc.widget.GridViewWith$d:
+    com.prize.videoc.widget.GridViewWith this$0 -> a
+    854:860:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    864:870:boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long) -> onItemLongClick
+com.prize.videoc.widget.RoundImageView -> com.prize.videoc.widget.RoundImageView:
+    27:37:void onDraw(android.graphics.Canvas) -> onDraw

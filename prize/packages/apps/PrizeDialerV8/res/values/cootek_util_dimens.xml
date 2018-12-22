@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cootek_funcbar_height">48dp</dimen>
+    <dimen name="cootek_loading_view_margin">5dip</dimen>
+
+    <!--login-->
+    <dimen name="cootek_header_height">145dp</dimen>
+    <dimen name="cootek_header_height2">166dp</dimen>
+    <dimen name="cootek_header_title_height">80dp</dimen>
+    <dimen name="cootek_header_login_width">100dp</dimen>
+    <dimen name="cootek_header_login_height">38dp</dimen>
+    <dimen name="cootek_header_back_width">36dp</dimen>
+    <dimen name="cootek_header_padding1">12dp</dimen>
+    <dimen name="cootek_header_padding2">16dp</dimen>
+    <dimen name="cootek_header_padding5">2dp</dimen>
+    <dimen name="cootek_header_avatar_diameter">98dp</dimen>
+    <dimen name="cootek_header_avatar_radius">100dp</dimen>
+
+    <dimen name="cootek_login_width">325dp</dimen>
+    <dimen name="cootek_login_padding">16dp</dimen>
+    <dimen name="cootek_avatar_dialog_height">270dp</dimen>
+    <dimen name="cootek_avatar_dialog_width">320dp</dimen>
+    <dimen name="cootek_avatar_width">80dp</dimen>
+    <dimen name="cootek_avatar_hori_padding">30dp</dimen>
+    <dimen name="cootek_avatar_verti_padding">20dp</dimen>
+    <dimen name="cootek_loginbtn_padding">10dp</dimen>
+
+    <dimen name="cootek_individual_share_padding0">20dp</dimen>
+    <dimen name="cootek_individual_share_padding1">27dp</dimen>
+    <dimen name="cootek_individual_share_padding2">12dp</dimen>
+    <dimen name="cootek_individual_share_padding3">24dp</dimen>
+
+    <dimen name="cootek_scan_text_size">14dip</dimen>
+</resources>

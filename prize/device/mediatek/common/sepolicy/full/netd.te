@@ -1,0 +1,7 @@
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+# for vtservice connection
+allow netd vtservice:fd use;
+allow netd vtservice:udp_socket {read write setopt getopt};

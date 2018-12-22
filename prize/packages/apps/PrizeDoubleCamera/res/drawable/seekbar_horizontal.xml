@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>     
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">     
+  
+   <item android:id="@android:id/background"> 
+         <nine-patch android:src="@drawable/beautiful_seakbar_bg" />    
+     
+   </item>     
+      
+  <item android:id="@android:id/progress">   
+        <clip > 
+          <nine-patch android:src="@drawable/beautiful_seakbar_pro"/>
+        </clip>  
+   </item>  
+ </layer-list>

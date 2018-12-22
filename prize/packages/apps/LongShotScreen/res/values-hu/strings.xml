@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Super screenshotok</string>
+    <string name="action_settings">beállítása</string>
+    <string name="scroll_shot">hosszú screenshotok</string>
+    <string name="funny_shot">Fun screenshotok</string>
+    <string name="screen_record">képernyő felvétel</string>
+    <string name="nextpage">a következő képernyőn</string>
+    <string name="save">Save</string>
+    <string name="cancel">törölve</string>
+    <string name="rect_shot">Négyszögletes screenshotok</string>
+    <string name="lasso_shot">Lasso screenshotok</string>
+    <string name="daub_shot">graffiti screenshotok</string>
+    <string name="redo">Újra</string>
+    <string name="undo">visszavonás</string>
+    <string name="exit">quit</string>
+    <string name="scrawl">falfirkálás</string>
+    <string name="app_restrict_capture_screen">Mivel az alkalmazás határt, a felület nem lehet screenshotok</string>
+    <string name="drag_to_select_capture_area">Ebben a drag and drop kiválasztott ablak képernyőkép</string>
+    <string name="not_support_screen_orientation_change">Screen capture eljárás nem támogatja a vízszintes és függőleges képernyő kapcsoló</string>
+    <string name="screenshot_saved">Képernyőképek</string>
+    <string name="screenshot_saved_to_tf_card">Mentett fájlok "Telefon tároló / Super screenshotok" mappát.</string>
+    <string name="screenshot_saved_to_sd_card">Mentett fájlok "SD-kártya / Super screenshotok" mappát.</string>
+    <string name="lasso_guide">Döntetlen screenshotok régióban kezdődött Lasso screenshotok</string>
+    <string name="scrollcapture_is_running">Hosszú futás screenshotok</string>
+    <string name="scrollcapture_is_saving_please_wait">A jelenlegi hosszú screenshotok mentése, kérem várjon.</string>
+    <string name="hit_the_bottom">A végén a dia</string>
+    <string name="content_un_extended">A keresztmetszet nem támogatja a hosszú screenshotok</string>
+    <string name="maximum_to_ten_pages">Akár 10 képernyő lehallgatás</string>
+    <string name="saving">Mentés ...</string>
+    <string name="screenshot_saving">Képernyőkép mentése ...</string>
+    <string name="hava_not_start_daub">Nem festett, festett, majd kattintson a Mentés gombra.</string>
+    <string name="move">mozgó</string>
+    
+    <string name="turn_off_long_screenshots">Kérjük, lépjen ki a hosszú screenshotok</string>
+    <string name="turn_off_interest_screenshots">Kérjük, lépjen érdekes screenshotok</string>
+    
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/onekey_dialog_top"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+   <RelativeLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="55dp">
+      <View
+        android:id="@+id/onekey_image"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/onekey_line" />
+        
+       <ImageView
+            android:id="@+id/btn_delete_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/onekey_del_btn"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"/>
+        
+      <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_color_737373"
+	        android:textSize="16sp"
+	        android:text="@string/download_dialog_hint"/>
+       
+       </RelativeLayout>
+     
+    <GridView 
+        android:id="@+id/dialog_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gridview_H"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/onekey_dlg_margin"
+        android:horizontalSpacing="@dimen/onekey_dlg_margin"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent" 
+        >
+    </GridView>
+    
+       <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/onekey_wifi"
+            android:drawablePadding="5dp"
+            android:id="@+id/wifi_conntected"
+            android:textColor="@color/prize_text_select"
+	        android:text="@string/dialog_connect_wify"
+	        android:textSize="14sp"/>
+    
+        <TextView
+            android:id="@+id/install_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/onekey_dlg_margin"
+            android:layout_marginLeft="@dimen/onekey_dlg_margin"
+            android:layout_marginTop="@dimen/onekey_dlg_margin"
+            android:layout_marginBottom="@dimen/onekey_dlg_margin"
+            android:gravity="center"
+        	android:text="@string/dialog_down_comment"
+            android:textColor="@color/prize_text_select"
+            android:textSize="@dimen/textsize_next" />
+            <!-- android:background="@drawable/btn_updateinstall_selector" -->
+  
+
+</LinearLayout>

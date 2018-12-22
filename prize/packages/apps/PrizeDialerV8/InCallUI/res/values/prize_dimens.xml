@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- InCallActivity. -->
+    <dimen name="prize_base_margin_bottom">45dp</dimen>
+
+    <dimen name="prize_answer_fragment_padding_bottom">@dimen/prize_base_margin_bottom</dimen>
+    <dimen name="prize_answer_fragment_nolock_margin_bottom">@dimen/prize_base_margin_bottom</dimen>
+    <dimen name="prize_answer_fragment_nolock_margin_start">20dp</dimen>
+    <dimen name="prize_answer_fragment_nolock_margin_end">20dp</dimen>
+
+    <dimen name="prize_call_card_fragment_padding_bottom">@dimen/prize_base_margin_bottom</dimen>
+
+</resources>

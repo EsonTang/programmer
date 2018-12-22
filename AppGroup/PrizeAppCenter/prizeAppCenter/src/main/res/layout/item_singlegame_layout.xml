@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/title_Tv"
+        android:layout_width="161dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="30dp"/>
+
+    <com.prize.appcenter.ui.widget.ScrollListView
+        android:id="@+id/mScrollListView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:paddingBottom="20dp"
+        />
+
+</LinearLayout>

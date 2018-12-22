@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/group_item"
+    android:background="@drawable/left_item_click_selector"
+    android:paddingTop="@dimen/news_item_vertical_pad"
+    >
+
+    <ImageView
+        android:id="@+id/left_img"
+        style="@style/food_left_img_style"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/news_item_img_end"
+        android:contentDescription="@null"
+        android:src="@color/white_64"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/left_img_height"
+        android:layout_toRightOf="@+id/left_img"
+        android:orientation="vertical"
+        android:id="@+id/wenzi_lay"
+        >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:ellipsize="end"
+            android:minHeight="34dp"
+            android:maxLines="2"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/dp_16"
+            style="@style/news_title_style" />
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="4dp" >
+
+            <TextView
+                android:id="@+id/txt_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/white_54"
+                android:textSize="8.5sp" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:maxLines="1"
+                android:textColor="@color/white_54"
+                android:textSize="8.5sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+	<View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"
+        android:layout_marginTop="@dimen/news_item_vertical_pad"
+        android:layout_below="@id/left_img"
+        android:id="@+id/bottom_line"
+        />
+</RelativeLayout>

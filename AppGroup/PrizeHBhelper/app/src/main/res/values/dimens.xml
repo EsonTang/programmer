@@ -1,0 +1,81 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="header_height">40dp</dimen>
+    <dimen name="header_textsize">18sp</dimen>
+    <dimen name="header_textsize_v8">16sp</dimen>          <!--prize add for 39 v2 zhaojian 20171225-->
+
+    <dimen name="divider_height">1px</dimen>
+    <dimen name="side_margin"><!--13dp-->15dp</dimen>    <!--prize modify zhaojian 8.0 2017803-->
+    <dimen name="first_item_height">50dp</dimen>
+    <dimen name="item_height">50dp</dimen>
+    <dimen name="item_textsize">14sp</dimen>
+    <dimen name="rotate_image_width">10dp</dimen>
+    <dimen name="rotate_image_height">6dp</dimen>
+    <dimen name="answer_height">210dp</dimen>
+    <dimen name="answer_text_margin_top">14dp</dimen>     <!--prize modify 18 as 14 by zhaojian 20171109-->
+    <dimen name="answer_picture_margin_top">12dp</dimen>
+    <dimen name="answer_bottom_blank">16dp</dimen>
+    <dimen name="picture_width">162dp</dimen>
+    <dimen name="picture_height">137dp</dimen>
+    <dimen name="picture_margin">2dp</dimen>               <!--prize modify 9 as 2 by zhaojian 20171109-->
+    <dimen name="answer_two_line_height">66dp</dimen>
+    <dimen name="answer_three_line_height">83dp</dimen>
+    <dimen name="answer5_1_height">83dp</dimen>
+    <dimen name="answer5_2_height">66dp</dimen>
+    <dimen name="clearButton_line_height">51dp</dimen>
+    <dimen name="prize_hint_text_size">13sp</dimen>
+
+    <!--HongBao Record-->
+    <dimen name="textsize_15">15sp</dimen>
+    <dimen name="record_item_textsize">12sp</dimen>
+    <dimen name="notification_bar_height">20dp</dimen>
+    <dimen name="top_bar_height">43.5dp</dimen>
+    <dimen name="total_margin_top">14dp</dimen>
+    <dimen name="back_button_margin">10dp</dimen>
+    <dimen name="record_header_height">100dp</dimen>
+    <dimen name="header_margin_top">25dp</dimen>
+    <dimen name="header_side_margin">5dp</dimen>
+    <dimen name="sum_top_margin">15.3dp</dimen>
+    <dimen name="sum_item_margin">23.3dp</dimen>
+    <dimen name="sum_textsize">40sp</dimen>
+    <dimen name="item_side_margin">8dp</dimen>
+    <dimen name="item_top_margin">7.5dp</dimen>
+    <dimen name="item_between_margin">50dp</dimen>
+    <dimen name="item_image_margin">2dp</dimen>
+    <dimen name="listview_margin_top">26dp</dimen>
+    <dimen name="clean_record_margintop">12dp</dimen>
+    <dimen name="record_item_height">66.3dp</dimen>
+    <dimen name="record_item_margin_height">17.6dp</dimen>
+    <dimen name="clear_record_textsize">10sp</dimen>
+
+    <dimen name="answer1_height">471px</dimen>
+    <dimen name="answer2_height">405px</dimen>
+    <dimen name="answer3_height">438px</dimen>
+    <!--<dimen name="answer4_height">266px</dimen>-->
+    <dimen name="answer4_height">133px</dimen>
+
+    <!--prize add zhaojian 8.0 2017803 start-->
+    <dimen name="preference_fragment_padding_side">16dp</dimen>
+    <dimen name="prize_card_layout_padding_left_right">7dp</dimen>
+    <dimen name="prize_card_layout_padding_top">15dp</dimen>
+    <dimen name="prize_card_layout_corner">4dp</dimen>
+    <dimen name="prize_actionbar_elevation_size">3px</dimen>
+    <dimen name="prize_actionbar_margin_top">20dp</dimen>
+    <dimen name="prize_actionbar_back_button_margin_left">7.5dp</dimen>
+    <dimen name="preference_margin_start_prize_common">15dp</dimen>
+    <dimen name="preference_margin_end_prize_common">15dp</dimen>
+    <dimen name="prize_hint_padding_bottom">17dp</dimen>
+    <dimen name="prize_card_bg_stroke_width">1px</dimen>
+
+    <dimen name="prize_action_bar_size">40dp</dimen>
+    <!--prize add zhaojian 8.0 2017803 end-->
+
+    <!--prize add by zhaojian 20171109 start-->
+    <dimen name="prize_answer_text_size">15dp</dimen>
+    <!--prize add by zhaojian 20171109 start-->
+
+</resources>

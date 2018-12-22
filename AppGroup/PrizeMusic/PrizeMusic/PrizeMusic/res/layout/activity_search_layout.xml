@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:paddingTop="37dp" >
+
+        <TextView
+            android:id="@+id/action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btn_back_selector" />
+
+        <EditText
+            android:id="@+id/search_word_Edtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/play_list_title_padding"
+            android:layout_marginRight="@dimen/play_list_title_padding"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/action_searche"
+            android:layout_toRightOf="@+id/action_back"
+            android:background="@null"
+            android:drawableBottom="@drawable/line_separator"
+            android:textColorHint="@color/text_color_gray"
+            android:textColor="@android:color/white"
+            android:hint="@string/please_input_songs_key"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_small" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/action_searche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_selector"
+            android:imeOptions="actionSearch" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_list_line_height"
+        android:background="@drawable/line_separator" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/line_separator"
+        android:dividerHeight="0.5dp"
+        android:drawSelectorOnTop="false"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

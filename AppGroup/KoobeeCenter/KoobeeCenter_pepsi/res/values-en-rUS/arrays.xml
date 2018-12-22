@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_items">
+        <item>Power usage</item>
+        <item>Network</item>
+        <item>Reboots</item>
+        <item>Bluetooth</item>
+        <item>Camera</item>
+        <item>WLAN</item>
+        <item>GPS</item>
+        <item>Suggestions</item>
+        <item>Apps</item>
+    </string-array>
+</resources>

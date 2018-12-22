@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.1'
+
+    defaultConfig {
+        applicationId "com.android.calendar"
+        minSdkVersion 13
+        targetSdkVersion 24
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            multiDexEnabled true
+        }
+    }
+
+    /*lintOptions {
+        disable 'MissingTranslation'
+    }*/
+}
+
+dependencies {
+    provided files('libs/framework.jar')
+    compile('com.android.support:appcompat-v7:23.4.0') {
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+    }
+    compile('com.android.support:design:23.4.0') {
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+    }
+    compile('com.android.support:cardview-v7:23.4.0') {
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+    }
+    compile('com.android.support:palette-v7:23.4.0') {
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+    }
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //    {
+    //        exclude module: 'support-annotations'
+    //    }
+    /*compile files('libs/timezonepicker.jar')
+                                                                                                    compile files('libs/datetimepicker.jar')
+                                                                                                    compile files('libs/colorpicker.jar')*/
+    compile files('libs/calendarCommon.jar')
+    compile files('libs/mediatekCalendar.jar')
+    compile files('libs/mediatekvcalendar.jar')
+    /*compile files('libs/androidcommonchips.jar')*/
+    /*compile ('com.android.support:support-v4:23.4.0'){
+                                                                            exclude module: 'support-annotations'
+                                                                        }*/
+    //    compile files('libs/androidcommon.jar')
+    //            {
+    //        exclude module: 'support-v4'
+    //        exclude module: 'android-commons'
+    //    }
+    compile project(':colorpicker')
+    compile project(':datetimepicker')
+    compile project(':timezonepicker')
+    compile project(':exchips')
+    //    compile files('libs/android_support_v4.jar')
+    compile project(':sharelib')
+}
+
+android {
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+    dexOptions {
+        preDexLibraries = false
+    }
+}
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+
+

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  
+    <include
+        layout="@layout/waiting_view"
+         android:visibility="gone" />
+
+    <include
+        layout="@layout/reload_layout"
+        android:visibility="gone" />  
+
+     
+<!--     <com.prize.music.ui.widgets.ScrollableTabView
+        android:id="@+id/scrollingTabs"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tab_height"
+        android:layout_centerHorizontal="true"/> -->
+     <com.prize.music.views.indicator.TabTextPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_height="50dp" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_below="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:background="@color/bg_head_gray_color" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewLine" />
+
+</RelativeLayout>

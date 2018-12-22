@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Video</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="back">Back</string>
+    <string name="lastplay">Last Play</string>
+    <string name="no_play">No play record</string>
+    <string name="local_videos">Local Video</string>
+    <string name="iqiyi_videos">Iqiyi Video</string>
+    <string name="youku_videos">Youku Video</string>
+    <string name="tencent_videos">Tencent Video</string>
+    <string name="net_videos">Online Video</string>
+</resources>

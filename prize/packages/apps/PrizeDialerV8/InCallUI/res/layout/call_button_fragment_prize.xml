@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2013 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<!-- In-call onscreen touch UI elements, used on some platforms.
+
+     This layout is a fullscreen overlay, drawn on top of the
+     non-touch-sensitive parts of the in-call UI (i.e. the call card).
+
+     The top-level View here is a InCallTouchUi (FrameLayout) with 2 children:
+       (1) inCallControls: the widgets visible while a regular call (or calls) is in progress
+       (2) incomingCallWidget: the UI displayed while an incoming call is ringing
+     In usual cases, one of these is visible at any given moment.
+     One exception is when incomingCallWidget is fading-out. At that moment, we show
+     inCallControls beneath incomingCallWidget for smoother transition.
+     -->
+
+<!-- PRIZE-Change-Optimize_Dialer-wangzhong-2018_3_5-start -->
+<!-- Main cluster of onscreen buttons on the lower part of the screen. -->
+<!--<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomButtons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="25dp"
+    android:layout_alignParentBottom="true"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    &lt;!&ndash; M: ALPS01844813 callButtonContainer id is used for RCSe plugin &ndash;&gt;
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        &lt;!&ndash; "Mute" &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/muteButton_layout"
+            style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+            android:layout_marginEnd="36.6dp">
+
+            <ImageButton
+                android:id="@+id/muteButton"
+                style="@style/InCallButton"
+                android:background="@drawable/prize_ic_toolbar_mic_background"
+                android:contentDescription="@string/onscreenMuteText"
+                android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+            <TextView
+                android:id="@+id/muteButton_text"
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/onscreenMuteText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; "Hold" &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/holdButton_layout"
+            style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/holdButton"
+                style="@style/InCallButton"
+                android:background="@drawable/prize_btn_compound_hold"
+                android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+            <TextView
+                android:id="@+id/holdButton_text"
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/PrizeHoldText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; Audio &ndash;&gt;
+        &lt;!&ndash; "Audio mode". this is a multi-mode button that can behave either like a simple
+             "compound button" with two states *or* like an action button that brings up a popup
+             menu; see btn_compound_audio.xml and CallButtonFragment.updateAudioButtons(). &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/audioButton_layout"
+            style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+            android:layout_marginStart="36.6dp">
+
+            <ImageButton
+                android:id="@+id/audioButton"
+                style="@style/InCallButton"
+                android:background="@drawable/prize_btn_compound_audio"
+                android:contentDescription="@string/onscreenAudioText"
+                android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+            <TextView
+                android:id="@+id/audioButton_text"
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/prizeOnscreenAudioText"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="21dp"
+        android:orientation="horizontal">
+
+        &lt;!&ndash; VoiceRecord &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/voiceRecordButton_layout"
+            style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+            android:layout_marginEnd="36.6dp">
+
+            <ImageButton
+                android:id="@+id/voiceRecordButton"
+                style="@style/InCallButton"
+                android:background="@drawable/prize_btn_voicerecord"
+                android:contentDescription="@string/onscreenVoiceRecordText"
+                android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+            <TextView
+                android:id="@+id/voiceRecordButton_text"
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/onscreenVoiceRecordText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; "Add Call" &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/addButton_layout"
+            style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/addButton"
+                style="@style/InCallButton"
+                android:background="@drawable/prize_add_button"
+                android:contentDescription="@string/onscreenAddCallText"
+                android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+            <TextView
+                android:id="@+id/addButton_text"
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/onscreenAddCallText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; Contacts &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/prize_contacts_button_layout"
+            style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+            android:layout_marginStart="36.6dp">
+
+            <ImageButton
+                android:id="@+id/prize_contacts_button"
+                style="@style/InCallButton"
+                android:background="@drawable/prize_incallui_jump_into_contacts_drawable"
+                android:contentDescription="@string/prizeOnscreenContactsText"
+                android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+            <TextView
+                android:id="@+id/prize_contacts_text"
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/prizeOnscreenContactsText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; Tip &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/tipButton_layout"
+            style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+            android:layout_marginStart="36.6dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/tipButton"
+                style="@style/InCallButton"
+                android:background="@drawable/prize_btn_tip"
+                android:contentDescription="@string/onscreenTipText"
+                android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+            <TextView
+                android:id="@+id/tipButton_text"
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/onscreenTipText"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    &lt;!&ndash; M: ALPS01844813 callButtonContainer id is used for RCSe plugin &ndash;&gt;
+    <LinearLayout
+        android:id="@+id/callButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+
+        &lt;!&ndash; This row only ever shows either 4 or 5 buttons. This may depend on whether the device
+             supports "Hold" (i.e. 4 buttons on CDMA devices, 5 buttons on GSM devices.) or whether
+             it is in a video call.
+
+             There are a couple of *pairs* of buttons that share a single "slot", namely Hold/Swap
+             and Add/Merge.  For these, the code in InCallTouchUi is responsible for making sure
+             that at any point exactly one of the pair is VISIBLE and the other is GONE.
+
+             If there are more than 5 buttons eligible to be shown, the presenter is responsible for
+             collapsing those options into an overflow menu, which appears as one of the buttons
+             in the row instead. &ndash;&gt;
+
+        &lt;!&ndash; FAR LEFT SLOT ===================================================================== &ndash;&gt;
+
+        &lt;!&ndash; "Audio mode". this is a multi-mode button that can behave either like a simple
+             "compound button" with two states *or* like an action button that brings up a popup
+             menu; see btn_compound_audio.xml and CallButtonFragment.updateAudioButtons(). &ndash;&gt;
+        &lt;!&ndash;<ToggleButton android:id="@+id/audioButton"
+            style="@style/InCallCompoundButton"
+            android:background="@drawable/btn_compound_audio"
+            android:contentDescription="@string/audio_mode_speaker" />&ndash;&gt;
+
+        &lt;!&ndash; MIDDLE LEFT SLOT ================================================================== &ndash;&gt;
+
+        &lt;!&ndash; "Mute" &ndash;&gt;
+        &lt;!&ndash;<ToggleButton android:id="@+id/muteButton"
+            style="@style/InCallCompoundButton"
+            android:background="@drawable/btn_compound_mute"
+            android:contentDescription="@string/onscreenMuteText" />&ndash;&gt;
+
+        &lt;!&ndash; CENTER SLOT ======================================================================= &ndash;&gt;
+
+        &lt;!&ndash; "Dialpad" &ndash;&gt;
+        <ImageButton
+            android:id="@+id/dialpadButton"
+            style="@style/InCallCompoundButton"
+            android:background="@drawable/btn_compound_dialpad"
+            android:contentDescription="@string/onscreenShowDialpadText"
+            android:visibility="gone"/>
+
+        &lt;!&ndash; MIDDLE RIGHT SLOT ================================================================= &ndash;&gt;
+
+        &lt;!&ndash; This slot is either "Hold" or "Swap", depending on the state of the call. One or the
+             other of these must always be set to GONE. &ndash;&gt;
+
+        &lt;!&ndash; "Hold" &ndash;&gt;
+        &lt;!&ndash;<ToggleButton android:id="@+id/holdButton"
+            style="@style/InCallCompoundButton"
+            android:background="@drawable/btn_compound_hold"
+            android:contentDescription="@string/onscreenHoldText_unselected" />&ndash;&gt;
+
+        &lt;!&ndash; "Swap" (or "Manage calls" in some CDMA states) &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/swapButton_layout"
+            style="@style/InCallButtonFragmentButtonLayoutStyle"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/swapButton"
+                style="@style/InCallButton"
+                android:background="@drawable/btn_swap"
+                android:contentDescription="@string/onscreenSwapCallsText"
+                android:visibility="gone"/>
+
+            <TextView
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/onscreenSwapCallsText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; "Change to video call" &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/changeToVideoButton_layout"
+            style="@style/InCallButtonFragmentButtonLayoutStyle"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/changeToVideoButton"
+                style="@style/InCallButton"
+                android:background="@drawable/btn_change_to_video"
+                android:contentDescription="@string/onscreenVideoCallText"
+                android:visibility="gone"/>
+
+            <TextView
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/onscreenVideoCallText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; "Switch camera" for video calls. &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/switchCameraButton_layout"
+            style="@style/InCallButtonFragmentButtonLayoutStyle"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/switchCameraButton"
+                style="@style/InCallCompoundButton"
+                android:background="@drawable/btn_compound_video_switch"
+                android:contentDescription="@string/onscreenSwitchCameraText"
+                android:visibility="gone"/>
+
+            <TextView
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/onscreenSwitchCameraText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; FAR RIGHT SLOT ==================================================================== &ndash;&gt;
+
+        &lt;!&ndash; This slot is either "Add" or "Merge", depending on the state of the call.  One or the
+             other of these must always be set to GONE. &ndash;&gt;
+
+        &lt;!&ndash; "Turn off camera" for video calls. &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/pauseVideoButton_layout"
+            style="@style/InCallButtonFragmentButtonLayoutStyle"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/pauseVideoButton"
+                style="@style/InCallCompoundButton"
+                android:background="@drawable/btn_compound_video_off"
+                android:contentDescription="@string/onscreenPauseVideoText"
+                android:visibility="gone"/>
+
+            <TextView
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/onscreenPauseVideoText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; "Hold" &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/holdButton_layout"
+            style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/holdButton"
+                style="@style/InCallButton"
+                android:background="@drawable/prize_btn_compound_hold"
+                android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+            <TextView
+                android:id="@+id/holdButton_text"
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/PrizeHoldText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; "Add Call" &ndash;&gt;
+        &lt;!&ndash;<ImageButton android:id="@+id/addButton"
+            style="@style/InCallButton"
+            android:background="@drawable/btn_add"
+            android:contentDescription="@string/onscreenAddCallText"
+            android:visibility="gone" />&ndash;&gt;
+
+        &lt;!&ndash; "Merge calls". This button is used only on GSM devices, where we know that "Add" and
+             "Merge" are never available at the same time. The "Merge" button for CDMA devices is
+             "cdmaMergeButton" above. &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/mergeButton_layout"
+            style="@style/InCallButtonFragmentButtonLayoutStyle"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/mergeButton"
+                style="@style/InCallButton"
+                android:background="@drawable/btn_merge"
+                android:contentDescription="@string/onscreenMergeCallsText"
+                android:visibility="gone"/>
+
+            <TextView
+                style="@style/InCallButtonFragmentTextStyle"
+                android:text="@string/onscreenMergeCallsText"/>
+        </LinearLayout>
+
+        &lt;!&ndash; "Overflow" &ndash;&gt;
+        <ImageButton
+            android:id="@+id/overflowButton"
+            style="@style/InCallButton"
+            android:background="@drawable/btn_overflow"
+            android:contentDescription="@string/onscreenOverflowText"
+            android:visibility="gone"/>
+
+        &lt;!&ndash; M: "Change to voice call" &ndash;&gt;
+        <ImageButton
+            android:id="@+id/changeToVoiceButton"
+            style="@style/InCallButton"
+            android:background="@drawable/btn_change_to_video"
+            android:contentDescription="@string/onscreenChangeToVoiceText"
+            android:visibility="gone"/>
+
+        &lt;!&ndash; M :"Hide Local preview" &ndash;&gt;
+        <ImageButton
+            android:id="@+id/hideOrShowLocalVideo"
+            style="@style/InCallCompoundButton"
+            android:contentDescription="@string/hideVideoPreview"
+            android:visibility="gone"/>
+
+        &lt;!&ndash; "Manage conference button (Video Call) " &ndash;&gt;
+        <ImageButton
+            android:id="@+id/manageVideoCallConferenceButton"
+            style="@style/InCallButton"
+            android:background="@drawable/ic_group_white_24dp"
+            android:contentDescription="@string/onscreenManageConferenceText"
+            android:visibility="gone"/>
+
+        &lt;!&ndash; Mediatek add start&ndash;&gt;
+        &lt;!&ndash; "Set ect button " &ndash;&gt;
+        <ImageButton
+            android:id="@+id/setEctButton"
+            style="@style/InCallButton"
+            android:background="@drawable/mtk_btn_transfer"
+            android:contentDescription="@string/menu_ect"
+            android:visibility="gone"/>
+
+        &lt;!&ndash; "Hangup all calls button " &ndash;&gt;
+        <ImageButton
+            android:id="@+id/hangupAllCallsButton"
+            style="@style/InCallButton"
+            android:background="@drawable/mtk_btn_hangup_all"
+            android:contentDescription="@string/onscreenHangupAll"
+            android:visibility="gone"/>
+
+        &lt;!&ndash; Hangup all hold calls button " &ndash;&gt;
+        <ImageButton
+            android:id="@+id/hangupAllHoldCallsButton"
+            style="@style/InCallButton"
+            android:background="@drawable/mtk_btn_hangup_all_holding"
+            android:contentDescription="@string/onscreenHangupHolding"
+            android:visibility="gone"/>
+
+        &lt;!&ndash; "Hangup active and answer waiting button " &ndash;&gt;
+        <ImageButton
+            android:id="@+id/hangupActiveAndAnswerWaitingButton"
+            style="@style/InCallButton"
+            android:background="@drawable/mtk_btn_hangup_active_answer_waiting"
+            android:contentDescription="@string/onscreenHangupActiveAndAnswerWaiting"
+            android:visibility="gone"/>
+
+        &lt;!&ndash; [Voice Record] start/stop voice record button &ndash;&gt;
+        <ImageButton
+            android:id="@+id/switch_voice_record"
+            style="@style/InCallButton"
+            android:background="@drawable/mtk_btn_compound_voice_record"
+            android:contentDescription="@string/start_record"
+            android:gravity="center"
+            android:visibility="gone"/>
+        &lt;!&ndash; Mediatek add end&ndash;&gt;
+
+    </LinearLayout>
+
+</LinearLayout>-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="25dp"
+    android:layout_alignParentBottom="true"
+    android:animateLayoutChanges="true">
+
+    <!-- ONE -->
+    <!-- "Hold" -->
+    <LinearLayout
+        android:id="@+id/holdButton_layout"
+        style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/holdButton"
+            style="@style/InCallButton"
+            android:background="@drawable/prize_btn_compound_hold"
+            android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+        <TextView
+            android:id="@+id/holdButton_text"
+            style="@style/InCallButtonFragmentTextStyle"
+            android:text="@string/PrizeHoldText"/>
+    </LinearLayout>
+
+    <!-- "Mute" -->
+    <LinearLayout
+        android:id="@+id/muteButton_layout"
+        style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+        android:layout_alignTop="@+id/holdButton_layout"
+        android:layout_marginEnd="36.6dp"
+        android:layout_toStartOf="@+id/holdButton_layout">
+
+        <ImageButton
+            android:id="@+id/muteButton"
+            style="@style/InCallButton"
+            android:background="@drawable/prize_ic_toolbar_mic_background"
+            android:contentDescription="@string/onscreenMuteText"
+            android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+        <TextView
+            android:id="@+id/muteButton_text"
+            style="@style/InCallButtonFragmentTextStyle"
+            android:text="@string/onscreenMuteText"/>
+    </LinearLayout>
+
+    <!-- Audio -->
+    <!-- "Audio mode". this is a multi-mode button that can behave either like a simple
+         "compound button" with two states *or* like an action button that brings up a popup
+         menu; see btn_compound_audio.xml and CallButtonFragment.updateAudioButtons(). -->
+    <LinearLayout
+        android:id="@+id/audioButton_layout"
+        style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+        android:layout_alignTop="@+id/holdButton_layout"
+        android:layout_marginStart="36.6dp"
+        android:layout_toEndOf="@+id/holdButton_layout">
+
+        <ImageButton
+            android:id="@+id/audioButton"
+            style="@style/InCallButton"
+            android:background="@drawable/prize_btn_compound_audio"
+            android:contentDescription="@string/onscreenAudioText"
+            android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+        <TextView
+            android:id="@+id/audioButton_text"
+            style="@style/InCallButtonFragmentTextStyle"
+            android:text="@string/prizeOnscreenAudioText"/>
+    </LinearLayout>
+
+    <!-- TWO -->
+    <!-- "Add Call" -->
+    <LinearLayout
+        android:id="@+id/addButton_layout"
+        style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+        android:layout_below="@+id/holdButton_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp">
+
+        <ImageButton
+            android:id="@+id/addButton"
+            style="@style/InCallButton"
+            android:background="@drawable/prize_add_button"
+            android:contentDescription="@string/onscreenAddCallText"
+            android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+        <TextView
+            android:id="@+id/addButton_text"
+            style="@style/InCallButtonFragmentTextStyle"
+            android:text="@string/onscreenAddCallText"/>
+    </LinearLayout>
+
+    <!-- VoiceRecord -->
+    <LinearLayout
+        android:id="@+id/voiceRecordButton_layout"
+        style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+        android:layout_alignTop="@+id/addButton_layout"
+        android:layout_marginEnd="36.6dp"
+        android:layout_toStartOf="@+id/addButton_layout">
+
+        <ImageButton
+            android:id="@+id/voiceRecordButton"
+            style="@style/InCallButton"
+            android:background="@drawable/prize_btn_voicerecord"
+            android:contentDescription="@string/onscreenVoiceRecordText"
+            android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+        <TextView
+            android:id="@+id/voiceRecordButton_text"
+            style="@style/InCallButtonFragmentTextStyle"
+            android:text="@string/onscreenVoiceRecordText"/>
+    </LinearLayout>
+
+    <!-- Contacts -->
+    <LinearLayout
+        android:id="@+id/prize_contacts_button_layout"
+        style="@style/SpecialInCallButtonFragmentButtonLayoutStyle"
+        android:layout_alignTop="@+id/addButton_layout"
+        android:layout_marginStart="36.6dp"
+        android:layout_toEndOf="@+id/addButton_layout">
+
+        <ImageButton
+            android:id="@+id/prize_contacts_button"
+            style="@style/InCallButton"
+            android:background="@drawable/prize_incallui_jump_into_contacts_drawable"
+            android:contentDescription="@string/prizeOnscreenContactsText"
+            android:tint="@color/prize_select_enable_color_zhangzhonghao"/>
+
+        <TextView
+            android:id="@+id/prize_contacts_text"
+            style="@style/InCallButtonFragmentTextStyle"
+            android:text="@string/prizeOnscreenContactsText"/>
+    </LinearLayout>
+
+    <!-- "Dialpad" Purpose:save the status -->
+    <ImageButton
+        android:id="@+id/dialpadButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+<!-- PRIZE-Change-Optimize_Dialer-wangzhong-2018_3_5-end -->

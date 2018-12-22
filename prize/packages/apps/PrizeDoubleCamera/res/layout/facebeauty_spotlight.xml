@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.android.camera.ui.RotateImageView
+        android:id="@+id/spotlight_dir_image"
+        style="@style/OnScreenPickerFixed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/picker_group_margintop"
+        android:src="@drawable/spotlight_on" />
+
+    <RelativeLayout
+        android:id="@+id/beautiful_spotlight_layout"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="@dimen/beautiful_spotlight_layout_margintop"
+        android:background="@color/beautiful_spotlight_background"
+        android:clickable="true" >
+
+        <!-- 光的方向 -->
+
+        <TextView
+            android:id="@+id/text_spotlight_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:text="@string/spotlight_dir_title"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <!-- 光的方向image -->
+
+        <LinearLayout
+            android:id="@+id/spotlight_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_spotlight_dir"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/spotlight_off_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/spotlight_diroff_selector" />
+            
+            <ImageView
+                android:id="@+id/spotlight_left_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/spotlight_left_selector" />
+
+            <ImageView
+                android:id="@+id/spotlight_leftfront_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/spotlight_leftfront_selector" />
+            
+            <ImageView
+                android:id="@+id/spotlight_front_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/spotlight_front_selector" />
+
+            <ImageView
+                android:id="@+id/spotlight_rightfront_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/spotlight_rightfront_selector" />
+
+            <ImageView
+                android:id="@+id/spotlight_right_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/spotlight_right_selector" />
+        </LinearLayout>
+
+        <!-- 光的强度进度条 -->
+
+        <LinearLayout
+            android:id="@+id/spotlight_seekbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spotlight_image_layout"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spotlight_stren_title"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <SeekBar
+                android:id="@+id/beautifu_spotlight_seekbar"
+                style="@style/SeekBarStyle"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="-4dp"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/spotlight_stren_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!-- 菜单收起按钮 -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

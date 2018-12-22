@@ -1,0 +1,6 @@
+<resources>
+   <dimen name="one_six_twopx">225px</dimen>
+   <dimen name="play_bar_width">50dp</dimen>
+   <dimen name="suspend_dot_margintop">15dp</dimen>
+   
+</resources>

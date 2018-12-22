@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   >
+
+    <LinearLayout
+        android:id="@+id/right_Llyt"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_right_selector"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.prize.appcenter.ui.widget.CustomImageView
+                android:id="@+id/appItem_Iv"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/default_icon"
+                app:iv_radius="5dp" />
+
+            <TextView
+                android:id="@+id/appItem_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/appItem_Iv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/common_app_title"
+                android:textSize="@dimen/text_size_30"
+                tools:text="微信" />
+
+            <TextView
+                android:id="@+id/num_user_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/appItem_name_id"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/icon_numsuer"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#5d5d5d"
+                android:textSize="@dimen/text_size_micro"
+                tools:text="7930万人使用" />
+
+            <TextView
+                android:id="@+id/category_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/appItem_Iv"
+                android:layout_alignLeft="@id/appItem_name_id"
+                android:background="@drawable/bg_category"
+                android:ellipsize="end"
+                android:padding="2dp"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="#b4b4b4"
+                android:textSize="@dimen/text_size_20"
+                tools:text="聊天神器" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/brief_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="#5d5d5d"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/text_size_micro"
+            android:layout_marginTop="13dp"
+            tools:text="全球最大的社交平台" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.lockscreen.widget.ComplexPwdLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/complex_pwd_lay"
+    >
+    <include layout="@layout/complex_pwd_merge" />
+	<include layout="@layout/emc_lay" />
+</com.prize.lockscreen.widget.ComplexPwdLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/size_tv"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/head_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/update_head_bg" />
+
+            <RelativeLayout
+                android:id="@+id/middle_Rlyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/head_img"
+                android:layout_alignRight="@+id/head_img"
+                android:layout_below="@+id/head_img"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_3ac2cf"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/size_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/title_tv"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_3ac2cf"
+                    android:textSize="@dimen/text_size_small" />
+
+                <com.prize.prizenavigation.view.XRTextView
+                    android:id="@+id/content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/size_tv"
+                    android:gravity="left"
+                    android:textColor="@color/text_color_404040"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/text_size_small" />
+
+                <LinearLayout
+                    android:id="@+id/down_percenter_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content_tv"
+                    android:visibility="gone"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/download_precent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/text_color_737373"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/download_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/text_color_737373"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/download_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="2dp"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progress_drawable" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/download_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content_tv"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="@string/click_update_to_install"
+                    android:textColor="@color/text_color_3ac2cf"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/caution_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content_tv"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="@string/current_net_is_nowifi"
+                    android:textColor="@color/text_color_737373"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/middle_Rlyt"
+                android:layout_alignRight="@+id/middle_Rlyt"
+                android:layout_below="@+id/middle_Rlyt"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/add_neg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/update_cancel_selector"
+                    android:text="@string/after_do"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_small" />
+
+                <Button
+                    android:id="@+id/sure_Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/update_sure_selector"
+                    android:text="@string/now_update"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

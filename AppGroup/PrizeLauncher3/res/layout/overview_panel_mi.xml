@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<FrameLayout xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/spring_height_mi"
+    android:layout_gravity="center_horizontal|bottom"
+    android:orientation="vertical" >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:id="@+id/main_tab_group"
+            android:layout_gravity="center"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/wallpaper_button"
+                style="@style/main_tab_bottom_mi"
+                android:layout_width="@dimen/radio_button_width_mi"
+                android:layout_height="@dimen/radio_button_width_mi"
+                android:checked="false"
+                android:text="@string/wallpaper_button_text" />
+
+            <RadioButton
+                android:id="@+id/widget_button"
+                style="@style/main_tab_bottom_mi"
+                android:layout_width="@dimen/radio_button_width_mi"
+                android:layout_height="@dimen/radio_button_width_mi"
+                android:text="@string/widget_button_text" />
+<!-- 
+            <RadioButton
+                android:id="@+id/settings_button"
+                style="@style/main_tab_bottom_mi"
+                android:layout_width="@dimen/radio_button_width_mi"
+                android:layout_height="@dimen/radio_button_width_mi"
+                android:text="@string/settings_button_text"
+                android:visibility="gone" /> -->
+
+            <RadioButton
+                android:id="@+id/anim_button"
+                style="@style/main_tab_bottom_mi"
+                android:text="@string/effects"
+                android:layout_width="@dimen/radio_button_width_mi"
+                android:layout_height="@dimen/radio_button_width_mi" />
+
+            <RadioButton
+                android:id="@+id/theme_button"
+                style="@style/main_tab_bottom_mi"
+                android:layout_width="@dimen/radio_button_width_mi"
+                android:layout_height="@dimen/radio_button_width_mi"
+                android:text="@string/themeset_button_text" />
+
+            <!-- M: Add for op09 Edit and Hide app icons. Start -->
+            <!-- add by yhf -->
+
+          <!--   <RadioButton
+                android:id="@+id/themeshow_button"
+                style="@style/main_tab_bottom_mi"
+                android:layout_width="@dimen/radio_button_width_mi"
+                android:layout_height="@dimen/radio_button_width_mi"
+                android:text="@string/themeshow_button_text"
+                android:visibility="gone" /> -->
+            <!-- end by yhf -->
+
+
+            <!-- M: Add for op09 Edit and Hide app icons. Start -->
+            <!-- modify by zhouerlong -->
+
+            <!-- <RadioButton
+                android:id="@+id/apps_button"
+                style="@style/main_tab_bottom_mi"
+                android:layout_width="@dimen/radio_button_width_mi"
+                android:layout_height="@dimen/radio_button_width_mi"
+                android:visibility="gone"
+                android:text="@string/all_apps_button_label" /> -->
+
+            <!-- modify by zhouerlong -->
+
+       <!--      <RadioButton
+                android:id="@+id/edit_app_button"
+                style="@style/main_tab_bottom_mi"
+                android:layout_width="@dimen/radio_button_width_mi"
+                android:layout_height="@dimen/radio_button_width_mi"
+                android:text="@string/edit_app_button_text"
+                android:visibility="gone" /> -->
+
+            <!-- modify by zhouerlong -->
+
+
+            <!-- modify by zhouerlong -->
+
+            <!-- <RadioButton
+                android:id="@+id/hide_app_button"
+                style="@style/main_tab_bottom_mi"
+                android:layout_width="@dimen/radio_button_width_mi"
+                android:layout_height="@dimen/radio_button_width_mi"
+                android:text="@string/hide_app_button_text"
+                android:visibility="gone" /> -->
+        </RadioGroup>
+
+   <!--  <FrameLayout
+        android:background="@drawable/blankbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" > -->
+
+        <!-- M by zhouerlong -->
+
+        <com.android.launcher3.AppsCustomizePagedView
+            android:id="@+id/apps_customize_pane_content_spring_widgets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            launcher:IsCycle="false"
+            launcher:clingFocusedX="@integer/apps_customize_cling_focused_x"
+            launcher:clingFocusedY="@integer/apps_customize_cling_focused_y"
+            launcher:maxGap="@dimen/workspace_max_gap"
+            launcher:pageIndicator="@+id/page_indicator1"
+            launcher:widgetCountX="@integer/apps_customize_spring_widget_cell_count_x"
+            launcher:widgetCountY="@integer/apps_customize_spring_widget_cell_count_y" />
+        <!-- modify by zhouerlong -->
+
+
+        <!-- M by zhouerlong -->
+
+        <include
+            android:id="@+id/page_indicator1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/apps_customize_page_indicator_margin"
+            layout="@layout/page_indicator"
+            android:visibility="gone" />
+
+        <!-- add by zhouerlong -->
+
+      <!--   <com.android.launcher3.AppsCustomizePagedView
+            android:id="@+id/apps_customize_pane_content_spring_apps"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="-30dp"
+            launcher:AppCountX="@integer/apps_customize_spring_App_cell_count_x"
+            launcher:AppCountY="@integer/apps_customize_spring_App_cell_count_y"
+            launcher:clingFocusedX="@integer/apps_customize_cling_focused_x"
+            launcher:IsCycle="false"
+            launcher:clingFocusedY="@integer/apps_customize_cling_focused_y"
+            launcher:maxGap="@dimen/workspace_max_gap"
+            launcher:pageIndicator="@+id/page_indicator2" />
+        add by zhouerlong
+
+        <include
+            android:id="@+id/page_indicator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/apps_customize_page_indicator_margin"
+            layout="@layout/page_indicator"
+            android:visibility="gone" /> -->
+        <!-- add by zhouerlong -->
+        
+
+
+
+             <include
+            android:id="@+id/wallpaper_list"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/wallpaper_list" />
+             
+             
+             <include
+            android:id="@+id/theme_list"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/theme_list" />
+
+       <!--  <include
+            android:id="@+id/animation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/anim_list" />
+        
+        
+
+        <include
+            android:id="@+id/effect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/e_list" /> -->
+            
+            
+            
+            <include layout="@layout/effects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                
+            </include>
+   <!--  </FrameLayout> -->
+
+    <!-- M: Add for op09 Edit and Hide app icons. End -->
+
+</FrameLayout>

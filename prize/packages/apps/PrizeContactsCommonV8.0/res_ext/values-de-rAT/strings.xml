@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="can_not_switch_account_during_call">Bevorzugte SIM kann nicht im laufenden Gespräch umgeschaltet werden.</string>
+    <string name="can_not_switch_account_temporarily">Bevorzugte SIM kann nicht vorübergehend für Anrufe umgeschaltet werden.</string>
+    <string name="call_account_switch_tips"><xliff:g id="name1" example="CT1">^1</xliff:g> funktioniert vorübergehend nicht, und standardmäßige Anrufe, SMS, Daten auf <xliff:g id="name2" example="CT1">^2</xliff:g> werden entsprechend in <xliff:g id="name3" example="CT2">^3</xliff:g> geändert.</string>
+</resources>

@@ -1,0 +1,88 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="widget2TextStyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#4C000000</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+
+    <style name="LiveTextStyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:drawablePadding">60dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="viewStyle">
+        <item name="android:background">@color/weather_list_divider_color</item>
+    </style>
+
+    <style name="menu_city_name_style">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+
+    <!-- 2015.7.18 -->
+    <style name="big_thin">
+        <item name="android:textSize">@dimen/big_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="widget_big_thin" parent="big_thin">
+        <item name="android:textSize">@dimen/widget_big_font_size</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">@dimen/label_font_size</item>
+    </style>
+
+    <style name="widget_label" parent="label">
+        <item name="android:textSize">@dimen/widget_label_font_size</item>        
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    
+    <style name="big_big_thin">
+        <item name="android:textSize">@dimen/temperature_big_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+    
+    <style name="temperature_big_thin" parent="big_big_thin">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+
+</resources>

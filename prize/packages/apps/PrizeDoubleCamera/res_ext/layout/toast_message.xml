@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_message_contain"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:visibility="gone">
+	<com.mediatek.camera.ui.UIRotateLayout style="@style/onScreenInfoCSSpeedLayout"
+		android:layout_marginBottom="@dimen/continuoushints_on_margin_bottom">
+	   <LinearLayout style="@style/OnScreenInfoGroup"
+        android:gravity="bottom">
+        <TextView android:id="@+id/toast_message_view"
+                  style="@style/OnScreenCSInfoText"
+			      android:background="@drawable/prize_continuous_hints_background"
+		/>
+		</LinearLayout>
+    </com.mediatek.camera.ui.UIRotateLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action"><xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g> IP қоңырауы</string>
+    <string name="select_account">Тіркелгіні таңдау</string>
+    <string name="all_accounts">Барлық тіркелгілер</string>
+    <string name="call_log_via_sim_name_notice">\"<xliff:g id="sim_name">%s</xliff:g>\" АРҚЫЛЫ ҚОҢЫРАУ ЖУРНАЛДАРЫ</string>
+    <string name="imei_invalid">Жарамсыз</string>
+    <string name="conf_call_member_list">Мүшелер тiзiмi</string>
+    <string name="conf_call_participant_answered">Жауап берiлдi</string>
+    <string name="conf_call_participant_missed">Қабылданбаған</string>
+    <string name="calls_over_wifi">ҚоңырауларWi-Fiарқылыжасалады</string>
+    <string name="connect_to_wifi">Қоңырау шалу үшін Wi-Fi желісіне қосылу</string>
+    <string name="wfc_notification_summary">Теңшелімдергекіруүшіносыжердітүртіңіз</string>
+    <string name="wfc_notification_summary_fail">Қолжетімді желілерді көру үшін осы жерді түртіңіз</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> құлыптан босату сәтсіз болды</string>
+</resources>

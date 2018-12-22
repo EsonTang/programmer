@@ -1,0 +1,105 @@
+<resources>
+
+    <string name="app_name">便签</string>
+
+    <string name="menu_list_backup">备份</string>
+    <string name="menu_list_multidelete">批量删除</string>
+    <string name="menu_list_guide">帮助指引</string>
+    
+    <string name="str_select_all">全选</string>
+	<string name="str_select_none">取消全选</string>
+    <string name="str_delect">删除</string>
+    <string name="str_backup">备份</string>
+    
+    <!-- note start -->
+    <string name="menu_create_new_one">新建便签</string>
+    <string name="menu_font_size">字体大小</string>
+
+    <string name="title_tab_name_notepad">便签</string>
+    <string name="percentage">%s%%</string>
+    <string name="export_had_done">已经导出</string>
+    <string name="export_will_start_message"> 条文本便签到路径：backup/notepad/</string>
+    <string name="exporting_csv_finished_title">导出完毕 </string>
+    <string name="exporting_csv_canceled_title">正在导出</string>
+    <string name="exporting_notepad_list_message">您的文本便签将被导出到: </string>
+    <string name="exporting_notepad_list_title">导出文本便签</string>
+	<string name="exporting_failed_title">导出失败</string>    
+	<string name="fail_reason_could_not_open_file">无法打开文件 \&quot;</string>
+	<string name="fail_reason_too_long_filename">您的文件名称太长（\&quot;</string>
+	<string name="fail_reason_too_many_csv" product="default">在SD卡中存在过多的txt文件。</string>
+	<string name="fail_reason_unknown">未知错误</string>
+	<string name="confirm_export_message">您的文本便签将导出到该文件: </string>
+	<string name="confirm_export_title">是否确定导出？</string>	
+	<string name="no_sdcard_title">找不到SD卡</string>
+	<string name="no_sdcard_message">SD卡出错</string>	
+	<string name="ok">确定</string>
+	<string name="cancel">取消</string>
+	<string name="content_of_notepad">文本便签的内容如下：</string>
+	<string name="insufficient_memory_space_title">内存空间不足</string>
+	<string name="insufficient_memory_space_content">对不起，手机的存储空间不足，无法进行导出。</string>
+	<string name="fail_reason_no_exportable_notepad">没有可以导出的文本文件。</string>
+		
+	<string name="time_just">刚刚 </string>
+	<string name="time_five_minutes_ago">五分钟前</string>
+	<string name="time_today">今天</string>
+	<string name="time_Monday">周一</string>
+	<string name="time_Tuesday">周二</string>
+	<string name="time_Wednesday">周三</string>
+	<string name="time_Thursday">周四</string>
+	<string name="time_Friday">周五</string>
+	<string name="time_Saturday">周六</string>
+	<string name="time_Sunday">周日</string>
+	
+	<string name="dialog_title_set_font">设置字体大小</string>
+	<string name="font_small">小号</string>
+	<string name="font_medium">中号</string>
+	<string name="font_large">大号</string>
+	<string name="font_super">特大号</string>
+	
+	<string name="delect_check_all">全选</string>
+	<string name="delect_cancelled_check_all">取消全选</string>
+	<string name="delect_action">删除</string>
+	<string name="backup_action">备份</string>
+	
+	<string name="title_name">漂浮便签</string>
+	
+	<string name="notepad_had_save">便签已保存</string>
+	<string name="maximize_screen">屏幕最大化</string>
+	<string name="content_of_notes">文本便签的内容如下：</string>
+	<string name="backup_path">backup/notepad</string>
+	<string name="export_failed">文件导出请求遭拒绝，请稍后再试</string>
+	
+    <string name="str_page_note">便签</string>
+    <string name="page_note_list">列表</string>
+    
+    <string name="today">今天</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+    
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_title">设置字体大小</string>
+    
+    <string name="quick_search_keywords">搜索</string>
+    <string name="format_image_path_string">[图片]</string>
+    <string name="submit">完成</string>
+    <string name="creat_new_note_button_text">新建便签</string>
+    <string name="not_support_no_picture_files">暂不支持非图片文件</string>
+    <string name="data_loading_notice">加载中\.\.\.</string>
+	<string name="input_limmit">单个便签最多只能输入20000个字符！</string>
+    <!-- note end -->
+
+	<string name="picture_text_view">相册</string>
+	<string name="camera_text_view">相机</string>
+	<string name="share_text_view">分享</string>
+	<string name="text_size_text_view">字体</string>
+	<string name="share_error_hint">不支持分享空白便签!</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/recommand_notice_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:horizontalSpacing="0dip"
+        android:numColumns="5" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+    <!--&lt;!&ndash;android:background="@drawable/banner_shadow"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="167.5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@drawable/banner_shadow"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+    <!--<com.prize.appcenter.ui.widget.banner.MZBannerView-->
+    <!--android:id="@+id/recommand_galleryflow"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="134dp"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--app:canLoop="true"-->
+    <!--app:middle_page_cover="true"-->
+    <!--app:open_mz_mode="true" />-->
+    <!--app:indicatorAlign="center"-->
+    <!--app:indicatorPaddingLeft="10dp"-->
+    <!--app:indicatorPaddingBottom="50dp"-->
+
+    <!--<com.prize.appcenter.ui.widget.FlowIndicator-->
+    <!--android:id="@+id/flowIndicator"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="7dp"-->
+    <!--android:gravity="center"-->
+    <!--android:visibility="gone"-->
+    <!--app:point_height="2dip"-->
+    <!--app:point_normal_color="#d2d2d2"-->
+    <!--app:point_radius="2dip"-->
+    <!--app:point_seleted_color="#b5b5b5"-->
+    <!--app:point_width="10dip"-->
+    <!--app:space="10dip" />-->
+    <!--</LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="162.5dp"
+        android:orientation="vertical">
+
+        <com.prize.appcenter.ui.widget.GalleryFlow
+            android:id="@+id/recommand_galleryflow"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="12dp"
+            android:soundEffectsEnabled="false" />
+
+        <com.prize.appcenter.ui.widget.FlowIndicator
+            android:id="@+id/flowIndicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="142dp"
+            android:gravity="center"
+            android:visibility="gone"
+            app:point_normal_color="#33ffffff"
+            app:point_radius="3dip"
+            app:point_seleted_color="#e6691e"
+            app:point_size="5dip"
+            app:space="10dip" />
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/mViewstub"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="5dp"
+        android:inflatedId="@+id/act_layout_viewstub"
+        android:layout="@layout/home_page_broadcast" />
+</LinearLayout>

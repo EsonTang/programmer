@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2009 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<resources>
+    <string-array name="wallpapers" translatable="false">
+        <item>inlay_wallpaper0_mi</item>
+        <item>inlay_wallpaper1_mi</item>
+        <item>inlay_wallpaper2_mi</item>
+        <item>inlay_wallpaper3_mi</item>
+        <item>inlay_wallpaper4_mi</item>
+        <item>inlay_wallpaper0</item>
+        <item>inlay_wallpaper1</item>
+        <item>inlay_wallpaper3</item>
+        <item>inlay_wallpaper4</item>
+        <item>inlay_wallpaper5</item>
+        <item>inlay_wallpaper6</item>
+        <item>inlay_wallpaper7</item>
+        <item>inlay_wallpaper8</item>
+        <item>inlay_wallpaper9</item>
+        <item>inlay_wallpaper10</item>
+        <item>inlay_wallpaper11</item>
+        <item>inlay_wallpaper12</item>
+        <item>inlay_wallpaper13</item>
+        <item>inlay_wallpaper14</item>
+        <item>inlay_wallpaper15</item>
+        <item>inlay_wallpaper16</item>
+        <item>inlay_wallpaper17</item>
+        <item>inlay_wallpaper18</item>
+        <item>inlay_wallpaper19</item>
+        <item>inlay_wallpaper20</item>
+        <item>inlay_wallpaper21</item>
+        <item>inlay_wallpaper22</item>
+        <item>inlay_wallpaper23</item>
+        <item>inlay_wallpaper24</item>
+        <item>inlay_wallpaper25</item>
+        <item>inlay_wallpaper26</item>
+        <item>inlay_wallpaper27</item>
+        <item>inlay_wallpaper28</item>
+        <item>inlay_wallpaper29</item>
+        <item>inlay_wallpaper30</item>
+        <item>inlay_wallpaper31</item>
+        <item>inlay_wallpaper32</item>
+        <item>inlay_wallpaper33</item>
+        <item>inlay_wallpaper34</item>
+        <item>inlay_wallpaper35</item>
+        <item>inlay_wallpaper36</item>
+        <item>inlay_wallpaper37</item>
+        <item>inlay_wallpaper38</item>
+        <item>inlay_wallpaper39</item>
+        <item>inlay_wallpaper40</item>
+        <item>inlay_wallpaper41</item>
+        <item>inlay_wallpaper42</item>
+        <item>inlay_wallpaper43</item>
+        <item>inlay_wallpaper44</item>
+        <item>inlay_wallpaper45</item>
+    </string-array>
+</resources>

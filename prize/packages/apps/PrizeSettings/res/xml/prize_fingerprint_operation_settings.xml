@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/fingerprint_settings_title">
+
+    <!-- function -->
+    <PreferenceCategory
+        android:key="prize_fingerprint_operation_function"
+        android:title="@string/prize_fingerprint_operation_function_category">
+
+        <Preference
+            android:key="prize_fingerprint_operation_function_manager"
+            android:title="@string/prize_fingerprint_operation_function_manager_title"
+            android:summary="@string/prize_fingerprint_operation_function_manager_summary"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+    <!-- longpress -->
+   <!-- <PreferenceCategory
+        android:key="prize_fingerprint_operation_longpress"
+        android:title="@string/prize_fingerprint_operation_longpress_category">
+
+        <SwitchPreference
+            android:key="prize_fingerprint_operation_longpress_incall"
+            android:title="@string/prize_fingerprint_operation_longpress_incall_title"
+            android:summary="@string/prize_fingerprint_operation_longpress_incall_summary" />
+
+        <SwitchPreference
+            android:key="prize_fingerprint_operation_longpress_take"
+            android:title="@string/prize_fingerprint_operation_longpress_take_title"
+            android:summary="@string/prize_fingerprint_operation_longpress_take_summary" />
+
+        <SwitchPreference
+            android:key="prize_fingerprint_operation_longpress_callrecord"
+            android:title="@string/prize_fingerprint_operation_longpress_callrecord_title"
+            android:summary="@string/prize_fingerprint_operation_longpress_callrecord_summary" />
+
+        <SwitchPreference
+            android:key="prize_fingerprint_operation_longpress_screencapture"
+            android:title="@string/prize_fingerprint_operation_longpress_screencapture_title"
+            android:summary="@string/prize_fingerprint_operation_longpress_screencapture_summary" />
+
+        <SwitchPreference
+            android:key="prize_fingerprint_operation_longpress_returnhome"
+            android:title="@string/prize_fingerprint_operation_longpress_returnhome_title"
+            android:summary="@string/prize_fingerprint_operation_longpress_returnhome_summary" />
+
+        <SwitchPreference
+            android:key="prize_fingerprint_operation_longpress_notice"
+            android:title="@string/prize_fingerprint_operation_longpress_notice_title"
+            android:summary="@string/prize_fingerprint_operation_longpress_notice_summary" />
+
+    </PreferenceCategory>-->
+
+    <!-- click -->
+    <!--<PreferenceCategory
+        android:key="prize_fingerprint_operation_click"
+        android:title="@string/prize_fingerprint_operation_click_category">
+
+        <SwitchPreference
+            android:key="prize_fingerprint_operation_click_back"
+            android:title="@string/prize_fingerprint_operation_click_back_title"
+            android:summary="@string/prize_fingerprint_operation_click_back_summary" />
+
+        <SwitchPreference
+            android:key="prize_fingerprint_operation_click_slidelauncher"
+            android:title="@string/prize_fingerprint_operation_click_slidelauncher_title"
+            android:summary="@string/prize_fingerprint_operation_click_slidelauncher_summary" />
+
+        <SwitchPreference
+            android:key="prize_fingerprint_operation_click_music"
+            android:title="@string/prize_fingerprint_operation_click_music_title"
+            android:summary="@string/prize_fingerprint_operation_click_music_summary" />
+
+        <SwitchPreference
+            android:key="prize_fingerprint_operation_click_video"
+            android:title="@string/prize_fingerprint_operation_click_video_title"
+            android:summary="@string/prize_fingerprint_operation_click_video_summary" />
+
+        <PreferenceScreen
+            android:key="prize_fingerprint_operation_statement"
+            android:summary="@string/prize_fingerprint_operation_statement"
+            android:persistent="false" />
+
+    </PreferenceCategory>-->
+
+</PreferenceScreen>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- RESPONSE -->
+
+    <LinearLayout
+        android:id="@+id/response_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:minHeight="@dimen/prize_preferences_bg_height2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/response_label"
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/view_event_response_label" />
+
+        <RadioGroup
+            android:id="@+id/response_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="8dip"
+            android:orientation="horizontal"
+            android:paddingTop="5dip" >
+
+            <RadioButton
+                android:id="@+id/response_yes"
+                style="@style/TextAppearance.EditEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxWidth="128dip"
+                android:text="@string/response_yes" />
+
+            <RadioButton
+                android:id="@+id/response_maybe"
+                style="@style/TextAppearance.EditEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxWidth="128dip"
+                android:text="@string/response_maybe" />
+
+            <RadioButton
+                android:id="@+id/response_no"
+                style="@style/TextAppearance.EditEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxWidth="128dip"
+                android:text="@string/response_no" />
+        </RadioGroup>      
+    </LinearLayout>
+
+     <View style="@style/EditEventSeparator" />
+    
+    <LinearLayout
+        android:id="@+id/organizer_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:minHeight="@dimen/prize_preferences_bg_height2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/organizer_label"
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_event_organizer_label" />
+
+        <TextView
+            android:id="@+id/organizer"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+	<View style="@style/EditEventSeparator" />
+    
+    <LinearLayout
+        android:id="@+id/add_attendees_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/prize_preferences_bg_height2"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="@string/attendees_label" />
+        <!-- M: Replace the RecipientEditTextView with the self-defined address text view -->
+
+        <com.android.calendar.ChipsAddressTextView
+            android:id="@+id/attendees"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:hint="@string/hint_attendees"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress|textMultiLine|textCapWords" />
+    </LinearLayout>
+
+    
+    <View style="@style/EditEventSeparator" />
+
+    
+    
+    
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/edit_event_left_margin"
+        android:layout_marginRight="@dimen/edit_event_right_margin"
+        android:background="@color/prize_divide_line_default" />
+
+    <!--<View style="@style/EditEventSeparator" />-->
+
+    
+    
+    <!-- REPEATS 重复-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:minHeight="55dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/repeats_label"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/repeats_label" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView 
+                android:id="@+id/im_arrow_repeats"
+                style="@style/right_arrow"/>
+            
+            <Button
+                android:id="@+id/rrule"
+                style="@style/prize_event_right_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/accessibility_pick_recurrence"
+                android:text="@string/does_not_repeat" 
+                android:layout_toLeftOf="@id/im_arrow_repeats"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/edit_event_left_margin"
+        android:layout_marginRight="@dimen/edit_event_right_margin"
+        android:background="@color/prize_divide_line_default" />
+    <!--<View style="@style/EditEventSeparator" />-->
+
+    <!-- style="@style/TextAppearance.EditEvent_LabelSmall" -->
+    
+    
+    <!-- REMINDERS 提醒-->
+    <LinearLayout
+        android:id="@+id/reminders_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="55dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/reminder_items_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_preferences_bg_height2"
+            android:orientation="vertical" />
+
+        <RelativeLayout 
+            android:id="@+id/view_add_reminders"
+    		android:layout_width="match_parent"
+    		android:layout_height="@dimen/list_item_height"
+    	>
+
+    	<TextView
+            android:id="@+id/reminders_group_label"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_centerVertical="true"
+            android:text="@string/event_info_reminders_label"
+            android:textColorHint="#000" />
+    
+		<ImageView
+	    	android:id="@+id/im_arrow_reminders"
+	    	style="@style/right_arrow" />
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/edit_event_left_margin"
+        android:layout_marginRight="@dimen/edit_event_right_margin"
+        android:background="@color/prize_divide_line_default" 
+        android:layout_alignParentTop="true"/>
+
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_toLeftOf="@id/im_arrow_reminders"
+	    android:layout_toRightOf="@+id/reminders_group_label"
+	    style="@style/prize_event_right_view"
+	    android:text="@string/no_remind"
+	    />
+</RelativeLayout>
+            
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/edit_event_left_margin"
+        android:layout_marginRight="@dimen/edit_event_right_margin"
+        android:background="@color/prize_divide_line_default" />
+    <!-- PRESENCE - Show me as [busy | available] -->
+
+
+	<!-- 我的状态 -->
+    <RelativeLayout
+        android:id="@+id/availability_row"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/presence_label"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/prize_presence_label" />
+
+        <ImageView 
+                android:id="@+id/im_arrow_presence"
+                style="@style/right_arrow"/>
+        
+        <Button 
+            android:id="@+id/prize_status"
+            style="@style/prize_event_right_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/presence_label"
+            android:layout_toLeftOf="@id/im_arrow_presence"
+            android:text="@string/presence_label"  
+            android:textAllCaps="false"          
+            />
+       
+        <Spinner
+            android:visibility="gone"
+            android:id="@+id/availability"
+            style="@style/TextAppearance.EditEvent_Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dip"
+            android:background="@null"
+            android:contentDescription="@string/accessibility_reminder_showmeas"
+            android:entries="@array/availability"
+            android:prompt="@string/presence_label" />
+        
+        
+        
+    </RelativeLayout>
+    <!--
+         <LinearLayout
+        android:id="@+id/availability_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/presence_label"
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dip"
+            android:text="@string/presence_label" />
+
+        <Spinner
+            android:id="@+id/availability"
+            style="@style/TextAppearance.EditEvent_Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/accessibility_reminder_showmeas"
+            android:entries="@array/availability"
+            android:prompt="@string/presence_label" />
+    </LinearLayout>
+    -->
+
+    <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/edit_event_left_margin"
+        android:layout_marginRight="@dimen/edit_event_right_margin"
+        android:background="@color/prize_divide_line_default" /> -->
+    <!-- PRIVACY -->
+
+
+	<!-- 活动性质 -->
+    <RelativeLayout
+        android:id="@+id/visibility_row"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/privacy_label"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/privacy_label" />
+        
+        <ImageView 
+                android:id="@+id/im_arrow_privacy"
+                style="@style/right_arrow"/>
+        
+        <Button 
+            android:id="@+id/prize_button_visibility"
+            style="@style/prize_event_right_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/privacy_label"
+            android:text="@string/privacy_label"
+            android:layout_toLeftOf="@id/im_arrow_privacy"
+            android:textAllCaps="false"
+            />
+
+        <Spinner
+            android:visibility="gone"
+            android:id="@+id/visibility"           
+            style="@style/TextAppearance.EditEvent_Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@string/accessibility_reminder_privacy"
+            android:entries="@array/visibility"
+            android:prompt="@string/privacy_label" />
+    </RelativeLayout>
+    <!--
+         <LinearLayout
+        android:id="@+id/visibility_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/privacy_label"
+            style="@style/TextAppearance.EditEvent_LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_label" />
+
+        <Spinner
+            android:id="@+id/visibility"
+            style="@style/TextAppearance.EditEvent_Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/accessibility_reminder_privacy"
+            android:entries="@array/visibility"
+            android:prompt="@string/privacy_label" />
+    </LinearLayout>
+    -->
+    
+    <LinearLayout
+        android:id="@+id/where_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_preferences_bg_height2"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <AutoCompleteTextView
+            android:id="@+id/location"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/hint_where"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect|textCapSentences"
+            android:minHeight="55dip"
+            android:singleLine="false"
+            android:textColorHint="#ff999999" />
+
+        <!-- <View style="@style/EditEventSeparator" /> -->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/edit_event_left_margin"
+        android:layout_marginRight="@dimen/edit_event_right_margin"
+        android:background="@color/prize_divide_line_default" />
+<!-- DESCRIPTION 说明 -->
+    <LinearLayout
+        android:id="@+id/description_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_preferences_bg_height2"
+        android:focusable="true"
+        android:orientation="vertical"
+         android:visibility="gone"  >
+
+        <EditText
+            android:id="@+id/description"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:capitalize="sentences"
+            android:hint="@string/hint_description"
+            android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+            android:minHeight="55dip"
+            android:textColorHint="#ff999999" />
+    </LinearLayout>
+    
+
+</LinearLayout>

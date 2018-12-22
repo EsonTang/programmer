@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Launcher3</string>
+    <string name="folder_name"></string>
+    <string name="work_folder_name">Arbeit</string>
+    <string name="activity_not_found">App nicht installiert</string>
+    <string name="safemode_shortcut_error">Im Sicherheitsmodus ist die heruntergeladene App deaktiviert</string>
+    <string name="safemode_widget_error">Im abgesicherten Modus deaktivierte Widgets</string>
+    <string name="safemode_widget_error">Im abgesicherten Modus deaktivierte Widgets</string>
+    <string name="shortcut_not_available">Verknüpfung nicht verfügbar</string>
+    <string name="long_press_widget_to_add">Zur Auswahl eines Widgets berühren und halten.</string>
+    <string name="long_accessible_way_to_add">Zum Aufnehmen eines Widgets doppeltippen Sie darauf und lassen den Finger darauf liegen; alternativ nutzen Sie benutzerdefinierte Aktionen.</string>
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+    <string name="widget_accessible_dims_format">%1$d Breite × %2$d Höhe</string>
+    <string name="all_apps_search_bar_hint">Apps suchen</string>
+    <string name="all_apps_loading_message">Apps werden geladen&#8230;</string>
+    <string name="all_apps_search_market_message">Nach weiteren Apps suchen</string>
+    <string name="all_apps_no_search_results">Keine zu \"<xliff:g id="query" example="Android">%1$s</xliff:g>\" passenden Apps gefunden</string>
+    <string name="out_of_space">Kein Platz in diesem Startbildschirm.</string>
+    <string name="hotseat_out_of_space">Kein Platz in der Favoritenablage</string>
+    <string name="all_apps_button_label">Appliste</string>
+    <string name="all_apps_home_button_label">Zuhause</string>
+    <string name="remove_drop_target_label">Entfernen</string>
+    <string name="uninstall_drop_target_label">Deinstallieren</string>
+    <string name="app_info_drop_target_label">App-Info</string>
+    <string name="permlab_install_shortcut">"Verknüpfungen installieren"</string>
+    <string name="permdesc_install_shortcut">Ermöglicht einer App, Verknüpfungen ohne Benutzereingriff zuzufügen.</string>
+    <string name="permlab_read_settings">Startseiteneinstellungen und Verknüpfungen lesen</string>
+    <string name="permdesc_read_settings">Ermöglicht der App, Startbildschirmeinstellungen und -verknüpfungen zu lesen.</string>
+    <string name="permlab_write_settings">Startseiteneinstellungen und Verknüpfungen schreiben</string>
+    <string name="permdesc_write_settings">Ermöglicht der App, Startbildschirmeinstellungen und -verknüpfungen zu ändern.</string>   
+     <string name="msg_no_phone_permission"><xliff:g id="app_name" example="Launcher3">%1$s</xliff:g> ist nicht zum Tätigen von Anrufen autorisiert</string>
+    <string name="gadget_error_text">Problem beim Laden des Widgets</string>
+    <string name="gadget_setup_text">Setup</string>
+    <string name="uninstall_system_app_text">Dies ist eine System-App und kann daher nicht deinstalliert werden.</string>
+    <string name="folder_hint_text">Unbenannter Ordner</string>
+    <string name="disabled_app_label"><xliff:g id="app_name" example="Messenger">%1$s</xliff:g> deaktiviert</string>
+    <string name="default_scroll_format">Seite %1$d von %2$d</string>
+    <string name="workspace_scroll_format">Startbildschirm %1$d von %2$d</string>
+    <string name="workspace_new_page">Neue Startbildschirmseite</string>
+    <string name="folder_opened">Ordner geöffnet, <xliff:g id="width" example="5">%1$d</xliff:g> x <xliff:g id="height" example="3">%2$d</xliff:g></string>
+    <string name="folder_tap_to_close">Zum Schließen des Ordners antippen</string>
+    <string name="folder_tap_to_rename">Zum Speichern des neuen Namens antippen</string>
+    <string name="folder_closed">Ordner geschlossen</string>
+    <string name="folder_renamed">Ordner in <xliff:g id="name" example="Games">%1$s</xliff:g> umbenannt</string>
+    <string name="folder_name_format">Ordner: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+    <string name="widget_button_text">Widgets</string>
+    <string name="wallpaper_button_text">Hintergründe</string>
+    <string name="settings_button_text">Einstellungen</string>
+    <string name="msg_disabled_by_admin">Von Ihrem Administrator deaktiviert</string>
+    <string name="accessibility_action_overview">Überblick</string>
+    <string name="allow_rotation_title">Startbildschirmdrehung zulassen</string>
+    <string name="allow_rotation_desc">Beim Drehen des Telefons</string>
+    <string name="allow_rotation_blocked_desc">Derzeitige Displayeinstellungen lassen keine Drehung zu</string>
+    <string name="package_state_unknown">Unbekannt</string>
+    <string name="abandoned_clean_this">"Entfernen"</string>
+    <string name="abandoned_search">Suchen</string>
+    <string name="abandoned_promises_title">Diese App ist nicht installiert</string>
+    <string name="abandoned_promise_explanation">Die App mit diesem Ikon ist nicht installiert. Sie können es löschen oder nach der App suchen und die Verknüpfung manuell erstellen.</string>
+    <string name="app_downloading_title"><xliff:g id="name" example="Messenger">%1$s</xliff:g> downloading, <xliff:g id="progress" example="30%">%2$s</xliff:g> abgeschlossen</string>
+    <string name="app_waiting_download_title"><xliff:g id="name" example="Messenger">%1$s</xliff:g> wartet auf Installation</string>
+    <string name="action_add_to_workspace">Zum Startbildschirm zufügen</string>
+    <string name="action_move_here">Element hierher verschieben</string>
+    <string name="item_added_to_workspace">Element zum Startbildschirm hinzugefügt</string>
+    <string name="item_removed">Element entfernt</string>
+    <string name="action_move">Element verschieben</string>
+    <string name="move_to_empty_cell">In Zeile <xliff:g id="number" example="1">%1$s</xliff:g> Spalte <xliff:g id="number" example="1">%2$s</xliff:g> verschieben</string>
+    <string name="move_to_position">An Position <xliff:g id="number" example="1">%1$s</xliff:g> verschieben</string>
+    <string name="move_to_hotseat_position">An Favoritenposition <xliff:g id="number" example="1">%1$s</xliff:g> verschieben</string>
+    <string name="item_moved">Element verschoben</string>
+    <string name="add_to_folder">Zu Ordner hinzufügen: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+    <string name="add_to_folder_with_app">Zu Ordner mit <xliff:g id="name" example="Messenger">%1$s</xliff:g> hinzufügen</string>
+    <string name="added_to_folder">Element zu Ordner hinzugefügt</string>
+    <string name="create_folder_with">Ordner erstellen mit: <xliff:g id="name" example="Game">%1$s</xliff:g></string>
+    <string name="folder_created">Ordner erstellt</string>
+    <string name="action_move_to_workspace">Zu Startbildschirm verschieben</string>
+    <string name="action_move_screen_left">Bildschirm nach links verschieben</string>
+    <string name="action_move_screen_right">Bildschirm nach rechts verschieben</string>
+    <string name="screen_moved">Bildschirm verschoben</string>
+    <string name="action_resize">Größe anpassen</string>
+    <string name="action_increase_width">Breite vergrößern</string>
+    <string name="action_increase_height">Höhe vergrößern</string>
+    <string name="action_decrease_width">Breite vermindern</string>
+    <string name="action_decrease_height">Höhe vermindern</string>
+    <string name="widget_resized">Widgetgröße auf Breite <xliff:g id="number" example="2">%1$s</xliff:g> Höhe <xliff:g id="number" example="1">%2$s</xliff:g> geändert</string>
+    <string name="action_deep_shortcut">Kürzel</string>
+    <string name="shortcuts_menu_description"><xliff:g id="number_of_shortcuts" example="3">%1$d</xliff:g> Verknüpfungen für <xliff:g id="app_name" example="Messenger">%2$s</xliff:g></string>
+</resources>

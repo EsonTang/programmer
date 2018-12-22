@@ -1,0 +1,16 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="settings"
+        android:enabled="true"
+        android:icon="@drawable/shortcut_add"
+        android:shortcutShortLabel="@string/menu_create_new_one"
+        android:shortcutLongLabel="@string/menu_create_new_one"
+        android:shortcutDisabledMessage="@string/menu_create_new_one">
+
+        <intent
+            android:action="prize_notepad"
+            android:targetPackage="com.android.notepad"
+            android:targetClass="com.android.notepad.note.NotePadEditActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>

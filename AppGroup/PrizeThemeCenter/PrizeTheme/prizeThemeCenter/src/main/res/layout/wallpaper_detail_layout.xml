@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/wall_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.prize.prizethemecenter.ui.widget.ImgForWallHorizontalScrollview
+            android:id="@+id/wallpaper_View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:scrollbars="none">
+
+            <ImageView
+                android:id="@+id/wall_show_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+        </com.prize.prizethemecenter.ui.widget.ImgForWallHorizontalScrollview>
+
+        <RelativeLayout
+            android:id="@+id/action_bar_no_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height_47dp"
+            android:background="@drawable/wall_title_bg"
+            android:padding="0dp">
+
+            <ImageButton
+                android:id="@+id/action_bar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/detail_white_back_selector" />
+
+            <TextView
+                android:id="@+id/wallpaper_name_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/action_bar_back"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/wallpaper_size_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_toRightOf="@+id/wallpaper_name_TV"
+                android:text="1M"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_RL_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:fitsSystemWindows="true">
+
+            <com.prize.prizethemecenter.ui.widget.view.MySeekBar
+                android:id="@+id/seekBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/padding10dp"
+                android:indeterminate="false"
+                android:splitTrack="false"
+                android:progressDrawable="@drawable/wallpaper_drag_seekbar"
+                android:thumb="@drawable/wallpaper_progress_tag"
+                android:thumbOffset="0dp" />
+
+            <RelativeLayout
+                android:id="@+id/bottom_RL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seekBar">
+
+                <TextView
+                    android:id="@+id/look_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="33dp"
+                    android:background="@drawable/wallpaper_bg_white"
+                    android:gravity="center"
+                    android:text="@string/preview"
+                    android:textColor="@color/text_color_33cccc"
+                    android:textSize="@dimen/text_size_medium"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/use_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/look_TV"
+                    android:background="@drawable/wallpaper_bg_color"
+                    android:gravity="center"
+                    android:text="@string/use"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium"
+                    android:visibility="gone" />
+
+                <com.prize.prizethemecenter.ui.widget.DownLoadButton
+                    android:id="@+id/wall_download_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@null" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/container_reload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

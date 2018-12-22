@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+	
+    <include layout="@layout/title_with_txt_btn"/>
+    
+	<View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line_color"
+        android:layout_below="@id/title_lay"
+        android:id="@+id/view_div"
+        />
+	
+	<TextView android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/txt_home"
+	    android:layout_below="@id/view_div"
+	    android:text="@string/str_home"
+	    style="@style/addr_txt_style"
+	    android:layout_marginTop="@dimen/dp_24"
+	    />
+	
+	<AutoCompleteTextView
+	    android:id="@+id/auto_home"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/txt_home"
+	    android:ems="10"
+	    android:dropDownAnchor="@+id/auto_home"
+	    style="@style/addr_auto_txt_style"
+	    >
+	</AutoCompleteTextView>
+	
+	<TextView android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/txt_company"
+	    android:layout_below="@id/auto_home"
+	    android:text="@string/str_company"
+	    android:drawablePadding="@dimen/card_content_pad"
+	    style="@style/addr_txt_style"
+	    android:layout_marginTop="@dimen/dp_24"
+	    />
+	
+	<AutoCompleteTextView
+	    android:id="@+id/auto_company"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/txt_company"
+	    android:ems="10"
+	    style="@style/addr_auto_txt_style"
+	    >
+	</AutoCompleteTextView>
+
+</RelativeLayout>

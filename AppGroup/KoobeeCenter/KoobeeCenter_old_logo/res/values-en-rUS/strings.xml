@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KoobeeCenter</string>
+    <string name="system_update">System update</string>
+    <string name="sale_service">Sale service</string>
+    <string name="feedback">Feedback center</string>  <!-- prize-modify-by-yanghao-20150916 -->
+    <string name="flag_store">User manual</string>
+    <string name="visit_koobee">Access koobee</string>
+    <string name="company_name">深圳酷比通信设备有限公司</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_after_sale">AfterSaleActivity</string>
+    <string name="title_activity_aftersales">AftersalesActivity</string>
+    <string name="title_activity_hotline">HotlineActivity</string>
+    <string name="title_activity_outlets_in_city">OutletsInCityActivity</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <!-- 反馈相关 -->
+    <string name="power_and_heat">耗电与发热</string>
+    <string name="signal_and_communicate">信号与通话</string>
+    <string name="shutdow_and_restart">死机与重启</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="camara">Camera</string>
+    <string name="wlan">WLAN</string>
+    <string name="gps">GPS</string>
+    <string name="advice">Suggust</string>
+    <string name="application">Apps</string>
+    <string name="pl_input_advice">please input advice(at least 5 characters)</string>
+    <string name="pl_input_phone_or_email">please input email or mobile(or nothing)</string>
+    <string name="send">Send</string>
+
+    <!-- 提交反馈信息返回提示语 -->
+    <string name="commit_success">commit success</string>
+    <string name="illegal_imei">Illegal IMEI</string>
+    <string name="sys_busy">system busy，try again later</string>
+    <string name="illegal_operate_type">Illegal operation type</string>
+
+    <!-- 网络相关提示语 -->
+    <string name="netInfo">netinfo</string>
+    <string name="netError_pl_check">net error，please check net</string>
+
+    <!-- 酷比官网 及 酷比天猫网 -->
+    <string name="koobee_official_website">http://www.koobeemobile.com/</string>
+    <string name="koobee_tmall_website">http://koobee.tmall.com/</string>
+    <string name="pl_select_number">please choose number</string>
+    <string name="sure">sure</string>
+    <string name="cancel">cancel</string>
+    
+    <string name="alloutlets">Service sites</string>
+    <string name="hotline">Service hotline</string>
+    <string name="aftersales_instroduction">Service</string>
+        
+    <!-- prize-add-by-yanghao-20150914-start -->
+    <string name="map_activity_not_found">Not found the map program</string> 
+    <string name="toMap">Map</string>
+    <!-- prize-add-by-yanghao-20150914-end -->
+        
+</resources>

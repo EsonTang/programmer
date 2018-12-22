@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="prize_bottom_button_width">160dp</dimen>
+    <dimen name="prize_select_contacts_view_height">55dp</dimen>
+    <dimen name="prize_select_contacts_text_width">287.5dp</dimen>
+
+    <!-- PRIZE- add-huangpengfei-2016-8-29-start -->
+    <dimen name="prize_quickcontact_acticity_contacts_editor_text_size">10sp</dimen>
+    <dimen name="prize_quickcontact_acticity_contacts_delete_text_size">10sp</dimen>
+    <dimen name="prize_quickcontact_acticity_contacts_callrecords_delete_text_size">10sp</dimen>
+    <dimen name="prize_quickcontact_acticity_contacts_more_text_size">10sp</dimen>
+
+    <!-- PRIZE- add-huangpengfei-2016-8-29-end -->
+</resources>

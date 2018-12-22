@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#f00</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="cyan ">#ff00ffff</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="green">#ff00ff00</color>
+    <color name="gray">#ff888888</color>
+    <color name="ltgray">#ffcccccc</color>
+    <color name="dkgray">#ff444444</color>
+    <color name="magenta">#ffff00ff</color>
+    <color name="transparent">#00000000</color>
+	<color name="agingtest_tittle">#202020</color>
+	<color name="agingtest_bkground">#303030</color>
+	<color name="agingtest_bt">#5a585a</color>
+	<color name="agingtest_bt_lightgrey">#808080</color>
+	
+	<!--Prize-add by liyu-for fingerprint factory test-20160621-start-->
+	<color name="title_header_bg_color">#FFE1E1E1</color>
+	<color name="title_text_color">#FF323232</color>
+	<!--Prize-add by liyu-for fingerprint factory test-20160621-end-->
+</resources>   
+

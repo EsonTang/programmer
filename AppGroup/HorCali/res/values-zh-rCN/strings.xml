@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="hello">Hello World, EngineerMode!</string>
+    <string name="app_name">CaliDemo</string>
+    <string name="internal_app_name">InternalEngineerMode</string>
+    <string name="Settings">Settings</string>
+
+    <!-- Main View -->
+    <string name="title_activity_engineer_mode">EngineerMode</string>
+    <string name="tab_telephony">Telephony</string>
+    <string name="tab_connectivity">Connectivity</string>
+    <string name="tab_hardware_testing">Hardware Testing</string>
+    <string name="tab_location">Location</string>
+    <string name="tab_log_and_debugging">Log and Debugging</string>
+    <string name="tab_others">Others</string>
+    <string name="activiti_notfind">Can not find module!</string>
+
+  
+
+
+    <!-- Motion Sensor start -->
+	<string name="sensor">Sensor</string>
+	<string name="sensor_data">MSensor</string>
+	<string name="msensor_current_data">Msensor Current Data</string>
+	<string name="msensor_read_file">Get history data from file</string>
+	<string name="psensor_clear_data">Clear Current Data</string>
+	<string name="psensor_get_data">Get One Data</string>
+    <string name="sensor_calibration">Sensor Calibration</string>
+    <string name="sensor_calibration_gsensor">水平校准</string>
+    <string name="sensor_calibration_gyroscope">Gyroscope Calibration</string>
+    <string name="sensor_calibration_do_20">Do calibration (20% tolerance)</string>
+    <string name="sensor_calibration_do_40">Do calibration (40% tolerance)</string>
+    <string name="sensor_calibration_clear">Clear calibration</string>
+    <string name="sensor_calibration_note">NOTE: The phone must stay still on a horizontal plane during calibration.</string>
+    <string name="sensor_calibration_current_data_hint">Sensor current data: </string>
+    <string name="sensor_calibration_sensor_data_hint">Sensor calibration data: </string>
+    <string name="sensor_ps">Light/Proximity Sensor</string>
+    <string name="psensor_calibration_select">PS Calibration</string>
+    <string name="psensor_data_collection">PS Data Collection</string>
+    <string name="psensor_calibration">Calibration</string>
+    <string name="psensor_change_threshold">Change Threshold</string>
+    <string name="sensor_ps_calibration_current_data">PS:\nThreshold High:\nThreshold Low:"</string>
+    <string name="sensor_ps_calibration_current_data_format">"PS: %1$d\nThreshold High: %2$d\nThreshold Low: %3$d"</string>
+    <string name="sensor_ps_calibration_min_hint">Put phone on a horizontal plane and click the button.\nNOTE: Donnot cover P-Sensor after button clicked.</string>
+    <string name="sensor_ps_calibration_get_min">Calculate min value</string>
+    <string name="sensor_ps_calibration_min_value">Min value: </string>
+    <string name="sensor_ps_calibration_max_hint">Cover P-Sensor then click the button.</string>
+    <string name="sensor_ps_calibration_get_max">Calculate max value</string>
+    <string name="sensor_ps_calibration_max_value">Max value: </string>
+    <string name="sensor_ps_calibration_do_cali">Do calibration</string>
+    <string name="sensor_ps_calibration_clear_cali">Clear calibration</string>
+    <string name="sensor_ps_calibration_result">Result: </string>
+    <string name="sensor_ps_threshold_high">Threshold High (0~65535): </string>
+    <string name="sensor_ps_threshold_low">Threshold Low (0~65535): </string>
+    <string name="sensor_ps_change_threshold_set">Set</string>
+    <string name="sensor_ps_threshold_prefix">0x</string>
+    <!-- Motion Sensor end -->
+
+
+	<!-- Settings title in intelligent accessibility screen for sensor_calibration_settings  by huangdianjun-->
+	<string name="proximity_sensor_settings">"接近传感器校准"</string>
+    <string name="sensor_calibration_settings">"传感器校准"</string>
+    <string name="proximity_sensor_title">"注意"</string>
+    <string name="proximity_sensor_context">"校准接近传感器？"</string>
+    <string name="proximity_sensor_positive">"确定"</string>
+    <string name="proximity_sensor_negative">"取消"</string>
+	<string name="proximity_sensor_success_toast">"校准完成"</string>
+	<string name="proximity_sensor_failed_toast">"校准失败"</string>
+	
+   <string name="horizontal_calibration_settings">"水平校准"</string>
+   <string name="horizontal_calibration_settings_summary">"使用加速仪水平校准"</string>
+   <string name="calibration_attention_init">"将设备放在水平表面上并点击校准"</string>
+   <string name="calibration_attention_calibrating">"正在校准，请不要移动手机。请稍等..."</string>
+   <string name="calibration_button">"校准"</string>
+   <string name="calibration_success_toast">"已校准"</string>
+   <string name="calibration_failed_toast">"校准失败"</string>
+   <string name="horizontal_calibration_title">"水平校准"</string>
+  <!--prize-add-huangdianjun-end-->
+	<string name="sensor_operation_succuss">"校准成功"</string>
+	<string name="sensor_operation_fail">"校准失败"</string>
+</resources>

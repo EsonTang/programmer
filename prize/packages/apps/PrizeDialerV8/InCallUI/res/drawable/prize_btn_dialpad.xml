@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+  <!--PRIZE-remove-shiyicheng-2015-6-8-->
+ <!--   <item android:drawable="@drawable/prize_dialpad_button_off" android:state_checked="true"/> 
+    <item android:drawable="@drawable/prize_dialpad_button_off" android:state_focused="true"/>  
+	<item android:drawable="@drawable/prize_dialpad_button_off" android:state_pressed="true"/> 	
+	-->
+    <item android:drawable="@drawable/prize_dialpad_button" />  
+  
+</selector>  

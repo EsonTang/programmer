@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@drawable/to_today_pressed"></item>
+    <item android:drawable="@drawable/to_today_normal"></item>
+
+</selector> -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/today_icon_background"
+        android:drawable="@drawable/to_today_normal"
+        android:gravity="center" />
+    <item
+        android:id="@+id/today_icon_day"
+        android:drawable="@drawable/to_today_normal"
+        android:gravity="center"/>
+</layer-list>

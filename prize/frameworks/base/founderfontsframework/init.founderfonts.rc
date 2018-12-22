@@ -1,0 +1,7 @@
+#======================founder font start=======================
+on post-fs-data
+    mkdir /data/founder 0777 system system
+    mkdir /data/founder/fonts 0777 system system
+    restorecon /data/founder
+    restorecon /data/founder/fonts
+#======================founder font end  =======================

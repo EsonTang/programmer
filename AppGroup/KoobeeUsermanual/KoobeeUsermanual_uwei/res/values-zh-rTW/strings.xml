@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">說明書</string>
+    <string name="tutorial">教程</string>
+    <string name="relate_question">相關問題:</string>
+    <string name="login_username">歡迎使用說明書</string>
+    <string name="ok">確定</string>
+    <string name="cancle">取消</string>
+    <string name="no_match">無結果</string>
+    <string name="search_num">搜索結果共有 %d 條</string>
+    <string name="welcome">感謝您使用本智能手機！</string>
+    <string name="model">koobee</string>
+    <string name="manual">產品說明書</string>
+    <string name="empty_str" />
+    <string name="search_hint">搜索說明書</string>
+    <string name="quick_guide">快速指南</string>
+    <string name="particular">完整說明</string>
+    <string name="product_info">產品和安全資訊</string>
+    <string name="search">搜索</string>
+    <string name="search_empty">無匹配項</string>
+    <string name="network">使用網絡說明</string>
+</resources>

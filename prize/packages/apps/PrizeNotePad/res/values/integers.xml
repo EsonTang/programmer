@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- drawing start -->
+	<integer name="stroke_width_eraser">24</integer>
+	<integer name="stroke_width_pencil">3</integer>
+	<integer name="stroke_width_pen">5</integer>
+	<integer name="stroke_width_brush">16</integer>
+	<integer name="stroke_width_mark">10</integer>
+
+	<integer name="alpha_eraser">255</integer>
+	<integer name="alpha_pencil">255</integer>
+	<integer name="alpha_pen">255</integer>
+	<integer name="alpha_brush">128</integer>
+	<integer name="alpha_mark">192</integer>
+		
+	<integer name="list_item_numColumns">2</integer>
+	<!-- drawing end -->
+
+
+
+    <!-- note start -->
+    <!-- note end -->
+    
+</resources>

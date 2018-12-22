@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/mode_scrollview_marginBottom"
+    android:layout_marginTop="@dimen/effect_layout_margintop">
+
+    <com.prize.ui.CenterHorizontalScroll
+        android:id="@+id/chs_wb_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/center_item_height"
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.prize.ui.CenterHorizontalScroll>
+    
+    <RelativeLayout
+        android:id="@+id/watermarkshow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+		android:layout_marginTop="@dimen/watermark_topmagin"
+        android:layout_above="@id/chs_wb_type"
+        >
+        
+       	<android.support.v4.view.ViewPager
+     		android:id="@+id/view_show_pager"
+     		android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:drawSelectorOnTop="false" >
+    	</android.support.v4.view.ViewPager>
+    	
+       	<TextView
+      	    android:id="@+id/mselect_paper"
+       	    android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:textColor="@color/white"
+      	    android:layout_centerHorizontal="true"
+      	    android:layout_alignParentBottom="true"
+      	    android:singleLine="true"
+      	    android:gravity="center"
+      	    />
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_small"
+        android:background="@drawable/ic_close_mode"
+        android:layout_marginTop="@dimen/close_top_margin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/close_watermark"
+        android:gravity="center"
+        android:paddingTop="@dimen/close_top_padding"
+        android:paddingBottom="@dimen/close_top_padding"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>

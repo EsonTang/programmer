@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- PRIZE-Change-M_Fingerprint-wangzhong-2016_6_28-start -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+<!-- PRIZE-Change-M_Fingerprint-wangzhong-2016_6_28-end -->
+
+    <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1">
+
+        <LinearLayout android:id="@+id/list_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/pinned_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1">
+
+                <ListView android:id="@android:id/list"
+                    android:drawSelectorOnTop="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:scrollbarStyle="@integer/preference_scrollbar_style" />
+
+                <TextView android:id="@android:id/empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/no_applications"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </FrameLayout>
+
+            <!-- PRIZE-Add-M_Fingerprint-wangzhong-2016_6_28-start -->
+            <LinearLayout
+                android:id="@+id/ll_prize_applock_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#E6E6E6"/>
+                <Button
+                    android:id="@+id/bt_prize_applock_open"
+                    android:layout_width="250dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:text="@string/prize_applock_manager_open"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/prize_selector_applock_open_bg"/>
+
+            </LinearLayout>
+            <!-- PRIZE-Add-M_Fingerprint-wangzhong-2016_6_28-end -->
+
+        </LinearLayout>
+
+        <include layout="@layout/loading_container" />
+
+    </FrameLayout>
+
+</LinearLayout>

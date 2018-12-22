@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="@dimen/density_320dp"
+    android:layout_height="@dimen/density_210dp"
+    android:background="@drawable/dialog_shape" >
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_50dp" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/density_20dp"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="@dimen/big_front" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/density_05dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_90dp"
+        android:layout_below="@+id/title_rl" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/prompt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="@dimen/normal_front" />
+
+            <com.goodix.util.CustomEditText
+                android:id="@+id/content_text_edit"
+                android:layout_width="@dimen/density_225dp"
+                android:layout_height="@dimen/density_40dp"
+                android:layout_below="@+id/prompt_title"
+                android:layout_marginTop="@dimen/density_5dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:gravity="center"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:inputType="numberPassword"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="@dimen/normal_front" >
+            </com.goodix.util.CustomEditText>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/density_05dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/density_20dp"
+            android:layout_marginRight="@dimen/density_20dp"
+            android:background="@color/divider_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/operation_button_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_85dp"
+        android:layout_below="@+id/content_rl"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/confirm_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/density_20dp"
+            android:layout_marginRight="@dimen/density_10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/dialog_delete_button_selector"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="@dimen/normal_front" />
+
+        <TextView
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/density_10dp"
+            android:layout_marginRight="@dimen/density_20dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/dialog_delete_button_selector"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="@dimen/normal_front" />
+    </LinearLayout>
+
+</RelativeLayout>

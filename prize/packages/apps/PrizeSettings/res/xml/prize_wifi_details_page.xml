@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="prize_add_network"
+        android:layout="@layout/prize_wifi_details_header_preference"
+        android:title="@string/prize_add_network"/>
+    <Preference
+        android:key="prize_remove_network"
+        android:layout="@layout/prize_wifi_details_header_preference"
+        android:title="@string/prize_remove_network"/>
+    <Preference
+        android:key="prize_changed_password"
+        android:layout="@layout/prize_wifi_details_header_preference"
+        android:title="@string/prize_changed_password"/>
+
+    <Preference
+        android:key="wifi_status"
+        android:layout="@layout/prize_details_preference"
+        android:title="@string/wifi_status"/>
+    <Preference
+        android:key="wifi_signal"
+        android:layout="@layout/prize_details_preference"
+        android:title="@string/wifi_signal"/>
+
+    <Preference
+        android:key="wifi_speed"
+        android:layout="@layout/prize_details_preference"
+        android:title="@string/wifi_speed"/>
+    <Preference
+        android:key="wifi_security"
+        android:layout="@layout/prize_details_preference"
+        android:title="@string/wifi_security"/>
+
+    <Preference
+        android:key="wifi_ip_address"
+        android:layout="@layout/prize_details_preference"
+        android:title="@string/wifi_ip_address"/>
+    <PreferenceCategory android:key="proxy_settings_container"
+        android:title="@string/prize_proxy_and_ip_settings">
+         <Preference
+             android:key="proxy_settings_title"
+             android:layout="@layout/prize_add_network"
+             android:title="@string/proxy_settings_title"/>
+    </PreferenceCategory>
+    <Preference
+        android:key="wifi_ip_settings"
+        android:layout="@layout/prize_add_network"
+        android:title="@string/wifi_ip_settings"/>
+
+</PreferenceScreen>
+<!--
+<PreferenceScreen android:key="ip_settings_container">
+<Preference
+    android:key="ip_address"
+    android:layout="@layout/prize_add_network"
+    android:title="@string/wifi_ip_address"/>
+<Preference
+    android:key="prize_wifi_router"
+    android:layout="@layout/prize_add_network"
+    android:title="@string/prize_wifi_router"/>
+<Preference
+    android:key="prefix_length"
+    android:layout="@layout/prize_add_network"
+    android:title="@string/prize_wifi_network_prefix_length"/>
+<Preference
+    android:key="wifi_domain_first"
+    android:layout="@layout/prize_add_network"
+    android:title="@string/prize_wifi_domain_first"/>
+<Preference
+    android:key="wifi_domain_second"
+    android:layout="@layout/prize_add_network"
+    android:title="@string/prize_wifi_domain_second"/>
+</PreferenceScreen>-->

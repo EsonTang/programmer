@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/mRelativeLayout"
+    android:layout_marginTop="19dp"
+    android:background="@color/app_background"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp">
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:background="@color/linecolor_d9d9d9d" />
+
+    <TextView
+        android:id="@+id/giftTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/detail_gift_icon"
+        android:drawablePadding="9dp"
+        android:gravity="center"
+        android:text="@string/gift"
+        android:textColor="@color/text_color_404040"
+        android:textSize="@dimen/text_size_30" />
+
+    <TextView
+        android:id="@+id/join_Iv"
+        android:layout_width="41dp"
+        android:layout_height="20.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_join_sl"
+        android:gravity="center"
+        android:text="@string/gift_receive"
+        android:textColor="@color/text_color_ff5d31"
+        android:textSize="@dimen/text_size_micro" />
+
+    <View
+        android:id="@+id/divide_gift_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/linecolor_d9d9d9d" />
+
+</RelativeLayout>

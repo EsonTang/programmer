@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="single_test_items">
+    <item>LCD</item>
+    <item>touch screen</item>
+    <item>RAM</item>
+    <item>rear camera</item>
+    <item>front camera</item>
+    <item>battery</item>
+    <item>keys</item>
+    <item>speaker</item>
+    <item>microphone</item>
+    <item>microphone(loop)</item>
+    <item>receiver</item>
+    <item>headset</item>
+    <item>radio</item>
+    <item>motor</item>
+    <item>phone</item>
+    <item>backlight</item>
+    <item>TF card</item>
+    <item>SIM</item>
+    <item>flash lamp</item>
+    <item>bluetooth</item>
+    <item>GPS</item>
+    <item>gravity sensor</item>
+    <item>WiFi</item>
+    <item>rear camera sub</item>
+     <item>fingerprint</item>
+    <item>light sensor</item>   
+    <item>rang sensor</item>
+    <item>magnetic sensor</item>
+    <item>step counter sensor</item>
+    <item>Gyroscope Sensor</item>
+    <item>infrared</item>
+    <item>flash lamp front</item>
+    <item>hall sensor</item>
+    <item>LED</item>
+    <item>YCD</item>   
+    <item>OTG</item>
+    <item>NFC</item>
+  </string-array>
+  <string-array name="aging_test_items">
+    <item>Video and speakers</item>
+    <item>Video and receiver</item>
+    <item>vibrator</item>
+    <item>microphone and receiver</item>
+    <item>front camera</item>
+    <item>rear camera</item>
+  </string-array>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+--><!-- prize zhangzhonghao 20160415 change imagebutton color -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prize_search_box_expanded"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prize_actionbar_bg_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <!--prize modify zhaojian 2017721 start-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/search_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/action_menu_back_from_search"
+            android:src="@drawable/prize_back_button_2016_7_22" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="45dp">
+
+                <EditText
+                    android:id="@+id/search_view_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/prize_search_editor_hight"
+                    android:layout_marginEnd="@dimen/prize_search_editor_marginRight"
+                    android:background="@drawable/prize_contact_search_edit_text_zhaojian_2017_7_21"
+                    android:ellipsize="end"
+                    android:fontFamily="@string/search_font_family"
+                    android:hint="@string/menu_search"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textFilter"
+                    android:paddingEnd="30dp"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/prize_search_editor_text_size" />
+
+                <ImageView
+                    android:id="@+id/search_close_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description_clear_search"
+                    android:src="@drawable/prize_searchbar_delete_btn" />
+            </RelativeLayout>
+    </RelativeLayout>
+    <!--prize modify zhaojian 2017721 end-->
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6.5dp">
+
+    <TextView
+        android:id="@+id/secKill_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:paddingLeft="1.5dp"
+        android:paddingRight="1.5dp"
+        android:paddingBottom="1.0dp"
+        android:paddingTop="1.0dp"
+        android:layout_alignParentRight="true"
+        android:background="#fe6072"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="9dp"
+        tools:text="剩余30天" />
+
+    <com.prize.appcenter.ui.widget.CustomImageView
+        android:id="@+id/points_mall_item_icon"
+        android:layout_width="150dp"
+        android:layout_height="93dp"
+        android:layout_below="@id/secKill_Tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/alert_title"
+        android:scaleType="fitXY"
+        android:transitionName="robot"
+        app:iv_radius="3dp" />
+
+
+    <TextView
+        android:id="@+id/points_mall_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/points_mall_item_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:textColor="@color/text_color_404040"
+        android:textSize="@dimen/text_size_26"
+        tools:text="10M流量" />
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/points_mall_item_icon"
+        android:layout_alignRight="@id/points_mall_item_icon"
+        android:layout_below="@id/points_mall_item_title"
+        android:layout_marginTop="-2.5dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/points_mall_item_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff9000"
+            android:textSize="@dimen/text_size_26"
+            tools:text="40积分" />
+
+        <TextView
+            android:id="@+id/original_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/points_mall_item_point"
+            android:layout_toRightOf="@id/points_mall_item_point"
+            android:textColor="@color/text_color_9a9a9a"
+            android:layout_marginLeft="4dp"
+            android:textSize="10.5dp"
+            tools:text="40积分" />
+        <!--android:textColor="@color/text_color_6c6c6c"-->
+        <!--android:textColor="@color/text_color_9a9a9a"-->
+    </RelativeLayout>
+</RelativeLayout>

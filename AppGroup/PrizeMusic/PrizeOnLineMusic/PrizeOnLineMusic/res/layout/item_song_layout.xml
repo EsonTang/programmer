@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Llyt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/play_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp" >
+
+        <TextView
+            android:id="@+id/num_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:minWidth="20dp"
+            android:textColor="@color/text_color_969696"
+            android:textSize="@dimen/text_size_micro" />
+
+        <TextView
+            android:id="@+id/songName_Tv"
+            style="@style/textView_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/num_Tv"
+            android:layout_toLeftOf="@+id/download_iBtn"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+/>
+        <TextView
+            android:id="@+id/singer_Tv"
+            style="@style/textView_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/num_Tv"
+            android:drawablePadding="4dp"
+            android:drawableEnd="@drawable/icon_hq"
+            android:gravity="center_vertical|start"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxEms="15"
+            />
+
+        <ImageView
+            android:id="@+id/icon_fly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/num_Tv"
+            android:src="@drawable/icon_fly"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/download_iBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/more_menu_iBtn"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/icon_item_download_state_selector" />
+
+        <ImageButton
+            android:id="@+id/more_menu_iBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="18dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/icon_more_menu_nomal" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        layout="@layout/include_item_edit_layout" />
+
+</LinearLayout>

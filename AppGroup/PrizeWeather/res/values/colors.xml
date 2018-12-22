@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="city_top_bar_bg">#1283CF</color>
+    <color name="city_search_bg">#E0E0E0</color>
+    
+    <!-- 2015.7.15 -->
+    <color name="city_search_category_bg">#E0E0E0</color>
+    <color name="city_search_catalog_txt">#454545</color>
+    <color name="city_search_title_txt">#336598</color>
+    <color name="city_search_hint_txt">#E6E6E6</color>
+    <color name="detail_separator_view_color">#4Cffffff</color>
+    <color name="weather_list_divider_color">#19ffffff</color>
+    <color name="menu_bg">#08121b</color>
+    <color name="menu_city_list_bg">#0Cffffff</color>
+    <color name="widget_loading_bg">#0cffffff</color>
+    
+    <color name="city_txt_color">#646464</color>
+</resources>

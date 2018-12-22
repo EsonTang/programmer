@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.lockscreen.widget.ConfirmPatternPwdLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/confirm_icon_password_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/merge_pattern_lay" />
+
+    <include layout="@layout/emc_lay" />
+
+</com.prize.lockscreen.widget.ConfirmPatternPwdLayout>

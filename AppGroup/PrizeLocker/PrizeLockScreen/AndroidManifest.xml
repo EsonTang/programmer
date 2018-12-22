@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prize.prizelockscreen"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system" 
+    >
+
+    <uses-sdk
+        android:minSdkVersion="20"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+	<uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="theme.prize.access" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+	<uses-permission android:name="android.permission.REMOTE_AUDIO_PLAYBACK" />
+	<uses-permission android:name="android.Manifest.permission.MEDIA_CONTENT_CONTROL"/> 
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+	<!-- operate navigation used. -->
+	<uses-permission android:name="android.permission.BIND_PRIZE_NAVIGATION_OPT" />
+	
+    <application
+        android:name="com.prize.lockscreen.application.LockScreenApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- <activity
+            android:name="com.prize.lockscreen.BootActivity_old"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN1" />
+                <category android:name="android.intent.category.LAUNCHER1" />
+            </intent-filter>
+        </activity> -->
+        
+        <!-- <activity
+            android:name="com.prize.lockscreen.LockMainActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        
+        <activity
+            android:name="com.prize.lockscreen.FashionColorActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        
+        <activity
+            android:name="com.prize.lockscreen.RightLockActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity> 
+         -->
+        
+        <activity
+            android:name="com.prize.lockscreen.setting.OpenLockScreenPwd"
+            android:excludeFromRecents="true"
+            android:theme="@style/pwd_set_theme"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.prize.lockscreen.setting.LockPasswordSetting"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:theme="@style/pwd_set_theme"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.prize.lockscreen.setting.LockStyleActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/pwd_set_theme"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.prize.lockscreen.setting.LockStylePreviewActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/pwd_set_theme"
+            android:screenOrientation="portrait" />
+        
+        <!-- <activity
+            android:name="com.prize.lockscreen.SlideUpActivity"
+            android:screenOrientation="portrait"
+            android:label="slidup"
+            android:theme="@android:style/Theme.Translucent"
+            >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+           </activity> -->
+        
+        <activity
+            android:name="com.prize.lockscreen.setting.LockScreenSetting"
+            android:excludeFromRecents="true"
+            android:theme="@style/pwd_set_theme"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN1" />
+                <category android:name="android.intent.category.LAUNCHER1" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.prize.lockscreen.setting.MainActivity"
+            android:theme="@style/pwd_set_theme"
+            android:screenOrientation="portrait" 
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN11" />
+                <category android:name="android.intent.category.LAUNCHER11" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="prize.action.lockscreen.SETTING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <service android:name="com.prize.lockscreen.service.LockScreenService" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKSCREEN_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.prize.lockscreen.receiver.BootRecevier" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="theme_uninstall_and_del_success" />
+                <action android:name="theme_applied_notification" />
+                <action android:name="lockscr_applied_notification" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.prize.lockscreen.receiver.ScreenOnReceiver" >
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.prize.lockscreen.service.LockScreenNotificationListenerService"
+            android:label="@string/notification_service_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

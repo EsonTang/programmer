@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="fl_theme" format="reference" />
+    <attr name="fl_cornerRadius" format="dimension" />
+
+    <!-- Flat Toggle Button -->
+    <declare-styleable name="fl_FlatToggleButton">
+        <attr name="fl_theme" />
+        <attr name="fl_cornerRadius" />
+        <attr name="fl_space" format="dimension" />
+    </declare-styleable>
+    <!--<declare-styleable name="FlowIndicator">-->
+        <!--<attr name="count" format="integer" />-->
+        <!--<attr name="space" format="dimension" />-->
+        <!--<attr name="point_height" format="dimension" />-->
+        <!--<attr name="point_width" format="dimension" />-->
+        <!--<attr name="point_seleted_color" format="color|reference" />-->
+        <!--<attr name="point_normal_color" format="color|reference" />-->
+        <!--<attr name="point_radius" format="dimension" />-->
+    <!--</declare-styleable>-->
+    <declare-styleable name="FlowIndicator">
+        <attr name="count" format="integer" />
+        <attr name="space" format="dimension" />
+        <attr name="point_size" format="dimension" />
+        <attr name="point_seleted_color" format="color|reference" />
+        <attr name="point_normal_color" format="color|reference" />
+        <attr name="point_radius" format="dimension" />
+    </declare-styleable>
+
+
+    <attr name="floatingActionButtonStyle" format="reference" />
+
+    <declare-styleable name="AppRoundImageView">
+        <attr name="approundWidth" format="dimension" />
+        <attr name="approundHeight" format="dimension" />
+    </declare-styleable>
+    <!--
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border" format="boolean" />
+        <attr name="shadow" format="boolean" />
+        <attr name="shadow_color" format="color" />
+    </declare-styleable>
+
+
+
+
+    -->
+
+    <declare-styleable name="MyTextView">
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="paddingLeft" format="dimension"></attr>
+        <attr name="paddingRight" format="dimension"></attr>
+        <attr name="marginLeft" format="dimension"></attr>
+        <attr name="marginRight" format="dimension"></attr>
+        <attr name="MytextColor" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MaxHeightView">
+        <attr name="mhv_HeightDimen" format="reference|dimension" />
+    </declare-styleable>
+
+    <!-- PagerSlidingTabStrip的配置信息 -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabUnderline_lenth" format="dimension" />
+        <!-- 默认时候的文本大小 -->
+        <attr name="pstsTabTextSize" format="dimension" />
+        <!-- 默认时候的文本颜色 -->
+        <attr name="pstsTabTextColor" format="color" />
+        <!-- 选中时候的文本大小 -->
+        <attr name="pstsSelectedTabTextSize" format="dimension" />
+        <!-- 选中时候的文本颜色 -->
+        <attr name="pstsSelectedTabTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="customImageViewStyle" format="reference" />
+    </declare-styleable>
+    <!-- 自定义圆角ImageView -->
+    <!--<declare-styleable name="CustomImageView">-->
+        <!--<attr name="circle" format="boolean" />-->
+        <!--<attr name="iv_radius" format="dimension" />-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="ScrollLineGridView">
+        <attr name="lineColor" format="color" />
+        <attr name="lineStyle">
+            <enum name="crossStyle" value="1" />
+            <enum name="verticalDevide" value="2" />
+            <enum name="mallStyleLine" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 控件 横向滑动 中间放大 -->
+    <declare-styleable name="WGallery">
+
+        <!-- Item的对齐方式 -->
+        <attr name="wGallery_gravity" format="integer" />
+
+        <!-- 切换到选中的Item动画的时长 -->
+        <attr name="wGallery_animationDuration" format="integer" />
+
+        <!-- 未选中的Item的透明度 -->
+        <attr name="wGallery_unselectedAlpha" format="float" />
+
+        <!-- Item 之间的间距 -->
+        <attr name="wGallery_spacing" format="dimension" />
+
+        <!-- 选中的Item缩放的倍数 -->
+        <attr name="wGallery_selectedScale" format="float" />
+
+        <!-- 选中的Item缩放时中心点的位置 -->
+        <attr name="wGallery_scalePivot" format="integer">
+
+            <!-- 选中的Item以中心点进行缩放 -->
+            <enum name="center" value="0" />
+
+            <!-- 选中的Item以顶部中心点进行缩放 -->
+            <enum name="top" value="1" />
+
+            <!-- 选中的Item以底部中心点进行缩放 -->
+            <enum name="bottom" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+
+
+    <!-- 3.0版本变更的下载按钮 -->
+    <declare-styleable name="AnimDownloadProgressButton">
+        <attr name="progressbtn_radius" format="dimension" />
+        <attr name="progressbtn_backgroud_color" format="color" />
+        <attr name="progressbtn_backgroud_second_color" format="color" />
+        <attr name="progressbtn_text_size" format="dimension" />
+        <attr name="progressbtn_text_color" format="color" />
+        <attr name="progressbtn_text_covercolor" format="color" />
+        <attr name="progressbtn_enable_press" format="boolean"/>
+        <attr name="progressbtn_enable_gradient" format="boolean"/>
+        <attr name="progressbtn_show_progress" format="boolean"/>
+    </declare-styleable>
+    <!-- 3.0版本统一按钮 -->
+    <declare-styleable name="PrizeCommButton">
+        <attr name="btn_radius" format="dimension" />
+        <attr name="btn_backgroud_color" format="color" />
+        <attr name="btn_text_size" format="dimension" />
+        <attr name="btn_text_color" format="color|reference" />
+        <attr name="btn_enable_press" format="boolean"/>
+        <attr name="btn_enable_gradient" format="boolean"/>
+        <attr name="btn_content" format="reference|string"/>
+    </declare-styleable>
+
+    <!--首页轮播-->
+    <declare-styleable name="MZBannerView">
+        <attr name="open_mz_mode" format="boolean"/>
+        <attr name="canLoop" format="boolean"/>
+        <attr name="indicatorPaddingLeft" format="dimension"/>
+        <attr name="indicatorPaddingRight" format="dimension"/>
+        <attr name="indicatorPaddingTop" format="dimension"/>
+        <attr name="indicatorPaddingBottom" format="dimension"/>
+        <attr name="indicatorAlign">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="middle_page_cover" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CustomImageView">
+        <attr name="iv_radius" format="dimension" />
+        <!--<attr name="riv_corner_radius" format="dimension" />-->
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">//平铺
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

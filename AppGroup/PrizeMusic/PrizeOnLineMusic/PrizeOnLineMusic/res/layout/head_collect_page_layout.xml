@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/class_name_Tv"
+            style="@style/textView_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/all" />
+
+        <TextView
+            android:id="@+id/select_class_Tv"
+            style="@style/textView_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/icon_select_selector"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:text="@string/select" />
+    </RelativeLayout>
+
+</RelativeLayout>

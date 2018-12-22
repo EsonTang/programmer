@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:id="@+id/portrait_layout"
+    >
+    <LinearLayout
+        android:id="@+id/portrait"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/portrait_view_height"
+        android:layout_marginLeft="@dimen/beautiful_button_leftMargin"
+        android:layout_marginRight="@dimen/beautiful_button_leftMargin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/portrait_button_bottomMargin"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            style="@style/beautiful_linear"
+            android:layout_weight="1"
+            android:id="@+id/portrait_mono">
+
+            <ImageView
+                style="@style/beautiful_ImageView"
+                android:src="@drawable/portrait_mono" />
+
+            <TextView
+                style="@style/beautiful_title"
+                android:text="@string/pref_camera_coloreffect_portrait_entry_monochromatic_light" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/beautiful_linear"
+            android:layout_weight="1"
+            android:id="@+id/portrait_natural">
+
+            <ImageView
+                style="@style/beautiful_ImageView"
+                android:src="@drawable/portrait_valencia" />
+
+            <TextView
+                style="@style/beautiful_title"
+                android:text="@string/pref_camera_coloreffect_portrait_entry_natural_light" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/beautiful_linear"
+            android:layout_weight="1"
+            android:id="@+id/portrait_studio_light">
+
+            <ImageView
+                style="@style/beautiful_ImageView"
+                android:src="@drawable/portrait_hefe" />
+
+            <TextView
+                style="@style/beautiful_title"
+                android:text="@string/pref_camera_coloreffect_portrait_entry_studio_light" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/beautiful_linear"
+            android:layout_weight="1"
+            android:id="@+id/portrait_contour_light">
+
+            <ImageView
+                style="@style/beautiful_ImageView"
+                android:src="@drawable/portrait_xproll" />
+
+            <TextView
+                style="@style/beautiful_title"
+                android:text="@string/pref_camera_coloreffect_portrait_entry_contour_light" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/beautiful_linear"
+            android:layout_weight="1"
+            android:id="@+id/portrait_stage_light">
+
+            <ImageView
+                style="@style/beautiful_ImageView"
+                android:src="@drawable/portrait_lofi" />
+
+            <TextView
+                style="@style/beautiful_title"
+                android:text="@string/pref_camera_coloreffect_portrait_entry_stage_light" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_background">
+
+    <ListView
+        android:id="@+id/queenlist_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:layout_above="@+id/download_default_more_rlyt"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:smoothScrollbar="true"
+        android:touchscreenBlocksFocus="true"
+        >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/defalutRlyt_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/download_default_more_rlyt"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/defaultImg_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/noloading_bee"/>
+
+        <TextView
+            android:id="@+id/default_tv"
+            style="@style/detail_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/defaultImg_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="@string/no_downloading"/>
+
+        <TextView
+            android:id="@+id/download_no_item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/default_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/download_default_btn_selector"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/download_default_more_rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menu_text_color"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/download_default_more_title_line_left"
+                android:layout_width="76dp"
+                android:layout_height="@dimen/zero_point_five_dp"
+                android:layout_below="@+id/fedbck_common_tips_title"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/download_default_more_title"
+                android:background="@color/bg_head_gray_color"
+                android:paddingTop="24dp"/>
+
+            <TextView
+                android:id="@+id/download_default_more_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/download_default_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/download_default_more_title"
+                android:textColor="@color/text_color_404040"
+                android:textSize="@dimen/text_size_small"/>
+
+            <View
+                android:id="@+id/download_default_more_title_line_Right"
+                android:layout_width="76dp"
+                android:layout_height="@dimen/zero_point_five_dp"
+                android:layout_below="@+id/fedbck_common_tips_title"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/download_default_more_title"
+                android:background="@color/bg_head_gray_color"/>
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/download_default_more_grideView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="4"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+        </GridView>
+    </LinearLayout>
+</RelativeLayout>

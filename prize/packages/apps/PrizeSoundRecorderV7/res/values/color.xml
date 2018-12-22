@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2013. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */  -->
+<resources>
+    <color name="frameLayoutGrayColor">#0069808b</color>
+    <color name="linearLayoutGrayColor">#5069808b</color>
+    <color name="blackColor">#000000</color>
+    <color name="recording_file_list_text">#fff0f0f0</color>
+
+    <!-- prize-Add sound recording list interface -liufan-2015-4-22-start-->
+    <color name="recorder_white">#ffffffff</color>
+    <color name="list_view_divider_color">#ffdcdcdc</color>
+    <color name="recorder_background_gray">#bb0000bb</color>
+    <color name="recorder_file_list_title_color">#ff818999</color>
+    
+    <color name="prize_rect_slid_color">#FFE6E6E6</color>
+    <color name="prize_rect_stoke_color">#FF6D6E71</color>
+    
+    <color name="prize_pop_item_solid_color">#FFcacbd0</color>
+    
+    <color name="color_txt_hint">#ff323232</color>
+    <color name="color_top_line">#ffd3d3d3</color>
+    <color name="color_bottom_line">#fff2f2f2</color>
+    <color name="color_edt_line">#ffb3e4de</color>
+    <color name="color_btn_txt">#ff494949</color>
+    <color name="dialog_disable_color">#4D494949</color>
+    <!-- prize-Add sound recording list interface -liufan-2015-4-22-end-->
+    
+    <!-- prize-fanjunchen Adaptation extraction  2015-06-03 start-->
+    <color name="gray_white">#fff</color>
+    <color name="record_top_gray">#818999</color>
+    <color name="record_top_green">#55AC45</color>
+    <color name="play_file_name">#7DBD73</color>
+    
+    <color name="bottom_txt_btn">#000000</color>
+    
+    <color name="list_item_name_color">#ff323232</color>
+    <color name="list_item_time_color">#ff969696</color>
+    <!-- prize end-->
+    
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="divider">#3478f6</color>
+    <color name="green_title_text">#3478f6</color>
+    <color name="transparent_text_color">#969696</color>
+    <color name="prize_transparent_text_color">#aec9fb</color>
+
+    <color name="float_bg_color">#ff0000</color>
+    <color name="st_bg_color">#00ffffff</color>
+    <color name="prize_bottom_text_normal">#c8c8c8</color>
+    <color name="prize_bottom_text_pressed">#663478f6</color>
+    <color name="transparent">#00000000</color>
+    <color name="prize_actionbar_color">#fafafa</color>
+    <color name="prize_windown_back">#f5f5f5</color>
+    <color name="prize_list_view_divider_color">#e2e2e2</color>
+</resources>

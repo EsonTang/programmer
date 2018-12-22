@@ -1,0 +1,98 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:actionBarSize">@dimen/action_bar_size</item>
+        <item name="android:actionBarStyle">@style/AppActionBarStyle</item>
+        <item name="android:windowContentOverlay">@drawable/ab_solid_shadow_holo</item>
+    </style>
+
+    <style name="AppActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/action_bar_bg_color</item>
+        <item name="android:titleTextStyle">@style/AppTitleTextStyle</item>
+    </style>
+
+    <style name="AppTitleTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/action_bar_text_color</item>
+        <item name="android:textSize">@dimen/action_bar_text_size</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Long string feature for ImageSwitch -->
+    <style name="ImageSwitch">
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+        <item name="android:switchMinWidth">80dp</item>
+        <item name="android:thumbTextPadding">20dp</item>
+        <item name="android:thumb">@drawable/imageswitch</item>
+    </style>
+
+    <style name="GroupListHeaderStyle">
+        <item name="android:background">@drawable/section_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/group_list_header_height</item>
+        <item name="android:textColor">@color/group_list_header_text_color</item>
+        <item name="android:textSize">@dimen/group_list_header_text_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/group_list_view_padding_left</item>
+    </style>
+
+    <style name="GroupListViewStyle">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:background">@color/group_list_view_bg_color</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:divider">@null</item>
+    </style>
+
+    <style name="Theme.Prize.PureBackground" parent="@android:style/Theme.Material.Settings" >
+        <item name="android:statusBarInverse">gray</item>
+        <item name="android:colorPrimary">@color/prize_statusbar_primary</item>
+        <item name="android:colorPrimaryDark">@color/prize_statusbar_primary_dark</item>
+        <item name="android:actionOverflowButtonStyle">@style/PrizePureBackgroundActionbarOverflow</item>
+        <item name="android:homeAsUpIndicator">@drawable/prize_purebackground_back_default_selector</item>
+        <item name="android:actionBarStyle">@style/Theme.ActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/PrizeActionBarTabTextStyle</item>
+        <item name="android:actionBarTabStyle">@style/PrizeActionBarTabStyle</item>
+    </style>
+
+    <style name="PrizePureBackgroundActionBarTitle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/prize_actionbar_textcolor</item>
+    </style>
+
+    <style name="PrizePureBackgroundActionbarOverflow" parent="android:style/Widget.Material.ActionButton.Overflow">
+        <item name="android:src">@drawable/prize_purebackground_overflow_selector</item>
+    </style>
+
+    <style name="Theme.ActionBar" parent="@android:style/Widget.Material.Light.ActionBar.Solid">
+        <item name="android:background">@color/prize_actionbar_background</item>
+        <item name="android:titleTextStyle">@style/PrizePureBackgroundActionBarTitle</item>
+    </style>
+
+    <style name="PrizeActionBarTabTextStyle" parent="@android:style/Widget.Material.ActionBar.TabText">
+        <item name="android:textColor">@color/prize_actionbar_tab_textColor</item>
+    </style>
+
+    <style name="PrizeActionBarTabStyle" parent="@android:style/Widget.Material.ActionBar.TabView">
+        <item name="android:background">@color/prize_actionbar_tab_background</item>
+    </style>
+
+	<style name="prize_progressbar" parent="@android:style/Widget.Material.Light.ProgressBar.Large">
+		<item name="android:minWidth">34dip</item>
+        <item name="android:maxWidth">34dip</item>
+        <item name="android:minHeight">34dip</item>
+        <item name="android:maxHeight">34dip</item>
+    </style>
+</resources>

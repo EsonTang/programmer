@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">Gọi IP  <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g>  </string>
+    <string name="select_account">"Chọn tài khoản"</string>
+    <string name="all_accounts">"Tất cả các tài khoản"</string>
+    <string name="call_log_via_sim_name_notice">NHẬT KÝ GỌI QUA \"<xliff:g id="sim_name">%s</xliff:g>\"</string>
+    <string name="imei_invalid">Không hợp lệ</string>
+    <string name="conf_call_member_list">DS thành viên</string>
+    <string name="conf_call_participant_answered">Đã trả lời</string>
+    <string name="conf_call_participant_missed">"Bị nhỡ"</string>
+    <string name="calls_over_wifi">CuộcgọisẽđượcthựchiệnquaWi-Fi</string>
+    <string name="connect_to_wifi">Kết nối Wi-Fi để thực hiện cuộc gọi</string>
+    <string name="wfc_notification_summary">Chạmvàođâyđểtruycậpcácưutiên</string>
+    <string name="wfc_notification_summary_fail">Chạm vào đây để xem các mạng khả dụng</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Cuộc gọi qua SIP"</string>
+    <string name="snackbar_number_unblocked_failed">Không thể hủy chặn <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g></string>
+</resources>

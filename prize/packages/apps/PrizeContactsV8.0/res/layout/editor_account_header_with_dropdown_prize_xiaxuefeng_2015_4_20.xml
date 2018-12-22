@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_selector_container"
+    android:layout_height="@dimen/prize_single_content_height"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginStart="@dimen/prize_content_padding"
+    android:layout_marginEnd="@dimen/prize_content_padding"
+    android:background="@drawable/prize_list_driver"
+    android:visibility="gone">
+  	<ImageView
+        android:id="@+id/kind_icon"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        android:contentDescription="@string/header_account_entry"
+        style="@style/EditKindIconStyle"
+        android:visibility="gone" />
+<!-- prize change orientation and layout_width start zhangzhonghao -->
+    <LinearLayout
+        android:id="@+id/account"
+        android:layout_height="wrap_content"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+		android:drawableEnd="@drawable/ic_menu_expander_minimized_holo_light">
+
+        <TextView
+            android:id="@+id/account_type_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:singleLine="true"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp"
+            android:ellipsize="end" />
+
+        <TextView
+             android:id="@+id/account_name_selector"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingRight="8dip"
+             android:paddingEnd="8dip"
+             android:textSize="12sp"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:singleLine="true"
+             android:textColor="@color/primary_text_color"
+             android:ellipsize="end"
+             android:visibility="gone" />
+    </LinearLayout>
+<!-- prize change orientation and layout_width end zhangzhonghao -->
+<!--
+	<ImageView 
+		android:id="@+id/account_expander"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+-->
+</LinearLayout>

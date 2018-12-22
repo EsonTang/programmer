@@ -1,0 +1,48 @@
+# view res/layout/weather_content.xml #generated:35
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/weather_home.xml #generated:2
+-keep class android.support.v4.widget.DrawerLayout { <init>(...); }
+
+# view res/layout/weather_fragment.xml #generated:1
+-keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.baidu.location.f { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.prize.weather.WeatherHomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.prize.weather.city.CitySelectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.prize.weather.framework.FrameApplication { <init>(...); }
+
+# view res/layout/weather_menu_home.xml #generated:7
+-keep class com.prize.weather.menu.MenuFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.prize.weather.menu.WeatherMenuActivity { <init>(...); }
+
+# view res/layout/weather_fragment.xml #generated:50
+-keep class com.prize.weather.view.BlurScrollView { <init>(...); }
+
+# view res/layout/weather_fragment_airquality.xml #generated:16
+-keep class com.prize.weather.view.DialChartView { <init>(...); }
+
+# view res/layout/weather_fragment_main.xml #generated:94
+-keep class com.prize.weather.view.Focusedtrue4TextView { <init>(...); }
+
+# view res/layout/weather_fragment_detail.xml #generated:27
+-keep class com.prize.weather.view.HourWeatherLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.prize.weather.widget.WeatherBootReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.prize.weather.widget.WeatherWidgetProvider_4x2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.prize.weather.widget.WidgetService { <init>(...); }
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="zero_point_five_dp">0.5dp</dimen>
+    <!-- 主页tab -->
+    <dimen name="home_tab_height">49dp</dimen>
+    <dimen name="main_tab_red_point">322dp</dimen>
+    <dimen name="main_tab_title_size">11sp</dimen>
+    <dimen name="tab_height_67dp">60dp</dimen>
+    <dimen name="tab_height_47dp">47dp</dimen>
+    <dimen name="tab_height_50dp">50dp</dimen>
+    <dimen name="tab_height_31dp">31dp</dimen>
+    <dimen name="banner_bar_hight">200dp</dimen>
+    <dimen name="imageView_item_weight">108dp</dimen>
+    <dimen name="imageView_item_hight">183dp</dimen>
+    <dimen name="font_item_list_logo">160dp</dimen>
+    <dimen name="margin_left_right">15dp</dimen>
+    <dimen name="margin_left_right_13">13dp</dimen>
+    <dimen name="margin_left_right_12">12dp</dimen>
+    <dimen name="margin_left_right_5">5dp</dimen>
+    <dimen name="margin_left_right_3">3dp</dimen>
+    <dimen name="margin_left_right_10">10dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_padding_14">14dp</dimen>
+    <dimen name="margin_padding_6">6dp</dimen>
+
+    <!--专题-->
+    <dimen name="topic_height_125dp">125dp</dimen>
+    <dimen name="topic_margin_20dp">20dp</dimen>
+    <dimen name="three_six_dp">36dp</dimen>
+    <dimen name="item_height_55dp">55dp</dimen>
+    <dimen name="topic_banner_h">200dp</dimen>
+
+    <!-- 主题详情 -->
+    <dimen name="tab_height_40dp">40dp</dimen>
+    <dimen name="margin_theme_detail_left">15dp</dimen>
+
+    <!-- search-->
+    <dimen name="search_bar_height">56dp</dimen>
+
+    <dimen name="item_height_66dp">66dp</dimen>
+    <dimen name="item_height_50dp">50dp</dimen>
+
+    <dimen name="default_border_width">1dp</dimen>
+
+    <dimen name="font_pic_width">214dp</dimen>
+    <dimen name="font_pic_height">383dp</dimen>
+
+    <dimen name="text_size">28px</dimen>
+    <dimen name="update_text_paddingleft">30px</dimen>
+
+    <!--公共部分-->
+    <dimen name="common_line_height">1px</dimen>
+    <dimen name="common_line_height1">0.5px</dimen>
+    <dimen name="margin_top_60dp">60dp</dimen>
+    <dimen name="margin_top_40dp">40dp</dimen>
+    <dimen name="margin_top_35dp">35dp</dimen>
+    <dimen name="margin_top_30dp">30dp</dimen>
+    <dimen name="margin_top_25dp">25dp</dimen>
+    <dimen name="margin_top_20dp">20dp</dimen>
+    <dimen name="margin_top_15dp">15dp</dimen>
+    <dimen name="font_14dp">14dp</dimen>
+    <dimen name="font_12dp">12dp</dimen>
+    <dimen name="margin_end_15dp">15dp</dimen>
+
+    <!--popwindow-->
+    <dimen name="pop_height">205dp</dimen>
+    <dimen name="pop_comment_height">250dp</dimen>
+    <dimen name="margin_72dp">72dp</dimen>
+
+    <dimen name="margin_98dp">98dp</dimen>
+    <dimen name="margin_112dp">112dp</dimen>
+
+    <dimen name="margin_87dp">87dp</dimen>
+
+</resources>

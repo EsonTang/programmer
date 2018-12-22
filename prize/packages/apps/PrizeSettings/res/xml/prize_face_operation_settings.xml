@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/face_settings_title">
+
+    <!-- function -->
+    <PreferenceCategory
+        android:key="prize_face_operation_function"
+        android:title="@string/prize_face_operation_function_category">
+
+        <Preference
+            android:key="prize_face_operation_function_manager"
+            android:persistent="false"
+            android:summary="@string/prize_face_operation_function_manager_summary"
+            android:title="@string/prize_face_operation_function_manager_title" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

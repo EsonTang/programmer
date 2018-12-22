@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+	    android:id="@+id/act_download_Rlayout"
+	    android:layout_width="match_parent"
+	    android:gravity="center_vertical"
+    	android:layout_height="40dp">
+	    
+	    <TextView
+			android:layout_marginTop="20dp"
+	        android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+	        android:id="@+id/act_downloadlist_tv_ing"
+	        android:layout_alignParentLeft="true"
+	        android:gravity="center"
+	        android:text="下载中"
+			android:textColor="#33cccc"
+			android:textSize="12dp"
+	        />
+	</RelativeLayout>
+
+</LinearLayout>

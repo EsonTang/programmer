@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners
+        android:topRightRadius="@dimen/confirm_button_radius"
+        android:bottomRightRadius="@dimen/confirm_button_radius"/>
+    <solid android:color="@color/buttonPressGray"/>
+    <stroke
+        android:color="@color/confirm_button_stroke_color"
+        android:width="@dimen/confirm_button_stroke"/>
+</shape>

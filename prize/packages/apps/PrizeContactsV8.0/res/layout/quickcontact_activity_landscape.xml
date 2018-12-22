@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- prize remove all view huangpengfei 2016-9-6
+Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+This file is in the base layout/ directory so that it can be referenced from multiple config
+     folder without duplicating this file.
+<com.android.contacts.widget.MultiShrinkScroller
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/multiscroller"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="afterDescendants" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/quickcontact_starting_empty_height"
+            android:contentDescription="@string/quickcontact_transparent_view_description"
+            android:id="@+id/transparent_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            Needs a non null background for elevation to work on this View. This will
+                 *not* cause an additional draw since the background is transparent.
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/toolbar_parent">
+
+                <include layout="@layout/quickcontact_header" />
+
+                <include layout="@layout/quickcontact_title" />
+
+            </FrameLayout>
+
+            <include layout="@layout/quickcontact_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.android.contacts.widget.MultiShrinkScroller> -->
+
+<!-- prize add all view huangpengfei 2016-9-6 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/multiscroller"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:descendantFocusability="afterDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!--
+             <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/quickcontact_starting_empty_height"
+            android:contentDescription="@string/quickcontact_transparent_view_description"
+            android:id="@+id/transparent_view" />
+                -->
+
+                <FrameLayout
+                    android:id="@+id/toolbar_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="215dp"
+                    android:background="#3478f6" >
+
+                    <include layout="@layout/quickcontact_header" />
+                </FrameLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <include layout="@layout/quickcontact_content" />
+                </ScrollView>
+            </LinearLayout>
+
+            <!--
+         This title's maximum height must be less than the minimum size of its
+         parent ViewGroup because of an oddity in the way View#setScaleY() works. As a result,
+         this title can not be inside @style/quickcontact_header.
+            -->
+            <!-- prize-change-huangliemin-2016-7-15-delete -->
+<!--     <include layout="@layout/quickcontact_title" /> -->
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/prize_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/prize_bottom_button_padding_bottom_quick"
+            android:background="@color/divider_line_color_light" />
+
+        <!--
+    prize-change-huangliemin-2016-7-18-android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/prize_bottom_button_padding_bottom_quick"
+        -->
+
+        <LinearLayout
+            android:id="@+id/prize_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/prize_floating_action_button_height"
+            android:layout_gravity="bottom"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/prize_contacts_editor_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/quickcontact_maximum_title_size_origin"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:clickable="false"
+                    android:id="@+id/prize_contacts_editor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_primary"
+                    android:src="@drawable/editmenu" />
+
+                <TextView
+                    android:textColor="@color/prize_button_text_default_color"
+                    android:id="@+id/prize_contacts_editor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prize_contacts_editor_text_string"
+                    android:textSize="@dimen/prize_quickcontact_acticity_contacts_editor_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/prize_contacts_delete_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:clickable="false"
+                    android:id="@+id/prize_contacts_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_primary"
+                    android:src="@drawable/callrecords_delete" />
+
+                <TextView
+                    android:textColor="@color/prize_button_text_default_color"
+                    android:id="@+id/prize_contacts_delete_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prize_contacts_delete_text_string"
+                    android:textSize="@dimen/prize_quickcontact_acticity_contacts_delete_text_size" />
+            </LinearLayout>
+
+            <!-- prize-change-huangliemin-2016-7-15-start -->
+            <!--
+        <ImageButton
+            android:id="@+id/prize_contacts_add_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/quickcontact_maximum_title_size_origin"
+            android:background="#f9f9f9"
+            android:visibility="gone"
+            android:src="@drawable/prize_editmenu" />
+            -->
+            <!-- prize-change-huangliemin-2016-7-15-end -->
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/quickcontact_callrecords_delete_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:clickable="false"
+                    android:id="@+id/quickcontact_callrecords_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_primary"
+                    android:src="@drawable/callrecords_delete"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:textColor="@color/prize_button_text_default_color"
+                    android:id="@+id/prize_contacts_callrecords_delete_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prize_contacts_delete_text_string"
+                    android:textSize="@dimen/prize_quickcontact_acticity_contacts_callrecords_delete_text_size" />
+            </LinearLayout>
+
+            <!-- prize-change-huangliemin-2016-7-16-start -->
+     
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/prize_contacts_more_menu_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/quickcontact_maximum_title_size_origin"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:clickable="false"
+                    android:id="@+id/prize_contacts_more_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_primary"
+                    android:src="@drawable/prize_more_menu" />
+
+                <TextView
+                    android:id="@+id/prize_contacts_more_menu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prize_contacts_more_menu_text_string"
+                    android:textColor="@color/prize_button_text_default_color"
+                    android:textSize="@dimen/prize_quickcontact_acticity_contacts_more_text_size" />
+
+            </LinearLayout>
+            <!-- prize-change-huangliemin-2016-7-16-end -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>
+
+

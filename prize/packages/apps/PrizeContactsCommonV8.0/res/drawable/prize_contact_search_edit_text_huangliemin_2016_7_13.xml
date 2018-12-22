@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/prize_content_bg_color"/>
+    <corners  android:radius="@dimen/prize_contact_search_edit_text_corners"/>
+    <stroke 
+        android:width="@dimen/prize_contact_search_edit_text_stroke"
+        android:color="@color/prize_contact_search_edit_text_stroke_color"/>
+
+</shape>

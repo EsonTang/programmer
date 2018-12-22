@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+*版权所有©2015,深圳市铂睿智恒科技有限公司
+*
+*内容摘要：通知栏自定义排序Item中BluLight的布局效果文件
+*当前版本：V1.0
+*作	者：zhudaopeng
+*完成日期：2017-05-12
+*修改记录：
+*修改日期：
+*版 本 号：
+*修 改 人：
+*修改内容：
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/qs_sort_blulight_pressed" android:state_checked="true"></item>
+    <item android:drawable="@drawable/qs_sort_blulight"></item>
+
+</selector>

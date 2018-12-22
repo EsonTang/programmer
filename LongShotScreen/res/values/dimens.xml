@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="abc_action_bar_default_height">48dip</dimen>
+    <dimen name="global_screenshot_bg_padding">20dp</dimen>
+    <dimen name="main_float_menu_size">188dp</dimen>
+    <dimen name="main_menu_layout_margin_horizontal">5.0dip</dimen>
+    <dimen name="main_menu_layout_margin_vertical">15.0dip</dimen>
+    <dimen name="action_height">55.0dip</dimen>
+    <dimen name="play_vedia_barlayout_magin_bottom">0.0dip</dimen>
+    <dimen name="play_vedia_barlayout_btn_pading">0.0dip</dimen>
+    <dimen name="play_vedia_barlayout_pading_bottom">0.0dip</dimen>
+    <dimen name="play_vedia_barlayout_pading_top">0.0dip</dimen>
+    <dimen name="play_vedia_barlayout_title_maginTop">6.0dip</dimen>
+    <dimen name="play_vedia_barlayout_height">46.0dip</dimen>
+    <dimen name="play_vedia_layout_min_height">360.0dip</dimen>
+    <dimen name="scrollshot_action_padding">12.0px</dimen>
+
+    <dimen name="action_text_size">10sp</dimen>
+</resources>

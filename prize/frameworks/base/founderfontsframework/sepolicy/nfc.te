@@ -1,0 +1,5 @@
+allow nfc data_fonts_file:dir { create_dir_perms rw_dir_perms };
+allow nfc data_fonts_file:file { create_file_perms rw_file_perms };
+
+allow nfc system_fonts_file:dir { create_dir_perms rw_dir_perms };
+allow nfc system_fonts_file:file { create_file_perms rw_file_perms };

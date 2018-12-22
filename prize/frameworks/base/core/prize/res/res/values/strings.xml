@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-04-14-start -->
+    <string name="global_super_saver">Super saver</string>
+    <string name="global_super_saver_quit">Quit super saver</string>
+    <string name="global_into_super_saver">Switch to super saver?</string>
+    <string name="global_quit_super_saver">Quit super saver?</string>
+    <string name="not_available_power_extend_mode_hint">Not available in super saver.</string>
+    <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-04-14-end -->
+    <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-05-08-start -->
+    <string name="global_action_super_saver_mode_on_status">Super saver is on</string>
+    <string name="global_action_super_saver_mode_off_status">Super saver is close</string>
+    <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-05-08-end -->
+	<!-- PRIZE- reboot- xiaxuefeng-2015-3-24 -start -->
+	<string name="global_action_title">Phone Selection</string>
+    <string name="global_action_reboot">Reboot</string>
+    <!-- PRIZE- reboot- xiaxuefeng-2015-3-24 -end -->
+    <!-- prize- default_browser-huangdianjun-20510612-start-->
+    <string name="default_browser_package">"com.qihoo.browser"</string>
+    <string name="default_browser_activity">"com.qihoo.browser.BrowserActivity"</string>
+    <!-- prize- default_browser-huangdianjun-20510612-end-->
+    
+    <!-- app multi instances feature. prize-linkh-20151120 -->
+	<string name="clone_app_str">Clone</string>
+    <string name="clone_app_variable_str">Clone <xliff:g>%1$d</xliff:g></string>
+    <!--PRIZE-insert sim, reset os-wangxianzhen-2016-07-26-start-->
+    <string name="reboot_alert">In order to ensure the normal function of SIM CARDS, mobile phone will restart in %s seconds。</string>
+    <string name="reset_alter">System detects the new SIM card inserted, in order to prevent privacy, please reset the phone.</string>
+    <string name="reset_ok">OK</string>
+    <string name="reset_cancel">Cancel</string>
+    <string name="siminsert">Have to add a SIM card</string>
+    <string name="reboot">Immediately restart</string>
+    <!--PRIZE-insert sim, reset os-wangxianzhen-2016-07-26-end-->
+	
+	<!--prize liup 20161118 change icon&label start-->
+	<string name="prize_baidumap">Map</string>
+	<string name="prize_reader">Read</string>
+	<string name="prize_search">Search</string>
+	<string name="prize_news">news</string>
+	<string name="prize_yidian">news</string>
+	<string name="prize_sogou_browser">sogou browser</string>
+	<string name="prize_tencent_vedio">vedio</string>
+	<!--prize liup 20161118 change icon&label end-->
+  <!--prize-OS8.0_Shutdown-add-yangming-2017_8_12-start-->
+	<string name="shutdown">Shutdown</string>
+    <string name="restart">Reboot</string>
+	<string name="shutdown_reminder">Click again to turn off your phone</string>
+    <string name="restart_reminder">Click again to restart your phone</string>
+  <!--prize-OS8.0_Shutdown-add-yangming-2017_8_12-end-->
+    <!--PRIZE-Add-SMS_Reminder-wangzhong-2017_3_27-start-->
+    <string name="prize_sms_control_message">"&lt;b&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/b&gt;is sending SMS messages. Do you want to allow this app to continue sending messages?"</string>
+    <!--PRIZE-Add-SMS_Reminder-wangzhong-2017_3_27-end-->
+	<!--prize-xuchunming-20180620-bugid:62789-start-->
+	<string name="clone_app_wenxin_camera_waringinfo">WeChat split screen mode does not support camera operation</string>
+	<!--prize-xuchunming-20180620-bugid:62789-end-->
+</resources>

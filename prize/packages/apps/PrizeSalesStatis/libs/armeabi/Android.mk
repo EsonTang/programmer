@@ -1,0 +1,45 @@
+ LOCAL_PATH :=$(call my-dir)
+ include $(CLEAR_VARS)
+ LOCAL_MODULE := liblocSDK5
+ LOCAL_SRC_FILES_32 := liblocSDK5.so
+ #LOCAL_SRC_FILES_64 := liblocSDK5.so 
+ LOCAL_MULTILIB := 32
+ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+ LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT) 
+
+ include $(CLEAR_VARS)
+ LOCAL_MODULE := liblocnaviSDK
+ LOCAL_SRC_FILES_32 := liblocnaviSDK.so
+ #LOCAL_SRC_FILES_64 := liblocnaviSDK.so 
+ LOCAL_MULTILIB := 32
+ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+ LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT) 
+
+ include $(CLEAR_VARS)
+ LOCAL_MODULE := libBaiduMapSDK_v3_4_0_15
+ LOCAL_SRC_FILES_32 := libBaiduMapSDK_v3_4_0_15.so
+ #LOCAL_SRC_FILES_64 := libBaiduMapSDK_v3_4_0_15.so 
+ LOCAL_MULTILIB := 32
+ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+ LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT) 
+
+ include $(CLEAR_VARS)
+ LOCAL_MODULE := libapp_BaiduPanoApplib
+ LOCAL_SRC_FILES_32 := libapp_BaiduPanoApplib.so
+ #LOCAL_SRC_FILES_64 := libapp_BaiduPanoApplib.so 
+ LOCAL_MULTILIB := 32
+ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+ LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT) 
+
+ include $(CLEAR_VARS)
+ LOCAL_MODULE := libapp_BaiduNaviApplib_v1_0_0
+ LOCAL_SRC_FILES_32 := libapp_BaiduNaviApplib_v1_0_0.so
+ #LOCAL_SRC_FILES_64 := libapp_BaiduNaviApplib_v1_0_0.so 
+ LOCAL_MULTILIB := 32
+ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+ LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT) 

@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="DialChartView_witdth">230dip</dimen>
+    <dimen name="DialChartView_height">230dip</dimen>
+    <dimen name="traffic_correction_title_marg">20dp</dimen>
+    <dimen name="traffic_correction_title_marg_top">15dp</dimen>
+    <dimen name="activity_horizontal_margin_top">30dp</dimen>
+    <dimen name="activity_horizontal_margin">18dp</dimen>
+    <dimen name="activity_vertical_margin">14.0dp</dimen>
+    <dimen name="activity_margin_top">5dp</dimen>
+    <dimen name="activity_margin_bottom">5dp</dimen>
+    <dimen name="activity_left_margin">20dp</dimen>
+    <dimen name="activity_right_margin">20dp</dimen>
+    <dimen name="largeTxtSize">16dp</dimen>
+    <dimen name="midumTxtSize">14dp</dimen>
+    <dimen name="smallTxtSize">12dp</dimen>
+    <dimen name="scanTypeDrawablePadding">12dp</dimen>
+    <dimen name="viruse_divide_height">0.5dp</dimen>
+    <dimen name="viruse_divide_width">320dp</dimen>
+    <dimen name="process_percent_txtsize">25dp</dimen>
+    <dimen name="traffic_correction_marg_left">10dp</dimen>
+    <dimen name="traffic_correction_title_textsize">24dp</dimen>
+    <dimen name="custom_dialog_height">163dp</dimen>
+    <dimen name="custom_dialog_width">320dp</dimen>
+    <dimen name="garbage_percent_txtsize">40dp</dimen>
+    <dimen name="garbage_count_txtsize">30dp</dimen>
+    <dimen name="garbage_count_txtsize_unit">12dp</dimen>
+
+    <!-- john 2015.8.22 start -->
+    <dimen name="base_margin">10dp</dimen>
+    <dimen name="base_margin_left">20dp</dimen>
+    <dimen name="base_margin_right">20dp</dimen>
+    <dimen name="base_margin_top">15dp</dimen>
+    <dimen name="base_margin_bottom">15dp</dimen>
+    <dimen name="base_padding_left">20dp</dimen>
+    <dimen name="base_padding_right">20dp</dimen>
+    <dimen name="base_padding_top">15dp</dimen>
+    <dimen name="base_padding_bottom">15dp</dimen>
+    <dimen name="base_item_padding_left">5dp</dimen>
+    <dimen name="base_item_padding_right">5dp</dimen>
+    <dimen name="base_item_padding_top">5dp</dimen>
+    <dimen name="base_item_padding_bottom">5dp</dimen>
+    <dimen name="top_bar_height">120dp</dimen>
+    <dimen name="top_bar_margin_left">@dimen/base_margin_left</dimen>
+    <dimen name="top_bar_margin_right">@dimen/base_margin_right</dimen>
+    <dimen name="top_bar_margin_top">@dimen/base_margin_top</dimen>
+    <dimen name="top_bar_margin_bottom">@dimen/base_margin_bottom</dimen>
+    <dimen name="home_dialchart_width">260dp</dimen>
+    <dimen name="home_dialchart_height">260dp</dimen>
+    <dimen name="optimizing_margin_left">20dp</dimen>
+    <dimen name="optimizing_margin_right">20dp</dimen>
+    <dimen name="optimizing_margin_top">20dp</dimen>
+    <dimen name="optimizing_margin_bottom">30dp</dimen>
+    <dimen name="optimizing_parent_item_padding_left">@dimen/optimizing_margin_left</dimen>
+    <dimen name="optimizing_parent_item_padding_right">@dimen/optimizing_margin_right</dimen>
+    <dimen name="optimizing_parent_item_padding_top">0dp</dimen>
+    <dimen name="optimizing_parent_item_padding_bottom">0dp</dimen>
+    <dimen name="optimizing_child_item_padding_left">100dp</dimen>
+    <dimen name="optimizing_child_item_padding_right">20dp</dimen>
+    <dimen name="optimizing_child_item_padding_top">0dp</dimen>
+    <dimen name="optimizing_child_item_padding_bottom">10dp</dimen>
+    <dimen name="optimizing_line_padding_left">@dimen/optimizing_parent_item_padding_left</dimen>
+    <!-- john 2015.8.22 end -->
+
+    <dimen name="btn_width">126dp</dimen>
+    <dimen name="btn_height">37.5dp</dimen>
+    <dimen name="dialog_msg_size">14dp</dimen>
+
+</resources>

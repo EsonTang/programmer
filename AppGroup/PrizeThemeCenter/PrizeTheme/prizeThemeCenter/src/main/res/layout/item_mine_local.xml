@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mine_item_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.prize.prizethemecenter.ui.widget.CornerImageView
+            android:id="@+id/mine_item_iv"
+            style="@style/imageView_item"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/mine_item_track_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@id/mine_item_iv"
+            android:src="@drawable/icon_is_update"
+            />
+
+        <!--android:button="@style/item_checkBox_style"-->
+        <CheckBox
+            android:id="@+id/mine_item_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/mine_item_iv"
+            android:layout_alignBottom="@id/mine_item_iv"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:button="@drawable/item_mine_local_selector"
+            />
+            <!--android:drawableRight="@drawable/item_mine_local_selector"-->
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/mine_item_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:textColor="@color/text_color_323232"
+        android:textSize="@dimen/text_size_small"
+        android:text="夏日清涼"/>
+
+
+    <TextView
+        android:id="@+id/mine_item_btn_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="@color/text_color_33cccc"
+        android:textSize="@dimen/text_size_small"
+        android:text="应用"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/item_selected_blue_stroke_shape"/>
+
+
+</LinearLayout>

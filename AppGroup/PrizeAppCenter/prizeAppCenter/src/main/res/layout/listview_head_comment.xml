@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="11dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/score_tv"
+            style="@style/detail_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="14sp"
+            android:text="@string/user_score"
+            android:textColor="@color/text_color_404040"/>
+
+        <LinearLayout
+            android:id="@+id/scorlLayt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/score_tv"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/level_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color_404040"
+                android:textSize="41sp"/>
+
+            <TextView
+                android:id="@+id/scorl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/level_id"
+                android:layout_alignBottom="@+id/level_id"
+                android:layout_marginLeft="6dp"
+                android:text="@string/scrol"
+                android:textColor="@color/text_color_404040"
+                android:textSize="16sp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar_big_id"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="bottom"
+                android:clickable="false"
+                android:focusable="false"
+                android:isIndicator="true"
+                android:numStars="5"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <View
+            android:id="@+id/comment_divide_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:background="#e4e4e4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment_divide_id"
+                android:textSize="@dimen/text_size_26"
+                android:textColor="@color/text_color_404040"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/hot_comment"/>
+</LinearLayout>

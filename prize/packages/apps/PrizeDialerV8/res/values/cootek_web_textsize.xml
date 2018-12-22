@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--individual-->
+
+    <dimen name="cootek_individual_listitem_notice_textsize">24dp</dimen>
+    <dimen name="cootek_individual_item_remain_textsize">20dp</dimen>
+    <dimen name="cootek_individual_item_remain_textsize2">13dp</dimen>
+
+    <dimen name="cootek_individual_header_textsize">15dp</dimen>
+    <dimen name="cootek_individual_header_textsize3">18dp</dimen>
+
+</resources>

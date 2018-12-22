@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sim_insert_background" >
+    
+    <LinearLayout
+        android:id="@+id/reset"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/siminsert_textview_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/siminsert"
+            android:textColor="#323232"
+            android:textSize="@dimen/siminsert_textview_textsize" />
+            
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sim_insert_line" />
+            
+        <TextView
+            android:id="@+id/reset_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/reset_text_textview_height"
+            android:layout_gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/reset_text_textview_linespace"
+            android:paddingBottom="@dimen/reset_text_textview_padding1"
+            android:paddingLeft="@dimen/reset_text_textview_padding2"
+            android:paddingRight="@dimen/reset_text_textview_padding2"
+            android:paddingTop="@dimen/reset_text_textview_padding1"
+            android:text="@string/reset_alter"
+            android:textColor="#323232"
+            android:textSize="@dimen/button_textsize" />
+            
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sim_insert_line" />
+            
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_linearlayout_height"
+            android:orientation="vertical" >
+            
+            <Button
+            android:id="@+id/reset_ok_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/button_margin"
+            android:background="@drawable/sim_insert_button"
+            android:text="@string/reset_ok"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/button_textsize" />
+            
+            <Button
+            android:id="@+id/reset_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/button_margin"
+            android:layout_marginBottom="@dimen/button_margin"
+            android:background="@null"
+            android:text="@string/reset_cancel"
+            android:textColor="#E5E5E5"
+            android:textSize="@dimen/button_textsize" />
+            
+            <Button
+            android:id="@+id/reboot_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/button_margin"
+            android:layout_marginTop="@dimen/button_margin"
+            android:background="@drawable/sim_insert_button"
+            android:text="@string/reboot"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/button_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

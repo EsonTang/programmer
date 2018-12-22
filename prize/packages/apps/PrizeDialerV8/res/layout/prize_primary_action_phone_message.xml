@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/primary_action_phone_message"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/prize_dialer_call_log_list_item2_height"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:animateLayoutChanges="true"
+    android:background="@color/prize_dialer_call_log_list_item_bg_color"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <com.android.dialer.calllog.prizeexpandrecyclerview.DrawableCenterTextView
+        android:id="@+id/calllog_item_phone"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:drawableLeft="@drawable/prize_call_log_list_item_phone_selector"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:text="@string/prize_call_log_list_item_phone"
+        android:textSize="@dimen/prize_dialer_call_log_list_item2_text_size"/>
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="match_parent"/>
+
+    <com.android.dialer.calllog.prizeexpandrecyclerview.DrawableCenterTextView
+        android:id="@+id/calllog_item_message"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:drawableLeft="@drawable/prize_call_log_list_item_message_selector"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:text="@string/prize_call_log_list_item_message"
+        android:textSize="@dimen/prize_dialer_call_log_list_item2_text_size"/>
+</LinearLayout>

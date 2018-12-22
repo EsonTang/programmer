@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="hei">#000000</color>
+    <color name="hei_12">#1F000000</color>
+    <color name="hei_20">#33000000</color>
+    <color name="hei_26">#42000000</color>
+    <color name="hei_30">#4D000000</color>
+    <color name="hei_35">#5A000000</color>
+    <color name="hei_40">#66000000</color>
+    <color name="hei_54">#8A000000</color>
+    <color name="hei_65">#A6000000</color>
+    <color name="hei_70">#B3000000</color>
+    <color name="hei_87">#DE000000</color>
+    <color name="bai">#FFFFFF</color>
+    <color name="bai_12">#1FFFFFFF</color>
+    <color name="bai_20">#33FFFFFF</color>
+    <color name="bai_30">#4DFFFFFF</color>
+    <color name="bai_54">#8AFFFFFF</color>
+    <color name="bai_65">#A6FFFFFF</color>
+    <color name="bai_75">#BFFFFFFF</color>
+    <color name="bai_87">#DEFFFFFF</color>
+    <color name="bai_90">#E6FFFFFF</color>
+    <color name="hong">#FFFF4B5C</color>
+    <color name="hong_75">#BFFF4B5C</color>
+    <color name="hong_50">#80FF4B5C</color>
+    <color name="touming">#00000000</color>
+
+    <drawable name="touming">#00000000</drawable>
+
+    <color name="actionbar_bg">#FF0099CC</color>
+    <color name="main_home_bg">#3D3D3D</color>
+    <color name="main_home_bg_bai">#F5F5F5</color>
+    <color name="main_tabs_line">#ff7a00</color>
+    <color name="main_tabs_text_selected">#ebeced</color>
+    <color name="main_tabs_text_unselected">#b1b8b9</color>
+    <color name="main_down_image_alert">#f56e78</color>
+    <color name="list_img_bg_default">#eeeeee</color>
+    <color name="screen_btn_down">#007f89</color>
+    <color name="screen_btn_ok_down">#1fbcd4</color>
+    <color name="setting_title">#00bcd6</color>
+    <color name="setting_switch">#1fbcd2</color>
+    <color name="setting_bg">#F2F2F2</color>
+    <color name="pr_webview">#FF6B79</color>
+    <color name="pr_webview_bg">#FFFFFF</color>
+    <color name="webview_bg">#EFEFEF</color>
+    <color name="header_bottom_bg_color">#FF3d3d3d</color>
+    <color name="textcolor_guide_item_undone_title">#FF3d3d3d</color>
+    <color name="textcolor_guide_item_undone_hint">#9e3d3d3d</color>
+    <color name="textcolor_guide_dialog_title">#3c3c3c</color>
+    <color name="textcolor_guide_dialog_hint">#9a9a9a</color>
+    <color name="textcolor_guide_dialog_done_xiaomi">#ff7200</color>
+    <color name="hkgallery_header_rb_unavalliable">#ADFFFFFF</color>
+    <color name="hkgallery_header_rb_avalliable">#FF484747</color>
+    <color name="black">#FF000000</color>
+    <color name="local_mapdepot_hint2">#7FFF6565</color>
+    <color name="local_mapdepot_bg">#F5F5F5</color>
+    <color name="picture_select_bottom_bg">#4c3c3c3c</color>
+    <color name="picture_show_bg">#e0000000</color>
+    <color name="progress_text">#ff6464</color>
+    <color name="color_75">#757575</color>
+    <color name="transparent">#9000</color>
+    <color name="color_e5">#e5e5e5</color>
+    
+     <color name="lock_link1">#74A459</color>
+     <color name="lock_link2">#A45B59</color>
+     <color name="lock_link3">#A48159</color>
+     <color name="lock_link4">#5993A4</color>
+     <color name="lock_link5">#7D7D7D</color>
+
+</resources>

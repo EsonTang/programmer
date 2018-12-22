@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true" >
+
+    <ImageView
+        android:id="@+id/bind_email_backgroud_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/backgroud_img_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/cloud_bind_email_backgroud" />
+
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:background="#21b5c0"
+        android:drawableLeft="@drawable/cloud_back_normal"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="onBackClk"
+        android:paddingLeft="20dp"
+        android:text="@string/bind_email"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textsize_large" />
+
+    <TextView
+        android:id="@+id/complete_tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margintop"
+        android:gravity="center"
+        android:text="@string/complete_bind_email"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textsize_medium" />
+
+    <TextView
+        android:id="@+id/canclebt_id"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/bind_email_backgroud_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/bt_bindsuccess_margintop"
+        android:background="@drawable/cloud_next_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onComplete"
+        android:text="@string/cancel_bind_email"
+        android:textColor="@color/login_color"
+        android:textSize="@dimen/textsize_medium" />
+
+</RelativeLayout>

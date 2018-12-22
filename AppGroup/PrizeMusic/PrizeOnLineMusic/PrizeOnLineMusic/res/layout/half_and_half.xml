@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+
+    <LinearLayout
+        android:id="@+id/half_artist_info_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/half_artist_image_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+             android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:text="@string/music"
+            android:textColor="@color/text_color_ff5f00"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/half_artist_image_text_line_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+	    	android:paddingLeft="15dp"
+            android:text="@string/tab_albums"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+</RelativeLayout>

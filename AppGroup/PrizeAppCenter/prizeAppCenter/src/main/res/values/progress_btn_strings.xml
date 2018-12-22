@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="progress_btn_progess">%1$d%%</string>
+    <string name="progress_btn_start">打开</string>
+    <string name="progress_btn_install">安装</string>
+    <string name="progress_btn_install_receive">安装领取</string>
+    <string name="progress_trash_clear_btn_install">体验一下</string>
+    <string name="progress_btn_download">下载</string>
+    <string name="progress_btn_download_receive">下载领取</string>
+    <string name="install_Gift">安装有礼</string>
+    <string name="open_receive">打开领取</string>
+
+    <string name="progress_btn_upload">更新</string>
+    <string name="progress_btn_wait">等待中</string>
+    <string name="progress_btn_from_other">获取</string>
+    <string name="progress_btn_installing">安装中</string>
+    <string name="progress_btn_getting">领取中</string>
+    <string name="progress_btn_geted">已领取</string>
+    <string name="progress_already_pause">已暂停</string>
+    <string name="progress_continue">继续</string>
+    <string name="progress_pause">暂停</string>
+    <string name="progress_downloading">正在下载...</string>
+    <string name="progress_btn_patching">合成中</string>
+    <string name="progress_btn_uninstall">卸载</string>
+    <string name="progress_btn_uninstalling">卸载中</string>
+    
+    <string name="progress_btn_installgifts">安装有礼</string>
+
+</resources>

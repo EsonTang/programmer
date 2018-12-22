@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp" 
+        android:background="@color/statusbar_color">
+
+        <RelativeLayout
+            android:id="@+id/drag_head_layout_normaly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/play_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="41dp"
+                android:background="@drawable/list_add"
+                android:textColor="@color/gray_black" />
+
+            <TextView
+                android:id="@+id/play_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/search_selector"
+                android:textColor="@color/gray_black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/play_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/play_list_title_paddingleft"
+                android:layout_marginTop="41dp"
+                android:layout_toRightOf="@+id/play_fg_back"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/play_fg_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="37dp"
+                android:src="@drawable/btn_back_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/drag_head_layout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="41dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/drag_mEdit_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/icon_all"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/all_select"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/drag_mEdit_neg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/icon_all"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/cancel"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line_separator" />
+
+    <RelativeLayout
+        android:id="@+id/none_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/drog_new_songs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/play_list_nosong_bt_margin_top"
+            android:background="@drawable/icon_add_songs"
+            android:gravity="center"
+            android:text="@string/addsongs"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/play_list_nosong_img_margin_top"
+            android:src="@drawable/list_add_no_songs" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="@dimen/play_list_nosong_tv_margin_top"
+            android:text="@string/nomusic_in_list"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+    <include layout="@layout/list_separator" />
+
+    <!--
+        <com.mobeta.android.dslv.DragSortListView
+    	xmlns:dslv="http://schemas.android.com/apk/lib/com.mobeta.android.dslv"
+	    android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:drawSelectorOnTop="false"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none"
+        android:listSelector="@drawable/holo_selector"
+        android:paddingRight="@dimen/listview_items_padding_top_bottom" 
+        android:paddingLeft="@dimen/listview_items_padding_top_bottom"
+	    dslv:drag_enabled="true"
+    	dslv:drag_handle_id="@+id/listview_drag_handle"
+	    dslv:collapsed_height="2dp"
+	    dslv:drag_scroll_start="0.33"
+	    dslv:max_drag_scroll_speed="0.5"
+	    dslv:float_alpha="0.6"
+	    dslv:slide_shuffle_speed="0.3"
+	    dslv:track_drag_sort="false"
+	    dslv:use_default_controller="true"
+	    android:divider="@color/app_background_separator"
+        android:dividerHeight="1dp" />
+    -->
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/line_separator"
+        android:dividerHeight="0.5dp"
+        android:drawSelectorOnTop="false"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:paddingLeft="@dimen/listview_items_padding_left_right"
+        android:paddingRight="@dimen/listview_items_padding_left_right"
+        android:scrollbars="none" />
+
+</LinearLayout>

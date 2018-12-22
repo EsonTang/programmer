@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="afterDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mine_item_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.prize.prizethemecenter.ui.widget.CornerImageView
+            android:id="@+id/mine_item_iv"
+            style="@style/imageView_item"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/mine_item_track_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@id/mine_item_iv"/>
+
+        <!--android:button="@style/item_checkBox_style"-->
+        <CheckBox
+            android:id="@+id/mine_item_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mine_item_iv"
+            android:layout_alignRight="@id/mine_item_iv"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:button="@drawable/item_mine_local_selector"
+            />
+        <!--android:drawableRight="@drawable/item_mine_local_selector"-->
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/mine_item_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="夏日清涼"
+        android:textColor="@color/text_color_323232"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <FrameLayout
+        android:id="@+id/use_FL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="6dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/use_IV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:background="@drawable/common_use_btn"/>
+
+
+        <TextView
+            android:id="@+id/mine_item_btn_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/use"
+            android:textColor="@color/text_color_33cccc"
+            android:textSize="@dimen/text_size_small"
+            />
+
+        <!--android:background="@drawable/item_selected_gray_white_shape"-->
+    </FrameLayout>
+
+</LinearLayout>

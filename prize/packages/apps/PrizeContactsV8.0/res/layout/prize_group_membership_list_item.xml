@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/prize_content_title_color"
+    android:textSize="15sp"
+    android:gravity="center_vertical"
+    android:paddingStart="@dimen/prize_content_padding"
+    android:paddingEnd="@dimen/prize_content_padding"
+    android:checkMark="@drawable/prize_check_textview"
+    android:ellipsize="end"
+    android:maxLines="1"
+    />

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#394652"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="@dimen/traffic_correction_title_marg"
+        android:layout_marginTop="@dimen/traffic_correction_title_marg_top"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/return_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:drawableLeft="@drawable/prize_return_selector"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:text="@string/traffic_setting"
+            android:textColor="@android:color/white"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.4"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/traffic_correction_title_marg"
+            android:text="@string/sim_setting_commits"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/smallTxtSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="8.0"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="@dimen/traffic_correction_title_marg"
+            android:layout_marginRight="@dimen/traffic_correction_title_marg"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/traffic_month_total"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:text="M"
+                android:textColor="#00ff00"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/jumpto_detail_selector" />
+
+            <EditText
+                android:id="@+id/traffic_month_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:background="@null"
+                android:lines="1"
+                android:maxLength="4"
+                android:numeric="integer"
+                android:text="0"
+                android:textColor="#00ff00"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <include layout="@layout/traffic_setting_devider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="@dimen/traffic_correction_title_marg"
+            android:layout_marginRight="@dimen/traffic_correction_title_marg"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/traffic_month_clean"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:text="号"
+                android:textColor="#00ff00"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/jumpto_detail_selector" />
+
+            <EditText
+                android:id="@+id/traffic_month_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:background="@null"
+                android:lines="1"
+                android:maxLength="4"
+                android:numeric="integer"
+                android:text="0"
+                android:textColor="#00ff00"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <include layout="@layout/traffic_setting_devider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="@dimen/traffic_correction_title_marg"
+            android:layout_marginRight="@dimen/traffic_correction_title_marg"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/traffic_location"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/traffic_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/jumpto_detail_selector"
+                android:focusable="true"
+                android:text="广东-深圳-移动-动感地带"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <include layout="@layout/traffic_setting_devider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="@dimen/traffic_correction_title_marg"
+            android:layout_marginRight="@dimen/traffic_correction_title_marg"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/traffic_monitor_often"
+                android:textSize="14dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical" />
+        </RelativeLayout>
+
+        <include layout="@layout/traffic_setting_devider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="@dimen/traffic_correction_title_marg"
+            android:layout_marginRight="@dimen/traffic_correction_title_marg"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/traffic_over_reminid"
+                android:textSize="14dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical" />
+        </RelativeLayout>
+
+        <include layout="@layout/traffic_setting_devider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical" >
+        </RelativeLayout>
+
+        <include layout="@layout/traffic_setting_devider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical" >
+        </RelativeLayout>
+
+        <include layout="@layout/traffic_setting_devider" />
+    </LinearLayout>
+
+</LinearLayout>

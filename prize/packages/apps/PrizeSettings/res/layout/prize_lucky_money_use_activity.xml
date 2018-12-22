@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_lucky_money_notice_sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_lucky_money_notice_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_lucky_money_notice_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/tv_lucky_money_notice_sound_text"
+                android:textColor="#ff323232"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_lucky_money_notice_sound_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/tv_lucky_money_notice_sound_text_default"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/im_lucky_money_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/prize_lucky_money_sound_selector" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ll_lucky_money_notice_sound"
+            android:background="@drawable/dialog_title_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/red_packet_use_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_lucky_money_notice_sound"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red_packet_helper_text_state"
+            android:textColor="#ff323232"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_state_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red_packet_helper_text_state_1"
+            android:textColor="#ff969696"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_state_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red_packet_helper_text_state_2"
+            android:textColor="#ff969696"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_no_lucky_money_helper_solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/red_packet_use_state"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/prize_no_lucky_money_helper_solution_text"
+        android:textColor="@color/prize_no_lucky_money_helper_solution"
+        android:textSize="14sp" />
+
+</RelativeLayout>

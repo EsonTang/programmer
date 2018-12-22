@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false" >
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#21b5c0"
+        android:drawableLeft="@drawable/cloud_back_normal"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:onClick="onBackClk"
+        android:text="@string/register_kb_account_number"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textsize_large" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="75dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cloud_register_success_img" />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/prize_text_default"
+        android:textSize="@dimen/textsize_medium"
+        android:text="@string/register_success"/>
+
+    <TextView
+        android:id="@+id/prompt_id"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="@string/your_kb"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+	        android:id="@+id/completetn_id"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:text="@string/complete"
+	        android:textSize="@dimen/textsize_medium"
+	        android:background="@drawable/cloud_next_selector"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:onClick="onComplete"
+	        android:layout_alignParentBottom="true"
+	        android:textColor="@color/login_color"
+	        android:layout_marginBottom="45dp"
+        ></TextView>
+    </RelativeLayout>
+    
+
+</LinearLayout>

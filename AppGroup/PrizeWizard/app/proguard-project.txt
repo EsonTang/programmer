@@ -1,0 +1,127 @@
+#-dontwarn
+#-optimizationpasses 5
+#-dontusemixedcaseclassnames
+#-dontskipnonpubliclibraryclasses
+#-dontpreverify
+#-verbose
+#-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+#
+#-keep public class * extends android.support.v7.app.AppCompatActivity
+#-keep public class * extends android.app.Application
+#-keep public class * extends android.app.Service
+#-keep public class * extends android.content.BroadcastReceiver
+#-keep public class * extends android.content.ContentProvider
+#-keep public class * extends android.app.backup.BackupAgentHelper
+#-keep public class * extends android.preference.Preference
+#-keep public class com.android.vending.licensing.ILicensingService
+#
+#-keepclasseswithmembernames class * {
+#    native <methods>;
+#}
+#
+#-keepclasseswithmembers class * {
+#    public <init>(android.content.Context, android.util.AttributeSet);
+#}
+#
+#-keepclasseswithmembers class * {
+#    public <init>(android.content.Context, android.util.AttributeSet, int);
+#}
+#
+#-keepclassmembers class * extends android.support.v7.app.AppCompatActivity {
+#   public void *(android.view.View);
+#}
+#
+#-keepclassmembers enum * {
+#    public static **[] values();
+#    public static ** valueOf(java.lang.String);
+#}
+#
+#-keep class * implements android.os.Parcelable {
+#  public static final android.os.Parcelable$Creator *;
+#}
+#
+##------------------------------------------------------xutils
+#-dontwarn com.lidroid.xutils.**
+#-keep class com.lidroid.xutils.**{*;}
+#-keepattributes Signature
+#
+## mta
+#-keep class com.tencent.stat.**  {* ;}
+#-keep class com.tencent.mid.**  {* ;}
+#
+#-keep class com.prize.prizenavigation.**{*;}
+#-keep class com.prize.cloud.**{*;}
+#
+#
+## 保持 native 方法不被混淆
+#-keepclasseswithmembernames class * {
+#    native <methods>;
+#}
+#
+#-dontwarn rx.**
+##-dontwarn com.mediatek.**
+#-dontwarn android.support.v7.widget.**
+#-dontwarn org.codehaus.jackson.**
+#-dontwarn com.prize.cloud.widgets.**
+#
+#-keep class rx.** {*;}
+#-keep class com.mediatek.** {*;}
+#-keep class android.support.v7.widget.** {*;}
+#-keep class org.codehaus.jackson.** {*;}
+#-keep class com.prize.cloud.widgets.** {*;}
+#-keep class com.prize.cloud.task.pojo** {*;}
+#-keep class com.prize.cloud.bean.** {*;}
+#-keep class com.prize.cloud.** {*;}
+#
+##-----------------------------------------------------umeng
+#-keep public class com.prize.prizenavigation.R$*{
+#public static final int *;
+#}
+#-keepclassmembers enum * {
+#    public static **[] values();
+#    public static ** valueOf(java.lang.String);
+#}
+#
+##-----------------------------------------------------frecso
+## Keep our interfaces so they can be used by other ProGuard rules.
+## See http://sourceforge.net/p/proguard/bugs/466/
+#-keep,allowobfuscation @interface com.facebook.common.internal.DoNotStrip
+#
+## Do not strip any method/class that is annotated with @DoNotStrip
+#-keep @com.facebook.common.internal.DoNotStrip class *
+#-keepclassmembers class * {
+#    @com.facebook.common.internal.DoNotStrip *;
+#}
+#
+## Keep native methods
+#-keepclassmembers class * {
+#    native <methods>;
+#}
+#
+#-dontwarn okio.**
+#-dontwarn com.squareup.okhttp.**
+#-dontwarn okhttp3.**
+#-dontwarn javax.annotation.**
+#-dontwarn com.android.volley.toolbox.**
+#
+##-----------------------------------------------okhttputils
+#-dontwarn com.zhy.http.**
+#-keep class com.zhy.http.**{*;}
+#
+#
+##--------------------------------------------------okhttp
+#-dontwarn okhttp3.**
+#-keep class okhttp3.**{*;}
+#
+#
+##----------------------------------------------------okio
+#-dontwarn okio.**
+#-keep class okio.**{*;}
+#
+#-keepattributes Signature
+#-keepattributes InnerClasses
+#-keepattributes InnerClasses,EnclosingMethod
+#-keep
+#-keepclassmembers
+#-dontwarn
+#

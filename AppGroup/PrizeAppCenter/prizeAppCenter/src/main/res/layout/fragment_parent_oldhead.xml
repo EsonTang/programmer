@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="74dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relayout_head_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/headImg_id"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <com.prize.appcenter.ui.widget.CustomImageView
+            android:id="@+id/app_icon_id"
+            android:layout_width="@dimen/item_W"
+            android:layout_height="@dimen/item_W"
+            android:layout_below="@+id/headImg_id"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_icon"
+            android:transitionName="robot"
+            app:iv_radius="5dp" />
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_icon_id"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="30"
+                android:singleLine="true"
+                tools:text="name_id"
+                android:textColor="@color/text_color_404040"
+                android:textSize="@dimen/text_size_30" />
+
+            <com.prize.appcenter.ui.widget.FlowLayout
+                android:id="@+id/ourtag_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/attributeRlyt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/score_id"
+                style="@style/detail_tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="screo_id" />
+
+            <TextView
+                android:id="@+id/downloadTimes_id"
+                style="@style/detail_tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                tools:text="downloadTimes_id" />
+
+            <TextView
+                android:id="@+id/appSize_id"
+                style="@style/detail_tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                tools:text="appSize_id" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/safeableRlyt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/attributeRlyt_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detail_safe_icon" />
+
+            <TextView
+                android:id="@+id/safe_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/app_safe"
+                android:textColor="@color/text_color_009616"
+                android:textSize="@dimen/text_size_min" />
+
+            <ImageView
+                android:id="@+id/have_ad_icon_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/detail_safe_icon" />
+
+            <TextView
+                android:id="@+id/ad_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text_color_3bb25d"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

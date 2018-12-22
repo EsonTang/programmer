@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:text="@string/detail_today_txt"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/medium_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_separator_view_height"
+        android:background="@color/detail_separator_view_color" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <com.prize.weather.view.HourWeatherLayout
+            android:id="@+id/hourweatherLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_separator_view_height"
+        android:background="@color/detail_separator_view_color"  />
+
+    <ListView
+        android:id="@+id/weather_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/viewStyle"
+        android:dividerHeight="@dimen/weather_list_divider_height"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+    
+    <LinearLayout
+        android:id="@+id/weather_future_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_separator_view_height"
+        android:background="@color/detail_separator_view_color"  />
+
+    <!-- para -->
+	<include layout="@layout/weather_fragment_para"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_separator_view_height"
+        android:background="@color/detail_separator_view_color" />
+
+	<!-- air quality -->
+	<include layout="@layout/weather_fragment_airquality"/>
+           
+	<View
+		android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_separator_view_height"
+        android:background="@color/detail_separator_view_color" />
+
+	<!-- Index of living -->
+    <include layout="@layout/weather_fragment_indexofliving"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_separator_view_height"
+        android:background="@color/detail_separator_view_color"  />
+
+</LinearLayout>

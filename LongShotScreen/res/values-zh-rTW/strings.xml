@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  ~ Copyright (C) 2013 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+   -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+      <string name="app_name">超级截屏</string>
+    <string name="action_settings">設置</string>
+    <string name="scroll_shot">長截屏</string>
+    <string name="funny_shot">趣味截屏</string>
+    <string name="screen_record">屏幕錄制</string>
+    <string name="nextpage">下壹屏</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="rect_shot">矩形截屏</string>
+    <string name="lasso_shot">套索截屏</string>
+    <string name="daub_shot">塗鴉截屏</string>
+    <string name="redo">重做</string>
+    <string name="undo">撤銷</string>
+    <string name="exit">退出</string>
+    <string name="scrawl">塗鴉</string>
+    <string name="app_restrict_capture_screen">由於應用限制，該界面無法截屏</string>
+    <string name="drag_to_select_capture_area">以拖拽方式選取截屏窗口</string>
+    <string name="not_support_screen_orientation_change">截屏過程中不支持橫豎屏切換</string>
+    <string name="screenshot_saved">已捕獲屏幕截圖</string>
+    <string name="screenshot_saved_to_tf_card">文件已保存至“手機存儲/超級截屏”文件夾中。</string>
+    <string name="screenshot_saved_to_sd_card">文件已保存至“SD卡/超級截屏”文件夾中。</string>
+    <string name="lasso_guide">畫出截屏區域開始套索截屏</string>
+    <string name="scrollcapture_is_running">長截屏正在運行</string>
+    <string name="scrollcapture_is_saving_please_wait">當前的長截屏正在保存，請稍侯。</string>
+    <string name="hit_the_bottom">滑到底了</string>
+    <string name="content_un_extended">該界面不支持長截屏</string>
+    <string name="maximum_to_ten_pages">最多截取10屏</string>
+    <string name="saving">正在保存...</string>
+    <string name="screenshot_saving">正在保存屏幕截圖…</string>
+    <string name="hava_not_start_daub">您還沒有塗，請塗後再點擊保存。</string>
+    <string name="move">移動</string>
+    
+    <string name="turn_off_long_screenshots">請先退出長截屏</string>
+    <string name="turn_off_interest_screenshots">請先退出趣味截屏</string>
+    <string name="shot_error_tips">截屏失敗，請重試</string>
+    
+</resources>

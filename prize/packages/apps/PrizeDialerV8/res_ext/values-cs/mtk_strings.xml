@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">IP volání  <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g>  </string>
+    <string name="select_account">"Výběr účtu"</string>
+    <string name="all_accounts">"Všechny účty"</string>
+    <string name="call_log_via_sim_name_notice">PROTOKOLY VOLÁNÍ PROSTŘEDNICTVÍM \"<xliff:g id="sim_name">%s</xliff:g>\"</string>
+    <string name="imei_invalid">Neplatné</string>
+    <string name="conf_call_member_list">Seznam členů</string>
+    <string name="conf_call_participant_answered">Odpovězeno</string>
+    <string name="conf_call_participant_missed">"Zmeškané"</string>
+    <string name="calls_over_wifi">VoláníbudouvedenapřesWi-Fi</string>
+    <string name="connect_to_wifi">Připojit k Wi-Fi pro volání</string>
+    <string name="wfc_notification_summary">Klepnutímzdepřejdetenapreference</string>
+    <string name="wfc_notification_summary_fail">Klepnutím zde zobrazíte dostupné sítě</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Volání SIP"</string>
+    <string name="snackbar_number_unblocked_failed">Odblokování <xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> se nezdařilo</string>
+</resources>

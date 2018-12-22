@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- prize-uninstall-xiaxuefeng-2015-8-3-start -->
+    <!-- Uninstall -->
+    <string name="uninstall_success">uninstall apk succeed</string>
+    <string name="uninstall_failed">uninstall apk failed</string>
+    <!-- prize-uninstall-xiaxuefeng-2015-8-3-end -->
+    <!-- General -->
+    <skip />
+    <!-- Application name -->
+    <string name="application_name">dido launcher</string>
+    <!-- Accessibility-facing application name -->
+    <string name="home">Home</string>
+    <!-- Name for all applications running as this uid. -->
+    <string name="uid_name">Android Core Apps</string>
+    <!-- Default folder name -->
+    <!-- PRIZE-default_name-xiaxuefeng-2015-7-2-start -->
+    <!-- <string name="folder_name" translatable="false"></string> -->
+    <string name="folder_name" translatable="false">Folder</string>
+    <!-- PRIZE-default_name-xiaxuefeng-2015-7-2-end -->
+    <!-- Button label on Wallpaper picker screen; user selects this button to set a specific wallpaper -->
+    <string name="wallpaper_instructions">Set wallpaper</string>
+    <!-- Shown when wallpapers are selected in Wallpaper picker -->
+    <!--
+         String indicating how many media item(s) is(are) selected
+            eg. 1 selected [CHAR LIMIT=30]
+    -->
+    <plurals name="number_of_items_selected">
+        <item quantity="zero">%1$d selected</item>
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <!--
+         Accessibility string used as a label for a particular wallpaper in the Wallpaper Picker list.
+         e.g. "Wallpaper 3 of 10"
+    -->
+    <string name="wallpaper_accessibility_name">Wallpaper %1$d of %2$d</string>
+    <!-- Accessibility string used to announce that a wallpaper has been selected. -->
+    <string name="announce_selection">Selected <xliff:g id="label" example="Wallpaper 3 of 10">%1$s</xliff:g></string>
+
+    <!-- Label on button to delete wallpaper(s) -->
+    <string name="wallpaper_delete">Delete</string>
+    <!-- Label on button in Wallpaper Picker to pick an image -->
+    <string name="pick_image">Pick image</string>
+    <!-- Option in "Select wallpaper from" dialog box -->
+    <string name="pick_wallpaper">Wallpapers</string>
+    <!-- Title of activity for cropping wallpapers -->
+    <string name="crop_wallpaper">Crop wallpaper</string>
+    <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none] -->
+    <string name="activity_not_found">App isn\'t installed.</string>
+    <!-- Labels for the tabs in the customize drawer -->
+    <string name="widgets_tab_label">Widgets</string>
+    <string name="widget_adder">Widgets</string>
+    <string name="toggle_weight_watcher">Show Mem</string>
+
+    <!-- AppsCustomize pane -->
+    <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_widget_to_add">Touch &amp; hold to pick up a widget.</string>
+    <!--
+         Market button text.  The market button text is removed in Launcher.java 
+         in the Phone UI. [CHAR LIMIT=32]
+    -->
+    <string name="market">Shop</string>
+    <!-- The format string for the dimensions of a widget in the drawer -->
+    <!-- There is a special version of this format string for Farsi -->
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+
+    <!-- External-drop widget pick label format string [CHAR_LIMIT=25] -->
+    <string name="external_drop_widget_pick_format" translatable="false">%1$s (%2$d \u00d7 %3$d)</string>
+    <!--
+         External-drop widget error string.  This is the error that is shown
+         when you drag and item into the homescreen and it is unable to fit,
+         or an error is encountered. [CHAR_LIMIT=50]
+    -->
+    <string name="external_drop_widget_error">Couldn\'t drop item on this Home screen.</string>
+    <!--
+         External-drop widget pick title.  This is shown as the title of the
+         dialog which allows you to pick which widgets to handle a particular
+         drop if there are multiple choices. [CHAR_LIMIT=35]
+    -->
+    <string name="external_drop_widget_pick_title">Choose widget to create</string>
+
+    <!-- Folders -->
+    <skip />
+    <!-- Label of Folder name field in Rename folder dialog box -->
+    <string name="rename_folder_label">Folder name</string>
+    <!-- Title of dialog box -->
+    <string name="rename_folder_title">Rename folder</string>
+    <!-- Buttons in Rename folder dialog box -->
+    <string name="rename_action">OK</string>
+    <!-- Buttons in Rename folder dialog box -->
+    <string name="cancel_action">Cancel</string>
+
+    <!-- Shortcuts -->
+    <skip />
+    <!-- Title of dialog box -->
+    <string name="menu_item_add_item">Add to Home screen</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all apps -->
+    <string name="group_applications">Apps</string>
+    <!--
+Options in "Add to Home" dialog box; Title of the group containing the list of all shortcut
+s
+    -->
+    <string name="group_shortcuts">Shortcuts</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all widgets/gadgets -->
+    <string name="group_widgets">Widgets</string>
+    <!-- Error message when user has filled all their home screens -->
+    <string name="completely_out_of_space">No more room on your Home screens.</string>
+    <!-- Error message when user has filled a home screen -->
+    <string name="out_of_space">No more room on this Home screen.</string>
+    <!-- Error message when user has filled the hotseat -->
+    <string name="hotseat_out_of_space">No more room on the hotseat.</string>
+    <!-- Error message when user tries to drop an invalid item on the hotseat -->
+    <string name="invalid_hotseat_item">This widget is too large for the hotseat.</string>
+    <!-- Message displayed when a shortcut is created by an external application -->
+    <string name="shortcut_installed">Shortcut \"<xliff:g id="name" example="Browser">%s</xliff:g>\" created.</string>
+    <!-- Message displayed when a shortcut is uninstalled by an external application -->
+    <string name="shortcut_uninstalled">Shortcut \"<xliff:g id="name" example="Browser">%s</xliff:g>\" was removed.</string>
+    <!-- Message displayed when an external application attemps to create a shortcut that already exists -->
+    <string name="shortcut_duplicate">Shortcut \"<xliff:g id="name" example="Browser">%s</xliff:g>\" already exists.</string>
+
+    <!-- Title of dialog when user is selecting shortcut to add to homescreen -->
+    <string name="title_select_shortcut">Choose shortcut</string>
+    <!-- Title of dialog when user is selecting an application to add to homescreen -->
+    <string name="title_select_application">Choose app</string>
+
+    <!-- All applications label -->
+    <string name="all_apps_button_label">Apps</string>
+    <!--
+         Label for button in all applications label to go back home (to the workspace / desktop)
+         for accessibilty (spoken when the button gets focus).
+    -->
+    <string name="all_apps_home_button_label">Home</string>
+    <!--
+         Label for trash icon on workspace. Meant to communicate the idea of removing the
+         icon/widget from the home screen, but not permanently. [CHAR_LIMIT=30]
+    -->
+    <string name="delete_zone_label_workspace">Remove</string>
+    <!--
+         Label for trash icon in All Apps. The icon/widget will become completely unavailable on the
+         device. [CHAR_LIMIT=30]
+    -->
+    <string name="delete_zone_label_all_apps">Uninstall</string>
+
+    <!-- Label for delete drop target. [CHAR_LIMIT=30] -->
+    <string name="delete_target_label">Remove</string>
+    <!-- Label for uninstall drop target. [CHAR_LIMIT=30] -->
+    <string name="delete_target_uninstall_label">Uninstall</string>
+    <!-- Label for the info icon. [CHAR_LIMIT=30] -->
+    <string name="info_target_label">App info</string>
+
+    <!-- Accessibility: Search button -->
+    <string name="accessibility_search_button">Search</string>
+    <!-- Accessibility: Voice Search button -->
+    <string name="accessibility_voice_search_button">Voice Search</string>
+    <!-- Accessibility: AllApps button -->
+    <string name="accessibility_all_apps_button">Apps</string>
+    <!-- Accessibility: Delete button -->
+    <string name="accessibility_delete_button">Remove</string>
+
+    <!--
+         Label for trash icon in All Apps, when an updated system app is selected. The update will
+         be uninstalled. [CHAR_LIMIT=30]
+    -->
+    <string name="delete_zone_label_all_apps_system_app">Uninstall update</string>
+
+    <!-- URL pointing to help text. If empty, no link to help will be created [DO NOT TRANSLATE] -->
+    <string name="help_url" translatable="false"></string>
+
+    <!-- Strings for the contextual action bar (CAB) in All Apps -->
+    <skip />
+    <!--
+         Describes the button for uninstalling the currently selected application.
+         Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none]
+    -->
+    <string name="cab_menu_delete_app">Uninstall app</string>
+    <!--
+         Describes the button for getting details/info about currently selected application.
+         Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none]
+    -->
+    <string name="cab_menu_app_info">App details</string>
+    <!-- Appears in the CAB when an app is selected in All Apps or Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_app_selection_text">1 app selected</string>
+    <!-- Appears in the CAB when a widget is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_widget_selection_text">1 widget selected</string>
+    <!-- Appears in the CAB when a folder is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_folder_selection_text">1 folder selected</string>
+    <!-- Appears in the CAB when a shortcut is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_shortcut_selection_text">1 shortcut selected</string>
+
+    <!-- Permissions: -->
+    <skip />
+    <!-- Permission short label -->
+    <string name="permlab_install_shortcut">install shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_install_shortcut">Allows an app to add
+        shortcuts without user intervention.</string>
+    <!-- Permission short label -->
+    <string name="permlab_uninstall_shortcut">uninstall shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_uninstall_shortcut">Allows the app to remove
+        shortcuts without user intervention.</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_settings">read Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">Allows the app to read the settings and
+        shortcuts in Home.</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">write Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">Allows the app to change the settings and
+        shortcuts in Home.</string>
+
+    <!-- Widgets: -->
+    <skip />
+
+    <!-- Text to show user in place of a gadget when we can't display it properly -->
+    <string name="gadget_error_text">Problem loading widget</string>
+
+    <!-- Text to inform the user that they can't uninstall a system application -->
+    <string name="uninstall_system_app_text">This is a system app and can\'t be uninstalled.</string>
+
+    <!-- Title of the Android Dreams (screensaver) module -->
+    <string name="dream_name">Rocket Launcher</string>
+
+    <!-- Default folder title -->
+    <string name="folder_hint_text">Unnamed Folder</string>
+
+    <!-- Accessibility -->
+    <skip />
+
+    <!-- The format string for Workspace descriptions [CHAR_LIMIT=none] -->
+    <string name="workspace_description_format">Home screen %1$d</string>
+
+    <!-- The format string for default page scroll text [CHAR_LIMIT=none] -->
+    <string name="default_scroll_format">Page %1$d of %2$d</string>
+    <!-- The format string for Workspace page scroll text [CHAR_LIMIT=none] -->
+    <string name="workspace_scroll_format">Home screen %1$d of %2$d</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_apps_scroll_format">Apps page %1$d of %2$d</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_widgets_scroll_format">Widgets page %1$d of %2$d</string>
+
+    <!-- Clings -->
+    <!-- The title text for the workspace cling [CHAR_LIMIT=60] -->
+    <string name="first_run_cling_title">Welcome!</string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <string name="first_run_cling_description">Make yourself at home.</string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <string name="first_run_cling_custom_content_hint"></string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <string name="first_run_cling_search_bar_hint"></string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <string name="first_run_cling_create_screens_hint">Create more screens for apps and folders</string>
+    <!-- The title text for the workspace cling [CHAR_LIMIT=60] -->
+    <string name="workspace_cling_title">Organize your space</string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=160] -->
+    <string name="workspace_cling_move_item">Touch &amp; hold background to manage wallpaper, widgets and settings.</string>
+    <!-- The title text for the All Apps cling [CHAR_LIMIT=60] -->
+    <string name="all_apps_cling_title">Choose some apps</string>
+    <!-- The description of how to pick up and add an item to the workspace [CHAR_LIMIT=160] -->
+    <string name="all_apps_cling_add_item">To add an app to your Home screen, touch &amp; hold it.</string>
+    <!-- The title text for the Folder cling [CHAR_LIMIT=60] -->
+    <string name="folder_cling_title">Here\'s a folder</string>
+    <!-- The description of how to create a folder [CHAR_LIMIT=160] -->
+    <string name="folder_cling_create_folder">To create one like this, touch &amp; hold an app, then move it over another.</string>
+    <!-- The text on the button to dismiss a cling [CHAR_LIMIT=30] -->
+    <string name="cling_dismiss">OK</string>
+    <!-- Error message on dummy custom cling layout [DO NOT TRANSLATE] -->
+    <string name="dummy_custom_cling_error_message">Error: custom workspace layout passed in but custom cling was not overwritten</string>
+
+    <add-resource name="default_folder_name" type="string" />
+
+    <!-- Folder accessibility -->
+    <!-- The format string for when a folder is opened, speaks the dimensions -->
+    <string name="folder_opened">Folder opened, <xliff:g id="width" example="5">%1$d</xliff:g> by <xliff:g id="height" example="3">%2$d</xliff:g></string>
+    <!-- Instruction that clicking outside will close folder -->
+    <string name="folder_tap_to_close">Touch to close folder</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <string name="folder_tap_to_rename">Touch to save rename</string>
+    <!-- Indication that folder closed -->
+    <string name="folder_closed">Folder closed</string>
+    <string name="folder_name_toast">File name has reached the maximum length</string>
+    <!-- Folder renamed format -->
+    <string name="folder_renamed">Folder renamed to <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+    <!-- Folder name format -->
+    <string name="folder_name_format">Folder: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+
+    <!-- Strings used in device overlays -->
+
+
+    <!-- Clings -->
+    <!-- Dummy string [CHAR_LIMIT=40] -->
+    <string name="custom_workspace_cling_title_1"></string>
+    <!-- Dummy string [CHAR_LIMIT=60] -->
+    <string name="custom_workspace_cling_description_1"></string>
+    <!-- Dummy string [CHAR_LIMIT=40] -->
+    <string name="custom_workspace_cling_title_2"></string>
+    <!-- Dummy string [CHAR_LIMIT=60] -->
+    <string name="custom_workspace_cling_description_2"></string>
+
+    <!-- Debug-only activity name. [DO NOT TRANSLATE] -->
+    <string name="debug_memory_activity">* HPROF</string>
+
+    <!-- Strings for the customization mode -->
+    <!-- Text for widget add button -->
+    <string name="widget_button_text">Widgets</string>
+    <!-- Text for wallpaper change button -->
+    <string name="wallpaper_button_text">Wallpapers</string>
+    <!-- Text for settings button -->
+    <string name="settings_button_text">Settings</string>
+    <string name="folder_name_google">"Google"</string>
+    <string name="themeset_button_text">"Theme"</string>
+    <string name="download_button_text">"download"</string>
+    <string name="more"> " More" </string>
+    <string name="easy_launcher"> " Easy Launcher" </string>
+    <string name="huawei"> "China wind" </string>
+    <string name="apple"> "Apple elegant" </string>
+    <string name="moxiu"> "magic millet" </string>
+    <string name="default_theme"> "Default" </string>
+    <string name="oppo">"youth fashion"</string>
+    <string name="def">"defaut"</string>
+    <string name="swirl">"swirl"</string>
+    <string name="rotateY">"rotateY"</string>
+    <string name="rotateX">"rotateX"</string>
+    <string name="fadeout">"fadeout"</string>
+    <string name="random">"random"</string>
+
+    <!--
+      <item>Normal</item> <item>无转场效果</item>
+      <item>Cross</item> <item>十字翻转</item>
+      <item>c</item><item>翻页</item>
+      <item>Cube(in)</item><item>盒子(内)</item>
+      <item>Cube(out)</item><item>盒子(外)</item>
+      <item>Carousel(left)</item><item>旋转木马(左)</item>
+      <item>Carousel(right)</item> <item>旋转木马(右)</item>
+    -->
+
+    <string name="Layout_5">"5x4"</string>
+    <string name="Layout_4">"4x4"</string>
+    <string name="normals">"classic"</string>
+    <string name="stack">"stack"</string>
+    <string name="page">"page"</string>
+    <string name="zoom_in">"zoom in"</string>
+    <string name="cube_out">"box (outer)"</string>
+    <string name="carousel_l">"merry go round (left)"</string>
+    <string name="carousel_r">"merry go round (right)"</string>
+    <string name="windmill">"Windmill"</string>
+    <!-- add by zhouerlong -->
+    <string name="edit">"Edit model"</string>
+    <string name="settings">"System settings"</string>
+    <string name="manage_app">"Manage apps"</string>
+    <string name="effects">"effects"</string>
+    <string name="apps_animation">"animation"</string>
+    <!-- add by zhouerlong -->
+    <!-- M by zhouerlong -->
+
+    <string name="themeshow_button_text">"ThemeShow"</string>
+    <string name="theme_is_change">"          The theme is changing         "</string>
+
+    <!-- Values for Launcher特效 -->
+    <string-array name="zyc_theme_effects">
+
+        <!-- 普通 仿三星 -->
+        <item>Default</item>
+        <!-- 大风车 -->
+        <item>Windmill</item>
+        <!-- 滚来滚去 -->
+        <item>Turn</item>
+        <!-- 立方体 -->
+        <!-- <item>Cube</item> -->
+    </string-array>
+
+    <string name="folder_name_tools">"Tools"</string>
+    <string name="folder_name_music">"Videos and Audios"</string>
+    <string name="folder_name_network">"Network"</string>
+    <string name="folder_name_games">"Games"</string>
+    <string name="set_cycle_slide">set cycle slide</string>
+    <string name="set_folder_effect">set Folder Open Effect</string>
+    <string name="launcher_settings">"Desktop settings"</string>
+    <string name="menu_manage_apps">Manage apps</string>
+
+    <string-array name="set_folder_effect_entries">
+        <item>Glass effect</item>
+        <item>The Golden effect</item>
+    </string-array>
+    <string-array name="set_folder_effect_entries_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    
+    
+    
+    <string-array name="applytype">
+        <item>Lock screen</item>
+        <item>desktop</item>
+        <item>all apply</item>
+    </string-array>
+
+    <string name="set_folder_effect_summary">This option to select the folder display effect</string>
+    <string name="default_values_folder_effect">1</string>
+    <string name="disband">disband</string>
+
+    <!-- xieweiwei_20150309_add_begin -->
+    <string name="low_battery_for_finish">Low battery, the open failed</string>
+    <!-- xieweiwei_20150309_add_end -->
+    
+    <string name="dialog_loading">Please wait while loading...</string>
+    
+    <string name="search_hint">Search applications contact SMS...</string>
+    <string name="recent">Recent task</string>
+    <string name="contacts">Contacts</string>
+    <string name="mms">Mms</string>
+    <string name="notes">Notes</string>
+    <string name="apps">Apps</string>
+    <string name="music">Music</string>
+    <string name="internet">Internet search</string>
+    <string name="usb_owned">USB is owned, subject reduction</string>
+    <string name="alignment">Alignment</string>
+    <string name="alignment_up">Alignment up</string>
+    <string name="batch_edit_icon">Batch edit Icon</string>
+    <string name="alignment_down">Downward alignment</string>
+    <string name="gallery">Gallery</string>
+        <string name="installing">installing</string>
+        <string name="waiting">"waiting"</string>
+    <string name="show_manager_icon">"长按图标可管理应用"</string>
+    <string name="uninstall_reminder">"After you uninstall all of the data will be deleted"</string>
+    <string name="shake_reminder">"Shake can automatically align icon"</string>
+    
+    <!-- left page start fanjunchen -->
+    <string name="web_error">"Network error！"</string>
+    <string name="web_error_reason">"Reasons：\nCan't connect network\nThe page not existed or destroyed."</string>
+    <string name="web_reload">"Refresh"</string>
+    <string name="set_network">"Set Net"</string>
+    <string name="loading">"loading&#8230;"</string>
+    
+    <string name="str_manager_card">"Manage Card"</string>
+    <string name="str_normal_set_add">"Set normal address"</string>
+    <string name="str_version_check">"Check Version"</string>
+    <string name="str_local_version">"Current Version"</string>
+    <string name="str_feedback">"Feedback"</string>
+    <string name="str_no_img">"No Picture"</string>
+
+    <string name="str_loc_ing">"locating&#8230;"</string>
+    <string name="str_loc_fail">"Locate failed!"</string>
+    <string name="str_loc_fail_nonet">"Locate failed, Pls connect network"</string>
+    <string name="str_search_hint">"Search you want"</string>
+    
+    <string name="str_more">"More"</string>
+    <string name="google_folder_title">"Google"</string>
+    
+    <string name="str_expand">"Expand"</string>
+    <string name="str_unexpand">"Unexpand"</string>
+    
+    <string name="feedback_content">"Question describe"</string>
+    <string name="pls_input_feedback">请详细描述你遇到的问题</string>
+    <string name="fedbck_contact_tip">反馈附图(可填)</string>
+    <string name="send_fedbck_tip">感谢您的意见和建议，内容已发送~</string>
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_msg_empty">请输入您的建议或者疑问</string>
+    <string name="feedback_send">提交</string>
+    <string name="nonet_connect">暂无网络连接</string>
+    <string name="questing">请求中,请不要重复操作</string>
+    <string name="committing">提交中&#8230;</string>
+    
+    <string name="str_complete">"Complete"</string>
+    
+    <string name="str_home">"Home"</string>
+    <string name="str_company">"Company"</string>
+    
+    <string name="str_fill_home">"请填写家里地址!"</string>
+    <string name="str_fill_company">"请填写公司地址!"</string>
+    
+    <string name="str_search">"Search"</string>
+    
+    <string name="str_search_net">"Search Network"</string>
+    
+    <string name="str_recent_contact">"Recent called"</string>
+    <string name="str_contact">"Contact"</string>
+    
+    <string name="str_used_app">"常用应用"</string>
+    <string name="str_app">"App"</string>
+    <string name="str_tool">Tools</string>
+	<string name="RecommendedApp">RecommendedApp</string>
+    <string name="news">news</string>
+    <string name="game">Game</string>
+    
+    <string name="str_channel">"Channel"</string>
+    <string name="str_add_channel">"Add/Del Channel"</string>
+    
+    <string name="click_update_to_install">安装包已经准备好了</string>
+    <string name="current_net_is_nowifi">当前为移动数据流量,建议切换至WIFI环境更新！</string>
+    <string name="new_version">there is new version on the line</string>
+    <string name="update_remind">reminber to update timely~</string>
+    <string name="after_do">以后再说</string>
+    <string name="now_update">立即更新</string>
+    <string name="net_error">网络错误，请检查网络</string>
+    <string name="new_version_name">→   %1$s</string>
+    <string name="str_new">"New"</string>
+    <string name="str_add_card">"添加卡片"</string>
+    <string name="str_drag_hint">"按住右边可拖动排序"</string>
+    <string name="str_navi_building">"建设中,敬请期待!"</string>
+    <string name="str_no_update">"暂无版本更新!"</string>
+    <string name="str_left_login">"Login"</string>
+      <!--   <string name="wechat_clone">"WeChat Clone"</string>
+        <string name="qq_clone">"QQ Clone"</string>
+        <string name="weibo_clone">"Weibo Clone"</string> -->
+        <string name="wechat_clone">"微信分身"</string>
+        <string name="qq_clone">"QQ分身"</string>
+	<string name="reason_class">"问题类型(必填)"</string>
+   <string name="pls_select_reason_class">"请选择您的问题类型"</string>
+   <string name="contact_hint">"您的联系方式:邮箱/QQ/手机号(选填)"</string>
+   
+   <string name="title_feed3">"用起来卡,容易崩溃"</string>
+    <string name="title_feed4">"搜索问题"</string>
+    <string name="title_feed5">"其他"</string>
+    <string name="title_feed6">"新功能建议"</string>
+    
+    <string name="sub_title_feed4">"操作的时候卡\,不流畅,应用市场崩溃了,长时间出现白屏"</string>
+    <string name="sub_title_feed5">"找不到想要的结果,想要的结果排在了后面,出现了相同的结果无法选择,搜索结果慢,其他搜索问题"</string>
+    <string name="sub_title_feed6">"无法退出\,总是在后台运行,连不上网\,加载不了,控件清理遇到问题"</string>
+    <string name="pl_select_class">请选择反馈类型</string>
+    <string name="str_ok">ok</string>
+    <string name="tip">hint</string>
+    <string name="caution_content">您已编辑，是否舍弃本条反馈？</string>
+    
+    <string name="str_recent_use">常用</string>
+    
+    <string name="str_del_from">Del</string>
+    <string name="str_add_to">Add</string>
+    <string name="str_added_hint_title">"已经添加至首页"</string>
+    <string name="app_recommend">"应用推荐"</string>
+    <string name="reader">"阅读资讯"</string>
+    <string name="video">"影音天地"</string>
+    <string name="video_reader">"reader"</string>
+    
+     <string name="wallpaper_dlg_title">Wallpaper application</string>
+     <string name="str_left_account">"Account"</string>
+     <string name="str_left_no_login">"pls login"</string>
+   
+    <!-- left page end  -->
+    
+    <!-- simple launcher start -->
+    <string name="simple_add_contact">"Add Contact"</string>
+    
+    <string name="prize_lunar_fest_chunjie">Spring Festival </string>
+    <string name="prize_lunar_fest_duanwu"> Dragon Boat Festival </string>
+    <string name="prize_lunar_fest_zhongqiu"> Mid Autumn Festival </string>
+    <string name="prize_lunar_fest_yuandan"> New Year </string>
+    <string name="prize_lunar_fest_laodong"> labor day </string>
+    <string name="prize_lunar_fest_guoqing"> National Day </string>
+    <string name="prize_lunar_fest_yuanxiao"> Lantern Festival</string>
+    <string name="prize_lunar_fest_qixi"> qixi</string>
+    <string name="prize_lunar_fest_chongyang"> Chongyang Festival </string>
+    <string name="prize_lunar_fest_qingnian"> Youth Day </string>
+    <string name="prize_lunar_fest_qingren"> Valentine </string>
+    <string name="prize_lunar_fest_funv">women\'s Day </string>
+    <string name="prize_lunar_fest_zhishu"> arbor </string>
+    <string name="prize_lunar_fest_yuren"> April </string>
+    <string name="prize_lunar_fest_ertong"> children\'s Day</string>
+    <string name="prize_lunar_fest_jiandang"> founding section </string>
+    <string name="prize_lunar_fest_jianjun"> army </string>
+    <string name="prize_lunar_fest_jiaoshi"> teachers\' Day</string>
+    <string name="prize_lunar_fest_shengdan"> Christmas </string>
+    <string name="prize_lunar_leap" translatable="false">闰</string>
+    <string name="prize_tc_lunar_leap" translatable="false">閏</string>
+    <string name="prize_lunar_tenth_day" translatable="false">初十</string>
+    <string name="prize_lunar_twentieth_day" tanslatable="false">二十</string>
+    <string name="prize_lunar_thirtieth_day" translatable="false">三十</string>
+    <string name="prize_tc_lunar_fest_chunjie">Spring Festival </string>
+    <string name="prize_tc_lunar_fest_duanwu">The Dragon Boat Festival</string>
+    <string name="prize_tc_lunar_fest_zhongqiu">The Mid Autumn Festival</string>
+    <string name="prize_lunar_detail_info_fmt1" translatable="false">"，农历%s"</string>
+    <string name="prize_lunar_detail_info_fmt2" formatted="false" translatable="false">"，﻿农历%s – %s"</string>
+    <string name="prize_lunar_info_fmt" translatable="false">"，%s"</string>
+   	<string name="prize_lunar_year" translatable="false">年</string>
+    <string name="prize_lunar_month" translatable="false">月</string>
+    <string name="prize_lunar_day" translatable="false">日</string>
+    <string name="prize_create_event" translatable="false">新建事件</string>
+    <string name="prize_button_cancel" translatable="false">取消</string>
+    <string name="prize_button_done" translatable="false">确定</string>
+    <string name="prize_lunar_hours">hours</string>
+    <string name="prize_lunar_minuts">minuts</string>
+    
+    <string name="simple_temp_l_h">"%1$s ~ %2$s℃"</string>
+    
+    <string name="simple_lu_year_date">"%1$s   %2$s"</string>
+    
+    <string name="simple_all_app">"Apps"</string>
+    <string name="simple_settings">"Settings"</string>
+    <string name="simple_sys_settings">"Sys Settings"</string>
+    <string name="simple_desk_manager">"Desktop Manager"</string>
+    <string name="simple_exit_desk">"Exit Desktop"</string>
+    <string name="simple_safe_lock">"Safe"</string>
+    <string name="simple_safe_lock_hint">"Locked, you can't change contents, so is safe."</string>
+    <string name="simple_locked">"Locked"</string>
+    <string name="simple_unlock">"Unlock"</string>
+    <string name="update_information">"Desktop has the latest version, please update"</string>
+    <!-- simple launcher end -->
+    
+    
+    <!-- 下载 -->
+    
+        <string name="installing">Installing</string>
+        <string name="waiting">"Waiting"</string>
+        <string name="downloading">"Download"</string>
+        <string name="pause">"Pause"</string>
+        <string name="like">"You like"</string>
+        <string name="empty">"No data"</string>
+    <!--  下载-->
+</resources>

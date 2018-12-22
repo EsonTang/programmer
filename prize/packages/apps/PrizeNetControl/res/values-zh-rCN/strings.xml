@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">应用网络控制</string>
+	<string name="pkg_list">全部应用</string>
+	
+	<string name="g_string">移动数据</string>
+	<string name="w_string">WLAN</string>
+	<string name="layout_title">应用网络控制</string>
+</resources>

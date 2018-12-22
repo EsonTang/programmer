@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/fingerprint_unlock_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/fingerprint_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/density_70dp"
+            android:background="@drawable/b_00"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/fp_finger_prompt_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fingerprint_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/density_35dp"
+            android:text="@string/has_set_fp"
+            android:textColor="@color/app_unlock_text_color"
+            android:textSize="@dimen/big_front" />
+
+        <TextView
+            android:id="@+id/fp_finger_prompt_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fp_finger_prompt_first"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/density_5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/use_fp_to_correction"
+            android:textColor="@color/app_unlock_text_color"
+            android:textSize="@dimen/big_front" />
+
+        <TextView
+            android:id="@+id/password_unlock_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/density_10dp"
+            android:layout_marginLeft="@dimen/density_20dp"
+            android:layout_marginRight="@dimen/density_20dp"
+            android:background="@drawable/app_unlock_button_selector"
+            android:gravity="center"
+            android:text="@string/unlock_by_password"
+            android:textColor="@color/app_unlock_text_color"
+            android:textSize="@dimen/normal_front" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password_unlock_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/password_display_rl"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/key_board_layout_port"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/password_error_prompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/password_iamge_display_rl"
+                android:layout_marginBottom="@dimen/density_5dp"
+                android:layout_marginLeft="@dimen/density_20dp"
+                android:layout_marginRight="@dimen/density_20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/please_input_password"
+                android:textColor="@color/app_unlock_text_color"
+                android:textSize="@dimen/normal_front"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/password_iamge_display_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/first_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/password_has_not_input" />
+
+                <TextView
+                    android:id="@+id/second_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/density_5dp"
+                    android:layout_toRightOf="@+id/first_password"
+                    android:background="@drawable/password_has_not_input" />
+
+                <TextView
+                    android:id="@+id/third_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/density_5dp"
+                    android:layout_toRightOf="@+id/second_password"
+                    android:background="@drawable/password_has_not_input" />
+
+                <TextView
+                    android:id="@+id/four_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/density_5dp"
+                    android:layout_toRightOf="@+id/third_password"
+                    android:background="@drawable/password_has_not_input" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.goodix.util.KeyBoardLayoutPort
+            android:id="@+id/key_board_layout_port"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/density_245dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_color"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:padding="1px" >
+
+            <TextView
+                android:id="@+id/digit_1"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:background="@drawable/op_digit_prize_selector_port"
+                android:gravity="center"
+                android:text="@string/digit_1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/key_board_front" />
+
+            <TextView
+                android:id="@+id/digit_2"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:background="@drawable/op_digit_prize_selector_port"
+                android:gravity="center"
+                android:text="@string/digit_2"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/key_board_front" />
+
+            <TextView
+                android:id="@+id/digit_3"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginBottom="1px"
+                android:background="@drawable/op_digit_prize_selector_port"
+                android:gravity="center"
+                android:text="@string/digit_3"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/key_board_front" />
+
+            <TextView
+                android:id="@+id/digit_4"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:background="@drawable/op_digit_prize_selector_port"
+                android:gravity="center"
+                android:text="@string/digit_4"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/key_board_front" />
+
+            <TextView
+                android:id="@+id/digit_5"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:background="@drawable/op_digit_prize_selector_port"
+                android:gravity="center"
+                android:text="@string/digit_5"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/key_board_front" />
+
+            <TextView
+                android:id="@+id/digit_6"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginBottom="1px"
+                android:background="@drawable/op_digit_prize_selector_port"
+                android:gravity="center"
+                android:text="@string/digit_6"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/key_board_front" />
+
+            <TextView
+                android:id="@+id/digit_7"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:background="@drawable/op_digit_prize_selector_port"
+                android:gravity="center"
+                android:text="@string/digit_7"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/key_board_front" />
+
+            <TextView
+                android:id="@+id/digit_8"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:background="@drawable/op_digit_prize_selector_port"
+                android:gravity="center"
+                android:text="@string/digit_8"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/key_board_front" />
+
+            <TextView
+                android:id="@+id/digit_9"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginBottom="1px"
+                android:background="@drawable/op_digit_prize_selector_port"
+                android:gravity="center"
+                android:text="@string/digit_9"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/key_board_front" />
+
+            <TextView
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginRight="1px"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/digit_0"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:layout_marginRight="1px"
+                android:background="@drawable/op_digit_prize_selector_port"
+                android:gravity="center"
+                android:text="@string/digit_0"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/key_board_front" />
+
+            <TextView
+                android:id="@+id/digit_del"
+                android:layout_width="@dimen/density_120dp"
+                android:layout_height="@dimen/density_60dp"
+                android:background="@drawable/op_delete_prize_selector_port"
+                android:gravity="center" />
+        </com.goodix.util.KeyBoardLayoutPort>
+    </RelativeLayout>
+
+</RelativeLayout>

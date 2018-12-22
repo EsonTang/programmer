@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">老化测试</string>
+    <string name="cpu_title">"显示CPU工作频率"</string>
+    <string name="battery_key">"battery"</string>
+    <string name="cpu_key">"cpu"</string>
+    <string name="title_activity_lcd">LcdActivity</string>
+    <string name="lcd">LCD</string>
+    <string name="flashlight">FlashLight</string>
+    <string name="playvideo">PlayVideo</string>
+    <string name="srtest">SR</string>
+    <string name="emmc">EMMC</string>
+    <string name="i2c">I2C</string>
+    <string name="audio">Audio</string>
+    <string name="tp">TP</string>
+    <string name="camera">Camera</string>
+    <string name="auto">Auto Test</string>
+    <string name="runauto">Run All Test</string>
+    <string name="test3d">3D</string>
+    <string name="reboot">reboot</string>
+    <string name="rwbgpower">RF、WiFi、bluetooth、GPS Power</string>
+    <string name="sensor">Sensor</string>
+    <string name="ddr">DDR</string>
+    <string name="copy_video_notice">请稍等，正在准备视频文件！</string>
+    <string name="no_vieofile_notice">没有找到视频文件！</string>
+    <string name="failemessage">读取失败，失败信息为：</string>
+    <string name="successmessage">成功读取到的信息为：</string>
+    <string name="circle">Circle</string>
+    <string name="defaults">1~9999</string>
+
+    <!-- flash_light -->
+    <string name="flashlight_status">Status</string>
+    <string name="flashlight_off">OFF</string>
+    <string name="flashlight_on">ON</string>
+    <string name="trun_off">trun_off</string>
+    <string name="trun_on">trun_on</string>
+
+    <!-- stable test -->
+    <string name="tf">TF</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="emmc_test">StableEmmcActivity is Running.........</string>
+    
+    <string name="run_all_test">标准老化测试</string>
+    <string name="manual_test">自定义老化测试</string>
+    <string name="single_test">单项老化测试</string>
+    <string name="stable_test">性能测试</string>
+
+</resources>

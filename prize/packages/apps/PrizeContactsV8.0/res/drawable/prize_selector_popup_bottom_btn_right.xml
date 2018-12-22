@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@drawable/prize_popup_bottom_button_right_press"/>
+    <item android:state_pressed="false" android:drawable="@drawable/prize_shape_bottom_bg_transparent"/>
+    
+</selector>

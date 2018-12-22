@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gangyunsdk-1.5-20160430">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/gangyunsdk-1.5-20160430.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

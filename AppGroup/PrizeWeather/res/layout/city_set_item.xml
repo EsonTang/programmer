@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/menu_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/menu_item_city_height"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:theme="@style/menu_city_name_style"
+        android:textSize="@dimen/medium_textsize" />
+    
+    <ImageView 
+        android:id="@+id/city_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/menu_city_name"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:src="@drawable/city_location_img"
+        android:visibility="gone" />
+
+    <ImageView 
+        android:id="@+id/city_defalt" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/city_defalt_img"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+    
+    <Button
+        android:id="@+id/delete_city"
+        android:layout_width="@dimen/menu_item_delete_width"
+        android:layout_height="@dimen/menu_item_delete_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:text="@string/delect_city"
+        android:textColor="@color/menu_delete_txt_color"
+        android:visibility="gone"
+        android:background="@drawable/city_delete_img"
+        android:textSize="@dimen/medium_textsize"/>
+
+    
+
+</RelativeLayout>

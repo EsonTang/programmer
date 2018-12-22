@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/merge_header"/>
+    
+    <ListView
+        android:id="@+id/setting_list"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:focusableInTouchMode="true" />
+	
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/open_notice_lay"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        >
+        <TextView android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/str_open_notice_priv"
+        	style="@style/style_prize_setting_main"
+        	android:id="@+id/txt_open_notice"
+        	/>
+        
+        <TextView android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/str_open_notice_hint"
+        	style="@style/style_prize_setting_sub"
+        	android:layout_below="@id/txt_open_notice"
+        	/>
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_system_keyguard_lay"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        >
+        <TextView android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/str_close_system_proguard"
+        	style="@style/style_prize_setting_main"
+        	android:id="@+id/txt_close_keyguard"
+        	/>
+        
+        <TextView android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/str_close_system_proguard_hint"
+        	style="@style/style_prize_setting_sub"
+        	android:layout_below="@id/txt_close_keyguard"
+        	/>
+    </RelativeLayout>
+    
+    <TableRow android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	    <EditText android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"
+	        android:id="@+id/lock_type"
+	        android:maxLength="2"
+	        />
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@android:string/ok"
+	        android:id="@+id/btn_ok"
+	        android:onClick="onClick"
+	        />
+    </TableRow>
+</LinearLayout>

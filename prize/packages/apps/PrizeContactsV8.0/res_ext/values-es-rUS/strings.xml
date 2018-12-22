@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">Contactos SIM no pueden ser unidos.</string>
+    <string name="menu_done">"Listo"</string>
+    <string name="menu_deleteContact">"Eliminar"</string>
+    <string name="menu_select_all">"Seleccionartodo"</string>
+    <string name="menu_select_none">"Desmarcartodos"</string>
+    <string name="menu_new_contact_action_bar">"Nuevos"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> seleccionado</string>
+    <string name="multichoice_no_select_alert">No se seleccionó elemento.</string>
+    <string name="aas_phone_type_none">"Ninguna"</string>
+    <string name="aas_custom_title">Etiquetas personalizadas</string>
+    <string name="aas_new_dialog_title">Agregar una etiqueta nueva</string>
+    <string name="ass_rename_dialog_title">Editar etiqueta</string>
+    <string name="aas_delele_dialog_message">Eliminar la(s) etiqueta(s) afectará a todos los números adicionales asociados con la(s) etiqueta(s). ¿Está seguro?</string>
+    <string name="aas_name_invalid">El nombre de la etiqueta no es válido. Introduzca otro.</string>
+    <string name="aas_name_exist">La etiqueta ya existe.</string>
+    <string name="aas_usim_full">No existe espacio para etiquetas nuevas.</string>
+    <string name="ass_edit_assert_message">Modificar la etiqueta afectará a todos los números adicionales asociados con la etiqueta. ¿Está seguro?</string>
+    <string name="aas_new_fail">Error al crear etiqueta nueva.</string>
+    <string name="aas_edit_fail">Error al cambiar nombre de <xliff:g id="aas">%s</xliff:g> .</string>
+    <string name="aas_delete_fail">Error al eliminar <xliff:g id="aas">%s</xliff:g>.</string>
+    <string name="aas_phone_primary">Número principal</string>
+    <string name="aas_phone_additional">Número adicional</string>
+</resources>

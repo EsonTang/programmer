@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+
+    <!-- 清理SDK数据更新开关，外部厂商合作时，必须打开这个开关，否则影响激活统计 -->
+    <Item
+        key="clear_sdk_update"
+        value="on" />
+
+</Config>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:icon="@drawable/ic_overflow_menu"
+        android:title="menu">
+        <item
+            android:id="@+id/menu_add_new"
+            android:title="@string/aas_menu_new_tag"/>
+        <item
+            android:id="@+id/menu_deletion"
+            android:title="@string/aas_menu_delete_tag"/>
+    </item>
+
+</menu>

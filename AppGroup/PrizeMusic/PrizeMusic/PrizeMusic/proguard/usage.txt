@@ -1,0 +1,638 @@
+com.nineoldandroids.animation.Animator
+com.nineoldandroids.animation.Animator$AnimatorListener
+com.nineoldandroids.animation.AnimatorInflater
+com.nineoldandroids.animation.AnimatorListenerAdapter
+com.nineoldandroids.animation.AnimatorSet
+com.nineoldandroids.animation.AnimatorSet$1
+com.nineoldandroids.animation.AnimatorSet$AnimatorSetListener
+com.nineoldandroids.animation.AnimatorSet$Builder
+com.nineoldandroids.animation.AnimatorSet$Dependency
+com.nineoldandroids.animation.AnimatorSet$DependencyListener
+com.nineoldandroids.animation.AnimatorSet$Node
+com.nineoldandroids.animation.ArgbEvaluator
+com.nineoldandroids.animation.FloatEvaluator
+com.nineoldandroids.animation.FloatKeyframeSet
+com.nineoldandroids.animation.IntEvaluator
+com.nineoldandroids.animation.IntKeyframeSet
+com.nineoldandroids.animation.Keyframe
+com.nineoldandroids.animation.Keyframe$FloatKeyframe
+com.nineoldandroids.animation.Keyframe$IntKeyframe
+com.nineoldandroids.animation.Keyframe$ObjectKeyframe
+com.nineoldandroids.animation.KeyframeSet
+com.nineoldandroids.animation.ObjectAnimator
+com.nineoldandroids.animation.PreHoneycombCompat
+com.nineoldandroids.animation.PreHoneycombCompat$1
+com.nineoldandroids.animation.PreHoneycombCompat$10
+com.nineoldandroids.animation.PreHoneycombCompat$11
+com.nineoldandroids.animation.PreHoneycombCompat$12
+com.nineoldandroids.animation.PreHoneycombCompat$13
+com.nineoldandroids.animation.PreHoneycombCompat$14
+com.nineoldandroids.animation.PreHoneycombCompat$2
+com.nineoldandroids.animation.PreHoneycombCompat$3
+com.nineoldandroids.animation.PreHoneycombCompat$4
+com.nineoldandroids.animation.PreHoneycombCompat$5
+com.nineoldandroids.animation.PreHoneycombCompat$6
+com.nineoldandroids.animation.PreHoneycombCompat$7
+com.nineoldandroids.animation.PreHoneycombCompat$8
+com.nineoldandroids.animation.PreHoneycombCompat$9
+com.nineoldandroids.animation.PropertyValuesHolder
+com.nineoldandroids.animation.PropertyValuesHolder$1
+com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder
+com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder
+com.nineoldandroids.animation.TimeAnimator
+com.nineoldandroids.animation.TimeAnimator$TimeListener
+com.nineoldandroids.animation.TypeEvaluator
+com.nineoldandroids.animation.ValueAnimator
+com.nineoldandroids.animation.ValueAnimator$1
+com.nineoldandroids.animation.ValueAnimator$2
+com.nineoldandroids.animation.ValueAnimator$3
+com.nineoldandroids.animation.ValueAnimator$4
+com.nineoldandroids.animation.ValueAnimator$5
+com.nineoldandroids.animation.ValueAnimator$AnimationHandler
+com.nineoldandroids.animation.ValueAnimator$AnimatorUpdateListener
+com.nineoldandroids.util.FloatProperty
+com.nineoldandroids.util.IntProperty
+com.nineoldandroids.util.NoSuchPropertyException
+com.nineoldandroids.util.Property
+com.nineoldandroids.util.ReflectiveProperty
+com.nineoldandroids.view.ViewHelper
+com.nineoldandroids.view.ViewHelper$Honeycomb
+com.nineoldandroids.view.ViewPropertyAnimator
+com.nineoldandroids.view.ViewPropertyAnimatorHC
+com.nineoldandroids.view.ViewPropertyAnimatorHC$1
+com.nineoldandroids.view.ViewPropertyAnimatorHC$AnimatorEventListener
+com.nineoldandroids.view.ViewPropertyAnimatorHC$NameValuesHolder
+com.nineoldandroids.view.ViewPropertyAnimatorHC$PropertyBundle
+com.nineoldandroids.view.ViewPropertyAnimatorICS
+com.nineoldandroids.view.ViewPropertyAnimatorICS$1
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$1
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$AnimatorEventListener
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$NameValuesHolder
+com.nineoldandroids.view.ViewPropertyAnimatorPreHC$PropertyBundle
+com.nineoldandroids.view.animation.AnimatorProxy:
+    71:71:public float getAlpha()
+    74:81:public void setAlpha(float)
+    83:83:public float getPivotX()
+    86:92:public void setPivotX(float)
+    94:94:public float getPivotY()
+    97:103:public void setPivotY(float)
+    105:105:public float getRotation()
+    108:113:public void setRotation(float)
+    115:115:public float getRotationX()
+    118:123:public void setRotationX(float)
+    125:125:public float getRotationY()
+    129:134:public void setRotationY(float)
+    136:136:public float getScaleX()
+    139:144:public void setScaleX(float)
+    146:146:public float getScaleY()
+    149:154:public void setScaleY(float)
+    156:160:public int getScrollX()
+    163:167:public void setScrollX(int)
+    169:173:public int getScrollY()
+    176:180:public void setScrollY(int)
+    183:183:public float getTranslationX()
+    186:191:public void setTranslationX(float)
+    193:193:public float getTranslationY()
+    203:207:public float getX()
+    210:214:public void setX(float)
+    216:220:public float getY()
+    223:227:public void setY(float)
+com.prize.music.BuildConfig
+com.prize.music.Constants:
+    public static final java.lang.String ACTION_FR_2_FR_SURE
+    public static final java.lang.String ACTION_CANCEL_FR_TO_FR
+    public static final java.lang.String ACTION_CANCE
+    public static final java.lang.String ACTION_SORT
+    public static final java.lang.String ACTION_BELL
+    public static final java.lang.String ACTION_DELETE
+    public static final java.lang.String ACTION_ADD
+    public static final java.lang.String LASTFM_API_KEY
+    public static final java.lang.String APOLLO
+    public static final java.lang.String APOLLO_PREFERENCES
+    public static final java.lang.String ARTIST_KEY
+    public static final java.lang.String ALBUM_KEY
+    public static final java.lang.String ALBUM_ID_KEY
+    public static final java.lang.String NUMALBUMS
+    public static final java.lang.String GENRE_KEY
+    public static final java.lang.String ARTIST_ID
+    public static final java.lang.String NUMWEEKS
+    public static final java.lang.String BUILD_DEPENDS
+    public static final java.lang.String PLAYLIST_NAME_FAVORITES
+    public static final java.lang.String PLAYLIST_NAME
+    public static final java.lang.String WIDGET_STYLE
+    public static final java.lang.String VISUALIZATION_TYPE
+    public static final java.lang.String DELETE_CACHE
+    public static final java.lang.String BUILD_VERSION
+    public static final java.lang.String UP_STARTS_ALBUM_ACTIVITY
+    public static final java.lang.String TABS_ENABLED
+    public static final java.lang.String TYPE_ARTIST
+    public static final java.lang.String TYPE_ALBUM
+    public static final java.lang.String TYPE_GENRE
+    public static final java.lang.String TYPE_SONG
+    public static final java.lang.String TYPE_PLAYLIST
+    public static final java.lang.String ALBUM_SUFFIX
+    public static final java.lang.String ARTIST_SUFFIX
+    public static final java.lang.String PLAYLIST_SUFFIX
+    public static final java.lang.String GENRE_SUFFIX
+    public static final java.lang.String SRC_FIRST_AVAILABLE
+    public static final java.lang.String SRC_LASTFM
+    public static final java.lang.String SRC_FILE
+    public static final java.lang.String SRC_GALLERY
+    public static final java.lang.String SIZE_NORMAL
+    public static final java.lang.String SIZE_THUMB
+    public static final java.lang.String SIZE_MEDIU
+    public static final java.lang.String MIME_TYPE
+    public static final java.lang.String INTENT_ACTION
+    public static final java.lang.String DATA_SCHEME
+    public static final java.lang.String EXTERNAL
+    public static final long PLAYLIST_UNKNOWN
+    public static final long PLAYLIST_ALL_SONGS
+    public static final long PLAYLIST_QUEUE
+    public static final long PLAYLIST_NEW
+    public static final long PLAYLIST_FAVORITES
+    public static final long PLAYLIST_RECENTLY_ADDED
+    public static final int THEME_ITEM_BACKGROUND
+    public static final int THEME_ITEM_FOREGROUND
+    public static final java.lang.String INTENT_ADD_TO_PLAYLIST
+    public static final java.lang.String INTENT_PLAYLIST_LIST
+    public static final java.lang.String INTENT_CREATE_PLAYLIST
+    public static final java.lang.String INTENT_RENAME_PLAYLIST
+    public static final java.lang.String INTENT_KEY_RENAME
+    public static final java.lang.String INTENT_KEY_DEFAULT_NAME
+    106:107:private Constants()
+com.prize.music.IApolloService$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_openFile
+    static final int TRANSACTION_open
+    static final int TRANSACTION_getIdFromPath
+    static final int TRANSACTION_getQueuePosition
+    static final int TRANSACTION_isPlaying
+    static final int TRANSACTION_stop
+    static final int TRANSACTION_pause
+    static final int TRANSACTION_play
+    static final int TRANSACTION_prev
+    static final int TRANSACTION_next
+    static final int TRANSACTION_duration
+    static final int TRANSACTION_position
+    static final int TRANSACTION_seek
+    static final int TRANSACTION_getTrackName
+    static final int TRANSACTION_getAlbumName
+    static final int TRANSACTION_getAlbumId
+    static final int TRANSACTION_getAlbumBitmap
+    static final int TRANSACTION_getArtistName
+    static final int TRANSACTION_getArtistId
+    static final int TRANSACTION_enqueue
+    static final int TRANSACTION_getQueue
+    static final int TRANSACTION_setQueuePosition
+    static final int TRANSACTION_getPath
+    static final int TRANSACTION_getAudioId
+    static final int TRANSACTION_setShuffleMode
+    static final int TRANSACTION_notifyChange
+    static final int TRANSACTION_getShuffleMode
+    static final int TRANSACTION_removeTracks
+    static final int TRANSACTION_moveQueueItem
+    static final int TRANSACTION_removeTrack
+    static final int TRANSACTION_setRepeatMode
+    static final int TRANSACTION_getRepeatMode
+    static final int TRANSACTION_getMediaMountedCount
+    static final int TRANSACTION_getAudioSessionId
+    static final int TRANSACTION_addToFavorites
+    static final int TRANSACTION_removeFromFavorites
+    static final int TRANSACTION_isFavorite
+    static final int TRANSACTION_toggleFavorite
+com.prize.music.IApolloService$Stub$Proxy:
+    394:394:public java.lang.String getInterfaceDescriptor()
+com.prize.music.MusicFloatView:
+    private android.widget.LinearLayout mTrackNameFl
+    private android.widget.LinearLayout mOperationFl
+    public static final java.lang.String ACTION_FLOAT_TO_LIST
+    private static final java.lang.String TAG
+    private static final java.lang.String PLAY_TEST
+    private static final java.lang.String NEXT_TEST
+    private static final java.lang.String PREV_TEST
+    private static final int REFRESH
+    private static final int NEXT_BUTTON
+    private static final int PREV_BUTTON
+com.prize.music.MusicFloatWindowBroadcastReceiver:
+    private static final java.lang.String ACTION_MUSIC
+    private static final java.lang.String ACTION_SERVICE
+com.prize.music.MusicWindowManager:
+    private static android.app.ActivityManager mActivityManager
+    41:41:public MusicWindowManager()
+    140:144:private static android.app.ActivityManager getActivityManager(android.content.Context)
+    155:172:public static java.lang.String getUsedPercentValue(android.content.Context)
+    183:185:private static long getAvailableMemory(android.content.Context)
+com.prize.music.NowPlayingCursor:
+    17:23:public NowPlayingCursor(com.prize.music.IApolloService,java.lang.String[],android.content.Context)
+com.prize.music.R
+com.prize.music.R$anim
+com.prize.music.R$array
+com.prize.music.R$attr
+com.prize.music.R$color
+com.prize.music.R$dimen
+com.prize.music.R$drawable
+com.prize.music.R$id
+com.prize.music.R$integer
+com.prize.music.R$layout
+com.prize.music.R$menu
+com.prize.music.R$plurals
+com.prize.music.R$string
+com.prize.music.R$style
+com.prize.music.R$styleable
+com.prize.music.R$xml
+com.prize.music.activities.AudioPlayerActivity:
+    private static final int REFRESH
+    private static final int UPDATEINFO
+com.prize.music.activities.EditActivity:
+    protected int mSelectedPosition
+    protected long mSelectedId
+    protected java.lang.String mCurrentId
+com.prize.music.activities.MyEditListActivity:
+    protected int mSelectedPosition
+    protected java.lang.String mCurrentId
+com.prize.music.activities.NewListActivity:
+    protected int mSelectedPosition
+    protected java.lang.String mCurrentId
+com.prize.music.activities.PlayExternal:
+    private static final java.lang.String TAG
+    192:200:private void openFile(java.lang.String)
+com.prize.music.activities.Scroller:
+    public abstract void adjustScroll(int)
+com.prize.music.activities.TracksBrowser:
+    290:291:private void initActionBar()
+    482:510:public java.lang.String getNumSongs()
+    554:556:public java.lang.String getGenre()
+    563:565:public java.lang.String getPlaylist()
+    595:595:public void adjustScroll(int)
+com.prize.music.app.widgets.AppWidget42:
+    android.widget.ProgressBar progress_horizontal
+    public static final java.lang.String CMDAPPWIDGETUPDATE
+    private static final int REFRESH
+com.prize.music.base.BaseFragment:
+    private int index
+    31:31:public int getIndex()
+    35:36:public void setIndex(int)
+    protected abstract void findViewById()
+    protected abstract void setListener()
+    protected abstract void init()
+com.prize.music.bean.PopBean:
+    private static final long serialVersionUID
+    30:31:public void setAreaId(java.lang.String)
+    51:52:public void setAreaName(java.lang.String)
+com.prize.music.database.DBContast
+com.prize.music.database.DBUtils:
+    private static final java.lang.String DATABASE_NAME
+    private static final int VERSION
+    25:27:public DBUtils(android.content.Context,java.lang.String,android.database.sqlite.SQLiteDatabase$CursorFactory,int,android.database.DatabaseErrorHandler)
+com.prize.music.database.MusicInfo
+com.prize.music.database.SQLUtils:
+    36:52:public boolean insert(java.lang.String,java.util.Map)
+    58:68:public boolean delete(java.lang.String,java.lang.String,java.lang.String[])
+    74:88:public android.database.Cursor queryWithCursor(java.lang.String)
+    93:105:public void createTable(java.lang.String)
+    110:114:public void removeListTable(java.lang.String,android.database.sqlite.SQLiteDatabase)
+    120:128:public void createListTable()
+    132:144:public boolean insertList(java.lang.String)
+    150:163:public void removeList(java.lang.String,android.database.sqlite.SQLiteDatabase)
+    167:178:public java.util.List queryListName(java.lang.String)
+com.prize.music.helpers.AddIdCursorLoader:
+    160:162:public AddIdCursorLoader(android.content.Context)
+    235:235:public android.net.Uri getUri()
+    239:240:public void setUri(android.net.Uri)
+    243:243:public java.lang.String[] getProjection()
+    247:248:public void setProjection(java.lang.String[])
+    251:251:public java.lang.String getSelection()
+    255:256:public void setSelection(java.lang.String)
+    259:259:public java.lang.String[] getSelectionArgs()
+    263:264:public void setSelectionArgs(java.lang.String[])
+    267:267:public java.lang.String getSortOrder()
+    271:272:public void setSortOrder(java.lang.String)
+com.prize.music.helpers.DomElement
+com.prize.music.helpers.RefreshableFragment:
+    public abstract void refresh()
+com.prize.music.helpers.lastfm.Album
+com.prize.music.helpers.lastfm.Album$AlbumFactory
+com.prize.music.helpers.lastfm.Artist
+com.prize.music.helpers.lastfm.Artist$ArtistFactory
+com.prize.music.helpers.lastfm.Caller
+com.prize.music.helpers.lastfm.Image
+com.prize.music.helpers.lastfm.Image$ImageFactory
+com.prize.music.helpers.lastfm.ImageHolder
+com.prize.music.helpers.lastfm.ImageSize
+com.prize.music.helpers.lastfm.ItemFactory
+com.prize.music.helpers.lastfm.ItemFactoryBuilder
+com.prize.music.helpers.lastfm.MusicEntry
+com.prize.music.helpers.lastfm.PaginatedResult
+com.prize.music.helpers.lastfm.ResponseBuilder
+com.prize.music.helpers.lastfm.Result
+com.prize.music.helpers.lastfm.Result$Status
+com.prize.music.helpers.lastfm.Session
+com.prize.music.helpers.utils.ApolloUtils:
+    65:65:public ApolloUtils()
+    76:104:public static void setBackground(android.view.View,android.graphics.Bitmap)
+    111:146:public static android.view.View setHeaderLayout(java.lang.String,android.database.Cursor,android.app.Activity)
+    156:163:public static void runnableBackground(android.widget.ImageView,android.graphics.Bitmap)
+    170:190:public static boolean isOnline(android.content.Context)
+    220:234:public static void setListPadding(android.support.v4.app.Fragment,android.widget.ListView,int,int,int,int)
+    248:248:public static boolean isGenre(java.lang.String)
+    281:287:public static void shopFor(android.content.Context,java.lang.String)
+    308:342:public static boolean downloadFile(java.lang.String,java.io.File)
+    403:436:public static void startTracksBrowserForArtist(java.lang.String,long,android.database.Cursor,android.content.Context)
+    441:484:public static void startTracksBrowser2(java.lang.String,long,android.database.Cursor,android.content.Context,java.lang.Long)
+com.prize.music.helpers.utils.ApolloUtils$1
+com.prize.music.helpers.utils.BlurPic:
+    private static final int W
+    private static final int H
+    29:29:public BlurPic()
+    65:91:public static android.graphics.Bitmap BoxBlurFilter(android.graphics.Bitmap)
+    96:139:public static void blur(int[],int[],int,int,float)
+    143:184:public static void blurFractional(int[],int[],int,int,float)
+    187:187:public static int clamp(int,int,int)
+com.prize.music.helpers.utils.ColorArt
+com.prize.music.helpers.utils.ColorArt$CountedColor
+com.prize.music.helpers.utils.CommonClickUtils:
+    20:20:public CommonClickUtils()
+com.prize.music.helpers.utils.HashBag
+com.prize.music.helpers.utils.ImageUtils:
+    private static final java.lang.String IMAGE_EXTENSION
+    25:25:public ImageUtils()
+    111:139:public static java.io.File getImageFromWeb(android.content.Context,com.prize.music.cache.ImageInfo)
+com.prize.music.helpers.utils.LogUtils:
+    11:11:public LogUtils()
+    15:17:public static void v(java.lang.String,java.lang.String,java.lang.Throwable)
+    20:22:public static void d(java.lang.String,java.lang.String)
+    25:27:public static void d(java.lang.String,java.lang.String,java.lang.Throwable)
+    35:37:public static void i(java.lang.String,java.lang.String,java.lang.Throwable)
+    40:42:public static void w(java.lang.String,java.lang.String)
+    45:47:public static void w(java.lang.String,java.lang.String,java.lang.Throwable)
+    55:57:public static void e(java.lang.String,java.lang.String,java.lang.Throwable)
+com.prize.music.helpers.utils.MusicUtils:
+    73:73:public MusicUtils()
+    102:102:public static com.prize.music.service.ServiceToken bindToService(android.app.Activity)
+    222:228:public static void moveQueueItem(int,int)
+    329:331:public static void shuffleAll(android.content.Context,android.database.Cursor)
+    338:339:public static void playAll(android.content.Context,android.database.Cursor)
+    414:441:public static long[] getRandomSongListForCursor(android.database.Cursor)
+    520:532:public static long[] getSongListForArtist(android.content.Context,long)
+    541:553:public static long[] getSongListForAlbum(android.content.Context,long)
+    562:574:public static long[] getSongListForGenre(android.content.Context,long)
+    583:592:public static long[] getSongListForPlaylist(android.content.Context,long)
+    596:605:public static long[] getSongList(java.lang.String,android.content.Context,long)
+    787:794:public static void toggleFavorite()
+    943:977:public static boolean isRepeat(android.content.Context,long,java.lang.String)
+    1213:1224:public static void doSearch(android.content.Context,android.database.Cursor,int)
+    1230:1253:public static void doSearch(android.content.Context,android.database.Cursor,java.lang.String)
+    1300:1323:public static java.lang.String getArtistName(android.content.Context,long,boolean)
+    1335:1358:public static java.lang.String getAlbumName(android.content.Context,long,boolean)
+    1367:1380:public static java.lang.String getPlaylistName(android.content.Context,long)
+    1530:1579:public static void makeNeedPlaylistList(android.content.Context,boolean,java.util.List)
+    1948:1982:public boolean hasMountedSDcard(android.content.Context)
+com.prize.music.helpers.utils.MusicUtils$Defs
+com.prize.music.helpers.utils.StateBarUtils:
+    22:22:public StateBarUtils()
+    54:79:public static boolean checkDeviceHasNavigationBar(android.content.Context)
+    90:102:public static int getNavigationBarHeight(android.content.Context)
+com.prize.music.helpers.utils.StringUtilities
+com.prize.music.helpers.utils.ToastUtils:
+    8:8:public ToastUtils()
+    13:16:public static void showShortToast(android.content.Context,java.lang.String)
+    19:22:public static void showLongToast(android.content.Context,java.lang.String)
+    34:41:public static void showOnceLongToast(android.content.Context,java.lang.String)
+com.prize.music.helpers.utils.VisualizerUtils:
+    10:10:public VisualizerUtils()
+com.prize.music.history.HistoryColumns
+com.prize.music.history.HistoryDao:
+    46:57:public boolean delete(int)
+    90:101:public void delRepeat()
+    112:137:public android.database.Cursor getAudioIDsInHistory(android.content.Context,long[])
+com.prize.music.lyric.LyricDownloadManager:
+    private static final java.lang.String TAG
+    public static final java.lang.String GB2312
+    public static final java.lang.String UTF_8
+    49:92:public java.lang.String searchLyricFromWeb(java.lang.String,java.lang.String,java.lang.String)
+    102:160:private java.lang.String fetchLyricContent(java.lang.String,java.lang.String,java.lang.String)
+    168:179:private void saveLyric(java.lang.String,java.lang.String)
+com.prize.music.lyric.LyricFragment:
+    private boolean mIsLyricDownloading
+    135:170:protected void displayLrcDialog()
+    62:62:static synthetic com.prize.music.lyric.LyricDownloadManager access$2(com.prize.music.lyric.LyricFragment)
+    68:68:static synthetic java.lang.String access$3(com.prize.music.lyric.LyricFragment)
+    56:56:static synthetic void access$4(com.prize.music.lyric.LyricFragment,boolean)
+    61:61:static synthetic com.prize.music.lyric.LyricLoadHelper access$5()
+    258:258:static synthetic void access$6(com.prize.music.lyric.LyricFragment,java.lang.String,java.lang.String,java.lang.String)
+com.prize.music.lyric.LyricFragment$3
+com.prize.music.lyric.LyricFragment$LyricDownloadAsyncTask
+com.prize.music.lyric.LyricLoadHelper:
+    private static final java.lang.String TAG
+    90:90:public java.util.List getLyricSentences()
+    98:99:public void setIndexOfCurrentSentence(int)
+    102:102:public int getIndexOfCurrentSentence()
+    113:176:public boolean loadLyric(java.lang.String,android.app.Activity)
+com.prize.music.lyric.LyricLoadHelper$1
+com.prize.music.lyric.LyricSentence:
+    26:27:public void setStartTime(long)
+    34:35:public void setContentText(java.lang.String)
+    38:38:public long getDuringTime()
+com.prize.music.lyric.LyricXMLParser:
+    private static final java.lang.String TAG
+    30:35:public int parseLyricId(java.io.InputStream)
+com.prize.music.lyric.LyricXMLParser$MyHandler
+com.prize.music.menu.PlaylistPickerDialog
+com.prize.music.preferences.SettingsFragment
+com.prize.music.preferences.SharedPreferencesCompat:
+    29:29:public SharedPreferencesCompat()
+com.prize.music.service.ApolloService:
+    public static final int NOW
+    public static final int NEXT
+    public static final int LAST
+    public static final int PLAYBACKSERVICE_STATUS
+    public static final int SHUFFLE_NONE
+    public static final int SHUFFLE_NORMAL
+    public static final int SHUFFLE_AUTO
+    public static final int REPEAT_NONE
+    public static final int REPEAT_CURRENT
+    public static final int REPEAT_ALL
+    public static final java.lang.String APOLLO_PACKAGE_NAME
+    public static final java.lang.String MUSIC_PACKAGE_NAME
+    public static final java.lang.String PLAYSTATE_CHANGED
+    public static final java.lang.String META_CHANGED
+    public static final java.lang.String FAVORITE_CHANGED
+    public static final java.lang.String QUEUE_CHANGED
+    public static final java.lang.String REPEATMODE_CHANGED
+    public static final java.lang.String SHUFFLEMODE_CHANGED
+    public static final java.lang.String PROGRESSBAR_CHANGED
+    public static final java.lang.String REFRESH_PROGRESSBAR
+    public static final java.lang.String CYCLEREPEAT_ACTION
+    public static final java.lang.String TOGGLESHUFFLE_ACTION
+    public static final java.lang.String SERVICECMD
+    public static final java.lang.String CMDNAME
+    public static final java.lang.String CMDTOGGLEPAUSE
+    public static final java.lang.String CMDSTOP
+    public static final java.lang.String CMDPAUSE
+    public static final java.lang.String CMDPLAY
+    public static final java.lang.String CMDPREVIOUS
+    public static final java.lang.String CMDNEXT
+    public static final java.lang.String CMDNOTIF
+    public static final java.lang.String CMDTOGGLEFAVORITE
+    public static final java.lang.String CMDCYCLEREPEAT
+    public static final java.lang.String CMDTOGGLESHUFFLE
+    public static final java.lang.String TOGGLEPAUSE_ACTION
+    public static final java.lang.String PAUSE_ACTION
+    public static final java.lang.String PREVIOUS_ACTION
+    public static final java.lang.String NEXT_ACTION
+    public static final java.lang.String UNMOUNT_ACTION
+    public static final java.lang.String MOUNT_ACTION
+    private static final int TRACK_ENDED
+    private static final int RELEASE_WAKELOCK
+    private static final int SERVER_DIED
+    private static final int FOCUSCHANGE
+    private static final int FADEDOWN
+    private static final int FADEUP
+    private static final int TRACK_WENT_TO_NEXT
+    private static final int MAX_HISTORY_SIZE
+    private static final java.lang.String LOGTAG
+    private static final int IDCOLIDX
+    private static final int PODCASTCOLIDX
+    private static final int BOOKMARKCOLIDX
+    private static final int IDLE_DELAY
+    private static final java.lang.String SHUTDOWN_ACTION
+    public static final java.lang.String UPDATELIST_ACTION
+    1508:1509:public void playFloat()
+    2497:2500:public void setAudioSessionId(int)
+com.prize.music.service.ApolloService$MultiPlayer:
+    2807:2808:public void setAudioSessionId(int)
+com.prize.music.service.ApolloService$ServiceStub:
+    2876:2894:public java.lang.String getName(java.lang.StackTraceElement[])
+com.prize.music.service.MediaButtonIntentReceiver:
+    private static final int MSG_LONGPRESS_TIMEOUT
+    private static final int LONG_PRESS_DELAY
+com.prize.music.ui.DialogUtils
+com.prize.music.ui.adapters.AlbumArtPagerAdapter:
+    35:37:public void removeItem(int)
+    40:42:public void addFragmentTo(android.support.v4.app.Fragment,int)
+    54:59:public void refresh()
+com.prize.music.ui.adapters.PagerAdapter:
+    46:51:public void refresh()
+com.prize.music.ui.adapters.base.EditListViewAdapter
+com.prize.music.ui.adapters.base.EditListViewAdapter$1
+com.prize.music.ui.adapters.base.GridViewAdapter:
+    108:109:public void setScrollState(boolean)
+com.prize.music.ui.adapters.base.ListViewAdapter:
+    52:52:public boolean isSelectMode()
+    228:228:public android.util.SparseBooleanArray getmCheckedStates()
+com.prize.music.ui.adapters.base.ListViewAlbumAdapter:
+    private android.graphics.drawable.AnimationDrawable mPeakOneAnimation
+com.prize.music.ui.adapters.grid.ArtistAdapter:
+    27:27:static synthetic android.content.Context access$0(com.prize.music.ui.adapters.grid.ArtistAdapter)
+com.prize.music.ui.adapters.grid.ArtistAdapter$AsyncLoader_GuessInfo
+com.prize.music.ui.adapters.list.EditSonglistAdapter
+com.prize.music.ui.adapters.list.GenreAdapter
+com.prize.music.ui.adapters.list.MyGridViewAdapter:
+    private java.lang.ref.WeakReference holderReference
+    private android.graphics.drawable.AnimationDrawable mPeakOneAnimation
+    private android.graphics.drawable.AnimationDrawable mPeakTwoAnimation
+    private int left
+    private int top
+    private com.prize.music.cache.ImageProvider mImageProvider
+    private android.database.Cursor mCursor
+    95:101:public void initData(android.database.Cursor)
+com.prize.music.ui.adapters.list.MyListViewAdapter
+com.prize.music.ui.adapters.list.MyListViewAdapter$1
+com.prize.music.ui.adapters.list.MyListViewAdapter$ViewHolder
+com.prize.music.ui.adapters.list.NowPlayingAdapter
+com.prize.music.ui.adapters.list.PlaylistAdapter
+com.prize.music.ui.adapters.list.PopupWindowAdapter:
+    private java.util.List mPlayListNames
+com.prize.music.ui.fragments.AudioPlayerFragment:
+    private static final int REFRESH
+    private static final int UPDATEINFO
+com.prize.music.ui.fragments.AudioPlayerFragment$AlbumArtPageListener
+com.prize.music.ui.fragments.MeFragment:
+    java.util.ArrayList lstImageItem
+    protected int mSelectedPosition
+    protected long mSelectedId
+    protected java.lang.String mCurrentId
+    public static long my_love_new_id
+com.prize.music.ui.fragments.MusicLibraryFragment:
+    public static final java.lang.String SAVED_STATE_ACTION_BAR_HIDDEN
+com.prize.music.ui.fragments.base.AlbumsGridViewFragment
+com.prize.music.ui.fragments.base.AlbumsGridViewFragment$1
+com.prize.music.ui.fragments.base.AlbumsListGridFragment:
+    protected java.lang.String mCurrentId
+    64:66:public AlbumsListGridFragment(android.os.Bundle)
+com.prize.music.ui.fragments.base.AlbumsListViewFragment:
+    protected java.lang.String mCurrentId
+    52:54:public AlbumsListViewFragment(android.os.Bundle)
+com.prize.music.ui.fragments.base.DragSortListViewFragment:
+    protected int mSelectedPosition
+    protected android.widget.TextView main_mEdit_add
+    protected android.widget.TextView main_mEdit_bell
+    protected android.widget.TextView main_mEdit_collection
+    protected android.widget.TextView main_mEdit_delete
+    protected android.widget.ImageView main_img_add
+    protected android.widget.ImageView main_img_bell
+    protected com.prize.music.ui.adapters.list.MyListViewAdapter myAdapter
+    150:152:public DragSortListViewFragment(android.os.Bundle)
+    public abstract boolean removePlaylistItem(int)
+    191:191:public void refresh()
+com.prize.music.ui.fragments.base.EditSongsListViewFragment
+com.prize.music.ui.fragments.base.EditSongsListViewFragment$1
+com.prize.music.ui.fragments.base.GridViewFragment:
+    protected java.lang.String mCurrentId
+    55:57:public GridViewFragment(android.os.Bundle)
+com.prize.music.ui.fragments.base.ListViewFragment:
+    protected int mSelectedPosition
+    protected long mSelectedId
+    protected java.lang.String mCurrentId
+    89:91:public ListViewFragment(android.os.Bundle)
+com.prize.music.ui.fragments.base.PlayingListViewFragment:
+    protected int mSelectedPosition
+    protected long mSelectedId
+    protected java.lang.String mCurrentId
+    91:93:public PlayingListViewFragment(android.os.Bundle)
+com.prize.music.ui.fragments.base.PromptDialogFragment:
+    private static final java.lang.String TITLE
+com.prize.music.ui.fragments.base.RecentPlayTopTitleListViewFragment:
+    protected int mSelectedPosition
+    protected long mSelectedId
+    protected java.lang.String mCurrentId
+    private android.widget.PopupWindow rightPopupWindow
+    protected android.widget.TextView main_mEdit_add
+com.prize.music.ui.fragments.base.SongsListViewFragment:
+    protected int mSelectedPosition
+    protected long mSelectedId
+    protected java.lang.String mCurrentId
+    private java.lang.String title
+    116:118:public SongsListViewFragment(android.os.Bundle)
+com.prize.music.ui.fragments.base.TopTitleListViewFragment:
+    protected int mSelectedPosition
+    protected long mSelectedId
+    protected java.lang.String mCurrentId
+    121:123:public TopTitleListViewFragment(android.os.Bundle)
+com.prize.music.ui.fragments.list.EditSongsFragment
+com.prize.music.ui.fragments.list.GenresFragment
+com.prize.music.ui.fragments.list.NowPlayingFragment
+com.prize.music.ui.fragments.list.PlaylistListFragment:
+    545:548:public void refresh()
+    693:693:public boolean removePlaylistItem(int)
+com.prize.music.ui.fragments.list.PlaylistsFragment
+com.prize.music.ui.widgets.GridViewWith:
+    private static final java.lang.String LOG_TAG
+    218:228:public boolean removeHeaderView(android.view.View)
+    240:250:public boolean removeFooterView(android.view.View)
+    263:271:private void removeFixedViewInfo(android.view.View,java.util.ArrayList)
+    318:319:public void invalidateRowHeight()
+    322:326:public int getHeaderHeight(int)
+    407:413:public void tryToScrollToBottomSmoothly()
+    417:423:public void tryToScrollToBottomSmoothly(int)
+com.prize.music.ui.widgets.GridViewWith$HeaderViewGridAdapter:
+    586:596:public boolean removeHeader(android.view.View)
+    600:610:public boolean removeFooter(android.view.View)
+com.prize.music.ui.widgets.RoundProgressBar:
+    38:40:public RoundProgressBar(android.content.Context)
+    48:50:public RoundProgressBar(android.content.Context,android.util.AttributeSet,int)
+com.v.v4.R
+com.v.v4.R$drawable
+com.v.v4.R$string
+com.v.v4.R$style

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="image_height">765</integer>
+    <integer name="image_wight">429</integer>
+    <integer name="leftMargin">7</integer>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.view.ExplosionView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_bt"
+    android:layout_width="@dimen/uninstallExplosion_width"
+    android:layout_height="@dimen/uninstallExplosion_height"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.android.launcher3.BubbleTextView
+        android:id="@+id/icon"
+        android:layout_gravity="center_horizontal"
+        style="@style/WorkspaceIcon"
+        android:layout_marginTop="5dp"
+        android:layout_width="87dp"
+        android:singleLine="true"
+        android:layout_height="97dp"
+        android:background="@drawable/focusable_view_bg"
+        android:focusable="true" />
+    
+    
+    <TextView 
+        android:text="@string/uninstall_reminder"
+        android:id="@+id/description"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="15dp"
+        android:textSize="13dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/btn_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel_uninstall_ex"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_selector"
+            android:gravity="center"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/uninstall_ex"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ok_selector"
+            android:text="@android:string/ok" />
+    </LinearLayout>
+
+</com.android.launcher3.view.ExplosionView> <!-- M by zhouerlong -->

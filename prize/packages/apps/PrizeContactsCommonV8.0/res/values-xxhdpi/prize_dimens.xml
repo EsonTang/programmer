@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="prize_divider_margin2">20dp</dimen>
+    <dimen name="listviewitemheight">50dp</dimen>
+    <dimen name="prize_listview_hide_header_left">4dp</dimen>
+    <dimen name="prize_contacts_list_item_view_checkbox_right">13dp</dimen>
+    <dimen name="prize_contacts_list_item_view_default_photo_view_size">38dp</dimen>
+    <dimen name="prize_contacts_list_item_view_default_photo_text_size">19dp</dimen>
+    <dimen name="prize_contacts_list_item_view_name_text_view_width">250dp</dimen>
+    <dimen name="prize_contacts_blade_view_bg_bound">7dp</dimen>
+    <dimen name="prize_contacts_list_item_view_header_text_size">5dp</dimen>
+    <dimen name="prize_contacts_list_item_view_header_background_height">20dp</dimen>
+    <dimen name="prize_contacts_list_item_view_header_section_layout_hight">28dp</dimen>
+    <dimen name="prize_contacts_list_item_view_header_padding_top">0dp</dimen>
+    <dimen name="prize_contacts_list_item_view_bound_offset">20dp</dimen>
+
+    <dimen name="contact_list_section_header_width">40dp</dimen>
+    <dimen name="contact_browser_list_header_right_margin">21dp</dimen>
+    <dimen name="prize_bottom_button_padding_left">20dp</dimen>
+    <dimen name="prize_bottom_button_padding_bottom">14dp</dimen>
+    <dimen name="contact_bladeview_popup_text_size">15dp</dimen>
+    <dimen name="prize_bottom_button_width">160dp</dimen>
+    <dimen name="prize_content_padding_right">14dp</dimen>
+    <dimen name="prize_content_padding_left">14dp</dimen>
+    <dimen name="prize_contact_search_edit_text_corners">3.5dp</dimen>
+    <dimen name="prize_contact_search_edit_text_stroke">0.5dp</dimen>
+</resources>

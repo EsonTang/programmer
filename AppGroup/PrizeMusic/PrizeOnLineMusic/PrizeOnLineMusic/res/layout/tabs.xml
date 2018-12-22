@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabs"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    style="@style/Tabs" />

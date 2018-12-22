@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normal_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <com.prize.music.views.TrackBrowserImageView
+        android:id="@+id/half_artist_image"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:scaleType="fitXY" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/artist_mask" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/audioplay_top"
+        android:scaleType="fitXY" />
+
+    <include
+        android:id="@+id/back_rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        layout="@layout/actionbar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back_rlyt" >
+
+        <fragment
+            android:id="@+id/bottomactionbar_new"
+            android:name="com.prize.music.ui.fragments.BottomActionBarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_action_bar_height"
+            android:layout_alignParentBottom="true" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomactionbar_new"
+            android:windowContentOverlay="@null" />
+
+        <FrameLayout
+            android:id="@+id/headerview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/artist_tab_h"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="1dp"
+                layout="@layout/half_and_half" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/line_separator" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

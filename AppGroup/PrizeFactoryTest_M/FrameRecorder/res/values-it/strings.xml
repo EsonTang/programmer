@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Screen recorder</string>
+    <string name="start">iniziare</string>
+    <string name="stop">Stop</string>
+    <string name="show_cordinate">display touch</string>
+    <string name="hide_cordinate">stretto contatto</string>
+    <string name="share">quota</string>
+    <string name="screenrecord_recording_ticker">Lo schermo video</string>
+    <string name="screenrecord_recording_title">Screen Recorder è</string>
+    <string name="screenrecord_recording_text">"Durata massima: 180 secondi."</string>
+    <string name="screenrecord_saved_ticker">Salva registrazione dello schermo</string>
+    <string name="screenrecord_saved_title">Screen Recorder Salvato</string>
+    <string name="screenrecord_saved_text">Toccare per visualizzare la registrazione dello schermo.</string>
+    <string name="screenrecord_duration_text">durata:</string>
+</resources>

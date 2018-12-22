@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/delete_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_single_content_height"
+        android:layout_marginStart="@dimen/prize_popup_margin_left_right"
+        android:layout_marginEnd="@dimen/prize_popup_margin_left_right"
+        android:layout_marginBottom="@dimen/prize_popup_margin_bottom"
+        android:background="@drawable/prize_selector_popup_window_single_btn_bg"
+        android:gravity="center"
+        android:text="@string/prize_editor_delete_contact"
+        android:textColor="@color/prize_delete_contact_text_color"
+        android:textSize="@dimen/prize_single_content_size" />
+    
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_single_content_height"
+        android:layout_marginStart="@dimen/prize_popup_margin_left_right"
+        android:layout_marginEnd="@dimen/prize_popup_margin_left_right"
+        android:layout_marginBottom="@dimen/prize_popup_margin_bottom"
+        android:background="@drawable/prize_selector_popup_window_single_btn_bg"
+        android:gravity="center"
+        android:text="@string/prize_bottom_cancel"
+        android:textColor="@color/prize_button_text_default_color"
+        android:textSize="@dimen/prize_single_content_size" />
+
+</LinearLayout>

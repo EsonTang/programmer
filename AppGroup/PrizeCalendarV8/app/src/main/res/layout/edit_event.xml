@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_event"
+    style="@style/EditEvent_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/event_info_content_bg">
+    <View android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/agenda_item_divider"
+        android:visibility="gone"/>
+    <View
+            android:background="@drawable/prizeactionbar_lines"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+    <!-- prize-use actionBar replace user's title-lixing-2015-7-21-start -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/prize_background"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/prize_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/prize_eventinfo_actionbar_back_up" />
+
+        <TextView
+            android:layout_marginLeft="12dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/prize_create_event"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:textColor="@color/white"
+           />
+    </LinearLayout>
+ <!-- prize-use actionBar replace user's title-lixing-2015-7-21-end -->
+ 
+    <TextView
+        android:id="@+id/loading_message"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#FFFFFFFF"
+        android:gravity="center"
+        android:text="@string/loading" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true"
+        android:background="@drawable/square_bg"
+        android:layout_marginTop="@dimen/prize_event_info_margin_top"
+        android:layout_marginLeft="@dimen/prize_event_info_margin_left"
+        android:layout_marginRight="@dimen/prize_event_info_margin_left">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/event_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1.0dip"
+                android:background="#FFFFFFFF"
+                android:visibility="gone"/>
+
+            
+            <LinearLayout
+                android:id="@+id/two_pane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:orientation="vertical" >
+
+                <!-- TOP HALF -->
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/edit_event_1" />
+
+                <!-- BOTTOM HALF GUESTS/ATTENDEES -->
+
+                <include
+                    android:id="@+id/attendees_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/edit_event_2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/color_chip"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="0dip"
+                android:visibility="gone" />
+        </FrameLayout>
+    </ScrollView>
+    <!-- <include layout="@layout/edit_event_confirm"/> -->
+   
+</LinearLayout>

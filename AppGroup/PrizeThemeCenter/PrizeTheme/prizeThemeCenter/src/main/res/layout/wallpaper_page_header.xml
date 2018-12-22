@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/wallpaper_header"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:orientation="vertical"
+          android:paddingTop="@dimen/tab_height_67dp">
+
+    <com.prize.prizethemecenter.ui.widget.view.ScollerGridView
+        android:id="@+id/head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:horizontalSpacing="5dip"
+        android:numColumns="2"
+        android:verticalSpacing="5dp">
+    </com.prize.prizethemecenter.ui.widget.view.ScollerGridView>
+
+    <LinearLayout
+        android:id="@+id/recommand_notice_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:id="@+id/classify_tv"
+            style="@style/home_notice_tv"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:drawableTop="@drawable/classify_icon_selector"
+            android:text="@string/recommend_classify"/>
+
+        <TextView
+            android:id="@+id/topic_tv"
+            style="@style/home_notice_tv"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:drawableTop="@drawable/topic_icon_selector"
+            android:text="@string/recommend_topic"/>
+
+        <TextView
+            android:id="@+id/local_tv"
+            style="@style/home_notice_tv"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:drawableTop="@drawable/local_icon_selector"
+            android:text="@string/recommend_local"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/hot_topic_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/title_logo"
+        android:text="@string/hot_wallpaper"
+        android:textColor="@color/text_color_33cccc"
+        android:drawablePadding="2dp"
+        android:layout_marginBottom="-3dp"
+        android:textSize="@dimen/text_size_small"/>
+
+</LinearLayout>

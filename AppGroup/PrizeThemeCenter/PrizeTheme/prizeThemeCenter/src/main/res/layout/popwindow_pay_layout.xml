@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_window_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/pay_remind"
+        android:layout_marginTop="@dimen/margin_left_right"
+        android:layout_marginBottom="@dimen/margin_left_right"
+        android:textColor="@color/text_color_969696"
+        android:textSize="@dimen/text_size_large" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/statusbar_color" />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_content"
+        android:layout_marginTop="@dimen/margin_left_right"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:textColor="@color/text_color_323232"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_tag"
+        android:layout_marginTop="@dimen/margin_left_right"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:textColor="@color/text_color_969696"
+        android:textSize="@dimen/text_size_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_left_right"
+        android:layout_marginBottom="@dimen/margin_left_right"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:paddingRight="@dimen/margin_left_right" >
+
+        <Button
+            android:id="@+id/add_neg"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cancel_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/text_color_737373"
+            android:textSize="@dimen/text_size_medium" />
+
+        <Button
+            android:id="@+id/sure_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sure_selector"
+            android:text="@string/sure"
+            android:textColor="@color/text_color_737373"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+</LinearLayout>

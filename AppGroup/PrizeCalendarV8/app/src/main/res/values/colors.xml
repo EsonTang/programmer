@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/Calendar/assets/res/any/colors.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+
+    <!--<color name="pressed">#330066ff</color>-->
+    <color name="today_highlight_color">#0033b5e5</color>
+
+    <!-- The app wide background color -->
+    <color name="background_color">#fafafa</color>
+    <color name="event_background">#ffc3d9ff</color>
+    <color name="panel_text_foreground">#ffffffff</color>
+    <color name="calendar_event_text_color">#ffFFFFFF</color>
+
+    <color name="calendar_owner_text_color">#777777</color>
+    <color name="calendar_date_range_color">#80000000</color>
+
+
+    <color name="week_saturday">#80333333</color>
+    <color name="week_sunday">#80333333</color>
+    <color name="calendar_future_bg_color">#ffffffff</color>
+    <color name="calendar_hour_label">#ff666666</color>
+    <color name="calendar_ampm_label">#ff999999</color>
+    <color name="calendar_hour_background">#ffEEEEEE</color>
+
+    <color name="calendar_date_banner_background">#FFEEEEEE</color>
+
+    <color name="calendar_date_banner_text_color">#ff666666</color>
+
+    <color name="calendar_grid_area_selected">#e633b5e5</color>
+
+
+    <color name="calendar_grid_line_inner_horizontal_color">#FFCCCCCC</color>
+    <color name="calendar_grid_line_inner_vertical_color">#FFCCCCCC</color>
+    <color name="calendar_grid_line_highlight_color">#ff707070</color>
+
+    <color name="mini_month_bg_color">#FFFFFFFF</color>
+    <color name="mini_month_today_outline_color">#FF000000</color>
+
+    <color name="month_day_number">#FF333333</color>
+    <color name="month_mini_day_number">#FF000000</color>
+    <color name="month_day_number_other">#FF999999</color>
+    <color name="month_week_num_color">#FF999999</color>
+    <color name="month_onfource_color">#ffffff</color>
+    <color name="month_day_names_color">#FF999999</color>
+    <color name="month_today_number">#FF333333</color>
+    <color name="month_event_color">#FF333333</color>
+    <color name="month_event_extra_color">#FF666666</color>
+    <color name="month_event_other_color">#FF666666</color>
+    <color name="month_event_extra_other_color">#4C999999</color>
+    <color name="month_saturday">#80333333</color>
+    <color name="month_sunday">#80333333</color>
+    <color name="month_grid_lines">#ffCCCCCC</color>
+    <color name="month_other_month_day_number">#ff939497</color>
+    <color name="month_other_bgcolor">#FFEEEEEE</color>
+    <color name="month_selected_week_bgcolor">#FFDDDDDD</color>
+    <color name="month_today_bgcolor">#FFFFFFFF</color>
+    <color name="month_bgcolor">#FFE5E5E5</color>
+
+    <color name="month_dna_conflict_time_color">#FF333333</color>
+
+    <color name="event_center">#ff6bd697</color>
+    <color name="edit_event_separator">#FFDDDDDD</color>
+
+    <color name="calendar_visible">#ff000000</color>
+    <color name="calendar_hidden">#ff808080</color>
+    <color name="calendar_secondary_visible">#ff323232</color>
+    <color name="calendar_secondary_hidden">#ff808080</color>
+
+    <!-- Text color of the date in the Calendar widget -->
+
+    <color name="agenda_item_not_selected">#00000000</color>
+    <!-- Text color of declined events in agenda view -->
+    <color name="agenda_item_declined_color">#66333333</color>
+    <!-- Text color of non-declined events in agenda view -->
+    <color name="agenda_item_standard_color">#FF333333</color>
+    <!-- Background Color of present/future events in agenda view  -->
+    <color name="agenda_day_bar_background_color">#FFFFFFFF</color>
+    <!-- Background Color of past events in agenda view  -->
+    <color name="agenda_past_days_bar_background_color">#FFDDDDDD</color>
+    <!-- Color of the separator between the past and the present/future in agenda view  -->
+    <color name="agenda_past_present_separator_color">#FF333333</color>
+    <!-- General background color in agenda view  -->
+    <color name="agenda_general_background_color">#FFEEEEEE</color>
+    <!-- Agenda day item text color  -->
+    <color name="agenda_day_item_text_color">#FF666666</color>
+    <!-- Color of the event location's text in an agenda item  -->
+    <color name="agenda_item_where_text_color">#FF666666</color>
+    <!-- Color of the event location's text in an agenda item  -->
+    <color name="agenda_item_where_declined_text_color">#66666666</color>
+    <!-- Color of text in the calendar view selection menu -->
+    <color name="calendar_view_switch_menu_text_color">#FF666666</color>
+    <color name="calendar_view_switch_menu_text_color_prize">#dd4e42</color>
+    <!-- Light color of text in the calendar view selection menu -->
+    <color name="calendar_view_switch_menu_text_color_light">#FF888888</color>
+    <color name="calendar_view_switch_menu_text_color_light_prize">#dd4e42</color>
+    <!-- Color of the separator between items in the agenda list -->
+    <color name="agenda_list_separator_color">#FFBBBBBB</color>
+    <!-- Text color of a selected items in the agenda list - trumps all other text colors -->
+    <color name="agenda_selected_background_color">@android:color/holo_blue_dark</color>
+    <!-- Background color of a selected items in the agenda list -->
+    <color name="agenda_selected_text_color">#FFFFFFFF</color>
+    <!-- Text color of the "new event" hint in day and week views -->
+    <color name="new_event_hint_text_color">#FFFFFFFF</color>
+
+    <!-- Text color of a clicked event in the day/week view -->
+    <color name="day_event_clicked_background_color">#8033B5E5</color>
+    <!-- background color for for clicked days in month view-->
+    <color name="day_clicked_background_color">#FF33B5E5</color>
+    <!-- background color for the past -->
+    <color name="day_past_background_color">#FFDDDDDD</color>
+
+    <!-- Event info colors -->
+    <color name="event_info_headline_color">#FFFFFFFF</color>
+    <color name="event_info_headline_transparent_color">#B3FFFFFF</color>
+    <color name="event_info_headline_link_color">#FFFFFFFF</color>
+    <color name="event_info_organizer_color">#FF666666</color>
+    <color name="event_info_description_color">#FF666666</color>
+    <color name="event_info_body_color">#FF666666</color>
+    <color name="event_info_label_color">#FF999999</color>
+    <color name="event_info_label_background_color">#FFDDDDDD</color>
+
+    <!-- Create event colors -->
+    <color name="create_event_date_color">#FF000000</color>
+    <color name="create_event_more_details_color">#FF888888</color>
+    <color name="create_event_divider_color">#FFDDDDDD</color>
+
+    <color name="text_shadow_color">#4D000000</color>
+
+    <color name="alert_event_title">#FFFFFFFF</color>
+    <color name="alert_event_other">#FF999999</color>
+    <color name="alert_past_event">#8F999999</color>
+
+    <color name="appwidget_row_in_progress">#6633b5e5</color>
+
+    <color name="appwidget_date">#ffEEEEEE</color>
+    <color name="appwidget_week">@android:color/white</color>
+    <color name="appwidget_month">#ffEEEEEE</color>
+
+    <!-- Text color of declined events in widget view -->
+    <color name="appwidget_item_declined_color">#66333333</color>
+    <!-- Text color of non-declined events in widget view -->
+    <color name="appwidget_item_standard_color">#ff333333</color>
+    <!-- Text color for all day events in widget view -->
+    <color name="appwidget_item_allday_color">#ffffffff</color>
+
+    <color name="appwidget_title">#ffffffff</color>
+    <color name="appwidget_when">#ffffffff</color>
+    <color name="appwidget_where">#ffffffff</color>
+    <color name="appwidget_no_events">#ffffffff</color>
+
+    <color name="recurrence_picker_background">#fff2f2f2</color>
+    <color name="recurrence_bubble_text_normal">#ff737373</color>
+    <color name="actiongbar_title_background_color">#efefef</color>
+    <color name="prize_bg_title">#FFEFEFEF</color>
+    <color name="prize_bg_agenda_item_day">#FFF8F8F8</color>
+    <color name="prize_text_title">#FFDD4E42</color>
+    <color name="prize_text_agenda_header">#FF646464</color>
+    <color name="prize_text_agenda_item_primary">#FF323232</color>
+    <color name="prize_text_agenda_item_secondary">#FF969696</color>
+    <!-- prize-add_agenda_colors-by-wangzhong-2015-04-22-end -->
+    
+    
+    <!-- prize-增加新资源-lixing-2015-6-16-start -->
+    <color name="prize_line_month_item">#ececec</color>
+    <color name="white">#FFFFFF</color>
+    <color name="prize_translucent_white_3">#33FFFFFF</color>
+    <color name="prize_translucent_white_6">#66FFFFFF</color>
+    <color name="prize_translucent_white_9">#99FFFFFF</color>
+    <color name="prize_translucent_white">#00FFFFFF</color>
+    <color name="prize_divide_gray">#dcdcdc</color>
+    <color name="prize_divide_line_black">#ffffff</color>
+    <color name="prize_divide_line_green">#4bd1c3</color>
+    <color name="prize_black_3">#323232</color>
+    <color name="prize_black_6">#646464</color>
+    <color name="prize_black_9">#969696</color>
+    <color name="prize_black_c">#c9c9c9</color>
+    <color name="prize_envet_text_right">#FF777777</color>
+    <color name="prize_background">#00a5c4</color>
+    <color name="prize_background_white">#ffffffff</color>
+    <!-- prize-增加新资源-lixing-2015-6-16-end -->
+    
+    <!-- prize-界面调整-wanzhijuan-2015-7-6-start -->
+    <color name="time_select_flag">#33cc99</color>
+    <color name="time_select_flag_bg">#e0e0e0</color>
+    
+    <color name="mouth_divide">#e0e0e0</color>
+    <color name="mouth_up_unselect">#323232</color>
+    <color name="mouth_down_unselect">#80323232</color>
+    
+    <color name="mouth_up_select">#ffffff</color>
+    <color name="mouth_down_select">#80ffffff</color>
+    
+    <color name="agenda_day_item_bg">#f8f8f8</color>
+    <color name="agenda_item_bg">#ffffff</color>
+    <color name="agenda_item_divider">#dfdfdf</color>
+    <color name="agenda_item_load">#646464</color>
+    <color name="agenda_item_title">#323232</color>
+    <color name="agenda_item_second_title">#969696</color>
+    <color name="black">#ff000000</color>
+    <color name="select_time">#30000000</color>
+    <color name="edit_event_divider">#ececec</color>
+    <!-- prize-界面调整-wanzhijuan-2015-7-6-end -->
+    <color name="create_event_divider">#dcdcdc</color>
+    
+    <color name="prize_prefence_title">#f0f0f0</color>
+    
+    <color name="underline_color">#e85757</color>
+    
+    <color name="title_universal_text_color">#33cbcc</color>
+    <color name="calendar_background">#f5f5f5</color>
+    <color name="prize_divide_line_default">#dcdcdc</color>
+    <color name="dashboard_category_title_textcolor">#30c1be</color>
+    <color name="bubble_textcolor">#36b5e4</color>
+    <color name="search_hint_textcolor">#b3b3b3</color>
+    
+    <!--PRIZE-add by xiaoping-2016-12-03-start  -->
+    <color name="prize_alert_event_title">#4A4A4A</color>
+    <!--PRIZE-add by xiaoping-2016-12-03-start  -->
+
+
+    <color name="blue">#3F51B5</color>
+    <color name="blue_dark">#303F9F</color>
+    <color name="red">#FF4081</color>
+
+    <color name="pain_bg">#E6E6E6</color>
+
+    <color name="event_info_title_color">#323232</color>
+    <color name="event_info_content_color">#F5F5F5</color>
+    <!--<color name="event_info_title_bg">#303F9F</color>-->
+    <color name="event_info_title_bg">#EDEDED</color>
+    <color name="event_info_content_bg">#E6E6E6</color>
+    <color name="prize_bottom_button_bg_color">#ededed</color>
+    <color name="prize_title_bg_color">#FFFFFF</color>
+
+    <!-- preferences -->
+    <color name="prize_preferences_text_color">#33CCCC</color>
+    <color name="prize_preferences_title_text_color">#000000</color>
+    <color name="prize_preferences_lowest_bg">#E6E6E6</color>
+    <color name="prize_preferences_bg_color_gray">#DCDCDC</color>
+    <color name="prize_preferences_bg_solid_color">#F5F5F5</color>
+    <color name="prize_preferences_bg_solid_color_pressed">#E7E7E7</color>
+    <color name="prize_divider_color_gray7">#E5E5E5</color>
+
+
+    <color name="prize_bubble_textcolor">#33cccc</color>
+</resources>

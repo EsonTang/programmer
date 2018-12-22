@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/pop_height"
+    android:layout_width="match_parent"
+    android:background="@drawable/pop_comment"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/comment_content_et"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="38dp"
+        android:background="@null"
+        android:textColor="#77000000"
+        android:textSize="@dimen/text_size_small"
+        android:gravity="top|left"
+        android:layout_marginEnd="@dimen/margin_end_15dp"
+        android:layout_marginStart="@dimen/margin_end_15dp"
+        android:hint="@string/pop_comment_content_hint"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_left_right"
+        android:layout_marginBottom="@dimen/margin_left_right"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:paddingRight="@dimen/margin_left_right">
+
+        <Button
+            android:id="@+id/cancel_id"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cancel_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/text_color_737373"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <Button
+            android:id="@+id/coment_id"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sure_selector"
+            android:text="@string/pop_comment_id"
+            android:textColor="@color/text_color_737373"
+            android:textSize="@dimen/text_size_medium"/>
+    </LinearLayout>
+
+</LinearLayout>

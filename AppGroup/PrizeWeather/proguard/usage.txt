@@ -1,0 +1,242 @@
+android.support.annotation.AnimRes
+android.support.annotation.AnimatorRes
+android.support.annotation.AnyRes
+android.support.annotation.ArrayRes
+android.support.annotation.AttrRes
+android.support.annotation.BinderThread
+android.support.annotation.BoolRes
+android.support.annotation.CallSuper
+android.support.annotation.CheckResult
+android.support.annotation.ColorInt
+android.support.annotation.ColorRes
+android.support.annotation.DimenRes
+android.support.annotation.DrawableRes
+android.support.annotation.FloatRange
+android.support.annotation.FractionRes
+android.support.annotation.IdRes
+android.support.annotation.IntDef
+android.support.annotation.IntRange
+android.support.annotation.IntegerRes
+android.support.annotation.InterpolatorRes
+android.support.annotation.Keep
+android.support.annotation.LayoutRes
+android.support.annotation.MainThread
+android.support.annotation.MenuRes
+android.support.annotation.NonNull
+android.support.annotation.Nullable
+android.support.annotation.PluralsRes
+android.support.annotation.RawRes
+android.support.annotation.RequiresPermission
+android.support.annotation.RequiresPermission$Read
+android.support.annotation.RequiresPermission$Write
+android.support.annotation.Size
+android.support.annotation.StringDef
+android.support.annotation.StringRes
+android.support.annotation.StyleRes
+android.support.annotation.StyleableRes
+android.support.annotation.TransitionRes
+android.support.annotation.UiThread
+android.support.annotation.VisibleForTesting
+android.support.annotation.WorkerThread
+android.support.annotation.XmlRes
+com.prize.weather.BuildConfig
+com.prize.weather.IFragmentScrollListener
+com.prize.weather.R
+com.prize.weather.R$anim
+com.prize.weather.R$array
+com.prize.weather.R$attr
+com.prize.weather.R$color
+com.prize.weather.R$dimen
+com.prize.weather.R$drawable
+com.prize.weather.R$id
+com.prize.weather.R$layout
+com.prize.weather.R$menu
+com.prize.weather.R$string
+com.prize.weather.R$style
+com.prize.weather.R$xml
+com.prize.weather.WeatherHomeActivity:
+    private android.widget.VideoView mVideoView
+    80:80:public android.widget.VideoView getmVideoView()
+    165:166:public void setmIBDLocationRefreshListener(com.prize.weather.IBDLocationRefreshListener)
+com.prize.weather.WeatherViewPagerAdapter
+com.prize.weather.city.CharacterParser:
+    private java.lang.String resource
+    69:69:public java.lang.String getResource()
+    73:74:public void setResource(java.lang.String)
+    135:135:public java.lang.String getSpelling()
+com.prize.weather.city.CityEntity:
+    83:92:public CityEntity(int,int,int,int,int,java.lang.String,int,int)
+    99:100:public void setId(int)
+    102:102:public int getPid()
+    105:106:public void setPid(int)
+    111:112:public void setcCode(int)
+    114:114:public int getdCode()
+    117:118:public void setdCode(int)
+    120:120:public int getType()
+    123:124:public void setType(int)
+    129:130:public void setName(java.lang.String)
+    135:135:public int getIsEnable()
+    141:142:public void setIsEnable(int)
+    147:147:public int getIsHot()
+    153:154:public void setIsHot(int)
+com.prize.weather.city.CitySelectActivity:
+    java.lang.Thread mThread
+    private int mNavigationBarHeight
+    158:158:public int getNavigationBarHeight()
+    405:413:private void getHotCityData()
+    416:425:private void getProvincesData()
+com.prize.weather.city.GridAdapter:
+    28:29:public void addItem(java.lang.String)
+    32:33:public void removeItem(int)
+    40:41:public void setSelectedPosition(int)
+com.prize.weather.city.SortAdapter:
+    112:117:private java.lang.String getAlpha(java.lang.String)
+com.prize.weather.db.AssetsDatabaseManager:
+    199:205:public boolean closeDatabase(java.lang.String)
+    212:221:public static void closeAllDatabase()
+com.prize.weather.db.DBHelper
+com.prize.weather.db.DBManager:
+    127:134:public java.util.List queryHotCity()
+    138:145:public java.util.List queryProvinces()
+    183:184:public android.database.Cursor queryTheCursor()
+    188:189:public void closeDB()
+com.prize.weather.framework.BaseActivity:
+    private static final java.lang.String REFRESH_WIDGET_WEATHER
+com.prize.weather.framework.Constants
+com.prize.weather.framework.FrameApplication:
+    public static final int LOCATION_POSITION
+    private static final java.lang.String LOCATION_SUFFIX
+com.prize.weather.framework.IActivityOnCreateCallBack
+com.prize.weather.framework.ISPCallBack
+com.prize.weather.framework.db.IWeatherCacheDataBaseDao
+com.prize.weather.framework.db.WeatherCacheDataBaseDao:
+    52:59:public java.util.List queryAll()
+    76:83:public java.util.List queryByLikeCreatedDate(java.lang.String)
+    88:95:public com.prize.weather.framework.model.WeatherDBCache queryByID(int)
+    100:103:public int deleteAll()
+    108:115:public int deleteByID(int)
+com.prize.weather.framework.db.WeatherCacheDataBaseHelper:
+    private static final int DB_VERSION
+    private static final java.lang.String DB_NAME
+com.prize.weather.framework.http.HttpBus:
+    private org.apache.http.HttpEntity mHttpEntity
+    private org.apache.http.HttpResponse mHttpResponse
+    private static final int CONNECTION_TIMEOUT
+    private static final int SOCKET_TIMEOUT
+    private static final long MCC_TIMEOUT
+    119:122:public static org.apache.http.client.HttpClient getGlobalHttpClient()
+    130:135:private static void setTimeouts(org.apache.http.params.HttpParams)
+    143:146:private void handleException(java.lang.Exception,java.lang.String)
+    152:154:public static void resetConnect()
+    160:161:public static void shutdownHttpConnection()
+    253:265:public org.apache.http.HttpResponse hrePost(java.lang.String,java.lang.String)
+    270:271:public java.lang.String strPost(java.lang.String,java.lang.String)
+    286:287:public java.lang.String strPostForm(java.lang.String,java.util.Map)
+    292:307:public org.apache.http.HttpResponse hrePostForm(java.lang.String,java.util.Map)
+    321:322:public java.lang.String strPostFormFile(java.lang.String,java.util.Map,java.util.Map)
+    329:377:public org.apache.http.HttpResponse hrePostFormFile(java.lang.String,java.util.Map,java.util.Map)
+    427:427:public org.apache.http.HttpResponse doPost(java.lang.String,java.util.List)
+    432:482:public org.apache.http.HttpResponse doPost(java.lang.String,java.util.List,java.lang.String)
+com.prize.weather.framework.http.HttpConnection:
+    private static final java.lang.String TAG
+    39:40:public void setMethod(java.lang.String)
+com.prize.weather.framework.http.HttpConnectionConfig:
+    private static java.lang.String mHost
+    private static java.lang.Integer mPort
+    private static java.lang.String mPath
+    private java.lang.String mPostEncoding
+    private java.lang.String mGetEncoding
+    private java.lang.String mResultEncoding
+    30:30:public static java.lang.String getHost()
+    33:34:public static void setHost(java.lang.String)
+    36:36:public static java.lang.Integer getPort()
+    39:40:public static void setPort(java.lang.Integer)
+    42:42:public static java.lang.String getPath()
+    45:46:public static void setPath(java.lang.String)
+    56:56:public java.lang.String getMethod()
+    64:64:public java.lang.String getPostEncoding()
+    67:68:public void setPostEncoding(java.lang.String)
+    70:70:public java.lang.String getGetEncoding()
+    73:74:public void setGetEncoding(java.lang.String)
+    76:76:public java.lang.String getResultEncoding()
+    79:80:public void setResultEncoding(java.lang.String)
+    84:84:public boolean isEncryptData()
+    87:88:public void setEncryptData(boolean)
+    90:90:public boolean isCompressData()
+    93:94:public void setCompressData(boolean)
+    98:114:private java.lang.String formatEncoding(java.lang.String)
+com.prize.weather.framework.model.WeatherDBCache:
+    87:87:public java.lang.String getCity_code()
+com.prize.weather.framework.mvp.view.ICancelListener
+com.prize.weather.menu.MenuCityListAdapter:
+    37:38:public void setmICityDeleteListener(com.prize.weather.menu.ICityDeleteListener)
+com.prize.weather.service.LocationSvc:
+    private static final java.lang.String TAG
+com.prize.weather.util.AppUtils
+com.prize.weather.util.CalendarUtils:
+    16:16:public CalendarUtils()
+    47:54:public static java.util.Date formatDate1(java.lang.String)
+    58:73:public static boolean isToday(java.util.Date)
+    107:112:public static boolean isLatestDate(java.lang.String,java.lang.String)
+com.prize.weather.util.CityUtil:
+    46:46:public CityUtil()
+com.prize.weather.util.Common
+com.prize.weather.util.DateUtil
+com.prize.weather.util.DeviceUtils:
+    16:16:public DeviceUtils()
+    25:46:public static boolean checkDeviceHasNavigationBar(android.content.Context)
+    55:64:public static int getNavigationBarHeight(android.content.Context)
+    108:108:public static int getNavigationBarHeight()
+com.prize.weather.util.FastJsonUtils:
+    14:14:public FastJsonUtils()
+    23:23:public static java.util.List getListString(java.lang.String)
+    45:45:public static java.util.List getListBean(java.lang.String,java.lang.Class)
+    55:55:public static java.util.List getMapListBean(java.lang.String)
+com.prize.weather.util.FastJsonUtils$1
+com.prize.weather.util.IcallBack
+com.prize.weather.util.ListViewUtils
+com.prize.weather.util.LocationUtil
+com.prize.weather.util.LocationUtil$MyLocationListenner
+com.prize.weather.util.MathUtils:
+    10:10:public MathUtils()
+com.prize.weather.util.NetworkUtils:
+    15:15:public NetworkUtils()
+    45:47:public static boolean is3GActive()
+    55:57:public static boolean isWifiActive()
+    64:68:private static boolean judgeState(android.net.NetworkInfo$State)
+com.prize.weather.util.OptimizeImage:
+    33:45:public static int calculateInSampleSize(android.graphics.BitmapFactory$Options,int,int)
+    63:71:public static android.graphics.Bitmap decodeSampledBitmapFromFile(java.lang.String,int,int)
+    127:131:public void addBitmapToMemoryCache(java.lang.String,android.graphics.Bitmap)
+    141:141:public static android.graphics.Bitmap getBitmapFromMemCache(java.lang.String)
+    171:180:public void loadBitmap(java.lang.String,android.widget.ImageView,int)
+com.prize.weather.util.OptimizeImage$BitmapWorkerTask
+com.prize.weather.util.WeatherImageUtils:
+    private android.widget.ImageView move_sand1
+    private com.prize.weather.view.MovingPictureView move_sandcloud2
+    private android.widget.ImageView move_sand2
+    private com.prize.weather.view.MovingPictureView move_thunder_cloud3
+    1130:1139:private static void initAnimator(android.view.View,int)
+    1218:1237:public void clearAnimation()
+com.prize.weather.util.WeatherImageUtils$4
+com.prize.weather.util.WeatherUtils
+com.prize.weather.view.CharacterParser
+com.prize.weather.view.HourWeatherLayout:
+    private static final java.lang.String TAG
+com.prize.weather.view.MovingPictureView:
+    int goBackType
+    public int index
+    214:224:private android.graphics.Bitmap compressImage(android.graphics.Bitmap)
+    230:260:private android.graphics.Bitmap comp(android.graphics.Bitmap)
+com.prize.weather.widget.WeatherWidgetProvider_4x2:
+    private static final java.lang.String TAG
+    private static final java.lang.String REFRESH_WIDGET
+    public static final java.lang.String SYSTEM_READY
+com.prize.weather.widget.WidgetService:
+    private static final java.lang.String TAG
+    private static final java.lang.String REFRESH_WIDGET_WEATHER
+    public static final java.lang.String ACTION_UPDATE_WIDGETCITY
+    public static final java.lang.String ACTION_CLEARVIEW
+    public static final java.lang.String ACTION_UPDATE_TIME
+    public static final java.lang.String ACTION_UPDATE_WEATHER
+    private static final int REFRESH_WEATHER

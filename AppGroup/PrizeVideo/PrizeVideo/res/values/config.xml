@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="net_app" type="string">com.qiyi.video</item><!-- com.youku.phone  com.tencent.qqlive com.qiyi.video-->
+    <item name="net_source" type="string">@string/iqiyi_videos</item>
+    <item name="net_icon" type="drawable">@drawable/icon_aqi</item>
+</resources>

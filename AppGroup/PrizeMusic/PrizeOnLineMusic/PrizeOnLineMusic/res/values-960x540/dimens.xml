@@ -1,0 +1,54 @@
+<resources>
+
+    <dimen name="listview_peak_meter_one_padding_right">40dp</dimen>
+    <dimen name="listview_peak_meter_two_padding_right">30dp</dimen>
+    <dimen name="image_h_w">100dp</dimen>
+    <dimen name="ScrollableTabView_margin_top">5dp</dimen>
+    <dimen name="play_list_title_paddingleft">8dp</dimen>
+    <dimen name="play_list_bottom_margin_top">6dp</dimen>
+    <dimen name="play_list_bottom_marginBottom">9dp</dimen>
+    <dimen name="play_list_line_height">0.5dp</dimen>
+    <dimen name="play_list_nosong_img_margin_top">75dp</dimen>
+    <dimen name="play_list_nosong_tv_margin_top">15dp</dimen>
+    <dimen name="play_list_nosong_bt_margin_top">54dp</dimen>
+    <dimen name="dialog_title_margintop">20dp</dimen>
+    <dimen name="dialog_title_marginleft">20dp</dimen>
+    <dimen name="dialog_title_marginbottom">12dp</dimen>
+    <dimen name="dialog_secondline_marginleft">10dp</dimen>
+    <dimen name="dialog_secondline_marginright">10dp</dimen>
+    <dimen name="dialog_bottomlinearlayout_margintop">25dp</dimen>
+    <dimen name="bottom_action_bar_height">68dp</dimen>
+    <dimen name="select_view_height">44.5dp</dimen>
+    <dimen name="header_height">222dp</dimen>
+    <dimen name="three_six_zero_h">360dp</dimen>
+    <dimen name="list_padding_top">160px</dimen>
+    <dimen name="select_all_margintop">41dp</dimen>
+    <dimen name="plug_wight">308dp</dimen>
+    <dimen name="plug_height">68dp</dimen>
+    <dimen name="plug_margin_left">20dp</dimen>
+    <dimen name="plug_margin_right">20dp</dimen>
+    <dimen name="plug_btn_marginleft">54dp</dimen>
+    <dimen name="all_music_margintop">25dp</dimen>
+    <dimen name="min_header_height">185dp</dimen>
+    <dimen name="audio_control_margintop">42dp</dimen>
+    <dimen name="audio_control_margintop2">35dp</dimen>
+    <dimen name="audio_control_margintop3">23dp</dimen>
+    <dimen name="suspend_margin">6dp</dimen>
+    <dimen name="suspend_back_width">185dp</dimen>
+    <dimen name="suspend_back_height">190dp</dimen>
+    <dimen name="suspend_dot_margintop">7dp</dimen>
+    <dimen name="edit_padding_top">3dp</dimen>
+    <dimen name="online_marging_top">36dp</dimen>
+    <dimen name="gridview_marging_top">20dp</dimen>
+    <dimen name="local_margin_top">26dp</dimen>
+    <dimen name="online_marginbottom">20dp</dimen>
+    <dimen name="text_size">28px</dimen>
+    <dimen name="update_text_paddingleft">30px</dimen>
+    <dimen name="one_six_twopx">162px</dimen>
+    <dimen name="one_zero_fivedp">105dp</dimen>
+    <dimen name="seven_fivedp">75dp</dimen>
+    <dimen name="eight_zerodp">80dp</dimen>
+    <dimen name="one_hundred_dp">100dp</dimen>
+    <dimen name="one_two_zerodp">120dp</dimen>
+
+</resources>

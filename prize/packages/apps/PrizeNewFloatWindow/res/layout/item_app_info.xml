@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_press_selector"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/lay_app"
+        android:layout_width="match_parent"
+        android:layout_height="72dp" > 
+
+        <ImageView
+            android:id="@+id/iv_app_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/start_margin" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/iv_app_icon"
+            android:text="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/iv_app_ck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/start_margin"
+            android:visibility="gone"
+            android:src="@drawable/ck_press" />
+    </RelativeLayout>
+
+</LinearLayout>

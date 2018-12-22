@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_intercept_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/intercept_theme_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="@dimen/base_margin"
+	        android:gravity="center_vertical"
+	        android:text="来电拦截"
+	        android:textColor="@android:color/white"
+	        android:background="@drawable/intercept_title_bg" />
+
+	    <ListView
+	        android:id="@+id/lv_intercept_phone"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:cacheColorHint="#00000000" >
+	    </ListView>
+
+	    <Button
+	        android:id="@+id/bt_intercept_status"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/base_margin"
+	        android:text="清除记录"
+	        android:textColor="@android:color/white"
+	        android:background="@drawable/intercept_btn_status" />
+	    
+    </LinearLayout>
+
+</LinearLayout>

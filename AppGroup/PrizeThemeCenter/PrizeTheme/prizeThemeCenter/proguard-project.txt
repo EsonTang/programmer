@@ -1,0 +1,375 @@
+-dontwarn **HoneycombMR2
+-dontwarn **MotionEventCompatEclair
+-dontwarn **VelocityTrackerCompatHoneycomb
+-dontwarn **ViewConfigurationCompatFroyo
+-dontwarn **ActivityCompatHoneycomb
+-dontwarn **MenuCompatHoneycomb
+-dontwarn **gnu.trove.**
+
+-dontwarn com.tencent.assistant.**
+-dontnote com.tencent.assistant.** 
+
+-optimizationpasses 5
+-dontoptimize
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-dontnote 
+-defaultpackage ''
+-dontskipnonpubliclibraryclasses  
+-ignorewarnings 
+
+
+-keepattributes *Annotation*
+-keepattributes Exceptions,InnerClasses,Signature
+-keep class android.support.v4.**{*;}  
+-keep interface android.support.v4.app.**{*;}  
+-keep public class * extends android.support.v4.**  
+-keep public class * extends android.app.Fragment
+
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keep public class android.webkit.WebViewClient {*;}
+-keep public class android.webkit.WebChromeClient {*;}
+-keep public class com.prize.appcenter.bean.**{*;}
+
+
+-keep public class com.viewpagerindicator.** {*;}
+-keep class com.prize.app.** {*;}
+-keep class com.prize.foundation.** {*;}
+-keep class com.tencent.stat.**  {* ;}
+
+-keep class com.tencent.android.tpush.**  {* ;}
+-keep class com.tencent.mid.**  {* ;}
+
+# pay for crash
+#-keep class com.snowfish.**{*;}
+
+#xutils
+-dontwarn com.lidroid.xutils.**
+-keep class com.lidroid.xutils.**{*;}
+-keepattributes Signature
+
+# mta
+-keep class com.tencent.stat.**  {* ;}
+-keep class com.tencent.mid.**  {* ;}
+
+-dontwarn me.myfont.fontsdk.**
+-keep class me.myfont.fontsdk.**{*;}
+
+
+-keep class com.prize.prizethemecenter.**{*;}
+-keep class com.prize.cloud.**{*;}
+
+-dontwarn org.apache.http.entity.mime.**
+-dontwarn com.renn.rennsdk.**
+-dontwarn com.sina.sso.**
+-dontwarn android.support.**
+-dontwarn com.google.gson.**
+-dontwarn com.readystatesoftware.systembartint.**
+-dontwarn com.umeng.analytics.**
+-dontwarn com.lidroid.xutils.**
+-dontwarn com.nostra13.universalimageloader.**
+-dontwarn com.viewpagerindicator.**
+-dontwarn com.prize.appcenter.ui.widget.**
+-dontwarn com.tencent.weibo.sdk.android.**
+-dontwarn com.tencent.**
+-dontwarn com.tencent.stat.**
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+-dontwarn com.tencent.weibo.sdk.**
+-dontwarn com.facebook.**
+-dontwarn com.squareup.wire.**
+-dontwarn com.ta.utdid2.**
+-dontwarn com.ut.device.**
+-dontwarn org.android.**
+
+-keep enum com.facebook.**
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+
+-keep public interface com.facebook.**
+-keep public interface com.tencent.**
+#-keep public interface com.umeng.socialize.**
+#-keep public interface com.umeng.socialize.sensor.**
+#-keep public interface com.umeng.scrshot.**
+
+-keep public class com.umeng.socialize.* {*;}
+-keep public class javax.**
+-keep public class android.webkit.**
+
+-keep class com.facebook.**
+-keep class com.umeng.scrshot.**
+-keep public class com.tencent.** {*;}
+
+-keep class com.tencent.mm.sdk.modelmsg.WXMediaMessage {*;}
+
+-keep class com.tencent.mm.sdk.modelmsg.** implements com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
+
+
+-keep public class [your_pkg].R$*{
+    public static final int *;
+}
+
+-keep class com.umeng.** {*;}
+-keep class org.apache.http.entity.mime.** {*;}
+-keep class com.renn.rennsdk.** {*;}
+-keep class com.sina.sso.** {*;}
+-keep class org.codehaus.jackson.** {*;}
+-keep class com.sina.sso.** {*;}
+-keep class android.support.** {*;}
+-keep class com.google.gson.** {*;}
+-keep class com.readystatesoftware.systembartint.** {*;}
+-keep class com.umeng.analytics.** {*;}
+-keep class com.lidroid.xutils.** {*;}
+-keep class com.nostra13.universalimageloader.** {*;}
+-keep class com.prize.appcenter.ui.widget.** {*;}
+-keep class com.tencent.weibo.sdk.android.** {*;}
+-keep class com.tencent.** {*;}
+-keep public class com.tencent.assistant.oem.superapp.js.component.* {public *;}
+-keep public class com.tencent.assistant.oem.superapp.js.JsBridge{*;}
+-keep class com.squareup.wire.** {*;}
+-keep class com.ta.utdid2.** {*;}
+-keep class com.ut.device.** {*;}
+-keep class org.android.** {*;}
+
+-keep class com.tencent.assistant.protocol.jce.SuperAppSDK.** { public protected private *;}
+-keep class com.tencent.assistant.supersdk.TADownloadSdkManager {*;}
+-keep class com.tencent.assistant.supersdk.SDKInitCallback {*;}
+-keep class com.tencent.assistant.protocol.scu.cscomm.CsCommManager {*;}
+-keep public class com.tencent.assistant.protocol.jce.SuperAppSDK.PkgReq {public *;}
+-keep public class com.tencent.assistant.protocol.jce.SuperAppSDK.Request {public *;}
+-keep public class com.tencent.assistant.protocol.jce.SuperAppSDK.Response {public *;}
+-keep public class com.tencent.jni.YYBNDK {*;} 
+-keep public class com.qq.taf.jce.JceStruct {*;}
+-keep public class com.qq.taf.jce.* {public *;}
+-keep class com.qq.taf.jce.JceStruct{*;}
+-keep public class com.tencent.halley.DownloaderConfig{public *;}
+-keep public class com.tencent.halley.downloader.DownloaderFactory{public *;}
+-keep public class com.tencent.halley.detector.DownloadDetector{public static void init();}
+-keep public class com.tencent.beacon.event.UserAction{public *;}
+-keep class com.tencent.bugly.crashreport.CrashReport {*;}
+
+-keepnames class * implements java.io.Serializable
+-keepclassmembers class * extends android.database.sqlite.SQLiteOpenHelper{
+	void onCreate(android.database.sqlite.SQLiteDatabase );
+	void onUpgrade(android.database.sqlite.SQLiteDatabase , int , int );
+	void onDowngrade(android.database.sqlite.SQLiteDatabase , int , int );
+}
+-keepclassmembers class * implements java.io.Serializable { 
+    static final long serialVersionUID; 
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    !static !transient <fields>; 
+    private void writeObject(java.io.ObjectOutputStream); 
+    private void readObject(java.io.ObjectInputStream); 
+    java.lang.Object writeReplace(); 
+    java.lang.Object readResolve(); 
+} 
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembernames class * {
+    public void onReceivedTitle(android.webkit.WebView, java.lang.String);
+    public void onProgressChanged(android.webkit.WebView, int);
+}
+
+-keepclasseswithmembernames class * {
+    public void shouldOverrideUrlLoading(android.webkit.WebView, java.lang.String);
+    public void onPageFinished(android.webkit.WebView, java.lang.String);
+    public void onPageStarted(android.webkit.WebView, java.lang.String, android.graphics.Bitmap);
+    public void onReceivedError(android.webkit.WebView, int, java.lang.String, java.lang.String);
+}
+
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+# 保持 native 方法不被混淆
+-keepclasseswithmembernames class * {                                        
+    native <methods>;
+}
+
+-dontwarn rx.**
+#-dontwarn com.mediatek.**
+-dontwarn android.support.v7.widget.**
+-dontwarn org.codehaus.jackson.**
+-dontwarn com.prize.cloud.widgets.**
+
+-keep class rx.** {*;}
+-keep class com.mediatek.** {*;}
+-keep class android.support.v7.widget.** {*;}
+-keep class org.codehaus.jackson.** {*;}
+-keep class com.prize.cloud.widgets.** {*;}
+-keep class com.prize.cloud.task.pojo** {*;}
+-keep class com.prize.cloud.bean.** {*;}
+-keep class com.prize.cloud.** {*;}
+
+
+# iappay start -----------keep-------------------
+-keepattributes Exceptions,InnerClasses
+-keep public class com.alipay.android.app.** {
+    public <fields>;
+    public <methods>;
+}
+
+# Keep names - Native method names. Keep all native class/method names.
+-keepclasseswithmembers,allowshrinking class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers,allowshrinking class * {
+    public <init>(android.content.Context,android.util.AttributeSet);
+}
+
+-keepclasseswithmembers,allowshrinking class * {
+    public <init>(android.content.Context,android.util.AttributeSet,int);
+}
+
+-keepclassmembers enum  * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+-ignorewarning
+-keep public class * extends android.widget.TextView
+
+
+
+#-----------keep httpclient -------------------
+-keep class org.apache.** {
+    public <fields>;
+    public <methods>;
+}
+
+#--------------unionpay 3.3.0--------------
+-keep class com.unionpay.** {*;}
+-keep class com.UCMobile.PayPlugin.** {*;}
+-keep class cn.gov.pbc.tsm.client.mobile.android.bank.service.** {*;}
+
+
+-keepattributes *Annotation*
+-keepattributes *JavascriptInterface*
+
+
+#--------------sms--------------
+-keep class com.iapppay.sms.** {*;}
+
+#--------------alipay-------------
+-keep class com.ta.utdid2.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.ut.device.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.alipay.android.app.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.alipay.sdk.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.alipay.mobilesecuritysdk.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class HttpUtils.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class org.json.alipay.** {
+    public <fields>;
+    public <methods>;
+}
+
+#-----------keep iapppay -------------------
+-keep class com.iapppay.tool {*;}
+-keep class com.iapppay.service {*;}
+-keep class com.iapppay.provider {*;}
+-keep class com.iapppay.apppaysystem {*;}
+-keep class com.iapppay.account.channel.ipay.IpayAccountApi {*;}
+-keep class com.iapppay.account.channel.ipay.IpayOpenidApi {*;}
+-keep class com.iapppay.account.channel.ipay.view.** {
+    public <fields>;
+    public <methods>;
+}
+-keep public class com.iapppay.fastpay.ui.** {
+    public <fields>;
+    public <methods>;
+}
+-keep public class com.iapppay.fastpay.view.** {
+    public <fields>;
+    public <methods>;
+}
+#-----------keep iapppay -------------------
+-keep class com.iapppay.utils.RSAHelper {*;}
+-keep class com.iapppay.network.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.iapppay.sdk.main.** {
+    public <fields>;
+    public <methods>;
+}
+#iapppay_sub_pay
+-keep public class com.iapppay.pay.channel.** {
+    public <fields>;
+    public <methods>;
+}
+-keep class com.iapppay.interfaces.callback.** {*;}
+-keep class com.iapppay.interfaces.** {
+    public <fields>;
+    public <methods>;
+}
+
+#iapppay UI
+-keep public class com.iapppay.ui.activity.** {
+    public <fields>;
+    public <methods>;
+}
+# View
+-keep public class com.iapppay.ui.widget.**{
+    public <fields>;
+    public <methods>;
+}
+-keep public class com.iapppay.ui.view.**{
+    public <fields>;
+    public <methods>;
+}
+
+# iappay end

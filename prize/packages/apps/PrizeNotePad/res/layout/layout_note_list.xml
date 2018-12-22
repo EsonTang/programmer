@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notepads_list_activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background_color"
+    android:contentDescription="@null"
+    android:gravity="center_horizontal" >
+		
+	<View
+		android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow"></View>
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shadow"
+        android:background="@color/transparent"
+        android:paddingBottom="@dimen/density_6dp"
+        android:paddingTop="@dimen/density_3dp" >
+
+        <FrameLayout
+            android:id="@+id/search_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/density_30dp"
+            android:layout_marginStart="@dimen/density_6dp"
+            android:layout_marginEnd="@dimen/density_6dp"
+            android:background="@drawable/square_bg"
+            android:clickable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/density_10dp"
+            android:paddingRight="@dimen/density_10dp" >
+
+            <ImageView
+                android:id="@+id/search_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_gravity="center|center_vertical"
+                android:background="@drawable/search_image"
+				android:layout_marginEnd="@dimen/density_28dp"
+                android:clickable="false"
+                android:contentDescription="@null" />
+
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="true"
+				android:imeOptions="actionNone"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+				android:layout_gravity="center|center_vertical"
+				android:gravity="center|center_vertical"
+                android:textDirection="locale"
+                android:textColor="@color/search_edit_text_color"
+                android:textColorHint="@color/search_edit_text_color"
+                android:textSize="@dimen/normal_text_size" />
+				
+			<ImageView
+                android:id="@+id/search_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_marginEnd="-5dp"
+				android:layout_gravity="right|center_vertical"
+                android:background="@drawable/search_delete"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.android.notepad.note.view.NotePadListView
+        android:id="@+id/id_notepads_listview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/myBottomButton"
+        android:layout_below="@+id/search"
+		android:layout_marginStart="@dimen/density_6dp"
+        android:layout_marginEnd="@dimen/density_6dp"
+		android:layout_marginBottom="@dimen/density_6dp"
+        android:background="@drawable/square_bg"
+        android:divider="@drawable/line"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/myBottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/action_bar_color"
+        android:gravity="center"
+        android:visibility="gone" >
+		
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="3dp"
+			android:layout_alignParentTop="true"
+			android:background="@drawable/shadow_bottom"></View>
+
+        <RelativeLayout
+            android:id="@+id/list_bottom_operation_positive_button_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/select_all_button"
+                android:layout_width="180dp"
+                android:layout_height="@dimen/density_52dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/delect_check_all"
+                android:textColor="@drawable/edit_text_color"
+                android:textSize="@dimen/normal_text_size" />
+
+            <TextView
+                android:id="@+id/cancel_select_all_button"
+                android:layout_width="180dp"
+                android:layout_height="@dimen/density_52dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/delect_cancelled_check_all"
+                android:textColor="@drawable/edit_text_color"
+                android:textSize="@dimen/normal_text_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/delect_button"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/density_52dp"
+            android:layout_toEndOf="@+id/list_bottom_operation_positive_button_rl"
+            android:gravity="center"
+            android:text="@string/delect_action"
+            android:textColor="@drawable/edit_text_color"
+            android:textSize="@dimen/normal_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

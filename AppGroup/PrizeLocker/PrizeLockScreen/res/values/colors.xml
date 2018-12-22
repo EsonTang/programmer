@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pink">#D881D8</color>
+    <!-- liufan add 07-30 -->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gray_e">#ffededed</color>
+    <color name="gray_b">#ffbababa</color>
+    <color name="gray_3">#ff363636</color>
+    <color name="transparent">#00000000</color>
+    <color name="lock_pattern_view_regular_color">#bababa</color>
+    <color name="lock_pattern_view_error_color">#d83515</color>
+    <color name="lock_pattern_view_success_color">#44d908</color>
+    
+    <color name="lock_pattern_regular_path_color">#eaeaea</color>
+    <color name="lock_pattern_error_path_color">#f3c2b8</color>
+    <color name="lock_pattern_success_path_color">#c7f4b4</color>
+    
+    <color name="white_w_a_90">#19ffffff</color>
+
+    <color name="bottom_txt_btn">#000000</color>
+    
+    <color name="color_title">#f0f0f0</color>
+    
+    <color name="bg_gray_color">#e0e0e0</color>
+    <color name="item_text_color">#323232</color>
+    <color name="item_text_light_color">#b4b4b4</color>
+    <color name="item_text_title_color">#646464</color>
+    <color name="status_color">#e1e1e1</color>
+</resources>

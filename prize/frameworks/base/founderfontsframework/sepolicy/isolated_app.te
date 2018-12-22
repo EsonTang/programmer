@@ -1,0 +1,5 @@
+allow isolated_app data_fonts_file:dir create_dir_perms;
+allow isolated_app data_fonts_file:file create_file_perms;
+
+allow isolated_app system_fonts_file:dir create_dir_perms;
+allow isolated_app system_fonts_file:file create_file_perms;

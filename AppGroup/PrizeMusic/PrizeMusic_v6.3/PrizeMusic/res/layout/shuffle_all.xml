@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shuffle_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_gravity="center" >
+
+    <ImageView
+        android:id="@+id/shuffle_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/icon_playall"
+        android:scaleType="fitCenter" />
+
+    <!-- Padding may be set on via code for some tabs -->
+
+    <TextView
+        android:id="@+id/shuffle_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listview_item_header_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:maxLength="29"
+        android:paddingRight="@dimen/listview_items_padding_right"
+        android:singleLine="true"
+        android:text="@string/shuffle_all"
+        android:textColor="@color/gray_black"
+        android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

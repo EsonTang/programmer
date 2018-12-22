@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2014, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_material"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_layout_background">
+
+    <!-- add 'system logo' view. prize-linkh-20150518  -->
+	
+	<View android:id="@+id/system_logo_divider"
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:divider="@color/dashboard_tile_divider_color"
+              android:layout_gravity="center_horizontal"
+              android:background="?android:attr/dividerVertical" 
+              android:visibility="gone"/>
+	<!--<android.support.v4.widget.NestedScrollView-->
+		<!--android:layout_width="match_parent"-->
+		<!--android:layout_height="match_parent">-->
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/prize_preferencefragment_card_maginright"
+				android:layout_marginLeft="@dimen/prize_preferencefragment_card_maginleft"
+				android:layout_marginTop="@dimen/prize_preferencefragment_card_magintop"
+				android:gravity="center"
+				android:visibility="gone"
+				android:background="@drawable/toponepreferencecategory_selector" >
+				<ImageView android:id="@+id/system_logo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="60dp"
+					android:layout_marginBottom="90dp"
+					android:src="@drawable/didoos_logo_prize"
+					android:visibility="gone"/>
+			</LinearLayout>
+			<FrameLayout android:id="@+id/pinned_header"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:visibility="gone" />
+			<FrameLayout 
+				android:id="@android:id/list_container"
+				android:layout_height="0px"
+				android:layout_weight="1"
+				android:layout_marginLeft="@dimen/prize_preferencefragment_card_maginleft"
+				android:layout_marginRight="@dimen/prize_preferencefragment_card_maginright"
+				android:layout_width="match_parent">
+		
+				<ListView android:id="@+id/backup_list"
+					style="@style/PreferenceFragmentListSinglePane"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:paddingStart="@dimen/settings_side_margin"
+					android:paddingEnd="@dimen/settings_side_margin"
+					android:paddingTop="@dimen/dashboard_padding_top"
+					android:paddingBottom="@dimen/dashboard_padding_bottom"
+					android:scrollbarStyle="@*android:integer/preference_fragment_scrollbarStyle"
+					android:clipToPadding="false"
+					android:drawSelectorOnTop="false"
+					android:divider="@drawable/list_divider"
+					android:dividerHeight="1px"
+					android:visibility="gone"
+					android:elevation="@dimen/dashboard_category_elevation"
+					android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+				<include layout="@layout/loading_container" />
+				
+				<com.android.settings.widget.FloatingActionButton
+					android:id="@+id/fab"
+					android:visibility="gone"
+					android:clickable="true"
+					android:layout_width="@dimen/fab_size"
+					android:layout_height="@dimen/fab_size"
+					android:layout_gravity="bottom|end"
+					android:layout_marginEnd="@dimen/fab_margin"
+					android:layout_marginBottom="@dimen/fab_margin"
+					android:elevation="@dimen/fab_elevation"
+					android:background="@drawable/fab_background" />
+        
+        <!-- Modify by zhudaopeng at 2016-11-23 Start -->
+				<LinearLayout 
+					android:id="@+id/refresh_ll"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:layout_gravity="bottom|end"
+					android:visibility="gone" >
+					<View android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:divider="@color/dashboard_tile_divider_color"
+						android:layout_marginStart="@dimen/preference_margin_start_prize"
+						android:layout_marginEnd="@dimen/preference_margin_end_prize"
+						android:background="?android:attr/dividerVertical" />
+					<LinearLayout android:id="@+id/go_refresh"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_gravity="center"
+						android:duplicateParentState="true" >
+						<ImageView android:id="@+id/bluetooth_refresh"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/image_click_style"
+							android:layout_marginTop="5dp"
+							android:layout_marginBottom="1dp"
+							android:layout_gravity="center_horizontal"
+							android:duplicateParentState="true" />
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_horizontal"
+							android:textSize="12sp"
+							android:layout_marginTop="1dp"
+							android:layout_marginBottom="5dp"
+							android:text="@string/bluetooth_search_for_devices"/>
+					</LinearLayout>	    
+				</LinearLayout>
+		<!-- Modify by zhudaopeng at 2016-11-23 Start End -->
+			</FrameLayout>
+			<TextView android:id="@android:id/empty"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_marginTop="200dp"
+					android:padding="@*android:dimen/preference_fragment_padding_side"
+					android:layout_gravity="center"
+					android:gravity="center_vertical"
+					android:visibility="gone" />
+		</LinearLayout>
+	<!--</android.support.v4.widget.NestedScrollView>-->
+    <include layout="@layout/admin_support_details_empty_view" />
+
+    <RelativeLayout android:id="@+id/button_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0"
+        android:visibility="gone">
+
+        <Button android:id="@+id/back_button"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_alignParentStart="true"
+            android:text="@*android:string/back_button_label"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <Button android:id="@+id/skip_button"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="@*android:string/skip_button_label"
+                android:visibility="gone"
+                />
+
+            <Button android:id="@+id/next_button"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="@*android:string/next_button_label"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

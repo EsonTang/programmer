@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--prize remove  splitline_top by zhaojian 8.0 2017803-->
+    <!--<PreferenceCategory android:layout="@layout/splitline_top">
+        <com.comfort.helper.widget.CustomSwitchPreference
+            android:defaultValue="true"
+            android:key="KEY_ENABLE_WECHAT"
+            android:summary="@string/switch_reminder"
+            android:title="@string/app_name" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:layout="@layout/splitline">
+        <com.comfort.helper.widget.CustomSwitchPreference
+            android:defaultValue="true"
+            android:key="KEY_NOTIFY_SOUND"
+            android:summary="@string/voice_reminder"
+            android:title="@string/voice" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:layout="@layout/splitline">
+        <com.comfort.helper.widget.CustomSwitchPreference
+            android:defaultValue="false"
+            android:key="KEY_ENABLE_SINGLE"
+            android:summary="@string/single_enable_settings"
+            android:title="@string/single_enable_title" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:layout="@layout/splitline">
+        <Preference
+            android:key="KEY_WECHAT_DELAY_TIME"
+            android:summary="@string/random_delay"
+            android:title="@string/hb_delay" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:layout="@layout/splitline">
+        <Preference
+            android:key="WECHAT_RECORDOR"
+            android:summary="@string/recorder_reminder"
+            android:title="@string/recorder" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:layout="@layout/splitline">
+        <com.comfort.helper.widget.MoreQuestionPreference
+            android:key="MORE_QUESTION"
+            android:layout="@layout/preferencereminder" />
+    </PreferenceCategory>-->
+
+    <!--prize remove splitline_white by zhaojian 8.0 2017803 start-->
+    <!--<PreferenceCategory android:layout="@layout/splitline_white">
+    </PreferenceCategory>-->
+
+
+
+
+
+
+
+    <com.android.lpserver.widget.CustomSwitchPreference
+        android:defaultValue="true"
+        android:key="KEY_ENABLE_WECHAT"
+        android:summary="@string/switch_reminder"
+        android:title="@string/app_name"
+        />
+
+    <com.android.lpserver.widget.CustomSwitchPreference
+        android:defaultValue="true"
+        android:key="KEY_NOTIFY_SOUND"
+        android:summary="@string/voice_reminder"
+        android:title="@string/voice" />
+
+    <com.android.lpserver.widget.CustomSwitchPreference
+        android:defaultValue="false"
+        android:key="KEY_ENABLE_SINGLE"
+        android:summary="@string/single_enable_settings"
+        android:title="@string/single_enable_title" />
+
+    <Preference
+        android:key="KEY_WECHAT_DELAY_TIME"
+        android:summary="@string/random_delay"
+        android:title="@string/hb_delay"
+        />
+
+    <Preference
+        android:key="WECHAT_RECORDOR"
+        android:summary="@string/recorder_reminder"
+        android:title="@string/recorder" />
+
+    <com.android.lpserver.widget.MoreQuestionPreference
+        android:key="MORE_QUESTION"
+        android:layout="@layout/preferencereminder" />
+
+    <!--prize remove splitline_white by zhaojian 8.0 2017803 end-->
+
+</PreferenceScreen>

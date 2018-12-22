@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.prize.appcenter.ui.widget.CheckImageView
+        android:id="@+id/appItem_img_id"
+        android:layout_width="@dimen/imgview_onekey_width"
+        android:layout_height="@dimen/imgview_onekey_higth"
+        android:paddingRight="10dp"
+        app:iv_radius="5dp" />
+
+    <TextView
+        android:id="@+id/appItem_name_id"
+        android:layout_width="@dimen/imgview_onekey_textwidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="1dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/text_color_404040"
+        android:textSize="@dimen/text_size_small" />
+
+</LinearLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="applicationLabel">رابطے</string>
+    <string name="launcherActivityLabel">رابطے</string>
+    <string name="quickContactActivityLabel">رابطہ دیکھیں</string>
+    <string name="editContactActivityLabel">رابطہ ترمیم کریں</string>
+    <string name="contactsList">رابطے</string>
+    <string name="shortcutContact">رابطہ</string>
+    <string name="shortcutDialContact">ڈائریکٹ ڈائل</string>
+    <string name="shortcutMessageContact">ڈائریکٹ پیغام</string>
+    <string name="shortcutActivityTitle">رابطے کا شارٹ کٹ منتخب کریں</string>
+    <string name="callShortcutActivityTitle">کال کرنے کے لئے کوئی نمبر منتخب کريں</string>
+    <string name="messageShortcutActivityTitle">پیغام بھیجنے کے لئے نمبر منتخب کریں</string>
+    <string name="contactInsertOrEditActivityTitle">رابطے میں شامل کریں</string>
+    <string name="contactPickerActivityTitle">رابطہ منتخب کریں</string>
+    <string name="header_entry_contact_list_adapter_header_title">نیارابطہبنائیں</string>
+    <string name="starredList">ستارہکانشانلگاہوا</string>
+    <string name="frequentList">متعدد</string>
+    <string name="strequentList">پسندیدگان</string>
+    <string name="viewContactTitle">رابطے کی تفصیلات</string>
+    <string name="editContactDescription">رابطہ ترمیم کریں</string>
+    <string name="insertContactDescription">رابطہ بنائيں</string>
+    <string name="editGroupDescription">گروپ ترمیم کریں</string>
+    <string name="insertGroupDescription">گروپ تشکیل دیں</string>
+    <string name="contactDetailAbout">بارے میں</string>
+    <string name="contactDetailUpdates">اپ ڈیٹس</string>
+    <string name="searchHint">روابط تلاش کریں</string>
+    <string name="menu_viewContact">رابطہ دیکھیں</string>
+    <string name="menu_addStar">پسندیدگان میں شامل کریں</string>
+    <string name="menu_removeStar">پسندیدگان سے ہٹائيں</string>
+    <string name="description_action_menu_remove_star">پسندیدگیوں سے ہٹا دیا گیا</string>
+    <string name="description_action_menu_add_star">پسندیدہ میں شامل کردیا گیا</string>
+    <string name="menu_editContact">تدوینکریں</string>
+    <string name="menu_deleteContact">حذفکرنا</string>
+    <string name="menu_change_photo">تصویرتبدیلکریں</string>
+    <string name="menu_create_contact_shortcut">ہوم اسکرین پر ڈالیں</string>
+    <string name="menu_call">رابطہ کال کریں</string>
+    <string name="menu_sendSMS">ٹیکسٹ رابطہ</string>
+    <string name="menu_splitAggregate">غیر مربوط کریں</string>
+    <string name="menu_editGroup">تدوینکریں</string>
+    <string name="menu_deleteGroup">حذفکرنا</string>
+    <string name="menu_new_contact_action_bar">رابطہ شامل کریں</string>
+    <string name="menu_new_group_action_bar">نیا</string>
+    <string name="splitConfirmation">اس رابطے کو متعدد رابطوں سے غیرمربوط کریں؟</string>
+    <string name="splitConfirmation_positive_button">غیر مربوط کریں</string>
+    <string name="splitConfirmationWithPendingChanges">کیا آپ کی جاچکی تبدیلیوں کو محفوظ کرنا اور اس رابطے کو متعدد روابط میں سے غیرمربوط کرنا چاہتے ہیں؟</string>
+    <string name="splitConfirmationWithPendingChanges_positive_button">محفوظ اور غیر مربوط کریں</string>
+    <string name="joinConfirmation">کیا آپ کی جا چکی تبدیلیوں کو محفوظ کرنا اور منتخب کردہ رابطے سے مربوط کرنا چاہتے ہیں؟</string>
+    <string name="joinConfirmation_positive_button">محفوظ اور مربوط کریں</string>
+    <string name="menu_joinAggregate">"لنک"</string>
+    <string name="menu_save">"محفوظ کریں"</string>
+    <string name="titleJoinContactDataWith">رابطوں کو مربوط کریں</string>
+    <string name="blurbJoinContactDataWith">اس رابطہ کو منتخب کریں جسے آپ <xliff:g id="name">%s</xliff:g> کے ساتھ مربوط کرنا چاہتے ہیں:</string>
+    <string name="showAllContactsJoinItem">تمام روابط دکھائيں</string>
+    <string name="separatorJoinAggregateSuggestions">تجویز کردہ روابط</string>
+    <string name="separatorJoinAggregateAll">تمام روابط</string>
+    <string name="contactsJoinedMessage">رابطے مربوط ہوگئے</string>
+    <plurals name="contacts_deleted_toast">
+        <item quantity="one">رابطہ حذف ہوگیا</item>
+        <item quantity="other">رابطےختمکردیئےگئے</item>
+    </plurals>
+    <string name="menu_set_ring_tone">رنگ ٹون مقرر کریں</string>
+    <string name="menu_redirect_calls_to_vm">تمام کالیں وائس میل میں</string>
+    <string name="readOnlyContactWarning">آپ کے صرف پڑھنے والے اکاؤنٹس سے رابطوں کو حذف نہیں کیا جاسکتا، لیکن انہیں چھپایا جاسکتا ہے۔</string>
+    <string name="readOnlyContactWarning_positive_button">مخفیکریں</string>
+    <string name="readOnlyContactDeleteConfirmation">حذف کیے جانے والے رابطہ میں متعدد اکاؤنٹس سے تفصیلات ہیں۔ صرف پڑھنے والے اکاؤنٹس سے تفصیلات مخفی ہوجائیں گی، حذف نہیں ہوں گی۔</string>
+    <string name="batch_link_single_contact_warning">ربط بنانے کے لیے آپ کو کم از کم دو رابطوں کو منتخب کرنے کی ضرورت ہے۔</string>
+    <string name="batch_link_confirmation">منتخب رابطوں کو مربوط کریں؟</string>
+    <string name="batch_link_confirmation_positive_button">"لنک"</string>
+    <string name="single_delete_confirmation">یہ رابطہ حذف کریں؟</string>
+    <string name="batch_delete_confirmation">منتخب رابطے حذف کریں؟</string>
+    <string name="batch_delete_read_only_contact_confirmation">آپ کے صرف پڑھنے والے اکاؤنٹس سے رابطوں کو حذف نہیں کیا جاسکتا، لیکن انہیں چھپایا جاسکتا ہے۔</string>
+    <string name="batch_delete_multiple_accounts_confirmation">حذف کیے جانے والے رابطوں میں متعدد اکاؤنٹس سے تفصیلات ہیں۔ صرف پڑھنے والے اکاؤنٹس سے تفصیلات مخفی ہوجائیں گی، حذف نہیں ہوں گی۔</string>
+    <string name="multipleContactDeleteConfirmation">یہ رابطہ حذف کرنے سے متعدد اکاؤنٹس سے تفصیلات حذف ہوجائیں گی۔</string>
+    <string name="deleteConfirmation">اس رابطہ کو حذف کریں؟</string>
+    <string name="deleteConfirmation_positive_button">حذفکرنا</string>
+    <string name="menu_discard">رد کریں</string>
+    <string name="invalidContactMessage">رابطہ موجود نہیں ہے۔</string>
+    <string name="createContactShortcutSuccessful_NoName">رابطہ ہوم اسکرین میں شامل کردیا گیا۔</string>
+    <string name="createContactShortcutSuccessful"><xliff:g id="name">%s</xliff:g> کو ہوم اسکرین میں شامل کردیا گیا۔</string>
+    <string name="pickerNewContactHeader">نیارابطہبنائیں</string>
+    <string name="pickerNewContactText">نیارابطہبنائیں</string>
+    <skip/>
+    <string-array name="otherLabels">
+        <item>تنظیم</item>
+        <item>نوٹ</item>
+    </string-array>
+    <string name="photoPickerNotFoundText" product="tablet">ٹیبلیٹ پر کوئی تصاویر دستیاب نہیں ہیں۔</string>
+    <string name="photoPickerNotFoundText" product="default">فون پر کوئی تصاویر دستیاب نہیں ہیں۔</string>
+    <string name="attach_photo_dialog_title">رابطہکیتصویر</string>
+    <string name="customLabelPickerTitle">ذاتی لیبل کا نام</string>
+    <string name="send_to_voicemail_checkbox">وائس میل پر براہ راست کالیں بھیجیں</string>
+    <string name="removePhoto">تصویر ہٹائیں</string>
+    <string name="noContacts">رابطہ نہيں ملا</string>
+    <string name="noGroups">کوئی گروپ نہیں۔</string>
+    <string name="noAccounts">گروپس تشکیل دینے کے لیے آپ کو اکاؤنٹ کی ضرورت ہے۔</string>
+    <string name="emptyGroup">اس گروپ میں کوئی فرد نہیں۔</string>
+    <string name="addPeopleToGroup">کچھ لوگوں کو شامل کرنے کے لیے، گروپ کی تدوین کریں۔</string>
+    <string name="savingContact">رابطہ محفوظ کر رہا ہے\u2026</string>
+    <string name="contactSavedToast">رابطہ محفوظ ہوگیا</string>
+    <string name="contactUnlinkedToast">رابطےغیر مربوط ہوگئے</string>
+    <string name="contactSavedErrorToast">رابطہ میں تبدیلیاں محفوظ نہیں ہوسکیں۔</string>
+    <string name="contactUnlinkErrorToast">رابطہ کو غیر مربوط نہیں کرسکتا۔</string>
+    <string name="contactJoinErrorToast">رابطہ کو مربوط نہیں کرسکتا۔</string>
+    <string name="contactGenericErrorToast">رابطہ کو محفوظ کرنے میں خرابی۔</string>
+    <string name="contactPhotoSavedErrorToast">رابطہ کی تصویر میں تبدیلیاں محفوظ نہیں ہوسکیں۔</string>
+    <string name="groupSavedToast">گروپ محفوظ کر دیا گیا۔</string>
+    <string name="groupSavedErrorToast">گروپ میں تبدیلیاں محفوظ نہیں ہوسکیں۔</string>
+    <plurals name="listTotalPhoneContacts">
+        <item quantity="one">فون نمبر رکھنے والا 1 رابطہ دکھائيں۔</item>
+        <item quantity="other">فون نمبر رکھنے والے <xliff:g id="count">%d</xliff:g>روابط ظاہر کررہا ہے</item>
+    </plurals>
+    <string name="listTotalPhoneContactsZero">فون نمبر رکھنے والے کوئی روابط نظر نہيں آرہے ہيں</string>
+    <plurals name="listFoundAllContacts">
+        <item quantity="one">1 رابطہ</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> روابط</item>
+    </plurals>
+    <string name="listFoundAllContactsZero">رابطہ نہيں ملا</string>
+    <plurals name="searchFoundContacts">
+        <item quantity="one">1 رابطہ</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> روابط</item>
+    </plurals>
+    <string name="all_contacts_tab_label">تمام</string>
+    <string name="favorites_tab_label">پسندیدگان</string>
+    <string name="callBack">واپسیکالکریں</string>
+    <string name="callAgain">دوبارہ کال کريں</string>
+    <string name="returnCall">کال پلٹیں</string>
+    <string name="add_contact_dlg_message_fmt">\"<xliff:g id="email">%s</xliff:g>\" کو رابطوں میں شامل کریں؟</string>
+    <string name="description_contact_photo">رابطہکیتصویر</string>
+    <string name="description_plus_button">مثبت</string>
+    <string name="exporting_contact_list_progress"><xliff:g id="current_number">%1$s</xliff:g> میں سے <xliff:g id="total_number">%2$s</xliff:g> روابط</string>
+    <string name="search_settings_description">آپ کے روابط کے نام</string>
+    <string name="quickcontact_missing_app">اس عمل کے لئے کوئی ایپلیکیشن نہيں ملا</string>
+    <string name="quickcontact_transparent_view_description">سابقہ اسکرین پر واپس جانے کے لیے کلک کریں</string>
+    <string name="quickcontact_add_phone_number">فون نمبر شامل کریں</string>
+    <string name="quickcontact_add_email">ای میل شامل کریں</string>
+    <string name="missing_app">اس عمل کے لئے کوئی ایپلیکیشن نہيں ملا</string>
+    <string name="menu_share">تقسیمکریں</string>
+    <string name="menu_add_contact">روابط میں شامل کریں</string>
+    <string name="share_via">رابطے کو تقسیم کریں بذریعہ</string>
+    <string name="dialog_new_group_account">اکاؤنٹ میں گروپ تشکیل دیں</string>
+    <string name="audio_chat">وائس چیٹ</string>
+    <string name="video_chat">ویڈیو چیٹ</string>
+    <string name="connections">"کنکشنز"</string>
+    <string name="add_connection_button">کنکشن شامل کریں</string>
+    <string name="recent" msgid="2062236709538790412">حالیہ</string>
+    <string name="recent_updates" msgid="2018245636796411442">حالیہ اپ ڈیٹس</string>
+    <string name="account_type_format"><xliff:g id="source" example="Gmail">%1$s</xliff:g> رابطہ</string>
+    <string name="google_account_type_format"><xliff:g id="sourceexample=Google">%1$s</xliff:g>اکاؤنٹ</string>
+    <string name="from_account_format" translate="false"><xliff:g id="source" example="user@gmail.com">%1$s</xliff:g></string>
+    <string name="contact_read_only"><xliff:g id="source" example="Gmail">%1$s</xliff:g> رابطے کی معلومات اس آلے پر قابل ترمیم نہيں ہے۔</string>
+    <string name="group_read_only">اس آلے پر تدوین نہیں کی جا سکتی۔</string>
+    <string name="take_photo">"تصویر لیں"</string>
+    <string name="take_new_photo">نئی تصویر لیں</string>
+    <string name="pick_photo">گیلری سے تصویر منتخب کريں</string>
+    <string name="pick_new_photo">نئی تصویر منتخب کریں</string>
+    <string name="upgrade_in_progress">رابطے کی فہرست کی تجدید کی جارہی ہے۔\n\nبرائے مہربانی انتظار کریں...</string>
+    <string name="search_results_searching">تلاش کررہا ہے\u2026</string>
+    <string name="menu_display_selected">"منتخب کردہ" دکھائیں"</string>
+    <string name="menu_display_all">سبدکھائیں</string>
+    <string name="menu_select_all">سبکومنتخبکريں</string>
+    <string name="menu_select_none">"سبھیکوغیرمنتخبکریں"</string>
+    <string name="add_new_entry_for_section">نئے کا اضافہ کریں</string>
+    <string name="add_organization">تنظیم کا اضافہ کریں</string>
+    <string name="event_edit_field_hint_text">تاریخ</string>
+    <string name="group_edit_field_hint_text">گروپ کا نام</string>
+    <string name="change_photo">تبدیلکریں</string>
+    <string name="primary_photo">"بنیادی تصویر"</string>
+    <string name="description_star">پسندیدہ</string>
+    <string name="edit_contact">رابطہ ترمیم کریں</string>
+    <string name="aggregation_suggestion_join_dialog_message">منتخب کردہ رابطہ کو منتخب رابطہ کے ساتھ مربوط کریں؟</string>
+    <string name="aggregation_suggestion_edit_dialog_message">منتخب کردہ رابطے کی تدوین پر جائیں؟ آپ کی اب تک کی اندراج کردہ معلومات نقل کی جائیں گی۔</string>
+    <string name="menu_copyContact">میرے رابطوں میں نقل کریں</string>
+    <string name="add_to_my_contacts">میرے رابطوں میں شامل کریں</string>
+    <string name="contact_directory_description"><xliff:g id="type" example="CorporateDirectory">%1$s</xliff:g> ڈائریکٹری </string>
+    <string name="list_filter_custom">"حسب ضرورت"</string>
+    <string name="activity_title_settings">"ترتیبات"</string>
+    <string name="menu_settings" msgid="377929915873428211">"ترتیبات"</string>
+    <string name="menu_help">"مدد اور تاثرات"</string>
+    <string name="preference_displayOptions">ڈسپلے کے اختیارات</string>
+    <string name="organization_company_and_title"><xliff:g id="company" example="TechnicalProgramManager">%2$s</xliff:g>,  <xliff:g id="company" example="GoogleInc.">%1$s</xliff:g></string>
+    <string name="non_phone_caption">فون نمبر</string>
+    <string name="non_phone_add_to_contacts">روابط میں شامل کریں</string>
+    <string name="activity_title_confirm_add_detail">رابطے میں شامل کریں</string>
+    <string name="non_phone_close">بندکریں</string>
+    <string name="widget_name_and_phonetic"><xliff:g id="display_name" example="JohnHuber">%1$s</xliff:g> (  <xliff:g id="phonetic_name">%2$s</xliff:g>) </string>
+    <string name="date_year_toggle">سال شامل کریں</string>
+    <string name="social_widget_label">رابطہ</string>
+    <string name="social_widget_loading">لوڈ ہو رہا ہے\u2026</string>
+    <string name="contacts_unavailable_create_contact">نیا رابطہ تشکیل دیں</string>
+    <string name="contacts_unavailable_add_account">"اکاؤنٹ شامل کریں"</string>
+    <string name="contacts_unavailable_import_contacts">فائل سے رابطے امپورٹ کریں</string>
+    <string name="create_group_dialog_title">[نیا گروپ تشکیل دیں]</string>
+    <string name="create_group_item_label">[نیا گروپ تشکیل دیں]</string>
+    <plurals name="num_groups_in_account">
+        <item quantity="one">1 گروپ</item>
+        <item quantity="other"><xliff:g id="count">%0$d</xliff:g>  گروپس </item>
+    </plurals>
+    <string name="delete_group_dialog_message">گروپ \"<xliff:g id="group_label" example="Friends">%1$s</xliff:g>\" حذف کریں؟ (رابطے اپنے آپ حذف نہیں ہوں گے۔)</string>
+    <plurals name="num_contacts_in_group">
+        <item quantity="one"><xliff:g id="count">%1$d</xliff:g>  سے فرد   <xliff:g id="account_type">%2$s</xliff:g></item>
+        <item quantity="other"><xliff:g id="count">%1$d</xliff:g>  سے افراد   <xliff:g id="account_type">%2$s</xliff:g></item>
+    </plurals>
+    <plurals name="group_list_num_contacts_in_group">
+        <item quantity="one"><xliff:g id="count">%1$d</xliff:g> فرد </item>
+        <item quantity="other"><xliff:g id="count">%1$d</xliff:g> افراد </item>
+    </plurals>
+    <string name="toast_join_with_empty_contact">دوسرے سے مربوط کرنے سے پہلے رابطہ کا نام ٹائپ کریں۔</string>
+    <string name="copy_text">کلپ بورڈ پر نقل کریں</string>
+    <string name="set_default">طے شدہ کا تعین کریں</string>
+    <string name="clear_default">طے شدہ ہٹائیں</string>
+    <string name="toast_text_copied">ٹیکسٹ نقل کر دیا گیا</string>
+    <string name="cancel_confirmation_dialog_message">اپنی تبدیلیاں رد کریں اور تدوین چھوڑ دیں؟</string>
+    <string name="cancel_confirmation_dialog_cancel_editing_button">"مستردکریں"</string>
+    <string name="cancel_confirmation_dialog_keep_editing_button">تدوین جاری رکھیں</string>
+    <string name="call_type_and_date"><xliff:g id="call_type" example="Friends">%1$s</xliff:g><xliff:g id="call_short_date" example="Friends">%2$s</xliff:g></string>
+    <string name="profile_display_name">میری پروفائل تیار کریں</string>
+    <string name="enter_contact_name">شخص کا نام ٹائپ کریں</string>
+    <string name="group_name_hint">گروپ کا نام</string>
+    <string name="local_profile_title">میری مقامی پروفائل</string>
+    <string name="external_profile_title">میری  <xliff:g id="external_source">%1$s</xliff:g> پروفائل </string>
+    <string name="toast_displaying_all_contacts">تمام رابطے دکھا رہا ہے</string>
+    <string name="generic_no_account_prompt">اپنا موبائل کھو جانے کے باوجود اپنے رابطے محفوظ رکھیں: کسی آن لائن خدمت کے ساتھ سنکرونائز کریں۔</string>
+    <string name="generic_no_account_prompt_title">"ایک اکاؤنٹ شامل کریں"</string>
+    <string name="contact_editor_prompt_zero_accounts">آپ کے نئے رابطہ کا بیک اپ نہیں لیا جاسکتا ہے۔ رابطوں کا آن لائن بیک اپ بنانے والا ایک اکاؤنٹ شامل کریں؟</string>
+    <string name="contact_editor_prompt_one_account">نئے رابطوں کو<xliff:g id="account_name">%1$s</xliff:g> میں محفوظ کیا جائے گا۔</string>
+    <string name="contact_editor_prompt_multiple_accounts">نئے رابطوں کے لیے ایک ڈیفالٹ اکاؤنٹ منتخب کریں:</string>
+    <string name="contact_editor_title_new_contact">نیا رابطہ شامل کریں</string>
+    <string name="contact_editor_title_existing_contact">رابطہ ترمیم کریں</string>
+    <string name="keep_local">مقامی رکھیں</string>
+    <string name="add_account">"اکاؤنٹ شامل کریں"</string>
+    <string name="add_new_account">نئے اکاؤنٹ کا اضافہ کریں</string>
+    <string name="menu_export_database">ڈیٹا بیس فائلیں برآمد کریں</string>
+    <string name="action_menu_add_new_contact_button">نیا رابطہ شامل کریں</string>
+    <string name="expanding_entry_card_view_see_more">مزید دیکھیں</string>
+    <string name="expanding_entry_card_view_see_less">کم دیکھیں</string>
+    <string name="expanding_entry_card_view_see_all">"سبھی دیکھیں"</string>
+    <string name="recent_card_title">حالیہ</string>
+    <string name="about_card_title">بارے میں</string>
+    <string name="send_message">پیغام بھیجیں</string>
+    <string name="toast_making_personal_copy">ذاتی نقل \u2026 بنا رہا ہے</string>
+    <string name="yesterday">کل</string>
+    <string name="tomorrow">کل</string>
+    <string name="today">آج</string>
+    <string name="today_at_time_fmt">"آج بوقت  <xliff:g id="time_interval">%s</xliff:g>" </string>
+    <string name="tomorrow_at_time_fmt">"آئندہ کل بوقت  <xliff:g id="time_interval">%s</xliff:g>" </string>
+    <string name="date_time_fmt">"  <xliff:g id="date">%s</xliff:g>,  <xliff:g id="time_interval">%s</xliff:g>" </string>
+    <string name="untitled_event">(بے نام واقعہ)</string>
+    <string name="date_time_set">سیٹکریں</string>
+    <string name="header_im_entry">IM</string>
+    <string name="header_organization_entry">تنظیم</string>
+    <string name="header_nickname_entry">"عرفی نام"</string>
+    <string name="header_note_entry">نوٹ</string>
+    <string name="header_website_entry">ویبسائٹ</string>
+    <string name="header_event_entry">واقعہ</string>
+    <string name="header_relation_entry">رشتہ</string>
+    <string name="header_account_entry">اکاؤنٹس</string>
+    <string name="header_name_entry">نام</string>
+    <string name="header_email_entry">ای میل</string>
+    <string name="header_phone_entry">فون</string>
+    <string name="header_photo_entry">تصویر</string>
+    <string name="content_description_expand_editor">"رابطہ ایڈیٹر پھیلانے کیلئے کلک کریں۔"</string>
+    <string name="content_description_collapse_editor">"رابطہ ایڈیٹر سکیڑنے کیلئے کلک کریں۔"</string>
+    <string name="content_description_directions">مقام کی سمتیں</string>
+    <string name="content_description_recent_sms">"‏حالیہ sms۔ <xliff:g id="MESSAGE_BODY">%s</xliff:g>۔ <xliff:g id="PHONE_NUMBER">%s</xliff:g>۔ <xliff:g id="DATE">%s</xliff:g>۔ جواب دینے کیلئے کلک کریں"</string>
+    <string name="content_description_recent_call_type_incoming">آنے والی</string>
+    <string name="content_description_recent_call_type_outgoing">جانے والی</string>
+    <string name="content_description_recent_call_type_missed">چھوٹا ہوا</string>
+    <string name="content_description_recent_call">"حالیہ کال۔ <xliff:g id="CALL_TYPE">%s</xliff:g>۔ <xliff:g id="PHONE_NUMBER">%s</xliff:g>۔ <xliff:g id="DATE">%s</xliff:g>۔ واپسی کال کرنے کیلئے کلک کریں"</string>
+    <string name="message_from_you_prefix">آپ: <xliff:g id="sms_body">%s</xliff:g></string>
+    <string name="contact_editor_hangouts_im_alert">ہینگ آؤٹس اس وقت بہتر کام کرتے ہیں جب آپ اس شخص کے ہینگ آؤٹس شناخت کنندگان کو ای میل فیلڈ یا فون فیلڈ میں درج کرتے ہیں۔</string>
+    <string name="compact_editor_more_fields">مزيدفیلڈز</string>
+    <string name="compact_editor_change_photo_content_description">تصویرتبدیلکریں</string>
+    <string name="compact_editor_failed_to_load">ایڈیٹر کھولنے میں ناکام۔</string>
+    <string name="compact_editor_account_selector_title">محفوظ کررہا ہے</string>
+    <string name="compact_editor_account_selector_description">ابھی <xliff:g id="account_name">%s</xliff:g> میں محفوظ کررہا ہے۔ ایک مختلف اکاؤنٹ چننے کے لیے دوہرا ٹیپ کریں۔</string>
+    <plurals name="compact_editor_linked_contacts_selector_title">
+        <item quantity="one">لنک کردہ رابطہ فرد</item>
+        <item quantity="other">مربوط رابطے (<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <string name="quickcontact_contacts_number"><xliff:g id="count">%d</xliff:g> مربوط رابطے</string>
+    <string name="quick_contact_display_name_with_phonetic"><xliff:g id="display_name">%s</xliff:g>(<xliff:g id="phonetic_name">%s</xliff:g>)</string>
+    <string name="quickcontact_suggestion_link_button">رابطوں کو مربوط کریں</string>
+    <string name="quickcontact_suggestion_cancel_button">منسوخکریں</string>
+    <plurals name="quickcontact_suggestion_card_title">
+        <item quantity="one">1 ممکنہ ڈپلیکیٹ</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> ممکنہ ڈپلیکیٹس</item>
+    </plurals>
+    <plurals name="quickcontact_suggestions_number">
+        <item quantity="one">1 مربوط رابطہ</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> مربوط رابطے</item>
+    </plurals>
+    <plurals name="quickcontact_suggestion_account_type_number">
+        <item quantity="one"/>
+        <item quantity="other">(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <string name="quickcontact_suggestion_account_type"><xliff:g id="account_type">%s</xliff:g><xliff:g id="account_type_number">%s</xliff:g></string>
+    <string name="suggestion_card_this_contact_title">یہ رابطہ</string>
+    <string name="suggestion_card_duplicates_title">ممکنہ ڈپلیکیٹ</string>
+    <string name="suggestion_card_help_message">یہ رابطے ایک ہی فرد کے ہوسکتے ہیں۔ آپ انہیں واحد رابطہ کے طور پر مربوط کرسکتے ہیں۔</string>
+    <string name="compact_editor_linked_contacts_title">مربوط رابطے</string>
+    <string name="from_your_accounts">آپ کے رابطوں سے</string>
+    <string name="take_a_photo_button">ایک تصویر لیں</string>
+    <string name="all_photos_button">تمام تصویریں</string>
+    <string name="photo_picker_title">گیلری سے تصویر منتخب کريں</string>
+    <string name="contact_from_account_name">منجانب <xliff:g id="account_name">%s</xliff:g></string>
+    <string name="editor_delete_view_description">حذف کریں <xliff:g id="data_type">%s </xliff:g><xliff:g id="data_kind">%s</xliff:g></string>
+    <string name="editor_delete_view_description_short">حذف کریں <xliff:g id="data_kind">%s</xliff:g></string>
+    <string name="photo_view_description_not_checked">تصویر از <xliff:g id="account_type">%s </xliff:g><xliff:g id="user_name">%s </xliff:g>چیک نہیں ہے</string>
+    <string name="photo_view_description_checked">تصویر از <xliff:g id="account_type">%s </xliff:g><xliff:g id="user_name">%s </xliff:g>چیک کیا ہوا ہے</string>
+    <string name="photo_view_description_not_checked_no_info">نامعلوم اکاؤنٹ سے تصویر کو چیک نہیں کیا گیا</string>
+    <string name="photo_view_description_checked_no_info">نامعلوم اکاؤنٹ سے تصویر کو چیک کیا گیا</string>
+    <string name="locale_change_in_progress">زبان کی تبدیلی کی عکاسی کرنے کیلئے رابطہ کی فہرست کی تجدید ہو رہی ہے۔\n\nبراہ کرم انتظار کریں...</string>
+    <string name="menu_blocked_numbers">بلاک کردہ نمبرز</string>
+</resources>

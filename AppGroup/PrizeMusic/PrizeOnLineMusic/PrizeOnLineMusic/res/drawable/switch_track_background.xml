@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="false"  android:state_enabled="false" >
+        <nine-patch android:src="@drawable/switch_track_mtrl_false" android:tint="#80c8c8c8" />
+    </item> 
+    <item android:state_checked="true"  android:state_enabled="false" >
+        <nine-patch android:src="@drawable/hw_switch_on_bg_true" android:tint="#8030c1be" />
+    </item> 
+        <item android:state_checked="false"  android:state_enabled="true" >
+        <nine-patch android:src="@drawable/switch_track_mtrl_alpha" android:tint="#c8c8c8" />
+    </item> 
+    <item android:state_checked="true"  android:state_enabled="true" >
+        <nine-patch android:src="@drawable/hw_switch_on_bg_normal" android:tint="#30c1be" />
+    </item> 
+    <item><nine-patch android:src="@drawable/switch_track_mtrl_alpha" android:tint="#c8c8c8" />
+    </item>
+
+</selector>

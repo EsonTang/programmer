@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 控制背景颜色，经过多次对比，必须添加 -->
+    <solid android:color="#fff" />
+
+    <padding
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+
+    <!-- android:height="960dip" -->
+    <!-- android:width="540dip" -->
+    <size
+        android:height="640dp"
+        android:width="360dp" >
+    </size>
+
+</shape>

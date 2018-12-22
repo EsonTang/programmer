@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_tb"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toorbar_height"
+    app:contentInsetStart="0dp"
+    android:background="@color/bg_toolbar_color"
+    android:elevation="@dimen/dp_2"
+    >
+    <include layout="@layout/toolbar_content"></include>
+
+</android.support.v7.widget.Toolbar>

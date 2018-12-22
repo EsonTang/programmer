@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/brightness_strong"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.5"
+            android:text="@string/brightness_strong" />
+
+        <Button
+            android:id="@+id/brightness_slow"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.5"
+            android:text="@string/brightness_slow" />
+    </LinearLayout>
+
+    <include layout="@layout/bottom_bar" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv"
+    
+        android:layout_width="@dimen/center_item_width"
+        android:layout_height="@dimen/center_item_height"
+        android:gravity="center"
+        android:textColor="@color/photo_mode_text"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize_small_new" />

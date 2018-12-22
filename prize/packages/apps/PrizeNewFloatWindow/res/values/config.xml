@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="removeApp">
+        com.android.launcher3,com.android.music,com.android.soundrecorder,com.sohu.inputmethod.sogou,com.android.documentsui,
+        com.android.prizefloatwindow,com.android.stk,com.koobee.koobeecenter02,com.prize.compass,com.prize.factorytest,
+		com.prize.gamecenter,com.prize.prizenavigation,com.prize.sysresmon,com.koobeemobile.club
+        
+    </string>
+</resources>
+

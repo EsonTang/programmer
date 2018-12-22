@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <Preference
+        android:key="contacts_manager"
+        android:title="@string/prize_contacts_manager_title_summary"
+        android:summary="@null"
+        android:icon="@null"
+        />
+        
+        <!-- @string/prize_contacts_manager_title -->
+        <!-- @string/prize_contacts_manager_title_summary -->
+    <Preference
+        android:key="accounts"
+        android:title="@string/prize_account_title"
+        android:summary="@string/prize_account_title_summary"
+        android:icon="@null"/>
+    
+
+</PreferenceScreen>

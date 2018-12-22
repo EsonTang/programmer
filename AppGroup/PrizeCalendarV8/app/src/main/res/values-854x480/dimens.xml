@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!--Prize-添加854x480P资源-lixing-2015-7-6-start  -->
+    <dimen name="prize_eventinfo_headline_item_heigh">50dp</dimen>
+    <dimen name="prize_eventinfo_remind_spring_heigh">40dp</dimen>
+    <dimen name="prize_evnetinfo_deletebt_width">287dp</dimen>
+    <dimen name="prize_eventinfo_deletebt_height">38dp</dimen>
+
+    <dimen name="prize_left_btn_width">143.5dp</dimen>
+    <dimen name="prize_left_btn_height">38dp</dimen>   
+    <dimen name="prize_left_btn_marginbottom">10dp</dimen>
+    
+    <!--Prize-添加854x480P资源-lixing-2015-7-6-end  -->
+    
+</resources>

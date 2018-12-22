@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/set_languge_title" />
+
+    <ListView
+        android:id="@+id/content_lsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginLeft="@dimen/h_padding"
+                android:layout_marginRight="@dimen/h_padding"
+                android:background="@drawable/login_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@color/prize_text_default"
+                android:textSize="@dimen/textsize_medium" 
+                android:onClick="onClick"
+                android:text="@string/next"/>
+
+            <TextView
+                android:id="@+id/tv_emergency_call"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:drawablePadding="@dimen/call_draw_padding"
+                android:drawableStart="@drawable/ic_call"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="@dimen/skip_padding"
+                android:text="@string/cryptkeeper_emergency_call"
+                android:textColor="@color/disable"
+                android:textSize="@dimen/textsize_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

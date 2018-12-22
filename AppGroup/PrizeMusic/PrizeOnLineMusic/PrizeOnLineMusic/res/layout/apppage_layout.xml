@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical" >
+
+        <include layout="@layout/app_game_type_header" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/textView_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:drawablePadding="3dp"
+                android:drawableStart="@drawable/icon_daily_songs"
+                android:gravity="center"
+                android:text="@string/daily_songs" />
+
+            <TextView
+                android:id="@+id/num_songs_Tv"
+                style="@style/textView_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/more_songs_Tv"
+                style="@style/textView_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="14dp"
+                android:drawableEnd="@drawable/icon_more_selector"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/more" />
+        </RelativeLayout>
+
+        <com.prize.music.views.SongListGridView
+            android:id="@+id/mGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:descendantFocusability="blocksDescendants"
+            android:numColumns="3"
+            android:verticalSpacing="13dp" />
+
+        <TextView
+            style="@style/textView_one"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="3dp"
+            android:drawableStart="@drawable/icon_new_albums"
+            android:gravity="center"
+            android:text="@string/new_albums" />
+
+        <com.prize.music.views.SongListGridView
+            android:id="@+id/new_albums_GridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:descendantFocusability="blocksDescendants"
+            android:numColumns="3"
+            android:verticalSpacing="13dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/textView_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:drawablePadding="3dp"
+                android:drawableStart="@drawable/icon_hot_songs"
+                android:gravity="center"
+                android:text="@string/hot_songs" />
+
+            <TextView
+                android:id="@+id/more_hot_songs_Tv"
+                style="@style/textView_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icon_more_selector"
+                android:gravity="center"
+                android:text="@string/more" />
+        </RelativeLayout>
+
+        <com.prize.music.views.SongListGridView
+            android:id="@+id/hot_songs_GridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@+id/collectName_Tv"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:descendantFocusability="blocksDescendants"
+            android:numColumns="3"
+            android:verticalSpacing="13dp" />
+
+        <TextView
+            style="@style/textView_one"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="3dp"
+            android:drawableStart="@drawable/icon_recommeng_collect"
+            android:gravity="center"
+            android:text="@string/recommand_collect" />
+
+        <com.prize.music.views.SongListGridView
+            android:id="@+id/collect_GridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:descendantFocusability="blocksDescendants"
+            android:numColumns="3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/textView_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:drawablePadding="3dp"
+                android:drawableStart="@drawable/icon_scene_songs"
+                android:gravity="center"
+                android:text="@string/scene_songs" />
+
+            <TextView
+                android:id="@+id/more_scene_songs_Tv"
+                style="@style/textView_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icon_more_selector"
+                android:gravity="center"
+                android:text="@string/more"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.prize.music.views.SongListGridView
+            android:id="@+id/scene_songs_GridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:descendantFocusability="blocksDescendants"
+            android:numColumns="3"
+            android:verticalSpacing="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/textView_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:drawablePadding="3dp"
+                android:drawableStart="@drawable/icon_hotsong_rank"
+                android:gravity="center"
+                android:text="@string/new_songs_rank" />
+
+            <TextView
+                android:id="@+id/more_hot_rank_songs_Tv"
+                style="@style/textView_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icon_more_selector"
+                android:gravity="center"
+                android:text="@string/more" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rank_two_Rlyt"
+                android:layout_width="@dimen/one_hundred_dp"
+                android:layout_height="wrap_content" >
+
+                <com.prize.music.views.ReflectionImage
+                    android:id="@+id/numOneTwo_Iv"
+                    android:layout_width="@dimen/one_hundred_dp"
+                    android:layout_height="165dp"
+                    android:layout_marginTop="3dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/icon_fly2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/icon_fly"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/icon_numtwo" />
+
+                <TextView
+                    android:id="@+id/titleTwo_Tv"
+                    style="@style/textView_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/numOneTwo_Iv"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/singerTwo_Tv"
+                    style="@style/textView_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleTwo_Tv"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rank_one_Rlyt"
+                android:layout_width="@dimen/one_two_zerodp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center" >
+
+                <com.prize.music.views.ReflectionImage
+                    android:id="@+id/numOneOne_Iv"
+                    android:layout_width="@dimen/one_two_zerodp"
+                    android:layout_height="178dp"
+                    android:layout_marginTop="3dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/icon_fly1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_fly"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/icon_numone" />
+
+                <TextView
+                    android:id="@+id/titleone_Tv"
+                    style="@style/textView_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/numOneOne_Iv"
+                    android:layout_alignStart="@+id/numOneOne_Iv"
+                    android:layout_below="@+id/numOneOne_Iv"
+                    android:ellipsize="end"
+                    android:scaleType="fitXY"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/singerone_Tv"
+                    style="@style/textView_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/titleone_Tv"
+                    android:layout_alignStart="@+id/titleone_Tv"
+                    android:layout_below="@+id/titleone_Tv"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rank_three_Rlyt"
+                android:layout_width="@dimen/one_hundred_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center" >
+
+                <com.prize.music.views.ReflectionImage
+                    android:id="@+id/numOnethree_Iv"
+                    android:layout_width="@dimen/one_hundred_dp"
+                    android:layout_height="165dp"
+                    android:layout_marginTop="3dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/icon_fly3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/icon_fly"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/icon_numthree" />
+
+                <TextView
+                    android:id="@+id/titlethree_Tv"
+                    style="@style/textView_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/numOnethree_Iv"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/singerthree_Tv"
+                    style="@style/textView_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titlethree_Tv"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

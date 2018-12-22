@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+  <!-- We don't want to publish private symbols in com.prize.R as part of the
+       SDK.  Instead, put them here. -->
+  <private-symbols package="com.prize.internal" />
+
+  <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-04-14-start -->
+  <java-symbol type="drawable" name="ic_super_saver_on"/>
+  <java-symbol type="drawable" name="ic_super_saver_quit"/>
+  <java-symbol type="drawable" name="ic_super_saver_bg"/>
+  <java-symbol type="drawable" name="super_saver_button_down" />
+  <java-symbol type="drawable" name="super_saver_button_normal"/>
+  <java-symbol type="drawable" name="lock_screen_wallpaper_power_extend_mode"/>
+  <java-symbol type="string" name="global_super_saver" />
+  <java-symbol type="string" name="global_super_saver_quit" />
+  <java-symbol type="string" name="global_into_super_saver" />
+  <java-symbol type="string" name="global_quit_super_saver" />
+  <java-symbol type="string" name="not_available_power_extend_mode_hint"/>
+  <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-04-14-end -->
+  <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-05-08-start -->
+  <java-symbol type="string" name="global_action_super_saver_mode_on_status" />
+  <java-symbol type="string" name="global_action_super_saver_mode_off_status" />
+  <!-- PRIZE-PowerExtendMode-wangxianzhen-2015-05-08-end -->
+  
+  <!-- PRIZE-reboot-xiaxuefeng-2015-3-24-start -->
+  <java-symbol type="string" name="global_action_title" />
+  <java-symbol type="string" name="global_action_reboot" />
+  <java-symbol type="drawable" name="global_action_power_off" />
+  <java-symbol type="drawable" name="global_action_restart" />
+  <java-symbol type="drawable" name="global_action_vibrate_on" />
+  <java-symbol type="drawable" name="global_action_vibrate_off" />
+  <java-symbol type="layout" name="global_actions_title" />
+  <java-symbol type="layout" name="global_actions_item_prize_xiaxuefeng" />
+  <java-symbol type="drawable" name="global_action_airplane_on" />
+  <java-symbol type="drawable" name="global_action_airplane_off" />
+  <java-symbol type="id" name="shut_menu_title" />
+  <java-symbol type="id" name="shut_menu_message" />
+  <java-symbol type="id" name="shut_menu_status" />
+  <java-symbol type="id" name="shut_menu_icon" />
+  <java-symbol type="style" name="MyDialog" />
+  <java-symbol type="color" name="my_white" />
+  <!-- PRIZE-reboot-xiaxuefeng-2015-3-24-end -->
+    <!-- PRIZE-setting_category-huangdianjun-2015-4-29-start -->
+  <java-symbol type="color" name="prize_settings_category" />
+  <java-symbol type="color" name="prize_category_textColor_category" />
+  <java-symbol type="dimen" name="prize_category_title_height" />
+  <java-symbol type="id" name="prizeCategoryTitle" />
+  <java-symbol type="layout"       name="preference_category_material"/>
+  <java-symbol type="string" name="default_browser_package" />
+  <java-symbol type="string" name="default_browser_activity" />
+  <!-- PRIZE-setting_category-huangdianjun-2015-4-29-end -->
+  <!--add lyt-liup 20150519 for sleepgesture start-->
+  <java-symbol type="layout" name="prize_switch_preference" />
+  <java-symbol type="id" name="prize_state" />
+  <!--add lyt-liup 20150519 for sleepgesture end-->
+  
+  <!--PRIZE-gesture-liuweiquan-20151113-start-->
+  <java-symbol type="layout" name="activity_prize_animation" />
+  <java-symbol type="id" name="empty" />
+  <java-symbol type="array" name="prize_sleep_double" />
+  <java-symbol type="array" name="prize_sleep_circle" />
+  <java-symbol type="array" name="prize_sleep_arror_up" />
+  <java-symbol type="array" name="prize_sleep_c" />
+  <java-symbol type="array" name="prize_sleep_down" />
+  <java-symbol type="array" name="prize_sleep_e" />
+  <java-symbol type="array" name="prize_sleep_left" />
+  <java-symbol type="array" name="prize_sleep_m" />
+  <java-symbol type="array" name="prize_sleep_right" />
+  <java-symbol type="array" name="prize_sleep_s" />
+  <java-symbol type="array" name="prize_sleep_up" />
+  <java-symbol type="array" name="prize_sleep_v" />
+  <java-symbol type="array" name="prize_sleep_w" />
+  <java-symbol type="array" name="prize_sleep_z" />
+  <java-symbol type="drawable" name="double_1"/>
+  <java-symbol type="drawable" name="double_2"/>
+  <java-symbol type="drawable" name="double_3"/>
+  <java-symbol type="drawable" name="double_4"/>
+  <java-symbol type="drawable" name="double_5"/>
+  <java-symbol type="drawable" name="double_6"/>
+  <java-symbol type="drawable" name="double_7"/>
+  <java-symbol type="drawable" name="double_8"/>
+  <java-symbol type="drawable" name="double_9"/>
+  <java-symbol type="drawable" name="double_10"/>
+  <java-symbol type="drawable" name="double_11"/>
+  <java-symbol type="drawable" name="double_12"/>
+  <java-symbol type="drawable" name="double_13"/>
+  <java-symbol type="drawable" name="double_14"/>
+  <java-symbol type="drawable" name="double_15"/>
+  <java-symbol type="drawable" name="double_16"/>
+  <java-symbol type="drawable" name="double_17"/>
+  <java-symbol type="drawable" name="double_18"/>
+  <java-symbol type="drawable" name="double_19"/>
+  <java-symbol type="drawable" name="double_20"/>
+  
+  <java-symbol type="drawable" name="circle_1"/>
+  <java-symbol type="drawable" name="circle_2"/>
+  <java-symbol type="drawable" name="circle_3"/>
+  <java-symbol type="drawable" name="circle_4"/>
+  <java-symbol type="drawable" name="circle_5"/>
+  <java-symbol type="drawable" name="circle_6"/>
+  <java-symbol type="drawable" name="circle_7"/>
+  <java-symbol type="drawable" name="circle_8"/>
+  <java-symbol type="drawable" name="circle_9"/>
+  <java-symbol type="drawable" name="circle_10"/>
+  <java-symbol type="drawable" name="circle_11"/>
+  <java-symbol type="drawable" name="circle_12"/>
+  <java-symbol type="drawable" name="circle_13"/>
+  <java-symbol type="drawable" name="circle_14"/>
+  <java-symbol type="drawable" name="circle_15"/>
+  <java-symbol type="drawable" name="circle_16"/>
+  <java-symbol type="drawable" name="circle_17"/>
+  <java-symbol type="drawable" name="circle_18"/>
+  <java-symbol type="drawable" name="circle_19"/>
+  <java-symbol type="drawable" name="circle_20"/>
+  
+  <java-symbol type="drawable" name="arror_up_1"/>
+  <java-symbol type="drawable" name="arror_up_2"/>
+  <java-symbol type="drawable" name="arror_up_3"/>
+  <java-symbol type="drawable" name="arror_up_4"/>
+  <java-symbol type="drawable" name="arror_up_5"/>
+  <java-symbol type="drawable" name="arror_up_6"/>
+  <java-symbol type="drawable" name="arror_up_7"/>
+  <java-symbol type="drawable" name="arror_up_8"/>
+  <java-symbol type="drawable" name="arror_up_9"/>
+  <java-symbol type="drawable" name="arror_up_10"/>
+  <java-symbol type="drawable" name="arror_up_11"/>
+  <java-symbol type="drawable" name="arror_up_12"/>
+  <java-symbol type="drawable" name="arror_up_13"/>
+  <java-symbol type="drawable" name="arror_up_14"/>
+  <java-symbol type="drawable" name="arror_up_15"/>
+  <java-symbol type="drawable" name="arror_up_16"/>
+  <java-symbol type="drawable" name="arror_up_17"/>
+  <java-symbol type="drawable" name="arror_up_18"/>
+  <java-symbol type="drawable" name="arror_up_19"/>
+  <java-symbol type="drawable" name="arror_up_20"/>
+  
+  <java-symbol type="drawable" name="c_1"/>
+  <java-symbol type="drawable" name="c_2"/>
+  <java-symbol type="drawable" name="c_3"/>
+  <java-symbol type="drawable" name="c_4"/>
+  <java-symbol type="drawable" name="c_5"/>
+  <java-symbol type="drawable" name="c_6"/>
+  <java-symbol type="drawable" name="c_7"/>
+  <java-symbol type="drawable" name="c_8"/>
+  <java-symbol type="drawable" name="c_9"/>
+  <java-symbol type="drawable" name="c_10"/>
+  <java-symbol type="drawable" name="c_11"/>
+  <java-symbol type="drawable" name="c_12"/>
+  <java-symbol type="drawable" name="c_13"/>
+  <java-symbol type="drawable" name="c_14"/>
+  <java-symbol type="drawable" name="c_15"/>
+  <java-symbol type="drawable" name="c_16"/>
+  <java-symbol type="drawable" name="c_17"/>
+  <java-symbol type="drawable" name="c_18"/>
+  <java-symbol type="drawable" name="c_19"/>
+  <java-symbol type="drawable" name="c_20"/>
+  
+  <java-symbol type="drawable" name="down_1"/>
+  <java-symbol type="drawable" name="down_2"/>
+  <java-symbol type="drawable" name="down_3"/>
+  <java-symbol type="drawable" name="down_4"/>
+  <java-symbol type="drawable" name="down_5"/>
+  <java-symbol type="drawable" name="down_6"/>
+  <java-symbol type="drawable" name="down_7"/>
+  <java-symbol type="drawable" name="down_8"/>
+  <java-symbol type="drawable" name="down_9"/>
+  <java-symbol type="drawable" name="down_10"/>
+  <java-symbol type="drawable" name="down_11"/>
+  <java-symbol type="drawable" name="down_12"/>
+  <java-symbol type="drawable" name="down_13"/>
+  <java-symbol type="drawable" name="down_14"/>
+  <java-symbol type="drawable" name="down_15"/>
+  <java-symbol type="drawable" name="down_16"/>
+  <java-symbol type="drawable" name="down_17"/>
+  <java-symbol type="drawable" name="down_18"/>
+  <java-symbol type="drawable" name="down_19"/>
+  <java-symbol type="drawable" name="down_20"/>
+  
+  <java-symbol type="drawable" name="e_1"/>
+  <java-symbol type="drawable" name="e_2"/>
+  <java-symbol type="drawable" name="e_3"/>
+  <java-symbol type="drawable" name="e_4"/>
+  <java-symbol type="drawable" name="e_5"/>
+  <java-symbol type="drawable" name="e_6"/>
+  <java-symbol type="drawable" name="e_7"/>
+  <java-symbol type="drawable" name="e_8"/>
+  <java-symbol type="drawable" name="e_9"/>
+  <java-symbol type="drawable" name="e_10"/>
+  <java-symbol type="drawable" name="e_11"/>
+  <java-symbol type="drawable" name="e_12"/>
+  <java-symbol type="drawable" name="e_13"/>
+  <java-symbol type="drawable" name="e_14"/>
+  <java-symbol type="drawable" name="e_15"/>
+  <java-symbol type="drawable" name="e_16"/>
+  <java-symbol type="drawable" name="e_17"/>
+  <java-symbol type="drawable" name="e_18"/>
+  <java-symbol type="drawable" name="e_19"/>
+  <java-symbol type="drawable" name="e_20"/>
+  
+  <java-symbol type="drawable" name="left_1"/>
+  <java-symbol type="drawable" name="left_2"/>
+  <java-symbol type="drawable" name="left_3"/>
+  <java-symbol type="drawable" name="left_4"/>
+  <java-symbol type="drawable" name="left_5"/>
+  <java-symbol type="drawable" name="left_6"/>
+  <java-symbol type="drawable" name="left_7"/>
+  <java-symbol type="drawable" name="left_8"/>
+  <java-symbol type="drawable" name="left_9"/>
+  <java-symbol type="drawable" name="left_10"/>
+  <java-symbol type="drawable" name="left_11"/>
+  <java-symbol type="drawable" name="left_12"/>
+  <java-symbol type="drawable" name="left_13"/>
+  <java-symbol type="drawable" name="left_14"/>
+  <java-symbol type="drawable" name="left_15"/>
+  <java-symbol type="drawable" name="left_16"/>
+  <java-symbol type="drawable" name="left_17"/>
+  <java-symbol type="drawable" name="left_18"/>
+  <java-symbol type="drawable" name="left_19"/>
+  <java-symbol type="drawable" name="left_20"/>
+  
+  <java-symbol type="drawable" name="m_1"/>
+  <java-symbol type="drawable" name="m_2"/>
+  <java-symbol type="drawable" name="m_3"/>
+  <java-symbol type="drawable" name="m_4"/>
+  <java-symbol type="drawable" name="m_5"/>
+  <java-symbol type="drawable" name="m_6"/>
+  <java-symbol type="drawable" name="m_7"/>
+  <java-symbol type="drawable" name="m_8"/>
+  <java-symbol type="drawable" name="m_9"/>
+  <java-symbol type="drawable" name="m_10"/>
+  <java-symbol type="drawable" name="m_11"/>
+  <java-symbol type="drawable" name="m_12"/>
+  <java-symbol type="drawable" name="m_13"/>
+  <java-symbol type="drawable" name="m_14"/>
+  <java-symbol type="drawable" name="m_15"/>
+  <java-symbol type="drawable" name="m_16"/>
+  <java-symbol type="drawable" name="m_17"/>
+  <java-symbol type="drawable" name="m_18"/>
+  <java-symbol type="drawable" name="m_19"/>
+  <java-symbol type="drawable" name="m_20"/>
+  
+  <java-symbol type="drawable" name="right_1"/>
+  <java-symbol type="drawable" name="right_2"/>
+  <java-symbol type="drawable" name="right_3"/>
+  <java-symbol type="drawable" name="right_4"/>
+  <java-symbol type="drawable" name="right_5"/>
+  <java-symbol type="drawable" name="right_6"/>
+  <java-symbol type="drawable" name="right_7"/>
+  <java-symbol type="drawable" name="right_8"/>
+  <java-symbol type="drawable" name="right_9"/>
+  <java-symbol type="drawable" name="right_10"/>
+  <java-symbol type="drawable" name="right_11"/>
+  <java-symbol type="drawable" name="right_12"/>
+  <java-symbol type="drawable" name="right_13"/>
+  <java-symbol type="drawable" name="right_14"/>
+  <java-symbol type="drawable" name="right_15"/>
+  <java-symbol type="drawable" name="right_16"/>
+  <java-symbol type="drawable" name="right_17"/>
+  <java-symbol type="drawable" name="right_18"/>
+  <java-symbol type="drawable" name="right_19"/>
+  <java-symbol type="drawable" name="right_20"/>
+  
+  <java-symbol type="drawable" name="s_1"/>
+  <java-symbol type="drawable" name="s_2"/>
+  <java-symbol type="drawable" name="s_3"/>
+  <java-symbol type="drawable" name="s_4"/>
+  <java-symbol type="drawable" name="s_5"/>
+  <java-symbol type="drawable" name="s_6"/>
+  <java-symbol type="drawable" name="s_7"/>
+  <java-symbol type="drawable" name="s_8"/>
+  <java-symbol type="drawable" name="s_9"/>
+  <java-symbol type="drawable" name="s_10"/>
+  <java-symbol type="drawable" name="s_11"/>
+  <java-symbol type="drawable" name="s_12"/>
+  <java-symbol type="drawable" name="s_13"/>
+  <java-symbol type="drawable" name="s_14"/>
+  <java-symbol type="drawable" name="s_15"/>
+  <java-symbol type="drawable" name="s_16"/>
+  <java-symbol type="drawable" name="s_17"/>
+  <java-symbol type="drawable" name="s_18"/>
+  <java-symbol type="drawable" name="s_19"/>
+  <java-symbol type="drawable" name="s_20"/>
+  
+  <java-symbol type="drawable" name="up_1"/>
+  <java-symbol type="drawable" name="up_2"/>
+  <java-symbol type="drawable" name="up_3"/>
+  <java-symbol type="drawable" name="up_4"/>
+  <java-symbol type="drawable" name="up_5"/>
+  <java-symbol type="drawable" name="up_6"/>
+  <java-symbol type="drawable" name="up_7"/>
+  <java-symbol type="drawable" name="up_8"/>
+  <java-symbol type="drawable" name="up_9"/>
+  <java-symbol type="drawable" name="up_10"/>
+  <java-symbol type="drawable" name="up_11"/>
+  <java-symbol type="drawable" name="up_12"/>
+  <java-symbol type="drawable" name="up_13"/>
+  <java-symbol type="drawable" name="up_14"/>
+  <java-symbol type="drawable" name="up_15"/>
+  <java-symbol type="drawable" name="up_16"/>
+  <java-symbol type="drawable" name="up_17"/>
+  <java-symbol type="drawable" name="up_18"/>
+  <java-symbol type="drawable" name="up_19"/>
+  <java-symbol type="drawable" name="up_20"/>
+  
+  <java-symbol type="drawable" name="v_1"/>
+  <java-symbol type="drawable" name="v_2"/>
+  <java-symbol type="drawable" name="v_3"/>
+  <java-symbol type="drawable" name="v_4"/>
+  <java-symbol type="drawable" name="v_5"/>
+  <java-symbol type="drawable" name="v_6"/>
+  <java-symbol type="drawable" name="v_7"/>
+  <java-symbol type="drawable" name="v_8"/>
+  <java-symbol type="drawable" name="v_9"/>
+  <java-symbol type="drawable" name="v_10"/>
+  <java-symbol type="drawable" name="v_11"/>
+  <java-symbol type="drawable" name="v_12"/>
+  <java-symbol type="drawable" name="v_13"/>
+  <java-symbol type="drawable" name="v_14"/>
+  <java-symbol type="drawable" name="v_15"/>
+  <java-symbol type="drawable" name="v_16"/>
+  <java-symbol type="drawable" name="v_17"/>
+  <java-symbol type="drawable" name="v_18"/>
+  <java-symbol type="drawable" name="v_19"/>
+  <java-symbol type="drawable" name="v_20"/>
+  
+  <java-symbol type="drawable" name="w_1"/>
+  <java-symbol type="drawable" name="w_2"/>
+  <java-symbol type="drawable" name="w_3"/>
+  <java-symbol type="drawable" name="w_4"/>
+  <java-symbol type="drawable" name="w_5"/>
+  <java-symbol type="drawable" name="w_6"/>
+  <java-symbol type="drawable" name="w_7"/>
+  <java-symbol type="drawable" name="w_8"/>
+  <java-symbol type="drawable" name="w_9"/>
+  <java-symbol type="drawable" name="w_10"/>
+  <java-symbol type="drawable" name="w_11"/>
+  <java-symbol type="drawable" name="w_12"/>
+  <java-symbol type="drawable" name="w_13"/>
+  <java-symbol type="drawable" name="w_14"/>
+  <java-symbol type="drawable" name="w_15"/>
+  <java-symbol type="drawable" name="w_16"/>
+  <java-symbol type="drawable" name="w_17"/>
+  <java-symbol type="drawable" name="w_18"/>
+  <java-symbol type="drawable" name="w_19"/>
+  <java-symbol type="drawable" name="w_20"/>
+  
+  <java-symbol type="drawable" name="z_1"/>
+  <java-symbol type="drawable" name="z_2"/>
+  <java-symbol type="drawable" name="z_3"/>
+  <java-symbol type="drawable" name="z_4"/>
+  <java-symbol type="drawable" name="z_5"/>
+  <java-symbol type="drawable" name="z_6"/>
+  <java-symbol type="drawable" name="z_7"/>
+  <java-symbol type="drawable" name="z_8"/>
+  <java-symbol type="drawable" name="z_9"/>
+  <java-symbol type="drawable" name="z_10"/>
+  <java-symbol type="drawable" name="z_11"/>
+  <java-symbol type="drawable" name="z_12"/>
+  <java-symbol type="drawable" name="z_13"/>
+  <java-symbol type="drawable" name="z_14"/>
+  <java-symbol type="drawable" name="z_15"/>
+  <java-symbol type="drawable" name="z_16"/>
+  <java-symbol type="drawable" name="z_17"/>
+  <java-symbol type="drawable" name="z_18"/>
+  <java-symbol type="drawable" name="z_19"/>
+  <java-symbol type="drawable" name="z_20"/>
+  
+  <!--PRIZE-gesture-liuweiquan-20151113-end-->
+  
+  <!-- Reposition nav bar back key feature & Dynamically hiding nav bar feature. prize-linkh-20161115 -->
+  <java-symbol type="integer" name="default_nav_bar_style" />
+
+  <!-- Dynamically hiding nav bar feature. prize-linkh-20161115 -->
+  <java-symbol type="dimen" name="touch_offset_of_navbar" />
+  <java-symbol type="bool" name="blocked_in_down_event" />
+  <java-symbol type="dimen" name="swipe_distance_threshold_for_nav_bar" />
+
+  <!-- Dynamically changing Recents function feature. prize-linkh-20161115 -->
+  <java-symbol type="bool" name="default_treat_recents_as_menu" />
+  
+  <!-- app multi instances feature. prize-linkh-20151026 -->
+  <java-symbol type="array" name="app_list_for_multi_instances" />
+  <java-symbol type="array" name="disabled_app_list_for_multi_instances" />  
+  <java-symbol type="integer" name="max_instances_per_app" />
+  <java-symbol type="string" name="clone_app_str" />
+  <java-symbol type="string" name="clone_app_variable_str" />
+  <java-symbol type="dimen" name="max_collapsed_height_for_app_inst" />
+  <java-symbol type="dimen" name="max_collapsed_height_small_for_app_inst" />
+  <java-symbol type="layout" name="app_inst_main_prize" />
+  <java-symbol type="id" name="header" />
+  <java-symbol type="id" name="appInstGridView" />
+  <java-symbol type="layout" name="app_inst_item_prize" />
+  <java-symbol type="id" name="app_inst_icon" />
+  <java-symbol type="id" name="app_inst_title" />
+  <java-symbol type="drawable" name="qq2"/>
+  <java-symbol type="drawable" name="wechat2"/>
+  
+  <!-- Intercept wake up alarms. prize-linkh-20160520 -->
+  <java-symbol type="array" name="intercepted_pkg_components_for_wakeup_alarm" />
+  <java-symbol type="array" name="intercepted_only_actions_for_wakeup_alarm" />  
+
+  <!-- app adj adjustment feature. prize-linkh-20160618 -->
+  <java-symbol type="array" name="processes_to_be_adjusted" />
+  <java-symbol type="array" name="processes_to_be_adjusted_for_high_ram" />
+
+  <!-- Support controlling app network for sleeping. prize-linkh-20160716 -->
+  <java-symbol type="array" name="white_list_for_app_net_mgr_for_sleeping" />
+  
+  <!-- add for adjustment of min free of low memory killer. prize-linkh-20160922 -->
+  <java-symbol type="bool" name="enable_custom_lmk_min_free_for_high_ram" />
+  <java-symbol type="bool" name="enable_custom_lmk_min_free" />
+  <java-symbol type="array" name="custom_lmk_min_free" />
+  
+  <!--prize fanjunchen 2015-09-06 for lockscreen start-->
+  <java-symbol type="anim" name="dismiss_alpha" />
+  <!--prize fanjunchen end-->
+
+  <!--prize dengyu 2016-03-01 for hide packages-->
+  <java-symbol type="array" name="config_hide_packages" />
+  <!--prize dengyu end-->
+
+  <!-- PRIZE-add for anti brushing machine-wangxianzhen-2016-03-04-start -->
+  <java-symbol type="array" name="config_built_in_packages"/>
+  <java-symbol type="array" name="config_built_in_packages_realvercode"/>
+  <!-- PRIZE-add for anti brushing machine-wangxianzhen-2016-03-04-end -->
+
+  <!--PRIZE-insert sim, reset os-wangxianzhen-2016-07-26-start-->
+  <java-symbol type="layout" name="sim_insert_dialog"/>
+  <java-symbol type="string" name="reboot_alert"/>
+  <java-symbol type="string" name="reset_alter"/>
+  <java-symbol type="string" name="reset_ok"/>
+  <java-symbol type="string" name="reset_cancel"/>
+  <java-symbol type="string" name="siminsert"/>
+  <java-symbol type="string" name="reboot"/>
+  <java-symbol type="drawable" name="sim_insert_background"/>
+  <java-symbol type="drawable" name="sim_insert_button"/>
+  <java-symbol type="drawable" name="sim_insert_line"/>
+  <java-symbol type="id" name="reset"/>
+  <java-symbol type="id" name="reset_text"/>
+  <java-symbol type="id" name="reboot_button"/>
+  <java-symbol type="id" name="reset_ok_button"/>
+  <java-symbol type="id" name="reset_cancel_button"/>
+  <java-symbol type="dimen" name="siminsert_textview_height" />
+  <java-symbol type="dimen" name="siminsert_textview_textsize" />
+  <java-symbol type="dimen" name="reset_text_textview_height" />
+  <java-symbol type="dimen" name="reset_text_textview_linespace" />
+  <java-symbol type="dimen" name="reset_text_textview_padding1" />
+  <java-symbol type="dimen" name="reset_text_textview_padding2" />
+  <java-symbol type="dimen" name="button_textsize" />
+  <java-symbol type="dimen" name="button_margin" />
+  <java-symbol type="dimen" name="button_width" />
+  <java-symbol type="dimen" name="bottom_linearlayout_height" />
+  <!--PRIZE-insert sim, reset os-wangxianzhen-2016-07-26-end-->
+  <!--PRIZE-purebackground-wangxianzhen-2016-08-09-start-->
+  <java-symbol type="array" name="third_app_market" />
+  <!--PRIZE-purebackground-wangxianzhen-2016-08-09-end-->
+  
+  <!--prize liup 20161118 change icon&label start-->
+  <java-symbol type="string" name="prize_baidumap"/>
+  <java-symbol type="string" name="prize_reader"/>
+  <java-symbol type="string" name="prize_search"/>
+  <java-symbol type="string" name="prize_news"/>
+  <java-symbol type="string" name="prize_yidian"/>
+  <java-symbol type="string" name="prize_sogou_browser"/>
+  <java-symbol type="string" name="prize_tencent_vedio"/>
+  
+  <java-symbol type="drawable" name="prize_sogou_browser"/>
+  <java-symbol type="drawable" name="prize_androidmarket"/>
+  <java-symbol type="drawable" name="prize_baidumap"/>
+  <java-symbol type="drawable" name="prize_browser"/>
+  <java-symbol type="drawable" name="prize_calculator"/>
+  <java-symbol type="drawable" name="prize_calendar"/>
+  <java-symbol type="drawable" name="prize_camera"/>
+  <java-symbol type="drawable" name="prize_clock"/>
+  <java-symbol type="drawable" name="prize_cocolocker"/>
+  <java-symbol type="drawable" name="prize_compass"/>
+  <java-symbol type="drawable" name="prize_contacts"/>
+  <java-symbol type="drawable" name="prize_download"/>
+  <java-symbol type="drawable" name="prize_duomi"/>
+  <java-symbol type="drawable" name="prize_email"/>
+  <java-symbol type="drawable" name="prize_fmradio"/>
+  <java-symbol type="drawable" name="prize_folder"/>
+  <java-symbol type="drawable" name="prize_gallery"/>
+  <java-symbol type="drawable" name="prize_icontrol"/>
+  <java-symbol type="drawable" name="prize_iqy"/>
+  <java-symbol type="drawable" name="prize_jinritoutiao"/>
+  <java-symbol type="drawable" name="prize_koobee02"/>
+  <java-symbol type="drawable" name="prize_meituan"/>
+  <java-symbol type="drawable" name="prize_memo"/>
+  <java-symbol type="drawable" name="prize_mobilesafe"/>
+  <java-symbol type="drawable" name="prize_music"/>
+  <java-symbol type="drawable" name="prize_news"/>
+  <java-symbol type="drawable" name="prize_nqmobile"/>
+  <java-symbol type="drawable" name="prize_phone"/>
+  <java-symbol type="drawable" name="prize_reader"/>
+  <java-symbol type="drawable" name="prize_record"/>
+  <java-symbol type="drawable" name="prize_search"/>
+  <java-symbol type="drawable" name="prize_settings"/>
+  <java-symbol type="drawable" name="prize_shoujiguanjia"/>
+  <java-symbol type="drawable" name="prize_simtoolkit"/>
+  <java-symbol type="drawable" name="prize_sms"/>
+  <java-symbol type="drawable" name="prize_uim"/>
+  <java-symbol type="drawable" name="prize_videoc"/>
+  <java-symbol type="drawable" name="prize_weather"/>
+  <java-symbol type="drawable" name="prize_yidian"/>
+  <!--prize liup 20161118 change icon&label end-->
+  <!--prize-OS8.0_Shutdown-add-yangming-2017_8_12-start-->
+  <java-symbol type="style" name="blurDialog" />
+  <java-symbol type="color" name="prize_white" />
+  <java-symbol type="color" name="prize_white_summary" />
+  <java-symbol type="color" name="prize_black" />
+  <java-symbol type="drawable" name="prize_big_reboot_background"/>
+  <java-symbol type="drawable" name="prize_big_shutdown_background"/>
+  <java-symbol type="drawable" name="prize_small_reboot_background"/>
+  <java-symbol type="drawable" name="prize_small_shutdown_background"/>
+  <java-symbol type="drawable" name="prize_big_reboot_normal"/>
+  <java-symbol type="drawable" name="prize_big_reboot_pressed"/>
+  <java-symbol type="drawable" name="prize_big_shutdow_pressed"/>
+  <java-symbol type="drawable" name="prize_big_shutdown_normal"/>
+  <java-symbol type="drawable" name="prize_small_reboot_normal"/>
+  <java-symbol type="drawable" name="prize_small_reboot_pressed"/>
+  <java-symbol type="drawable" name="prize_small_shutdown_normal"/>
+  <java-symbol type="drawable" name="prize_small_shutdown_pressed"/>
+  <java-symbol type="string" name="shutdown"/>
+  <java-symbol type="string" name="restart"/>
+  <java-symbol type="string" name="shutdown_reminder"/>
+  <java-symbol type="string" name="restart_reminder"/> 
+  <java-symbol type="layout" name="prize_shutdown_reboot_dialog"/>
+  <java-symbol type="layout" name="prize_shutdown_reboot_dialog_land"/>
+  <java-symbol type="id" name="blurLayout"/>
+  <java-symbol type="id" name="shutdownLinear"/>
+  <java-symbol type="id" name="shutdownImage"/>
+  <java-symbol type="id" name="shutdown_textView"/>
+  <java-symbol type="id" name="shutdown_summary"/>
+  <java-symbol type="id" name="rebootLinear"/>
+  <java-symbol type="id" name="rebootImage"/>
+  <java-symbol type="id" name="reboot_textView"/>
+  <java-symbol type="id" name="reboot_summary"/>
+  <java-symbol type="drawable" name="prize_cancel_black_normal"/>
+  <java-symbol type="drawable" name="prize_cancel_pressed"/>
+  <java-symbol type="drawable" name="prize_cancel_white_normal"/>
+  <java-symbol type="drawable" name="prize_cancel_background_white"/>
+  <java-symbol type="drawable" name="prize_cancel_background_black"/>
+  <java-symbol type="id" name="cancelLinear"/>
+  <java-symbol type="id" name="cancelImage"/>
+  <java-symbol type="id" name="cancel_textView"/>
+  
+  <java-symbol type="drawable" name="reboot0"/>
+  <java-symbol type="drawable" name="reboot1"/>
+  <java-symbol type="drawable" name="reboot2"/>
+  <java-symbol type="drawable" name="reboot3"/>
+  <java-symbol type="drawable" name="reboot4"/>
+  <java-symbol type="drawable" name="reboot5"/>
+  <java-symbol type="drawable" name="reboot6"/>
+  <java-symbol type="drawable" name="reboot7"/>
+  <java-symbol type="drawable" name="reboot8"/>
+  <java-symbol type="drawable" name="reboot9"/>
+  <java-symbol type="drawable" name="shutdown0"/>
+  <java-symbol type="drawable" name="shutdown1"/>
+  <java-symbol type="drawable" name="shutdown2"/>
+  <java-symbol type="drawable" name="shutdown3"/>
+  <java-symbol type="drawable" name="shutdown4"/>
+  <java-symbol type="drawable" name="shutdown5"/>
+  <java-symbol type="drawable" name="shutdown6"/>
+  <java-symbol type="drawable" name="shutdown7"/>
+  <java-symbol type="drawable" name="shutdown8"/>
+  <java-symbol type="drawable" name="shutdown9"/>
+  <java-symbol type="drawable" name="prize_shutdown_anim_background"/>
+  <java-symbol type="drawable" name="prize_reboot_anim_background"/>
+  
+  <java-symbol type="id" name="big_image_anim"/>
+  <!--prize-OS8.0_Shutdown-add-yangming-2017_8_12-end-->
+    <!--PRIZE-Add-SMS_Reminder-wangzhong-2017_3_27-start-->
+    <java-symbol type="string" name="prize_sms_control_message"/>
+    <!--PRIZE-Add-SMS_Reminder-wangzhong-2017_3_27-end-->
+  <!-- prize-xuchunming-20170710-add circle window at screen four corners-start -->
+  <java-symbol type="layout" name="prize_circlewindow" />
+  <java-symbol type="drawable" name="prize_circlewindow_leftbottom"/>
+  <java-symbol type="drawable" name="prize_circlewindow_lefttop"/>
+  <java-symbol type="drawable" name="prize_circlewindow_rightbottom"/>
+  <java-symbol type="drawable" name="prize_circlewindow_righttop"/>
+  <!-- prize-xuchunming-20170710-add circle window at screen four corners-end -->
+  <!-- prize-add for mms OP01 pluginExt 8.0-yangming-2018_4_11-start -->
+  <java-symbol type="layout" name="prize_preference_mid_item" />
+  <java-symbol type="drawable" name="prize_preferences_mid_bg_selector"/>
+  <java-symbol type="drawable" name="prize_preference_item_tv_selector"/>
+  <java-symbol type="dimen" name="prize_preferences_bg_stroke_height" />
+  <java-symbol type="dimen" name="prize_preferences_bg_height2" />
+  <java-symbol type="dimen" name="prize_divider_height2" />
+  <java-symbol type="dimen" name="prize_preferences_bg_margin4" />
+  <java-symbol type="dimen" name="prize_preferences_text_size2" />
+  <java-symbol type="dimen" name="prize_preferences_text_size1" />
+  <java-symbol type="dimen" name="prize_preferences_bg_margin1" />
+  <java-symbol type="dimen" name="prize_preferences_bg_margin3" />
+  <java-symbol type="color" name="prize_preferences_bg_color_gray" />
+  <java-symbol type="color" name="prize_preferences_bg_solid_color" />
+  <java-symbol type="color" name="prize_preferences_bg_solid_color_pressed" />
+  <java-symbol type="color" name="prize_divider_color_gray7" />
+  <java-symbol type="color" name="prize_preferences_title_text_color" />
+  <!-- prize-add for mms OP01 pluginExt 8.0-yangming-2018_4_11-end -->
+   <!-- prize-xuchunming-20180620-bugid:62789-start-->
+   <java-symbol type="string" name="clone_app_wenxin_camera_waringinfo"/> 
+   <!-- prize-xuchunming-20180620-bugid:62789-end-->
+</resources>

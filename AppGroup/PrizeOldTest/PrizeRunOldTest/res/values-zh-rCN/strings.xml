@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">老化测试</string>
+    <string name="cpu_title">"显示CPU工作频率"</string>
+    <string name="battery_key">"battery"</string>
+    <string name="cpu_key">"cpu"</string>
+    <string name="title_activity_lcd">LcdActivity</string>
+    <string name="playvideo">播放视频</string>
+    <string name="audio">音频</string>
+    <string name="camera">相机</string>
+    <string name="reboot">重启</string>
+    <string name="rwbgreceive">RF、WiFi、bluetooth、GPS 接收</string>
+    <string name="sensor">感应器</string>
+    
+    <!--flash_light-->
+    <string name="flashlight">闪光灯</string>
+    <string name="flashlight_status">当前状态</string>
+    <string name="flashlight_off">OFF</string>
+    <string name="flashlight_on">ON</string>
+    <string name="trun_off">关闭</string>
+    <string name="trun_on">打开</string>
+    
+</resources>

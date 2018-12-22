@@ -1,0 +1,209 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        //applicationId代表应用的包名，也是最新的写法
+        applicationId "com.prize.appcenter"
+        minSdkVersion 21
+        targetSdkVersion 22
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    signingConfigs {
+        release {
+            storeFile file(RELEASE_STORE_FILE)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+    }
+    buildTypes {
+        release {
+            // 是否进行混淆
+            minifyEnabled true
+            shrinkResources true
+            // 混淆文件的位置
+            proguardFiles 'proguard-project.txt'
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+}
+//依赖包的定义.远程，本地库，也支持单文件
+dependencies {
+    compile project(':joloplaybase')
+    compile project(':viewPageLib')
+    compile project(':xutils3')
+    // 编译libs目录下的所有jar包
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    //    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+    //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
+    compile project(':jcvideoplayer-lib')
+    //    compile 'com.tamic:StatInterface:2.1'
+    //    compile group: 'org.eclipse.paho', name: 'org.eclipse.paho.client.mqttv3', version: '1.1.1'
+    //    compile group: 'org.eclipse.paho', name: 'org.eclipse.paho.android.service', version: '1.1.1'
+    //    compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0'
+    // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
+    //    debugCompile 'com.github.markzhai:blockcanary-android:1.5.0'
+    //    releaseCompile 'com.github.markzhai:blockcanary-no-op:1.5.0'
+}
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+
+    }
+}
+
+android {
+    productFlavors {
+        koobee_newsign {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "koobee",BAIDU_AK_VALUE:"yxGzF16mwqWGPlEjZE9ZiGQ9", APP_ICON: "@drawable/ic_applauncher_koobee",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'false'
+            buildConfigField 'Boolean', 'ISOEDER', 'false'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'true'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"S2tlVVq+txSsl7AhzaI2GPvabkgqnySzfwXCa5HpFl7/VtWwr/XgfY+e911oP1ClXRtEPXMfkX+3NgeYsyKsjw==" '
+        }
+        coosea_newsign {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "coosea",BAIDU_AK_VALUE:"yxGzF16mwqWGPlEjZE9ZiGQ9", APP_ICON: "@drawable/ic_applauncher",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'true'
+            buildConfigField 'Boolean', 'ISOEDER', 'false'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'true'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"S2tlVVq+txSsl7AhzaI2GPvabkgqnySzfwXCa5HpFl7/VtWwr/XgfY+e911oP1ClXRtEPXMfkX+3NgeYsyKsjw=="'
+        }
+        koobee_oldsign {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "koobee",BAIDU_AK_VALUE:"i3xp1qXtTjIPWxyBuACbitejVmv7fBod", APP_ICON: "@drawable/ic_applauncher_koobee",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'false'
+            buildConfigField 'Boolean', 'ISOEDER', 'false'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'false'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"WkpUlc0keIxMcY4dynKdUaxarOR+HWvYhC3BiixuiJVdOw0rWpdaEvVFw9Y6jk8BIv6YDy9dEef20ONxtysRTw=="'
+        }
+        coosea_oldsign {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "coosea",BAIDU_AK_VALUE:"i3xp1qXtTjIPWxyBuACbitejVmv7fBod", APP_ICON: "@drawable/ic_applauncher",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'true'
+            buildConfigField 'Boolean', 'ISOEDER', 'false'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'false'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"WkpUlc0keIxMcY4dynKdUaxarOR+HWvYhC3BiixuiJVdOw0rWpdaEvVFw9Y6jk8BIv6YDy9dEef20ONxtysRTw=="'
+        }
+
+        channeltest_newsign {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "test",BAIDU_AK_VALUE:"yxGzF16mwqWGPlEjZE9ZiGQ9", APP_ICON: "@drawable/ic_applauncher_koobee",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'false'
+            buildConfigField 'Boolean', 'ISOEDER', 'false'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'true'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"S2tlVVq+txSsl7AhzaI2GPvabkgqnySzfwXCa5HpFl7/VtWwr/XgfY+e911oP1ClXRtEPXMfkX+3NgeYsyKsjw==" '
+        }
+
+
+        kingsun {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "kingsun",BAIDU_AK_VALUE:"yxGzF16mwqWGPlEjZE9ZiGQ9", APP_ICON: "@drawable/ic_applauncher",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'true'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'true'
+            buildConfigField 'Boolean', 'ISOEDER', 'true'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"S2tlVVq+txSsl7AhzaI2GPvabkgqnySzfwXCa5HpFl7/VtWwr/XgfY+e911oP1ClXRtEPXMfkX+3NgeYsyKsjw==" '
+
+        }
+
+        //start---三方推广
+        HLYT001{
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "HLYT001",BAIDU_AK_VALUE:"yxGzF16mwqWGPlEjZE9ZiGQ9", APP_ICON: "@drawable/icon_hlyt_one",APP_NAME:"@string/app_name_HLYT001"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'true'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'true'
+            buildConfigField 'Boolean', 'ISOEDER', 'true'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"S2tlVVq+txSsl7AhzaI2GPvabkgqnySzfwXCa5HpFl7/VtWwr/XgfY+e911oP1ClXRtEPXMfkX+3NgeYsyKsjw==" '
+
+        }
+        HLYT002 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "HLYT002",BAIDU_AK_VALUE:"yxGzF16mwqWGPlEjZE9ZiGQ9", APP_ICON: "@drawable/ic_external",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'true'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'true'
+            buildConfigField 'Boolean', 'ISOEDER', 'true'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"S2tlVVq+txSsl7AhzaI2GPvabkgqnySzfwXCa5HpFl7/VtWwr/XgfY+e911oP1ClXRtEPXMfkX+3NgeYsyKsjw==" '
+
+        }
+        HLYT003 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "HLYT003", BAIDU_AK_VALUE:"yxGzF16mwqWGPlEjZE9ZiGQ9",APP_ICON: "@drawable/ic_external",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'true'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'true'
+            buildConfigField 'Boolean', 'ISOEDER', 'true'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"S2tlVVq+txSsl7AhzaI2GPvabkgqnySzfwXCa5HpFl7/VtWwr/XgfY+e911oP1ClXRtEPXMfkX+3NgeYsyKsjw==" '
+        }
+        //end---三方推广
+        //移动运营商
+        CMCC_newsign {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "CMCC",BAIDU_AK_VALUE:"yxGzF16mwqWGPlEjZE9ZiGQ9", APP_ICON: "@drawable/ic_applauncher_koobee",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'false'
+            buildConfigField 'Boolean', 'ISOEDER', 'true'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'true'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"S2tlVVq+txSsl7AhzaI2GPvabkgqnySzfwXCa5HpFl7/VtWwr/XgfY+e911oP1ClXRtEPXMfkX+3NgeYsyKsjw==" '
+
+        }
+        //电信运营商
+        CTCC_newsign {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "CTCC",BAIDU_AK_VALUE:"yxGzF16mwqWGPlEjZE9ZiGQ9", APP_ICON: "@drawable/ic_applauncher_koobee",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'false'
+            buildConfigField 'Boolean', 'ISOEDER', 'true'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'true'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"S2tlVVq+txSsl7AhzaI2GPvabkgqnySzfwXCa5HpFl7/VtWwr/XgfY+e911oP1ClXRtEPXMfkX+3NgeYsyKsjw==" '
+
+        }
+
+        OTHER{
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "other",BAIDU_AK_VALUE:"i3xp1qXtTjIPWxyBuACbitejVmv7fBod", APP_ICON: "@drawable/ic_applauncher",APP_NAME:"@string/app_name"]
+            buildConfigField 'Boolean', 'ISCOOSEA', 'false'
+            buildConfigField 'Boolean', 'ISOEDER', 'false'
+            buildConfigField 'Boolean', 'ISNEWSIGN', 'false'
+            buildConfigField 'String', 'CLEAR_SDKAUTHORIZATION_CODE', '"WkpUlc0keIxMcY4dynKdUaxarOR+HWvYhC3BiixuiJVdOw0rWpdaEvVFw9Y6jk8BIv6YDy9dEef20ONxtysRTw=="'
+        }
+    }
+
+}
+
+def releaseTime() {
+    return new Date().format("MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                File outputDirectory = new File(outputFile.parent);
+                def fileName
+                if (variant.buildType.name == "release") {
+                    fileName = "PrizeAppCenter_${variant.versionName}_${variant.productFlavors[0].name}_${releaseTime()}.apk"
+                } else {
+                    fileName = "PrizeAppCenter_${variant.versionName}_beta.apk"
+                }
+                output.outputFile = new File(outputDirectory, fileName)
+            }
+        }
+    }
+}
+

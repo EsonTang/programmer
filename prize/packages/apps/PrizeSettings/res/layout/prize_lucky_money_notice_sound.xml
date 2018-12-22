@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout android:id="@+id/rl_lucky_money_notice_sound_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff0f0f0">
+        <ImageView android:id="@+id/im_lucky_money_notice_sound_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/prize_back_button_selector"/>
+        
+        <TextView android:id="@+id/tv_lucky_money_notice_sound_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/im_lucky_money_notice_sound_back"
+                android:layout_marginStart="15dp"
+                android:text="@string/tv_lucky_money_notice_sound_title_text"
+                android:textSize="16sp"/>
+        
+        <Button android:id="@+id/btn_save_notice_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:text="@string/btn_save_notice_sound_text"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+    
+    <ListView android:id="@+id/lv_notice_sound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_lucky_money_notice_sound_title"
+        android:listSelector="@android:color/transparent" 
+        android:divider="@drawable/dialog_title_line"
+        android:dividerHeight="0.5dp">
+    </ListView>
+
+</RelativeLayout>

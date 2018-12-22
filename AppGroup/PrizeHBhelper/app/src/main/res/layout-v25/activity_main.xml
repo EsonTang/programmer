@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prize_layout_bg_color"
+    android:orientation="vertical"
+    tools:context="com.android.lpserver.MainActivity">
+    <!--prize remove zhaojian 8.0 2017803      android:fitsSystemWindows="true"-->
+
+    <!--prize modify zhaojian 8.0 2017803 start-->
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/helper_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:elevation="@dimen/prize_actionbar_elevation_size">
+        &lt;!&ndash;prize remove background/colorPrimary zhaojian 8.0 2017803&ndash;&gt;
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/prize_actionbar_margin_top"
+        android:background="@color/prize_actionbar_bg_color_v8"
+        android:elevation="@dimen/prize_actionbar_elevation_size"
+        >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/prize_actionbar_back_button_margin_left"
+            android:background="@drawable/back_button_v8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/header_textsize_v8" />
+    </RelativeLayout>
+
+    <!--prize modify zhaojian 8.0 2017803 end-->
+
+
+    <!--prize add zhaojian 8.0 2017803 start-->
+    <!--<FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>-->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+    <!--prize add zhaojian 8.0 2017803 start-->
+
+</LinearLayout>

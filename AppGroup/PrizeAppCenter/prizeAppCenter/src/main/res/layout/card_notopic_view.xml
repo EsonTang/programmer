@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/icon_mall_title"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="18dp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/common_app_title"
+        android:textSize="@dimen/text_size_30" />
+
+    <com.prize.appcenter.ui.widget.PrizeHorizontalScrollView
+        android:id="@+id/horizatal_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="9dp"
+        android:focusable="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/child_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp" >
+            <GridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:columnWidth="55dp"
+                android:numColumns="auto_fit"
+                android:horizontalSpacing="25dp"
+                android:stretchMode="spacingWidthUniform" >
+            </GridView>
+        </LinearLayout>
+    </com.prize.appcenter.ui.widget.PrizeHorizontalScrollView>
+</merge>

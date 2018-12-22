@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">আইপি কল  <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g>  </string>
+    <string name="select_account">একাউন্ট নির্বাচন করুন</string>
+    <string name="all_accounts">সব একাউন্ট</string>
+    <string name="call_log_via_sim_name_notice">\"<xliff:g id="sim_name">%s</xliff:g>\" মাধ্যমে কল লগ</string>
+    <string name="imei_invalid">অকার্যকর</string>
+    <string name="conf_call_member_list">সদস্য তালিকা</string>
+    <string name="conf_call_participant_answered">জবাব দেয়া হয়েছে</string>
+    <string name="conf_call_participant_missed">মিস হয়েছে</string>
+    <string name="calls_over_wifi">ওয়াইফাইদিয়েকলকরাহবে</string>
+    <string name="connect_to_wifi">কল করতে ওয়াইফাইয়ের সাথে সংযুক্ত হোন</string>
+    <string name="wfc_notification_summary">অগ্রাধিকারেপ্রবেশকরতেএখানেটোকাদিন</string>
+    <string name="wfc_notification_summary_fail">প্রাপ্ত নেটওয়ার্ক দেখতে এখানে টোকা দিন</string>
+    <string name="dialer_call_type_label_sip">ইন্টারনেট কল</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> আনব্লক ব্যর্থ</string>
+</resources>

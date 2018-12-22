@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 卡片应用雷达布局-->
+
+    <ImageView
+        android:id="@+id/appsin_bgImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="13dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/container_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/appsin_bgImg">
+
+        <com.prize.appcenter.ui.widget.SubCardAppsinView
+            android:id="@+id/left_top_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="50dp" />
+
+        <com.prize.appcenter.ui.widget.SubCardAppsinView
+            android:id="@+id/left_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="71dp"
+            android:layout_marginTop="94dp" />
+
+        <com.prize.appcenter.ui.widget.SubCardAppsinView
+            android:id="@+id/left_bottom_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="17dp" />
+
+        <!--右边-->
+        <com.prize.appcenter.ui.widget.SubCardAppsinView
+            android:id="@+id/right_top_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_sinview_marginLeft"
+            android:layout_marginTop="25dp" />
+
+        <com.prize.appcenter.ui.widget.SubCardAppsinView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/right_top_Iv"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="83dp" />
+
+        <com.prize.appcenter.ui.widget.SubCardAppsinView
+            android:id="@+id/right_bootom_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="@dimen/card_sinview_right_bootom_marginLeft" />
+
+    </RelativeLayout>
+</merge>

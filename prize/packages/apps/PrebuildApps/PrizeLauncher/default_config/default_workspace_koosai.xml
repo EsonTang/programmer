@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3" >
+
+<!-- Hotseat ************************************************ 的排版-->
+
+
+	<!-- 电话-->
+	<favorite
+		launcher:className="com.android.dialer.DialtactsActivity"
+		launcher:packageName="com.android.dialer"
+		launcher:container="-101"
+		launcher:screen="0"
+		launcher:x="0"
+		launcher:y="0"	/>
+
+	<!-- 信息-->
+	<favorite
+		launcher:className="com.android.mms.ui.BootActivity"
+		launcher:packageName="com.android.mms"
+		launcher:container="-101"
+		launcher:screen="1"
+		launcher:x="1"
+		launcher:y="0"	/>
+
+	<!-- 浏览器-->
+	<favorite
+		launcher:className="sogou.mobile.explorer.NoDisplayActivity"
+		launcher:packageName="sogou.mobile.explorer.koobee"
+		launcher:container="-101"
+		launcher:screen="2"
+		launcher:x="2"
+		launcher:y="0"	/>
+
+	<!-- 相机-->
+	<favorite
+		launcher:className="com.android.camera.CameraLauncher"
+		launcher:packageName="com.mediatek.camera"
+		launcher:container="-101"
+		launcher:screen="3"
+		launcher:x="3"
+		launcher:y="0"	/>
+<!--************************************************ Hotseat  的排版 结束-->
+
+<!-- ************************************************workspace  第1页的排版 开始-->
+
+
+	<!-- 日历-->
+	<favorite
+		launcher:className="com.android.calendar.AllInOneActivity"
+		launcher:packageName="com.android.calendar"
+		launcher:screen="0"
+		launcher:x="0"
+		launcher:y="0"	/>
+
+	<!-- 时钟-->
+	<favorite
+		launcher:className="com.android.deskclock.DeskClock"
+		launcher:packageName="com.android.deskclock"
+		launcher:screen="0"
+		launcher:x="1"
+		launcher:y="0"	/>
+
+	<!-- 天气-->
+	<favorite
+		launcher:className="com.prize.weather.WeatherHomeActivity"
+		launcher:packageName="com.prize.weather"
+		launcher:screen="0"
+		launcher:x="2"
+		launcher:y="0"	/>
+
+	<!-- 设置-->
+	<favorite
+		launcher:className="com.android.settings.Settings"
+		launcher:packageName="com.android.settings"
+		launcher:screen="0"
+		launcher:x="3"
+		launcher:y="0"	/>
+
+	<!-- 音乐-->
+	<favorite
+		launcher:className="com.prize.music.activities.WelcomeActivity"
+		launcher:packageName="com.prize.music"
+		launcher:screen="0"
+		launcher:x="0"
+		launcher:y="1"	/>
+
+	<!-- 视频-->
+	<favorite
+		launcher:className="com.prize.videoc.LocalActivity"
+		launcher:packageName="com.prize.videoc"
+		launcher:screen="0"
+		launcher:x="1"
+		launcher:y="1"	/>
+
+	<!-- 相册-->
+	<favorite
+		launcher:className="com.android.gallery3d.app.GalleryActivity"
+		launcher:packageName="com.android.gallery3d"
+		launcher:screen="0"
+		launcher:x="2"
+		launcher:y="1"	/>
+
+	<!-- 文件管理-->
+	<favorite
+		launcher:className="com.mediatek.filemanager.main.MainActivity"
+		launcher:packageName="com.mediatek.filemanager"
+		launcher:screen="0"
+		launcher:x="3"
+		launcher:y="1"	/>
+
+	<!-- 通讯录-->
+	<favorite
+		launcher:className="com.android.contacts.activities.PeopleActivity"
+		launcher:packageName="com.android.contacts"
+		launcher:screen="0"
+		launcher:x="0"
+		launcher:y="2"	/>
+
+	<!-- 便签-->
+	<favorite
+		launcher:className="com.android.notepad.NotePadActivity"
+		launcher:packageName="com.android.notepad"
+		launcher:screen="0"
+		launcher:x="1"
+		launcher:y="2"	/>
+
+	<!-- 安全中心-->
+	<favorite
+		launcher:className="com.pr.scuritycenter.MainActivity"
+		launcher:packageName="com.pr.scuritycenter"
+		launcher:screen="0"
+		launcher:x="2"
+		launcher:y="2"	/>
+
+	<!-- 工具箱-->
+	<folder
+		launcher:screen="0"
+		launcher:name="工具箱;工具箱;工具箱"
+		launcher:x="3"
+		launcher:y="2"	>
+	
+	<!-- 收音机-->
+		<favorite
+			launcher:className="com.android.fmradio.FmMainActivity"
+			launcher:packageName="com.android.fmradio"
+			launcher:screen="0"
+			launcher:x="0"
+			launcher:y="0"	/>
+	
+	<!-- 录音机-->
+		<favorite
+			launcher:className="com.android.soundrecorder.SoundRecorder"
+			launcher:packageName="com.android.soundrecorder"
+			launcher:screen="0"
+			launcher:x="1"
+			launcher:y="0"	/>
+	
+	<!-- 计算器-->
+		<favorite
+			launcher:className="com.android.calculator2.Calculator"
+			launcher:packageName="com.android.calculator2"
+			launcher:screen="0"
+			launcher:x="2"
+			launcher:y="0"	/>
+	
+	<!-- SIM卡应用-->
+		<favorite
+			launcher:className="com.android.stk.StkMain"
+			launcher:packageName="com.android.stk"
+			launcher:screen="0"
+			launcher:x="0"
+			launcher:y="1"	/>
+	
+	<!-- 下载-->
+		<favorite
+			launcher:className="com.android.documentsui.LauncherActivity"
+			launcher:packageName="com.android.documentsui"
+			launcher:screen="0"
+			launcher:x="1"
+			launcher:y="1"	/>
+	
+	<!-- 酷比中心-->
+		<favorite
+			launcher:className="com.koobee.koobeecenter.MainActivity"
+			launcher:packageName="com.koobee.koobeecenter02"
+			launcher:screen="0"
+			launcher:x="2"
+			launcher:y="1"	/>
+	
+	<!-- 网易邮箱大师-->
+		<favorite
+			launcher:className="com.netease.mobimail.activity.LaunchActivity"
+			launcher:packageName="com.netease.mail"
+			launcher:screen="0"
+			launcher:x="0"
+			launcher:y="2"	/>
+	</folder>
+
+	<!-- 主题商店-->
+	<favorite
+		launcher:className="com.prize.prizethemecenter.activity.InitLogoActivity"
+		launcher:packageName="com.prize.prizethemecenter"
+		launcher:screen="0"
+		launcher:x="0"
+		launcher:y="3"	/>
+
+	<!-- 应用市场-->
+	<favorite
+		launcher:className="com.prize.appcenter.PlayPlusClientActivity"
+		launcher:packageName="com.prize.appcenter"
+		launcher:screen="0"
+		launcher:x="1"
+		launcher:y="3"	/>
+<!-- workspace  ************************************************第1页的排版 结束-->
+
+<!-- ************************************************workspace  第2页的排版 开始-->
+
+
+	<!-- 搜索-->
+	<favorite
+		launcher:className="com.baidu.searchbox.SplashActivity"
+		launcher:packageName="com.baidu.searchbox"
+		launcher:screen="1"
+		launcher:x="0"
+		launcher:y="0"	/>
+
+	<!-- 高德地图-->
+	<favorite
+		launcher:className="com.autonavi.map.activity.SplashActivity"
+		launcher:packageName="com.autonavi.minimap"
+		launcher:screen="1"
+		launcher:x="1"
+		launcher:y="0"	/>
+
+	<!-- 新闻-->
+	<favorite
+		launcher:className="com.tencent.news.activity.SplashActivity"
+		launcher:packageName="com.tencent.news"
+		launcher:screen="1"
+		launcher:x="2"
+		launcher:y="0"	/>
+
+	<!-- 阅读-->
+	<favorite
+		launcher:className="com.cmread.bplusc.bookshelf.LocalMainActivity"
+		launcher:packageName="com.andreader.prein"
+		launcher:screen="1"
+		launcher:x="3"
+		launcher:y="0"	/>
+
+	<!-- 唯品会-->
+	<favorite
+		launcher:className="com.achievo.vipshop.activity.LodingActivity"
+		launcher:packageName="com.achievo.vipshop"
+		launcher:screen="1"
+		launcher:x="0"
+		launcher:y="1"	/>
+
+	<!-- 腾讯视频-->
+	<favorite
+		launcher:className="com.tencent.qqlive.ona.activity.WelcomeActivity"
+		launcher:packageName="com.tencent.qqlive"
+		launcher:screen="1"
+		launcher:x="1"
+		launcher:y="1"	/>
+
+	<!-- 美团-->
+	<favorite
+		launcher:className="com.sankuai.meituan.activity.PreloadedWelcome"
+		launcher:packageName="com.sankuai.meituan"
+		launcher:screen="1"
+		launcher:x="2"
+		launcher:y="1"	/>
+
+	<!-- 手机京东-->
+	<favorite
+		launcher:className="com.jingdong.app.mall.MainActivity"
+		launcher:packageName="com.jingdong.app.mall"
+		launcher:screen="1"
+		launcher:x="3"
+		launcher:y="1"	/>
+
+	<!-- 今日头条-->
+	<favorite
+		launcher:className="com.ss.android.article.news.activity.SplashActivity"
+		launcher:packageName="com.ss.android.article.news"
+		launcher:screen="1"
+		launcher:x="0"
+		launcher:y="2"	/>
+
+	<!-- 掌阅-->
+	<favorite
+		launcher:className="com.chaozh.iReader.ui.activity.WelcomeActivity"
+		launcher:packageName="com.chaozh.iReaderFree"
+		launcher:screen="1"
+		launcher:x="1"
+		launcher:y="2"	/>
+
+	<!-- 秒拍-->
+	<favorite
+		launcher:className="com.yixia.videoeditor.login.ui.SplashActivity"
+		launcher:packageName="com.yixia.videoeditor"
+		launcher:screen="1"
+		launcher:x="2"
+		launcher:y="2"	/>
+
+	<!-- 爱奇艺-->
+	<favorite
+		launcher:className="com.qiyi.video.WelcomeActivity"
+		launcher:packageName="com.qiyi.video"
+		launcher:screen="1"
+		launcher:x="3"
+		launcher:y="2"	/>
+<!-- workspace  ************************************************第2页的排版 结束-->
+
+</favorites>

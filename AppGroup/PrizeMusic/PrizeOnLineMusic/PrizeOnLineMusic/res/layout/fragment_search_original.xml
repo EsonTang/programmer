@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_hotkeys_sv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="false"
+    android:scrollbars="@null" >
+
+    <include
+        layout="@layout/waiting_view" />
+
+    <include
+        layout="@layout/reload_layout"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:visibility="gone"
+        android:divider="@color/divider"
+        android:dividerHeight="1px"
+        android:paddingLeft="@dimen/divider_padding"
+        android:paddingRight="@dimen/divider_padding"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:touchscreenBlocksFocus="true" >
+    </ListView>
+
+</RelativeLayout>

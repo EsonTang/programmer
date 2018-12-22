@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- prize-add_agenda_item_cb_selector-wangzhong-20150422 -->
+	<item android:drawable="@drawable/agenda_item_cb_pressed" android:state_checked="true"/>
+	<item android:drawable="@drawable/agenda_item_cb_normal" android:state_checked="false"/>
+</selector>

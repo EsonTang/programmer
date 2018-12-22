@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_rect_pressed" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/btn_rect_normal"></item>
+<!-- 	<item android:drawable="@drawable/bottom_left_rect_shape_pressed" android:state_pressed="true"></item> -->
+<!--     <item android:drawable="@drawable/bottom_left_rect_shape"></item> -->
+</selector>

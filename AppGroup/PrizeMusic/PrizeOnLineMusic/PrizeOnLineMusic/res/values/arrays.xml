@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     
+    <string-array name="tab_search_result_titles">
+        <item>@string/search_song</item>
+        <item>@string/search_singer</item>
+        <item>@string/search_album</item>
+    </string-array>
+     <string-array name="tab_recommend_singer_titles">
+        <item>@string/search_chinese</item>
+        <item>@string/search_Europe</item>
+        <item>@string/search_japanese</item>
+         <item>@string/search_korea</item>
+    </string-array>
+    <string-array name="tab_titles">
+        <item>@string/tab_songs</item>
+        <item>@string/tab_artists</item>
+        <item>@string/tab_albums</item>
+    </string-array>
+    <string-array name="tab_home_titles">
+        <item>@string/music_libs</item>
+        <item>@string/me</item>
+    </string-array>
+    <string-array name="tab_home_subtitles">
+        <item>@string/recommend</item>
+        <item>@string/rank</item>
+        <item>@string/collect</item>
+        <item>@string/radio</item>
+    </string-array>
+    <string-array name="visualization_types">
+        <item>@string/visual_none</item>
+        <item>@string/visual_bargraph</item>
+        <item>@string/visual_solidbargraph</item>
+        <item>@string/visual_waveform</item>
+    </string-array>
+    <string-array name="widget_style_types">
+        <item>@string/widget_style_dark</item>
+        <item>@string/widget_style_light</item>
+    </string-array>
+
+</resources>

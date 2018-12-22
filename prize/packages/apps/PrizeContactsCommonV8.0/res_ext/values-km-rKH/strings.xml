@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="can_not_switch_account_during_call">មិន​អាច​ប្ដូរ​ស៊ីម​អាទិភាព​សម្រាប់​​ហៅ​បាន​ទេ ពេល​កំពុង​ហៅ។</string>
+    <string name="can_not_switch_account_temporarily">មិន​អាច​ផ្លាស់ប្ដូរ​ស៊ីម​ដែលចង់ប្តូរសម្រាប់​ការ​ហៅ​​បណ្ដោះ​អាសន្នបានឡើយ។</string>
+    <string name="call_account_switch_tips"><xliff:g id="name1" example="CT1">^1</xliff:g> នឹង​មិន​ធ្វើ​ការ​ជា​បណ្ដោះអាសន្ន ហើយ​បើ​មាន​បើក​ការហៅ, SMS, ទិន្នន័យ <xliff:g id="name2" example="CT1">^2</xliff:g> នឹង​មាន​ការផ្លាស់ប្ដូរ​ជា <xliff:g id="name3" example="CT2">^3</xliff:g> ទៅ​តាម​នោះ​ដែរ។</string>
+</resources>

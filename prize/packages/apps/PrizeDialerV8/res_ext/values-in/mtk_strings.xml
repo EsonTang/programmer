@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">Panggilan IP  <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g>  </string>
+    <string name="select_account">"Pilih Akun"</string>
+    <string name="all_accounts">"Semua akun"</string>
+    <string name="call_log_via_sim_name_notice">LOG PANGGILAN MELALUI \"<xliff:g id="sim_name">%s</xliff:g>\"</string>
+    <string name="imei_invalid">Tidak valid</string>
+    <string name="conf_call_member_list">Daftar Anggota</string>
+    <string name="conf_call_participant_answered">Menjawab</string>
+    <string name="conf_call_participant_missed">"Tak Dijawab"</string>
+    <string name="calls_over_wifi">PanggilanakandibuatmelaluiWi-Fi</string>
+    <string name="connect_to_wifi">Sambungkan ke Wi-Fi untuk melakukan panggilan</string>
+    <string name="wfc_notification_summary">Untukmengaksespreferensi,sentuhdisini</string>
+    <string name="wfc_notification_summary_fail">Ketuk di Sini untuk Melihat Jaringan yang Tersedia</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Panggilan SIP"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> dibuka blokir gagal</string>
+</resources>

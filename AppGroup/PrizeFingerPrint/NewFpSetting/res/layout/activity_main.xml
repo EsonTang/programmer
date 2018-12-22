@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/list_view_divier"
+        android:listSelector="@drawable/list_view_bg_color_selector" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_05dp"
+        android:background="@drawable/list_view_divier" />
+
+    <LinearLayout
+        android:id="@+id/function_info_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/function_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/margr_bg_color"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/density_4dp"
+            android:paddingLeft="@dimen/density_20dp"
+            android:paddingTop="@dimen/density_4dp"
+            android:text="@string/fingerprint_function"
+            android:textColor="@color/margr_bg_text_color"
+            android:textSize="@dimen/normal_front" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/density_05dp"
+            android:background="@drawable/list_view_divier" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/fp_function_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/list_view_divier"
+        android:listSelector="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_05dp"
+        android:background="@drawable/list_view_divier"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/density_10dp"
+        android:paddingLeft="@dimen/density_20dp"
+        android:paddingRight="@dimen/density_20dp"
+        android:paddingTop="@dimen/density_10dp"
+        android:text="@string/function_note"
+        android:textColor="@color/instruction_text_color"
+        android:textSize="@dimen/small_front"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_05dp"
+        android:background="@drawable/list_view_divier"/>
+</LinearLayout>

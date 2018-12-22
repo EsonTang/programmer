@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout 
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/radius_img"
+	    android:orientation="vertical" > 
+	    <TextView
+	        android:id="@+id/popu_add"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/gray_black"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="15dp"
+	        android:text="@string/add_song" />
+	
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:layout_marginTop="15dp"
+	         android:background="@drawable/icon_line" />
+	    
+	    <TextView
+	        android:id="@+id/popu_rename"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:textSize="14sp"
+	        android:textColor="@color/gray_black"
+	        android:layout_marginBottom="15dp"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/rename" />
+	</LinearLayout>
+</LinearLayout>

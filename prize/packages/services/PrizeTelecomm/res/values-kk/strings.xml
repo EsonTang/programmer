@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="telecommAppLabel" product="default">Қоңырау басқармасы</string>
+    <string name="userCallActivityLabel" product="default">"Телефон"</string>
+    <string name="unknown">"Белгісіз"</string>
+    <string name="notification_missedCallTitle">"Қабылданбағанқоңырау"</string>
+    <string name="notification_missedWorkCallTitle">Өткізілген жұмыс қоңырауы</string>
+    <string name="notification_missedCallsTitle">Өткізілген қоңыраулар</string>
+    <string name="notification_missedCallsMsg"><xliff:g id="num_missed_calls">%s</xliff:g> қабылданбаған қоңырау</string>
+    <string name="notification_missedCallTicker"><xliff:g id="missed_call_from">%s</xliff:g> абонентінен қабылданбаған қоңырау</string>
+    <string name="notification_missedCall_call_back">"Керіқоңыраушалу"</string>
+    <string name="notification_missedCall_message">Хабар</string>
+    <string name="accessibility_call_muted">Қоңырау дыбысы өшірілді.</string>
+    <string name="accessibility_speakerphone_enabled">Спикерфон іске қосылды.</string>
+    <string name="respond_via_sms_canned_response_1">Қазір сөйлесу мүмкін емес. Не болды?</string>
+    <string name="respond_via_sms_canned_response_2">Дәл қазір қоңырау шаламын.</string>
+    <string name="respond_via_sms_canned_response_3">Кейін қоңырау шаламын.</string>
+    <string name="respond_via_sms_canned_response_4">Қазір сөйлесу мүмкін емес. Кейінірек қоңырау шаласыз ба?</string>
+    <string name="respond_via_sms_setting_title">Жылдам жауаптар</string>
+    <string name="respond_via_sms_setting_title_2">Жылдам жауаптарды өңдеу</string>
+    <string name="respond_via_sms_setting_summary"/>
+    <string name="respond_via_sms_edittext_dialog_title">Жылдам жауап</string>
+    <string name="respond_via_sms_confirmation_format">Хабар <xliff:g id="phone_number">%s</xliff:g> нөміріне жіберілді.</string>
+    <string name="enable_account_preference_title">"Есептік жазбаларға қоңыр. шалу"</string>
+    <string name="outgoing_call_not_allowed_user_restriction">Тек төтенше қоңыраулар рұқсат етіледі.</string>
+    <string name="outgoing_call_not_allowed_no_permission">Бұл қолданба телефон рұқсатынсыз шығыс қоңыраулар жасамайды.</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">"Қоңыраушалуүшінжарамдынөмірдіенгізіңіз."</string>
+    <string name="duplicate_video_call_not_allowed">"Қоңырауды қазіргі уақытта қосу мүмкін емес."</string>
+    <string name="no_vm_number">Дауыс поштасының нөмірі жоғалды</string>
+    <string name="no_vm_number_msg">SIM картаға дауыстық пошта нөмірі сақталмайды.</string>
+    <string name="add_vm_number_str">Нөмірді қосу</string>
+    <string name="change_default_dialer_dialog_title">Әдепкі теруші қолданбасын өзгерту керек пе?</string>
+    <string name="change_default_dialer_with_previous_app_set_text"><xliff:g id="current_app">%2$s</xliff:g> орнына <xliff:g id="new_app">%1$s</xliff:g> қолданбасын әдепкі теруші қолданба ретінде пайдалану керек пе?</string>
+    <string name="change_default_dialer_no_previous_app_set_text"><xliff:g id="new_app">%s</xliff:g> қолданбасын әдепкі теруші қолданба ретінде пайдалану керек пе?</string>
+    <string name="blocked_numbers">Құлыптаулы нөмірлер</string>
+    <string name="blocked_numbers_msg">Құлыптаулы нөмірлерден қоңыраулар немесе мәтіндер алынбайды.</string>
+    <string name="block_number">Нөмір қосу</string>
+    <string name="unblock_dialog_body"><xliff:g id="number_to_block">%1$s</xliff:g> құлыптан босату керек пе?</string>
+    <string name="unblock_button">Құлыптан босату</string>
+    <string name="add_blocked_dialog_body">Қоңыраулар мен мәтіндерді құлыптау орны</string>
+    <string name="add_blocked_number_hint">Телефон нөмірі</string>
+    <string name="block_button">Құлыптау</string>
+    <string name="non_primary_user">Тек құрылғы иегері құлыптаулы нөмірлерді көріп басқара алады.</string>
+    <string name="delete_icon_description">Құлыптан босату</string>
+    <string name="blocked_numbers_butter_bar_title">Құлыптау уақытша өшірулі</string>
+    <string name="blocked_numbers_butter_bar_body">Төтенше нөмірді тергеннен немесе мәтін жібергеннен кейін төтенше қызметтер сізге хабарласуы үшін құлыптау өшіріледі.</string>
+    <string name="blocked_numbers_butter_bar_button">Қазір қайта қосу</string>
+    <string name="blocked_numbers_number_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> құлыптаулы</string>
+    <string name="blocked_numbers_number_unblocked_message"><xliff:g id="unblocked_number">%1$s</xliff:g> құлыптан босатулы</string>
+    <string name="blocked_numbers_block_emergency_number_message">Төтенше нөмірді құлыптау мүмкін емес.</string>
+    <string name="blocked_numbers_number_already_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> бұрыннан құлыптаулы.</string>
+    <string name="test_account_0_label"/>
+    <string name="test_account_1_label"/>
+    <string name="test_account_2_label"/>
+    <string name="test_account_3_label"/>
+    <string name="test_account_0_short_description"/>
+    <string name="test_account_1_short_description"/>
+    <string name="test_account_2_short_description"/>
+    <string name="test_account_3_short_description"/>
+    <string name="handle_restricted"/>
+    <string name="toast_personal_call_msg">Қоңырау шалу үшін жеке терушіні пайдалану</string>
+</resources>

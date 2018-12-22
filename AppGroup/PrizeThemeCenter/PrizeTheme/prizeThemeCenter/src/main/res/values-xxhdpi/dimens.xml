@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- pagerSlidingTabStrip -->
+    <dimen name="title_underline_lenth">21dp</dimen>
+    <dimen name="padding10dp">12dp</dimen>
+    <dimen name="verticalSpacing5dp">6dp</dimen>
+
+</resources>

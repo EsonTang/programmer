@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:paddingBottom="1dp">
+
+    <LinearLayout
+        android:id="@+id/appItem_header_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.prize.appcenter.ui.widget.CustomImageView
+            android:id="@+id/appItem_img_id"
+            style="@style/game_item_image"
+            android:contentDescription="@string/alert_title"
+            android:transitionName="robot"
+            android:src="@drawable/default_icon"
+            app:iv_radius="5dp"/>
+
+        <TextView
+            android:id="@+id/appItem_name_id"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_26"/>
+
+        <TextView
+            android:id="@+id/appItem_size_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="23M"
+            android:textColor="@color/text_color_9a9a9a"
+            android:textSize="@dimen/text_size_20"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressButton_rylt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<com.prize.appcenter.ui.widget.ProgressNoGiftButton-->
+            <!--android:id="@+id/progressButton_id"-->
+            <!--style="@style/game_item_progressButton"-->
+            <!--android:layout_marginTop="9dp"/>-->
+        <com.prize.appcenter.ui.widget.progressbutton.AnimDownloadProgressButton
+            android:id="@+id/progressButton_id"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="9dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:progressbtn_show_progress="true"
+            app:progressbtn_radius="12dp"
+            app:progressbtn_text_size="12dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=5.0
+TARGET_PRODUCT=full_kxd6735_64_m710
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a7
+HOST_ARCH=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-3.13.0-46-generic-x86_64-with-Ubuntu-12.04-precise
+HOST_BUILD_TYPE=release
+BUILD_ID=LRX21M
+OUT_DIR=out
+============================================
+PRODUCT_COPY_FILES frameworks/base/data/sounds/effects/ogg/camera_click.ogg:system/media/audio/ui/camera_click.ogg ignored.
+No private recovery resources for TARGET_DEVICE kxd6735_64_m710
+make: Entering directory `/sdf2/dingshiyu/dingshiyu/MTK6735L'
+[Compiling] PRIVATE_MODULE = [Launcher3], PRIVATE_PATH = [packages/apps/Launcher3]
+target Java: Launcher3 (out/target/common/obj/APPS/Launcher3_intermediates/classes)
+make: Leaving directory `/sdf2/dingshiyu/dingshiyu/MTK6735L'
+
+#### make failed to build some targets (12 seconds) ####
+

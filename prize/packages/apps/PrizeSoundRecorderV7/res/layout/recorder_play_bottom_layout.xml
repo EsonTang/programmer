@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recorder_play_bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/play_bottom_height"
+    android:layout_alignParentBottom="true"
+    android:background="@color/recorder_white"
+    android:visibility="gone" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_view_divider_color" />
+
+    <ImageView
+        android:id="@+id/im_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/play_control_margin"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_pause" />
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/play_info_margin"
+        android:layout_marginTop="@dimen/play_margin_top"
+        android:layout_toEndOf="@id/im_control"
+        android:textColor="@color/list_item_name_color"
+        android:textSize="@dimen/play_name" 
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginStart="@dimen/play_info_margin"
+        android:layout_toEndOf="@id/im_control"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/play_margin_top"
+        >
+
+        <TextView
+            android:id="@+id/tv_play_time"
+            android:layout_width="@dimen/play_time_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/list_item_time_color"
+            android:textSize="@dimen/play_time"
+            android:singleLine="true" 
+            android:layout_gravity="center_vertical"/>
+
+        <SeekBar
+            android:id="@+id/stateProgressBar"
+            style="@style/SeekStyle"
+            android:layout_width="@dimen/play_progress_width"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/list_item_time_color"
+            android:textSize="@dimen/play_time" 
+            android:layout_marginStart="@dimen/play_time_margin"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</RelativeLayout>

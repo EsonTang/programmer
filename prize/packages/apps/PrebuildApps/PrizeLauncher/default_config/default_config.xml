@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <general_config
+		app_icon_size="55"
+		default_bulit_in_path="/system/media/config/"
+		default_workspace_name_koobee="default_workspace_koobee.xml"
+		default_workspace_name_koosai="default_workspace_koosai.xml"
+        default_bulit_in_theme_name="default"
+        default_theme_id="0"
+        default_home_page="0"
+        default_workspace_pagecount_max="9"
+        default_workspace_pagecount_min="1"
+        default_workspace_pagecounts="5"
+        default_effect_id="0"
+        disable_move_wallpaper="true"
+        disable_x_effect="false"
+        fast_scroll_page_velocity="500"
+        hotseat_height="-1"
+        hotseat_hide_title="false"
+        icon_title_font="12"
+        is_koobee="true"
+        start_activity_duration="336"
+        open_folder_duration="250"
+        enter_edit_duration="600"
+        uninstall_duration="500"
+        drag_duration="300"
+        drop_duration="300"
+        revert_duration="400"
+		unlock_duration ="800"
+		show_edit_list_duration = "500"
+		overlay_icon_koosai="overlay_icon_koosai.xml"
+		overlay_icon_koobee="overlay_icon_koobee.xml"
+        isSupportClone="true"
+        text_color="#FFFFFF"
+        filter_apps="com.sohu.inputmethod.sogou;com.android.music;com.baidu.input;com.iflytek.inputmethod;com.baidu.duer.phone"
+        filter_widgets="com.qzone;com.android.contacts;com.assistant.icontrol;com.android.settings;com.android.gallery3d;com.android.email;com.UCMobile;com.android.calendar;com.android.mms"
+        left_screen="true"
+        easy_launcher="false"
+		install_pos_page="1"
+		default_page_count="2"
+		isSupportUpgrade ="true"
+		isUnlock ="false"
+		start_model ="false"
+		channel ="koobee"
+		long_click_enter_edit ="false"
+     	/>
+		
+		 <!--   <general_config
+		app_icon_size="55"  ////////////////图标的默认大小 例如 720是55*2 1080是55*3
+		default_bulit_in_path="/storage/sdcard0/config/"  默认配置路径 此路径为调试测试路径
+		default_workspace_name_koobee="default_workspace_koobee.xml"  /////////////酷比默认桌面排版
+		default_workspace_name_koosai="default_workspace_koosai.xml"/////////////库赛默认排版
+        default_bulit_in_theme_name="default"  /////////////默认主题
+        default_theme_id="0" //默认选中主题
+        default_home_page="0" //桌面默认页面
+        default_workspace_pagecount_max="" //桌面默认桌面最大个数
+        default_workspace_pagecount_min="" //默认桌面最小个数
+        default_workspace_pagecounts="" //默认桌面个数
+        default_effect_id="0" //默认选中特效
+        disable_x_effect="false" //禁止某个特效
+        fast_scroll_page_velocity="500"//默认手指滑动速率跟踪指数
+        hotseat_height="-1" //dock栏默认高度
+        hotseat_hide_title="false" //hotseat默认是否影藏
+        icon_title_font="12" //图标默认标题大小
+        is_koobee="true"//当前是否支持酷比  true 酷比 false库赛
+        start_activity_duration="800" //默认打开应用启动速度 如果是系统的打开方式 此项没有用
+        is_koobee="true"//是否是酷比
+        start_activity_duration="400" //打开应用动画时间
+        open_folder_duration="600" //打开文件夹的动画时间
+        enter_edit_duration="500"  //进入编辑模式的动画时间
+        uninstall_duration="500"  //卸载的时候图标抖动的动画时间
+        drag_duration="300"  //拖动的动画时间
+        drop_duration="300"  //拖动图标投放位置动画时间
+        revert_duration="300"  //拖动时候 其他图标移动的动画时间
+		show_edit_list_duration = "300"  //显示 编辑模式下 子视图动画时间
+		
+		unlock_duration ="800"
+        isSupportClone="true" //是否支持分身
+        text_color="#FFFFFF" //字体颜色
+        filter_apps="com.sohu.inputmethod.sogou;com.android.music;com.baidu.input" //屏蔽的应用
+        easy_launcher="true"//简易桌面
+		isSupportUpgrade ="true"//是否支持自升级
+		channel ="koosai"//启动模式  没有添加此项默认时间为koobee渠道
+		start_model ="false"//启动应用模式 没有添加此项 默认为false 如果为true标示 系统启动模式 ，自定义启动模式 
+		install_pos_page="1"//安装页面
+		long_click_enter_edit ="true"  //长按进入编辑模式  开关  true  打开 fase  关闭 
+     	/> -->
+    

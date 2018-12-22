@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <com.android.prize.DoubleCameraFocusIndicator
+        android:id="@+id/double_camera_rotate_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content" >
+
+            <com.android.prize.ApertureView
+                android:id="@+id/aperture"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/aperture_view_focusing_bg"
+                android:padding="5dp"/>
+
+            <SeekBar
+                android:id="@+id/double_camera_seekbar"
+                style="@style/DoubleCameraSeekBarStyle"
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="85dp"
+                android:max="100"
+                android:progress="50"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </com.android.prize.DoubleCameraFocusIndicator>
+
+</RelativeLayout>

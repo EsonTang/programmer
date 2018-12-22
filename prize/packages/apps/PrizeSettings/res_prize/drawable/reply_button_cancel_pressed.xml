@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners
+        android:topLeftRadius="@dimen/cancel_button_radius"
+        android:bottomLeftRadius="@dimen/cancel_button_radius"/>
+    <solid android:color="@color/buttonPressGray"/>
+    <stroke
+        android:color="@color/cancel_button_stroke_color"
+        android:width="@dimen/cancel_button_stroke"/>
+</shape>

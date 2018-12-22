@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/cootek_brand_declare_left"
+        android:layout_width="50dp"
+        android:layout_height="1px"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cootek_brand_declare_left_bg" />
+
+    <LinearLayout
+        android:id="@+id/cootek_brand_declare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toRightOf="@id/cootek_brand_declare_left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cootek_brand_declare1"
+            android:textColor="@color/cootek_brand_declare_color"
+            android:textSize="@dimen/cootek_basic_text_size_8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:text="@string/cootek_brand_declare2"
+            android:textColor="@color/cootek_brand_declare_color"
+            android:textSize="@dimen/cootek_basic_text_size_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cootek_brand_declare3"
+            android:textColor="@color/cootek_brand_declare_color"
+            android:textSize="@dimen/cootek_basic_text_size_8" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cootek_brand_declare_right"
+        android:layout_width="50dp"
+        android:layout_height="1px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cootek_brand_declare"
+        android:src="@drawable/cootek_brand_declare_right_bg" />
+
+</RelativeLayout>

@@ -1,0 +1,623 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prize.factorytest"
+    android:versionCode="1"
+    android:versionName="1.0" 
+	android:sharedUserId="android.uid.system">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+	<uses-permission android:name="android.permission.MANAGE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+	<uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"></uses-permission>
+    <uses-permission android:name="android.permission.TRANSMIT_IR" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+		android:name="FactoryTestApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.prize.factorytest.PrizeFactoryTestActivity"
+            android:label="@string/title_activity_main"
+			android:configChanges="keyboardHidden|orientation|screenSize|locale|screenLayout|mcc|mnc"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.prize.factorytest.PrizeFactoryTestListActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.prize.factorytest.FactoryTestReport"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		
+		<activity
+            android:name="com.prize.factorytest.FactoryTestReportQr"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		
+		<activity
+            android:name="com.prize.factorytest.PrizeSnInfo"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		<!--prize-factorytest-8818-liuweiquan-20151222-start-->
+		<activity
+            android:name="com.prize.factorytest.PrizeAtaInfo"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		<!--prize-factorytest-8818-liuweiquan-20151222-end-->
+		<activity
+            android:name="com.prize.factorytest.AgingTestActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.TouchPanelEdge.TouchPanelEdge"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/touchpanel_edge_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Version.Version"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/Version_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.SIM.SIM"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/sim_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.LCD.LCD"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".LED.LED"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name=".YCD.YCD"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Torchled.Torchled"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/flashlight_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.prize.factorytest.TorchledFront.TorchledFront"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/flashlight_front_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Headset.Headset"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/headset_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.HeadsetRe.HeadsetRe"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/headset_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Vibrate.Vibrate"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/vibrate_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Key.Key"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/key_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Receiver.Receiver"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/receiver_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Speaker.Speaker"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/speaker_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.MIC.MIC"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/mic_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.MICRe.MICRe"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/mic_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.FM.FM"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/fm_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Infrared.Infrared"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/infrared_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.category.factory.test" />
+	    </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.SDCard.SDCard"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/sdcard_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.RAM.RAM"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ram_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		
+		<activity
+            android:name="com.prize.factorytest.FingerPrint.FingerPrintActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		
+        <activity
+            android:name="com.prize.factorytest.CameraBack.CameraBack"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/cameraback_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.CameraFront.CameraFront"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/camerafront_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.prize.factorytest.CameraBackSub.CameraBackSub"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/camerabacksub_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+	<activity
+            android:name="com.prize.factorytest.CameraBackSub.CameraBackAlsSub"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/camerabacksub_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Charger.Charger"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/Charger_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.FingerPrint.FingerPrint"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/Finger_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        
+    
+        <activity
+            android:name="com.prize.factorytest.LSensor.LSensor"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/lsensor_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Phone.Phone"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/phone_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.Brightness.Brightness"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/brightness_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.GSensor.GSensor"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/gsensor_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.MSensor.MSensor"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/msensor_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.prize.factorytest.CSensor.CSensor"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/csensor_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+	<activity
+            android:name="com.prize.factorytest.GySensor.GySensor"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/gysensor_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.prize.factorytest.WiFi.WiFi"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/wifi_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.BlueTooth.BlueTooth"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/bluetooth_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.GPS.GPS"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/gps_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.PSensor.PSensor"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/psensor_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+
+		<service android:name="com.prize.factorytest.Service.BluetoothScanService">    
+        </service>
+		<service android:name="com.prize.factorytest.Service.WifiScanService">    
+        </service>
+
+        <activity
+            android:name="com.prize.factorytest.Hall.Hall"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/hall_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.prize.factorytest.AgingTestImplActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/hall_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prize.factorytest.OTG.OTG"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/otg"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+            
+		
+        </activity>
+
+        <activity
+            android:name="com.prize.factorytest.NFC.NFC"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/prize_nfc"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.category.factory.test" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.prize.factorytest.PrizeOrderReceiver" >
+            <intent-filter>
+                <action android:name="com.prize.BOARDCAST" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

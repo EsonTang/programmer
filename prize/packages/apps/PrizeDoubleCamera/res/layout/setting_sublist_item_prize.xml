@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CameraSettingDialogRow"
+    android:splitMotionEvents="false">
+    <TextView android:id="@+id/title"
+        style="@style/SettingItemSubTitle"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+	android:gravity="center" />
+    
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_prize"
+        android:layout_alignParentBottom="true"
+        /> 
+</RelativeLayout>

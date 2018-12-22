@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/prize_wifi_name_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+		android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:textStyle="bold"
+		android:minHeight="50dp"
+		android:paddingStart="14dp"
+		android:paddingEnd="14dp"
+        android:textColor="#323232"/>
+	<View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+		android:layout_marginLeft="14dp"
+		android:layout_marginRight="14dp"
+		android:background="@color/settings_background_lines"/>
+	<ListView
+		android:id="@+id/prize_content_listview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="@drawable/prize_sleep_gesture_lines"
+		android:dividerHeight="0.5dp"/>
+</LinearLayout>

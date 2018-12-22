@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!--prize- Modify watermark text editor wanzhijuan 2016-3-12 start-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+			<RelativeLayout 
+                        android:id="@+id/view_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sticker_word_bg_height"
+                        android:background="@color/sticker_word_bg"
+                        android:clickable="true"
+                        android:layout_gravity="bottom"
+                        >
+                        <ImageView
+                            android:id="@+id/ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/prize_sel_photoeditor_wm_word_apply"
+                            android:layout_marginRight="@dimen/sticker_word_edit_ok_right_margin"
+                            android:layout_centerVertical="true"
+                            />
+                        <TextView 
+                            android:layout_width="@dimen/sticker_word_edit_apply_width"
+                            android:layout_height="@dimen/sticker_word_edit_apply_height"
+                            android:textSize="@dimen/text_size_middle"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sticker_word_edit_ok_right_margin"
+                            android:text="@string/word_edit_apply"
+                            android:gravity="center"
+                            android:textColor="@color/sticker_word_apply"
+                            android:paddingBottom="@dimen/sticker_word_edit_padding_bottom"
+                            />
+                        <ImageView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/prize_wm_edit_bg"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sticker_word_edit_bg_left_margin"
+                            android:layout_centerVertical="true"/>
+                        <EditText 
+                            android:id="@+id/et"
+                            android:layout_width="@dimen/sticker_word_edit_width"
+                            android:layout_height="@dimen/sticker_word_edit_height"
+                            android:textSize="@dimen/text_size_middle"
+                            android:background="@null"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sticker_word_edit_bg_left_margin"
+                            android:paddingLeft="@dimen/sticker_word_edit_word_left_padding"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="@dimen/sticker_word_edit_padding_bottom"/>
+                        <TextView android:id="@+id/tv_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_middle"
+                            android:layout_toLeftOf="@id/ok"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/sticker_word_edit_remain_number_right_margin"
+                            android:textColor="@color/sticker_word_edit_remain_number"
+                            android:paddingBottom="@dimen/sticker_word_edit_padding_bottom"/>
+                    </RelativeLayout>
+</FrameLayout>
+<!--prize- Modify watermark text editor wanzhijuan 2016-3-12 end-->

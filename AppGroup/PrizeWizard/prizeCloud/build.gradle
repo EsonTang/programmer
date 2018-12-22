@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '24.0.1'
+
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 22
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+
+    packagingOptions{
+        exclude'META-INF/DEPENDENCIES'
+        exclude'META-INF/NOTICE'
+        exclude'META-INF/LICENSE'
+        exclude'META-INF/LICENSE.txt'
+        exclude'META-INF/NOTICE.txt'
+        exclude'META-INF/ASL2.0'
+    }
+
+}
+
+dependencies {
+    //    compile project(':joloplaybase')
+    //    compile files('libs/jackson-core-asl-1.9.13.jar')
+    //    compile files('libs/jackson-mapper-asl-1.9.13.jar')
+    //    compile files('libs/rxandroid-0.24.0.jar')
+    //    compile files('libs/rxjava-1.0.4.jar')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':xutils3')
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.android.support:support-v4:23+'
+}

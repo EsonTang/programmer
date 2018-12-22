@@ -1,0 +1,102 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name='viewport' content='user-scalable=0, width=device-width,minimum-scale=1.0,maximum-scale=1.0'/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <title>权限要求</title>
+
+    <style type="text/css">
+        html,body
+        {
+            background-color: white;
+            margin:0px;
+            padding:0px;
+            height:100%;
+            width:100%;
+            display:-webkit-box;
+            -webkit-box-orient: vertical;
+        }
+            .permission_message{
+            -webkit-box-flex:1;
+            width:100%;
+            height:100%;
+        }
+        .description
+        {
+            font-size: 19px;
+            color: #4b4b4b;
+            font-family: 黑体;
+            text-align: left;
+            padding: 19px 5% 19px 5%;
+        }
+        .list-title
+        {
+            font-size: 16px;
+            color: #7b7b7b;
+            font-family: 黑体;
+            text-align: left;
+            line-height: 40px;
+            margin: 0px 5% 0px 5%;
+        }
+        .list-item
+        {
+            font-size: 16px;
+            color: #7b7b7b;
+            font-family: 黑体;
+            text-align: left;
+            line-height: 40px;
+            margin: 0px 5% 0px 5%;
+            vertical-align: bottom;
+            list-style-type: none;
+            border-bottom: 1px solid #ededed;
+        }
+
+        .button
+        {
+            height: 60px;
+            width:90%;
+            margin-top: 20px;
+            font-size:16px;
+            font-family: 黑体;
+            background-color: #9ac9e9;
+            color: #4b4b4b;
+            text-align:center;
+            line-height:60px;
+            margin:0px 5% 16px 5%;
+            display:block;
+            border: solid 1px #8ebede;
+        }
+        .button:active {
+            background-color: #79aed3;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class='permission_message'>
+    <div class='description'>详尽实用的服务信息尽在黄页服务。</div>
+    <input type="button" class="button" id='sure' value="开启权限" onclick="loadActivity()" onfocus="blur()">
+    <div id="list-title" class="list-title border-bottom">本服务需要消耗少量流量及使用以下权限：</div>
+    <ul style="margin: 0px; -webkit-padding-start: 0px;">
+        <li class="list-item border-bottom">·通讯录</li>
+        <li class="list-item border-bottom">·电话</li>
+        <li class="list-item border-bottom">·相机</li>
+        <li class="list-item border-bottom">·位置信息</li>
+        <li class="list-item border-bottom">·短信</li>
+    </ul>
+
+</div>
+
+
+<script>
+    function loadActivity(){
+        window.CTKJavaScriptHandler && window.CTKJavaScriptHandler.permissionSetting();
+        document.getElementById("sure").style.background="#79aed3";
+    }
+</script>
+
+</body>
+</html>

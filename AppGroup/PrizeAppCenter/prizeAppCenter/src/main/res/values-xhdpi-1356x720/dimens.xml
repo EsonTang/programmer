@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="one_hundred_seven_five">230dp</dimen>
+    <dimen name="verticalSpacingoneKey_oneKey">56.5dp</dimen>
+    <dimen name="layout_marginBottom_oneKey">113.5dp</dimen>
+    <dimen name="layout_marginBottom_head_oneKey">54dp</dimen>
+</resources>

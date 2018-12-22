@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="telecommAppLabel" product="default">دفتر کی چھوٹی ہوئی کال</string>
+    <string name="userCallActivityLabel" product="default">فون</string>
+    <string name="unknown">نامعلوم</string>
+    <string name="notification_missedCallTitle">چھوٹیہوئیکالیں</string>
+    <string name="notification_missedWorkCallTitle">چھوٹی ہوئی کالیں</string>
+    <string name="notification_missedCallsTitle">ابھی بات نہیں کرسکتا۔ کیا چل رہا ہے؟</string>
+    <string name="notification_missedCallsMsg"><xliff:g id="num_missed_calls">%s</xliff:g> مسڈ کاليں</string>
+    <string name="notification_missedCallTicker"><xliff:g id="missed_call_from">%s</xliff:g> سے مسڈ کال</string>
+    <string name="notification_missedCall_call_back">واپسیکالکریں</string>
+    <string name="notification_missedCall_message">پیغام</string>
+    <string name="accessibility_call_muted">کال خاموش کی گئی۔</string>
+    <string name="accessibility_speakerphone_enabled">اسپیکرفون فعال ہے۔</string>
+    <string name="respond_via_sms_canned_response_1">میں جلد ہی آپ کو کال کروں گا۔</string>
+    <string name="respond_via_sms_canned_response_2">میں آپ کو بعد میں کال کروں گا۔</string>
+    <string name="respond_via_sms_canned_response_3">میں آپ کو بعد میں کال کروں گا۔</string>
+    <string name="respond_via_sms_canned_response_4">ابھی بات نہیں کرسکتا۔ مجھے بعد میں کال کریں؟</string>
+    <string name="respond_via_sms_setting_title">فوری جوابات</string>
+    <string name="respond_via_sms_setting_title_2">فوری جوابات ترمیم کریں</string>
+    <string name="respond_via_sms_setting_summary"/>
+    <string name="respond_via_sms_edittext_dialog_title">فوری جواب</string>
+    <string name="respond_via_sms_confirmation_format">پیغام <xliff:g id="phone_number">%s</xliff:g> پر بھیجا گیا۔</string>
+    <string name="enable_account_preference_title">"کالنگ اکاؤنٹس"</string>
+    <string name="outgoing_call_not_allowed_user_restriction">صرف ہنگامی کالوں کی ہی اجازت ہے۔</string>
+    <string name="outgoing_call_not_allowed_no_permission">یہ اپلیکیشن فون کی اجازت کے بغیر باہر جانے والی کالیں نہیں کرسکتا۔</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">کالکرنےکےلئے،ایکدرستنمبردرجکریں۔</string>
+    <string name="duplicate_video_call_not_allowed">"اس وقت کال شامل نہیں کی جا سکتی ہے۔"</string>
+    <string name="no_vm_number">وائس میل کا نمبر غائب ہے</string>
+    <string name="no_vm_number_msg">SIM کارڈ پر کوئی وائس میل نمبر ذخیرہ نہيں کیا گيا ہے۔</string>
+    <string name="add_vm_number_str">نمبر کا اضافہ کریں</string>
+    <string name="change_default_dialer_dialog_title">ڈیفالٹ ڈائلر ایپ کو تبدیل کریں؟</string>
+    <string name="change_default_dialer_with_previous_app_set_text"><xliff:g id="new_app">%1$s</xliff:g> instead of <xliff:g id="current_app">%2$s</xliff:g> کو اپنے ڈیفالٹ ڈائلر ایپ کی طرح استعمال کریں؟</string>
+    <string name="change_default_dialer_no_previous_app_set_text"><xliff:g id="new_app">%s</xliff:g> کو اپنے ڈیفالٹ ڈائلر ایپ کی طرح استعمال کریں؟</string>
+    <string name="blocked_numbers">بلاک کردہ نمبرز</string>
+    <string name="blocked_numbers_msg">آپ کو بلاک کردہ نمبروں سے کالیں یا متنی پیغامات نہیں موصول ہوسکتے۔</string>
+    <string name="block_number">ایک نمبر شامل کریں</string>
+    <string name="unblock_dialog_body"><xliff:g id="number_to_block">%1$s</xliff:g> کو ان بلاک کریں؟</string>
+    <string name="unblock_button">ان بلاک کریں</string>
+    <string name="add_blocked_dialog_body">اس سے کالیں اور متنی پیغامات بلاک کریں</string>
+    <string name="add_blocked_number_hint">فون نمبر</string>
+    <string name="block_button">مسدودکریں</string>
+    <string name="non_primary_user">صرف آلہ کا مالک ہی بلاک نمبروں کو دیکھ اور اس کا نظم کرسکتا ہے۔</string>
+    <string name="delete_icon_description">ان بلاک کریں</string>
+    <string name="blocked_numbers_butter_bar_title">بلاک کرنا عارضی طور پر بند ہے</string>
+    <string name="blocked_numbers_butter_bar_body">آپ کے کسی ایمرجنسی نمبر کو ڈائل کرنے یا متنی پیغامات بھیجنے کے بعد، اس بات کو یقینی بنانے کے لیے بلاکنگ بند ہوجاتا ہے کہ ایمرجنسی سروس آپ سے رابطہ کرسکے۔</string>
+    <string name="blocked_numbers_butter_bar_button">اب دوبارہ فعال کریں</string>
+    <string name="blocked_numbers_number_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> بلاک کردیا گیا</string>
+    <string name="blocked_numbers_number_unblocked_message"><xliff:g id="unblocked_number">%1$s</xliff:g> ان بلاک کردیا گیا</string>
+    <string name="blocked_numbers_block_emergency_number_message">ایمرجنسی نمبر بلاک کرنے سے قاصر۔</string>
+    <string name="blocked_numbers_number_already_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> پہلے ہی بلاک ہوگیا ہے۔</string>
+    <string name="test_account_0_label"/>
+    <string name="test_account_1_label"/>
+    <string name="test_account_2_label"/>
+    <string name="test_account_3_label"/>
+    <string name="test_account_0_short_description"/>
+    <string name="test_account_1_short_description"/>
+    <string name="test_account_2_short_description"/>
+    <string name="test_account_3_short_description"/>
+    <string name="handle_restricted"/>
+    <string name="toast_personal_call_msg">کال کرنے کے لئے ذاتی ڈائلر استعمال کرنا</string>
+</resources>

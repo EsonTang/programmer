@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shake_hint_p" />
+
+    <TextView
+        android:id="@+id/psensor_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result_tip" />
+
+    <include layout="@layout/bottom_bar" />
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2009, The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>  
+    <dimen name="camera_hint_y_offset">64dp</dimen>
+    <dimen name="camera_hint_x_offset">10dp</dimen>
+    <dimen name="camera_pano_mosaic_surface_height">240dp</dimen>
+    <dimen name="camera_pano_review_button_width">70dp</dimen>
+    <dimen name="camera_setting_popup_right_margin">5dp</dimen>
+    
+    <dimen name="camera_setting_item_text_size">18sp</dimen>
+    <dimen name="camera_setting_knob_width">20dp</dimen>
+    <dimen name="camera_setting_knob_text_size">20dp</dimen>
+    <dimen name="camera_setting_item_text_width">95dp</dimen>
+    <dimen name="camera_setting_popup_window_width">240dp</dimen>
+    
+    <dimen name="camera_indicator_bar_width">48dp</dimen>
+    <dimen name="camera_popup_title_text_size">22dp</dimen>
+    <dimen name="camera_popup_title_frame_min_height">49dp</dimen>
+    <dimen name="camera_big_setting_popup_window_width">320dp</dimen>
+    <dimen name="setting_item_icon_width">28dp</dimen>
+    <dimen name="camera_effect_setting_item_icon_width">40dp</dimen>
+    <dimen name="camera_effect_setting_item_text_size">12sp</dimen>
+    <dimen name="camera_effect_setting_type_text_size">12sp</dimen>
+    <dimen name="camera_effect_setting_type_text_min_height">36dp</dimen>
+    <dimen name="camera_effect_setting_clear_text_size">20dp</dimen>
+    <dimen name="camera_effect_setting_clear_text_min_height">45dp</dimen>
+    <dimen name="camera_effect_setting_type_text_left_padding">16dp</dimen>
+    <dimen name="camera_onscreen_indicators_height">28dp</dimen>
+    <dimen name="camera_onscreen_exposure_indicator_text_size">15dp</dimen>
+    <dimen name="indicator_bar_width_mtk">72dp</dimen>
+    <dimen name="switch_indicators_height">50dp</dimen>
+    <dimen name="indicator_bar_padding">8dp</dimen>
+    <dimen name="control_panel_min_length">105dp</dimen>
+    <dimen name="pano_capture_too_fast_text_height">70dp</dimen>
+    <dimen name="mode_transition_view_icon_size">64dp</dimen>
+    
+    
+    <dimen name="setting_title_height">50dp</dimen>
+    <dimen name="setting_content_height">50dp</dimen>
+    <dimen name="setting_tip_height">40dp</dimen>
+    <dimen name="setting_margin">15dp</dimen>
+    <dimen name="setting_tip_padding_bottom">10dp</dimen>
+    <dimen name="textsize_large">16sp</dimen>
+    <dimen name="textsize_medium">14sp</dimen>
+    <dimen name="textsize_medium_setting">15sp</dimen>
+    <dimen name="textsize_small_new">13sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+    <dimen name="setting_bottom_height">85dp</dimen>
+    <dimen name="setting_bottom_margin_left">60dp</dimen>
+    <dimen name="setting_content_margin_left">15dp</dimen>
+    <dimen name="setting_diaglog_bottom_height">48dp</dimen>
+    <dimen name="setting_diaglog_bottom_padding_top">5dp</dimen>
+    <dimen name="setting_diaglog_btn_width">135dp</dimen>
+    <dimen name="setting_diaglog_btn_height">60dp</dimen>
+    <dimen name="navigationbar_height">45dp</dimen>
+    <dimen name="gridline_strokewidth">1dp</dimen>
+    
+    <dimen name="center_item_height">25dp</dimen>
+    <dimen name="center_item_width">70dp</dimen>
+    <dimen name="photo_mode_padding">8dp</dimen>
+    
+    <dimen name="shutter_group_height">120dp</dimen>
+    <dimen name="shutter_marginleft">50dp</dimen>
+    <dimen name="picker_marginleft">105dp</dimen>
+    <dimen name="setting_marginleft">210dp</dimen>
+    <dimen name="center_view_margin">120dp</dimen>
+    <dimen name="view_top_height">40dp</dimen>
+    <dimen name="close_top_margin">13dp</dimen>
+    <dimen name="close_top_padding">5dp</dimen>
+    <dimen name="dialog_confirm_btn_width">126dp</dimen>
+    <dimen name="dialog_confirm_btn_height">37.5dp</dimen>
+    <dimen name="dialog_confirm_title_size">16sp</dimen>
+    <dimen name="dialog_confirm_msg_size">14sp</dimen>
+    <dimen name="dialog_confirm_button_area_height">60dp</dimen>
+    <dimen name="dialog_confirm_msg_area_height">50dp</dimen>
+    <dimen name="dialog_confirm_width">320dp</dimen>
+    <dimen name="beautiful_button_width">59dp</dimen>
+    <dimen name="beautiful_text_topMargin">6dp</dimen>
+    
+    <dimen name="beautiful_button_width">59dp</dimen>
+    <dimen name="beautiful_button_topMargin">8dp</dimen>
+    <dimen name="beautiful_button_leftMargin">6dp</dimen>
+    <dimen name="beautiful_text_size">12sp</dimen>
+    <dimen name="beautiful_text_leftMargin">-5dp</dimen>
+    <dimen name="seakbar_progress_width">347dp</dimen>
+    <dimen name="seakbar_progress_leftMargin">7dp</dimen>
+    <dimen name="seakbar_progress_upMargin">28dp</dimen>
+    <dimen name="seakbar_progress_up">25dp</dimen>
+    <dimen name="wb_margin_bottom">201dp</dimen>
+    <dimen name="dialog_bottom_padding_h">27dp</dimen>
+    <dimen name="dialog_bottom_height">48dp</dimen>
+    <dimen name="item_text_size">15sp</dimen>
+    <dimen name="dialog_title_height">56dp</dimen>
+    <dimen name="dialog_title_padding_l">25dp</dimen>
+    <dimen name="dialog_margin_left">42.5dp</dimen>
+    <dimen name="dialog_margin_top">20dp</dimen>
+    <dimen name="setting_item_text_size">13sp</dimen>
+    <dimen name="dialog_margin_h">25dp</dimen>
+    <dimen name="dialog_margin_v">10dp</dimen>
+
+	<!--os-add for 720*1440 hekeyi 20170523 begin-->
+    <dimen name="combinItemTop">0dp</dimen>
+    <dimen name="shutter_group_margintop">26dp</dimen>
+    <dimen name="bueaty_shutter_group_height">120dp</dimen>
+	<!--os-add for 720*1440 hekeyi 20170523 end-->
+
+	<dimen name="mode_scrollview_marginBottom">120dp</dimen>
+    <!--prize-add-720*1440 xiaoping-2017100329-start-->
+	<dimen name="capture_animation_width">63dp</dimen>
+	<dimen name="camera_picker_marginBottom">73dp</dimen>
+	<dimen name="camera_picker_width">46dp</dimen>
+	<dimen name="camera_picker_marginEnd">60dp</dimen>
+	<dimen name="combin_width">40dp</dimen>
+	<dimen name="watermark_topmagin">36dp</dimen>
+	<dimen name="combinview_back_camera_marginend">110dp</dimen>
+	<dimen name="combinview_front_camera_marginend">160dp</dimen>
+	<dimen name="indicator_view_additional_margintop">5dp</dimen>
+    <!--prize-add-720*1440 xiaoping-20171003-end-->
+    
+    <!-- prize-xuchunming-20171123-arcsoft switch-start -->
+    <dimen name="combin_picker_marginend">110dp</dimen>
+    <!-- prize-xuchunming-20171123-arcsoft switch-end -->
+    <dimen name="close_top_margin_gybokeh">46dp</dimen>
+    <dimen name="setting_indicator_margin_end">7dp</dimen>
+    <dimen name="flash_picker_margin_start">2dp</dimen>
+    <dimen name="info_topmargin_default">15dp</dimen>
+    <dimen name="setting_btn_margin_left">12dp</dimen>
+    <dimen name="setting_btn_margin_top">12dp</dimen>
+    <dimen name="setting_diaglog_bottom_view_height">53dp</dimen>
+    <dimen name="setting_title_margin_top">0dp</dimen>
+    <dimen name="picker_group_margintop">0dp</dimen>
+    <dimen name="effect_layout_margintop">40dp</dimen>
+    <dimen name="preview_surfaceview_margin">0dp</dimen>
+    <!-- prize-xuchunming-201804026-add spotlight-start -->
+    <dimen name="beautiful_spotlight_layout_margintop">38dp</dimen>
+    <!-- prize-xuchunming-201804026-add spotlight-end -->
+    <dimen name="portrait_button_bottomMargin">165dp</dimen>
+    <dimen name="portrait_view_height">75dp</dimen>
+    <!-- prize-xuchunming-20180508-bugid:56982-start -->
+    <dimen name="info_portrait_bottom">394dp</dimen>
+    <!-- prize-xuchunming-20180508-bugid:56982-end -->
+</resources>

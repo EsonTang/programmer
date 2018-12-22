@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fp_detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <RelativeLayout
+            android:id="@+id/not_relation_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp" >
+
+            <!-- PRIZE-Change-M_Fingerprint-wangzhong-2016_6_28-start -->
+            <!--<ImageView
+                android:id="@+id/not_relation_fp_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/prize_fp_not_relation_icon"
+                android:contentDescription="@null" />-->
+            <ImageView
+                android:id="@+id/not_relation_fp_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/prize_fingerprint_load_finished"
+                android:contentDescription="@null" />
+            <!-- PRIZE-Change-M_Fingerprint-wangzhong-2016_6_28-end -->
+
+            <TextView
+                android:id="@+id/not_relation_fp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/not_relation_fp_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/front_normal_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/relation_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/relation_fp_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/relation_fp_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/prize_fp_relation_icon"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/relation_fp_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relation_fp_icon"
+                    android:paddingTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/front_normal_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relation_icon_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/relation_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/prize_fp_relation_icon"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relation_app_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/relation_app_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/relation_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/relation_app_icon"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/front_normal_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/relation_app_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/prize_fp_detail_operation_selector"
+        android:gravity="center"
+        android:text="@string/prize_fp_operation_modify_relation"
+        android:textColor="@color/black"
+        android:textSize="@dimen/front_normal_size" />
+
+    <TextView
+        android:id="@+id/rename_fp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/prize_fp_detail_operation_selector"
+        android:gravity="center"
+        android:text="@string/prize_fp_operation_rename"
+        android:textColor="@color/black"
+        android:textSize="@dimen/front_normal_size" />
+
+    <!-- PRIZE-Change-M_Fingerprint-wangzhong-2016_6_28-start -->
+    <!--<TextView
+        android:id="@+id/delete_fp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/prize_fp_detail_operation_selector"
+        android:gravity="center"
+        android:text="@string/prize_fp_operation_delete"
+        android:textColor="@color/black"
+        android:textSize="@dimen/front_normal_size" />-->
+    <TextView
+        android:id="@+id/delete_fp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/prize_fp_detail_operation_selector"
+        android:gravity="center"
+        android:text="@string/prize_fp_operation_delete"
+        android:textColor="@color/red"
+        android:textSize="@dimen/front_normal_size" />
+    <!-- PRIZE-Change-M_Fingerprint-wangzhong-2016_6_28-end -->
+
+</LinearLayout>

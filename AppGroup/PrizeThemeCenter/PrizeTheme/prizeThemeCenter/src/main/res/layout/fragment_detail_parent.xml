@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.prize.prizethemecenter.ui.widget.NotifyingScrollView
+        android:id="@+id/parentScrollView_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_id"
+        android:focusable="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/head_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_theme_detail_left"
+                android:layout_marginRight="@dimen/margin_theme_detail_left"
+                android:layout_marginTop="17dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/theme_name"
+                    style="@style/detail_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/download_count"
+                        style="@style/detail_tv_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="7.5dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/detail_size"
+                        style="@style/detail_tv_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="7.5dp">
+
+                        <TextView
+                            android:id="@+id/sign"
+                            style="@style/detail_tv_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="|" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            style="@style/detail_tv_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/sign"
+                            android:paddingLeft="7.5dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.prize.prizethemecenter.ui.widget.ImgForHorizontalScrollview
+                android:id="@+id/horizotal_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:scrollbars="none">
+
+                <com.prize.prizethemecenter.ui.widget.view.LinearLayoutForDetail
+                    android:id="@+id/child_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </com.prize.prizethemecenter.ui.widget.ImgForHorizontalScrollview>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ll_guide_point_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <View
+                    android:id="@+id/select_point"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:background="@drawable/point_select" />
+            </RelativeLayout>
+
+            <com.prize.prizethemecenter.ui.widget.view.ExpendTextView
+                android:id="@+id/expendTextView_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="27dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:singleLine="true"
+                android:text="标签"
+                android:textColor="@color/text_color_404040"
+                android:textSize="16sp" />
+
+            <com.prize.prizethemecenter.ui.widget.view.ScollerGridView
+                android:scrollbars="none"
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="16dp"
+                android:verticalSpacing="5dp"
+                android:horizontalSpacing="7dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero_point_five_dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/bg_gray_color" />
+
+            <include layout="@layout/detail_comment_view" />
+
+            <View
+                android:id="@+id/comment_end"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero_point_five_dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/bg_gray_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_top_40dp" >
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/margin_end_15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/similary_theme_label"
+                    android:textColor="@color/text_color_404040"
+                    android:textSize="15dp" />
+                <ImageView
+                    android:id="@+id/iv_more_theme"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/commit_more"/>
+            </RelativeLayout>
+            <GridView
+                android:numColumns="3"
+                android:id="@+id/gv_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@color/transparent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+
+    </com.prize.prizethemecenter.ui.widget.NotifyingScrollView>
+
+</RelativeLayout>

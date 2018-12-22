@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/mListView_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_id"
+            android:divider="@null"
+            android:focusable="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/noCommentRlyt_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_id"
+            android:background="@color/transparent"
+            android:gravity="center_horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/no_comment_icon_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_comment_icon"
+                android:layout_marginTop="250dp" />
+
+            <TextView
+                android:id="@+id/no_comment_id"
+                style="@style/detail_tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_comment_icon_id"
+                android:paddingTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/no_commentlist" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_id"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero_point_five_dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/bg_gray_color" />
+
+            <!--<com.prize.appcenter.ui.widget.DownLoadButtonDetail-->
+                <!--android:id="@+id/detailinfo_download_id"-->
+                <!--android:layout_width="230dp"-->
+                <!--android:layout_height="37dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+            <com.prize.appcenter.ui.widget.progressbutton.DetailDownloadProgressButton
+                android:id="@+id/detailinfo_download_id"
+                android:layout_width="280dp"
+                android:layout_height="38dp"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:progressbtn_radius="20dp"
+                app:progressbtn_show_progress="true"
+                app:progressbtn_text_size="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

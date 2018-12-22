@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="image_height">630</integer>
+    <integer name="image_wight">390</integer>
+    <integer name="image_paddingright">45</integer>
+</resources>

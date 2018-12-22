@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_line_color_light" />
+
+    <LinearLayout
+        android:id="@+id/prize_bottom_button"
+        android:background="@color/transparent"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/prize_bottom_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/prize_selector_popup_bottom_btn_left"
+            android:text="@string/prize_cancel_title"
+            android:textColor="@color/prize_button_text_default_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/prize_bottom_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/prize_selector_popup_bottom_btn_right"
+            android:text="@string/prize_ok_title"
+            android:textColor="@color/prize_button_text_default_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

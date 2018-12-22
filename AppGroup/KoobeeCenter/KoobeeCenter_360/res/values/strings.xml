@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">酷比中心</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="system_update">系统升级</string>
+    <string name="sale_service">售后服务</string>
+    <string name="feedback">用户反馈中心</string>   <!-- prize-modify-by-yanghao-20150916 -->
+    <string name="flag_store">使用说明书</string>
+    <string name="visit_koobee">访问koobee</string>
+    <string name="company_name">深圳酷比通信股份有限公司</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_after_sale">AfterSaleActivity</string>
+    <string name="title_activity_aftersales">AftersalesActivity</string>
+    <string name="hotline">全国统一客户服务热线</string>
+    <string name="title_activity_hotline">HotlineActivity</string>
+    <string name="title_activity_outlets_in_city">OutletsInCityActivity</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <!-- 反馈相关 -->
+    <string name="power_and_heat">耗电与发热</string>
+    <string name="signal_and_communicate">信号与通话</string>
+    <string name="shutdow_and_restart">死机与重启</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="camara">相机</string>
+    <string name="wlan">WLAN</string>
+    <string name="gps">GPS</string>
+    <string name="advice">建议</string>
+    <string name="application">应用</string>
+    <string name="pl_input_advice">请输入您的建议反馈(不少于5个汉字)</string>
+    <string name="pl_input_phone_or_email">请输入您的邮箱或手机(选填)</string>
+    <string name="send">发送</string>
+
+    <!-- 提交反馈信息返回提示语 -->
+    <string name="commit_success">提交成功</string>
+    <string name="illegal_imei">非法的IMEI</string>
+    <string name="sys_busy">系统繁忙，稍候再试</string>
+    <string name="illegal_operate_type">不合法的操作类型</string>
+
+    <!-- 网络相关提示语 -->
+    <string name="netInfo">网络信息</string>
+    <string name="netError_pl_check">网络错误，请检查网络</string>
+
+    <!-- 酷比官网 及 酷比天猫网 -->
+	<string name="koobee_official_website_title">www.koobeemobile.com</string>
+    <string name="koobee_official_website">http://www.koobeemobile.com/</string>
+    <string name="koobee_tmall_website">http://koobee.tmall.com/</string>
+    <string name="pl_select_number">请选择号码</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    
+     <!-- prize-add-by-yanghao-20150914-start -->
+     <string name="company_address">地址：深圳市福田区深南中路6009号绿景广场B座27楼A</string>
+     <string name="map_address">地址：深圳市福田区深南中路6009号绿景广场B座</string>
+     <string name="map_activity_not_found">未找到地图程序，无法查看!</string> 
+     <string name="toMap">查看地图</string>
+     <!-- prize-add-by-yanghao-20150914-end -->
+
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prize_sleep_double">
+		<item>@drawable/double_1</item>
+		<item>@drawable/double_2</item>
+		<item>@drawable/double_3</item>
+		<item>@drawable/double_4</item>
+		<item>@drawable/double_5</item>
+		<item>@drawable/double_6</item>
+		<item>@drawable/double_7</item>
+		<item>@drawable/double_8</item>
+		<item>@drawable/double_9</item>
+		<item>@drawable/double_10</item>
+		<item>@drawable/double_11</item>
+    </string-array>
+    <string-array name="prize_sleep_circle">
+		<item>@drawable/circle_1</item>
+		<item>@drawable/circle_2</item>
+		<item>@drawable/circle_3</item>
+		<item>@drawable/circle_4</item>
+		<item>@drawable/circle_5</item>
+		<item>@drawable/circle_6</item>
+		<item>@drawable/circle_7</item>
+		<item>@drawable/circle_8</item>
+		<item>@drawable/circle_9</item>
+		<item>@drawable/circle_10</item>
+		<item>@drawable/circle_11</item>
+    </string-array>
+    <string-array name="prize_sleep_arror_up">
+		<item>@drawable/arror_up_1</item>
+		<item>@drawable/arror_up_2</item>
+		<item>@drawable/arror_up_3</item>
+		<item>@drawable/arror_up_4</item>
+		<item>@drawable/arror_up_5</item>
+		<item>@drawable/arror_up_6</item>
+		<item>@drawable/arror_up_7</item>
+		<item>@drawable/arror_up_8</item>
+		<item>@drawable/arror_up_9</item>
+		<item>@drawable/arror_up_10</item>
+		<item>@drawable/arror_up_11</item>
+    </string-array>
+    <string-array name="prize_sleep_c">
+		<item>@drawable/c_1</item>
+		<item>@drawable/c_2</item>
+		<item>@drawable/c_3</item>
+		<item>@drawable/c_4</item>
+		<item>@drawable/c_5</item>
+		<item>@drawable/c_6</item>
+		<item>@drawable/c_7</item>
+		<item>@drawable/c_8</item>
+		<item>@drawable/c_9</item>
+		<item>@drawable/c_10</item>
+		<item>@drawable/c_11</item>
+    </string-array>
+    <string-array name="prize_sleep_down">
+		<item>@drawable/down_1</item>
+		<item>@drawable/down_2</item>
+		<item>@drawable/down_3</item>
+		<item>@drawable/down_4</item>
+		<item>@drawable/down_5</item>
+		<item>@drawable/down_6</item>
+		<item>@drawable/down_7</item>
+		<item>@drawable/down_8</item>
+		<item>@drawable/down_9</item>
+		<item>@drawable/down_10</item>
+		<item>@drawable/down_11</item>
+    </string-array>
+    <string-array name="prize_sleep_e">
+		<item>@drawable/e_1</item>
+		<item>@drawable/e_2</item>
+		<item>@drawable/e_3</item>
+		<item>@drawable/e_4</item>
+		<item>@drawable/e_5</item>
+		<item>@drawable/e_6</item>
+		<item>@drawable/e_7</item>
+		<item>@drawable/e_8</item>
+		<item>@drawable/e_9</item>
+		<item>@drawable/e_10</item>
+		<item>@drawable/e_11</item>
+    </string-array>
+    <string-array name="prize_sleep_left">
+		<item>@drawable/left_1</item>
+		<item>@drawable/left_2</item>
+		<item>@drawable/left_3</item>
+		<item>@drawable/left_4</item>
+		<item>@drawable/left_5</item>
+		<item>@drawable/left_6</item>
+		<item>@drawable/left_7</item>
+		<item>@drawable/left_8</item>
+		<item>@drawable/left_9</item>
+		<item>@drawable/left_10</item>
+		<item>@drawable/left_11</item>
+    </string-array>
+    <string-array name="prize_sleep_m">
+		<item>@drawable/m_1</item>
+		<item>@drawable/m_2</item>
+		<item>@drawable/m_3</item>
+		<item>@drawable/m_4</item>
+		<item>@drawable/m_5</item>
+		<item>@drawable/m_6</item>
+		<item>@drawable/m_7</item>
+		<item>@drawable/m_8</item>
+		<item>@drawable/m_9</item>
+		<item>@drawable/m_10</item>
+		<item>@drawable/m_11</item>
+    </string-array>
+    <string-array name="prize_sleep_right">
+		<item>@drawable/right_1</item>
+		<item>@drawable/right_2</item>
+		<item>@drawable/right_3</item>
+		<item>@drawable/right_4</item>
+		<item>@drawable/right_5</item>
+		<item>@drawable/right_6</item>
+		<item>@drawable/right_7</item>
+		<item>@drawable/right_8</item>
+		<item>@drawable/right_9</item>
+		<item>@drawable/right_10</item>
+		<item>@drawable/right_11</item>
+    </string-array>
+    <string-array name="prize_sleep_s">
+		<item>@drawable/s_1</item>
+		<item>@drawable/s_2</item>
+		<item>@drawable/s_3</item>
+		<item>@drawable/s_4</item>
+		<item>@drawable/s_5</item>
+		<item>@drawable/s_6</item>
+		<item>@drawable/s_7</item>
+		<item>@drawable/s_8</item>
+		<item>@drawable/s_9</item>
+		<item>@drawable/s_10</item>
+		<item>@drawable/s_11</item>
+    </string-array>
+    <string-array name="prize_sleep_up">
+		<item>@drawable/up_1</item>
+		<item>@drawable/up_2</item>
+		<item>@drawable/up_3</item>
+		<item>@drawable/up_4</item>
+		<item>@drawable/up_5</item>
+		<item>@drawable/up_6</item>
+		<item>@drawable/up_7</item>
+		<item>@drawable/up_8</item>
+		<item>@drawable/up_9</item>
+		<item>@drawable/up_10</item>
+		<item>@drawable/up_11</item>
+    </string-array>
+    <string-array name="prize_sleep_v">
+		<item>@drawable/v_1</item>
+		<item>@drawable/v_2</item>
+		<item>@drawable/v_3</item>
+		<item>@drawable/v_4</item>
+		<item>@drawable/v_5</item>
+		<item>@drawable/v_6</item>
+		<item>@drawable/v_7</item>
+		<item>@drawable/v_8</item>
+		<item>@drawable/v_9</item>
+		<item>@drawable/v_10</item>
+		<item>@drawable/v_11</item>
+    </string-array>
+    <string-array name="prize_sleep_w">
+		<item>@drawable/w_1</item>
+		<item>@drawable/w_2</item>
+		<item>@drawable/w_3</item>
+		<item>@drawable/w_4</item>
+		<item>@drawable/w_5</item>
+		<item>@drawable/w_6</item>
+		<item>@drawable/w_7</item>
+		<item>@drawable/w_8</item>
+		<item>@drawable/w_9</item>
+		<item>@drawable/w_10</item>
+		<item>@drawable/w_11</item>
+    </string-array>
+    <string-array name="prize_sleep_z">
+		<item>@drawable/z_1</item>
+		<item>@drawable/z_2</item>
+		<item>@drawable/z_3</item>
+		<item>@drawable/z_4</item>
+		<item>@drawable/z_5</item>
+		<item>@drawable/z_6</item>
+		<item>@drawable/z_7</item>
+		<item>@drawable/z_8</item>
+		<item>@drawable/z_9</item>
+		<item>@drawable/z_10</item>
+		<item>@drawable/z_11</item>
+    </string-array>
+</resources>

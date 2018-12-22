@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/alert_event_title"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/day_select_top_margin" 
+        android:paddingBottom="@dimen/day_select_bottom_top_wheel">
+
+        <TextView
+            android:id="@+id/name_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/day_select_name_height"
+            android:gravity="center|bottom"
+            android:textColor="@android:color/black" 
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/time_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/day_select_time_height"
+            android:gravity="center"
+            android:textColor="@android:color/black" 
+            android:textSize="13sp"/>
+    </LinearLayout>
+    
+
+ 	 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/day_select_wheel_height"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" 
+        android:paddingLeft="@dimen/day_select_wheel_margin"
+        android:paddingRight="@dimen/day_select_wheel_margin"
+        >
+
+ 	    <FrameLayout 
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="match_parent">
+ 	        
+ 	        <LinearLayout 
+ 	            android:layout_width="match_parent"
+ 	            android:layout_height="match_parent">
+
+        <com.android.calendar.widget.WheelView
+            android:id="@+id/wv_year"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="16" />
+
+        <com.android.calendar.widget.WheelView
+            android:id="@+id/wv_month"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="16" />
+
+        <com.android.calendar.widget.WheelView
+            android:id="@+id/wv_day"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="13" />
+        
+        </LinearLayout>
+        
+ 	        <include 
+ 	            layout="@layout/time_select_line"/>
+	</FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/day_select_bottom_margin"
+        android:paddingTop="@dimen/day_select_bottom_wheel">
+
+        <Button
+            android:id="@+id/prize_button_cancel"
+            android:layout_width="@dimen/day_select_button_width"
+            android:layout_height="@dimen/day_select_button_height"
+            android:background="@drawable/prize_button_cancel"
+            android:text="@string/prize_button_cancel" 
+            android:textSize="14sp"
+            android:textColor="@color/prize_black_3"
+            android:gravity="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/prize_button_done"
+            android:layout_width="@dimen/day_select_button_width"
+            android:layout_height="@dimen/day_select_button_height"
+            android:background="@drawable/prize_button_done"
+            android:text="@string/prize_button_done" 
+            android:textSize="14sp"
+            android:textColor="@color/prize_black_3"
+            android:gravity="center"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="disable">#969696</color>
+    <color name="divider">#c8c8c8</color>
+    <color name="tonal">#21b5c0</color>
+    <color name="prize_text_default">#323232</color>
+    <color name="prize_text_high">#1283CF</color>
+    <color name="prize_line">#DCDCDC</color>
+    <color name="title_color">#21b5c0</color>
+    <color name="agreement_content_color">#666666</color>
+    <color name="prize_text_select">#21b5c0</color>
+    <color name="white">#ffffff</color>
+    
+    <color name="text_color_737373">#737373</color>
+    <color name="text_color_3ac3cf">#3ac3cf</color>
+    <color name="text_color_262626">#262626</color>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2014 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<resources>
+    <dimen name="keyguard_status_view_start_padding">15dp</dimen> <!-- default 37 -->
+    <dimen name="keyguard_status_view_top_padding">32dp</dimen> <!-- default 62 -->
+    <dimen name="keyguard_status_am_pm_start_padding">10dp</dimen>
+    <dimen name="keyguard_status_area_top_padding">0dp</dimen>
+    <dimen name="keyguard_status_start_padding">27dp</dimen> <!-- default 37 -->
+
+    <dimen name="numpadkey_size">61dp</dimen>
+
+    <!-- PRIZE-add for bugid:45247-liufan-2018-01-12-start -->
+    <dimen name="keyguard_security_max_height">640dp</dimen>
+    <!-- PRIZE-add for bugid:45247-liufan-2018-01-12-end -->
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+*版权所有©2015,深圳市铂睿智恒科技有限公司
+*
+*内容摘要：更改通知栏背景颜色
+*当前版本：V1.0
+*作	者：liufan
+*完成日期：2015-05-19
+*修改记录：
+*修改日期：
+*版 本 号：
+*修 改 人：
+*修改内容：
+-->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetTop="@dimen/notification_material_rounded_rect_radius_negative">
+    <shape>
+        <solid android:color="@color/system_primary_color_define"/>
+        <corners android:radius="@dimen/notification_material_rounded_rect_radius"/>
+    </shape>
+</inset>

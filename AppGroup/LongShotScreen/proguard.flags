@@ -1,0 +1,63 @@
+# Xml files containing onClick (menus and layouts) require that proguard not
+# remove their handlers.
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service                             
+-keep public class * extends android.content.BroadcastReceiver                
+-keep public class * extends android.content.ContentProvider                  
+-keep public class * extends android.app.backup.BackupAgentHelper           
+-keep public class * extends android.preference.Preference                    
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * { 	public <init>(android.content.Context, android.util.AttributeSet);}
+-keepclasseswithmembers class * {    public <init>(android.content.Context, android.util.AttributeSet, int);  }
+
+-keepclassmembers class * extends android.app.Activity {
+  public void *(android.view.View);
+  public void *(android.view.MenuItem);
+}
+
+-keepclassmembers enum * {
+        public static **[] values();    public static ** valueOf(java.lang.String);}
+
+-keep class * implements android.os.Parcelable {                                public static final android.os.Parcelable$Creator *;}
+
+-keepclassmembers class * extends android.app.Activity {                public void *(android.view.View);}
+
+
+# Any class or method annotated with NeededForTesting or NeededForReflection.
+-keep @com.android.contacts.common.testing.NeededForTesting class *
+-keepclassmembers class * {
+@com.android.contacts.common.testing.NeededForTesting *;
+@com.android.dialer.NeededForReflection *;
+}
+
+# Begin-for volte conference call, ingore encryption warning of related component.
+# -ignorewarnings	# can use this also.
+-dontwarn com.android.mtkex.chips.**
+-keep class com.android.mtkex.chips.** {*;}
+# End-for volte conference call
+-keep class com.android.contacts.common.* {*;}
+-keep class com.mediatek.contacts.** {*;}
+-keep class com.android.phone.common.** {*;}
+-keep interface com.android.contacts.common.* {*;}
+-keep interface com.mediatek.contacts.** {*;}
+-keep interface com.android.phone.common.** {*;}
+-keep class android.support.v4.** {*;}
+-keep interface android.support.v4.** {*;}
+-keep class android.support.v13.app.** {*;}
+-keep interface android.support.v13.app.** {*;}
+
+-verbose

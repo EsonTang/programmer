@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="320dp"
+    android:layout_height="210dp"
+    android:background="@drawable/prize_fp_operation_dialog_shape" >
+<!--
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="20dp"
+            android:textColor="@color/prize_fp_dialog_text_color"
+            android:textSize="@dimen/front_big_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/prize_fp_dialog_divider_color" />
+    </RelativeLayout>
+-->
+    <RelativeLayout
+        android:id="@+id/content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+            
+            <!--<TextView
+                android:id="@+id/prompt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/prize_fp_dialog_text_color"
+                android:textSize="@dimen/front_normal_size" />-->
+
+            <com.android.settings.fingerprint.PrizeFpCustomEditText
+                android:id="@+id/content_text_edit"
+                android:layout_width="225dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"                
+                android:background="@null"
+                android:gravity="center"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/prize_fp_dialog_text_color"
+                android:textSize="@dimen/front_normal_size" >
+            </com.android.settings.fingerprint.PrizeFpCustomEditText>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/prize_fp_dialog_divider_color" />
+    </RelativeLayout>
+<!--
+    <LinearLayout
+        android:id="@+id/operation_button_rl"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_below="@+id/content_rl"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" >
+
+        <TextView
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/prize_fp_operation_dialog_left_selector"
+            android:gravity="center"
+            android:text="@string/prize_fp_operation_cancel"
+            android:textColor="@color/prize_fp_dialog_text_color"
+            android:textSize="@dimen/front_normal_size" />
+
+        <TextView
+            android:id="@+id/confirm_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/prize_fp_operation_dialog_right_selector"
+            android:gravity="center"
+            android:text="@string/prize_fp_operation_confirm"
+            android:textColor="@color/prize_fp_dialog_text_color"
+            android:textSize="@dimen/front_normal_size" />
+    </LinearLayout>
+-->
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img_preview"
+        android:onClick="onClick"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        />
+	
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:id="@+id/top_lay"
+        android:background="@drawable/preview_top_bg"
+        >
+        <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/img_back"
+	        android:contentDescription="@null"
+	        android:layout_centerVertical="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/white_back_selector"
+	        android:layout_marginStart="20dp"
+	        />
+        
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/style_title"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/font_size_15"
+	        />
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottom_lay"
+        android:background="@drawable/preview_bottom_bg"
+        >
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/style_apply"
+	        android:layout_centerInParent="true"
+	        android:onClick="onClick"
+	        android:text="@string/apply"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/font_size_15"
+	        android:drawableTop="@drawable/apply_selector"
+	        />
+    </RelativeLayout>
+</FrameLayout>

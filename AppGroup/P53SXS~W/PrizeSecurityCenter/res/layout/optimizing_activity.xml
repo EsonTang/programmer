@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_optimizing_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/optimizing_theme_color"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/top_bar" /> -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/optimizing_margin_top" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/optimizing_margin_left"
+            android:layout_marginRight="@dimen/optimizing_margin_right" >
+
+	        <ImageView
+	            android:id="@+id/iv_optimizing_percent_status"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/optimizing_percent_status_optimizing" />
+
+	        <!-- <ImageView
+	            android:id="@+id/iv_optimizing_percent_dot"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/optimizing_percent_dot"
+	            android:visibility="invisible" /> -->
+
+	        <TextView
+	            android:id="@+id/tv_optimizing_percent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="0%"
+	            android:textColor="@android:color/white"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_optimizing_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优化正在进行"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_optimizing_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7fffffff"
+                android:text="已优化0个选项" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include 
+        layout="@layout/optimizing_line"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/optimizing_margin_bottom"
+        android:layout_marginTop="-5dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white" >
+
+        <include 
+            layout="@layout/optimizing_line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:id="@+id/ll_action_home"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/base_margin"
+		        android:background="@android:color/white"
+	            android:orientation="vertical" >
+
+		        <!-- <include 
+		            layout="@layout/optimizing_action"/> -->
+
+	        </LinearLayout>
+
+	        <ExpandableListView
+	            android:id="@+id/elv_optimizing_detail"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:cacheColorHint="#00000000"
+	            android:divider="@null" >
+	        </ExpandableListView>
+
+	    </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/base_item_padding_bottom"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_item_divider_color" />
+
+        <Button
+            android:id="@+id/bt_optimizing_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_gravity="center_horizontal"
+            android:text="结束优化"
+            android:textSize="16dp"
+            android:textColor="#333333"
+            android:background="@drawable/optimizing_staus_optimizing_selector" />
+
+    </LinearLayout>
+
+</LinearLayout>

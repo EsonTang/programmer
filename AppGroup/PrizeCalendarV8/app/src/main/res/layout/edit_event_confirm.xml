@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF" >
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/edit_event_left_margin"
+        android:layout_marginRight="@dimen/edit_event_right_margin"
+        android:background="@color/edit_event_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/prize_button_cancel"
+            android:textSize="@dimen/prize_normal"
+            android:layout_gravity="center|end"           
+            android:gravity="center"
+            android:layout_width="@dimen/prize_left_btn_width"
+            android:layout_height="@dimen/prize_left_btn_height"
+            android:background="@drawable/prize_left_btn_selector"
+            android:text="@string/prize_button_cancel" 
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/prize_button_done"
+            android:textSize="@dimen/prize_normal"
+           	android:layout_gravity="center|start"           	
+            android:gravity="center"
+            android:layout_width="@dimen/prize_left_btn_width"
+            android:layout_height="@dimen/prize_left_btn_height"
+            android:background="@drawable/prize_right_btn_selector"
+            android:text="@string/prize_button_done" 
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</LinearLayout>

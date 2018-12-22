@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- add for nav bar. prize-linkh-20150724 -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+       android:title="@string/navigation_bar">
+
+    <SwitchPreference
+       android:key="hide_navbar_for_mback"
+       android:title="@string/hide_navbar_for_mback" />
+
+    <SwitchPreference
+       android:key="hide_navbar"
+       android:title="@string/hide_navigation_bar"/>
+
+    <SwitchPreference
+       android:key="treat_recents_as_menu"
+       android:title="@string/treat_recents_as_menu"/>
+
+	<!-- start...  Nav bar color customized feature. prize-linkh-2017.07.11 -->
+	<PreferenceCategory android:key="nav_bar_color_panel"
+        android:title="@string/nav_bar_bg_color">
+		<com.android.settings.PrizeNavBarColorPreference
+			android:key="nav_bar_color" />
+	</PreferenceCategory>       
+	<!-- END.. -->
+
+	<PreferenceCategory android:key="select_navbar_style"
+        android:title="@string/select_navigation_bar_style">
+		<!--layout: back - home - recents -->
+		<com.android.settings.NavBarStylePreference
+			android:key="navbar_style_0"
+			android:icon="@drawable/navbar_style_0_preview_prize"
+			settings:navbarStyle="0"/>
+		<!--layout: recents - home - back -->	
+		<com.android.settings.NavBarStylePreference
+			android:key="navbar_style_1"
+			android:icon="@drawable/navbar_style_1_preview_prize"
+			settings:navbarStyle="1"/>
+	</PreferenceCategory>
+</PreferenceScreen>

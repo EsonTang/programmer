@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Super screenshots</string>
+    <string name="action_settings">installer</string>
+    <string name="scroll_shot">Captures d\'écran longues</string>
+    <string name="funny_shot">Captures d\'écran Fun</string>
+    <string name="screen_record">enregistrement de l\'écran</string>
+    <string name="nextpage">Sur l\'écran suivant</string>
+    <string name="save">Sauvegarder</string>
+    <string name="cancel">annulé</string>
+    <string name="rect_shot">Captures d\'écran rectangulaires</string>
+    <string name="lasso_shot">Screenshots Lasso</string>
+    <string name="daub_shot">Captures d\'écran Graffiti</string>
+    <string name="redo">refaire</string>
+    <string name="undo">révocation</string>
+    <string name="exit">quitter</string>
+    <string name="scrawl">graffiti</string>
+    <string name="app_restrict_capture_screen">Depuis la limite d\'application, l\'interface ne peut pas être screenshots</string>
+    <string name="drag_to_select_capture_area">Dans drag and drop sélectionné capture d\'écran de la fenêtre</string>
+    <string name="not_support_screen_orientation_change">Processus de capture d\'écran ne supporte pas l\'interrupteur de l\'écran horizontal et vertical</string>
+    <string name="screenshot_saved">Screenshots capturés</string>
+    <string name="screenshot_saved_to_tf_card">Fichiers sauvegardés dans le dossier "de stockage de téléphone / super captures d'écran".</string>
+    <string name="screenshot_saved_to_sd_card">Fichiers sauvegardés dans le dossier "de la carte SD / Super captures d'écran".</string>
+    <string name="lasso_guide">Dessinez screenshots région a commencé screenshots Lasso</string>
+    <string name="scrollcapture_is_running">Captures d\'écran longues de course</string>
+    <string name="scrollcapture_is_saving_please_wait">Les longues captures d\'écran actuelles Saving, s\'il vous plaît attendre.</string>
+    <string name="hit_the_bottom">A la fin de la diapositive</string>
+    <string name="content_un_extended">La section ne supporte pas les longues captures d\'écran</string>
+    <string name="maximum_to_ten_pages">Jusqu\'à 10 écran interception</string>
+    <string name="saving">Sauvegarde en cours ...</string>
+    <string name="screenshot_saving">Enregistrement capture d\'écran ...</string>
+    <string name="hava_not_start_daub">Vous n\'êtes pas peint, peint et s\'il vous plaît cliquez sur Enregistrer.</string>
+    <string name="move">mobile</string>
+    
+    <string name="turn_off_long_screenshots">S\'il vous plaît sortir de longues captures d\'écran</string>
+    <string name="turn_off_interest_screenshots">S\'il vous plaît quitter les captures d\'écran intéressantes</string>
+    
+</resources>

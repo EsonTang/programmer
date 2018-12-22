@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    >
+
+    <TextView
+        android:id="@+id/gift_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/icon_gift"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textColor="@color/text_color_262626"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/state_Btn"
+        style="@style/game_item_progressButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/get_giftcode_sl"
+        android:gravity="center"
+        android:text="@string/gift_receive"
+        android:textColor="@color/text_color_ff9732"
+        android:textSize="@dimen/text_size_micro" />
+
+    <com.prize.appcenter.ui.widget.ExpendUpdateView
+        android:id="@+id/mExpendUpdateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gift_name_tv"
+        android:layout_toLeftOf="@id/state_Btn"
+        android:minHeight="10dp"
+        android:paddingBottom="12dp" />
+
+    <View
+        android:id="@+id/game_image_tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_below="@id/mExpendUpdateView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/bg_gray_color" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="17.5dp" >
+
+    <RelativeLayout
+        android:id="@+id/xiamicai_Rlyt"
+        style="@style/imageView_105dp"
+        android:background="@drawable/bg_xiamicai_selector"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/icon_fly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_fly"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/xiamicai_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/icon_guess"
+            android:gravity="center"
+            android:text="@string/guess_you_love"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_15sp" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/textView_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xiamicai_Rlyt"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/guess_you_love" />
+
+    <RelativeLayout
+        android:id="@+id/scene_Rlyt"
+        style="@style/imageView_105dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_toEndOf="@+id/xiamicai_Rlyt"
+        android:background="@drawable/bg_secene_sl"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/logo_Iv"
+            style="@style/imageView_105dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/icon2_fly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/icon_fly"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/title_inView_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/icon_secne_radio"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_Tv"
+        style="@style/textView_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/scene_Rlyt"
+        android:layout_below="@+id/scene_Rlyt"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+</RelativeLayout>

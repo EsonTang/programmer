@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="application_name" msgid="5181331383435256801">"bingo launcher"</string>
+    <string name="home" msgid="7658288663002113681">"主畫面"</string>
+    <string name="uid_name" msgid="7820867637514617527">"Android 核心應用程式"</string>
+    <string name="folder_name" msgid="7371454440695724752"></string>
+    <string name="wallpaper_instructions" msgid="563973358787555519">"設定桌布"</string>
+  <plurals name="number_of_items_selected">
+    <item quantity="zero" msgid="7464587177007785408">"已選取 %1$d 個"</item>
+    <item quantity="one" msgid="142482526010824029">"已選取 %1$d 個"</item>
+    <item quantity="other" msgid="1418352074806573570">"已選取 %1$d 個"</item>
+  </plurals>
+    <string name="wallpaper_accessibility_name" msgid="1655953108132967972">"第 %1$d 張桌布，共 %2$d 張"</string>
+    <string name="announce_selection" msgid="8338254712932127413">"已選取「<xliff:g id="LABEL">%1$s</xliff:g>」"</string>
+    <string name="wallpaper_delete" msgid="8095005658756613921">"刪除"</string>
+    <string name="pick_image" msgid="1272073934062909527">"選擇圖片"</string>
+    <string name="pick_wallpaper" msgid="8179698221502010609">"桌布"</string>
+    <string name="crop_wallpaper" msgid="8334345984491368009">"裁剪桌布"</string>
+    <string name="activity_not_found" msgid="8071924732094499514">"尚未安裝應用程式。"</string>
+    <string name="widgets_tab_label" msgid="2921133187116603919">"小工具"</string>
+    <string name="widget_adder" msgid="3201040140710381657">"小工具"</string>
+    <string name="toggle_weight_watcher" msgid="5645299835184636119">"顯示記憶體"</string>
+    <string name="long_press_widget_to_add" msgid="7699152356777458215">"輕觸並按住小工具即可選取。"</string>
+    <string name="market" msgid="2619650989819296998">"商店"</string>
+    <string name="widget_dims_format" msgid="2370757736025621599">"%1$d × %2$d"</string>
+    <string name="external_drop_widget_error" msgid="3165821058322217155">"無法將項目拖放至主畫面。"</string>
+    <string name="external_drop_widget_pick_title" msgid="3486317258037690630">"選擇要建立的小工具"</string>
+    <string name="rename_folder_label" msgid="3727762225964550653">"資料夾名稱"</string>
+    <string name="rename_folder_title" msgid="3771389277707820891">"重新命名資料夾"</string>
+    <string name="rename_action" msgid="5559600076028658757">"確定"</string>
+    <string name="cancel_action" msgid="7009134900002915310">"取消"</string>
+    <string name="menu_item_add_item" msgid="1264911265836810421">"新增至主畫面"</string>
+    <string name="group_applications" msgid="3797214114206693605">"應用程式"</string>
+    <string name="group_shortcuts" msgid="6012256992764410535">"捷徑"</string>
+    <string name="group_widgets" msgid="1569030723286851002">"小工具"</string>
+    <string name="completely_out_of_space" msgid="6106288382070760318">"主畫面已無空間。"</string>
+    <string name="out_of_space" msgid="4691004494942118364">"主畫面已無空間。"</string>
+    <string name="hotseat_out_of_space" msgid="9139760413395605841">"停駐區已無可用空間。"</string>
+    <string name="invalid_hotseat_item" msgid="1211534262129849507">"這個小工具過大，停駐區沒有足夠空間。"</string>
+    <string name="shortcut_installed" msgid="1701742129426969556">"已建立「<xliff:g id="NAME">%s</xliff:g>」捷徑。"</string>
+    <string name="shortcut_uninstalled" msgid="8176767991305701821">"已移除「<xliff:g id="NAME">%s</xliff:g>」捷徑。"</string>
+    <string name="shortcut_duplicate" msgid="9167217446062498127">"「<xliff:g id="NAME">%s</xliff:g>」捷徑已存在。"</string>
+    <string name="title_select_shortcut" msgid="6680642571148153868">"選擇捷徑"</string>
+    <string name="title_select_application" msgid="3280812711670683644">"選擇應用程式"</string>
+    <string name="all_apps_button_label" msgid="9110807029020582876">"應用程式"</string>
+    <string name="all_apps_home_button_label" msgid="252062713717058851">"主畫面"</string>
+    <string name="delete_zone_label_workspace" msgid="4009607676751398685">"移除"</string>
+    <string name="delete_zone_label_all_apps" msgid="8083826390278958980">"解除安裝"</string>
+    <string name="delete_target_label" msgid="1822697352535677073">"移除"</string>
+    <string name="delete_target_uninstall_label" msgid="5100785476250872595">"解除安裝"</string>
+    <string name="info_target_label" msgid="8053346143994679532">"應用程式資料"</string>
+    <string name="accessibility_search_button" msgid="1628520399424565142">"搜尋"</string>
+    <string name="accessibility_voice_search_button" msgid="4637324840434406584">"語音搜尋"</string>
+    <string name="accessibility_all_apps_button" msgid="2603132375383800483">"應用程式"</string>
+    <string name="accessibility_delete_button" msgid="6466114477993744621">"移除"</string>
+    <string name="delete_zone_label_all_apps_system_app" msgid="449755632749610895">"解除安裝更新"</string>
+    <string name="cab_menu_delete_app" msgid="7435191475867183689">"解除安裝應用程式"</string>
+    <string name="cab_menu_app_info" msgid="8593722221450362342">"應用程式詳細資料"</string>
+    <string name="cab_app_selection_text" msgid="374688303047985416">"已選取 1 個應用程式"</string>
+    <string name="cab_widget_selection_text" msgid="1833458597831541241">"已選取 1 個小工具"</string>
+    <string name="cab_folder_selection_text" msgid="7999992513806132118">"已選取 1 個資料夾"</string>
+    <string name="cab_shortcut_selection_text" msgid="2103811025667946450">"已選取 1 個捷徑"</string>
+    <string name="permlab_install_shortcut" msgid="5632423390354674437">"安裝捷徑"</string>
+    <string name="permdesc_install_shortcut" msgid="923466509822011139">"允許應用程式無需用戶許可也可新增捷徑。"</string>
+    <string name="permlab_uninstall_shortcut" msgid="864595034498083837">"解除安裝捷徑"</string>
+    <string name="permdesc_uninstall_shortcut" msgid="5134129545001836849">"允許應用程式無需用戶許可也可移除捷徑。"</string>
+    <string name="permlab_read_settings" msgid="1941457408239617576">"讀取主畫面的設定和捷徑"</string>
+    <string name="permdesc_read_settings" msgid="5833423719057558387">"允許應用程式讀取主畫面中的設定和捷徑。"</string>
+    <string name="permlab_write_settings" msgid="3574213698004620587">"寫入主畫面的設定和捷徑"</string>
+    <string name="permdesc_write_settings" msgid="5440712911516509985">"允許應用程式更改主畫面中的設定和捷徑。"</string>
+    <string name="gadget_error_text" msgid="6081085226050792095">"載入小工具時發生問題"</string>
+    <string name="uninstall_system_app_text" msgid="4172046090762920660">"這是系統應用程式，無法將其解除安裝。"</string>
+    <string name="dream_name" msgid="1530253749244328964">"Rocket Launcher"</string>
+    <string name="folder_hint_text" msgid="6617836969016293992">"未命名的資料夾"</string>
+    <string name="workspace_description_format" msgid="2950174241104043327">"主畫面 %1$d"</string>
+    <string name="default_scroll_format" msgid="7475544710230993317">"第 %1$d 頁，共 %2$d 頁"</string>
+    <string name="workspace_scroll_format" msgid="8458889198184077399">"主畫面 %1$d，共 %2$d 個"</string>
+    <string name="apps_customize_apps_scroll_format" msgid="370005296147130238">"第 %1$d 個應用程式頁面，共 %2$d 頁"</string>
+    <string name="apps_customize_widgets_scroll_format" msgid="3106209519974971521">"第 %1$d 個小工具頁面，共 %2$d 頁"</string>
+    <string name="first_run_cling_title" msgid="7257389003637362144">"歡迎！"</string>
+    <string name="first_run_cling_description" msgid="6447072552696253358">"自訂主畫面。"</string>
+    <string name="first_run_cling_custom_content_hint" msgid="6090628589029352439"></string>
+    <string name="first_run_cling_search_bar_hint" msgid="5909062802402452582"></string>
+    <string name="first_run_cling_create_screens_hint" msgid="6950729526680114157">"建立更多應用程式和資料夾的畫面"</string>
+    <string name="workspace_cling_title" msgid="5626202359865825661">"管理您的空間"</string>
+    <string name="workspace_cling_move_item" msgid="528201129978005352">"輕觸並按住背景，即可管理桌布、小工具和設定。"</string>
+    <string name="all_apps_cling_title" msgid="34929250753095858">"選擇一些應用程式"</string>
+    <string name="all_apps_cling_add_item" msgid="400866858451850784">"輕觸並按住應用程式，即可加到主畫面。"</string>
+    <string name="folder_cling_title" msgid="3894908818693254164">"資料夾顯示如下"</string>
+    <string name="folder_cling_create_folder" msgid="6158215559475836131">"如要建立類似的資料夾，請輕觸並按住某個應用程式，然後疊到另一個應用程式之上。"</string>
+    <string name="cling_dismiss" msgid="8962359497601507581">"確定"</string>
+    <string name="folder_opened" msgid="94695026776264709">"資料夾已開啟 (<xliff:g id="WIDTH">%1$d</xliff:g> x <xliff:g id="HEIGHT">%2$d</xliff:g>)"</string>
+    <string name="folder_tap_to_close" msgid="1884479294466410023">"輕觸即可關閉資料夾"</string>
+    <string name="folder_tap_to_rename" msgid="9191075570492871147">"輕觸即可儲存新改的名稱"</string>
+    <string name="folder_closed" msgid="4100806530910930934">"已關閉資料夾"</string>
+    <string name="folder_renamed" msgid="1794088362165669656">"資料夾已重新命名為「<xliff:g id="NAME">%1$s</xliff:g>」"</string>
+    <string name="folder_name_format" msgid="6629239338071103179">"資料夾：<xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="custom_workspace_cling_title_1" msgid="3750880082935033085"></string>
+    <string name="custom_workspace_cling_description_1" msgid="939966842147696724"></string>
+    <string name="custom_workspace_cling_title_2" msgid="662588444436552198"></string>
+    <string name="custom_workspace_cling_description_2" msgid="8097921091798539310"></string>
+    <string name="widget_button_text" msgid="2880537293434387943">"插件"</string>
+    <string name="wallpaper_button_text" msgid="8404103075899945851">"壁紙"</string>
+    <string name="settings_button_text" msgid="8119458837558863227">"設定"</string>
+    <string name="themeset_button_text" >"主題"</string>
+    <string name="theme_is_change">"             正在切換主題                          "</string>
+    <string name="alignment">"整理"</string>
+    <string name="str_tool">"工具箱"</string>
+    <string name="RecommendedApp">"推薦應用"</string>
+    <string name="news">"資訊閱讀"</string>
+    <string name="game">"遊戲娛樂"</string>
+    <string name="more">"更多"</string>
+    <string name="easy_launcher"> " 簡易桌面" </string>
+    <string name="folder_name_toast">文件名已經達到最大長度</string>
+    <string name="uninstall_reminder">"卸載後所有的數據也將被刪除"</string>
+    <string name="shake_reminder">"搖一搖可自動對齊圖標"</string>
+    
+    <string name="effects">"特效"</string>
+    <string name="normals">"标准"</string>
+    <string name="stack">"波浪"</string>
+    <string name="page">"翻转"</string>
+    <string name="zoom_in">"淡入"</string>
+    <string name="cube_out">"盒子(外)"</string>
+    <string name="windmill">"大风车"</string>
+    <string name="random">"随机"</string>
+    
+    <!-- simple launcher start -->
+    <string name="prize_lunar_fest_chunjie">春節</string>
+    <string name="prize_lunar_fest_duanwu">端午節</string>
+    <string name="prize_lunar_fest_zhongqiu">中秋節</string>
+    <string name="prize_lunar_fest_yuandan">元旦</string>
+    <string name="prize_lunar_fest_laodong">勞動節</string>
+    <string name="prize_lunar_fest_guoqing">國慶節</string>
+    <string name="prize_lunar_fest_yuanxiao">元宵節</string>
+    <string name="prize_lunar_fest_qixi">七夕</string>
+    <string name="prize_lunar_fest_chongyang">重陽節</string>
+    <string name="prize_lunar_fest_qingnian">青年節</string>
+    <string name="prize_lunar_fest_qingren">情人節</string>
+    <string name="prize_lunar_fest_funv">婦女節</string>
+    <string name="prize_lunar_fest_zhishu">植樹節</string>
+    <string name="prize_lunar_fest_yuren">愚人節</string>
+    <string name="prize_lunar_fest_ertong">兒童節</string>
+    <string name="prize_lunar_fest_jiandang">建黨節</string>
+    <string name="prize_lunar_fest_jianjun">建軍節</string>
+    <string name="prize_lunar_fest_jiaoshi">教師節</string>
+    <string name="prize_lunar_fest_shengdan">聖誕節</string>
+    
+    <string name="prize_tc_lunar_fest_chunjie">春節</string>
+    <string name="prize_tc_lunar_fest_duanwu">端午節</string>
+    <string name="prize_tc_lunar_fest_zhongqiu">中秋節</string>
+    
+    <string name="prize_lunar_hours">時</string>
+    <string name="prize_lunar_minuts">分</string>
+    
+    <!-- simple launcher end -->
+    <string name="simple_add_contact">"添加聯繫人"</string>
+    <string name="simple_lu_year_date">"%1$s年     %2$s"</string>
+    
+    <string name="simple_all_app">"所有應用"</string>
+    <string name="simple_settings">"設置"</string>
+    <string name="simple_sys_settings">"系統設置"</string>
+    <string name="simple_desk_manager">"桌面管理"</string>
+    <string name="simple_exit_desk">"退出桌面"</string>
+    <string name="simple_safe_lock">"安心鎖"</string>
+    <string name="simple_safe_lock_hint">"安心鎖鎖住後，用戶無法改變桌面內容及軟件設置，可以安心使用．"</string>
+    <string name="simple_locked">"已鎖住"</string>
+    <string name="simple_unlock">"未鎖住"</string>
+    
+    
+    <!-- left page start fanjunchen -->
+    <string name="web_error">"哎呀，網絡出錯了！"</string>
+    <string name="web_error_reason">"可能的原因有：\n無法連接網絡\n該頁面不存在或出現故障"</string>
+    <string name="web_reload">"刷新頁面"</string>
+    <string name="set_network">"設置網絡"</string>
+    <string name="loading">"加載中&#8230;"</string>
+    
+    <string name="str_manager_card">"管理卡片"</string>
+    <string name="str_normal_set_add">"常用位置設定"</string>
+    <string name="str_version_check">"版本更新"</string>
+    <string name="str_local_version">"当前版本"</string>
+    <string name="str_feedback">"意見反饋"</string>
+    <string name="str_no_img">"無圖模式"</string>
+
+    <string name="str_loc_ing">"定位中&#8230;"</string>
+    <string name="str_loc_fail">"定位失敗!"</string>
+    <string name="str_loc_fail_nonet">"定位失敗，請打開網絡！"</string>
+    <string name="str_search_hint">"搜你想搜"</string>
+    
+    <string name="str_more">"更多"</string>
+    
+    <string name="str_expand">"展開"</string>
+    <string name="str_unexpand">"收起"</string>
+    
+    <string name="feedback_content">問題描述</string>
+    <string name="pls_input_feedback">請詳細描述您遇到的問題</string>
+    <string name="fedbck_contact_tip">反饋附圖(可填)</string>
+    <string name="send_fedbck_tip">感謝您的意見和建議，內容已發送~</string>
+    <string name="feedback_title">意見反饋</string>
+    <string name="feedback_msg_empty">請输入您的建議或者疑問</string>
+    <string name="feedback_send">提交</string>
+    <string name="nonet_connect">暫無網絡連接</string>
+    <string name="questing">請求中,請不要重複操作</string>
+    <string name="committing">提交中&#8230;</string>
+    
+    <string name="str_complete">"完成"</string>
+    
+    <string name="str_home">"家裡"</string>
+    <string name="str_company">"公司"</string>
+    
+    <string name="str_fill_home">"請填寫家裡地址!"</string>
+    <string name="str_fill_company">"請填寫公司地址!"</string>
+    
+    <string name="str_search">"搜索"</string>
+    
+    <string name="str_search_net">"搜索網頁"</string>
+    
+    <string name="str_recent_contact">"最近聯繫人"</string>
+    <string name="str_contact">"聯繫人"</string>
+    
+    <string name="str_used_app">"常用應用"</string>
+    <string name="str_app">"應用"</string>
+    
+    <string name="str_channel">"頻道"</string>
+    <string name="str_add_channel">"添加/取消 頻道"</string>
+    
+    <string name="click_update_to_install">安裝包已經準備好了</string>
+    <string name="current_net_is_nowifi">當前為移動數據流量,建議切換至WIFI環境更新！</string>
+    <string name="after_do">以後再說</string>
+    <string name="now_update">意即更新</string>
+     <string name="new_version">新版本上線了</string>
+    <string name="update_remind">記得及時更新升級哦~</string>
+    <string name="net_error">網絡錯誤，請檢查網絡</string>
+    <string name="new_version_name">→   %1$s</string>
+    <string name="str_new">"New"</string>
+    <string name="str_add_card">"添加卡片"</string>
+    <string name="str_drag_hint">"按住右邊可以拖動排序"</string>
+    <string name="str_navi_building">"建設中,敬請期待!"</string>
+    <string name="str_no_update">"暫無版本更新!"</string>
+    <string name="str_left_login">"登錄"</string>
+      <!--   <string name="wechat_clone">"WeChat Clone"</string>
+        <string name="qq_clone">"QQ Clone"</string>
+        <string name="weibo_clone">"Weibo Clone"</string> -->
+        <string name="wechat_clone">"微信分身"</string>
+        <string name="qq_clone">"QQ分身"</string>
+        <string name="weibo_clone">"微博分身"</string>
+	<string name="reason_class">"問題類型(必填)"</string>
+   <string name="pls_select_reason_class">"請選擇問題類型"</string>
+   <string name="contact_hint">"您的聯繫方式:郵箱/QQ/手機號(选填)"</string>
+   
+   <string name="title_feed3">"用起來卡,容易崩潰"</string>
+    <string name="title_feed4">"搜索問題"</string>
+    <string name="title_feed5">"其他"</string>
+    <string name="title_feed6">"新功能建議"</string>
+    
+    <string name="sub_title_feed4">"操作的時候卡\,不流暢,应用市场崩潰了,長時間出現白屏"</string>
+    <string name="sub_title_feed5">"找不到想要的結果,想要的结果排在了後面,出現了相同的结果无法選擇,搜索结果慢,其他搜索問題"</string>
+    <string name="sub_title_feed6">"无法退出\,总是在後台運行,連不上網\,加載不了,控件清理遇到問題"</string>
+    <string name="pl_select_class">請選擇反饋類型</string>
+    <string name="str_ok">確認</string>
+    <string name="tip">提示</string>
+    <string name="caution_content">您已編輯，是否捨棄本條反饋？</string>
+    
+    <string name="str_recent_use">常用</string>
+    
+    <string name="str_del_from">移除</string>
+    <string name="str_add_to">添加</string>
+    <string name="str_added_hint_title">"已經添加至首頁"</string>
+    <string name="app_recommend">"應用推薦"</string>
+    <string name="reader">"閱讀資訊"</string>
+    <string name="video">"影音天地"</string>
+    
+     <string name="wallpaper_dlg_title">壁紙應用為</string>
+     <string-array name="applytype">
+        <item>鎖屏</item>
+        <item>桌面</item>
+        <item>同時應用</item>
+    </string-array>
+     <string name="str_left_account">"賬號"</string>
+     <string name="str_left_no_login">"賬號未登錄"</string>
+   <string name="update_information">"桌面有最新版本，請更新"</string>
+    <!-- left page end  -->
+
+    <!-- 下载 -->
+
+    <string name="installing">安裝中</string>
+    <string name="waiting">等待</string>
+    <string name="downloading">下載中</string>
+    <string name="pause">暫停</string>
+    <string name="like">喜歡</string>
+    <string name="empty">暫無數據</string>
+    <string name="toast_tip_download_only_wifi">當前處於2G/3G/4G網絡，下載將耗費流量，是否繼續下載？</string>
+    
+    <!-- 下载 -->
+
+</resources>

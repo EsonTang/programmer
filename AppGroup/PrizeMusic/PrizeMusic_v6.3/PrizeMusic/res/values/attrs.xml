@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PrizeCircleButton">                
+        <attr name="radius" format="dimension" />
+        <attr name="line_color" format="color"></attr>
+        <attr name="pane_normal_color" format="color"></attr>
+        <attr name="pane_pressed_color" format="color"></attr>
+    </declare-styleable>
+    
+</resources>

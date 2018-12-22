@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_items">
+        <item>Quick_guide</item>
+        <item>Particular</item>
+        <item>Product_info</item>
+        <item>Search</item>
+    </string-array>
+    <string-array name="array_item_names">
+        <item>quick_guide</item>
+        <item>particular</item>
+        <item>product_info</item>
+    </string-array>
+</resources>

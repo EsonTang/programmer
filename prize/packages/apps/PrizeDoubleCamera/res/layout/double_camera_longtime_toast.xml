@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+    <TextView android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#88ffffff"
+        android:text="@string/double_camera_longtime_toast"/>
+
+</LinearLayout>

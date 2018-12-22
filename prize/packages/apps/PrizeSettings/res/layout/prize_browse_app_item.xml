@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/imgApp"
+        android:layout_width="50dip"
+        android:layout_height="70dip"
+        android:layout_marginStart="15dip" >
+    </ImageView>
+
+     <TextView
+         android:id="@+id/tvAppLabel"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:layout_marginStart="30dip"
+         android:gravity="center" >
+     </TextView>
+
+</LinearLayout>

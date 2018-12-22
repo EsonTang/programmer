@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/merge_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/color_title"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/padding"
+        android:paddingStart="@dimen/padding"
+        android:text="@string/lock_nomol"
+        android:textColor="@color/item_text_title_color"
+        android:textSize="@dimen/item_text_small" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_sw_height"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lock_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lock_screen"
+                android:textColor="@color/item_text_color"
+                android:textSize="@dimen/item_text_nomol" />
+
+            <TextView
+                android:id="@+id/lock_screen_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lock_screen_detail"
+                android:textColor="@color/item_text_light_color"
+                android:textSize="@dimen/item_text_small" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/lock_screen_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textOff=""
+            android:textOn=""
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_line_height"
+        android:background="@color/bg_gray_color" />
+
+    <RelativeLayout
+        android:id="@+id/lock_style_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/lock_set_main_selector"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin" >
+
+        <TextView
+            android:id="@+id/lock_style_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/lock_style"
+            android:textColor="@color/item_text_light_color"
+            android:textSize="@dimen/item_text_nomol" />
+
+        <TextView
+            android:id="@+id/style_classical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/prize_more_press"
+            android:gravity="center_vertical"
+            android:text="@string/lock_class"
+            android:textColor="@color/item_text_light_color"
+            android:textSize="@dimen/item_text_small"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_line_height"
+        android:background="@color/bg_gray_color" />
+
+    <RelativeLayout
+        android:id="@+id/lock_pwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:paddingLeft="@dimen/margin"
+        android:background="@drawable/lock_set_main_selector"
+        android:paddingRight="@dimen/margin" >
+
+        <TextView
+            android:id="@+id/lock_pwd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/lock_pwd"
+            android:textColor="@color/item_text_light_color"
+            android:textSize="@dimen/item_text_nomol" />
+
+        <TextView
+            android:id="@+id/lock_pwd_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/prize_more_press"
+            android:gravity="center_vertical"
+            android:text="@string/no_pwd_text"
+            android:textColor="@color/item_text_light_color"
+            android:textSize="@dimen/item_text_small"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/color_title"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/padding"
+        android:paddingStart="@dimen/padding"
+        android:text="@string/lock_others"
+        android:textColor="@color/item_text_title_color"
+        android:textSize="@dimen/item_text_small" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_sw_height"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/notification_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notification"
+                android:textColor="@color/item_text_color"
+                android:textSize="@dimen/item_text_nomol" />
+
+            <TextView
+                android:id="@+id/notification_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notification_detail"
+                android:textColor="@color/item_text_light_color"
+                android:textSize="@dimen/item_text_small" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/notification_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_line_height"
+        android:background="@color/bg_gray_color" />
+
+</LinearLayout>

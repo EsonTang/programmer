@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pr.scuritycenter"
+    android:versionCode="1"
+    android:versionName="12.7.16.42" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.HOTKNOT" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" /> -->
+    <!-- 拦截引擎需要用的的权限 -->
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_MMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+	<!-- <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+	<uses-permission android:name="android.permission.CLEAR_APP_CACHE" />  -->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <application
+        android:name="com.pr.scuritycenter.SecurityCenterApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/mobilesafe"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+
+        <!-- 主界面 -->
+        <activity
+            android:name="com.pr.scuritycenter.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 权限管理 -->
+        <activity
+            android:name="com.pr.scuritycenter.activity.PermissionManage"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.securitycenter.PERMISSIONMANAGE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 数据更新 -->
+        <activity
+            android:name="com.pr.scuritycenter.activity.UpdateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+
+        <!-- 病毒扫描 -->
+        <activity
+            android:name="com.pr.scuritycenter.activity.ScannerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+        <!-- 垃圾清理 -->
+        <activity
+            android:name="com.pr.scuritycenter.activity.RubbishCleanActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+        <!-- 刚刚清理过垃圾 -->
+        <activity
+            android:name="com.pr.scuritycenter.activity.RubbishCleanJustActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+
+        <!-- 流量管理 -->
+        <activity
+            android:name="com.pr.scuritycenter.activity.TrafficCorrectionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+        <!-- 流量设置 -->
+        <activity
+            android:name="com.pr.scuritycenter.activity.TrafficCorrectionSetting"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+
+        <!-- 一键优化 -->
+        <activity
+            android:name="com.pr.scuritycenter.activity.OptimizeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+
+        <!-- john 2015.8.22 start -->
+        <!-- 一键优化-->
+         <activity
+            android:name="com.pr.scuritycenter.optimize.OptimizingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.pr.scuritycenter.aresengine.InterceptActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.pr.scuritycenter.setting.SettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.pr.scuritycenter.setting.blacknum.BlackNumberActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:screenOrientation="portrait" />
+         <!-- john 2015.8.22 end -->
+
+    </application>
+
+</manifest>

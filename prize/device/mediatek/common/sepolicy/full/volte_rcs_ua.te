@@ -1,0 +1,8 @@
+# ==============================================
+# Policy File of /system/bin/volte_rcs_ua Executable File 
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+typeattribute volte_rcs_ua mtkimsapdomain;

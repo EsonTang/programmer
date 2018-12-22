@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    >
+
+     
+    
+    <View
+        android:id="@+id/headshow"
+        android:layout_width="match_parent"
+        android:layout_height="284dp"
+       
+        android:background="@drawable/headbg"
+       
+        />
+    
+   
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/listshow"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+       
+        android:background="#e0e0e0"
+        android:orientation="vertical" >
+
+        
+         <RelativeLayout
+                android:id="@+id/system_update_Rlyt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/relative_cln_selector"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_centerVertical="true"
+                    android:text="@string/system_update"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/text_size_small" >
+                </TextView>
+                
+                
+                
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18.5dp"
+                    android:src="@drawable/right_point_lay"
+                    android:clickable="false"
+                    android:focusable="false" />
+
+               
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="#e0e0e0"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginLeft="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="20dp"
+                    />
+            </RelativeLayout>
+        
+
+            <RelativeLayout
+                android:id="@+id/after_servicee_Rlyt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+               
+               android:layout_marginTop="0dp"
+                android:background="@drawable/relative_cln_selector"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:text="@string/sale_service"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/text_size_small" >
+                </TextView>
+
+                <ImageView 
+                     android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18.5dp"
+                    android:src="@drawable/right_point_lay"
+                    android:clickable="false"
+                    android:focusable="false"
+                    
+                    />
+              
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="#e0e0e0"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginLeft="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="20dp"
+                    />
+            </RelativeLayout>
+    
+
+            <RelativeLayout
+                android:id="@+id/feedback_relative"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+            android:layout_marginRight="0dp"
+                android:background="@drawable/relative_cln_selector"
+                android:clickable="true" 
+               
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:text="@string/feedback"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/text_size_small" >
+                </TextView>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18.5dp"
+                    android:background="@drawable/right_point_lay"
+                    android:clickable="false"
+                    android:focusable="false" >
+                </View>
+                  <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="#e0e0e0"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginLeft="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="20dp"
+                    />
+            </RelativeLayout>
+
+           
+
+            <RelativeLayout
+                android:id="@+id/tmall_Rlyt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                
+               android:layout_marginTop="0dp"
+                android:background="@drawable/relative_cln_selector"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:text="@string/flag_store"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/text_size_small" >
+                </TextView>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18.5dp"
+                    android:background="@drawable/right_point_lay"
+                    android:clickable="false"
+                    android:focusable="false" >
+                </View>
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="#e0e0e0"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginLeft="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="20dp"
+                    />
+            </RelativeLayout>
+     
+            <RelativeLayout
+                android:id="@+id/koobee_Rlyt"
+                android:layout_width="match_parent"
+               android:layout_height="48dp"
+                
+                android:layout_marginTop="0dp"
+                android:background="@drawable/relative_cln_selector"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:text="@string/visit_koobee"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/text_size_small" />
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="22dp"
+                    android:background="@drawable/right_point_lay"
+                    android:clickable="false"
+                    android:focusable="false" >
+                </View>
+               <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="#e0e0e0"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginLeft="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="20dp"
+                  
+                    />
+            </RelativeLayout>
+            
+       
+            
+      
+    </LinearLayout>
+  
+         <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="90dp"
+          
+         android:background="@android:color/white"
+       android:gravity="center_vertical"
+       android:layout_marginBottom="0dp"
+           >   
+           
+         
+         
+          <TextView
+        android:id="@+id/chiname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_centerInParent="true"
+        android:text="@string/company_name"
+        android:textColor="#323232"
+        android:textSize="@dimen/text_size_compnay" >
+    </TextView>
+    <TextView
+        android:id="@+id/engtext"
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   
+         android:layout_below="@id/chiname"
+         android:layout_centerHorizontal="true"
+         
+      
+        android:text="www.koobeemobile.com"
+        android:textColor="#555555"
+        android:textSize="@dimen/text_size_compnayeng" />
+    
+    
+           </RelativeLayout> 
+
+
+</LinearLayout>

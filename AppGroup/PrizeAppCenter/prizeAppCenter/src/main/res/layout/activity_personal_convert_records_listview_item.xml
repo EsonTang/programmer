@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/convert_records_top_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pad_left_right_15dp"
+        android:paddingRight="@dimen/pad_left_right_15dp">
+
+        <TextView
+            android:id="@+id/convert_records_top_orderNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_12"
+            tools:text="订单号：5515821" />
+
+        <TextView
+            android:id="@+id/convert_records_top_orderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_color_fa514f"
+            android:textSize="@dimen/text_size_12"
+            tools:text="已发放" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/convert_records_content_Rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:background="#fafafa"
+        android:paddingLeft="@dimen/pad_left_right_15dp"
+        android:paddingRight="@dimen/pad_left_right_15dp">
+
+        <com.prize.appcenter.ui.widget.CustomImageView
+            android:id="@+id/convert_records_content_iv"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/points_icon_radius"
+            android:contentDescription="@string/alert_title"
+            android:scaleType="fitXY"
+            android:src="@drawable/points_mall_item_def_icon"
+            android:transitionName="robot"
+            app:iv_radius="3dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/convert_records_content_iv"
+            android:paddingLeft="11dp">
+
+            <TextView
+                android:id="@+id/convert_records_content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="京东商城100元购物卡"
+                android:textColor="@color/text_color_686868"
+                android:textSize="@dimen/text_size_26" />
+
+            <TextView
+                android:id="@+id/convert_records_content_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/convert_records_content_title"
+                android:layout_marginTop="17dp"
+                android:text="5000积分"
+                android:textColor="@color/text_color_686868"
+                android:textSize="@dimen/text_size_26" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/pad_left_right_15dp"
+        android:paddingRight="@dimen/pad_left_right_15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/convert_records_into_account_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="已放到XXXXX账号"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_26" />
+
+        <TextView
+            android:id="@+id/convert_records_to_setaddressadd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/convert_records_into_account_tv"
+            android:gravity="center_vertical"
+            android:text="，请先补充"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_26"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/convert_records_to_setaddress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/convert_records_to_setaddressadd_tv"
+            android:gravity="center_vertical"
+            android:text="收货地址"
+            android:textColor="@color/text_color_fa514f"
+            android:textSize="@dimen/text_size_26"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_marginLeft="@dimen/pad_left_right_15dp"
+        android:layout_marginRight="@dimen/pad_left_right_15dp"
+        android:background="#e4e4e4" />
+
+    <TextView
+        android:id="@+id/copy_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="@string/copy"
+        android:textColor="#ff9732"
+        android:textSize="@dimen/text_size_26" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#f5f5f5" />
+</LinearLayout>

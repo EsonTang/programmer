@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2012 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="toast_text_copied">Мәтін көшірілді</string>
+    <string name="copy_text">Аралық сақтағышқа көшіру</string>
+    <string name="call_custom"><xliff:g id="custom">%s</xliff:g> қоңырау шалу</string>
+    <string name="call_home">Үй телефонына қоңырау шалу</string>
+    <string name="call_mobile">Ұялы телефонға қоңырау шалу</string>
+    <string name="call_work">Жұмысқақоңыраушалу</string>
+    <string name="call_fax_work">Жұмыс факсына қоңырау шалу</string>
+    <string name="call_fax_home">Үй факсына қоңырау шалу</string>
+    <string name="call_pager">Пейджерге қоңырау шалу</string>
+    <string name="call_other">Қоңырау шалу</string>
+    <string name="call_callback">Кері қоңырау шалу</string>
+    <string name="call_car">Телефон машинада</string>
+    <string name="call_company_main">Негізгі компанияға қоңырау шалу</string>
+    <string name="call_isdn">ISDN қоңырау шалу</string>
+    <string name="call_main">Негізгі нөмірге қоңырау шалу</string>
+    <string name="call_other_fax">Факс нөміріне қоңырау шалу</string>
+    <string name="call_radio">Радиотелефон нөміріне қоңырау шалу</string>
+    <string name="call_telex">Телекс нөміріне қоңырау шалу</string>
+    <string name="call_tty_tdd">TTY/TDD арқылы қоңырау шалу</string>
+    <string name="call_work_mobile">Жұмыс ұялы телефонға қоңырау шалу</string>
+    <string name="call_work_pager">Жұмыс пейджерге қоңырау шалу</string>
+    <string name="call_assistant"><xliff:g id="assistant">%s</xliff:g> қоңырау шалу</string>
+    <string name="call_mms">MMS нөміріне қоңырау шалу</string>
+    <string name="call_by_shortcut"><xliff:g id="contact_name">%s</xliff:g> (қоңырау)</string>
+    <string name="sms_custom">Мәтін <xliff:g id="custom">%s</xliff:g></string>
+    <string name="sms_home">Мәтіндік үй телефоны</string>
+    <string name="sms_mobile">Мәтіндік ұялы телефон</string>
+    <string name="sms_work">Мәтіндік жұмыс телефоны</string>
+    <string name="sms_fax_work">Мәтіндік жұмыс факсы</string>
+    <string name="sms_fax_home">Мәтіндік үй факсы</string>
+    <string name="sms_pager">Мәтіндік пейджер</string>
+    <string name="sms_other">Мәтін</string>
+    <string name="sms_callback">Мәтіндік кері хабарласу</string>
+    <string name="sms_car">Мәтіндік хабар: телефон машинада</string>
+    <string name="sms_company_main">Мәтіндік хабар: компанияның негізгі нөмірі</string>
+    <string name="sms_isdn">ISDN мәтін</string>
+    <string name="sms_main">Мәтіндік хабар: негізгі нөмір</string>
+    <string name="sms_other_fax">Мәтінді факс нөміріне жіберу</string>
+    <string name="sms_radio">Мәтіндік хабар: радиотелефон</string>
+    <string name="sms_telex">Мәтіндік хабар: телекс</string>
+    <string name="sms_tty_tdd">Мәтіндік хабар: TTY/TDD</string>
+    <string name="sms_work_mobile">Мәтіндік хабар: жұмыс ұялы телефон</string>
+    <string name="sms_work_pager">Мәтіндік хабар: жұмыс пейджері</string>
+    <string name="sms_assistant"><xliff:g id="assistant">%s</xliff:g> мәтін</string>
+    <string name="sms_mms">MMS нөміріне хабар жіберу</string>
+    <string name="sms_by_shortcut"><xliff:g id="contact_name">%s</xliff:g> (хабар)</string>
+    <string name="description_video_call">Бейне қоңырау шалу</string>
+    <string name="clearFrequentsConfirmation_title">Жиі қоңырау шалатын контактілерді жою керек пе?</string>
+    <string name="clearFrequentsConfirmation">Контактілер және Телефон қолданбаларынан жиі хабарласатын тізімді тазалауға болады және электрондық пошта қолданбаларына сызбадан мекенжай теңшелімдері күшпен үйретіледі.</string>
+    <string name="clearFrequentsProgress_title">Жиі хабарласатын тізімді тазалау\u2026</string>
+    <string name="status_available">Қолжетімді</string>
+    <string name="status_away">Жоқ</string>
+    <string name="status_busy">Бос емес</string>
+    <string name="contactsList">"Контактілер"</string>
+    <string name="local_invisible_directory">"Басқа"</string>
+    <string name="directory_search_label">Каталог</string>
+    <string name="directory_search_label_work">Жұмыс каталогі</string>
+    <string name="local_search_label">Барлық контактілер</string>
+    <string name="user_profile_contacts_list_header" msgid="9154761216179882405">"Мен"</string>
+    <string name="search_results_searching">Іздеу\u2026</string>
+    <string name="foundTooManyContacts"><xliff:g id="count">%d</xliff:g> аса табылды.</string>
+    <string name="listFoundAllContactsZero">Контактілер жоқ</string>
+    <plurals name="searchFoundContacts">
+        <item quantity="one">1 табылды</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> табылды</item>
+    </plurals>
+    <string name="description_quick_contact_for">Жылдам контакт <xliff:g id="name">%1$s</xliff:g></string>
+    <string name="missing_name">(Аты жоқ)</string>
+    <string name="favoritesFrequentCalled">Жиі шалынған қоңырау</string>
+    <string name="favoritesFrequentContacted">Жиі қоңырау шалатын контактілер</string>
+    <string name="description_view_contact_detail" msgid="2795575601596468581">Контактіні көру</string>
+    <string name="list_filter_phones">Телефон нөмірлері бар барлық контактілер</string>
+    <string name="list_filter_phones_work">Жұмыс профилі контактілері</string>
+    <string name="view_updates_from_group">Жаңарту әрекеттерін көру</string>
+    <string name="account_phone">Тек телефон, синхрондалмайтын</string>
+    <string name="nameLabelsGroup">Аты</string>
+    <string name="nicknameLabelsGroup">"Қысқа аты"</string>
+    <string name="full_name">Аты</string>
+    <string name="name_given">Аты</string>
+    <string name="name_family">Тегі </string>
+    <string name="name_prefix">Шақыру аты</string>
+    <string name="name_middle">Әкесінің аты</string>
+    <string name="name_suffix">Лауазым</string>
+    <string name="name_phonetic">Фонетикалықаты</string>
+    <string name="name_phonetic_given">Фонетикалық аты</string>
+    <string name="name_phonetic_middle">Әкесінің аты транскрипция</string>
+    <string name="name_phonetic_family">Фонетикалық тегі</string>
+    <string name="phoneLabelsGroup">"Телефон"</string>
+    <string name="emailLabelsGroup">Электрондық пошта</string>
+    <string name="postalLabelsGroup">Мекенжай</string>
+    <string name="imLabelsGroup">IM</string>
+    <string name="organizationLabelsGroup">Ұйым</string>
+    <string name="relationLabelsGroup">Қатынас</string>
+    <string name="eventLabelsGroup">Арнайы күн</string>
+    <string name="sms">"мәтіндік хабар"</string>
+    <string name="postal_address">Мекенжай</string>
+    <string name="ghostData_company">Компания</string>
+    <string name="ghostData_title">Тақырып</string>
+    <string name="label_notes">Ескертпелер</string>
+    <string name="label_sip_address">SIP</string>
+    <string name="websiteLabelsGroup">"Веб-сайт"</string>
+    <string name="groupsLabel">Топтар</string>
+    <string name="email_home">Жеке электрондық пошта</string>
+    <string name="email_mobile">Ұялы телефон электрондық поштасы</string>
+    <string name="email_work">Жұмыс электрондық поштасы</string>
+    <string name="email_other">Электрондық пошта</string>
+    <string name="email_custom">Электрондықпошта<xliff:g id="custom">%s</xliff:g></string>
+    <string name="email">Электрондық пошта</string>
+    <string name="postal_street">Көшесі</string>
+    <string name="postal_pobox">Пошталық жәшігі</string>
+    <string name="postal_neighborhood">Көршілес тұрғындар</string>
+    <string name="postal_city">Қаласы</string>
+    <string name="postal_region">"Күй"</string>
+    <string name="postal_postcode">"Индекс"</string>
+    <string name="postal_country">Мемлекет</string>
+    <string name="map_home">Үймекенжайынкөру</string>
+    <string name="map_work">Жұмысмекенжайынкөру</string>
+    <string name="map_other">Мекенжайдыкөру</string>
+    <string name="map_custom"><xliff:g id="custom">%s</xliff:g>мекенжайынкөру</string>
+    <string name="chat_aim">AIM арқылы сөйлесу</string>
+    <string name="chat_msn">Windows Live арқылы сөйлесу</string>
+    <string name="chat_yahoo">Yahoo арқылы сөйлесу</string>
+    <string name="chat_skype">Skype арқылы сөйлесу</string>
+    <string name="chat_qq">QQпайдаланылатынчат</string>
+    <string name="chat_gtalk">Google Talk арқылы сөйлесу</string>
+    <string name="chat_icq">ICQ арқылы сөйлесу</string>
+    <string name="chat_jabber">Jabber арқылы сөйлесу</string>
+    <string name="chat">Сөйлесу</string>
+    <string name="description_minus_button">Жою</string>
+    <string name="expand_collapse_name_fields_description">Атау өрісін көрсету немесе жасыру</string>
+    <string name="expand_collapse_phonetic_name_fields_description">Фонетикалық ат өрістерін жаю немесе жию</string>
+    <string name="list_filter_all_accounts">Барлық контактілер</string>
+    <string name="list_filter_all_starred">"Жұлдызшалы"</string>
+    <string name="list_filter_customize">Реттеу</string>
+    <string name="list_filter_single">Контакт</string>
+    <string name="display_ungrouped">Барлық басқа контактілер</string>
+    <string name="display_all_contacts">Барлық контактілер</string>
+    <string name="menu_sync_remove">Синхрондау тобын алу</string>
+    <string name="dialog_sync_add">Синхрондау тобын қосу</string>
+    <string name="display_more_groups">Қосымша топтар\u2026</string>
+    <string name="display_warn_remove_ungrouped">Синхрондаудан \"<xliff:g id="group" example="Starred">%s</xliff:g>\" жою топтастырылмаған контактілерді синхрондаудан жояды.</string>
+    <string name="savingDisplayGroups">Дисплей опцияларын сақтау\u2026</string>
+    <string name="menu_done">Дайын</string>
+    <string name="menu_doNotSave">БОЛДЫРМАУ</string>
+    <string name="listAllContactsInAccount">Контактілер <xliff:g id="name" example="abc@gmail.com">%s</xliff:g> ішінде</string>
+    <string name="listCustomView">Контактілер өзгертпелі көріністе</string>
+    <string name="listSingleContact">Жалғыз контакт</string>
+    <string name="dialog_new_contact_account">Импортталған контактілерді сақтау орны:</string>
+    <string name="import_from_sim">SIM-картадан импорттау</string>
+    <string name="import_from_sim_summary">"<xliff:g id="SIM_NAME">^1</xliff:g> – <xliff:g id="SIM_NUMBER">^2</xliff:g> SIM картасынан импорттау"</string>
+    <string name="import_from_sim_summary_no_number">"<xliff:g id="SIM_NAME">%1$s</xliff:g> SIM картасынан импорттау"</string>
+    <string name="import_from_vcf_file" product="default">.vcfфайлынанимпорттау</string>
+    <string name="cancel_import_confirmation_message"><xliff:g id="filename" example="import.vcf">%s</xliff:g> файлын импорттаудан бас тарту керек пе?</string>
+    <string name="cancel_export_confirmation_message"><xliff:g id="filename" example="export.vcf">%s</xliff:g> файлын экспорттаудан бас тарту керек пе?</string>
+    <string name="cancel_vcard_import_or_export_failed">vCard импортын/экспортын болдырмау мүмкін болмады</string>
+    <string name="fail_reason_unknown">Белгісіз қате.</string>
+    <string name="fail_reason_could_not_open_file">\"<xliff:g id="file_name">%s</xliff:g>\": <xliff:g id="exact_reason">%s</xliff:g> ашу мүмкін болмады.</string>
+    <string name="fail_reason_could_not_initialize_exporter">Экспорттағышты іске қосу мүмкін болмады: \"<xliff:g id="exact_reason">%s</xliff:g>\".</string>
+    <string name="fail_reason_no_exportable_contact">Экспорттауға контакт жоқ.</string>
+    <string name="missing_required_permission">Талапетілетінрұқсатөшірілді.</string>
+    <string name="fail_reason_error_occurred_during_export">Экспорттау барысында қате орын алды: \"<xliff:g id="exact_reason">%s</xliff:g>\".</string>
+    <string name="fail_reason_too_long_filename">Талап етілетін файл аты тым ұзын (\"<xliff:g id="filename">%s</xliff:g>\").</string>
+    <string name="fail_reason_io_error">Енгізу-шығару қатесі</string>
+    <string name="fail_reason_low_memory_during_import">Жадта орын жеткіліксіз. Файл тым үлкен болуы мүмкін.</string>
+    <string name="fail_reason_vcard_parse_error">Күтпеген себепке байланысты vCard талдау мүмкін болмады.</string>
+    <string name="fail_reason_not_supported">Пішімге қолдау көрсетілмейді.</string>
+    <string name="fail_reason_failed_to_collect_vcard_meta_info">Берілген vCard файл(дар)ының мета ақпараты жиналмады.</string>
+    <string name="fail_reason_failed_to_read_files">Бір немесе бірнеше файл импортталмады (%s).</string>
+    <string name="exporting_vcard_finished_title"><xliff:g id="filename" example="export.vcf">%s</xliff:g> экспорттау аяқталды.</string>
+    <string name="exporting_vcard_finished_title_fallback">Контактілердіимпорттауаяқталды.</string>
+    <string name="exporting_vcard_finished_toast">Контактілер экспорттау аяқталды, контактілер ортақ пайдалану үшін хабарландыруды түртіңіз.</string>
+    <string name="touch_to_share_contacts">Контактілерді ортақ пайдалану үшін түртіңіз.</string>
+    <string name="exporting_vcard_canceled_title"><xliff:g id="filename" example="export.vcf">%s</xliff:g> экспорттаудан бас тартылды.</string>
+    <string name="exporting_contact_list_title">Контакт дерегін экспорттау</string>
+    <string name="exporting_contact_list_message">Контакт деректері экспортталуда.</string>
+    <string name="composer_failed_to_get_database_infomation">Дерекқор ақпараты алынбады.</string>
+    <string name="composer_has_no_exportable_contact">Мұнда экспорттайтын контактілер жоқ. Телефонда контактілер болса, кейбір дерек жеткізушілер контактілерді телефоннан экспорттауға мүмкіндік бермейді.</string>
+    <string name="composer_not_initialized">vCard құрастырғыш дұрыс іске қосылмады.</string>
+    <string name="exporting_contact_failed_title">Экспортталмады</string>
+    <string name="exporting_contact_failed_message">Контакт деректері экспортталмады.\nСебебі: \"<xliff:g id="fail_reason">%s</xliff:g>\"</string>
+    <string name="no_sdcard_message" product="nosdcard">Сақталған мәлімет табылмады.</string>
+    <string name="no_sdcard_message" product="default">SD-карта табылмады.</string>
+    <string name="confirm_export_message">Контактілер тізімі <xliff:g id="vcard_filename">%s</xliff:g> файлына экспортталады.</string>
+    <string name="importing_vcard_description"><xliff:g id="name" example="JoeDue">%s</xliff:g> импорттау</string>
+    <string name="reading_vcard_failed_title">vCard деректерін оқу мүмкін болмады</string>
+    <string name="reading_vcard_canceled_title">vCard дерегін оқудан бас тартылды</string>
+    <string name="importing_vcard_finished_title">vCard <xliff:g id="filename" example="import.vcf">%s</xliff:g> файлын импорттау аяқталды</string>
+    <string name="importing_vcard_canceled_title"><xliff:g id="filename" example="import.vcf">%s</xliff:g> импорттаудан бас тартылды</string>
+    <string name="vcard_import_will_start_message"><xliff:g id="filename" example="import.vcf">%s</xliff:g> жуырда импортталады.</string>
+    <string name="vcard_import_will_start_message_with_default_name">Файл жуырда импортталады.</string>
+    <string name="vcard_import_request_rejected_message">vCard файлын импорттау сауалы қабылданбады. Кейінірек қайталап көріңіз.</string>
+    <string name="vcard_export_will_start_message"><xliff:g id="filename" example="import.vcf">%s</xliff:g> жуырда экспортталады.</string>
+    <string name="vcard_export_will_start_message_fallback">Файлқысқауақыттаэкспортталады.</string>
+    <string name="contacts_export_will_start_message">Контактілер қысқа уақытта экспортталады.</string>
+    <string name="vcard_export_request_rejected_message">vCard файлын экспорттау сауалы қабылданбады. Кейініріек қайталап көріңіз.</string>
+    <string name="vcard_unknown_filename">Контакт</string>
+    <string name="caching_vcard_message">vCard файлдарын жергілікті уақытша сақтау жадына кэштау. Нақты импорт жуырда басталады.</string>
+    <string name="vcard_import_failed">vCard импорттау мүмкін болмады.</string>
+    <string name="nfc_vcard_file_name">NFC арқылы қабылданған контакт</string>
+    <string name="confirm_export_title">Контактілерді экспорттау керек пе?</string>
+    <string name="select_vcard_title">vCard файлын таңдау</string>
+    <string name="import_one_vcard_string">Бір vCard файлына импорттау</string>
+    <string name="import_multiple_vcard_string">Бірнеше vCard файлын импорттау</string>
+    <string name="import_all_vcard_string">Барлық vCard файлын импорттау</string>
+    <string name="searching_vcard_message" product="nosdcard">Сақтау орнынан vCard деректерін іздеу\u2026</string>
+    <string name="searching_vcard_message" product="default">SD картасынан vCard деректерін іздеу\u2026</string>
+    <string name="caching_vcard_title">Кэштау</string>
+    <string name="progress_notifier_message"><xliff:g id="current_number">%s</xliff:g>/<xliff:g id="total_number">%s</xliff:g>: <xliff:g id="name" example="JoeDue">%s</xliff:g> импорттау</string>
+    <string name="export_to_vcf_file" product="default">.vcfфайлынаэкспорттау</string>
+    <string name="display_options_sort_list_by">Сұрыптау</string>
+    <string name="display_options_sort_by_given_name">Аты</string>
+    <string name="display_options_sort_by_family_name">Тегі </string>
+    <string name="display_options_view_names_as">Есім пішімі</string>
+    <string name="display_options_view_given_name_first">Алдымен аты</string>
+    <string name="display_options_view_family_name_first">Алдымен тегі</string>
+    <string name="default_editor_account">Жаңа контактілердің әдепкі тіркелгісі</string>
+    <string name="sync_contact_metadata_title">Контакт метадеректерін синхрондау [DOGFOOD]</string>
+    <string name="sync_contact_metadata_dialog_title">Контакт метадеректерін синхрондау</string>
+    <string name="setting_about">Контактілер туралы</string>
+    <string name="activity_title_settings">"Параметрлер"</string>
+    <string name="share_visible_contacts">Көрінетін контактілермен бөлісу</string>
+    <string name="share_visible_contacts_failure">Көрінетінконтактілердіортақпайдаланусәтсізболды.</string>
+    <string name="share_favorite_contacts">Таңдаулы контактілерді ортақ пайдалану</string>
+    <string name="share_contacts">Барлық контактілерді ортақ пайдалану</string>
+    <string name="share_contacts_failure">Контактілерді ортақ пайдалану сәтсіз болды.</string>
+    <string name="dialog_import_export">Контактілерді импорттау/экспорттау</string>
+    <string name="dialog_import">Контактілерді импорттау</string>
+    <string name="share_error">Бұл контакт ортақ пайдаланылмайды.</string>
+    <string name="no_contact_to_share">Ортақ пайдаланылатын контактілер жоқ.</string>
+    <string name="menu_search">Іздеу</string>
+    <string name="menu_contacts_filter">Көрсету үшін контактілер</string>
+    <string name="activity_title_contacts_filter">Көрсету үшін контактілер</string>
+    <string name="custom_list_filter">Контактілер тобын анықтау</string>
+    <string name="hint_findContacts">Контактілерді табу</string>
+    <string name="contactsFavoritesLabel">Таңдаулылар</string>
+    <string name="listTotalAllContactsZero">"Ешқандайконтактілержоқ."</string>
+    <string name="listTotalAllContactsZeroCustom">Көрінетін контактілер жоқ.</string>
+    <string name="listTotalAllContactsZeroStarred">Таңдаулылар жоқ</string>
+    <string name="listTotalAllContactsZeroGroup"><xliff:g id="name" example="Friends">%s</xliff:g> ішінде контактілер жоқ</string>
+    <string name="menu_clear_frequents">Жиі қоңырау шалатын контактілерді жою</string>
+    <string name="menu_select_sim">"SIM картасын таңдау"</string>
+    <string name="menu_accounts">"Есептік жазбаларды басқару"</string>
+    <string name="menu_import_export">Импорттау/экспорттау</string>
+    <string name="tab_font_family"/>
+    <string name="contact_status_update_attribution"><xliff:g id="source" example="GoogleTalk">%1$s</xliff:g> арқылы</string>
+    <string name="contact_status_update_attribution_with_date"><xliff:g id="source" example="GoogleTalk">%2$s</xliff:g> арқылы <xliff:g id="date" example="3hoursago">%1$s</xliff:g></string>
+    <string name="letter_tile_letter_font_family"/>
+    <string name="action_menu_back_from_search">іздеуді тоқтату</string>
+    <string name="description_clear_search">Іздеуді өшіру</string>
+    <string name="search_font_family"/>
+    <string name="settings_contact_display_options_title">Контактіні көрсету опциялары</string>
+    <string name="select_account_dialog_title">Тіркелгі</string>
+    <string name="set_default_account">"Осыны қоңыраулар үшін әрқашан пайдалану"</string>
+    <string name="select_phone_account_for_calls">"Келесімен қоңырау шалу"</string>
+    <string name="call_with_a_note">Ескертпелі қоңырау</string>
+    <string name="call_subject_hint">Қоңыраумен жіберілетін ескертпені теру ...</string>
+    <string name="send_and_call_button">ЖІБЕРУ ЖӘНЕ ҚОҢЫРАУ ШАЛУ</string>
+    <string name="call_subject_limit"><xliff:g id="count" example="4">%1$s</xliff:g> / <xliff:g id="limit" example="64">%2$s</xliff:g></string>
+    <string name="call_subject_type_and_number"/>
+    <plurals name="tab_title_with_unread_items">
+        <item quantity="one"><xliff:g id="title">%1$s</xliff:g>. <xliff:g id="count">%2$d</xliff:g> оқылмаған элемент.</item>
+        <item quantity="other"><xliff:g id="title">%1$s</xliff:g>. <xliff:g id="count">%2$d</xliff:g> оқылмаған элемент.</item>
+    </plurals>
+    <string name="about_build_version">Құрастыру нұсқасы</string>
+    <string name="about_open_source_licenses">"Ашық бастапқы код лицензиялары"</string>
+    <string name="about_open_source_licenses_summary">Ашық көз бағдарламалық жасақтамасының лицензия мәліметтері</string>
+    <string name="about_privacy_policy">"Құпиялық саясаты"</string>
+    <string name="about_terms_of_service">Қызмет ережелері</string>
+    <string name="activity_title_licenses">"Ашық бастапқы код лицензиялары"</string>
+    <string name="url_open_error_toast">url ашу сәтсіз болды.</string>
+    <string name="account_filter_view_checked"><xliff:g id="account_info">%s</xliff:g> тексерілді</string>
+    <string name="account_filter_view_not_checked"><xliff:g id="account_info">%s</xliff:g> тексерілмеді</string>
+    <string name="description_search_video_call">Бейне қоңырау шалу</string>
+    <string name="import_from_vcf_file_confirmation_message" msgid="967723361108008345">"vCard контактілерін импорттау қажет пе?"</string>
+</resources>

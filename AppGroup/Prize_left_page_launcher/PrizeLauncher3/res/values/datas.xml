@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ,{\'code\':4, \'name\':\'热点新闻\', \'dataUrl\':\'news\', \'moreType\':1, \'moreUrl\':\'http://news.163.com\'} 
+    ,{\'code\':9, \'name\':\'周边外卖\', \'dataUrl\':\'BDGROUP_SDK\', \'moreType\':1, \'moreUrl\':\'\', \'needLoc\':1}
+    {\'code\':5, \'name\':\'周边美食\', \'dataUrl\':\'foods\', \'moreType\':1, \'moreUrl\':\'http://www.baidu.com\'},
+    ,{\'code\':100, \'name\':\'一点资讯\', \'dataUrl\':\'http://o.go2yd.com/oapi/kusai/channel\', \'moreType\':1, \'moreUrl\':\'\'}
+    -->
+    <string name="cardTypes">
+        [{\'code\':1, \'name\':\'网址导航\', \'dataUrl\':\'navis\', \'moreType\':1, \'moreUrl\':\'http://app.so.com\', \'bigCode\':\'navigation\', \'status\':1}
+        ,{\'code\':7, \'name\':\'热门电影\', \'dataUrl\':\'BDMOVIE_SDK\', \'moreType\':1, \'moreUrl\':\'\', \'needLoc\':1,\'bigCode\':\'vertical\', \'status\':1}
+        ,{\'code\':17, \'name\':\'周边团购\', \'dataUrl\':\'BDGROUP_SDK\', \'moreType\':1, \'moreUrl\':\'\', \'needLoc\':1, \'bigCode\':\'horizontal_goods\', \'status\':1}
+        ,{\'code\':150, \'name\':\'资讯\', \'dataUrl\':\'INVNO_SDK\', \'moreType\':1, \'moreUrl\':\'\', \'bigCode\':\'horizontal_message\', \'status\':1}
+        ,{\'code\':10, \'name\':\'热门搜索\', \'dataUrl\':\'http://api.m.baidu.com/\', \'moreType\':1, \'moreUrl\':\'\', \'bigCode\':\'hotsearch\', \'status\':1}
+        ]</string>
+    
+    <!-- {\'code\':5, \'name\':\'周边美食\', \'canDel\':true, \'sort\':3}
+    ,{\'code\':100, \'name\':\'一点资讯\', \'canDel\':true, \'sort\':4}
+        ,{\'code\':4, \'name\':\'热点新闻\', \'canDel\':true, \'sort\':2} ,-->
+    <string name="selCardTypes">
+        [{\'code\':1, \'name\':\'网址导航\', \'canDel\':false, \'sort\':2}
+        ,{\'code\':150, \'name\':\'资讯\', \'canDel\':true, \'sort\':6}
+        ,{\'code\':7, \'name\':\'热门电影\', \'canDel\':true, \'sort\':7}
+        ,{\'code\':17, \'name\':\'周边团购\', \'canDel\':true, \'sort\':8}
+        ,{\'code\':10, \'name\':\'热门搜索\', \'canDel\':true, \'sort\':5}
+        ]
+    </string>
+    
+    <string name="foods">{\'code\':0, \'msg\':\'success\', \'data\':
+        {\'items\':[{\'iconUrl\':\'\', \'name\':\'螺丝粉\', \'describe\':\'这东东很好吃,螺丝粉!\', \'price\':\'9.9\', \'linkType\':1, \'grade\':\'4.8\', \'linkParam\':\'http://www.baidu.com\'}
+        ,{\'iconUrl\':\'\', \'name\':\'青瓜\', \'describe\':\'这东东很好吃,螺丝粉!\', \'price\':\'4.9\', \'linkType\':1, \'grade\':\'4.2\',\'linkParam\':\'http://www.baidu.com\'}
+        ,{\'iconUrl\':\'\', \'name\':\'果品\', \'describe\':\'这东东很好吃,螺丝粉!\', \'price\':\'6.9\', \'linkType\':1, \'grade\':\'4.5\',\'linkParam\':\'http://www.baidu.com\'}
+        ]}
+        }
+    </string>
+    
+    <string name="foods_refresh">{\'code\':0, \'msg\':\'success\', \'data\':
+        {\'items\':[{\'iconUrl\':\'\', \'name\':\'螺丝粉\', \'describe\':\'这东东很好吃,螺丝粉!\', \'price\':\'9.9\', \'linkType\':1, \'grade\':\'4.8\', \'linkParam\':\'http://www.baidu.com\'}
+        ,{\'iconUrl\':\'\', \'name\':\'复信你个议事\', \'describe\':\'very good!\', \'price\':\'$4.9\', \'linkType\':1, \'grade\':\'4.2\',\'linkParam\':\'http://www.baidu.com\'}
+        ,{\'iconUrl\':\'\', \'name\':\'西瓜东东\', \'describe\':\'好香,好甜!\', \'price\':\'$6.9\', \'linkType\':1, \'grade\':\'4.5\',\'linkParam\':\'http://www.baidu.com\'}
+        ]}
+        }
+    </string>
+    
+    <string name="news">{\'code\':0, \'msg\':\'success\', \'data\':
+        {\'items\':[{\'iconUrl\':\'\', \'name\':\'简易铺面火烧连营\', \'describe\':\'简易铺面火烧连营 4万元火腿成灰烬水果变“煤球”\', \'linkType\':1, \'linkParam\':\'http://news.cnr.cn/native/pic/20151209/t20151209_520741922.shtml\'}
+        ,{\'iconUrl\':\'\', \'name\':\'女司机油门当刹车 \', \'describe\':\'女司机油门当刹车 车子倒挂在地下通道口\', \'linkType\':1, \'linkParam\':\'http://china.huanqiu.com/photo/2015-12/2813339.html?from=bdtp#p=1\'}
+        ,{\'iconUrl\':\'\', \'name\':\'习近平将出席第二届世界互联网大会\', \'describe\':\'习近平将出席第二届世界互联网大会并发表主旨演讲\', \'linkType\':1, \'linkParam\':\'http://www.baidu.com\'}
+        ]}
+        }
+    </string>
+    
+    <string name="news_refresh">{\'code\':0, \'msg\':\'success\', \'data\':
+        {\'items\':[{\'iconUrl\':\'\', \'name\':\'简易铺面火烧连营\', \'describe\':\'简易铺面火烧连营 4万元火腿成灰烬水果变“煤球”\', \'linkType\':1, \'linkParam\':\'http://news.cnr.cn/native/pic/20151209/t20151209_520741922.shtml\'}
+        ,{\'iconUrl\':\'\', \'name\':\'女司机油门当刹车 \', \'describe\':\'女司机油门当刹车 车子倒挂在地下通道口\', \'linkType\':1, \'linkParam\':\'http://china.huanqiu.com/photo/2015-12/2813339.html?from=bdtp#p=1\'}
+        ,{\'iconUrl\':\'\', \'name\':\'习近平将出席第二届世界互联网大会\', \'describe\':\'习近平将出席第二届世界互联网大会并发表主旨演讲\', \'linkType\':1, \'linkParam\':\'http://www.baidu.com\'}
+        ]}
+        }
+    </string>
+    <!-- ,{\'iconUrl\':\'\', \'name\':\'新浪\', \'downUrl\':\'http://mobile.sina.com.cn/\'}
+        ,{\'iconUrl\':\'\', \'name\':\'58同城\', \'downUrl\':\'\'}
+        ,{\'iconUrl\':\'\', \'name\':\'手机充值\', \'downUrl\':\'\'}
+         -->
+    <string name="navis">{\'code\':0, \'msg\':\'success\', \'data\':
+        {\'list\':[{\'iconUrl\':\'\', \'name\':\'导航\', \'downUrl\':\'http://m.2345.com/?sc-koobee_ins_sj\'}
+        ,{\'iconUrl\':\'\', \'name\':\'小说\', \'downUrl\':\'http://wap.cmread.com/r/p/qdmh_kb.jsp?cm=M21Z0006\'}
+        ,{\'iconUrl\':\'\', \'name\':\'新浪\', \'downUrl\':\'http://mobile.sina.cn/?from=wap\'}
+        ,{\'iconUrl\':\'\', \'name\':\'58同城\', \'downUrl\':\'http://m.58.com/\'}
+        ,{\'iconUrl\':\'\', \'name\':\'手机充值\', \'downUrl\':\'BDRECHARGE_SDK\'}
+        ,{\'iconUrl\':\'\', \'name\':\'电影\', \'downUrl\':\'BDMOVIE_SDK\'}
+        ,{\'iconUrl\':\'\', \'name\':\'团购\', \'downUrl\':\'BDGROUP_SDK\'}
+        ,{\'iconUrl\':\'\', \'name\':\'外卖\', \'downUrl\':\'BDTAKEAWAY_SDK\'}
+        ,{\'iconUrl\':\'\', \'name\':\'淘宝网\', \'downUrl\':\'http://opr.im/5ZqW\'}
+        ,{\'iconUrl\':\'\', \'name\':\'火车票\', \'downUrl\':\'http://m.ctrip.com/webapp/train?AllianceID=108290&amp;SID=766736&amp;popup=close\'}
+        ]}
+        }
+    </string>
+    
+    <string name="navis_coosea">{\'code\':0, \'msg\':\'success\', \'data\':
+        {\'list\':[{\'iconUrl\':\'\', \'name\':\'导航\', \'downUrl\':\'http://m.2345.com/?sc-kusai_ins_sj\'}
+        ,{\'iconUrl\':\'\', \'name\':\'小说\', \'downUrl\':\'http://wap.cmread.com/r/p/qdmh_kb.jsp?cm=M21Z0006\'}
+        ,{\'iconUrl\':\'\', \'name\':\'新浪\', \'downUrl\':\'http://mobile.sina.cn/?from=wap\'}
+        ,{\'iconUrl\':\'\', \'name\':\'58同城\', \'downUrl\':\'http://m.58.com/\'}
+        ,{\'iconUrl\':\'\', \'name\':\'手机充值\', \'downUrl\':\'\'}
+        ,{\'iconUrl\':\'\', \'name\':\'电影\', \'downUrl\':\'BDMOVIE_SDK\'}
+        ,{\'iconUrl\':\'\', \'name\':\'团购\', \'downUrl\':\'BDGROUP_SDK\'}
+        ,{\'iconUrl\':\'\', \'name\':\'外卖\', \'downUrl\':\'BDTAKEAWAY_SDK\'}
+        ,{\'iconUrl\':\'\', \'name\':\'淘宝网\', \'downUrl\':\'http://opr.im/5ZqW\'}
+        ,{\'iconUrl\':\'\', \'name\':\'火车票\', \'downUrl\':\'http://m.ctrip.com/webapp/train/?AllianceID=108293&amp;SID=767102&amp;popup=close\'}
+        ]}
+        }
+    </string>
+    
+     <string name="navis_refresh">{\'code\':0, \'msg\':\'success\', \'data\':
+        {\'items\':[{\'iconUrl\':\'\', \'name\':\'360手机助手\', \'downUrl\':\'http://hot.m.shouji.360tpcdn.com/151125/22e4419f0c1e6fe60581da3a0d708f17/com.qihoo.appstore_300030510.apk\'}
+        ,{\'iconUrl\':\'\', \'name\':\'手机淘宝\', \'downUrl\':\'http://hot.m.shouji.360tpcdn.com/151117/3ecba109b405f9b5ac8579a30c851aa7/com.taobao.taobao_126.apk\'}
+        ,{\'iconUrl\':\'\', \'name\':\'360卫士\', \'downUrl\':\'http://hot.m.shouji.360tpcdn.com/151117/087f56fe47dbd91565ef0fe7ccc34a03/com.qihoo360.mobilesafe_241.apk\'}
+        ,{\'iconUrl\':\'\', \'name\':\'酷狗音乐\', \'downUrl\':\'http://hot.m.shouji.360tpcdn.com/151208/44d723df4a7014ee46db66deed4b3ea6/com.kugou.android_7995.apk\'}
+        ,{\'iconUrl\':\'\', \'name\':\'优酷\', \'downUrl\':\'http://hot.m.shouji.360tpcdn.com/151207/87b4cac2a9360ba5a13607a2073e56eb/com.youku.phone_88.apk\'}
+        ,{\'iconUrl\':\'\', \'name\':\'乐视视频\', \'downUrl\':\'http://m.shouji.360tpcdn.com/151119/4ddd8ee35f8dbfd90f726db67e362556/com.dianping.v1_794.apk\'}
+        ]}
+        }
+    </string>
+    
+     <!-- 0 推荐  1 热点  2 社会  3 娱乐  4 军事  5 体育  6 财经 7 科技  8 民生  9 美女  10 段子  11 健康  12 时尚  13 汽车  14 搞笑  15 视频  16 电台  17 NBA -->
+     <!-- <string name="one_news_channel">{\'code\':0, \'msg\':\'success\', \'data\':
+        {\'items\':[{\'code\':\'0\', \'name\':\'推荐\', \'newsType\':8}
+        , {\'code\':\'1\', \'name\':\'热点\', \'newsType\':8}
+        , {\'code\':\'2\', \'name\':\'社会\', \'newsType\':8}
+        , {\'code\':\'3\', \'name\':\'娱乐\', \'newsType\':8}
+        , {\'code\':\'4\', \'name\':\'军事\', \'newsType\':8}
+        , {\'code\':\'5\', \'name\':\'体育\', \'newsType\':8}
+        , {\'code\':\'6\', \'name\':\'财经\', \'newsType\':8}
+        , {\'code\':\'7\', \'name\':\'科技\', \'newsType\':8}
+        , {\'code\':\'8\', \'name\':\'民生\', \'newsType\':8}
+        , {\'code\':\'9\', \'name\':\'美女\', \'newsType\':8}
+        , {\'code\':\'10\', \'name\':\'段子\', \'newsType\':8}
+        , {\'code\':\'11\', \'name\':\'健康\', \'newsType\':8}
+        , {\'code\':\'12\', \'name\':\'时尚\', \'newsType\':8}
+        , {\'code\':\'13\', \'name\':\'汽车\', \'newsType\':8}
+        , {\'code\':\'14\', \'name\':\'搞笑\', \'newsType\':8}
+        , {\'code\':\'15\', \'name\':\'视频\', \'newsType\':8}
+        , {\'code\':\'16\', \'name\':\'电台\', \'newsType\':8}
+        , {\'code\':\'17\', \'name\':\'NBA\', \'newsType\':8}
+        ]}
+        }
+    </string> -->
+    
+     <string name="one_news_channel">[{\'code\':\'0\', \'name\':\'推荐\', \'newsType\':100}
+        , {\'code\':\'1\', \'name\':\'热点\', \'newsType\':100}
+        , {\'code\':\'2\', \'name\':\'社会\', \'newsType\':100}
+        , {\'code\':\'3\', \'name\':\'娱乐\', \'newsType\':100}
+        , {\'code\':\'4\', \'name\':\'军事\', \'newsType\':100}
+        , {\'code\':\'5\', \'name\':\'体育\', \'newsType\':100}
+        , {\'code\':\'6\', \'name\':\'财经\', \'newsType\':100}
+        , {\'code\':\'7\', \'name\':\'科技\', \'newsType\':100}
+        , {\'code\':\'8\', \'name\':\'民生\', \'newsType\':100}
+        , {\'code\':\'9\', \'name\':\'美女\', \'newsType\':100}
+        , {\'code\':\'10\', \'name\':\'段子\', \'newsType\':100}
+        , {\'code\':\'11\', \'name\':\'健康\', \'newsType\':100}
+        , {\'code\':\'12\', \'name\':\'时尚\', \'newsType\':100}
+        , {\'code\':\'13\', \'name\':\'汽车\', \'newsType\':100}
+        , {\'code\':\'14\', \'name\':\'搞笑\', \'newsType\':100}
+        , {\'code\':\'15\', \'name\':\'视频\', \'newsType\':100}
+        , {\'code\':\'16\', \'name\':\'电台\', \'newsType\':100}
+        , {\'code\':\'17\', \'name\':\'NBA\', \'newsType\':100}
+        ]
+    </string>
+    
+     <string name="upgrade_resp">{\'code\':0, \'msg\':\'success\', \'data\':
+        {\'iconUrl\':\'\', \'name\':\'360手机助手\', \'downloadUrl\':\'http://hot.m.shouji.360tpcdn.com/151125/22e4419f0c1e6fe60581da3a0d708f17/com.qihoo.appstore_300030510.apk\'
+        ,\'versionCode\':4, \'packageName\':\'com.android.launcher3\', \'versionName\':\'v2.0.release\', \'apkSize\':685341, \'updateInfo\':\'1 修复了QQ停止的问题,\n 2 修改了加固问题\'
+        }
+        }
+    </string>
+    
+     <!-- 大类初始化数据 -->
+     <!-- <string name="big_card_type">[{\'code\':\'News\', \'name\':\'资讯\', \'sort\':5, \'status\':1}
+        , {\'code\':\'Movie\', \'name\':\'电影\', \'sort\':6, \'status\':1}
+        , {\'code\':\'Groupon\', \'name\':\'团购\', \'sort\':7, \'status\':1}
+        , {\'code\':\'NetNavi\', \'name\':\'网址导航\', \'sort\':4, \'status\':1}
+        , {\'code\':\'Suggestion\', \'name\':\'常用\', \'sort\':3, \'status\':1}
+        , {\'code\':\'HotWord\', \'name\':\'热门搜索\', \'sort\':8, \'status\':1}
+        ]
+    </string>  -->
+     <!-- 大类初始化数据 -->
+     <string name="big_card_type">[{\'uitype\':\'horizontal_message\', \'name\':\'资讯\', \'sort\':5, \'status\':1}
+        , {\'uitype\':\'vertical\', \'name\':\'电影\', \'sort\':6, \'status\':1}
+        , {\'uitype\':\'horizontal_goods\', \'name\':\'团购\', \'sort\':7, \'status\':1}
+        , {\'uitype\':\'navigation\', \'name\':\'网址导航\', \'sort\':4, \'status\':1}
+        , {\'uitype\':\'common\', \'name\':\'常用\', \'sort\':3, \'status\':1}
+        , {\'uitype\':\'hotsearch\', \'name\':\'热门搜索\', \'sort\':8, \'status\':1}
+        ]
+    </string> 
+     
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- drawing start -->
+    <color name="paint_background_color">#FFF1F1F1</color>
+    <color name="panel_background_color">#FF606060</color>
+    
+    <color name="tool_color_back">#FF000000</color>
+    <color name="tool_color_gray">#FF888888</color>
+    <color name="tool_color_white">#FFFFFFFF</color>
+    <color name="tool_color_red">#FFFF0000</color>
+    <color name="tool_color_yellow">#FFFFFF00</color>
+    <color name="tool_color_blue">#FF0000FF</color>
+    <color name="tool_color_green">#FF00FF00</color>
+    <color name="tool_color_voilet">#FF955AA8</color>
+
+    <color name="list_delete_bg">#FFA0A0A0</color>
+	<color name="page_table_text_color">#FFFFFFFF</color>
+    <!-- drawing end -->
+
+
+    
+    <!-- note start -->
+     <color name="transparent">#00000000</color>
+     <color name="blue">#87CEFF</color>
+     <color name="white">#FFFFFFFF</color>
+     <color name="black">#FF000000</color>
+     <color name="textcolor">#000000</color>
+     <color name="speech_input_bg">#80808080</color>
+     
+     <color name="list_item_divier">#FFD0D0D0</color>
+     <color name="week_time_text_color">#FF838384</color>
+     <color name="background_color">#FFF8F8F8</color>
+     
+     <color name="color_while">#80F1F1F1</color>
+     <color name="color_blue">#80DAEEF9</color>
+     <color name="color_green">#80DAF9EE</color>
+     <color name="color_yellow">#80F9F1DA</color>
+     <color name="color_red">#80F9E6DA</color>
+     
+     <color name="bg_note_pad_edit">#F0F0F0</color>
+     <color name="bg_color_skin">#DCDCDC</color>
+     
+     <color name="transparent_text_color">#969696</color>
+     <color name="note_edit_text_color">#323232</color>
+	 <color name="note_edit_text_color_unable">#c8c8c8</color>
+     <color name="dialog_front_color">#323232</color>
+     
+     <color name="bg_dialog">#FFFFFFFF</color>
+     <color name="bg_base_header_title">#FFF0F0F0</color>
+     <color name="system_status_color">#FFF0F0F0</color>
+     <color name="item_bg_color">#E5E5E5</color>
+     <color name="search_rl_bg_color">#FFF0F0F0</color>
+     <color name="search_edit_text_color">#80323232</color>
+    <!-- note end -->
+     <color name="edit_text_press">#66dcb13d</color>
+	 <color name="action_bar_color">#fafafa</color>
+	 <color name="main_background_color">#e6e6e6</color>
+	 <color name="divide_line_color">#dcdcdc</color>
+	 <color name="square_bg_color">#f5f5f5</color>
+	 <color name="unclickable_text">#dedede</color>
+	 <color name="button_text_color">#dcb13d</color>
+</resources>

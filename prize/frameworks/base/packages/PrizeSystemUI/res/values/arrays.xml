@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/colors.xml
+**
+** Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- BatteryMeterView parameters -->
+    <array name="batterymeter_color_levels">
+        <item>15</item>
+        <item>100</item>
+    </array>
+    <array name="batterymeter_color_values">
+        <item>@*android:color/battery_saver_mode_color</item>
+        <item>#FFFFFFFF</item>
+    </array>
+    <array name="batterymeter_bolt_points">
+        <item>73</item> <item>0</item>
+        <item>392</item><item>0</item>
+        <item>201</item><item>259</item>
+        <item>442</item><item>259</item>
+        <item>4</item>  <item>703</item>
+        <item>157</item><item>334</item>
+        <item>0</item>  <item>334</item>
+    </array>
+    <array name="batterymeter_plus_points">
+        <item>3</item><item>0</item>
+        <item>5</item><item>0</item>
+        <item>5</item><item>3</item>
+        <item>8</item><item>3</item>
+        <item>8</item><item>5</item>
+        <item>5</item><item>5</item>
+        <item>5</item><item>8</item>
+        <item>3</item><item>8</item>
+        <item>3</item><item>5</item>
+        <item>0</item><item>5</item>
+        <item>0</item><item>3</item>
+        <item>3</item><item>3</item>
+    </array>
+
+    <!--PRIZE-add for liuhai-liufan-2018-04-09-start-->
+    <array name="config_liuhai_statusBarIcons">
+        <item>@string/network_speed</item>
+        <item>@string/volte</item>
+        <item>@*android:string/status_bar_volume</item>
+        <item>@*android:string/status_bar_zen</item>
+        <item>@*android:string/status_bar_alarm_clock</item>
+        <item>@*android:string/status_bar_location</item>
+        <item>@*android:string/status_bar_bluetooth</item>
+        <item>@*android:string/status_bar_hotspot</item>
+    </array>
+    <integer-array name="config_liuhai_statusBarIcons_res">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@drawable/liuhai_volume</item>
+        <item>@drawable/liuhai_zen</item>
+        <item>@drawable/liuhai_alarm_clock</item>
+        <item>@drawable/liuhai_location</item>
+        <item>@drawable/liuhai_bluetooth</item>
+        <item>@drawable/liuhai_hotspot</item>
+    </integer-array>
+    <!--PRIZE-add for liuhai-liufan-2018-04-09-end-->
+    
+    
+    <!--PRIZE-add for liuhai-liufan-2018-06-25-start-->
+    <array name="config_liuhai_statusBarIcons2">
+        <item>@string/status_bar_hotspot</item>
+        <item>@string/network_speed</item>
+        <item>@string/status_bar_location</item>
+        <item>@string/status_bar_bluetooth</item>
+
+        <item>@string/volte</item>
+        <item>@string/status_bar_zen</item>
+        <item>@string/status_bar_volume</item>
+        <item>@string/status_bar_alarm_clock</item>
+    </array>
+    <integer-array name="config_liuhai_statusBarIcons_direction2"><!-- 0-left, 1-right -->
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="config_liuhai_statusBarIcons_width2">
+        <item>55</item>
+        <item>55</item>
+        <item>44</item>
+        <item>44</item>
+        <item>48</item>
+        <item>53</item>
+        <item>56</item>
+        <item>54</item>
+    </integer-array>
+
+    <array name="config_liuhai_headerIcons2">
+        <item>@string/status_bar_hotspot</item>
+        <item>@string/network_speed</item>
+        <item>@string/status_bar_location</item>
+        <item>@string/status_bar_bluetooth</item>
+
+        <item>@string/cdma_eri</item>
+        <item>@string/sync_active</item>
+        <item>@string/tty</item>
+        <item>@string/speakerphone</item>
+        <item>@string/mute</item>
+        <item>@string/cast</item>
+        <item>@string/headset</item>
+        <item>@string/volte</item>
+        <item>@string/status_bar_zen</item>
+        <item>@string/status_bar_volume</item>
+        <item>@string/status_bar_alarm_clock</item>
+    </array>
+    <integer-array name="config_liuhai_headerIcons_width2">
+        <item>55</item>
+        <item>55</item>
+        <item>44</item>
+        <item>44</item>
+        <item>48</item>
+        <item>48</item>
+        <item>48</item>
+        <item>48</item>
+        <item>48</item>
+        <item>48</item>
+        <item>48</item>
+        <item>48</item>
+        <item>53</item>
+        <item>56</item>
+        <item>54</item>
+    </integer-array>
+    <integer-array name="config_liuhai_headerIcons_direction2"><!-- 0-left, 1-right -->
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    <!--PRIZE-add for liuhai-liufan-2018-06-25-end-->
+</resources>

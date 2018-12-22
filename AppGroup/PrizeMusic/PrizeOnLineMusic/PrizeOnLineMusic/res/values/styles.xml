@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+      <style name="NoBackgroundTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="ApolloTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ApolloTheme.BlueActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/ApolloTheme.OverFlow</item>
+    </style>
+
+    <style name="ApolloTheme.OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/apollo_holo_dark_overflow</item>
+    </style>
+
+    <style name="ApolloTheme.BlueActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/actionbar</item>
+        <item name="android:textColor">@color/actionbar_text</item>
+        <item name="android:titleTextStyle">@style/ApolloTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="ApolloTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text</item>
+    </style>
+
+    <!-- Translucent dialog (for @PlayExternal) -->
+    <style name="Theme.Light.Translucent" parent="android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Theme.Light.Translucent.Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Custom tabs -->
+    <style name="Tabs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/tab_height</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/tab_text_color</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:focusable">true</item>
+        <item name="android:minWidth">95dp</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:selectAllOnFocus">false</item>
+    </style>
+    <!-- Custom tabs -->
+    <style name="Sub_Tabs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">#ff0000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:paddingRight">22dp</item>
+        <item name="android:textColor">@color/radio_category_color_selector</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:selectAllOnFocus">false</item>
+    </style>
+
+    <style name="oldTabs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/tab_height</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/tab_padding_top_bottom</item>
+        <item name="android:paddingLeft">@dimen/tab_padding_left_right</item>
+        <item name="android:paddingRight">@dimen/tab_padding_left_right</item>
+        <item name="android:textColor">@color/tab_text_color</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:selectAllOnFocus">false</item>
+    </style>
+    <!-- ImageButton in the bottom bar -->
+    <style name="BottomActionBarItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- TextView in the bottom bar -->
+    <style name="BottomActionBarText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+    </style>
+
+    <!-- Notification bar button -->
+    <style name="StatusBarButton">
+        <item name="android:layout_gravity">center|right</item>
+    </style>
+
+    <!-- Notification bar text -->
+    <style name="StatusBarText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <!-- ContextMenu header text -->
+    <style name="HeaderText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingTop">@dimen/header_text_padding</item>
+        <item name="android:paddingLeft">@dimen/header_text_padding_left</item>
+        <item name="android:paddingBottom">@dimen/header_text_padding</item>
+        <item name="android:paddingRight">@dimen/header_text_padding</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- TextView in shown over the images in the GridView -->
+    <style name="GridViewTextItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/gray_black</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <!-- Now playing indicator -->
+    <style name="PeakMeter">
+        <item name="android:layout_width">@dimen/animal_height</item>
+        <item name="android:layout_height">@dimen/animal_height</item>
+    </style>
+
+    <!-- TextView in the audio player -->
+    <style name="AudioPlayerText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- TextView with drop-shadow and white text -->
+    <style name="GridviewShadowedText" parent="GridViewTextItem">
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+
+
+    <!-- QuickQueue -->
+    <style name="Theme.QuickQueue" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- App Widget 4x2 -->
+    <style name="FourByTwoMediaButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- Overflow Holo theme -->
+    <style name="Apollo.Holo" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlowHolo</item>
+    </style>
+
+    <!-- Overflow Holo.Light theme -->
+    <style name="Apollo.Holo.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlowHolo.Light</item>
+    </style>
+
+    <!-- Overflow Holo.Dark -->
+    <style name="OverFlowHolo" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/apollo_holo_dark_overflow</item>
+    </style>
+
+    <!-- Overflow Holo.Light -->
+    <style name="OverFlowHolo.Light" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/apollo_holo_light_overflow</item>
+    </style>
+
+    <style name="lrc_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- huanglingjun -->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <!-- <item name="android:windowBackground">@drawable/app_bg</item> -->
+    <style name="textView_one">
+        <item name="android:textColor">@color/text_color_323232</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="textView_two">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+    </style>
+
+    <style name="textView_three">
+        <item name="android:textColor">@color/text_color_969696</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+    </style>
+
+    <style name="textView_four">
+        <item name="android:textColor">@color/text_color_323232</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+    </style>
+
+    <style name="textView_selector">
+        <item name="android:textColor">@color/item_common_edit_color</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+    </style>
+
+    <style name="imageView_105dp">
+        <item name="android:layout_width">@dimen/one_zero_fivedp</item>
+        <item name="android:layout_height">@dimen/one_zero_fivedp</item>
+    </style>
+    <style name="play_icon_margin">
+        <item name="android:layout_marginStart">@dimen/seven_fivedp</item>
+        <item name="android:layout_marginTop">@dimen/eight_zerodp</item>
+    </style>
+
+    <style name="addmusic_to_table_dialogstyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/addmusic_dialog_enter</item>
+        <!-- <item name="@android:windowExitAnimation">@anim/addmusic_dialog_exit</item> -->
+    </style>
+
+    <style name="show_addmusic_dialog_style" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:windowAnimationStyle">@style/addmusic_to_table_dialogstyle</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

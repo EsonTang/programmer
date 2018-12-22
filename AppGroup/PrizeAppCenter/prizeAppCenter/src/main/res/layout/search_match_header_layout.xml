@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.prize.appcenter.ui.widget.SearchHeaderView
+        android:id="@+id/mSearchHeaderView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     />
+
+    <com.prize.appcenter.ui.widget.ListViewForScrollView
+        android:id="@+id/search_history_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/app_title"
+        android:dividerHeight="@dimen/zero_point_five_dp" />
+</LinearLayout>

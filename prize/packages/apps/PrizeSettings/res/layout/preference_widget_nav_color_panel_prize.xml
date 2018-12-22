@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nav bar color customized feature. prize-linkh-2017.07.11 -->
+<com.android.settings.PrizeNavBarColorView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/color_panel_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/default_white_color"
+            android:layout_width="wrap_content"
+            android:background="@drawable/default_white"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+          
+        <ImageView
+            android:id="@+id/black_color"
+            android:layout_width="wrap_content"
+            android:background="@drawable/black"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/select_margin_left"
+            android:clickable="true"/>
+              
+        <ImageView
+            android:id="@+id/gray_blue_color"
+            android:layout_width="wrap_content"
+            android:background="@drawable/gray_blue"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/select_margin_left"
+            android:clickable="true"/>
+             
+        <ImageView
+            android:id="@+id/pink_color"
+            android:layout_width="wrap_content"
+            android:background="@drawable/pink"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/select_margin_left"
+            android:clickable="true"/>
+         
+        <ImageView
+            android:id="@+id/brown_color"
+            android:layout_width="wrap_content"
+            android:background="@drawable/brown"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/select_margin_left"
+            android:clickable="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/color_panel_1"
+        android:layout_below="@id/color_panel_1"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/gray_color"
+            android:layout_width="wrap_content"
+            android:background="@drawable/gray"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+        <ImageView
+            android:id="@+id/custom_color"
+            android:layout_width="wrap_content"
+            android:background="@drawable/custom"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginStart="@dimen/select_margin_left"/>             
+    </LinearLayout>
+</com.android.settings.PrizeNavBarColorView>

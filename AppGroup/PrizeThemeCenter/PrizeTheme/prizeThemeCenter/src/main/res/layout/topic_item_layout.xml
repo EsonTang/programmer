@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.prize.prizethemecenter.ui.widget.CornerImageView
+         android:id="@+id/topic_tv"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/topic_height_125dp"
+         android:layout_marginBottom="10dp"
+         android:layout_marginLeft="@dimen/margin_left_right"
+         android:layout_marginRight="@dimen/margin_left_right"
+         android:scaleType="fitXY"/>
+
+
+</LinearLayout>

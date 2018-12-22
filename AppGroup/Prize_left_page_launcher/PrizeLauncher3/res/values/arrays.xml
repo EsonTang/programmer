@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- left page start fanjunchen -->
+    <string-array name="food_menu">
+         <item>"置顶"</item>
+         <!-- <item>"不感兴趣"</item> -->
+         <!-- item>"移除"</item -->
+     </string-array>
+     
+    <string-array name="news_menu">
+         <item>"置顶"</item>
+         <item>"不感兴趣"</item>
+         <item>"添加频道"</item>
+         <!-- item>"移除"</item -->
+     </string-array>
+     
+    <string-array name="feed_title_array">
+        <item>@string/title_feed3</item>
+        <item>@string/title_feed4</item>
+        <item>@string/title_feed5</item>
+        <item>@string/title_feed6</item>
+    </string-array>
+     <!-- left page end -->
+     <!-- simple launcher start -->
+     <string-array name="prize_month_number_array"
+        translatable="false">
+        <item>壹</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+        <item>十壹</item>
+        <item>十二</item>
+    </string-array>
+    <string-array name="prize_lunar_month_array"
+        translatable="false">
+        <item>壹月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十壹</item>
+        <item>十二</item>
+    </string-array>
+    <string-array name="prize_tens_prefix_array"
+        translatable="false">
+        <item>初</item>
+        <item>十</item>
+        <item>廿</item>
+        <item>卅</item>
+    </string-array>
+    
+     <integer-array name="prize_lunar_info">
+        <item>0x04bd8</item>
+        <item>0x04ae0</item>
+        <item>0x0a570</item>
+        <item>0x054d5</item>
+        <item>0x0d260</item>
+        <item>0x0d950</item>
+        <item>0x16554</item>
+        <item>0x056a0</item>
+        <item>0x09ad0</item>
+        <item>0x055d2</item>
+
+        <item>0x04ae0</item>
+        <item>0x0a5b6</item>
+        <item>0x0a4d0</item>
+        <item>0x0d250</item>
+        <item>0x1d255</item>
+        <item>0x0b540</item>
+        <item>0x0d6a0</item>
+        <item>0x0ada2</item>
+        <item>0x095b0</item>
+        <item>0x14977</item>
+
+        <item>0x04970</item>
+        <item>0x0a4b0</item>
+        <item>0x0b4b5</item>
+        <item>0x06a50</item>
+        <item>0x06d40</item>
+        <item>0x1ab54</item>
+        <item>0x02b60</item>
+        <item>0x09570</item>
+        <item>0x052f2</item>
+        <item>0x04970</item>
+
+        <item>0x06566</item>
+        <item>0x0d4a0</item>
+        <item>0x0ea50</item>
+        <item>0x06e95</item>
+        <item>0x05ad0</item>
+        <item>0x02b60</item>
+        <item>0x186e3</item>
+        <item>0x092e0</item>
+        <item>0x1c8d7</item>
+        <item>0x0c950</item>
+
+        <item>0x0d4a0</item>
+        <item>0x1d8a6</item>
+        <item>0x0b550</item>
+        <item>0x056a0</item>
+        <item>0x1a5b4</item>
+        <item>0x025d0</item>
+        <item>0x092d0</item>
+        <item>0x0d2b2</item>
+        <item>0x0a950</item>
+        <item>0x0b557</item>
+
+        <item>0x06ca0</item>
+        <item>0x0b550</item>
+        <item>0x15355</item>
+        <item>0x04da0</item>
+        <item>0x0a5d0</item>
+        <item>0x14573</item>
+        <item>0x052d0</item>
+        <item>0x0a9a8</item>
+        <item>0x0e950</item>
+        <item>0x06aa0</item>
+
+        <item>0x0aea6</item>
+        <item>0x0ab50</item>
+        <item>0x04b60</item>
+        <item>0x0aae4</item>
+        <item>0x0a570</item>
+        <item>0x05260</item>
+        <item>0x0f263</item>
+        <item>0x0d950</item>
+        <item>0x05b57</item>
+        <item>0x056a0</item>
+
+        <item>0x096d0</item>
+        <item>0x04dd5</item>
+        <item>0x04ad0</item>
+        <item>0x0a4d0</item>
+        <item>0x0d4d4</item>
+        <item>0x0d250</item>
+        <item>0x0d558</item>
+        <item>0x0b540</item>
+        <item>0x0b5a0</item>
+        <item>0x195a6</item>
+
+        <item>0x095b0</item>
+        <item>0x049b0</item>
+        <item>0x0a974</item>
+        <item>0x0a4b0</item>
+        <item>0x0b27a</item>
+        <item>0x06a50</item>
+        <item>0x06d40</item>
+        <item>0x0af46</item>
+        <item>0x0ab60</item>
+        <item>0x09570</item>
+
+        <item>0x04af5</item>
+        <item>0x04970</item>
+        <item>0x064b0</item>
+        <item>0x074a3</item>
+        <item>0x0ea50</item>
+        <item>0x06b58</item>
+        <item>0x055c0</item>
+        <item>0x0ab60</item>
+        <item>0x096d5</item>
+        <item>0x092e0</item>
+
+        <item>0x0c960</item>
+        <item>0x0d954</item>
+        <item>0x0d4a0</item>
+        <item>0x0da50</item>
+        <item>0x07552</item>
+        <item>0x056a0</item>
+        <item>0x0abb7</item>
+        <item>0x025d0</item>
+        <item>0x092d0</item>
+        <item>0x0cab5</item>
+
+        <item>0x0a950</item>
+        <item>0x0b4a0</item>
+        <item>0x0baa4</item>
+        <item>0x0ad50</item>
+        <item>0x055d9</item>
+        <item>0x04ba0</item>
+        <item>0x0a5b0</item>
+        <item>0x15176</item>
+        <item>0x052b0</item>
+        <item>0x0a930</item>
+
+        <item>0x07954</item>
+        <item>0x06aa0</item>
+        <item>0x0ad50</item>
+        <item>0x05b52</item>
+        <item>0x04b60</item>
+        <item>0x0a6e6</item>
+        <item>0x0a4e0</item>
+        <item>0x0d260</item>
+        <item>0x0ea65</item>
+        <item>0x0d530</item>
+
+        <item>0x05aa0</item>
+        <item>0x076a3</item>
+        <item>0x096d0</item>
+        <item>0x04bd7</item>
+        <item>0x04ad0</item>
+        <item>0x0a4d0</item>
+        <item>0x1d0b6</item>
+        <item>0x0d250</item>
+        <item>0x0d520</item>
+        <item>0x0dd45</item>
+
+        <item>0x0b5a0</item>
+        <item>0x056d0</item>
+        <item>0x055b2</item>
+        <item>0x049b0</item>
+        <item>0x0a577</item>
+        <item>0x0a4b0</item>
+        <item>0x0aa50</item>
+        <item>0x1b255</item>
+        <item>0x06d20</item>
+        <item>0x0ada0</item>
+    </integer-array>
+    
+     <string-array name="prize_shen_xiao"
+         translatable="false">
+         <item>"鼠"</item>
+         <item>"牛"</item>
+         <item>"虎"</item>
+         <item>"兔"</item>
+         <item>"龙"</item>
+         <item>"蛇"</item>
+         <item>"马"</item>
+         <item>"羊"</item>
+         <item>"猴"</item>
+         <item>"鸡"</item>
+         <item>"狗"</item>
+         <item>"猪"</item>
+     </string-array>
+     
+     <string-array name="prize_week_day"
+         translatable="false">
+         <item>"星期日"</item>
+         <item>"星期一"</item>
+         <item>"星期二"</item>
+         <item>"星期三"</item>
+         <item>"星期四"</item>
+         <item>"星期五"</item>
+         <item>"星期六"</item>
+     </string-array>
+     <!-- simple launcher end -->
+</resources>

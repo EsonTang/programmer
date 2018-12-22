@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:prize="http://schemas.android.com/apk/res/com.prize.music"
+    android:id="@+id/normal_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/default_layout_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/audioplay_default_bg" />
+
+    <ImageView
+        android:id="@+id/layout_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff8d8d8c" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/audio_player_album_art_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/background_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/background_IV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:tint="#60000000" />
+
+                <com.prize.music.ui.widgets.TransitionColorView
+                    android:id="@+id/transitionColorView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    prize:max_color="#ff8d8d8c" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!-- 界面Title的背景 -->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/audioplay_top"
+                    android:scaleType="fitXY" />
+
+                <!-- 界面Title -->
+
+                <RelativeLayout
+                    android:id="@+id/relat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_vertical" >
+
+                    <!-- android:src="@drawable/btn_back_selector_white" -->
+
+                    <ImageView
+                        android:id="@+id/action_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:paddingBottom="30dp"
+                        android:paddingTop="20dp"
+                        android:src="@drawable/btn_back_arrow_white" />
+
+                    <ImageView
+                        android:id="@+id/xiami_ico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/action_back"
+                        android:paddingBottom="30dp"
+                        android:paddingTop="20dp"
+                        android:src="@drawable/audio_play_xiami_ico" />
+
+                    <TextView
+                        android:id="@+id/title_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/xiami_ico"
+                        android:paddingBottom="30dp"
+                        android:paddingStart="5sp"
+                        android:paddingTop="20dp"
+                        android:text="@string/xiami_music"
+                        android:textColor="#ff5f00"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/action_setSound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingBottom="30dp"
+                        android:paddingEnd="17dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="20dp"
+                        android:src="@drawable/icon_sound_effect_selector" />
+                </RelativeLayout>
+
+                <!-- 图片底部 4个action 按钮 -->
+
+                <LinearLayout
+                    android:id="@+id/action_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/audio_player_repeat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:contentDescription="@string/cd_repeat"
+
+                        android:paddingTop="5dp"
+                        android:src="@drawable/apollo_holo_light_repeat_all_selector" />
+
+                    <ImageButton
+                        android:id="@+id/action_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:paddingTop="5dp"
+                        android:src="@drawable/audioplayer_delete_selector"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/action_downloade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+
+                            android:paddingTop="5dp"
+                            android:src="@drawable/audioplayer_download_selector" />
+
+                        <ImageView
+                            android:id="@+id/has_download"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginEnd="28dp"
+                            android:src="@drawable/icon_batch_hasdownloaded" />
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/action_share"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:paddingTop="5dp"
+                        android:src="@drawable/audioplayer_share_selector" />
+
+                    <ImageButton
+                        android:id="@+id/action_add_love"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:paddingTop="5dp"
+                        android:src="@drawable/audioplayer_love_red_selector" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- 3 dots -->
+
+            <LinearLayout
+                android:id="@+id/dots_container_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/dot_one_Iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_dot_selector" />
+
+                <ImageView
+                    android:id="@+id/dot_two_Iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_dot_selector" />
+
+                <ImageView
+                    android:id="@+id/dot_three_Iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_dot_selector" />
+            </LinearLayout>
+            <!-- 2 dots -->
+
+            <LinearLayout
+                android:id="@+id/dots_container_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_dot_selector" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_dot_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <include layout="@layout/audio_controls" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

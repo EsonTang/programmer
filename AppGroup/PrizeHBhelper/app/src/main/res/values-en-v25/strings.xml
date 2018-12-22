@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Red Packet Assistant</string>
+    <string name="main_name">Snatch Red Packets</string>
+    <!--<string name="accessibility_description">Start Red Packet Assistant for Wechat and QQ</string>-->
+    <string name="accessibility_description">Start Red Packet Assistant for Wechat</string>
+    <string name="service_name">Red Packet Assistant</string>
+    <string name="open_service_title">Need to open Red Packet Assistant services!</string>
+    <string name="open_service_button">Open Accessibility service</string>
+    <string name="open_notify_service">Status Bar Notifications</string>
+    <string name="check_update">Check for Update</string>
+    <string name="share">Share</string>
+    <string name="tips">Please find "Red Packet Assistant" and then start the service.</string>
+    <string name="qq_settings">QQ Settings</string>
+    <string name="wechat_settings">Wechat Settings</string>
+    <string name="notify_settings">Notifications</string>
+    <string name="switch_reminder">Snatch red packets automatically if opened.</string>
+    <string name="single_enable_settings">Snatch private chat red packets if opened.</string>
+    <string name="single_enable_title">Private Chat Red Packet</string>
+    <string name="voice">Rings</string>
+    <string name="voice_reminder">Rings when red packets are snatched.</string>
+    <string name="hb_delay">Duration</string>
+    <string name="random_delay">2-8s(Randomly)</string>
+    <string name="recorder">Red Packets Record</string>
+    <string name="recorder_reminder">Records all the red packets and money snatched.</string>
+    <string name="reminder">Warning:</string>
+    <!--<string name="first_sentence">If set QQ group and Wechat group as avoid-disturb mode,</string>-->
+    <string name="first_sentence">If set Wechat group as avoid-disturb mode,</string>
+    <string name="fifth_sentence">or set the phone as avoid-disturb mode,</string>
+    <string name="second_sentence">or it isn\'t work!</string>
+    <!--<string name="more"><a href="game://">More Questions ></a></string>-->
+    <string name="more">More Questions ></string>
+    <string name="third_sentence">Your account may be freezed if the duration of snatching red packets is too short!</string>
+    <string name="fourth_sentence">It\'s safer to set the duration to "2-8s(Randomly)"</string>
+    <string name="enter_reminder">Please open Red Packet Assistant in Accessibility in Settings.</string>
+
+    <string name="delay_no">0 second</string>
+    <string name="delay_half">0.5 second</string>
+    <string name="delay_one">1 second</string>
+    <string name="delay_random">2 to 8 seconds randomly</string>
+
+    <!--<string name="follow_preference_title"></string>-->
+    <!--<string name="follow_preference_summary"></string>-->
+
+    <!--<string name="donate_title"></string>-->
+    <!--<string name="donate_summary"></string>-->
+
+    <string name="after_open_hongbao">Open Red Packet</string>
+    <string name="after_open_see">View Details(Only support Wechat(version 6.3.8 or below)</string>
+    <string name="after_open_none">Starring···</string>
+    <string name="after_get_back_home">Back to Homepage</string>
+    <string name="after_get_none">Starring···</string>
+
+    <string name="wx_mode_0">Snatch all automatically</string>
+    <string name="wx_mode_1">Snatch automatically in single chat, notifying only in group chat.</string>
+    <string name="wx_mode_2">Snatch automatically in group chat, notifying only in single chat.</string>
+    <string name="wx_mode_3">Inform to snatch on your own(Prevent your account from being freezed)</string>
+
+    <!--<string name="about_title"></string>-->
+    <!--<string name="about_url"></string>-->
+
+    <!--<string name="agreement_title"></string>-->
+    <!--<string name="agreement_message"></string>-->
+
+    <!--<string name="qr_wx_id"></string>-->
+    <!--<string name="qr_tips"></string>-->
+
+
+
+    <string name="delay">Duration</string>
+    <string name="total_money">Sum of money (￥)</string>
+    <string name="success_get">Snatched</string>
+    <string name="ave_tiem">Average time</string>
+    <string name="count">times</string>
+    <string name="second">second</string>
+    <string name="clear_recordor">Clear records</string>
+    <string name="no_recordor">No records</string>
+    <string name="amount">Yuan</string>
+    <string name="get">Get</string>
+    <string name="whos_bag">\'s red packet</string>
+
+    <string name="more_question">Questions and Answers</string>
+    <string name="question1">1. Why it cannot snatch red packets automatically when turned on the red packet assistant?</string>
+    <string name="question2">2. Why it cannot snatch red packets automatically in QQ?</string>
+    <!--prize add for bug 41411 by zhaojian 20171030 start-->
+    <!--<string name="question3">3. It cannot snatch red packets automatically if I signed onto Wechat(PC ver.). Why?</string>-->
+    <!--<string name="question3">3. Why it cannot snatch packets if I signed onto Wechat(PC ver.)?</string>-->
+    <string name="question3">2. Why it cannot snatch packets if I signed onto Wechat(PC ver.)?</string>
+    <!--prize add for bug 41411 by zhaojian 20171030 end-->
+    <!--<string name="question4">4. It\'s too annoying with tons of group messages. What should I do?</string>-->
+    <string name="question4">3. It\'s too annoying with tons of group messages. What should I do?</string>
+    <string name="question5">5. Why it cannot snatch red packets when the screen is locked?</string>
+    <string name="answer1">You have to turn on "New Message Alert" and "Notification Center" in Wechat Settings. Meanwhile you should trun off "Mute Notifications" in the Group you want to snatch red packets automatically. </string>
+    <string name="answer2">Please make sure you have already turned on \"Message Previews\" in \"Notifications\" in Settings. Also, you should choose \"Receive with Remind\" in \"Notifications\" in the group you want the assistant to snatch red packets automatticaly.</string>
+    <string name="answer3">If you have logged in Wechat on PC, please click the top message notifying that you have signed onto Windows (or Mac) Wechat on your phone, then turn off \"Mute Notifications\".</string>
+    <!--<string name="answer4_1">1. You can turn off "Sound" and "In-App Vibrate" in "Notifications" in Wechat Settings.</string>-->
+    <string name="answer4_1">You can turn off "Sound" and "In-App Vibrate" in "Notifications" in Wechat Settings.</string>
+    <string name="answer4_2">2. You can turn off "Sound" and "Vibrate" in "Sound" in "Notifications" in QQ Settings.</string>
+    <string name="answer5_1">1. If you have lock screen with password, the assistant cannot snatch red packets automatically. If you want so, you should clear your pattern password or number password in lock screen.</string>
+    <string name="answer5_2">2. For those who have lock screnn with fingerprint, please clear those fingerprints or keep the phone unlocked if you want the assistant to snatch red evelopes automatically.</string>
+
+    <string name="leaveing_message">Message</string>
+    <string name="have_not_get">Better luck next time!</string>
+    <string name="send_one">send a packet</string>
+    <string name="send_one_to_you">send a packet to you</string>
+    <string name="send_one_randomly">Red packet with random amount</string>
+
+    <string name="back">Back</string>
+    <string name="red_packet_detail">Details</string>
+    <string name="look_my_packet_recorder">View my red packets</string>
+    <string name="detail_description">You are in the page ofDetails</string>
+
+    <!--prize add zhaojian 8.0 2017803 start-->
+    <string name="back_button_label">Back</string>
+    <string name="next_button_label">Next</string>
+    <string name="skip_button_label">Skip</string>
+    <string name="money_function">Red Packet transferred to Wallet</string>
+    <!--prize add zhaojian 8.0 2017803 end-->
+</resources>

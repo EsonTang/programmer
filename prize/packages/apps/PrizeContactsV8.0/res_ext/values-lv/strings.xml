@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">SIM kartes kontaktus nevar apvienot.</string>
+    <string name="menu_done">"Gatavs"</string>
+    <string name="menu_deleteContact">"Dzēst"</string>
+    <string name="menu_select_all">"Atlasītvisus"</string>
+    <string name="menu_select_none">"Noņemtatlasivisam"</string>
+    <string name="menu_new_contact_action_bar">"Jauns"</string>
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> atlasīts(-i)</string>
+    <string name="multichoice_no_select_alert">Nav atlasīts neviens vienums.</string>
+    <string name="aas_phone_type_none">"Nekāda"</string>
+    <string name="aas_custom_title">Pielāgotas etiķetes</string>
+    <string name="aas_new_dialog_title">Pievienot jaunu etiķeti</string>
+    <string name="ass_rename_dialog_title">Rediģēt etiķeti</string>
+    <string name="aas_delele_dialog_message">Etiķetes(-šu) dzēšana ietekmēs visus papildu nunurus, kas saistīti ar šo(-īm) etiķeti(-ēm). Vai esat pārliecināts?</string>
+    <string name="aas_name_invalid">Etiķetes nosaukums ir nederīgs. Lūdzu, ievadiet citu.</string>
+    <string name="aas_name_exist">Šī etiķete jau pastāv.</string>
+    <string name="aas_usim_full">Nav vietas jaunām etiķetēm.</string>
+    <string name="ass_edit_assert_message">Etiķetes modificēšana ietekmēs visus papildu numurus, kas saistīti ar šo etiķeti. Vai esat pārliecināts?</string>
+    <string name="aas_new_fail">Neizdevās izveidot jaunu etiķeti.</string>
+    <string name="aas_edit_fail">Neizdevās pārdēvēt <xliff:g id="aas">%s </xliff:g></string>
+    <string name="aas_delete_fail">Neizdevās dzēst <xliff:g id="aas">%s </xliff:g></string>
+    <string name="aas_phone_primary">Primārais numurs</string>
+    <string name="aas_phone_additional">Papildu numurs</string>
+</resources>

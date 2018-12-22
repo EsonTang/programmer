@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normal_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/app_bg" -->
+
+    <com.prize.music.views.TrackBrowserImageView
+        android:id="@+id/half_artist_image"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/bg_back_rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="59.5dp"
+        android:background="@drawable/audioplay_top"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/back_rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_and_half_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+             >
+
+            <TextView
+                android:id="@+id/action_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_back_selector_white"
+                android:drawablePadding="9dp" />
+
+            <TextView
+                android:id="@+id/action_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="32dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="@string/all_music"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium" />
+        </FrameLayout>
+       <!--  <TextView
+            android:id="@+id/action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/btn_back_selector_white"
+            android:drawablePadding="3dp"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="@string/all_music"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bg_back_rlyt"
+        android:background="@drawable/artist_mask" 
+        android:layout_above="@id/bottomactionbar_new">
+        
+        <FrameLayout
+            android:id="@+id/headerview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/artist_tab_h"
+                android:layout_gravity="bottom"
+                layout="@layout/half_and_half" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/line_separator" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/footview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/headerview"
+            android:background="@color/white" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:windowContentOverlay="@null" />
+    </RelativeLayout>
+    
+       <fragment
+            android:id="@+id/bottomactionbar_new"
+            android:name="com.prize.music.ui.fragments.BottomActionBarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_action_bar_height"
+            android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

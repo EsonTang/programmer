@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:oneshot="false">
+    <item android:drawable="@drawable/safe01" android:duration="100" />
+    <item android:drawable="@drawable/safe02" android:duration="100" />
+    <item android:drawable="@drawable/safe03" android:duration="100" />
+    <item android:drawable="@drawable/safe04" android:duration="100" />
+    <item android:drawable="@drawable/safe05" android:duration="100" />
+    <item android:drawable="@drawable/safe06" android:duration="100" />
+    <item android:drawable="@drawable/safe07" android:duration="100" />
+    <item android:drawable="@drawable/safe08" android:duration="100" />
+    <item android:drawable="@drawable/safe09" android:duration="100" />
+    <item android:drawable="@drawable/safe10" android:duration="100" />
+    <item android:drawable="@drawable/safe11" android:duration="100" />
+    <item android:drawable="@drawable/safe12" android:duration="100" />
+    <item android:drawable="@drawable/safe13" android:duration="100" />
+    <item android:drawable="@drawable/safe14" android:duration="100" />
+    <item android:drawable="@drawable/safe15" android:duration="100" />
+    <item android:drawable="@drawable/safe16" android:duration="100" />
+    <item android:drawable="@drawable/safe17" android:duration="100" />
+    <item android:drawable="@drawable/safe18" android:duration="100" />
+    <item android:drawable="@drawable/safe19" android:duration="100" />
+    <item android:drawable="@drawable/safe20" android:duration="100" />
+    <item android:drawable="@drawable/safe21" android:duration="100" />
+    <item android:drawable="@drawable/safe22" android:duration="100" />
+    <item android:drawable="@drawable/safe23" android:duration="100" />
+    <item android:drawable="@drawable/safe24" android:duration="100" />
+    <item android:drawable="@drawable/safe25" android:duration="100" />
+    <item android:drawable="@drawable/safe26" android:duration="100" />
+    <item android:drawable="@drawable/safe27" android:duration="100" />
+    <item android:drawable="@drawable/safe28" android:duration="100" />
+    <item android:drawable="@drawable/safe29" android:duration="100" />
+    <item android:drawable="@drawable/safe30" android:duration="100" />
+    <item android:drawable="@drawable/safe31" android:duration="100" />
+    <item android:drawable="@drawable/safe32" android:duration="100" />
+    <item android:drawable="@drawable/safe33" android:duration="100" />
+    <item android:drawable="@drawable/safe34" android:duration="100" />
+    <item android:drawable="@drawable/safe35" android:duration="100" />
+    <item android:drawable="@drawable/safe36" android:duration="100" />
+    <item android:drawable="@drawable/safe37" android:duration="100" />
+    <item android:drawable="@drawable/safe38" android:duration="100" />
+    <item android:drawable="@drawable/safe39" android:duration="100" />
+    <item android:drawable="@drawable/safe40" android:duration="100" />
+    <item android:drawable="@drawable/safe41" android:duration="100" />
+    <item android:drawable="@drawable/safe42" android:duration="100" />
+    <item android:drawable="@drawable/safe43" android:duration="100" />
+    <item android:drawable="@drawable/safe44" android:duration="100" />
+    <item android:drawable="@drawable/safe45" android:duration="100" />
+    <item android:drawable="@drawable/safe46" android:duration="100" />
+    <item android:drawable="@drawable/safe47" android:duration="100" />
+    <item android:drawable="@drawable/safe48" android:duration="100" />
+    <item android:drawable="@drawable/safe49" android:duration="100" />
+    <item android:drawable="@drawable/safe50" android:duration="100" />
+
+</animation-list>

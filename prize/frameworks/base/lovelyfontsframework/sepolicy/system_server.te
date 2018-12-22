@@ -1,0 +1,6 @@
+allow system_server data_fonts_file:dir create_dir_perms;
+allow system_server data_fonts_file:{ dir file } { relabelfrom relabelto };
+allow system_server data_fonts_file:file create_file_perms;
+allow system_server data_fonts_file:file { rw_file_perms };
+
+

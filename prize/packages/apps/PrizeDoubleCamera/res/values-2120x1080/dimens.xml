@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2009, The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>  
+
+   <dimen name="setting_title_margin_top">27dp</dimen>
+   <dimen name="info_top">43dp</dimen>
+   <dimen name="close_top_margin">5dp</dimen>
+   <dimen name="picker_group_margintop">28dp</dimen>
+   <dimen name="close_top_margin_gybokeh">74dp</dimen>
+   <dimen name="preview_surfaceview_margin">10dp</dimen>
+   <dimen name="info_topmargin_default">43dp</dimen>
+   <dimen name="effect_layout_margintop">68dp</dimen>
+   <dimen name="video_title_grop_margin_top">18dp</dimen>
+   <!-- prize-xuchunming-201804026-add spotlight-start -->
+   <dimen name="beautiful_spotlight_layout_margintop">63dp</dimen>
+   <!-- prize-xuchunming-201804026-add spotlight-end -->
+</resources>

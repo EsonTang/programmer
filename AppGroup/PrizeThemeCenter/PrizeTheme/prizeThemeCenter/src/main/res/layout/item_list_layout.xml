@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/theme_RL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.prize.prizethemecenter.ui.widget.CornerImageView
+            android:id="@+id/theme_logo"
+            style="@style/imageView_item"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/isNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/theme_logo"
+            android:background="@drawable/icon_is_new"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/theme_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/theme_RL"
+        android:layout_alignStart="@+id/theme_RL"
+        android:layout_below="@+id/theme_RL"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:singleLine="true" 
+        android:textColor="@color/text_color_323232"
+        android:textSize="@dimen/text_size_medium"
+        android:text="夏日清涼"/>
+     
+     <TextView
+        android:id="@+id/theme_prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/theme_title"
+        android:layout_alignStart="@+id/theme_title"
+        android:layout_below="@+id/theme_title"
+        android:layout_marginTop="1dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/text_color_969696"
+        android:textSize="@dimen/text_size_small"
+        android:text="￥5.0"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/use_FL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/theme_title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/use_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_use_btn"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/use_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text_color_33cccc"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/use"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

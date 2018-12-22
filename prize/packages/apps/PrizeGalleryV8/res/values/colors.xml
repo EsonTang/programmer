@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <color name="default_background">#ffffff</color>
+
+    <!-- configuration for album set page -->
+    <color name="albumset_background">#ffffff</color>
+    <color name="albumset_placeholder">#f5f5f5</color>
+    <color name="albumset_label_background">#00000000</color>
+    <color name="albumset_label_title">#323232</color>
+    <color name="albumset_label_count">#969696</color>
+
+    <!-- @prize fanjunchen 2015-05-20 { -->
+    <color name="prize_label_background">#00000000</color>
+    <color name="prize_label_title">#323232</color>
+    <color name="prize_label_count">#969696</color>
+    <!-- @prize } -->
+    
+    <!-- configuration for album page -->
+    <color name="album_background">#ffffff</color>
+    <color name="album_placeholder">#f5f5f5</color>
+
+    <!-- configuration for photo page -->
+    <color name="photo_background">#FF000000</color>
+    <color name="photo_placeholder">#00000000</color>
+
+    <!-- configuration for manage cache page -->
+    <color name="cache_background">#00000000</color>
+    <color name="cache_placeholder">#00000000</color>
+
+    <color name="bitmap_screennail_placeholder">#f5f5f5</color>
+
+    <color name="slideshow_background">#1A1A1A</color>
+ 
+    <!-- configuration for image refocus -->
+    <color name="m_button_dark_refocus_background">#6000</color>
+        
+    <color name="button_dark_transparent_background">#6000</color>
+
+    <color name="ingest_highlight_semitransparent">#8833b5e5</color>
+    <color name="ingest_date_tile_text">#33b5e5</color>
+
+    <!-- Camera resources below -->
+
+    <color name="recording_time_elapsed_text">#FFFFFFFF</color>
+    <color name="recording_time_remaining_text">#FFFF0033</color>
+    <color name="on_viewfinder_label_background_color">#77333333</color>
+    <color name="review_control_pressed_color">#FF33B5E5</color>
+    <color name="review_control_pressed_fan_color">#3F33B5E5</color>
+    <color name="review_background">#FF000000</color>
+    <color name="icon_disabled_color">#DD777777</color>
+    <color name="time_lapse_arc">#FFC5C5C5</color>
+    <color name="indicator_background">#40000000</color>
+    <color name="popup_title_color">#ff33b5e5</color>
+    <color name="popup_background">#ff282828</color>
+    <color name="pano_progress_empty">#FF2E2E2E</color>
+    <color name="pano_progress_done">#FF33525E</color>
+    <color name="pano_progress_indication">#FF0099CC</color>
+    <color name="pano_progress_indication_fast">#FFFF2222</color>
+    <color name="mode_selection_border">#33B5E5</color>
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="face_detect_start">#80ffffff</color>
+    <color name="face_detect_success">#8050d060</color>
+    <color name="face_detect_fail">#80d05060</color>
+    <color name="gray">#FFAAAAAA</color>
+    <color name="slide_bg_color">#CD000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="fifty_percent_white">#80ffffff</color>
+    <color name="ten_percent_white">#1Affffff</color>
+    <color name="thirty_percent_white">#4Affffff</color>
+    <color name="fourty_percent_white">#66ffffff</color>
+
+    
+    <drawable name="container_backgroud">#ff242e3d</drawable>
+    
+    <color name="prize_cancle">#808080</color>
+    
+    <color name="prize_main_backgroup">#ffffff</color>
+    <color name="title_green">#3478f6</color>
+    <color name="action_bar_divide">#dcdcdc</color>
+    <color name="video_duration">#ffffff</color>
+    <color name="title_red">#ff3b30</color>
+    
+    <color name="timeline_title_text_color">#323232</color>
+    <color name="timeline_title_location_text_color">#323232</color>
+    <color name="timeline_title_number_text_color">#3478f6</color>
+    <color name="timeline_title_background_color">#00000000</color>
+    <color name="tabview_unselect">#646464</color>
+    <color name="bottom_btn_clicked">#663478f6</color>
+    <color name="bottom_btn_normal">#3478f6</color>
+    <color name="bottom_btn_disable">#c8c8c8</color>
+    <color name="thirty_percent_black">#4A000000</color>
+    <color name="dialog_bottom_divider_color">#DCDCDC</color>
+    <color name="dialog_bottom_name_color">#646464</color>
+    <color name="done_btn_disable">#c8c8c8</color>
+    <color name="container_tip_color">#b8b8b8</color>
+    <color name="container_select_bg">#CDffffff</color>
+    <color name="albumset_empty_tip">#c8c8c8</color>
+    <drawable name="prize_sel_btn_normal">#3478f6</drawable>
+    <drawable name="prize_sel_btn_pressed">#e1e1e1</drawable>
+</resources>

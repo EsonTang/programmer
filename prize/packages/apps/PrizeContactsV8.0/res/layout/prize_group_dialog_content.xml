@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+      <EditText
+          android:paddingStart="20dp" 
+          android:maxLength="17"
+          android:focusable="true"
+          android:focusableInTouchMode="true"
+          android:background="@drawable/list_section_divider_holo_custom"
+          android:id="@+id/group_dialog_edit"
+          android:layout_width="match_parent"
+          android:layout_height="65dp"
+          android:hint="@string/prize_new_group_dialog_hint"
+          android:ellipsize="end"
+          android:maxLines="1"/>
+
+</LinearLayout>

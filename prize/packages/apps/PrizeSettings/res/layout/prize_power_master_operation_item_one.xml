@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/prize_preferencefragment_padding_start"
+    android:paddingEnd="-4dp"
+    android:minHeight="56dp"
+    android:orientation="horizontal"
+    android:background="@drawable/npreferencecategory_selector" >
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_power_master_operation_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/prize_dashboard_tile_textcolor"
+            android:textSize="@dimen/front_normal_size" />
+
+        <TextView
+            android:id="@+id/tv_power_master_operation_item_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/prize_power_master_summary_color"
+            android:textSize="@dimen/front_small_size" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_power_master_operation_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        style="@style/power_master_checkbox_style_three" />
+
+</LinearLayout>

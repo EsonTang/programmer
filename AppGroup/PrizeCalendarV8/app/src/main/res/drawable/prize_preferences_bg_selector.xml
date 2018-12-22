@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="0dp"
+        android:left="@dimen/prize_preferences_bg_margin1"
+        android:right="@dimen/prize_preferences_bg_margin1"
+        android:top="@dimen/prize_preferences_bg_margin2">
+        <shape
+            android:useLevel="false">
+
+            <solid
+                android:color="@color/prize_preferences_bg_solid_color"/>
+            <stroke
+                android:width="@dimen/prize_preferences_bg_stroke_height"
+                android:color="@color/prize_preferences_bg_color_gray"/>
+            <corners
+                android:radius="@dimen/prize_preferences_bg_corners"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/cootek_loginbtn_bg_p" android:state_pressed="true" /> <!-- pressed -->
+    <item android:drawable="@drawable/cootek_loginbtn_bg_e" android:state_enabled="true" />
+    <item android:drawable="@drawable/cootek_loginbtn_bg_n" />
+</selector>

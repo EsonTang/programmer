@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.android.camera.ui.PickerButton
+                android:id="@+id/bg_fuzzy_switch"
+                style="@style/OnScreenPickerFixed"
+                android:layout_marginTop="@dimen/picker_group_margintop"/>
+</FrameLayout>

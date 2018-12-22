@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">提示</string>
+    <string name="fragment_img_praise">赞</string>
+    <string name="fragment_img_blame">踩</string>
+    <string name="net_error_hint">无网络，请联网点击屏幕再试试:)</string>
+    <!--自升级-->
+    <string name="net_error">网络错误，请检查网络</string>
+    <string name="click_update_to_install">安装包已经准备好了</string>
+    <string name="current_net_is_nowifi">当前为移动数据流量,建议切换至WIFI环境更新！</string>
+    <string name="after_do">以后再说</string>
+    <string name="now_update">立即更新</string>
+    <string name="new_version_name">→   %1$s</string>
+    <string name="testbeans">
+      {
+  \"code\": \"0\",
+  \"msg\": \"ok\",
+  \"total\": 3,
+  \"list\": [
+    {
+      \"id\": \"1\",
+      \"large_icon_url\": \"http://ad-client.oss-cn-beijing.aliyuncs.com/theme/Topic/Prompt/1488878412.jpg\",
+      \"small_icon_url\": \"http://ad-client.oss-cn-beijing.aliyuncs.com/theme/Topic/Prompt/1488878409.jpg\",
+      \"title\": \"本地数据1\",
+      \"content\": \"设置方式：桌面-下滑桌面搜索可快速完成：本地应用、通讯录、短信、互联网新闻内容等\",
+      \"pagenum\": 1
+    },
+    {
+      \"id\": \"2\",
+      \"large_icon_url\": \"http://ad-client.oss-cn-beijing.aliyuncs.com/theme/Topic/Prompt/1488876953.jpg\",
+      \"small_icon_url\": \"http://ad-client.oss-cn-beijing.aliyuncs.com/theme/Topic/Prompt/1488876947.jpg\",
+      \"title\": \"本地数据2\",
+      \"content\": \"设置方式：桌面-下滑桌面搜索可快速完成：本地应用、通讯录、短信、互联网新闻内容等\",
+      \"pagenum\": 2
+    },
+    {
+      \"id\": \"3\",
+      \"large_icon_url\": \"http://ad-client.oss-cn-beijing.aliyuncs.com/theme/Topic/Prompt/1488882362.jpg\",
+      \"small_icon_url\": \"http://ad-client.oss-cn-beijing.aliyuncs.com/theme/Topic/Prompt/1488882358.jpg\",
+      \"title\": \"本地数据3\",
+      \"content\": \"设置方式：桌面——视频本地视频在页面的最底部，可通过右上角的编辑功能，进行批量处理等&lt;/p&gt;\",
+      \"pagenum\": 3
+    }
+  ]
+}
+    </string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/prize_card_layout_corner"/>
+    <solid android:color="@color/prize_card_layout_bg_normal"/>
+    <stroke
+        android:color="@color/prize_card_bg_stroke_color"
+        android:width="@dimen/prize_card_bg_stroke_width"/>
+</shape>

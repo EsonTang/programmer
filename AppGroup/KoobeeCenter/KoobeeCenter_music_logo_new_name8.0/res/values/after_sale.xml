@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_h">40dp</dimen>
+    <dimen name="layout_margin">20dp</dimen>
+    <dimen name="title_size">22sp</dimen>
+    <dimen name="title_to_back">15dp</dimen>
+    <dimen name="row_h">47.5dp</dimen>
+    <dimen name="hotline_row_h">72.5dp</dimen>
+    <dimen name="hotline_text_to_rightbtn">20dp</dimen>
+    <string name="outlets">全国售后网点</string>
+    <string name="alloutlets">全国售后服务网点</string>
+    <string name="aftersales_instroduction">售后服务说明</string>
+   <!-- <string name="company_address">地址：深圳市福田区深南大道与香蜜湖路交界东南侧绿景广场主楼27楼27H</string>  -->  <!-- prize-modify-by-yanghao-20150911 -->
+
+    <!-- prize-add-by-yanghao-20150914-start-->
+    <string name="map_geo">22.538985,114.025213</string> 
+    <string name="map_zoom">17</string> 
+	<!-- prize-add-by-yanghao-20150914-end-->
+    
+    <string name="url_key">网址：</string>
+    <string name="hotline_num">客户服务热线：4006288117</string>
+    <string name="url_value">www.koobeemobile.com</string>
+    
+    <string name="aftersales_intro">\t\t售后服务热线主要处理用户对手机的问询，并尽可能的提供快捷的解决方案，或转交相关部门，督促及时解决，然后迅速将结果反馈给客户。它的服务范围包括处理多种形式的问询。</string>
+	
+    <string name="bdmap_not_found">未安装百度地图，无法查看!</string> <!-- prize-add-by-yanghao-20150911 -->
+
+</resources>

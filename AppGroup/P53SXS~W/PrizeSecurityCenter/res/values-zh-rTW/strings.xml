@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">安全中心</string>
+    <string name="action_settings">設置</string>
+    <string name="accept_perm">允許</string>
+    <string name="deny_perm">禁止</string>
+    <string name="clean_filecahce">文件清理</string>
+    <string name="select_province">選擇省份</string>
+    <string name="select_city">選擇地區</string>
+    <string name="select_carry">選擇運營商</string>
+    <string name="select_brands">選擇sim卡類型</string>
+    <string name="viruses_scan">病毒掃描</string>
+    <string name="malicious_software">惡意軟件</string>
+    <string name="result_security">安全</string>
+    <string name="hidden_software">隱患軟件</string>
+    <string name="hack_risk">盜號風險</string>
+    <string name="ad_plugin">廣告插件</string>
+    <string name="viruse_scan_start">開始掃描</string>
+    <string name="viruse_scan_stop">停止掃描</string>
+    <string name="viruse_scan_completed">掃描完成</string>
+    <string name="scan_result_jre">當前運行環境安全</string>
+    <string name="scan_result_ne">網絡環境安全</string>
+    <string name="scan_result_pe">支付環境安全</string>
+    <string name="scan_result_se">系統環境安全</string>
+    <string name="scan_result_des">您的系統是安全的</string>
+    <string name="scan_cutomdialog_title">安全衛士提示妳</string>
+    <string name="scan_cutomdialog_message">殺毒掃描即將完成，能有效查殺木馬，避免惡意扣費。您確定要取消？</string>
+    <string name="scan_cutomdialog_cancel">取消</string>
+    <string name="scan_cutomdialog_ok">確定</string>
+    <!-- 流量监控 -->
+    <string name="no_sim_reminder">請插入手機sim卡</string>
+    <string name="today_traffic">今日流量</string>
+    <string name="mothy_traffic">本月已用</string>
+    <string name="mothy_traffic_remain">本月剩余</string>
+    <string name="traffic_setting">流量設置</string>
+    <string name="traffic_details">流量詳單</string>
+    <string name="traffic_control">流量監控</string>
+    <string name="setting_location">設置歸屬地</string>
+    <string name="sim_01">卡1</string>
+    <string name="sim_02">卡2</string>
+    <string name="sim_setting_commits">開機啟動自動運行</string>
+    <string name="traffic_month_total">每月流量總額</string>
+    <string name="traffic_month_remain">本月剩余流量</string>
+    <string name="traffic_month_clean">月結算日</string>
+    <string name="traffic_location">歸屬地</string>
+    <string name="traffic_monitor_often">實時流量監控</string>
+    <string name="traffic_over_reminid">超額提醒</string>
+
+    <!-- 垃圾清理 -->
+    <string name="garbage_remove">清理加速</string>
+    <string name="garbage_cache_file">緩存文件</string>
+    <string name="garbage_system_file">系統垃圾</string>
+    <string name="garbage_install_file">多余安裝包</string>
+    <string name="garbage_uninstall_file">卸載殘留</string>
+    <string name="garbage_clean_pause_bt">暫停掃描</string>
+    <string name="garbage_clean_fast_bt">壹鍵清理</string>
+    <string name="garbage_clean_repeat_bt">清理完成</string>
+    <string name="garbage_status_title1">可清理</string>
+    <string name="garbage_status_title2">已幫您清理</string>
+    <string name="garbage_status_cleaned">您剛剛清理過哦，休息壹下吧</string>
+
+    <!-- 数据更新 -->
+    <string name="update_title_txt">數據更新</string>
+    <string name="update_autorun_txt">開機應用自動運行</string>
+    <string name="update_resoult">妳的數據庫是最新的</string>
+    <string name="update_check">檢查更新</string>
+    <string name="update_checking">正在查詢數據信息</string>
+    <string name="update_checked">更新完成</string>
+    <string name="update_data">更新數據</string>
+    <string name="update_dialog_message">正在檢查更新，請稍後&#8230;</string>
+    <string name="update_result">已經更新數據信息</string>
+
+    <!-- john 2015.8.22 start -->
+    <!-- Setting -->
+    <string name="setting_title">設置</string>
+    <string name="setting_des1">開機應用自動運行</string>
+    <string name="setting_intercept_harass">攔截騷擾</string>
+    <string name="setting_sms_des">正在開會，不方便接電話，抱歉！</string>
+
+    <!-- Optimizing -->
+    <string name="optimizing_title">優化加速</string>
+    <string name="optimizing">點擊優化</string>
+
+    <!-- Intercept -->
+    <string name="intercept_title">攔截引擎</string>
+
+    <!-- Blacknumber -->
+    <string name="blacknumber_title">黑名單</string>
+    <!-- john 2015.8.22 end -->
+
+</resources>

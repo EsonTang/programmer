@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    
+    <style name="AppTheme" parent="android:Theme.Light" >
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="PreferencesBgTheme">
+        <item name="android:background">@color/title_header_bg_color</item>
+    </style>
+    
+    <style name="ActionBarStyle" parent="@android:style/Theme.Material">
+    </style>
+
+    <style name="Activity_style">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    <style name="operation_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/prize_video_switch_voice_off" />
+    <item android:state_focused="true" android:drawable="@drawable/prize_video_switch_voice_off"  />
+    <item android:state_pressed="true" android:drawable="@drawable/prize_video_switch_voice_off"  />
+
+    <!-- PRIZE-Add-InCallUI_VideoCall-wangzhong-2016_12_26-start -->
+    <item android:state_enabled="false" android:drawable="@drawable/prize_video_switch_voice_off"  />
+    <!-- PRIZE-Add-InCallUI_VideoCall-wangzhong-2016_12_26-end -->
+
+    <item android:drawable="@drawable/prize_video_switch_voice_normal" />
+</selector>

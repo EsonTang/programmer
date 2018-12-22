@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView android:layout_width="wrap_content"
+	    android:layout_height="30dp"
+	    android:id="@+id/txt_emc"
+	    android:text="@string/str_emergency_call"
+	    android:gravity="center"
+	    android:onClick="onClick"
+	    android:layout_gravity="bottom|center_horizontal"
+	    android:layout_marginBottom="15dp"
+	    style="@style/style_emc"
+	    />
+</merge>

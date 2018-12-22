@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_shutter"
+    style="@style/ShutterGroup"
+    android:gravity="@null"
+    android:layout_alignParentBottom="true"
+    android:splitMotionEvents="false">
+    <RelativeLayout
+        android:id="@+id/shutterContain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.prize.ui.CaptureAnimation
+            android:id="@+id/capture_anima"
+            android:layout_width="@dimen/capture_animation_width"
+            android:layout_height="@dimen/capture_animation_width"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/shutter_marginleft"
+            android:visibility="gone"/>
+        <!--add-10s short video -xiaoping-20180505-start-->
+        <com.prize.ui.ShortVideoAnimation
+            android:id="@+id/shortvideo_anima"
+            android:layout_width="@dimen/capture_animation_width"
+            android:layout_height="@dimen/capture_animation_width"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/shutter_marginleft"
+            android:visibility="gone" />
+        <!--add-10s short video -xiaoping-20180505-end-->
+   	   <com.android.camera.ui.ShutterButton
+        android:id="@+id/shutter_button_photo"
+        style="@style/ShutterButton"
+        android:src="@drawable/btn_photo"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/shutter_marginleft"
+        android:contentDescription="@string/accessibility_shutter_button" />
+
+       <com.android.camera.ui.ShutterButton
+        android:id="@+id/shutter_button_video"
+        style="@style/ShutterButton"
+        android:src="@drawable/btn_video"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/shutter_marginleft"
+        android:contentDescription="@string/accessibility_video_shutter_button"
+        android:visibility="gone"/>
+    </RelativeLayout>   
+</RelativeLayout>

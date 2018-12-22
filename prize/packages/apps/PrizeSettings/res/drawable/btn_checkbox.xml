@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Prize-notification-hekeyi-2015-4-7-begin-->
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/check_true" />
+    <item android:state_selected="true" android:drawable="@drawable/check_true" />
+    <item android:state_pressed="true" android:drawable="@drawable/check_false" />
+    <item android:drawable="@drawable/check_false" />
+</selector>
+<!--Prize-notification-hekeyi-2015-4-7-end-->

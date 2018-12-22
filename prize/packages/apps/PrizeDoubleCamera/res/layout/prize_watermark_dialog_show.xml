@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="1"
+		android:layout_marginBottom="7dp"
+        android:background="@drawable/prize_watermark_input_brackgroup"
+        android:orientation="horizontal" >
+
+<!--         <ImageView
+            android:id="@+id/water_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_cancel_pressed"
+            android:visibility="gone" /> -->
+
+        <EditText
+            android:id="@+id/water_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/prize_textcursor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/water_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+
+            android:singleLine="true"
+               android:gravity="center_vertical"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/water_ok"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+       	android:layout_marginTop="7dp"
+		android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/prize_watermark_dialog_button"
+        android:text="@string/input_ok_button" />
+
+</LinearLayout>

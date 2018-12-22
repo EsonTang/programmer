@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_sync_restore_header_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="13dp"
+        android:text="可恢复 0款应用"
+        android:textColor="@color/text_color_404040"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <View
+        android:id="@+id/game_image_tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_gray_color" />
+
+</FrameLayout>

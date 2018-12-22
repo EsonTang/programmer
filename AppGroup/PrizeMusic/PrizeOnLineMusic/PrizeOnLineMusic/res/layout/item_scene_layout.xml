@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/rank_logo"
+        style="@style/imageView_105dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/icon_fly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/icon_fly"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/play_Iv"
+        style="@style/play_icon_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:src="@drawable/icon_play" />
+
+    <TextView
+        android:id="@+id/collectName_Tv"
+        style="@style/textView_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rank_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:singleLine="true" />
+
+</RelativeLayout>

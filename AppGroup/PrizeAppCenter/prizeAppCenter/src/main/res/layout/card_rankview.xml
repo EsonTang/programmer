@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/bg_Iv"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="14dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/title_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="23dp"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_30"
+        tools:text="微信" />
+
+    <TextView
+        android:id="@+id/go_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:padding="10dp"
+        android:text="查看全部"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_30" />
+
+    <com.prize.appcenter.ui.widget.PrizeHorizontalScrollView
+        android:id="@+id/horizatal_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_Tv"
+        android:layout_marginTop="22dp"
+        android:focusable="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/child_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="102dp" />
+    </com.prize.appcenter.ui.widget.PrizeHorizontalScrollView>
+
+    <View
+        android:id="@+id/game_image_tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_below="@id/bg_Iv"
+        android:layout_marginTop="15dp"
+        android:background="#e4e4e4" />
+</merge>

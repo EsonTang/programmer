@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center" 
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/siger_and_songname_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:gravity="center|start"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/listview_item_line_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:maxEms="15"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_small" 
+            android:gravity="center|start"/>
+
+        <TextView
+            android:id="@+id/listview_item_line_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingEnd="10dp"
+            android:maxEms="15"
+            android:singleLine="true"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/text_size_micro" 
+            android:gravity="center|start"/>
+        
+        
+    </LinearLayout>
+    
+    <ImageView
+		android:id="@+id/icon_fly"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"	
+		android:layout_toEndOf="@id/siger_and_songname_layout"
+		android:layout_marginStart="52dp"
+		android:layout_centerVertical="true"
+		android:src="@drawable/icon_fly"
+		android:visibility="invisible" />   
+
+    <!-- 播放动画,长按选择checkbox, 这栏暂时不显示 -->
+    <LinearLayout
+        android:id="@+id/select_Llyt"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/peak_two"
+            style="@style/PeakMeter"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"  
+            android:button="@drawable/icon_checkbox_edit_list_selector"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <!-- 下载和更多按钮 -->
+    <LinearLayout
+        android:id="@+id/more_and_download_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/item_download"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:background="@android:color/transparent"
+            android:src="@drawable/icon_item_download_state_selector"
+            />
+
+        <ImageButton
+            android:id="@+id/more_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="10dp"
+			android:paddingRight="25dp"           
+            android:button="@drawable/icon_checkbox_edit_list_selector"
+            android:src="@drawable/icon_more_menu_nomal"/>
+        
+    </LinearLayout>
+    
+    
+   <include
+       android:layout_below="@id/siger_and_songname_layout"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       layout="@layout/include_item_edit_layout" />
+    
+    
+</RelativeLayout>

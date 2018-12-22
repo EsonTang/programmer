@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radius_img"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+ 		android:gravity="center"
+ 		android:textColor="@color/prize_text_default"
+ 		android:textSize="@dimen/textsize_large"
+ 		android:layout_marginTop="18dp"
+        android:text="@string/comfire_account" />
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+ 		android:gravity="center"
+ 		android:textColor="@color/prize_text_default"
+ 		android:textSize="@dimen/textsize_medium"
+        android:text="@string/input_your_account_password" />
+     <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         android:layout_marginTop="27dp">
+         <TextView
+            android:id="@+id/account_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	 		android:gravity="center"
+	 		android:textColor="@color/prize_text_default"
+	 		android:textSize="@dimen/textsize_medium"
+	 		android:layout_alignParentLeft="true"
+	        android:text="@string/account" />
+
+	     <TextView
+	         android:id="@+id/forget_password_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	 		android:gravity="center"
+	 		android:textColor="@color/prize_text_default"
+	 		android:textSize="@dimen/textsize_medium"
+	 		android:layout_alignParentRight="true"
+	        android:text="@string/forget_password" />
+
+	     <TextView
+	         android:id="@+id/account_id"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_toRightOf="@+id/account_tv" />
+         
+     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7.5dp" >
+
+        <ImageView
+            android:id="@+id/password_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/show_password_selector" >
+        </ImageView>
+
+        <EditText
+            android:id="@+id/passwordedit_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/password_id"
+            android:background="@drawable/edit_account"
+            android:gravity="center_vertical"
+            android:hint="@string/input_account_password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/prize_text_default"
+            android:textColorHint="#c8c8c8"
+            android:digits="@string/symbol"
+            android:textSize="@dimen/textsize_medium" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content" >
+
+         <Button
+            android:id="@+id/cancel_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/textsize_medium"
+            android:textColor="@color/prize_text_default"
+            android:background="@drawable/kb_main_cancel_selector"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+        <Button
+            android:id="@+id/sure_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/textsize_medium"
+            android:textColor="@color/prize_text_default"
+            android:background="@drawable/kb_main_sure_selector"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:text="@string/confirm"/>
+
+    </LinearLayout>
+
+</LinearLayout>

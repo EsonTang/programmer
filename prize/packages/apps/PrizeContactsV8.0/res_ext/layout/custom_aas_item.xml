@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="50dip"
+    android:paddingStart="@dimen/prize_content_padding"
+    android:paddingEnd="@dimen/prize_content_padding"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/aas_item_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/prize_content_title_color" />
+     <!-- prize-remove  layout_marginLeft android:layout_toRightOf="@+id/aas_item_check"
+    		for dido os8.0-hpf-2017-8-23  -->
+        
+
+    <ImageView
+        android:id="@+id/aas_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/prize_selector_ic_advance"
+        android:clickable="false"
+        android:gravity="center_vertical" />
+	<!-- prize-change  android:background="@android:drawable/ic_aas_edit" 
+    		for dido os8.0-hpf-2017-8-23  -->
+      
+    <CheckBox
+        android:id="@+id/aas_item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:visibility="gone"/>
+    <!-- prize-remove  layout_marginLeft android:background="@android:drawable/checkbox_off_background" 
+    		for dido os8.0-hpf-2017-8-23  -->
+    	
+    <!-- prize-add for dido os8.0-hpf-2017-8-23-start -->	
+	<View 
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@color/divider_line_color_light"/>
+	<!-- prize-add for dido os8.0-hpf-2017-8-23-end -->
+    
+</RelativeLayout>

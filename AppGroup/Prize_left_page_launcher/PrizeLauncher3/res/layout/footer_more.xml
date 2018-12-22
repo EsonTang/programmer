@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_more_height"
+    android:orientation="vertical"
+    >
+    <View android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/white_5"
+    	/>
+	<TextView android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:drawableStart="@null"
+	    android:id="@+id/txt_footer_more"
+	    android:singleLine="true"
+	    android:gravity="center"
+	    android:text="@string/str_more"
+	    style="@style/card_name_style"
+	    android:textSize="@dimen/sp_12"
+	    android:background="@drawable/left_item_click_selector"
+	    />
+</LinearLayout>

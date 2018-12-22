@@ -1,0 +1,12 @@
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+set_prop(mtkfusionrild, persist_mtk_main_attach)
+# For MultiSim dynamic switch
+set_prop(mtkfusionrild, usp_prop)
+# For eMBMS
+typeattribute mtkfusionrild mlstrustedsubject, mtkimsapdomain;
+
+# For RIL VT to use socket
+allow mtkfusionrild cdma_prop:property_service set;

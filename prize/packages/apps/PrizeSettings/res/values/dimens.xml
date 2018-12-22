@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <dimen name="match_parent">-1px</dimen>
+
+    <dimen name="device_memory_usage_button_width">16dip</dimen>
+    <dimen name="device_memory_usage_button_height">32dip</dimen>
+    <dimen name="action_bar_switch_padding">16dip</dimen>
+
+    <dimen name="battery_app_icon_size">40dp</dimen>
+    <dimen name="app_icon_size">56dip</dimen>
+    <dimen name="screen_margin_sides">64dip</dimen>
+    <dimen name="screen_margin_top">72dip</dimen>
+    <dimen name="screen_margin_bottom">48dip</dimen>
+    <dimen name="content_margin_left">16dip</dimen>
+    <dimen name="description_margin_top">26dip</dimen>
+    <dimen name="description_margin_sides">40dip</dimen>
+    <dimen name="bind_app_widget_dialog_checkbox_bottom_padding">16dip</dimen>
+    <dimen name="installed_app_details_bullet_offset">8dip</dimen>
+
+    <dimen name="battery_history_chart_height">120dp</dimen>
+
+    <dimen name="data_usage_chart_height">228dip</dimen>
+    <dimen name="data_usage_chart_optimalWidth">440dip</dimen>
+
+    <dimen name="volume_seekbar_side_margin">8dip</dimen>
+
+    <dimen name="crypt_clock_size">100sp</dimen>
+
+    <dimen name="setup_margin_bottom">0dip</dimen>
+    <dimen name="setup_title_size">24sp</dimen>
+    <dimen name="setup_title_margin_bottom">16dp</dimen>
+    <!-- This is the extra spacing required to make the leading exactly 32sp -->
+    <dimen name="setup_title_line_spacing_extra">3.67sp</dimen>
+    <dimen name="setup_title_padding_bottom">2dp</dimen>
+     <dimen name="setup_title_padding_top">16dp</dimen>
+    <dimen name="setup_add_network_item_height">56dp</dimen>
+    <!-- Size of padding to give in the wifi list when there is no icon -->
+    <dimen name="setup_list_no_icon_padding">56dp</dimen>
+    <dimen name="setup_add_network_item_height">56dp</dimen>
+    <dimen name="setup_wizard_card_corner_radius">2dp</dimen>
+    <dimen name="setup_preference_icon_frame_margin_start">-4dp</dimen>
+    <dimen name="setup_wizard_card_elevation">5dp</dimen>
+    <dimen name="setup_wizard_tablet_illustration_height">256dp</dimen>
+    <dimen name="setup_wizard_card_title_padding_end">0dp</dimen>
+    <dimen name="setup_wizard_card_title_padding_start">0dp</dimen>
+    <dimen name="setup_wizard_card_title_padding_top">16dp</dimen>
+    <dimen name="setup_preference_icon_frame_padding_end">12dp</dimen>
+    <dimen name="setup_wizard_card_title_padding_bottom">28dp</dimen>
+    <dimen name="setup_wizard_card_port_margin_sides">56dp</dimen>
+    <dimen name="setup_preference_icon_frame_width">60dp</dimen>
+     <dimen name="setup_wizard_card_land_margin_top">128dp</dimen>
+    <dimen name="setup_wizard_margin_top">24dp</dimen>
+    <dimen name="setup_wizard_margin_sides">40dp</dimen>
+    <dimen name="setup_wizard_title_area_elevation">3dp</dimen>
+
+    <dimen name="divider_height">3dip</dimen>
+    <dimen name="divider_margin_top">6dip</dimen>
+    <dimen name="divider_margin_bottom">7dip</dimen>
+    <dimen name="vert_divider_width">1dip</dimen>
+
+    <!--  Size of icons in the top-level of settings  -->
+    <dimen name="header_icon_width">28dp</dimen>
+    <dimen name="appwidget_min_width">280dip</dimen>
+    <dimen name="appwidget_min_height">40dip</dimen>
+
+    <dimen name="pager_tabs_padding">0dp</dimen>
+    <dimen name="pager_tabs_title_padding">16dp</dimen>
+    <dimen name="pager_tabs_selected_indicator_height">3dp</dimen>
+
+    <dimen name="circle_avatar_size">48dp</dimen>
+    <dimen name="circle_avatar_frame_stroke_width">1dp</dimen>
+    <dimen name="circle_avatar_frame_shadow_radius">3dp</dimen>
+
+    <!-- Minimum width for the popup for updating a user's photo. -->
+    <dimen name="update_user_photo_popup_min_width">300dip</dimen>
+
+    <dimen name="captioning_preview_height">200dp</dimen>
+
+    <dimen name="settings_side_margin">0dip</dimen>
+
+    <!-- Weight of the left pane in a multi-pane preference layout. -->
+    <integer name="preferences_left_pane_weight">4</integer>
+    <!-- Weight of the right pane in a multi-pane preference layout. So the split is 40:60 -->
+    <integer name="preferences_right_pane_weight">6</integer>
+
+    <dimen name="notification_app_icon_size">37dp</dimen>
+    <dimen name="notification_app_icon_badge_size">20dp</dimen>
+    <dimen name="notification_app_icon_badge_margin">4dp</dimen>
+    <!--prize-huangdianjun-20151027-start-->
+    <dimen name="floatwindow_app_icon_size">37dp</dimen>
+    <!--prize-huangdianjun-20151027-end-->
+     <dimen name="zen_downtime_checkbox_padding">7dp</dimen>
+    <dimen name="zen_schedule_rule_checkbox_padding">7dp</dimen>
+    <dimen name="zen_downtime_margin">17dp</dimen>
+    <dimen name="zen_schedule_day_margin">17dp</dimen>
+
+    <!-- Default text size for caption preview samples. Uses dp rather than sp because captions are not scaled. -->
+    <dimen name="caption_preview_text_size">48dp</dimen>
+
+    <!-- ActionBar height -->
+    <!-- <dimen name="actionbar_size">56dip</dimen> -->
+	<dimen name="actionbar_size">40dip</dimen>
+
+    <!-- ActionBar contentInsetStart -->
+    <dimen name="actionbar_contentInsetStart">16dp</dimen>
+    <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
+
+    <!-- Dashboard margins between each tiles within the layout -->
+    <dimen name="dashboard_cell_gap_x">0dp</dimen>
+    <dimen name="dashboard_cell_gap_y">0dp</dimen>
+
+    <!-- Dashboard padding in its container -->
+    <dimen name="dashboard_padding_start">0dp</dimen>
+    <dimen name="dashboard_padding_end">0dp</dimen>
+    <dimen name="dashboard_padding_top">0dp</dimen>
+    <dimen name="dashboard_padding_bottom">0dp</dimen>
+
+    <!-- Dashboard Header margin in its container -->
+    <dimen name="dashboard_header_margin_start">0dp</dimen>
+    <dimen name="dashboard_header_margin_end">0dp</dimen>
+    <!-- Dashboard category padding start / end -->
+    <dimen name="dashboard_category_padding_start">0dp</dimen>
+    <dimen name="dashboard_category_padding_end">0dp</dimen>
+
+    <!-- Dashboard category panel elevation -->
+    <dimen name="dashboard_category_elevation">4dp</dimen>
+
+    <!-- Dashboard category layout height -->
+    <dimen name="dashboard_category_height">48dp</dimen>
+    
+    <!-- Dashboard category title layout height -->
+    <dimen name="dashboard_category_title_height">48dp</dimen>
+    <!-- add by liuweiquan for v7 20160720 start -->
+    <dimen name="dashboard_category_title_height_prize">30dp</dimen>
+    <dimen name="dashboard_category_height_prize">30dp</dimen>
+    <dimen name="dashboard_category_title_margin_start_prize">13dp</dimen>
+    <dimen name="dashboard_category_title_margin_end_prize">13dp</dimen>
+    <dimen name="dashboard_category_title_textsize">12sp</dimen>
+	<!-- add by liuweiquan for v7 20160720 end -->
+
+    <!-- Dashboard category title margin start -->
+    <dimen name="dashboard_category_title_margin_start">16dp</dimen>
+
+    <!-- Dashboard tile minimum height -->
+    <dimen name="dashboard_tile_minimum_height">72dp</dimen>
+    <!-- <dimen name="dashboard_tile_minimum_height_prize">72dp</dimen> -->
+	
+    <!-- Dashboard image tile size -->
+	
+
+    <!-- <dimen name="dashboard_tile_image_size">20dp</dimen> -->
+    <dimen name="dashboard_tile_image_size">28dp</dimen>
+	<dimen name="prize_dashboard_tile_textsize">15sp</dimen>
+    <!-- <dimen name="prize_dashboard_tile_textsize">14sp</dimen> -->
+    
+
+    <!-- Dashboard tile image margin start / end -->
+    <dimen name="dashboard_tile_image_margin_start">16dp</dimen>
+    <dimen name="dashboard_tile_image_margin_end">32dp</dimen>
+    <dimen name="suggestion_arrow_margin">16dp</dimen>
+
+    <!-- SwitchBar margin start / end -->
+    <dimen name="switchbar_margin_start">16dp</dimen>
+    <dimen name="switchbar_margin_end">7dp</dimen>
+
+    <!-- SwitchBar sub settings margin start / end -->
+    <dimen name="switchbar_subsettings_margin_start">72dp</dimen>
+    <dimen name="switchbar_subsettings_margin_end">7dp</dimen>
+
+    <!-- Search Panel elevation -->
+    <dimen name="search_panel_elevation">4dp</dimen>
+
+    <!-- Search title (recent / results) padding start -->
+    <dimen name="search_title_padding_start">12dp</dimen>
+
+    <!-- Result item image size -->
+    <dimen name="search_result_item_image_size">24dp</dimen>
+
+    <!-- Result item image margin start / end -->
+    <dimen name="search_result_item_image_margin_start">12dp</dimen>
+    <!-- <dimen name="search_result_item_image_margin_end">32dp</dimen> -->
+    <dimen name="search_result_item_image_margin_end">13dp</dimen>
+
+    <!-- Suggestion item image size -->
+    <dimen name="search_suggestion_item_image_size">24dp</dimen>
+
+    <!-- Suggestion item image margin start / end -->
+    <dimen name="search_suggestion_item_image_margin_start">32dp</dimen>
+    <dimen name="search_suggestion_item_image_margin_end">16dp</dimen>
+
+    <!-- Dimensions for Wifi Assistant Card -->
+    <dimen name="wifi_assistant_padding_top_bottom">16dp</dimen>
+    <dimen name="wifi_assistant_padding_start_end">16dp</dimen>
+    <dimen name="wifi_assistant_padding">25dp</dimen>
+    <dimen name="wifi_assistant_text_padding">16dp</dimen>
+    <dimen name="wifi_assistant_height">182dp</dimen>
+    <dimen name="wifi_assistant_image_top">32dp</dimen>
+    <dimen name="wifi_assistant_image_start">24dp</dimen>
+
+    <!-- CryptKeeper top margin for password/pin screen -->
+    <dimen name="crypt_keeper_password_top_margin">88dip</dimen>
+
+    <!-- CryptKeeper top margin for pattern screen -->
+    <dimen name="crypt_keeper_pattern_top_margin">88dip</dimen>
+
+    <!-- CryptKeeper password/pin width -->
+    <dimen name="crypt_keeper_password_width">280dip</dimen>
+
+    <!-- CryptKeeper emergency call button dimensions -->
+    <dimen name="crypt_keeper_emergency_call_space_above">16dip</dimen>
+
+    <!-- CryptKeeper edit text ime icon padding -->
+    <dimen name="crypt_keeper_edit_text_ime_padding">8dip</dimen>
+
+    <!-- CryptKeeper pattern margin on phone -->
+    <dimen name="crypt_keeper_pattern_margin">8dip</dimen>
+
+    <!-- CryptKeeper pattern size for tablet -->
+    <dimen name="crypt_keeper_pattern_size">354dip</dimen>
+
+    <!-- Screen pinning textview paddings -->
+    <dimen name="screen_pinning_textview_padding">20dp</dimen>
+
+    <!-- SIM Dialog Margin top -->
+    <dimen name="sim_dialog_margin_top">8dip</dimen>
+    <!-- SIM Dialog Margin bottom -->
+    <dimen name="sim_dialog_margin_bottom">16dip</dimen>
+    <!-- SIM Dialog padding -->
+    <dimen name="sim_dialog_padding">8dip</dimen>
+    <dimen name="sim_label_padding">16dip</dimen>
+    <dimen name="sim_content_padding">24dip</dimen>
+    <!-- Sim Card Name length -->
+    <integer name="sim_name_length">32</integer>
+
+    <!-- Height of a user icon view -->
+    <dimen name="user_icon_view_height">56dp</dimen>
+    <!-- User spinner -->
+    <dimen name="user_spinner_height">72dp</dimen>
+    <dimen name="user_spinner_padding">8dp</dimen>
+    <dimen name="user_spinner_padding_sides">20dp</dimen>
+    <dimen name="user_spinner_item_height">56dp</dimen>
+
+    <!-- CheckBoxPreference -->
+    <dimen name="checkbox_widget_min_width">58dip</dimen>
+    <dimen name="checkbox_layout_padding">16dip</dimen>
+
+    <!-- Bluetooth Preferences -->
+    <dimen name="bluetooth_dialog_padding">8dip</dimen>
+    <integer name="bluetooth_name_length">32</integer>
+    <dimen name="bluetooth_pairing_padding">24dp</dimen>
+    <dimen name="bluetooth_pairing_edittext_padding">21dp</dimen>
+    <dimen name="bluetooth_checkbox_padding">16dp</dimen>
+
+    <!-- WiFi Preferences -->
+    <dimen name="wifi_divider_height">1px</dimen>
+    <dimen name="wifi_preference_badge_padding">8dip</dimen>
+
+    <!-- Color picker -->
+    <dimen name="color_swatch_size">16dp</dimen>
+    <dimen name="color_swatch_stroke_width">4dp</dimen>
+
+    <!-- RedactionInterstitial -->
+    <dimen name="redaction_vertical_margins">8dp</dimen>
+
+    <!-- Fingerprint -->
+    <dimen name="fingerprint_ring_radius">92dip</dimen>
+    <dimen name="fingerprint_ring_thickness">4dip</dimen>
+    <dimen name="fingerprint_dot_radius">8dp</dimen>
+    <dimen name="fingerprint_pulse_radius">50dp</dimen>
+    <item name="fingerprint_sensor_location_fraction_x" type="fraction">50%</item>
+    <item name="fingerprint_sensor_location_fraction_y" type="fraction">30%</item>
+    <dimen name="fingerprint_find_sensor_graphic_size">190dp</dimen>
+    <item name="fingerprint_illustration_aspect_ratio" format="float" type="dimen">2.6</item>
+    <dimen name="fingerprint_decor_padding_top">0dp</dimen>
+    <dimen name="fingerprint_error_text_appear_distance">16dp</dimen>
+    <dimen name="fingerprint_error_text_disappear_distance">-8dp</dimen>
+    <dimen name="fingerprint_animation_size">88dp</dimen>
+    <dimen name="fingerprint_progress_bar_size">192dp</dimen>
+    <dimen name="fingerprint_enrolling_header_margin_top">50dp</dimen>
+    <dimen name="fingerprint_enrolling_content_margin_top">36dp</dimen>
+    <dimen name="fingerprint_in_app_indicator_size">120dp</dimen>
+    <dimen name="fingerprint_in_app_indicator_min_size">124dp</dimen>
+    <dimen name="fingerprint_in_app_indicator_max_size">264dp</dimen>
+
+    <dimen name="setup_fingerprint_ring_radius">80dip</dimen>
+    <dimen name="setup_fingerprint_progress_bar_size">168dp</dimen>
+
+    <dimen name="confirm_credentials_security_method_margin">48dp</dimen>
+    <dimen name="confirm_credentials_layout_width">@dimen/match_parent</dimen>
+    <dimen name="confirm_credentials_top_padding">0dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_elevation">12dp</dimen>
+    <dimen name="fab_press_translation_z">9dp</dimen>
+
+    <!-- Delete managed profile dialog -->
+    <dimen name="delete_profile_dialog_padding_top">16dp</dimen>
+    <dimen name="delete_profile_dialog_padding_left_right">24dp</dimen>
+    <dimen name="mdm_app_info_height">72dp</dimen>
+    <dimen name="mdm_app_info_padding_top_bottom">8dp</dimen>
+    <dimen name="mdm_app_name_padding_left">16dp</dimen>
+    <dimen name="mdm_app_icon_width_height">56dp</dimen>
+
+    <dimen name="shortcut_size">40dp</dimen>
+    <dimen name="badge_size">10dp</dimen>
+
+    <!-- Admin support contact details dialog. -->
+    <dimen name="admin_details_dialog_padding">24dp</dimen>
+    <dimen name="admin_details_dialog_icon_size">48dp</dimen>
+    <dimen name="admin_details_dialog_link_padding_top">36dp</dimen>
+
+    <!-- Button bar padding for unmount button. -->
+    <dimen name="unmount_button_padding">8dp</dimen>
+
+    <!-- Display, Screen zoom -->
+    <dimen name="screen_zoom_preview_app_icon_width">88dp</dimen>
+    <dimen name="conversation_message_list_padding">10dp</dimen>
+    <dimen name="conversation_message_contact_icon_text_size">32sp</dimen>
+    <dimen name="conversation_message_text_size">16sp</dimen>
+    <dimen name="conversation_status_text_size">12sp</dimen>
+    <dimen name="conversation_bubble_width_snap">20dp</dimen>
+    <dimen name="message_bubble_arrow_width">9dp</dimen>
+    <dimen name="message_padding_default">18dp</dimen>
+    <dimen name="message_text_left_right_padding">14dp</dimen>
+    <dimen name="message_text_top_padding">10dp</dimen>
+    <dimen name="message_text_bottom_padding">12dp</dimen>
+    <dimen name="message_metadata_top_padding">4dp</dimen>
+
+    <!-- Accessibility Settings -->
+    <dimen name="accessibility_layout_margin_start_end">24dp</dimen>
+    <dimen name="accessibility_button_preference_padding_top_bottom">18dp</dimen>
+
+    <!-- Accessibility, Screen magnification. These values are meant to be relative values and the actual layout value will be set programmatically. -->
+    <dimen name="screen_magnification_video_background_width">750dp</dimen>
+    <dimen name="screen_magnification_video_background_height">383dp</dimen>
+    <dimen name="screen_magnification_video_width">170dp</dimen>
+    <dimen name="screen_magnification_video_height">311dp</dimen>
+    <dimen name="screen_magnification_video_margin_top">40dp</dimen>
+
+    <!-- Restricted icon in switch bar -->
+    <dimen name="restricted_icon_margin_end">16dp</dimen>
+
+    <!-- Display Size and Font Size preview screen -->
+    <dimen name="preview_pager_padding">8dp</dimen>
+
+    <!-- Padding between the radio buttons/checkbox and text on the redaction interstitial -->
+    <dimen name="redaction_padding_start">16dp</dimen>
+
+    	<!-- add for shortcut display. prize-linkh-20150529 -->
+	<dimen name="shortcut_gridview_vertical_spacing">30dp</dimen>
+	<dimen name="shortcut_gridview_padding_top">20dp</dimen>
+	<dimen name="shortcut_gridview_padding_bottom">20dp</dimen>
+	<dimen name="gestures_settings_padding_top_bottom">20dp</dimen>
+	<dimen name="gestures_play_button_size">36dp</dimen>
+   	 <dimen name="gesture_animation_padding">0dp</dimen>
+	 <!-- Support tile minimum height -->
+    <dimen name="support_tile_min_height">48dp</dimen>
+    <dimen name="support_spacer_height">8dp</dimen>
+     <dimen name="password_requirement_textsize">14sp</dimen>
+     <dimen name="visible_vertical_space_below_password">20sp</dimen>
+	<!-- Add for shengdianguanli by zhudaopeng 2016-04-26 Start -->
+	<dimen name="power_master_actionbar_contentInsetStart">0dp</dimen>
+	<dimen name="power_master_actionbar_contentInsetEnd">0dp</dimen>
+	<!-- <dimen name="front_super_big_size">64sp</dimen> -->
+	<dimen name="front_super_big_size">100sp</dimen>
+    <dimen name="front_big_size">16sp</dimen>
+    <dimen name="front_normal_size">14sp</dimen>
+    <dimen name="front_small_size">12sp</dimen>
+	<!-- Add for shengdianguanli by zhudaopeng 2016-04-26 End -->
+	<!--v7.0-liuweiquan-20160707-start-->
+	<dimen name="arrow_right_margin">8dp</dimen>
+	<dimen name="dashboard_tile_minimum_height_prize">48dp</dimen>
+	<dimen name="dashboard_tile_divider_prize">332dp</dimen>
+	<dimen name="dashboard_tile_image_margin_start_prize">14dp</dimen>
+	<dimen name="dashboard_tile_image_margin_end_prize">14dp</dimen>
+	<dimen name="actionbar_height_prize">40dp</dimen>
+	<dimen name="switchbar_title_textsize_prize_v7">14sp</dimen>
+	<dimen name="switchbar_title_paddingleft">16dp</dimen>
+	<dimen name="preference_margin_start_prize">13dp</dimen>
+	<dimen name="preference_margin_end_prize">13dp</dimen>
+	<dimen name="brightness_seekbarleft_margin_start">27dp</dimen>
+	<dimen name="brightness_seekbarright_margin_end">20dp</dimen>
+	<dimen name="brightness_seekbar_preference_min_height">66dp</dimen>
+	<dimen name="padding_default_prize">15dp</dimen>
+	<dimen name="gridview_Spacing_prize">3dp</dimen>
+	<dimen name="gridview_paddingtop_prize">10dp</dimen>
+	<!--v7.0-liuweiquan-20160707-end-->
+
+    <!-- PRIZE-Change-M_PINLock-wangzhong-2016_6_28-start -->
+    <dimen name="default_text_size">28sp</dimen>
+    <dimen name="default_button_size">60dp</dimen>
+    <dimen name="default_delete_button_size">30dp</dimen>
+    <dimen name="default_horizontal_spacing">0.5dp</dimen>
+    <dimen name="default_vertical_spacing">0.5dp</dimen>
+
+    <dimen name="default_dot_diameter">10dp</dimen>
+    <dimen name="default_dot_spacing">10dp</dimen>
+    <!-- PRIZE-Change-M_PINLock-wangzhong-2016_6_28-end -->
+    <!-- Add by zhudaopeng at 2016-11-11 Start -->
+    <dimen name="prize_ownerinfo_button_width">160dp</dimen>
+	<dimen name="prize_ownerinfo_button_height">42dp</dimen>
+	
+	<dimen name="prize_preference_summary_textsize">12sp</dimen>
+	<dimen name="prize_switchbar_title_textsize">16sp</dimen>
+	<dimen name="prize_cpu_core_preference_height">105dp</dimen>
+	<dimen name="prize_cpu_core_preference_paddingleft">16dip</dimen>
+	<dimen name="prize_settings_progress_large_width">35dp</dimen>
+	<dimen name="prize_settings_progress_large_height">35dp</dimen>
+	<dimen name="prize_app_notification_header_textsize">16sp</dimen>
+	<dimen name="prize_cpu_core_divider">5dp</dimen>
+	<!-- Add by zhudaopeng at 2016-11-11 end -->
+	  <!-- Add by lijimeng at 2017-07-19 Start -->
+	<dimen name="prize_preferencefragment_card_magintop">12dp</dimen>
+	<dimen name="prize_preferencefragment_card_maginbottom">12dp</dimen>
+	<dimen name="prize_preferencefragment_card_maginleft">6dp</dimen>
+	<dimen name="prize_preferencefragment_card_maginright">6dp</dimen>
+	<dimen name="prize_preferencefragment_card_radius">4dp</dimen>
+	<dimen name="prize_dashboardcategory_card_maginbottom">12dp</dimen>
+	  
+	<dimen name="prize_preferencefragment_dividerlines_maginleft">14dp</dimen>
+	<dimen name="prize_preferencefragment_dividerlines_maginright">14dp</dimen>
+	  
+	<dimen name="prize_search_textsize">12sp</dimen>
+	   
+	<dimen name="prize_preferencefragment_padding_start">14dp</dimen>
+	<dimen name="prize_preferencefragment_pading_end">14dp</dimen>
+	<dimen name="prize_text_size_small">12sp</dimen>
+	<dimen name="prize_preference_datatime_title_textsize">15sp</dimen>
+	   
+	<dimen name="prize_preference_logo_margintop">75dp</dimen>
+	<dimen name="prize_preference_logo_marginbottom">90dp</dimen>
+	
+	<dimen name="prize_list_icon_item_minhight">61dp</dimen>
+	<dimen name="prize_screen_margin_sides">17dp</dimen>
+	<dimen name="prize_preference_summry_textsize">13sp</dimen>
+	<dimen name="prize_preference_title_textsize">15sp</dimen>
+	 <!-- Add by lijimeng at 2017-07-19 end -->
+	<!-- prize-add-v8.0_wallpaper-yangming-2017_7_20-start-->
+	<dimen name="text_size_small">12sp</dimen>
+	<dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="online_wallpaper_button_height">50dp</dimen>
+	<!-- prize-add-v8.0_wallpaper-yangming-2017_7_20-end -->
+
+    <!-- start...  Nav bar color customized feature. prize-linkh-2017.07.11 -->
+    <dimen name="select_margin_left">18dp</dimen>
+    <!-- Created by prize-zhaojian -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">30dp</dimen>
+    <dimen name="activity_vertical_margin">30dp</dimen>
+
+    <dimen name="activity_corner_radius">10dp</dimen>
+    <dimen name="recent_circle_stroke">2px</dimen>
+    <dimen name="recent_circle_size">27dp</dimen>
+    <dimen name="cancel_button_radius">20dp</dimen>
+    <dimen name="cancel_button_stroke">1px</dimen>
+    <dimen name="confirm_button_radius">20dp</dimen>
+    <dimen name="confirm_button_stroke">1px</dimen>
+    <dimen name="current_new_view_width">80dp</dimen>
+    <dimen name="current_new_view_height">25dp</dimen>
+    <dimen name="color_picker_view_height">350dp</dimen>
+    <dimen name="recent_ll_height">31dp</dimen>
+    <dimen name="recent_view_width">31dp</dimen>
+    <dimen name="recent_view_height">31dp</dimen>
+    <dimen name="recent_view_margin_left">18dp</dimen>
+    <dimen name="cancel_confirm_button_height">80dp</dimen>
+    <dimen name="cancel_button_height">40dp</dimen>
+    <dimen name="confirm_button_height">40dp</dimen>
+    <dimen name="cancel_text_size">15sp</dimen>
+    <dimen name="confirm_text_size">15sp</dimen>
+    <dimen name="background_text_size">15sp</dimen>
+    <!-- END..Nav bar color customized feature. -->
+
+    <dimen name="face_show_text_marginTop">550dp</dimen>
+    <dimen name="face_show_text2_marginTop">570dp</dimen>
+    <dimen name="face_button_view_height">20dp</dimen>
+    <dimen name="addface_bt_mt">30dp</dimen>
+    <dimen name="prize_searchvire_right_padding">4dp</dimen>
+    <dimen name="prize_notification_item_minheight">73dp</dimen>
+    <!--prize-modify-by-lijimeng-for bugid 51870-20180319-start-->
+    <dimen name="prize_draw_current_values">80dp</dimen>
+    <dimen name="prize_hours_select_wheel_height">215dp</dimen>
+    <dimen name="prize_time_dialog_height">349dp</dimen>
+    <!--prize-modify-by-lijimeng-for bugid 51870-20180319-end-->
+</resources>

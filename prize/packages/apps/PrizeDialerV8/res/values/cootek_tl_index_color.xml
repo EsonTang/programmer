@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--lifeservice-->
+
+
+    <color name="tl_index_griditem_bgcolor_pressed">#ebeaea</color>
+
+
+    <!-- city -->
+
+
+    <!--functional -->
+    <color name="wallet_color">#ee5956</color>
+    <color name="cash_color">#f6730a</color>
+    <color name="voip_color">#22a149</color>
+    <color name="traffic_color">#ff9000</color>
+</resources>

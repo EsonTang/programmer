@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrizeAnimationActivity" 
+    android:background="#FF000000"
+    android:gravity="center">
+
+<com.android.settings.PrizeShowAnimationView
+	 android:id="@+id/empty"
+        android:layout_width="280dip"
+        android:layout_height="280dip"
+        android:gravity="center"
+/>
+<!--
+    <ImageView
+        android:id="@+id/empty"
+        android:layout_width="280dip"
+        android:layout_height="280dip"
+        android:gravity="center"
+        android:scaleType="center"/>
+-->
+</RelativeLayout>

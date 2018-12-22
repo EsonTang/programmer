@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    android:orientation="vertical" 
+    >
+       <!--  android:background="@color/lyric_background" -->
+
+    <FrameLayout
+        android:id="@+id/player_frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lyricshow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@color/transparent"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/lyric_Llyt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/lyric_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="15dip"
+                android:text="@string/nolyric_pl_download"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/lyric_save_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/text_size_micro" 
+                android:visibility="gone"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

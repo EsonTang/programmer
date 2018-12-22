@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_title_marginleft"
+        android:layout_marginTop="@dimen/dialog_title_margintop"
+        android:text="@string/listname"
+        android:textColor="@color/gray_black"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dialog_title_marginbottom"
+        android:background="@drawable/icon_line" />
+
+    <EditText
+        android:id="@+id/dia_rename_edit"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:textColor="@color/gray_black"
+        android:singleLine="true"
+        android:maxLength="30"
+        android:gravity="bottom"
+        android:textSize="@dimen/text_size_small"
+        android:text="@string/new_play_list"
+        android:background="@null"
+        android:paddingLeft="47dp"
+        android:hint="@string/input_list_name"
+        android:textColorHint="@color/edittext_hint"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:background="@drawable/dialog_edit_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/dialog_secondline_marginleft"
+        android:layout_marginRight="@dimen/dialog_secondline_marginright"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/icon_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="@dimen/dialog_bottomlinearlayout_margintop"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/dia_rename_neg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/edit_sure"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cancel_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_small" />
+
+        <Button
+            android:id="@+id/dia_rename_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sure_selector"
+            android:text="@string/confirm"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

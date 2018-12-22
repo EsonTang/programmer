@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:visibility="invisible"
+        android:id="@+id/custom_aas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/prize_card_layout_padding_top"
+        android:layout_marginEnd="@dimen/prize_card_layout_padding_left_right"
+        android:layout_marginStart="@dimen/prize_card_layout_padding_left_right"
+        android:layout_marginTop="@dimen/prize_card_layout_padding_top"
+        android:background="@drawable/prize_card_layout_bg_normal"
+        android:divider="@null" />
+
+    <!--
+         prize-add  visibility、divider、background、layout_marginTop、layout_marginBottom、layout_marginStart、layout_marginEnd
+    		 for dido os8.0-hpf-2017-8-23
+    -->
+
+
+    <!-- prize-add for dido os8.0-hpf-2017-8-23-start -->
+
+    <RelativeLayout
+        android:id="@+id/prize_bottom_delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_bottom_button_shadow_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/prize_bottom_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/prize_bottom_button_shadow_height"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/prize_upper_shadow" />
+
+        <LinearLayout
+            android:id="@+id/delete_contacts_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_floating_action_button_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/prize_bottom_button_bg_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/delete_contacts_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:src="@drawable/prize_callrecords_delete_dark" />
+
+            <TextView
+                android:id="@+id/delet_contacts_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:text="@string/prize_contacts_delete_text_string"
+                android:textColor="@drawable/prize_selector_text_color_btn"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- prize-add for dido os8.0-hpf-2017-8-23-end -->
+
+</RelativeLayout>

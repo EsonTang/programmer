@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/set_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/login_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_item_height"
+                android:layout_marginLeft="@dimen/h_padding"
+                android:layout_marginRight="@dimen/h_padding"
+                android:gravity="center_vertical"
+                android:text="@string/login"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:textSize="@dimen/textsize_medium" >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/h_padding"
+                android:layout_marginRight="@dimen/h_padding"
+                android:background="@color/prize_line" >
+            </View>
+
+            <TextView
+                android:id="@+id/regist_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_item_height"
+                android:layout_marginLeft="@dimen/h_padding"
+                android:layout_marginRight="@dimen/h_padding"
+                android:gravity="center_vertical"
+                android:text="@string/regist"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:textSize="@dimen/textsize_medium" >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/h_padding"
+                android:layout_marginRight="@dimen/h_padding"
+                android:background="@color/prize_line" >
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginLeft="@dimen/h_padding"
+                android:layout_marginRight="@dimen/h_padding"
+                android:background="@drawable/login_selector"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textColor="@color/prize_text_default"
+                android:textSize="@dimen/textsize_medium" />
+
+            <TextView
+                android:id="@+id/skip_id"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="@dimen/skip_padding"
+                android:text="@string/skip"
+                android:textColor="@color/disable"
+                android:textSize="@dimen/textsize_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

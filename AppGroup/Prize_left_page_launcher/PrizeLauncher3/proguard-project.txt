@@ -1,0 +1,266 @@
+-dontwarn android.util.Pools$Pool
+-dontwarn android.util.Pools$SynchronizedPool
+-dontwarn **HoneycombMR2
+-dontwarn **MotionEventCompatEclair
+-dontwarn **VelocityTrackerCompatHoneycomb
+-dontwarn **ViewConfigurationCompatFroyo
+-dontwarn **ActivityCompatHoneycomb
+-dontwarn **MenuCompatHoneycomb
+-dontwarn **gnu.trove.**
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontskipnonpubliclibraryclassmembers
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-dontnote 
+-defaultpackage ''
+-ignorewarnings
+
+-keepattributes *Annotation*
+-keepattributes Signature
+-keepattributes Exceptions
+-keepattributes SourceFile,LineNumberTable 
+
+-keep class android.support.v4.**{*;}  
+-keep interface android.support.v4.app.**{*;}  
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.app.Fragment
+-keep interface android.support.v4.hardware.**{*;}  
+
+-dontshrink  
+-dontoptimize 
+-dontwarn android.support.**
+-dontwarn com.mediatek.**
+-dontwarn rx.**
+-dontwarn org.codehaus.jackson.**
+-dontwarn rx.android.**
+-dontwarn com.google.gson.**
+
+-dontwarn com.baidu.mapapi.**  
+-dontwarn com.baidu.platform.**  
+-dontwarn com.baidu.location.**  
+-dontwarn com.baidu.vi.** 
+-dontwarn org.codehaus.jackson.map.**
+
+-keep class !com.prize.cloud.** {*;}
+-keepnames class * implements java.io.Serializable
+-keepclassmembers class * extends android.database.sqlite.SQLiteOpenHelper{
+	void onCreate(android.database.sqlite.SQLiteDatabase );
+	void onUpgrade(android.database.sqlite.SQLiteDatabase , int , int );
+	void onDowngrade(android.database.sqlite.SQLiteDatabase , int , int );
+}
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keep public class * extends android.view.View {  
+    public <init>(android.content.Context);  
+    public <init>(android.content.Context, android.util.AttributeSet);  
+    public <init>(android.content.Context, android.util.AttributeSet, int);  
+    public void set*(...);  
+}  
+
+-libraryjars ./libs/android-support-v4.jar
+-libraryjars ./libs/locSDK_6.13.jar
+-libraryjars ./libs/lqthemeupdater.jar
+-libraryjars ./libs/mid-mid-sdk-2.3.jar
+-libraryjars ./libs/mta-android-stat-sdk-2.1.0.jar
+-libraryjars ./libs/pinyin4j-2.5.0.jar
+-libraryjars ./libs/pushservice-4.5.5.77.jar
+-libraryjars ./libs/volley.jar
+-libraryjars ./lib/android-support-v13_intermediates.jar
+#-libraryjars ./libs/armeabi/liblocSDK6a.so
+#-libraryjars ./libs/armeabi-v7a/liblocSDK6a.so
+#-libraryjars ./lib/core_intermediates.jar
+#-libraryjars ./lib/framework.jar
+#-libraryjars ./lib/mediatek-common_intermediates.jar
+#-libraryjars ./lib/mediatek-framework_intermediates.jar
+
+
+-keep class com.android.launcher3.CellLayout {
+  public float getBackgroundAlpha();
+  public void setBackgroundAlpha(float);
+}
+
+-keep class com.android.launcher3.BubbleTextView { *;}
+
+-keep class com.android.launcher3.DragLayer$LayoutParams {
+  public void setWidth(int);
+  public int getWidth();
+  public void setHeight(int);
+  public int getHeight();
+  public void setX(int);
+  public int getX();
+  public void setY(int);
+  public int getY();
+}
+
+-keep class com.android.launcher3.CellLayout$LayoutParams {
+  public void setWidth(int);
+  public int getWidth();
+  public void setHeight(int);
+  public int getHeight();
+  public void setX(int);
+  public int getX();
+  public void setY(int);
+  public int getY();
+}
+
+-keep class com.android.launcher3.Launcher$PackageDeleteObserver {
+ *;
+ }
+
+-keep class com.android.launcher3.Workspace {
+  public float getBackgroundAlpha();
+  public void setBackgroundAlpha(float);
+  public float getChildrenOutlineAlpha();
+  public void setChildrenOutlineAlpha(float);
+}
+
+-keep class com.android.launcher3.MemoryDumpActivity {
+  *;
+}
+
+-keepclassmembers class * implements android.os.Parcelable {  
+    static ** CREATOR;  
+}  
+
+# 保持 native 方法不被混淆
+-keepclasseswithmembernames class * {                                        
+    native <methods>;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+-keepclassmembers class * {  
+    @android.webkit.JavascriptInterface <methods>;  
+} 
+
+-keepnames class * implements java.io.Serializable  
+-keepclassmembers class * implements java.io.Serializable {  
+    static final long serialVersionUID;  
+    private static final java.io.ObjectStreamField[] serialPersistentFields;  
+    !static !transient <fields>;  
+    private void writeObject(java.io.ObjectOutputStream);  
+    private void readObject(java.io.ObjectInputStream);  
+    java.lang.Object writeReplace();  
+    java.lang.Object readResolve();  
+}
+
+-keepclassmembers class fqcn.of.javascript.interface.for.webview {  
+   public *;  
+}  
+
+-keepclassmembers enum * { 
+    public static **[] values(); 
+    public static ** valueOf(java.lang.String); 
+}
+
+# # -------------------------------------------
+# #  ############### volley混淆  ############### 
+# # -------------------------------------------
+-keep class com.android.volley.** {*;}
+-keep class com.android.volley.toolbox.** {*;}
+-keep class com.android.volley.Response$* { *; }
+-keep class com.android.volley.Request$* { *; }
+-keep class com.android.volley.RequestQueue$* { *; }
+-keep class com.android.volley.toolbox.HurlStack$* { *; }
+-keep class com.android.volley.toolbox.ImageLoader$* { *; }
+
+-dontwarn net.soureceforge.pinyin4j.**
+-dontwarn demo.**
+-keep class net.sourceforge.pinyin4j.** { *;}
+-keep class demo.** { *;}
+
+# # -------------------------------------------
+# #  ############### 郎趣混淆  ############### 
+# # -------------------------------------------
+-keep class com.lqsoft.LqServiceUpdater.** {*;}
+-keep class com.lqsoft.LqServiceUpdater.commons.context.** {*;}
+-keep class com.lqsoft.LqServiceUpdater.modules.lqtheme.** {*;}
+-keep class com.lqsoft.LqServiceUpdater.utils.** {*;}
+-keep class com.lqsoft.theme.filter.** {*;}
+-keep class theme.content.res.** {*;}
+
+-keep class com.prize.cloud.** {*;}
+-keep class jp.wasabeef.recyclerview.** {*;}
+-keep class com.prize.cloud.** {*;}
+-keep class android.backport.webp.** {*;}
+-keep class com.prize.left.page.** {*;}
+
+-keep class com.android.launcher3.Launcher {
+  *;
+}
+
+-keep public class org.xutils.** {
+    public protected *;
+}
+-keep public interface org.xutils.** {
+    public protected *;
+}
+-keepclassmembers class * extends org.xutils.** {
+    public protected *;
+}
+-keepclassmembers class * extends org.xutils.http.RequestParams {*;}
+-keepclassmembers class * {
+   void *(android.view.View);
+   *** *Click(...);
+   *** *Event(...);
+}
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keepattributes *Annotation*
+-keep class * extends java.lang.annotation.Annotation { *; }
+
+##---------------Begin: proguard configuration for Gson  ----------
+# Gson uses generic type information stored in a class file when working with fields. Proguard
+# removes such information by default, so configure it to keep all of it.
+-keepattributes Signature
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.examples.android.model.** { *; } 
+-keep class com.google.gson.** { *;}
+
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.antew.redditinpictures.library.imgur.** { *; }
+-keep class com.antew.redditinpictures.library.reddit.** { *; }
+
+##---------------End: proguard configuration for Gson  ----------
+## tencent mta start## 
+-keep class com.tencent.stat.**  {* ;}
+-keep class com.tencent.mid.**  {* ;}
+## tencent mta end##
+# #-keep class com.android.launcher3.Launcher {
+# #  public void previousScreen(android.view.View);
+# #  public void nextScreen(android.view.View);
+# #  public void launchHotSeat(android.view.View);
+# #  public void onClickSearchButton(android.view.View);
+# #  public void onClickVoiceButton(android.view.View);
+# #  public void onClickConfigureButton(android.view.View);
+# #  public void onClickAllAppsButton(android.view.View);
+# #  public void onClickAppMarketButton(android.view.View);
+# #  public void dismissFirstRunCling(android.view.View);
+# #  public void dismissWorkspaceCling(android.view.View);
+# #  public void dismissAllAppsCling(android.view.View);
+# #}
+# #

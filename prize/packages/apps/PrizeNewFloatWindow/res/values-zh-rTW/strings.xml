@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Float</string>
+    <string name="title">悬浮球</string>
+    <string name="action_settings">Settings</string>
+    <string name="float_reset">恢復默認設置</string>
+    <string name="functionsetting">功能設置</string>
+    <string name="functionstyle">操作方式</string>
+    <string name="modesetting">模式設置</string>
+    <string name="current_mode_title">當前模式</string>
+    <string name="current_mode_menu">菜單模式</string>
+    <string name="current_mode_quick">手勢模式</string>
+     <string name="float_layout_title">自動隱藏</string>
+     <string name="float_layout_summary">三秒後無操作自動隱藏</string>
+     <string name="abc_capital_off">關閉</string>
+    <string name="abc_capital_on">開啟</string>
+    <string name="quick_setting">手勢設置</string>
+    <string name="menu_setting">菜單設置（點擊圖標）</string>
+    <string name="single_click">單擊</string>
+    <string name="double_click">雙擊</string>
+    <string name="longpress">長按</string>
+    
+    <string name="wxscan">微信掃壹掃</string>
+    <string name="alipayscan">支付寶掃壹掃</string>
+    <string name="wechatpaycode">微信付款碼</string>
+    <string name="alipaypaycode ">支付寶付款碼</string>
+    <string name="wx">微信</string>
+    <string name="alipay">支付寶</string>
+    <string name="scan">掃壹掃</string>
+    <string name="paycode">付款碼</string>
+    <string name="nothing">無</string>
+    <string name="lockscreen">鎖屏</string>
+    <string name="back">返回上壹頁</string>
+    <string name="mainhome">主屏幕</string>
+    <string name="recent">近期任務欄</string>
+    <string name="control">控制中心</string>
+    <string name="screenshot">截圖</string>
+    <string name="xiaoku">小酷機器人</string>
+    <string name="huyan">護眼模式</string>
+    <string name="divide_screen">分屏</string>
+    <string name="gamemode">遊戲模式</string>
+    <string name="gamemode_layout_summary">開啟後，將鎖定Home鍵，避免誤碰導致遊戲退出。</string>
+    <string name="clean">清理加速</string>
+    <string name="float_setting">懸浮球設置</string>
+    <string name="application">應用程序</string>
+    
+    <string name="single_set">單擊設置</string>
+    <string name="double_set">雙擊設置</string>
+    <string name="long_set">長按設置</string>
+    <string name="menu_set">菜單設置</string>
+    
+    
+    
+    <string name="screenshot_failed_to_save_unknown_text">保存屏幕截圖時出現問題。</string>
+    <string name="screenshot_saving_title">正在保存屏幕截圖...</string>
+    <string name="screenshot_saving_text" >正在保存屏幕截圖。</string>
+    <string name="screenshot_failed_to_save_text">由於存儲空間有限，無法保存屏幕截圖。</string>
+    <string name="screenshot_saved_title">已抓取屏幕截圖。</string>
+    <string name="screenshot_saved_text">點按即可查看您的屏幕截圖。</string>
+    <string name="screenshot_failed_to_capture_text">此應用或貴單位不允許進行屏幕截圖。</string>
+    <string name="screenshot_failed_title">無法抓取屏幕截圖。</string>
+    <string name="screenshot_saving_ticker">正在保存屏幕截圖...</string>
+    
+    <string name="prize_game_mode_title">遊戲模式</string>
+    <string name="prize_game_mode_notification_summary">Home鍵已鎖定，點擊進入設置</string>
+    
+    
+    <string name="dialog_chosen_title">請選擇應用</string>
+    <string name="app_uninstall">未安裝</string>
+    <string name="app_alreadyuninstall">應用已卸載</string>
+    <string name="gotomarket">請手動去應用市場下載</string>
+    <string name="chosen_other">快捷啟動已選中該項，請選擇其他功能項。</string>
+    
+    
+</resources>

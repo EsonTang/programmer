@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#394652"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="@dimen/traffic_correction_title_marg"
+        android:layout_weight="1.5"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/return_to_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/prize_return_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/traffic_correction_marg_left"
+            android:text="@string/traffic_control"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/traffic_correction_title_textsize" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/traffic_monitoring_bg" />
+
+        <TextView
+            android:id="@+id/tv_setting_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/setting_location"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/traffic_correction_title_textsize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2.0"
+        android:gravity="center" >
+
+        <CheckBox
+            android:id="@+id/sim1_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sim2_checkbox_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/sim_01" />
+
+        <CheckBox
+            android:id="@+id/sim2_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sim1_checkbox_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/sim_02" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/sim1_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卡1设置" />
+
+        <Button
+            android:id="@+id/sim1_correction"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="卡1校正" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/sim2_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卡2设置" />
+
+        <Button
+            android:id="@+id/sim2_correction"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="卡2校正" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/sim1_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/sim2_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_traffic" />
+
+            <TextView
+                android:id="@+id/today_traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0B" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/split_line" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mothy_traffic" />
+
+            <TextView
+                android:id="@+id/mothy_traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0B" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/split_line" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mothy_traffic_remain" />
+
+            <TextView
+                android:id="@+id/mothy_traffic_remain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0B" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#394652" />
+
+    <RelativeLayout
+        android:id="@+id/traffic_setting"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/traffic_correction_title_marg"
+            android:text="@string/traffic_setting"
+            android:textColor="#394652"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/traffic_correction_title_marg"
+            android:background="@drawable/jumpto_detail_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#394652" />
+
+    <RelativeLayout
+        android:id="@+id/traffic_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/traffic_correction_title_marg"
+            android:text="@string/traffic_details"
+            android:textColor="#394652"
+            android:textSize="20sp" />
+
+        <ImageButton
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/traffic_correction_title_marg"
+            android:background="@drawable/jumpto_detail_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

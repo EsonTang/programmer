@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popwindow_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"/>
+    <!--android:layout_height="@dimen/prize_dialtacts_top_container_height"-->
+
+    <LinearLayout
+        android:id="@+id/prize_popwindow_anim_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#22000000"
+        android:gravity="top"
+        android:layoutAnimation="@anim/prize_calllog_popwindow_layout_anim_in"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_divider_height2"
+                android:layout_marginTop="0dp"
+                android:background="@color/prize_divider_color_gray4"/>
+
+            <TextView
+                android:id="@+id/menu_all_calls"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_dialtacts_top_calllog_item_height"
+                android:background="@drawable/prize_calllog_pop_item_bg_selector"
+                android:gravity="left|center_vertical"
+                android:paddingEnd="@dimen/prize_dialtacts_top_calllog_item_padding2"
+                android:paddingStart="@dimen/prize_dialtacts_top_calllog_item_padding1"
+                android:text="@string/all_calls"
+                android:textAlignment="viewStart"
+                android:textColor="@color/prize_calllog_pop_window_title_color"
+                android:textSize="@dimen/prize_dialtacts_top_calllog_item_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_divider_height2"
+                android:background="@color/prize_divider_color_gray5"/>
+
+            <TextView
+                android:id="@+id/menu_unreceive_calls"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_dialtacts_top_calllog_item_height"
+                android:background="@drawable/prize_calllog_pop_item_bg_selector"
+                android:gravity="left|center_vertical"
+                android:paddingEnd="@dimen/prize_dialtacts_top_calllog_item_padding2"
+                android:paddingStart="@dimen/prize_dialtacts_top_calllog_item_padding1"
+                android:text="@string/unreceive_calls"
+                android:textAlignment="viewStart"
+                android:textColor="@color/prize_calllog_pop_window_title_color"
+                android:textSize="@dimen/prize_dialtacts_top_calllog_item_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_divider_height2"
+                android:background="@color/prize_divider_color_gray5"/>
+
+            <TextView
+                android:id="@+id/menu_received_calls"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_dialtacts_top_calllog_item_height"
+                android:background="@drawable/prize_calllog_pop_item_bg_selector"
+                android:gravity="left|center_vertical"
+                android:paddingEnd="@dimen/prize_dialtacts_top_calllog_item_padding2"
+                android:paddingStart="@dimen/prize_dialtacts_top_calllog_item_padding1"
+                android:text="@string/received_calls"
+                android:textAlignment="viewStart"
+                android:textColor="@color/prize_calllog_pop_window_title_color"
+                android:textSize="@dimen/prize_dialtacts_top_calllog_item_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_divider_height2"
+                android:background="@color/prize_divider_color_gray5"/>
+
+            <TextView
+                android:id="@+id/menu_outgoing_calls"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_dialtacts_top_calllog_item_height"
+                android:background="@drawable/prize_calllog_pop_item_bg_selector"
+                android:gravity="left|center_vertical"
+                android:paddingEnd="@dimen/prize_dialtacts_top_calllog_item_padding2"
+                android:paddingStart="@dimen/prize_dialtacts_top_calllog_item_padding1"
+                android:text="@string/outgoing_calls"
+                android:textAlignment="viewStart"
+                android:textColor="@color/prize_calllog_pop_window_title_color"
+                android:textSize="@dimen/prize_dialtacts_top_calllog_item_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prize_divider_height2"
+                android:background="@color/prize_divider_color_gray5"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/record_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/lay_padding"
+    android:paddingTop="@dimen/lay_padding" >
+
+    <FrameLayout
+        android:id="@+id/view_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/im_play_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/play_anim_margin_r"
+            android:src="@anim/peak_meter_orange"/>
+
+        <CheckBox
+            android:id="@+id/record_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sel_check_box"
+            android:button="@null"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/list_check_box_r"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/record_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/list_item_name_color"
+        android:textSize="@dimen/name_txt_size"
+        android:layout_toLeftOf="@+id/view_right"/>
+
+    <TextView
+        android:id="@+id/record_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/record_name"
+        android:textColor="@color/list_item_time_color"
+        android:textSize="@dimen/time_txt_size" />
+
+    <View
+        android:id="@+id/record_line"
+        android:layout_width="1px"
+        android:layout_height="@dimen/view_height"
+        android:layout_alignTop="@id/record_duration"
+        android:layout_marginStart="@dimen/view_margin_leftright"
+        android:layout_marginEnd="@dimen/view_margin_leftright"
+        android:layout_marginTop="@dimen/view_margin_top"
+        android:layout_toEndOf="@id/record_duration"
+        android:background="@color/list_item_time_color" />
+
+    <TextView
+        android:id="@+id/record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/record_name"
+        android:layout_toEndOf="@id/record_line"
+        android:textColor="@color/list_item_time_color"
+        android:textSize="@dimen/time_txt_size" />
+    
+</RelativeLayout>

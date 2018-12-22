@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_ip_call_action">IP-вызов  <xliff:g id="nameOrNumber" example="John Smith">%1$s</xliff:g>  </string>
+    <string name="select_account">"Выбрать аккаунт"</string>
+    <string name="all_accounts">"Все аккаунты"</string>
+    <string name="imei_invalid">Неверный</string>
+    <string name="conf_call_member_list">Список участников</string>
+    <string name="conf_call_participant_answered">Ответили</string>
+    <string name="conf_call_participant_missed">"Пропущенные"</string>
+    <string name="dialer_call_type_label_sip" msgid="4931428719494190371">"Вызов SIP"</string>
+    <string name="call_log_via_sim_name_notice">ЖУРНАЛ ВЫЗОВОВ \"<xliff:g id="sim_name">%s</xliff:g>\"</string>
+    <string name="snackbar_number_unblocked_failed"><xliff:g id="number" example="(555)555-5555">%1$s</xliff:g> разблокировка не выполнена</string>
+</resources>

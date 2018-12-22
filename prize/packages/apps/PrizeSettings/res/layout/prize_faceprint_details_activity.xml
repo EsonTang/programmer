@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="58dp"
+        android:src="@drawable/rename_face" />
+
+    <TextView
+        android:id="@+id/face_details_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/faceid"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/rename_fa_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/prize_fp_detail_operation_selector"
+        android:gravity="center"
+        android:text="@string/prize_fp_operation_rename"
+        android:textColor="@color/black"
+        android:textSize="@dimen/front_normal_size" />
+
+    <Button
+        android:id="@+id/delete_fa_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/prize_fp_detail_operation_selector"
+        android:gravity="center"
+        android:text="@string/prize_fp_operation_delete"
+        android:textColor="@color/red"
+        android:textSize="@dimen/front_normal_size" />
+</LinearLayout>

@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/app_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/topic_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_four_zero_dp"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:id="@+id/installed_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gift_center_installed_opt"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text_color_373737"
+                android:text="@string/gift_installed"/>
+
+        </LinearLayout>
+
+        <com.prize.appcenter.ui.widget.ScrollListView
+            android:id="@+id/installed_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:fastScrollAlwaysVisible="false"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/pull_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="11dp"
+            android:text="@string/expand_all"
+            android:textSize="11dp"
+            android:textColor="@color/text_color_6c6c6c"/>
+
+        <View
+            android:id="@+id/list_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="1px"
+            android:background="#e4e4e4" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gift_center_hot_game"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text_color_373737"
+                android:text="@string/gift_hot_game"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="1px"
+            android:background="#e4e4e4" />
+
+        <com.prize.appcenter.ui.widget.ScrollLineGridView
+            android:id="@android:id/list"
+            app:lineColor="#e4e4e4"
+            app:lineStyle="crossStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:numColumns="2"
+            android:horizontalSpacing="0dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/text_color_404040"
+            android:verticalSpacing="0dp"
+            android:scrollbars="none" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="1px"
+            android:background="#e4e4e4" />
+
+    </LinearLayout>
+</ScrollView>

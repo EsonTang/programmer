@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false" >
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#21b5c0"
+        android:drawableLeft="@drawable/cloud_back_normal"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:onClick="onBackClk"
+        android:text="@string/bind_email"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textsize_large" />
+
+    <TextView
+        android:id="@+id/tip_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:textColor="@color/prize_text_default"
+        android:text="@string/please_use_safe_email"
+        android:singleLine="true" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/email_edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/cloud_shurukuang"
+        android:gravity="center_vertical"
+        android:hint="@string/input_your_email"
+        android:maxLength="30"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/prize_text_default"
+        android:textColorHint="#c8c8c8"
+        android:textSize="@dimen/textsize_medium" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/email_code_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cloud_shurukuang"
+            android:gravity="center_vertical"
+            android:hint="@string/email_security_code"
+            android:maxLength="8"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/prize_text_default"
+            android:textColorHint="#c8c8c8"
+            android:textSize="@dimen/textsize_medium" />
+
+        <TextView
+            android:id="@+id/sendtv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cloud_send_security_code_disable"
+            android:gravity="center"
+            android:minWidth="90dp"
+            android:singleLine="true"
+            android:clickable="false"
+            android:text="@string/send_security_code"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textsize_medium" >
+        </TextView>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/bindbtn_id"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/bind"
+        android:textSize="@dimen/textsize_medium"
+        android:gravity="center"
+        android:background="@drawable/cloud_next_selector"
+        android:clickable="true" />
+</LinearLayout>

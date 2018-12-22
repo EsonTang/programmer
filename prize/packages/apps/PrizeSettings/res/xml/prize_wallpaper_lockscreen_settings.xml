@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- prize-change-v8.0_wallpaper-yangming-2017_7_20-start -->
+<!-- created by liuweiquan-20160708 -->
+<!-- <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/wallpaper_lockscreen_settings_title" >
+     <PreferenceScreen
+                android:key="wallpaper"
+                android:title="@string/wallpaper_settings_title"
+                settings:keywords="@string/keywords_display_wallpaper"
+                android:fragment="com.android.settings.WallpaperTypeSettings" />	
+     <PreferenceCategory android:key="magazine_lockscreen_category"
+            android:title="@string/magazine_lockscreen_category"> -->
+
+        <!-- prize-changed_keyguardwallpaper-add-liuweiquan-20151211-start-->
+<!--    <SwitchPreference
+                android:key="changed_wallpaper"
+                android:title="@string/changed_wallpaper_title"
+                settings:keywords="@string/keywords_changed_wallpaper"
+                android:summary="@string/changed_wallpaper_summary"
+                android:persistent="false" />    -->
+		<!--prize-changed_keyguardwallpaper-add-liuweiquan-20151211-end-->
+<!-- 		<SwitchPreference
+                android:key="magazine_kgwallpaper"
+                android:title="@string/magazine_lockscreen_settings"               
+                android:persistent="false" />
+     </PreferenceCategory>
+</PreferenceScreen>   -->
+
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/wallpaper_lockscreen_settings_title"
+        android:key="key_wallper_lockscreen_settings_preferencescreen">
+        <PreferenceCategory android:key="key_wallpaper_lockscreen_category"
+            android:title="@string/changed_wallpaper_title">
+            <SwitchPreference
+                android:key="changed_wallpaper"
+                android:title="@string/changed_wallpaper_title"
+                settings:keywords="@string/keywords_changed_wallpaper"
+                android:summary="@string/changed_wallpaper_summary"
+                android:persistent="false" />
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="key_magazine_lockscreen_category"  
+            android:title="@string/magazine_lockscreen_category">
+            <SwitchPreference
+                android:key="changed_magazine"
+                android:title="@string/magazine_lockscreen_category"
+                android:summary="@string/changed_magazine_summary"
+                android:persistent="false"/>
+            <PreferenceScreen
+                android:key="subscribed_channels"
+                android:title="@string/prize_subscribed_channels" />
+            <PreferenceScreen
+                android:key="add_photos"
+                android:title="@string/prize_add_photos" />
+            <SwitchPreference
+                android:key="updatable_data_network"
+                android:title="@string/prize_updatable_data_network"
+                android:summary="@string/prize_updatable_data_network_summary"
+                android:persistent="false"/>
+            <com.android.settings.wallpaper.DatePreference
+                android:key="current_resource_date"
+                android:title="@string/prize_current_resource_date"/>
+        </PreferenceCategory>
+</PreferenceScreen> 
+<!-- prize-change-v8.0_wallpaper-yangming-2017_7_20-end -->

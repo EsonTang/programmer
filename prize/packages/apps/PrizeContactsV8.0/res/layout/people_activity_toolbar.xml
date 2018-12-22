@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:id="@+id/toolbar_frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_actionbar_custom_height"
+        android:background="@color/actionbar_background_color">
+
+    <!-- prize-change-huangliemin-2016-7-19-start -->
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prize_actionbar_custom_height"
+        android:id="@+id/toolbar"
+        style="@style/ContactsToolbarStyle" >
+        
+        <TextView 
+            android:id="@+id/contacts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/prize_title_text_size"
+            android:text="@string/prize_contacts_title"
+            android:textColor="@color/prize_actionbar_title_text_color"
+            android:visibility="gone"/>
+
+        <!--prize add for lhp by zhaojian 20180421 start-->
+        <TextView
+            android:id="@+id/contacts_title_lhp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/prize_lhp_action_bar_margin_left"
+            android:textSize="@dimen/prize_title_text_size"
+            android:text="@string/prize_contacts_title"
+            android:textColor="@color/prize_actionbar_title_text_color"
+            android:visibility="gone"/>
+        <!--prize add for lhp by zhaojian 20180421 end-->
+    </Toolbar>
+    <!-- prize-change-huangliemin-2016-7-19-end -->
+
+    </FrameLayout>
+
+    <!-- prize remove viewpager zhangzhonghao 20160304 start -->
+    <!-- <com.android.contacts.common.list.ViewPagerTabs
+        android:id="@+id/lists_pager_header"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:textAllCaps="true"
+        android:orientation="horizontal"
+        android:layout_gravity="top"
+        android:layout_weight="0"
+        android:layout_below="@id/toolbar"
+        style="@style/ContactsActionBarTabTextStyle" /> -->
+    <!-- prize remove viewpager zhangzhonghao 20160304 end -->
+
+</LinearLayout>

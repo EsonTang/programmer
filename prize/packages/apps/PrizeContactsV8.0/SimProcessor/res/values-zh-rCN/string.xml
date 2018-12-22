@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="prize_worker">同事</string>
+	<string name="prize_family">家人</string>
+	<string name="prize_friends">朋友</string>
+	<string name="prize_schoolmate">同学</string>
+
+	<!--prize add by zhaojian 20171123 start-->
+	<string name="prize_sim_processor_label">正在扫描sim卡</string>
+	<!--prize add by zhaojian 20171123 end-->
+	
+</resources>

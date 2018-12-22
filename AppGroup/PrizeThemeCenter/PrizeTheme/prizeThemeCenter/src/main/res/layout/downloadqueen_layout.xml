@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.prize.prizethemecenter.activity.DownLoadQueenActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header_edt"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+
+        <TextView
+            android:id="@+id/action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:drawableLeft="@drawable/btn_back_selector"
+            android:drawablePadding="3dp"
+            android:ellipsize="end"
+            android:text="@string/download_manage"
+            android:focusable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/text_color_262626"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/header_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:background="@color/bg_gray_color" />
+    <ListView
+        android:layout_below="@+id/header_edt"
+        android:layout_above="@+id/bottom_id"
+        android:id="@+id/lv_queenlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:divider="#d7d7d7"
+        android:dividerHeight="0.5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/rl_default"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/iv_dafaultImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/noloading_bee" />
+
+        <TextView
+            android:id="@+id/tv_default"
+            style="@style/detail_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_dafaultImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="@string/no_downloading" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_id"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_gray_color" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/download_history"
+            android:background="@drawable/btn_corner_selector"
+            android:id="@+id/bt_download"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_262626"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

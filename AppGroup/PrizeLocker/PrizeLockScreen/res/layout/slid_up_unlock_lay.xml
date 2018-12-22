@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.lockscreen.widget.PullDoorView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pulldoor_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+	
+    <com.prize.lockscreen.widget.TurnPageView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/surface"
+        />
+    
+    <TextView
+         android:id="@+id/text_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffffff"
+         android:layout_marginLeft="80dp"
+         android:layout_marginTop="28dp"
+         android:textSize="80sp" />
+
+     <TextView
+         android:id="@+id/text_date"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffffff"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@id/text_time"
+         android:textSize="20sp" />
+
+     <com.prize.lockscreen.widget.SlideCutListView
+          android:id="@+id/notice_list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/text_date"
+          android:layout_above="@+id/hint_layout"
+          android:layout_centerInParent="true"
+          android:divider="@null"
+          android:listSelector="@android:color/transparent" />
+     
+    <LinearLayout
+        android:id="@+id/hint_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dip"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+		
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ico_plane"
+            />
+        
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_text"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</com.prize.lockscreen.widget.PullDoorView>

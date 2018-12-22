@@ -1,0 +1,6 @@
+include ':viewPageLib'
+include ':volley'
+include ':xutils3'
+include ':joloplaybase'
+include ':prizeAppCenter'
+include ':jcvideoplayer-lib'

@@ -1,0 +1,1 @@
+sign.bat d:\Users\Administrator\Desktop\XXXXXX.apk

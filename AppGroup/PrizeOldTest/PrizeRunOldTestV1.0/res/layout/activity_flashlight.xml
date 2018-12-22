@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5EC3FC" >
+
+    <TextView
+        android:id="@+id/flight_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/flashlight"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/flight_on_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/flight_off_bt"
+        android:layout_toLeftOf="@+id/flight_contxt_tv"
+        android:text="@string/trun_on" />
+
+    <Button
+        android:id="@+id/flight_off_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/flight_contxt_tv"
+        android:text="@string/trun_off" />
+
+    <TextView
+        android:id="@+id/flight_status_tv"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/flight_contxt_tv"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/flashlight_status" />
+
+    <TextView
+        android:id="@+id/flight_contxt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/flashlight_off" />
+
+</RelativeLayout>

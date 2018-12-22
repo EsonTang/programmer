@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="banner_bar_hight3">140dp</dimen>
+    <dimen name="dimen_148dp">130dp</dimen>
+    <dimen name="banner_bar_hight">134dp</dimen>
+    <dimen name="dimen_195dp">187dp</dimen>
+    <dimen name="backgroud_img_height">332dp</dimen>
+    <dimen name="tv_login_height">50dp</dimen>
+    <dimen name="bt_next_margintop">95dp</dimen>
+    <dimen name="pop_height">205dp</dimen>
+    <dimen name="dialog_margingground">20dp</dimen>
+
+</resources>

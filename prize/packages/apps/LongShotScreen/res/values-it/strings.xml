@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Screenshot Super</string>
+    <string name="action_settings">impostare</string>
+    <string name="scroll_shot">Screenshot lunghi</string>
+    <string name="funny_shot">Screenshot Fun</string>
+    <string name="screen_record">schermata di registrazione</string>
+    <string name="nextpage">Nella schermata successiva</string>
+    <string name="save">Salva</string>
+    <string name="cancel">annullato</string>
+    <string name="rect_shot">Screenshot rettangolari</string>
+    <string name="lasso_shot">Screenshot Lasso</string>
+    <string name="daub_shot">Le immagini dei graffiti</string>
+    <string name="redo">rifare</string>
+    <string name="undo">revoca</string>
+    <string name="exit">smettere</string>
+    <string name="scrawl">Graffiti</string>
+    <string name="app_restrict_capture_screen">Poiché il limite di applicazione, l\'interfaccia non può essere schermate</string>
+    <string name="drag_to_select_capture_area">In drag and drop selezionato schermata finestra</string>
+    <string name="not_support_screen_orientation_change">Processo di cattura dello schermo non supporta interruttore schermo orizzontale e verticale</string>
+    <string name="screenshot_saved">Le immagini catturate</string>
+    <string name="screenshot_saved_to_tf_card">I file salvati in "memoria del telefono / le immagini di Super" cartella.</string>
+    <string name="screenshot_saved_to_sd_card">I file salvati "/ screenshot Super scheda SD" cartella.</string>
+    <string name="lasso_guide">Draw screenshot regione ha iniziato le immagini Lasso</string>
+    <string name="scrollcapture_is_running">Screenshot lunghi in esecuzione</string>
+    <string name="scrollcapture_is_saving_please_wait">Gli attuali screenshot lunghe Salvataggio, attendere prego.</string>
+    <string name="hit_the_bottom">Alla fine della slitta</string>
+    <string name="content_un_extended">La sezione trasversale non supporta a lungo le immagini</string>
+    <string name="maximum_to_ten_pages">Fino a 10 schermo intercettazione</string>
+    <string name="saving">Salvataggio ...</string>
+    <string name="screenshot_saving">Salvataggio screenshot ...</string>
+    <string name="hava_not_start_daub">Non sono dipinte, dipinto e clicca su Salva.</string>
+    <string name="move">mobile</string>
+    
+    <string name="turn_off_long_screenshots">Si prega di uscire lungo le immagini</string>
+    <string name="turn_off_interest_screenshots">Si prega di uscire screenshot interessanti</string>
+    
+</resources>

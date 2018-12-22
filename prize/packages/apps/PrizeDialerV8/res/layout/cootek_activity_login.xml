@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cootek_login_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="fitXY"></ImageView>
+
+    <com.cootek.view.PushShrinkLayout
+        android:id="@+id/push_shrink_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/cootek_funcbar_height">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cootek_header_height2"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/cootek_person_logo"
+                android:layout_width="@dimen/cootek_header_avatar_diameter"
+                android:layout_height="@dimen/cootek_header_avatar_diameter"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/cootek_header_padding2"
+                android:layout_marginRight="@dimen/cootek_header_padding2"
+                android:background="@drawable/cootek_header_logo_bg"
+                android:padding="0.5dp"
+                android:src="@drawable/cootek_header_logo_default" />
+
+            <TextView
+                android:id="@+id/cootek_login_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/cootek_person_logo"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="@string/cootek_login_head_text"
+                android:textColor="@color/cootek_individual_login_headtext"
+                android:textSize="@dimen/cootek_login_textsize" />
+        </RelativeLayout>
+
+        <com.cootek.view.LockableScrollView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cootek_individual_login_background"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginTop="14dp">
+
+                    <EditText
+                        android:id="@+id/cootek_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cootek_card_bg"
+                        android:cursorVisible="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/cootek_phone_input_hint"
+                        android:inputType="phone"
+                        android:paddingLeft="45dip"
+                        android:paddingRight="10dip"
+                        android:textColor="@color/cootek_individual_login_textcolor"
+                        android:textColorHint="@color/cootek_individual_login_hintcolor"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/cootek_login_textsize" />
+
+                    <TextView
+                        android:id="@+id/cootek_phone_number_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:paddingLeft="10dip"
+                        android:textColor="@color/cootek_individual_login_iconcolor"
+                        android:textSize="@dimen/cootek_login_icon_textsize" />
+
+                    <TextView
+                        android:id="@+id/cootek_clear_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:paddingRight="10dip"
+                        android:textColor="@color/cootek_individual_login_iconcolor2"
+                        android:textSize="@dimen/cootek_login_icon_textsize2" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/cootek_validation_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cootek_card_bg"
+                            android:cursorVisible="true"
+                            android:gravity="center_vertical"
+                            android:hint="@string/cootek_validation_code_input_hint"
+                            android:inputType="number"
+                            android:paddingLeft="45dip"
+                            android:textColor="@color/cootek_individual_login_textcolor"
+                            android:textColorHint="@color/cootek_individual_login_hintcolor"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/cootek_login_textsize" />
+
+                        <TextView
+                            android:id="@+id/cootek_validation_code_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="13dip"
+                            android:textColor="@color/cootek_individual_login_iconcolor"
+                            android:textSize="@dimen/cootek_login_icon_textsize" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/cootek_query"
+                        android:layout_width="100dip"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cootek_codebtn_bg"
+                        android:gravity="center"
+                        android:text="@string/cootek_validation_code_query_hint"
+                        android:textColor="@color/cootek_individual_login_btntextcolor"
+                        android:textSize="@dimen/cootek_basic_text_size_5_5" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/cootek_login_btn"
+                    android:layout_width="@dimen/cootek_login_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/cootek_login_padding"
+                    android:background="@drawable/cootek_loginbtn_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/cootek_loginbtn_padding"
+                    android:paddingTop="@dimen/cootek_loginbtn_padding"
+                    android:text="@string/cootek_login_page_start_hint"
+                    android:textColor="@color/cootek_individual_login_btntextcolor"
+                    android:textSize="@dimen/cootek_basic_text_size_4" />
+            </LinearLayout>
+        </com.cootek.view.LockableScrollView>
+
+        <include
+            android:id="@+id/cootek_brand_delare_area"
+            layout="@layout/cootek_comp_brand_declare1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp" />
+    </com.cootek.view.PushShrinkLayout>
+
+    <include layout="@layout/cootek_comp_titlebar2" />
+
+    <include layout="@layout/cootek_comp_loading_container" />
+</RelativeLayout>

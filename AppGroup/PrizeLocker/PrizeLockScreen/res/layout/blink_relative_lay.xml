@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.lockscreen.widget.BlinkRelativeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_view"
+    >
+    
+    <TextView
+         android:id="@+id/text_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffffff"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="@dimen/time_margin_top"
+         android:textSize="80sp" />
+
+     <TextView
+         android:id="@+id/text_date"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffffff"
+         android:layout_below="@id/text_time"
+         android:layout_centerHorizontal="true"
+         android:textSize="20sp" />
+     
+     <com.prize.lockscreen.widget.SlideCutListView
+          android:id="@+id/notice_list"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/list_height"
+          android:divider="@color/white_w_a_90"
+          android:dividerHeight="1px"
+          android:layout_below="@id/text_date"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="60dp"
+          android:listSelector="@android:color/transparent" />
+     
+     <ImageView	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/img_phone_top"
+    	android:id="@+id/img_phone_top"
+    	android:layout_alignParentTop="true"
+    	android:layout_marginTop="@dimen/phone_margin_bottom"
+    	android:contentDescription="@null"
+    	android:visibility="invisible"
+	    />
+	
+	<ImageView	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/img_camera_top"
+    	android:id="@+id/img_camera_top"
+    	android:layout_alignParentTop="true"
+    	android:layout_marginTop="@dimen/camera_margin_bottom"
+    	android:contentDescription="@null"
+    	android:visibility="invisible"
+	    />
+	
+	<ImageView	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/img_home_top"
+    	android:id="@+id/img_home_top"
+    	android:layout_alignParentTop="true"
+    	android:layout_marginTop="@dimen/home_margin_bottom"
+    	android:contentDescription="@null"
+    	android:visibility="invisible"
+	    />
+     
+	<ImageView	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/img_home"
+    	android:id="@+id/img_home"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginBottom="@dimen/home_margin_bottom"
+    	android:contentDescription="@null"
+	    />
+	
+	<ImageView	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/img_phone"
+    	android:id="@+id/img_phone"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginBottom="@dimen/phone_margin_bottom"
+    	android:contentDescription="@null"
+	    />
+	
+	<ImageView	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/img_camera"
+    	android:id="@+id/img_camera"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginBottom="@dimen/camera_margin_bottom"
+    	android:contentDescription="@null"
+	    />
+	
+	<ImageView	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/home"
+    	android:id="@+id/ico_home"
+    	android:layout_alignParentBottom="true"
+    	android:layout_centerHorizontal="true"
+    	android:contentDescription="@null"
+    	android:padding="6dp"
+	    />
+	
+	<ImageView	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/dial"
+    	android:id="@+id/ico_phone"
+    	android:layout_alignParentStart="true"
+    	android:layout_alignParentBottom="true"
+    	android:contentDescription="@null"
+    	android:padding="6dp"
+	    />
+	
+	<ImageView	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/camera"
+    	android:id="@+id/ico_camera"
+    	android:layout_alignParentEnd="true"
+    	android:layout_alignParentBottom="true"
+    	android:contentDescription="@null"
+    	android:padding="6dp"
+	    />
+</com.prize.lockscreen.widget.BlinkRelativeView>

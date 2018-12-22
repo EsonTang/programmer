@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cootek_error_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/cootek_error_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cootek_error_hint"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/cootek_error_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cootek_error_nodata"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/cootek_error_nonetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cootek_error_nonetwork" />
+
+        <ImageView
+            android:id="@+id/cootek_error_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cootek_error_other"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cootek_error_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/cootek_websearch_failed"
+        android:textColor="#707070"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/cootek_error_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_below="@+id/cootek_error_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/cootek_error_retry_bg"
+        android:text="@string/cootek_websearch_retry"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

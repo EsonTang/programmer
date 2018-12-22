@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <com.prize.appcenter.ui.widget.CustomImageView
+        android:id="@+id/game_iv"
+        style="@style/game_item_image"
+        android:contentDescription="@string/alert_title"
+        android:transitionName="robot"
+        android:layout_marginTop="1dp"
+        app:iv_radius="5dp" />
+
+    <TextView
+        android:id="@+id/game_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/common_app_title"
+        android:textSize="@dimen/text_size_30" />
+
+    <TextView
+        android:id="@+id/game_size_tv"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="#5d5d5d"
+        android:textSize="@dimen/text_size_22" />
+
+    <com.prize.appcenter.ui.widget.progressbutton.AnimDownloadProgressButton
+        android:id="@+id/game_download_btn"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:progressbtn_radius="12dp"
+        android:layout_marginTop="5dp"
+        app:progressbtn_show_progress="true"
+        app:progressbtn_text_size="12dp" />
+</merge>

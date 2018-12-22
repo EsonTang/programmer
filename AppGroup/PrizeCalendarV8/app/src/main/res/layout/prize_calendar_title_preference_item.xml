@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:gravity="center_vertical"
+    android:paddingRight="?android:attr/scrollbarSize"
+    android:background="@color/prize_prefence_title"
+    android:orientation="vertical" >
+    
+	<TextView android:id="@+android:id/title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:singleLine="true" 
+        android:ellipsize="marquee" 
+        android:textColor="@drawable/prize_preferences_title_selector"
+        android:textSize="12sp"
+        android:paddingLeft="15sp"/>
+    
+</LinearLayout>

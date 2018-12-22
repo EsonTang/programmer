@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FrameRecorder</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="show_cordinate">Show cordinate</string>
+    <string name="hide_cordinate">Hide cordinate</string>
+    <string name="share">Share</string>
+    <string name="screenrecord_recording_ticker">Recording</string>
+    <string name="screenrecord_recording_title">Recording</string>
+    <string name="screenrecord_recording_text">"Max:180s"</string>
+    <string name="screenrecord_saved_ticker">Saved</string>
+    <string name="screenrecord_saved_title">Saved</string>
+    <string name="screenrecord_saved_text">Touch to view video</string>
+    <string name="screenrecord_duration_text">Duration:</string>
+</resources>

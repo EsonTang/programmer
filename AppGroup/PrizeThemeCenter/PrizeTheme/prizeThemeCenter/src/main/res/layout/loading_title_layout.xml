@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_top_40dp">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="@string/downloading"
+        android:textColor="@color/text_color_33cccc"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/all_suspended_id"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/pause_all"
+        android:textColor="@color/text_color_33cccc"
+        android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

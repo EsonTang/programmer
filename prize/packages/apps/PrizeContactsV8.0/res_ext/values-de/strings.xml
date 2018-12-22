@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">SIM-Kontakte können nicht zusammengeführt werden.</string>
+    <string name="menu_done">"Fertig"</string>
+    <string name="menu_deleteContact">"Löschen"</string>
+    <string name="menu_select_all">"Alleauswählen"</string>
+    <string name="menu_select_none">"Auswahlfüralleaufheben"</string>
+    <string name="menu_new_contact_action_bar">"Neu"</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> ausgewählt </string>
+    <string name="multichoice_no_select_alert">Kein Objekt ausgewählt.</string>
+    <string name="aas_phone_type_none">"Keine"</string>
+    <string name="aas_custom_title">Angepasste Etiketten</string>
+    <string name="aas_new_dialog_title">Ein neues Etikett hinzufügen</string>
+    <string name="ass_rename_dialog_title">Etikett bearbeiten</string>
+    <string name="aas_delele_dialog_message">Die Löschung des/der Etiketts/Etiketten wirkt sich auf alle zusätzlichen Nummern aus, die mit dem/den Etikett(en) verknüpft sind. Sind Sie sicher?</string>
+    <string name="aas_name_invalid">Der Kennzeichnungsname ist ungültig. Bitte etwas anderes eingeben.</string>
+    <string name="aas_name_exist">Das Etikett existiert bereits.</string>
+    <string name="aas_usim_full">Es ist kein Platz für neue Etiketten vorhanden.</string>
+    <string name="ass_edit_assert_message">Die Änderung des/der Etiketts/Etiketten wirkt sich auf alle zusätzlichen Nummern aus, die mit dem/den Etikett(en) verknüpft sind. Sind Sie sicher?</string>
+    <string name="aas_new_fail">Erstellen eines neuen Etiketts fehlgeschlagen.</string>
+    <string name="aas_edit_fail">Umbenennen von <xliff:g id="aas">%s</xliff:g> fehlgeschlagen.</string>
+    <string name="aas_delete_fail"> <xliff:g id="aas">%s</xliff:g> konnte nicht gelöscht werden. </string>
+    <string name="aas_phone_primary">Hauptnummer</string>
+    <string name="aas_phone_additional">Zusätzliche Nummer</string>
+</resources>

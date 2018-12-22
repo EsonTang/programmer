@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="scan_QR">Two-dimensional code scanning</string>
+    <string name="text_tip1">Sweep the "two-dimensional code card"</string>
+    <string name="text_tip2">Could add the contacts to Contacts</string>
+    <string name="no_name">No Name</string>
+    <string name="prize_worker">colleague</string>
+    <string name="prize_family">family</string>
+    <string name="prize_friends">friend</string>
+    <string name="prize_schoolmate">Classmate</string>
+    <string name="prize_VIP">VIP</string>
+    <string name="prize_bottom_cancel">CANCEL</string>
+    <string name="prize_bottom_ok">OK</string>
+    <string name="prize_select_all_contacts">Select All</string>
+    <string name="prize_cancel_all_contacts">Cancel Select</string>
+    <string name="prize_delete_contacts">Choice Contacts</string>
+    <string name="prize_delete_contact">Delete Contact</string>
+    <string name="prize_recents_delete_confirm">Are you sure to delete call records?</string>
+    <string name="prize_recents_delete_prompt">PROMPT</string>
+    <string name="prize_recents_delete_ok">OK</string>
+    <string name="prize_recents_delete_cancel">CANCEL</string>
+    <string name="prize_recordcard_title">Record Card</string>
+    <string name="prize_quickcontact_title">Quick Contact</string>
+    <string name="prize_quickcontact_recent_notice">Recent Card</string>
+    <string name="prize_hours">h</string>
+    <string name="prize_minutes">m</string>
+    <string name="prize_seconds">s</string>
+    <string name="prize_incall">Incoming</string>
+    <string name="prize_outcall">Outgoing</string>
+    <string name="prize_callnotice">Bell is not connected</string>
+    <string name="prize_editor_delete_contact">Delete contacts</string>
+    <string name="contact_add_to_blacklist">Add To Black Number List</string>
+    <string name="contact_delete_from_blacklist">Delete From Black Number List</string>
+    <string name="no_contacts_is_selected">Please,select one contact person at least</string>
+    <string name="please_wait_join">please wait for join complete...</string>
+
+    <plurals name="prize_group_list_num_contacts_in_group">
+        <item quantity="one"><xliff:g id="count">%1$d</xliff:g> person</item>
+        <item quantity="other"><xliff:g id="count">%1$d</xliff:g> person</item>
+    </plurals>
+
+    <string name="prize_add_other_item">Add other item</string>
+    <string name="prize_ok_title">OK</string>
+    <string name="prize_cancel_title">Cancel</string>
+    <string name="prize_sim_invalid">Sim invalid!</string>
+    <string name="prize_sd_card">SD Card</string>
+    <string name="prize_no_other_account">No Other Accounts</string>
+    <string name="prize_manager_groups">Manager Groups</string>
+    <string name="prize_search_hint">Search</string>
+    <string name="prize_set_my_info">Setup my info</string>
+    <string name="prize_new_group">New</string>
+    <string name="prize_new_group_dialog_hint">Input Group Name</string>
+    <string name="prize_new_group_dialog_title">New A Group</string>
+    <string name="prize_new_group_name_toast">"group name can't be empty"</string>
+    <string name="prize_new_group_name_toast_2">"create group fail"</string>
+    <string name="prize_repeat_group_name_toast">"Already exists in this group"</string>
+    <string name="prize_group_edit">Edit</string>
+    <string name="prize_group_manager">Groups Manager</string>
+    <string name="prize_more_call_log">More Call Records</string>
+    <string name="prize_more">more</string>
+    <string name="prize_add_to_black_number">add to balck number</string>
+    <string name="prize_send_two_dimens_code">send twodeminsion card</string>
+    <string name="prize_show_in_Launcher">create shortcut</string>
+    <string name="prize_contacts_editor_text_string">edit</string>
+    <string name="prize_contacts_new_text_string">new</string>
+    <string name="prize_contacts_delete_text_string">delete</string>
+    <string name="prize_contacts_more_menu_text_string">more</string>
+    <string name="prize_contacts_add_to_contacts_string">save to contacts</string>
+    <string name="prize_contacts_calllog_title">Call Log</string>
+    <string name="prize_contacts_title">Contacts</string>
+    <string name="prize_group_manager_title">Manager Groups</string>
+    <string name="prize_rename_text">Rename</string>
+    <string name="prize_rename_group_dialog_title">Rename Group</string>
+    <string name="prize_rename_group_hint_text">Rename Group Name</string>
+    <string name="prize_unselect_all">"Undo"</string>
+    <string name="prize_add_group">Add To Group</string>
+    <string name="prize_outside_sd_card">Outside SD Card</string>
+    <string name="prize_clear_call_log">Clear Call Log</string>
+    <string name="prize_clear_call_log_tips">Whether to delete all the record?</string>
+    <string name="prize_contacts_manager">Contacts Manager</string>
+    <string name="prize_select_contacts_source">source of contacts</string>
+    <string name="prize_copy_contacts_to">copy contacts to</string>
+    <string name="prize_phone_info_lable">Personal information</string>
+    <string name="prize_add_field_btn_invalid_tips">There are only 2 numbers for SIM storage</string>
+    <string name="prize_add_photo_invalid_tips">You can not add a custom avatar for SIM storage</string>
+    <string name="prize_add_email_invalid_tips">It can store up to 1 mailbox for SIM storage</string>
+    <string name="prize_video_call">Video Call</string>
+    <string name="prize_finished_amount">completed : </string>
+    <string name="prize_not_saved_toast">Not saved</string>
+    <string name="prize_removing_message">Removing contacts</string>
+    <string name="prize_copying_message">Copying contacts</string>
+    <string name="prize_cancel_confirmation_dialog_message">Discard your changes?</string>
+    <string name="prize_quickcontact_suggestion_link_button">LINK</string>
+    <string name="prize_phone_type_name">Telephone</string>
+    <string name="prize_no_contacts">No Contacts</string>
+    <string name="prize_contacts_email">Email</string>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_fl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toorbar_height"
+    android:gravity="center"
+  >
+    <ImageView
+        android:id="@+id/toolbar_list_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_16"
+        android:layout_gravity="center|left"
+        android:src="@drawable/toolbar_iv_list_selector" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/vp_center_title_tv_color"/>
+
+    <ImageView
+        android:id="@+id/toolbar_share_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:paddingRight="@dimen/dp_16"
+        android:src="@drawable/toolbar_iv_share_selector" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/partingline"
+        android:background="@drawable/bg_partingline"
+        android:layout_gravity="bottom"
+        />
+
+</FrameLayout>

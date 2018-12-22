@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wfm_ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="bottom"
+	    android:layout_marginBottom="-5dp"
+	    android:layout_marginLeft="-3.5dp" >
+	
+	    <TextView android:id="@+id/wfm_iv_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/temperature_big_thin"/>
+	    <ImageView
+	        android:id="@+id/wfm_iv_ten"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/temperature_0"
+	        android:visibility="gone" />
+	
+	    <ImageView
+	        android:id="@+id/wfm_iv_one"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/temperature_0"
+	        android:layout_marginLeft="5dp"
+	        android:visibility="gone" />
+	
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="8dp"
+	        android:layout_marginBottom="20dp"
+	        android:src="@drawable/temperature_unit" />
+	
+<!-- 	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/temp_up" /> -->
+	
+	    <TextView
+	        android:id="@+id/wfm_tv_up"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="-15dp"
+	        android:gravity="center_vertical"
+	        android:drawableLeft="@drawable/temperature_up"
+	        android:drawableRight="@drawable/temperature_l_unit"
+	        android:text="@string/no_data"
+	        android:theme="@style/menu_city_name_style"
+	        android:textSize="@dimen/medium_textsize" />
+	
+<!-- 	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/temp_down" /> -->
+	
+	    <TextView
+	        android:id="@+id/wfm_tv_down"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:gravity="center_vertical"
+	        android:drawableLeft="@drawable/temperature_down"
+	        android:drawableRight="@drawable/temperature_l_unit"
+	        android:text="@string/no_data"
+	        android:theme="@style/menu_city_name_style"
+	        android:textSize="@dimen/medium_textsize" />
+	</LinearLayout>
+	
+	    <!-- android:layout_marginTop="15dp" -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal" >
+	
+	    <ImageView
+	        android:id="@+id/wfm_iv_weather_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/weather_shadow_fine" />
+	
+	    <com.prize.weather.view.Focusedtrue4TextView
+	        android:id="@+id/wfm_tv_weather_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:gravity="center_vertical"
+	        android:text="@string/no_data"
+	        android:textSize="@dimen/medium_textsize"
+	        android:maxEms="12" 
+	        android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+	        android:theme="@style/menu_city_name_style" />
+	
+	    <TextView
+	        android:id="@+id/wfm_tv_wind_direction"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/no_data"
+	        android:textSize="@dimen/medium_textsize"
+	        android:theme="@style/menu_city_name_style"  />
+	</LinearLayout>
+	
+<!-- 	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dp"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="气压："
+	        android:textColor="#ffffff"
+	        android:textSize="15dp"
+	        android:shadowColor="#7F000000"
+	        android:shadowRadius="1"
+	        android:shadowDx="0"
+	        android:shadowDy="1" />
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="1016 hPa"
+	        android:textColor="#ffffff"
+	        android:textSize="15dp"
+	        android:shadowColor="#7F000000"
+	        android:shadowRadius="1"
+	        android:shadowDx="0"
+	        android:shadowDy="1" />
+	</LinearLayout> -->
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	
+<!-- 	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/air_quality" /> -->
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:drawableLeft="@drawable/main_air_quality"
+	        android:drawablePadding="10dp"
+	        android:text="@string/weaether_main_airquality"
+	        android:textSize="@dimen/medium_textsize"
+	        android:theme="@style/menu_city_name_style"/>
+	
+	    <TextView
+	        android:id="@+id/wfm_tv_air_quality_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/no_data"
+	        android:textSize="@dimen/medium_textsize"
+	        android:theme="@style/menu_city_name_style" />
+	
+	    <TextView
+	        android:id="@+id/wfm_tv_air_quality_quality"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:gravity="center_vertical"
+	        android:drawableLeft="@drawable/main_separator"
+	        android:drawablePadding="7dp"
+	        android:text="@string/no_data"
+	        android:textSize="@dimen/medium_textsize"
+	        android:theme="@style/menu_city_name_style"/>
+	</LinearLayout>
+	
+</LinearLayout>

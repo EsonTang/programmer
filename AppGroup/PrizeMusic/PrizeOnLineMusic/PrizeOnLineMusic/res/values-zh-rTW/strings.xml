@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- App name -->
+    <string name="app_name">音樂</string>
+   	<string name="failed_to_get_the_lyrics">獲取歌詞失敗！</string>
+   	<string name="sure_you_want_to_delete">確定要刪除</string>
+   	
+   	<string name="music_error_toast">"不支持此音樂格式"</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loading_progress_top">234.0dip</dimen>
+    <dimen name="manual_item_textView_margin_left">18.0dip</dimen>
+    <dimen name="manual_item_image_width">70.0px</dimen>
+</resources>

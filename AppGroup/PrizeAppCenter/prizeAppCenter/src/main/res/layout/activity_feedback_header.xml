@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/fedbck_common_tips_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/fedbck_common_tips_title"
+        android:textColor="@color/text_color_404040"
+        android:textSize="@dimen/text_size_26"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_below="@+id/fedbck_common_tips_title"
+        android:background="#e4e4e4"/>
+
+</RelativeLayout>

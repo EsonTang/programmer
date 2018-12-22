@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/entry_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/density_70dp"
+        android:textColor="@color/app_unlock_text_color"
+        android:textSize="@dimen/big_front" />
+
+    <com.goodix.util.CustomEditText
+        android:id="@+id/input_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_40dp"
+        android:layout_below="@+id/entry_prompt"
+        android:layout_marginLeft="@dimen/density_20dp"
+        android:layout_marginRight="@dimen/density_20dp"
+        android:layout_marginTop="@dimen/density_20dp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/density_20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/input_cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="@dimen/density_20dp"
+            android:layout_marginRight="@dimen/density_10dp"
+            android:background="@drawable/dialog_delete_button_selector"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/app_unlock_text_color"
+            android:textSize="@dimen/normal_front" />
+
+        <TextView
+            android:id="@+id/input_confirm_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="@dimen/density_10dp"
+            android:layout_marginRight="@dimen/density_20dp"
+            android:background="@drawable/dialog_delete_button_selector"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/app_unlock_text_color"
+            android:textSize="@dimen/big_front" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="7dp"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/sign_in_rule_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/sign_in_rule_dot"/>
+    <TextView
+        android:id="@+id/sign_in_rule_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/text_color_fefefe"
+        android:textSize="12sp"/>
+
+</LinearLayout>

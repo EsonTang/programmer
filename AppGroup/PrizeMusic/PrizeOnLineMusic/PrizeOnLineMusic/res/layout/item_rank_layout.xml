@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+     >
+
+    <ImageView
+        android:id="@+id/rank_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/rank_Tv"
+        style="@style/textView_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/rank_logo"
+        android:paddingBottom="5dp"
+        android:paddingTop="4dp" />
+
+    <com.prize.music.views.ListViewForScrollView
+        android:id="@+id/mListView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/rank_logo"
+        android:layout_below="@+id/rank_Tv"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/rank_logo"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="false"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background" >
+    <TextView  
+        android:id="@+id/none_data_id"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:visibility="gone"/>
+
+    <com.prize.appcenter.ui.widget.ScrollViewForMostDetail
+        android:id="@+id/scrollView_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="24dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/most_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     />
+
+                <TextView
+                    android:id="@+id/mostBeautiful_title"
+                    style="@style/detail_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp" />
+
+                <TextView
+                    android:id="@+id/mostBeautiful_subtitle"
+                    style="@style/detail_tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mostBeautiful_digist"
+                style="@style/detail_tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp" />
+
+            <com.prize.appcenter.ui.webview.CustomWebView
+                android:id="@+id/mostBeautiful_web_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </com.prize.appcenter.ui.widget.ScrollViewForMostDetail>
+
+    <RelativeLayout
+        android:id="@+id/bottom_id"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_gray_color" />
+
+        <com.prize.appcenter.ui.widget.DownLoadButtonDetail
+            android:id="@+id/detailinfo_download_id"
+            android:layout_width="230dp"
+            android:layout_height="37dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+
+</LinearLayout>

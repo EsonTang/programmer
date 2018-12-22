@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:background="@drawable/bg_update_dialog"
+              android:gravity="center_horizontal"
+              android:minWidth="300dp"
+              android:orientation="vertical"
+              android:padding="0dp"
+              >
+
+    <TextView
+        android:id="@+id/phrase_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/default_score"
+        android:textColor="#ff323232"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar_id"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:numStars="5"
+        android:rating="5"/>
+
+    <View
+        android:id="@+id/game_image_tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_gray_color"
+        />
+
+    <EditText
+        android:id="@+id/edittext_id"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/speak_somthing"
+        android:inputType="textMultiLine"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/text_color_262626"
+        android:textColorHint="#9e9e9e"
+        android:textSize="@dimen/text_size_small">
+
+        <requestFocus/>
+    </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:background="@color/bg_gray_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sure_selector"
+            android:clickable="true"
+            android:text="@string/cancel"
+            android:textColor="@color/gamedetail_comment_item_context"
+            android:textSize="@dimen/text_size_30"/>
+
+        <View
+            android:layout_width="@dimen/zero_point_five_dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray_color"/>
+
+        <Button
+            android:id="@+id/sure_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sure_selector"
+            android:clickable="true"
+            android:text="@string/submint"
+            android:textColor="@color/gamedetail_comment_item_context"
+            android:textSize="@dimen/text_size_30"/>
+    </LinearLayout>
+
+</LinearLayout>

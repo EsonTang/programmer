@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="image_height">480</integer>
+    <integer name="image_wight">270</integer>
+    <integer name="image_paddingright">30</integer>
+     <integer name="leftMargin">8</integer>
+     <integer name="grid_item_marginleft">48</integer>
+</resources>

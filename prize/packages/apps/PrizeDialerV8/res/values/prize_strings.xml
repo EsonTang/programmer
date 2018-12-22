@@ -1,0 +1,53 @@
+<resources>
+    <string name="prize_call_log_list_item_message">&#160;&#160;Message</string>
+    <string name="prize_call_log_list_item_phone">&#160;&#160;Call</string>
+    <string name="prize_call_log_list_item_unknown">unknown</string>
+
+    <!-- PRIZE-Add-TMSDK_Call_Mark-wangzhong-2017_5_5-start -->
+    <string name="prize_call_mark_cloud_fetch">result</string>
+    <string name="prize_call_mark_prop_tag">=tag</string>
+    <string name="prize_call_mark_prop_yellow">=yellow</string>
+    <string name="prize_call_mark_prop_tag_yellow">=tag yellow</string>
+    <string name="prize_call_mark_number">number:</string>
+    <string name="prize_call_mark_name">name:</string>
+    <string name="prize_call_mark_tagtype">tag type:</string>
+    <string name="prize_call_mark_tagcount">tag count:</string>
+    <string name="prize_call_mark_warning">warning:</string>
+    <string name="prize_call_mark_used_for_common">=common</string>
+    <string name="prize_call_mark_used_for_calling">=outcall</string>
+    <string name="prize_call_mark_used_for_called">=incall</string>
+    <string name="prize_call_mark_location">location:</string>
+    <string name="prize_call_mark_eoperator">eoperator:</string>
+
+    <item name="prize_tag_number" type="id"></item>
+    <item name="prize_tag_data" type="id"></item>
+    <item name="prize_tag_flag" type="id"></item>
+
+    <string name="prize_primary_call_info_call_mark_tag">Tencent Mobile Manager recognize</string>
+    <!-- PRIZE-Add-TMSDK_Call_Mark-wangzhong-2017_5_5-end -->
+
+    <!-- PRIZE-Add-DialerV8_InCallStatusBar-wangzhong-2017_7_19-start -->
+    <string name="prize_incallwindow_outgoing">Touch here to return the call&#160;&#160;Dialing</string>
+    <string name="prize_incallwindow_incall">Touch here to return the call&#160;&#160;</string>
+    <string name="prize_notch_incallwindow_incall">On Call&#160;&#160;</string> 
+    <!-- PRIZE-Add-DialerV8_InCallStatusBar-wangzhong-2017_7_19-end -->
+    <!-- PRIZE-Add-SIMPLE_LAUNCHER_TTS-hpf-2017_11_25-start -->
+    <string name="incoming_call">Calling</string>
+    <string name="dialpad_one">one</string>
+    <string name="dialpad_two">two</string>
+    <string name="dialpad_three">three</string>
+    <string name="dialpad_four">four</string>
+    <string name="dialpad_five">five</string>
+    <string name="dialpad_six">six</string>
+    <string name="dialpad_seven">seven</string>
+    <string name="dialpad_eight">eight</string>
+    <string name="dialpad_night">night</string>
+    <string name="dialpad_zero">zero</string>
+    <string name="dialpad_star">star</string>
+    <string name="dialpad_pound">pound</string>
+    <!-- PRIZE-Add-SIMPLE_LAUNCHER_TTS-hpf-2017_11_25-end -->
+
+    <string name="prize_phone_location_default">Not query to local</string>
+
+    <string name="prize_call_log_multiple_delete_dialog_title">Delete</string>
+</resources>

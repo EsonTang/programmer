@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cootek_action_about">关于</string>
+    <string name="cootek_dialog_net_query_title">提示</string>
+    <string name="cootek_dialog_net_query_msg">您的手机配备有骚扰、诈骗电话识别和海量号码搜索的服务，可全面保护您的通话安全，此服务需要您的定位信息并消耗少量的数据流量，是否开启？</string>
+    <string name="cootek_dialog_net_query_posTxt">确定</string>
+    <string name="cootek_dialog_net_query_negTxt">不允许</string>
+
+    <string name="cootek_individual_remain">剩余时长</string>
+    <string name="cootek_individual_mouth_remain">即将过期</string>
+
+    <!--recharge-->
+    <string name="cootek_recharge_select_phonenumber">选择充值号码</string>
+
+    <!--express-->
+
+
+    <string name="cootek_news">热点新闻</string>
+
+
+    <!--individual-->
+    <string name="cootek_individual_head_title">个人中心</string>
+    <string name="cootek_individual_listitem_voip">免费电话</string>
+    <string name="cootek_individual_listitem_activity">活动大厅</string>
+    <string name="cootek_individual_listitem_history">浏览记录</string><!--浏览记录-->
+    <string name="cootek_individual_listitem_giftBag">我的卡券</string>
+    <string name="cootek_individual_listitem_feedback">问题反馈</string>
+    <string name="cootek_individual_listitem_wallet">我的钱包</string>
+
+    <string name="cootek_individual_logout">退出登陆</string>
+    <string name="cootek_individual_login">立即加入</string>
+    <string name="cootek_individual_title">新用户专属优惠，快来吧！</string>
+    <string name="cootek_individual_title0">新用户赠送<b>50</b>分钟 免费时长</string>
+    <string name="cootek_individual_title1">新用户赠送<b>100</b>分钟 免费时长</string>
+    <string name="cootek_individual_title2">新用户赠送<b>200</b>分钟 免费时长</string>
+    <string name="cootek_individual_title3">新用户赠送<b>300</b>分钟 免费时长</string>
+    <string name="cootek_individual_title4">新用户赠送<b>400</b>分钟 免费时长</string>
+
+    <!--voip-->
+    <string name="cootek_individual_calculate">计算中...</string>
+
+    <!--touchlife-->
+    <string name="cootek_tl_logout_network_error">请检查网络连接！</string>
+    <string name="cootek_tl_logout_fail">网络故障，请重试！</string>
+    <string name="weixin_install_hint_title">下载提示</string>
+    <string name="weixin_install_hint_message">检测到还未安装微信，立即下载？</string>
+
+    <string name="cootek_tl_backconfirm_dialog_title">温馨提示</string>
+    <string name="cootek_tl_backconfirm_dialog_content">是否退出当前页面？</string>
+
+    <!-- app download tips -->
+    <string name="cootek_presentation_pkg_has_installed">已安装此应用.</string>
+    <string name="app_download_award_success_tips">恭喜您通过下载应用:%s获得了奖励</string>
+    <string name="app_download_award_participated_tips">您已获得过应用:%s的下载奖励了,无法重复获取</string>
+    <string name="app_download_award_expired_tips">获取奖励失败,该奖励已过期</string>
+    <string name="app_download_award_not_exist_tips">获取奖励失败,该奖励不存在</string>
+    <string name="app_download_award_over_limit_tips">获取奖励失败,该奖励已超过上限</string>
+    <string name="app_download_award_failed_tips">获取奖励失败,请检查网络状态并稍候重新下载安装</string>
+    <string name="app_download_award_dialog_title">温馨提示</string>
+    <string name="app_download_award_dialog_content_no_network">当前下载将会消耗流量,是否继续?</string>
+
+
+    <!-- personal center -->
+    <string name="personal_center_free_phone">免费电话</string>
+    <string name="personal_center_traffic_wallet">免费流量</string>
+    <string name="personal_center_cash_header">零钱</string>
+    <string name="personal_center_wallet_header">我的钱包</string>
+    <string name="personal_center_reward_header">奖励兑换</string>
+    <string name="personal_center_message_hint"><![CDATA[收不到验证码？<font color="#03a9f5">点此</font>查看解决方法]]></string>
+    <string name="personal_center_voice_hint"><![CDATA[没接到语音验证电话？<font color="#03a9f5">点此</font>查看解决方法]]></string>
+    <string name="personal_center_coupon">我的卡券</string>
+
+
+    <string name="personal_center_traffic_wallet_hint">剩余免费流量</string>
+    <string name="personal_center_traffic_wallet_unit">MB</string>
+    <string name="personal_center_data_info">如何赚取与使用流量？</string>
+    <string name="personal_center_data_info_title1">赚取更多流量</string>
+    <string name="personal_center_data_earn_tip1">完成带有流量奖励的任务即可获得流量；</string>
+    <string name="personal_center_data_earn_tip2">还有免费时长、零钱及VIP可以赚取。</string>
+    <string name="personal_center_data_info_title2">使用免费流量</string>
+    <string name="personal_center_data_use_tip1">在充值流量时，可使用免费流量抵扣，抵扣规则见流量充值页面。</string>
+    <string name="personal_center_free_dialer_hint">剩余免费时长</string>
+    <string name="personal_center_free_dialer_unit">分钟</string>
+    <string name="personal_center_free_dialer_expired">本月底到期时长:%s分钟</string>
+    <string name="personal_center_free_dialer_info">如何赚取更多时长</string>
+    <string name="personal_center_free_dialer_info_title1">邀请好友</string>
+    <string name="personal_center_free_dialer_invite_tip1">完成邀请好友，双方均可获得200分钟奖励；</string>
+    <string name="personal_center_free_dialer_invite_tip2">触宝好友间通话不扣时长，更享去电显号。</string>
+    <string name="personal_center_free_dialer_info_title2">任务奖励</string>
+    <string name="personal_center_free_dialer_earn_tip1">完成指定任务即可领取时长奖励；</string>
+    <string name="personal_center_free_dialer_earn_tip2">还有免费流量、零钱及VIP可以赚取。</string>
+    <string name="personal_center_cash_hint">当前可用余额</string>
+    <string name="personal_center_cash_unit">元</string>
+    <string name="personal_center_cash_info">如何赚取与使用零钱？</string>
+    <string name="personal_center_cash_info_title1">赚取更多零钱</string>
+    <string name="personal_center_cash_earn_tip1">完成带零钱奖励的任务即可获得零钱；</string>
+    <string name="personal_center_cash_earn_tip2">还有免费时长、免费流量及VIP可以赚取。</string>
+    <string name="personal_center_cash_info_title2">使用零钱</string>
+    <string name="personal_center_cash_use_tip1">充话费或使用其他生活服务，均可使用零钱抵扣。</string>
+    <string name="personal_center_wallet_hint">触宝已为您节省</string>
+    <string name="personal_center_wallet_unit">元</string>
+    <string name="personal_center_wallet_explanation">“为您节省”指触宝钱包中已使用的部分</string>
+    <string name="personal_center_wallet_cash_unit">%s元</string>
+    <string name="personal_center_wallet_coupon_unit">%s张</string>
+    <string name="personal_center_wallet_dial_unit">%s分钟</string>
+    <string name="personal_center_wallet_flow_unit">%sMB</string>
+    <string name="personal_center_earn">立即赚取>></string>
+    <string name="personal_center_use">立即使用>></string>
+    <string name="personal_center_invite">立即邀请>></string>
+    <string name="personal_center_view_tasks">查看任务>></string>
+
+    <string name="voip_c2c_button_close">关闭</string>
+    <string name="voip_c2c_invite_hint">输入兑换码，跳过排队</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/all_call"
+        android:text="@string/all_calls"
+		android:textColor="@color/gray"
+        android:clickable="true"
+	    android:focusable="true"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unreceive_call"
+        android:text="@string/unreceive_calls"
+		android:textColor="@color/gray"
+        android:clickable="true"
+		android:focusable="true"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/received_call"
+        android:text="@string/received_calls"
+		android:textColor="@color/gray"
+        android:clickable="true"
+		android:focusable="true"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/outgoing_calls"
+		android:textColor="@color/gray"
+        android:id="@+id/outgoing_call"
+        android:clickable="true"
+		android:focusable="true"
+        />
+</LinearLayout>

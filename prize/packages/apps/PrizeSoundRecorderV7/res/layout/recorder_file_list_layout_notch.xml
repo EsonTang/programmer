@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recorder_file_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prize_windown_back"
+    >
+        <FrameLayout
+        android:id="@+id/view_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/notch_action_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/prize_actionbar_color"
+         >
+
+        <RelativeLayout
+            android:id="@+id/view_title_normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+        	android:paddingEnd="@dimen/title_padding_h">
+
+            <ImageView
+                android:id="@+id/im_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/sel_btn_back" 
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/im_back"
+                android:text="@string/recorder_file_list_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/notch_title_txt_size" 
+                />
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/edit"
+                android:textColor="@color/green_title_text"
+                android:textSize="@dimen/small_text_size" 
+                android:background="@drawable/sel_btn_bg"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:visibility="gone"
+            android:paddingStart="@dimen/title_padding_h"
+        	android:paddingEnd="@dimen/title_padding_h">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/green_title_text"
+                android:textSize="@dimen/small_text_size" 
+                android:layout_centerVertical="true"
+                android:background="@drawable/sel_btn_bg"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_txt_size" />
+
+            <TextView
+                android:id="@+id/tv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/green_title_text"
+                android:textSize="@dimen/small_text_size" 
+                android:background="@drawable/sel_btn_bg"
+                android:gravity="center"/>
+        </RelativeLayout>
+        
+    </FrameLayout>
+    
+    <View
+        android:id="@+id/actionbar_divider"
+        android:layout_below="@id/view_actionbar"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@drawable/prize_actionbar_divider" />
+
+    
+    <com.android.soundrecorder.BaseExtListView
+        android:id="@+id/file_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/list_padding"
+        android:paddingEnd="@dimen/list_padding"
+        android:cacheColorHint="@null"
+        android:divider="@color/prize_list_view_divider_color"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:dividerHeight="1px"
+        android:layout_below="@id/view_actionbar"
+        />
+	<include 
+	    layout="@layout/recorder_bottom_layout"
+	    android:layout_below="@id/file_list_listview"/>
+	<include
+	    layout="@layout/recorder_play_bottom_layout"
+	    android:layout_alignParentBottom="true" />
+</RelativeLayout>

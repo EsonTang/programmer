@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="function_items">
+        <item>Pure</item>
+        <item>AutoManage</item>
+        <item>Permission</item>
+        <item>VirusScan</item>
+        <item>GarbageClean</item>
+        <item>DataUpdate</item>
+    </string-array>
+    <string-array name="function_items_expansion">
+        <item>NotifiManage</item>
+        <item>NetManage</item>
+        <item>NetSafe</item>
+    </string-array>
+
+    <!-- john 2015.8.22 start -->
+    <string-array name="array_home_content">
+        <item >GarbageClean</item>
+        <item >DataUpdate</item>
+        <item >VirusScan</item>
+        <item >PermissionMonitor</item>
+        <item >TrafficMonitor</item>
+        <item >InterceptionEngine</item>
+    </string-array>
+    
+    <!-- Setting -->
+    <string-array name="array_setting_list">
+        <item >BlackList</item>
+        <item >WhiteList</item>
+        <item >Interception Keywords</item>
+        <item >Reply SMS</item>
+        <item >Hidden Numbers Intercept Calls</item>
+    </string-array>
+    
+    <!-- Optimizing -->
+    <string-array name="array_optimizing_parent">
+        <item >Security Hardening</item>
+        <item >Clear Cache</item>
+        <item >Speed Boost</item>
+        <item >End Process</item>
+    </string-array>
+    <!-- john 2015.8.22 end -->
+    
+    
+</resources>

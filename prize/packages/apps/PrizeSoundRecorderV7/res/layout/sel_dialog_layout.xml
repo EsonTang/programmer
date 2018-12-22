@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/recorder_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:gravity="left|center_vertical"
+        style="@style/dialog_title_style" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_top_line" />
+
+    <RadioGroup
+        android:id="@+id/dialog_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/radio_group_pad_lr"
+        android:paddingRight="@dimen/radio_group_pad_lr"
+        android:paddingTop="@dimen/radio_group_pad_tb"
+        android:paddingBottom="@dimen/radio_group_pad_tb"
+        />
+    
+    <LinearLayout android:id="@+id/multi_ck"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:visibility="gone"
+	    android:paddingLeft="@dimen/radio_group_pad_lr"
+        android:paddingRight="@dimen/radio_group_pad_lr"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/view_margin_lr"
+        android:layout_marginRight="12dp"
+        android:background="@color/color_bottom_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bottom_pad_lr"
+        android:paddingRight="@dimen/bottom_pad_lr"
+        android:paddingTop="@dimen/bottom_pad_t"
+        android:paddingBottom="@dimen/bottom_pad_b"
+        >
+        <Button android:id="@+id/btn_ok"
+              style="?android:attr/buttonBarButtonStyle"
+              android:layout_height="@dimen/txt_btn_height"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:visibility="gone"
+              android:textSize="@dimen/bottom_txt_size"
+              android:textColor="@color/color_btn_txt"
+              android:background="@drawable/btn_rect_selector"
+             />
+
+        <Button android:id="@+id/btn_cancel"
+              style="?android:attr/buttonBarButtonStyle"
+              android:layout_height="@dimen/txt_btn_height"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:visibility="gone"
+              android:textSize="@dimen/bottom_txt_size"
+              android:textColor="@color/color_btn_txt"
+              android:background="@drawable/btn_rect_selector"
+             />
+    </LinearLayout>
+
+</LinearLayout>

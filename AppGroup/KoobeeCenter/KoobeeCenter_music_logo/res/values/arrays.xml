@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_items">
+        <item>耗电与发热</item>
+        <item>信号与通话</item>
+        <item>死机与重启</item>
+        <!-- <item>蓝牙</item> -->
+        <item>系统</item>
+        <item>相机</item>
+        <item>WLAN</item>
+        <!-- <item>GPS</item> -->
+        <item>屏幕</item>
+        <item>建议</item>
+        <item>应用</item>
+    </string-array>
+</resources>

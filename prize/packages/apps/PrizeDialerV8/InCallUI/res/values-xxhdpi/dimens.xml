@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PRIZE-change-yuandailin-2016-8-3-start-->
+    <dimen name="dialpad_padding_bottom">60dp</dimen>
+    <dimen name="prize_button_fragment_margin_top">330dp</dimen>
+    <dimen name="prize_button_fragment_margin_top_with_virtal">310dp</dimen>
+    <dimen name="end_call_button_margin_bottom">15dp</dimen>
+    <dimen name="jump_into_contacts_button_margin_left">10dp</dimen>
+    <dimen name="prize_dialpad_call_button_margin_right">10dp</dimen>
+    <dimen name="dialpad_call_button_margin_right">10dp</dimen>
+    <dimen name="prize_little_photo_size">90dp</dimen>
+    <!-- PRIZE-change-yuandailin-2016-8-3-end-->
+    <dimen name="calltype_img_padding_left">40dp</dimen>
+    <dimen name="call_name_text_size">24sp</dimen>
+    <dimen name="call_name_text_min_size">20sp</dimen>
+    <dimen name="prize_end_call_button_fragment_margin_top">525dp</dimen>
+    <dimen name="prize_dialpad_button_fragment_margin_top">225dp</dimen>
+    <dimen name="prize_bitmap_y_offset">85dp</dimen>
+	
+    <!-- prize-wuliang-20180320-sms responses-->
+    <dimen name="prize_sms_responses_view_margin_top">200dp</dimen>
+	
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:id="@+id/popwindow_layout"
+	android:background="@color/calllog_popwindow_background"
+    android:orientation="vertical" >
+	<View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#dcdcdc" />	
+    <TextView 
+        android:id="@+id/menu_all_calls"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+        android:text="@string/all_calls"
+        android:textColor="@color/prize_calllog_pop_window_title_color"
+		android:gravity="left|center_vertical"
+		android:paddingStart="13dp"
+		android:background="@drawable/popwindow_selector"
+		android:textSize="14sp"
+        android:textAlignment="viewStart"
+        />
+	<View
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#dcdcdc" />	
+    <TextView 
+        android:id="@+id/menu_unreceive_calls"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:gravity="left|center_vertical"
+		android:paddingStart="13dp"
+		android:background="@drawable/popwindow_selector"
+        android:text="@string/unreceive_calls"
+        android:textColor="@color/prize_calllog_pop_window_title_color"
+		android:textSize="14sp"
+        android:textAlignment="viewStart"
+        />
+	<View
+       android:layout_width="match_parent"
+       android:layout_height="1px"
+       android:background="#dcdcdc" />	
+    <TextView 
+        android:id="@+id/menu_received_calls"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:paddingStart="13dp"
+		android:background="@drawable/popwindow_selector"
+        android:text="@string/received_calls"
+        android:textColor="@color/prize_calllog_pop_window_title_color"
+		android:gravity="left|center_vertical"
+		android:textSize="14sp"
+        android:textAlignment="viewStart"
+        />
+	<View
+       android:layout_width="match_parent"
+       android:layout_height="1px"
+       android:background="#dcdcdc" />	
+    <TextView 
+        android:id="@+id/menu_outgoing_calls"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:paddingStart="13dp"
+		android:background="@drawable/popwindow_selector"
+        android:text="@string/outgoing_calls"
+		android:gravity="left|center_vertical"
+		android:textColor="@color/prize_calllog_pop_window_title_color"
+		android:textSize="14sp"
+        android:textAlignment="viewStart"
+        />
+	<View
+       android:layout_width="match_parent"
+       android:layout_height="1px"
+       android:background="#dcdcdc" />	
+
+</LinearLayout>

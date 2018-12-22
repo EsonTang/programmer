@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Float</string>
+    <string name="title">Float</string>
+    <string name="action_settings">Settings</string>
+    <string name="float_reset">restore default settings</string>
+    <string name="functionsetting">function settings</string>
+    <string name="functionstyle">operation mode</string>
+    <string name="modesetting">mode settings</string>
+    <string name="current_mode_title">current mode</string>
+    <string name="current_mode_menu">menu mode</string>
+    <string name="current_mode_quick">gesture mode</string>
+     <string name="float_layout_title">auto hide</string>
+     <string name="float_layout_summary">auto hide after 3 seconds</string>
+     <string name="abc_capital_off">off</string>
+    <string name="abc_capital_on">on</string>
+    <string name="quick_setting">gesture settings</string>
+    <string name="menu_setting">menu settings</string>
+    <string name="single_click">single click</string>
+    <string name="double_click">double click</string>
+    <string name="longpress">long press </string>
+    
+    <string name="wxscan">wechat scan</string>
+    <string name="alipayscan">alipay scan</string>
+    <string name="wechatpaycode">wechat paycode</string>
+    <string name="alipaypaycode ">alipay paycode</string>
+    <string name="wx">wechat</string>
+    <string name="alipay">alipay</string>
+    <string name="scan">scan</string>
+    <string name="paycode">paycode</string>
+    <string name="nothing">nothing</string>
+    <string name="lockscreen">lockscreen</string>
+    <string name="back">back</string>
+    <string name="mainhome">home</string>
+    <string name="recent">recent</string>
+    <string name="control">control center</string>
+    <string name="screenshot">screenshot</string>
+    <string name="xiaoku">xiaoku</string>
+    <string name="huyan">bluelight</string>
+    <string name="divide_screen">divide screen</string>
+    <string name="gamemode">game mode</string>
+    <string name="gamemode_layout_summary">In game mode, the HOME key will be locked, do not have to worry about accidentally touch button to quit the game!</string>
+    <string name="clean">clean</string>
+    <string name="float_setting">float settings</string>
+    <string name="application">application</string>
+    
+    <string name="single_set">single settings</string>
+    <string name="double_set">double settings</string>
+    <string name="long_set">longpress settings</string>
+    <string name="menu_set">menu settings</string>
+    
+    
+    
+    <string name="screenshot_failed_to_save_unknown_text">there is a problem when you save screen screenshots.</string>
+    <string name="screenshot_saving_title">Saving  screenshots</string>
+    <string name="screenshot_saving_text" >Saving  screenshots</string>
+    <string name="screenshot_failed_to_save_text">screen capture cannot be saved due to limited storage space.</string>
+    <string name="screenshot_saved_title">capture screen screenshots</string>
+    <string name="screenshot_saved_text">click to see your  screenshot.</string>
+    <string name="screenshot_failed_to_capture_text">this application or your unit does not allow  screenshots.</string>
+    <string name="screenshot_failed_title">Unable to capture  screenshots。</string>
+    <string name="screenshot_saving_ticker">Saving  screenshots</string>
+    
+    <string name="prize_game_mode_title">game mode</string>
+    <string name="prize_game_mode_notification_summary">the Home key has been locked and clicked into the settings</string>
+    
+    
+    <string name="dialog_chosen_title">please choose the application</string>
+    <string name="app_uninstall">uninstall</string>
+    <string name="app_alreadyuninstall">app  has been uninstalled</string>
+    <string name="gotomarket">Please use the market to download it manually</string>
+    <string name="chosen_other">Quick start has selected this item. Please select other functions.</string>
+    
+    
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0">
+		<LinearLayout 
+		      android:id="@+id/container_material"
+		      android:orientation="vertical"
+		      android:layout_width="match_parent"
+		      android:layout_height="wrap_content"
+		      android:background="@android:color/white">
+		
+			<com.android.settings.widget.SwitchBar android:id="@+id/bluetootsh_switch_bar"
+		                  android:layout_height="?android:attr/listPreferredItemHeightSmall"
+		                  android:layout_width="match_parent"
+		                  android:background="@drawable/switchbar_background"
+		                  android:theme="?attr/switchBarTheme"
+		                />
+			<View android:id="@+id/system_logo_divider"
+		              android:layout_width="match_parent"
+		              android:layout_height="1px"
+		              android:divider="@color/dashboard_tile_divider_color"
+		              android:layout_marginStart="@dimen/preference_margin_start_prize"
+		    	      android:layout_marginEnd="@dimen/preference_margin_end_prize"
+		              android:layout_gravity="center_horizontal"
+		              android:background="?android:attr/dividerVertical" 
+		              />				
+		    <FrameLayout android:layout_height="0px"
+		                 android:layout_weight="1"
+		                 android:descendantFocusability="blocksDescendants"
+		                 android:layout_width="match_parent"
+		                 >
+		        <com.android.settings.ListViewForScrollView android:id="@android:id/list"
+		                  style="@style/PreferenceFragmentListSinglePane"
+		                  android:layout_width="match_parent"
+		                  android:layout_height="match_parent"
+		                  android:paddingStart="@dimen/settings_side_margin"
+		                  android:paddingEnd="@dimen/settings_side_margin"
+		                  android:paddingTop="@dimen/dashboard_padding_top"
+		                  android:paddingBottom="@dimen/dashboard_padding_bottom"
+		                  android:scrollbarStyle="@*android:integer/preference_fragment_scrollbarStyle"
+		                  android:clipToPadding="false"
+		                  android:drawSelectorOnTop="false"
+		             	  android:dividerHeight="1px"
+		             	  android:divider="@drawable/list_divider"
+		                  android:elevation="@dimen/dashboard_category_elevation"
+		                  android:scrollbarAlwaysDrawVerticalTrack="true" />       
+		    </FrameLayout>
+		    <TextView android:id="@android:id/empty"
+		          android:layout_width="match_parent"
+		          android:layout_height="match_parent"
+		          android:gravity="center_horizontal"
+		          android:visibility="gone" />
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+		<View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:divider="@color/dashboard_tile_divider_color"
+              android:layout_marginStart="@dimen/preference_margin_start_prize"
+    	      android:layout_marginEnd="@dimen/preference_margin_end_prize"
+              android:background="?android:attr/dividerVertical" 
+              />
+		<LinearLayout android:id="@+id/go_refresh"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_gravity="center">
+		    <ImageView android:id="@+id/bluetooth_refresh"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		      	android:src="@drawable/image_click_style"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="1dp"
+		        android:layout_gravity="center_horizontal"/>
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:textSize="12sp"
+		        android:layout_marginTop="1dp"
+		        android:layout_marginBottom="5dp"
+		        android:text="@string/bluetooth_search_for_devices"/>
+		</LinearLayout>	    
+	</LinearLayout>
+</LinearLayout>

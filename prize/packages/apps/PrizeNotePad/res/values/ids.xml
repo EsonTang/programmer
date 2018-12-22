@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- drawing start -->
+    <!-- drawing end -->
+    
+    
+    
+    <!-- note start -->
+    <item type="id" name="calllog_backup_sdcard_not_found"/>
+    <item type="id" name="calllog_backup_fail_to_export_with_reason"/>
+    <item type="id" name="calllog_backup_export_confirmation"/>
+    <item type="id" name="dialog_cache_csv"/>
+    <item type="id" name="dialog_error_with_message"/>
+    <item name="dialog_sdcard_not_found" type="id"/>
+    <item name="dialog_searching_csv" type="id"/>
+    <item name="dialog_io_exception" type="id"/>
+    <item name="dialog_csv_not_found" type="id"/>
+    <item name="dialog_select_import_type" type="id"/>
+    <item name="dialog_select_one_csv" type="id"/>
+    <item name="dialog_select_multiple_csv" type="id"/>
+    <!-- note end -->
+    
+</resources>

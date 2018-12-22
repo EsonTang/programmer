@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="status_color">#2ba8e3</color>
+    <color name="feedback_status_color">#39a0d7</color>
+    <color name="color_e0e0e0">#e0e0e0</color>
+    <color name="color_323232">#323232</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_efefef">#efefef</color>
+    <color name="color_969696">#969696</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_000000">#00000000</color>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.prize.prizethemecenter.ui.widget.GalleryFlow
+            android:id="@+id/recommand_galleryflow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_bar_hight"
+            android:soundEffectsEnabled="false" >
+        </com.prize.prizethemecenter.ui.widget.GalleryFlow>
+            
+        <com.prize.prizethemecenter.ui.widget.FlowIndicator
+            android:id="@+id/flowIndicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="187dp"
+            android:gravity="center"
+            android:visibility="gone"
+            app:point_normal_color="#33ffffff"
+            app:point_radius="3dip"
+            app:point_seleted_color="#e6691e"
+            app:point_size="5dip"
+            app:space="10dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/recommand_notice_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp">
+
+        <TextView
+            android:id="@+id/rank_tv"
+            style="@style/home_notice_tv"
+            android:drawableTop="@drawable/rank_icon_selector"
+            android:text="@string/recommend_rank"/>
+
+        <TextView
+            android:id="@+id/classify_tv"
+            style="@style/home_notice_tv"
+            android:layout_marginLeft="45dp"
+            android:drawableTop="@drawable/classify_icon_selector"
+            android:text="@string/recommend_classify"/>
+
+        <TextView
+            android:id="@+id/topic_tv"
+            style="@style/home_notice_tv"
+            android:layout_marginLeft="45dp"
+            android:drawableTop="@drawable/topic_icon_selector"
+            android:text="@string/recommend_topic" />
+        
+         <TextView
+            android:id="@+id/local_tv"
+            style="@style/home_notice_tv"
+            android:layout_marginLeft="45dp"
+            android:drawableTop="@drawable/local_icon_selector"
+            android:text="@string/recommend_local"/>
+    </LinearLayout>
+
+      <TextView
+            android:id="@+id/hot_topic_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/title_logo"
+            android:drawablePadding="2dp"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/text_color_33cccc"
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginBottom="-3dp"
+            android:text="@string/hot_topic"/>
+
+</LinearLayout>

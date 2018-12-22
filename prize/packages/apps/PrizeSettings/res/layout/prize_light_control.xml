@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Layout used by SeekBarPreference for the seekbar widget style. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prize_light_control"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/brightness_seekbar_preference_min_height"
+    android:paddingTop="6dip"
+    android:paddingBottom="6dip"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+        <ImageView 
+            android:id="@+id/seekbar_left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/brightness_seekbarleft_margin_start"
+            android:src="@drawable/brightness_seekbar_left"
+            android:scaleType="centerCrop" />
+<!-- android:layout_marginStart="@dimen/brightness_seekbarleft_margin_start" -->
+        <!-- <TextView android:id="@+android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/prize_light_control_textcolor"
+            android:textSize="@dimen/prize_light_control_textsize" 
+            android:layout_marginLeft="@dimen/prize_light_control_text_marinleft"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal" 
+            android:visibility="gone"/>
+
+        <TextView android:id="@+android:id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@android:id/title"
+            android:layout_alignStart="@android:id/title"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorSecondary"
+            android:maxLines="4" /> -->
+
+        <!-- Preference should place its actual preference widget here. -->
+
+        <SeekBarPrize
+            android:id="@+id/seekbar"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1 "
+            android:minHeight="3dp"
+            android:maxHeight="3dp"
+            android:progressDrawable="@drawable/seekbar_prize"
+            android:thumb="@drawable/brightness_seekbar_center" />
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/brightness_seekbar_right"
+            android:layout_marginEnd="@dimen/brightness_seekbarright_margin_end"
+            android:scaleType="centerCrop" />
+<!-- android:layout_marginEnd="@dimen/brightness_seekbarright_margin_end" -->
+
+</LinearLayout>

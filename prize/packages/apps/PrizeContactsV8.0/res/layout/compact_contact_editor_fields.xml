@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- prize zhangzhonghao changed this view -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- prize-delete-huangliemin-2016-6-1-->
+<!--
+    <LinearLayout
+            android:id="@+id/names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"/>
+
+    <LinearLayout
+            android:id="@+id/phonetic_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+-->
+<!-- prize-delete-huangliemin-2016-6-1-->
+
+    <LinearLayout
+            android:id="@+id/kind_section_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+            
+              
+    <!-- prize-add-huangliemin-2016-6-1 start -->
+    <LinearLayout
+            android:id="@+id/group_member_ship"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <!-- prize-add-huangliemin-2016-6-1 end -->
+
+    <LinearLayout
+        android:id="@+id/more_fields"
+        style="@style/SelectableItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <!-- See the comment for EditKindIconStyle in styles.xml, we use (16 + 24 + 32) dp of
+             padding (start margin + icon width + end margin) for this to line up with the start
+             of the edit fields. -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/prize_editor_morefield"
+            android:gravity="center"
+            android:text="@string/compact_editor_more_fields"
+            android:textAlignment="viewStart"
+            android:textColor="#323232"
+            android:textSize="@dimen/expanding_entry_card_title_text_size" />
+
+    </LinearLayout>
+
+</merge>

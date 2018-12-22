@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true">
+
+
+    <RelativeLayout
+        android:id="@+id/theme_RL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <com.prize.prizethemecenter.ui.widget.CornerImageView
+            android:id="@+id/font_logo"
+            android:layout_width="164dp"
+            android:layout_height="96dp"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/isNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/font_logo"
+            android:background="@drawable/icon_is_new"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/mine_item_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/font_logo"
+            android:layout_alignBottom="@id/font_logo"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:button="@drawable/item_mine_local_selector"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+     <TextView
+        android:id="@+id/font_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/theme_RL"
+        android:layout_alignStart="@+id/theme_RL"
+        android:layout_below="@+id/theme_RL"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:singleLine="true" 
+        android:textColor="@color/text_color_323232"
+        android:textSize="@dimen/text_size_medium"
+        android:text="夏日清涼"/>
+     
+     <TextView
+        android:id="@+id/font_prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/font_title"
+        android:layout_alignStart="@+id/font_title"
+        android:layout_below="@+id/font_title"
+        android:layout_marginTop="1dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/text_color_969696"
+        android:textSize="@dimen/text_size_small"
+        android:text="￥5.0"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/use_FL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/font_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/use_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:background="@drawable/common_use_btn"/>
+
+    <TextView
+        android:id="@+id/use_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/text_size_small"
+        android:text="应用"
+        />
+    </FrameLayout>
+
+</RelativeLayout>

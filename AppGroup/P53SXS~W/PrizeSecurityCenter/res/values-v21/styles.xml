@@ -1,0 +1,14 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" >
+      <!--  <item name="android:windowNoTitle">true</item>
+       <item name="android:statusBarColor">#21b5c0</item> -->
+       <item name="android:windowDrawsSystemBarBackgrounds">true</item> 
+    </style>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_background"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.prize.appcenter.ui.widget.ScrollLineGridView
+            android:id="@+id/hot_cats_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp"
+            android:focusable="false"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="20dp"
+            app:lineColor="#d8d8d8"
+            app:lineStyle="verticalDevide"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/text_color_f5f5f5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12.5dp"
+            android:textColor="#2b2b2b"
+            android:text="@string/game_category"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/text_color_f5f5f5"/>
+
+        <com.prize.appcenter.ui.widget.ScrollLineGridView
+            android:id="@+id/games_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:horizontalSpacing="0dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="0dp"
+            app:lineColor="#d8d8d8"
+            app:lineStyle="crossStyle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/text_color_f5f5f5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12.5dp"
+            android:textColor="#2b2b2b"
+            android:text="@string/app_category"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="#d8d8d8"/>
+
+        <com.prize.appcenter.ui.widget.ScrollLineGridView
+            android:id="@+id/apps_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:horizontalSpacing="0dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="0dp"
+            app:lineColor="#d8d8d8"
+            app:lineStyle="crossStyle"/>
+
+    </LinearLayout>
+</ScrollView>

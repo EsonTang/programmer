@@ -1,0 +1,51 @@
+<resources>
+    <string name="prize_call_log_list_item_message">&#160;&#160;短信</string>
+    <string name="prize_call_log_list_item_phone">&#160;&#160;通话</string>
+    <string name="prize_call_log_list_item_unknown">未知</string>
+
+    <!-- PRIZE-Add-TMSDK_Call_Mark-wangzhong-2017_5_5-start -->
+    <string name="prize_call_mark_cloud_fetch">云查结果</string>
+    <string name="prize_call_mark_prop_tag">=标记</string>
+    <string name="prize_call_mark_prop_yellow">=黄页</string>
+    <string name="prize_call_mark_prop_tag_yellow">=标记黄页</string>
+    <string name="prize_call_mark_number">号码:</string>
+    <string name="prize_call_mark_name">名称:</string>
+    <string name="prize_call_mark_tagtype">标记类型:</string>
+    <string name="prize_call_mark_tagcount">标记数量:</string>
+    <string name="prize_call_mark_warning">警告信息:</string>
+    <string name="prize_call_mark_used_for_common">=通用</string>
+    <string name="prize_call_mark_used_for_calling">=主叫</string>
+    <string name="prize_call_mark_used_for_called">=被叫</string>
+    <string name="prize_call_mark_location">归属地:</string>
+    <string name="prize_call_mark_eoperator">虚拟运营商:</string>
+
+    <string name="prize_primary_call_info_call_mark_tag">腾讯手机管家为您识别</string>
+    <!-- PRIZE-Add-TMSDK_Call_Mark-wangzhong-2017_5_5-end -->
+
+    <!-- PRIZE-Add-DialerV8_InCallStatusBar-wangzhong-2017_7_19-start -->
+    <string name="prize_incallwindow_outgoing">轻触此处返回通话&#160;&#160;正在拨号</string>
+    <string name="prize_incallwindow_incall">轻触此处返回通话&#160;&#160;</string>
+    <string name="prize_notch_incallwindow_incall">通话中&#160;&#160;</string> 
+    <!-- PRIZE-Add-DialerV8_InCallStatusBar-wangzhong-2017_7_19-end -->
+    <!-- PRIZE-Add-SIMPLE_LAUNCHER_TTS-hpf-2017_11_25-start -->
+    <string name="incoming_call">"来电"</string>
+    <string name="dialpad_one">1</string>
+    <string name="dialpad_two">2</string>
+    <string name="dialpad_three">3</string>
+    <string name="dialpad_four">4</string>
+    <string name="dialpad_five">5</string>
+    <string name="dialpad_six">6</string>
+    <string name="dialpad_seven">7</string>
+    <string name="dialpad_eight">8</string>
+    <string name="dialpad_night">9</string>
+    <string name="dialpad_zero">0</string>
+    <string name="dialpad_star">*</string>
+    <string name="dialpad_pound">#</string>
+    <!-- PRIZE-Add-SIMPLE_LAUNCHER_TTS-hpf-2017_11_25-end -->
+
+    <string name="prize_phone_location_default">未查询到归属地</string>
+
+    <string name="prize_call_log_multiple_delete_dialog_title">删除</string>
+
+    <string name="prize_to_audio_call_title">切到语音通话</string>
+</resources>

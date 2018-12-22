@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+
+    <!-- 状态选中 -->
+    <item android:drawable="@drawable/category_item_title_press" android:state_enabled="true"/>
+    <item android:drawable="@drawable/category_item_title_nomal"></item>
+
+</selector>

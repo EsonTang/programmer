@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مسجل الشاشة</string>
+    <string name="start">بدأ</string>
+    <string name="stop">توقف</string>
+    <string name="show_cordinate">عرض تعمل باللمس</string>
+    <string name="hide_cordinate">انهيار تاتش</string>
+    <string name="share">سهم</string>
+    <string name="screenrecord_recording_ticker">شاشة الفيديو</string>
+    <string name="screenrecord_recording_title">مسجلة شاشة</string>
+    <string name="screenrecord_recording_text">"مدة القصوى: 180 ثانية."</string>
+    <string name="screenrecord_saved_ticker">حفظ تسجيل الشاشة</string>
+    <string name="screenrecord_saved_title">حفظ مسجل الشاشة</string>
+    <string name="screenrecord_saved_text">المس لعرض تسجيل الشاشة.</string>
+    <string name="screenrecord_duration_text">المدة:</string>
+</resources>

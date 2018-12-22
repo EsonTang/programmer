@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2009, The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>  
+   <dimen name="combinItemTop">49dp</dimen>
+   <dimen name="shutter_group_height">165dp</dimen>
+   <dimen name="center_view_margin">150dp</dimen>
+   <dimen name="center_item_height">46dp</dimen>
+   <dimen name="shutter_group_margintop">26dp</dimen>
+   <dimen name="bueaty_shutter_group_height">120dp</dimen>
+   <dimen name="picker_marginleft">102dp</dimen>
+   <dimen name="setting_marginleft">204dp</dimen>
+   <dimen name="mode_scrollview_marginBottom">119dp</dimen>
+   <dimen name="shutter_group_height_bottom">211dp</dimen>
+   
+   <dimen name="info_top">15dp</dimen>
+   <dimen name="info_bottom">450dp</dimen>
+   <dimen name="info_facebeauty_bottom">365dp</dimen>
+   <dimen name="close_top_margin">5dp</dimen>
+   <dimen name="camerafocus_indicator_default_height">244dp</dimen>
+   <dimen name="screen_on_cs_margin_right">181dp</dimen>
+   <!-- prize-xuchunming-20171123-arcsoft switch-start -->
+   <dimen name="combin_picker_marginend">110dp</dimen>
+   <!-- prize-xuchunming-20171123-arcsoft switch-end -->
+   <dimen name="camera_picker_width">60dp</dimen>
+   <dimen name="camera_picker_marginBottom">65dp</dimen>
+   <dimen name="camera_picker_marginEnd">50dp</dimen>
+   <dimen name="picker_group_margintop">0dp</dimen>
+   <dimen name="effect_layout_margintop">40dp</dimen>
+   <!-- prize-xuchunming-201804026-add spotlight-start -->
+   <dimen name="beautiful_spotlight_layout_margintop">38dp</dimen>
+   <!-- prize-xuchunming-201804026-add spotlight-end -->
+   <dimen name="preview_surfaceview_margin">0dp</dimen>
+</resources>

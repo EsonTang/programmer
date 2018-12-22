@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batch_merge_sim_contacts_warning">ទំនាក់​ទំនង​ក្នុងស៊ីម​មិនអាច​បញ្ចូល​គ្នា។</string>
+    <string name="menu_done">"ធ្វើ​រួច"</string>
+    <string name="menu_deleteContact">"លុប"</string>
+    <string name="menu_select_all">"ជ្រើសរើសទាំងអស់"</string>
+    <string name="menu_select_none">"មិន​ជ្រើស​ទាំងអស់"</string>
+    <string name="menu_new_contact_action_bar">ថ្មី</string>
+    <string name="selected_item_count">  <xliff:g id="count">%d</xliff:g> បានជ្រើសរើស </string>
+    <string name="multichoice_no_select_alert">មិនមានវត្ថុអ្វីបានជ្រើសរើសឡើយ ។</string>
+    <string name="aas_phone_type_none">"គ្មាន"</string>
+    <string name="aas_custom_title">កម្រង​ស្លាក​ផ្ទាល់ខ្លួន</string>
+    <string name="aas_new_dialog_title">បន្ថែមស្លាកថ្មី</string>
+    <string name="ass_rename_dialog_title">កែសម្រួល​ស្លាក</string>
+    <string name="aas_delele_dialog_message">លុបចោល​ស្លាក​(នានា) នឹង​ប៉ះពាល់​ដល់​លេខ​បន្ថែម​ទាំងអស់​ដែល​មាន​តំណ​ភ្ជាប់​ទៅ​នឹង​ស្លាក់​(នានា)។ តើអ្នកប្រាកដ​ក្នុង​ចិត្ត​ទេ?</string>
+    <string name="aas_name_invalid">ឈ្មោះស្លាកមិនមានសុពលភាព ។ សូមបញ្ចូលឈ្មោះថ្មីមួយទៀត ។</string>
+    <string name="aas_name_exist">ស្លាកនេះមានរួចហើយ ។</string>
+    <string name="aas_usim_full">គ្មានចន្លោះសម្រាប់​ស្លាកថ្មីៗ​ទេ។</string>
+    <string name="ass_edit_assert_message">កែសម្រួល​ស្លាក​(នានា) នឹង​ប៉ះពាល់​ដល់​លេខ​បន្ថែម​ទាំងអស់​ដែល​មាន​តំណ​ភ្ជាប់​ទៅ​នឹង​ស្លាក់​នេះ។ តើអ្នកប្រាកដ​ក្នុង​ចិត្ត​ទេ?</string>
+    <string name="aas_new_fail">បរាជ័យក្នុងការបង្កើតស្លាកថ្មី ។</string>
+    <string name="aas_edit_fail">ការប្ដូរឈ្មោះ <xliff:g id="aas">%s</xliff:g> មិន​បាន​សម្រេច។</string>
+    <string name="aas_delete_fail">ការលុប <xliff:g id="aas">%s</xliff:g> ចោល ត្រូវបរាជ័យ ។</string>
+    <string name="aas_phone_primary">លេខចម្បង</string>
+    <string name="aas_phone_additional">លេខបន្ថែម</string>
+</resources>

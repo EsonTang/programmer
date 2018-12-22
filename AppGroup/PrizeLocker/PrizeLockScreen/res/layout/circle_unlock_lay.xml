@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- <RelativeLayout  -->
+<com.prize.lockscreen.widget.CircleRelativeView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/content_view"
+    >
+
+      <TextView
+       android:id="@+id/text_time"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#ffffffff"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="@dimen/time_margin_top"
+       android:textSize="80sp" />
+
+     <TextView
+         android:id="@+id/text_date"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffffff"
+         android:layout_below="@id/text_time"
+         android:layout_centerHorizontal="true"
+         android:textSize="20sp" />
+      
+    <com.prize.lockscreen.widget.SlideCutListView
+          android:id="@+id/notice_list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/text_date"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="300dp"
+          android:divider="@null"
+          android:listSelector="@android:color/transparent" />
+      <!-- 锁屏核心功能操作界面自定义ViewGrou的显示 -->
+      <com.prize.lockscreen.widget.StarLockView
+       android:id="@+id/four_group"
+       android:layout_width="match_parent"
+       android:layout_height="270dp"
+       android:padding="4dp"
+       android:layout_marginBottom="20dp"
+       android:layout_alignParentBottom="true"
+       />
+
+</com.prize.lockscreen.widget.CircleRelativeView>

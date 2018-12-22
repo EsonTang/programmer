@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/send_button"
+        android:text="@string/ir_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_fcm_normal"/>
+    <Button
+        android:id="@+id/get_freqs_button"
+        android:text="@string/ir_get_freqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_fcm_normal"/>
+
+    <ScrollView
+        android:id="@+id/freqs_text_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/freqs_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" />
+
+    </ScrollView>
+
+    <include layout="@layout/bottom_bar" />
+
+</LinearLayout>

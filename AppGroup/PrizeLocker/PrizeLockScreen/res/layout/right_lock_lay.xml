@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.lockscreen.widget.PullRightDoorView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:prize="http://schemas.android.com/apk/res/com.prize.prizelockscreen"
+    android:id="@+id/content_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        style="@style/time_sty" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_time"
+        android:layout_centerHorizontal="true"
+        style="@style/date_sty" />
+
+    <com.prize.lockscreen.widget.SlideCutListView
+          android:id="@+id/notice_list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/text_date"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="60dp"
+          android:divider="@null"
+          android:listSelector="@android:color/transparent" /><!-- android:layout_above="@id/tv_hint" -->
+    
+    <com.prize.lockscreen.widget.LightTextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dip"
+        android:text="@string/str_right_scroll_unlock"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        prize:refreshTime="70" />
+
+    <ImageView
+        android:id="@+id/img_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:padding="2dp"
+        android:src="@drawable/camera" />
+
+</com.prize.lockscreen.widget.PullRightDoorView>

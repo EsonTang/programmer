@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="cootek_brand_declare1">本服务由触宝</string>
+    <string name="cootek_brand_declare2">®</string>
+    <string name="cootek_brand_declare3">电话提供</string>
+    <string name="cootek_dlg_standard_title">触宝提示</string>
+    <string name="cootek_dlg_no_show_again">不再提示</string>
+
+    <!--login-->
+    <string name="cootek_phone_input_hint">请填写您的手机号码</string>
+    <string name="cootek_validation_code_input_hint">输入验证码</string>
+    <string name="cootek_validation_code_query_hint">获取验证码</string>
+    <string name="cootek_validation_code_requery">重新发送</string>
+    <string name="cootek_validation_code_countdown">%d秒</string>
+    <string name="cootek_network_unavailable">没有网络连接</string>
+    <string name="cootek_loading_text">正在加载</string>
+    <string name="cootek_individual_head_title2">登录注册</string>
+
+
+    <string name="cootek_verification_over_limit">验证码发送超限</string>
+    <string name="cootek_verification_phone_format_error">手机号码格式错误</string>
+    <string name="cootek_verification_send_ok">获取验证码的请求已成功发送！</string>
+
+    <string name="cootek_login_verification_expired">验证码过期</string>
+    <string name="cootek_login_code_input_insuffient">密码和验证码，二者至少提供一个</string>
+    <string name="cootek_login_data_not_found">账户不存在</string>
+    <string name="cootek_login_authorize_fail">验证码错误</string>
+    <string name="cootek_login_no_permission">权限不足</string>
+
+    <string name="cootek_network_other">网络请求异常</string>
+    <string name="cootek_number_invalid_hint">请输入正确的手机号码</string>
+    <string name="cootek_login_page_start_hint">登录</string>
+    <string name="cootek_captcha_message_template">您的验证码为\\[(\\d{4})\\]</string>
+
+
+    <string name="jssdk_start_download">开始下载</string>
+    <string name="jssdk_download_failed">下载失败,请检查网络情况</string>
+    <string name="jssdk_download_failed_alt">点击进入设置</string>
+    <string name="jssdk_download_disable">已有文件正在下载,请稍后再试</string>
+    <string name="jssdk_notification_downloading">正在下载</string>
+    <string name="cootek_login_head_text">通过手机号码验证后可以使用免费电话</string>
+
+
+    <string name="cootek_websearch_failed">网络不给力，请刷新重试！</string>
+    <string name="cootek_websearch_retry">重试</string>
+
+    <string name="cootek_websearch_empty_data_failed">您还没有相关记录</string>
+
+    <string name="tl_back_close_text">关闭</string>
+    <string name="cootek_titlebar_name">黄页</string>
+
+    <string name="cootek_individual_invitation">现在成功邀请好友，立即获得100分钟免费时长！</string>
+    <string name="cootek_individual_invitation_text">话费红包免费领！咱俩只要都装，就可以免费打电话啦～</string>
+    <string name="cootek_individual_invitation_text_zhuoyi">只需注册触宝电话账号，就可在Freeme OS系统里免费打电话啦~</string>
+    <string name="cootek_individual_wechat">微信朋友圈</string>
+    <string name="cootek_individual_qq">QQ空间</string>
+    <string name="cootek_individual_sms">短信发送</string>
+    <string name="cootek_individual_cancel">取消</string>
+
+    <string name="cootek_dialog_title">提示</string>
+    <string name="cootek_dialog_nevernotify">不再提醒</string>
+    <string name="cootek_dialog_btn_cancell">取消</string>
+    <string name="cootek_dialog_btn_positive">继续</string>
+
+    <string name="cootek_dialog_login_noti">免费电话功能需登录后即可使用，不收取通话费用。消耗的少量网络流量由运营商按标准资费收取。是否继续？</string>
+
+    <string name="cootek_download_confirm">确认下载 %s？</string>
+    <string name="cootek_download_app_failed_no_space">存储空间不足，无法下载</string>
+    <string name="cootek_download_app_in_progress">新版应用程序正在下载&#8230;</string>
+    <string name="cootek_download_app_in_progress2">正在下载应用：%s</string>
+    <string name="cootek_download_app_success">应用程序下载成功</string>
+    <string name="cootek_download_app_percentage">应用程序下载: </string>
+    <string name="cootek_download_app_percentage2">下载%s: </string>
+    <string name="cootek_download_app_failed">下载失败, 请连接网络后点击重新下载</string>
+    <string name="cootek_voip_share_failed">请更新voip插件，即可使用分享功能</string>
+
+    <string name="cootek_scan_text">对准条码到框内即可自动扫描</string>
+</resources>

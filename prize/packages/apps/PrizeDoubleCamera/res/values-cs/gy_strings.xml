@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- 手势 -->
+	<string name="gy_accessibility_switch_to_vdetect">Přepnout na rozpoznávání V.</string>
+	<string name="gy_gesture_guide_capture">V rozpoznávání</string>
+	<!-- 美颜 -->
+	<string name="gy_accessibility_switch_to_faceart">Přepnout na krásu</string>
+	<string name="gy_faceart_guide_capture">Krása v reálném čase</string>
+        <string name="gy_faceart_guide_capture_off">Krása v reálném čase byla zavřena</string>
+	<!-- 美肤级别 -->
+	<string name="gy_exposure_tips">Krásná pokožka</string>
+	<!-- 美白 -->
+	<string name="gy_whitening_tips">Bělení</string>
+	<!-- 磨皮 -->
+	<string name="gy_smooth_tips">Leštění</string>
+
+        <string name="gy_accessibility_switch_to_self">Přepnout na zadní samospoušť</string>
+
+	<string name="pref_camera_gyself_title">Zadní samospoušť</string>
+	<string name="pref_camera_gyage_title">Rozpoznávání věku</string>
+	<!--<string name="pref_camera_gysmile_title">笑脸拍照</string>-->
+	<string name="pref_camera_gyage_year">Roky</string>
+	<string name="pref_camera_gyage_male">"Muž"</string>
+	<string name="pref_camera_gyage_female">"Žena"</string>
+</resources>

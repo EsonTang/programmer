@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:left="http://schemas.android.com/apk/res/com.android.launcher3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.prize.left.page.ui.StatusTextView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	left:normalColor="@color/black_87"
+    	left:selColor="@color/black_54"
+    	android:id="@+id/txt_name"
+    	android:textSize="@dimen/sp_14"
+    	android:gravity="center"
+    	/>
+</LinearLayout>

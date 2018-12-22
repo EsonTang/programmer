@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+                >
+
+    <TextView
+        android:id="@+id/download_footer_add_more_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/download_footer_add_more_tv_icon"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="16dp"
+        android:text="展开全部"
+        android:textColor="@color/text_color_6c6c6c"
+        android:textSize="@dimen/text_size_min"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/download_footer_type_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/download_footer_add_more_tv"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/download_footer_devide_line"
+            style="@style/tv_divide"/>
+
+        <TextView
+            android:id="@+id/download_footer_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/download_footer_type_head_icon"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_404040"
+            android:textSize="@dimen/text_size_small"/>
+
+
+        <LinearLayout
+            android:id="@+id/download_footer_type_llyt_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/pad_left_right_15dp"
+            android:paddingRight="@dimen/pad_left_right_15dp">
+        </LinearLayout>
+    </LinearLayout>
+</merge>
+

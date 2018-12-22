@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcut_facebeauty"
+        android:shortcutDisabledMessage="@string/shortcut_title_facebeauty"
+        android:shortcutId="facebeauty"
+        android:shortcutLongLabel="@string/shortcut_title_facebeauty"
+        android:shortcutShortLabel="@string/shortcut_title_facebeauty" >
+        <intent
+            android:action="com.mediatek.camera.shortcut.facebeauty"
+            android:targetClass="com.android.camera.CameraLauncher"
+            android:targetPackage="com.mediatek.camera" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcut_video"
+        android:shortcutDisabledMessage="@string/shortcut_title_video"
+        android:shortcutId="video"
+        android:shortcutLongLabel="@string/shortcut_title_video"
+        android:shortcutShortLabel="@string/shortcut_title_video" >
+        <intent
+            android:action="com.mediatek.camera.shortcut.video"
+            android:targetClass="com.android.camera.CameraLauncher"
+            android:targetPackage="com.mediatek.camera" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shorcut_superzoom"
+        android:shortcutDisabledMessage="@string/shortcut_title_superzoom"
+        android:shortcutId="superzoom"
+        android:shortcutLongLabel="@string/shortcut_title_superzoom"
+        android:shortcutShortLabel="@string/shortcut_title_superzoom" >
+        <intent
+            android:action="com.mediatek.camera.shortcut.supperzoom"
+            android:targetClass="com.android.camera.CameraLauncher"
+            android:targetPackage="com.mediatek.camera" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcut_portrait"
+        android:shortcutDisabledMessage="@string/shortcut_title_portrait"
+        android:shortcutId="portrait"
+        android:shortcutLongLabel="@string/shortcut_title_portrait"
+        android:shortcutShortLabel="@string/shortcut_title_portrait" >
+        <intent
+            android:action="com.mediatek.camera.shortcut.portrait"
+            android:targetClass="com.android.camera.CameraLauncher"
+            android:targetPackage="com.mediatek.camera" />
+    </shortcut>
+
+</shortcuts>

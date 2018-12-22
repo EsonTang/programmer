@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- App name -->
+    <string name="app_name">服務中心</string>
+    <!-- <string name="app_name">酷比中心</string> -->
+    <string name="system_update">系統升級</string>
+    <string name="sale_service">售後服務</string>
+    <string name="feedback">用戶反饋中心</string>  
+    <string name="flag_store">使用說明書</string>
+    <!-- <string name="visit_koobee">訪問pepsiphone.com</string>  -->
+     <string name="visit_koobee">訪問koobee</string>
+    <!-- <string name="company_name">百事系列手機由深圳酷比通信設備有限公司設計製造</string> -->
+    <string name="company_name">百事系列手機由深圳酷比通信設備有限公司製造</string>
+    <string name="company_service_name">百事系列手機由深圳酷比通信設備有限公司提供服務支持</string>
+    <string name="title_activity_after_sale">AfterSaleActivity</string>
+    <string name="title_activity_aftersales">AftersalesActivity</string>
+    <string name="hotline">全國統一客服服務熱線</string>
+    <string name="title_activity_hotline">HotlineActivity</string>
+    <string name="title_activity_outlets_in_city">OutletsInCityActivity</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <!-- 反馈相关 -->
+    <string name="power_and_heat">耗電與發熱</string>
+    <string name="signal_and_communicate">信號與通話</string>
+    <string name="shutdow_and_restart">死機與重啟</string>
+    <string name="bluetooth">藍牙</string>
+    <string name="camara">相機</string>
+    <string name="wlan">WLAN</string>
+    <string name="gps">GPS</string>
+    <string name="advice">建議</string>
+    <string name="application">建議</string>
+    <string name="pl_input_advice">請輸入您的建議反饋(不少於5個漢字)</string>
+    <string name="pl_input_phone_or_email">請輸入您的郵箱或手機(選填)</string>
+    <string name="send">發送</string>
+
+    <!-- 提交反馈信息返回提示语 -->
+    <string name="commit_success">提交成功</string>
+    <string name="illegal_imei">非法的IMEI</string>
+    <string name="sys_busy">系统繁忙，稍候再试</string>
+    <string name="illegal_operate_type">不合法的操作類型</string>
+
+    <!-- 网络相关提示语 -->
+    <string name="netInfo">網絡信息</string>
+    <string name="netError_pl_check">網絡錯誤，請檢查網絡</string>
+
+    <!-- 酷比官网 及 酷比天猫网 -->
+    <!-- <string name="koobee_official_website">http://www.pepsiphone.com/</string>  -->
+    <string name="koobee_official_website">http://www.koobeemobile.com/</string>
+    <string name="koobee_tmall_website">http://koobee.tmall.com/</string>
+    <string name="pl_select_number">請選擇號碼</string>
+    <string name="sure">確定</string>
+    <string name="cancel">取消</string>
+   
+    
+     <string name="outlets">全國售後網點</string>
+    <string name="alloutlets">全國售後服務網點</string>
+    <string name="aftersales_instroduction">售後服務說明</string>
+    <string name="company_address">地址：深圳市南山區科苑路11號金融科技大廈17F</string>
+    <string name="map_address">深圳市南山區科苑路11號金融科技大廈</string>
+    
+    <!-- prize-add-by-yanghao-20150914-start-->
+    <!-- 
+    <string name="company_address">地址：深圳市福田區深南中路6009號綠景廣場B座27楼A</string> 
+    <string name="map_address">地址：深圳市福田區深南中路6009號綠景廣場B座</string>
+    -->
+    <string name="map_activity_not_found">未找到地圖程式，無法查看!</string> 
+    <string name="toMap">查看地圖</string>
+	<!-- prize-add-by-yanghao-20150914-end-->
+    
+    <string name="url_key">網址：</string>
+    <string name="hotline_num">客服服務熱線：400-628-3117</string>
+    
+    
+    <string name="aftersales_intro">\t\t售後服務熱線主要處理用戶對手機的問詢，并盡可能的提供快捷的解決方案，或轉交相關部門，督促及時解決，然後迅速將結果反饋給用戶。它的服務範圍包括處理多種形式的問詢。</string>
+</resources>

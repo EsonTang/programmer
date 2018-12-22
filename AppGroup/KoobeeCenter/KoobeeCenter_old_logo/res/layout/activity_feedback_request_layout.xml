@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#2ba8e3"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/left_cln_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1.5dp"
+            android:layout_toRightOf="@id/left"
+            android:gravity="center_vertical"
+            android:text="@string/feedback"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_medium" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef"
+        android:orientation="vertical"
+        android:paddingTop="15dp" >
+
+        <EditText
+            android:id="@+id/content_Edtv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20.5dp"
+            android:background="@drawable/bg_feedback_content"
+            android:gravity="top"
+            android:hint="@string/pl_input_advice"
+            android:padding="5dp"
+            android:textColor="#323232"
+            android:textColorHint="#d3d3d3"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/phone_email_Edtv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_feedback_content"
+            android:gravity="center_vertical"
+            android:hint="@string/pl_input_phone_or_email"
+            android:padding="5dp"
+            android:textColor="#323232"
+            android:textColorHint="#d3d3d3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/send_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_send_feedback_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="#323232"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

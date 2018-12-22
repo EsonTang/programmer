@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="2dp" >
+
+    <!-- add by zhouerlong -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+    <!--android:background="@drawable/thumb_wallpaper_item_bg" -->
+      <com.android.launcher3.view.WallpaperPickerAsyncImageView
+            android:id="@+id/theme_id"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center" >
+      </com.android.launcher3.view.WallpaperPickerAsyncImageView>
+
+        <ImageView
+            android:id="@+id/wallpaper_set"
+            android:layout_width="@dimen/wallpaperItemIconSize"
+            android:layout_height="@dimen/wallpaperItemIconSize"
+            android:layout_gravity="right|bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/wallpaper_set" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp" />
+
+</LinearLayout>

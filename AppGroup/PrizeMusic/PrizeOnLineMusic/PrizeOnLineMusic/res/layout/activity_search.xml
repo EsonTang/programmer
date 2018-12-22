@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white" >
+
+    <FrameLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="false"
+        android:paddingTop="47dp"
+        android:layout_above="@+id/bottomactionbar_new" >
+   
+    </FrameLayout>
+
+    <com.prize.music.ui.widgets.SearchView
+        android:id="@+id/main_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_above="@+id/bottomactionbar_new" >
+    </com.prize.music.ui.widgets.SearchView>
+     
+    <fragment
+        android:id="@+id/bottomactionbar_new"
+        android:name="com.prize.music.ui.fragments.BottomActionBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    
+     <com.prize.music.views.ParabolaView 
+          android:id="@+id/parabolaView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_centerHorizontal="true"  
+          android:layout_centerVertical="true"/>
+   
+</RelativeLayout>

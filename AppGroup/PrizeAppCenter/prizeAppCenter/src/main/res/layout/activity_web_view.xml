@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg">
+
+    <include layout="@layout/web_title_lay"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/title_lay"
+        android:max="100"
+        android:progressDrawable="@drawable/web_progress_drawable"
+        />
+
+    <com.prize.appcenter.ui.webview.CustomWebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/progress_bar"
+        />
+
+    <include layout="@layout/load_error_lay"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/web_bottom_bg_color"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        >
+
+        <com.prize.appcenter.ui.widget.CornerImageView
+            android:id="@+id/img_app"
+            style="@style/game_item_image"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/default_icon"
+            />
+
+        <TextView
+            android:id="@+id/txt_appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_app"
+            android:layout_toLeftOf="@+id/btn_download"
+            android:layout_toRightOf="@id/img_app"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_color_262626"
+            android:textSize="@dimen/text_size_small"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_appName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_app"
+            android:clickable="false"
+            android:focusable="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressDrawable="@drawable/room_rating_bar"
+            android:stepSize="0.1"/>
+
+        <TextView
+            android:id="@+id/txt_appSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar"
+            android:layout_toLeftOf="@+id/btn_download"
+            android:layout_toRightOf="@id/img_app"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_color_737373"
+            android:textSize="@dimen/text_size_micro"
+            />
+
+        <com.prize.appcenter.ui.widget.ProgressNoGiftButton
+            android:id="@+id/btn_download"
+            style="@style/game_item_progressButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:onClick="onClick"
+            />
+    </RelativeLayout>
+</RelativeLayout>

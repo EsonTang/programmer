@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">سوبر لقطات</string>
+    <string name="action_settings">نصب</string>
+    <string name="scroll_shot">لقطات طويلة</string>
+    <string name="funny_shot">لقطات ممتعة</string>
+    <string name="screen_record">تسجيل الشاشة</string>
+    <string name="nextpage">على الشاشة التالية</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">ألغيت</string>
+    <string name="rect_shot">لقطات مستطيلة</string>
+    <string name="lasso_shot">لقطات لاسو</string>
+    <string name="daub_shot">لقطات من الكتابة على الجدران</string>
+    <string name="redo">فعل ثانية</string>
+    <string name="undo">إلغاء</string>
+    <string name="exit">استقال</string>
+    <string name="scrawl">الكتابة على الجدران</string>
+    <string name="app_restrict_capture_screen">منذ الحد التطبيق، واجهة لا يمكن أن يكون لقطات</string>
+    <string name="drag_to_select_capture_area">في السحب والإسقاط اختيار نافذة الشاشة النار</string>
+    <string name="not_support_screen_orientation_change">لا عملية القبض على الشاشة لا يدعم الأفقي والرأسي التبديل الشاشة</string>
+    <string name="screenshot_saved">لقطات القبض</string>
+    <string name="screenshot_saved_to_tf_card">الملفات المحفوظة إلى "تخزين الهاتف / سوبر لقطات" المجلد.</string>
+    <string name="screenshot_saved_to_sd_card">الملفات المحفوظة على "بطاقة SD / سوبر لقطات" المجلد.</string>
+    <string name="lasso_guide">رسم لقطات بدأت المنطقة لقطات لاسو</string>
+    <string name="scrollcapture_is_running">لقطات طويلة الأمد في</string>
+    <string name="scrollcapture_is_saving_please_wait">لقطات طويلة الحالية توفير، يرجى الانتظار.</string>
+    <string name="hit_the_bottom">في نهاية الشريحة</string>
+    <string name="content_un_extended">المقطع العرضي لا يدعم قطات طويلة</string>
+    <string name="maximum_to_ten_pages">ما يصل إلى 10 شاشة اعتراض</string>
+    <string name="saving">إنقاذ ...</string>
+    <string name="screenshot_saving">إنقاذ قطة شاشة ...</string>
+    <string name="hava_not_start_daub">لا يتم رسمها، ورسمت ثم اضغط حفظ.</string>
+    <string name="move">متحرك</string>
+    
+    <string name="turn_off_long_screenshots">يرجى الخروج من لقطات طويلة</string>
+    <string name="turn_off_interest_screenshots">يرجى الخروج من لقطات مثيرة للاهتمام</string>
+    
+</resources>

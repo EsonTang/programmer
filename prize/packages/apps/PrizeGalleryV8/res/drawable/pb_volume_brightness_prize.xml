@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  PRIZE-触屏调节亮度,音量,进度,图片变形-wanzhijuan-2015-5-14-start-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dip" />
+            <gradient
+                    android:startColor="#80fdfdfd"
+                    android:centerColor="#80fdfdfd"
+                    android:centerY="0.75"
+                    android:endColor="#80fdfdfd"
+                    android:angle="270"
+            />
+        </shape>
+    </item>
+    
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+                <gradient
+                        android:startColor="#ff1283ef"
+                        android:centerColor="#ff1283ef"
+                        android:centerY="0.75"
+                        android:endColor="#ff1283ef"
+                        android:angle="270"
+                />
+            </shape>
+        </clip>
+    </item>
+    
+</layer-list>
+<!--  PRIZE-触屏调节亮度,音量,进度图片变形-wanzhijuan-2015-5-14-end-->

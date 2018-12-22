@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <ImageView
+        android:id="@+id/slot_iv"
+        android:layout_width="255dp"
+        android:layout_height="345dp"
+        android:layout_gravity="center"
+        android:background="@drawable/slot_ad_bg_deful" />
+
+    <!-- android:background="#ccc" -->
+
+    <TextView
+        android:id="@+id/slot_tv_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_marginStart="53dp"
+        android:background="@drawable/slot_ad_closed" />
+
+    <TextView
+        android:id="@+id/slot_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginEnd="53dp"
+        android:background="@drawable/slot_ad_title" />
+
+</FrameLayout>

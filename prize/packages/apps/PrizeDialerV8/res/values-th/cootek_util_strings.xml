@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--翻译内容-->
+    <string name="cootek_captcha_message_template">รหัสยืนยันของคุณคือ \\[(\\d{4})\\]</string>
+    <string name="cootek_dialog_btn_cancell">ยกเลิก</string>
+    <string name="cootek_dialog_btn_positive">ดำเนินการต่อ</string>
+    <string name="cootek_dialog_nevernotify">ไม่ต้องแจ้งเตือน</string>
+    <string name="cootek_dialog_title">เคล็ดลับ</string>
+    <string name="cootek_individual_head_title2">เข้าสู่ระบบและลงทะเบียน</string>
+    <string name="cootek_login_authorize_fail">การตรวจสอบรหัสข้อผิดพลาด</string>
+    <string name="cootek_login_code_input_insuffient">รหัสผ่านและรหัสยืนยัน โปรดระบุอย่างน้อยหนึ่ง</string>
+    <string name="cootek_login_data_not_found">ผู้ใช้ไม่มีอยู่</string>
+    <string name="cootek_login_head_text">การตรวจสอบหมายเลขโทรศัพท์สามารถโทรฟรี</string>
+    <string name="cootek_login_no_permission">สิทธิ์ที่ถูกปฏิเสธ</string>
+    <string name="cootek_login_page_start_hint">เข้าสู่ระบบใน</string>
+    <string name="cootek_login_verification_expired">การตรวจสอบรหัสหมดอายุ</string>
+    <string name="cootek_network_other">เครือข่ายร้องขอยกเว้น</string>
+    <string name="cootek_network_unavailable">ไม่มีการเชื่อมต่อเครือข่าย</string>
+    <string name="cootek_number_invalid_hint">กรุณาใส่หมายเลขโทรศัพท์ที่ถูกต้อง</string>
+    <string name="cootek_phone_input_hint">กรุณาใส่หมายเลขโทรศัพท์</string>
+    <string name="cootek_validation_code_countdown">%d วินาที</string>
+    <string name="cootek_validation_code_input_hint">ป้อนรหัส</string>
+    <string name="cootek_validation_code_query_hint">รับ</string>
+    <string name="cootek_validation_code_requery">ส่ง</string>
+    <string name="cootek_verification_over_limit">การตรวจสอบรหัสส่งเกิน</string>
+    <string name="cootek_verification_phone_format_error">โทรศัพท์หมายเลขรูปแบบผิดพลาด</string>
+    <string name="cootek_verification_send_ok">118.ขอรหัสการตรวจสอบถูกส่งเรียบร้อยแล้ว</string>
+</resources>

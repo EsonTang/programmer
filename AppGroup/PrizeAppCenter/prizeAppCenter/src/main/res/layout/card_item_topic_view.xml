@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="1dp">
+
+    <com.prize.appcenter.ui.widget.CustomImageView
+        android:id="@+id/appItem_img_id"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:background="@drawable/card_item_multi_app_bg"
+        android:contentDescription="@string/alert_title"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:transitionName="robot"
+        app:iv_radius="7dp" />
+
+
+    <TextView
+        android:id="@+id/appItem_name_id"
+        android:layout_width="63dp"
+        android:layout_height="19.5dp"
+        android:layout_marginTop="1.5dp"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textColor="@color/common_app_title"
+        android:textSize="@dimen/text_size_micro"
+        tools:text="腾讯视频-王者出击" />
+
+    <com.prize.appcenter.ui.widget.progressbutton.AnimDownloadProgressButton
+        android:id="@+id/progressButton_id"
+        style="@style/progressButton_wide_hight"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:progressbtn_radius="12dp"
+        app:progressbtn_show_progress="true"
+        app:progressbtn_text_size="12dp" />
+
+</merge>

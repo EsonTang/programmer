@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.prize.appcenter.ui.widget.LinearLayoutForDetail xmlns:android="http://schemas.android.com/apk/res/android"-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <GridView
+        android:id="@+id/recommand_notice_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:horizontalSpacing="0dip"
+        android:numColumns="5" />
+    <com.prize.appcenter.ui.widget.PrizeHorizontalScrollView
+        android:id="@+id/horizatal_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/child_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp" />
+    </com.prize.appcenter.ui.widget.PrizeHorizontalScrollView>
+    <!--精彩游戏 end-->
+
+    <!--分类入口 begin-->
+    <LinearLayout
+        android:id="@+id/cat_entry"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/left_entry"
+            android:layout_width="@dimen/game_header_netgame_gift_enter_width"
+            android:layout_height="@dimen/game_header_netgame_gift_enter_hight"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/right_top_entry"
+            android:layout_width="@dimen/game_header_netgame_gift_enter_width"
+            android:layout_height="@dimen/game_header_netgame_gift_enter_hight"
+            android:layout_marginLeft="4dp"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+    <!--分类入口 end-->
+
+    <!--玩家福利 begin-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="23.5dp"
+            android:orientation="vertical">
+
+            <com.prize.appcenter.ui.widget.SpacingTextView
+                android:id="@+id/welfare_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/welfare_title_left"
+                android:drawablePadding="12dp"
+                android:drawableRight="@drawable/welfare_title_right"
+                android:textColor="@color/text_color_404040"
+                android:textSize="@dimen/text_size_32" />
+
+
+            <LinearLayout
+                android:id="@+id/welfare_login_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welfare_login_tip"
+                    android:textColor="@color/text_color_404040"
+                    android:textSize="@dimen/text_size_micro" />
+
+                <TextView
+                    android:id="@+id/welfare_login_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welfare_login_link_text"
+                    android:textColor="@color/text_color_009def"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/welfare_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+    <!--玩家福利 end-->
+
+    <!--新游尝鲜 begin-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:layout_marginTop="26.5dp"
+        android:background="@drawable/comments_bg"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <com.prize.appcenter.ui.widget.SpacingTextView
+            android:id="@+id/comments_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/comments_title_left"
+            android:drawablePadding="12dp"
+            android:drawableRight="@drawable/comments_title_right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_32" />
+
+
+        <com.prize.appcenter.ui.widget.CycleGalleryViewPager
+            android:id="@+id/comments_wgallery"
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/see_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/see_more"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_micro" />
+
+    </LinearLayout>
+    <!--新游尝鲜 end-->
+</merge>

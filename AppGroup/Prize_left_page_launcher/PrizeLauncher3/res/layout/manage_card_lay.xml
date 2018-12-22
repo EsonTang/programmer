@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/left_act_title_lay"/>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line_color"
+        android:layout_below="@id/title_lay"
+        android:id="@+id/line_divider"
+        />
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_hint"
+        android:text="@string/str_drag_hint"
+        android:gravity="end"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_below="@id/line_divider"
+        android:layout_marginEnd="@dimen/search_left_margin"
+        style="@style/drag_hint_txt_style"
+        />
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line_color"
+        android:layout_below="@id/txt_hint"
+        android:id="@+id/second_line_divider"
+        />
+    
+    <android.support.v7.widget.RecyclerView  
+        android:id="@+id/recycle_list"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"
+        android:layout_below="@id/second_line_divider"
+        android:layout_above="@+id/txt_add_card"
+        android:listDivider="@color/divider_line_color"
+        android:layout_marginStart="@dimen/dp_18"
+        />
+    
+     <!-- <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:id="@+id/txt_add_card"
+        android:text="@string/str_add_card"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/search_top_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/search_left_margin"
+        android:layout_marginEnd="@dimen/search_left_margin"
+        android:onClick="onClick"
+        android:background="@drawable/left_add_card_bg_selector"
+        /> -->
+</RelativeLayout>

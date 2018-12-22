@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_hotkeys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/content_Llyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/hot_search_Rlyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="24dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/search_singer"
+                    android:textColor="@color/text_color_323232"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/recommand_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/recommand_more"
+                    android:gravity="center_horizontal"
+                    android:text="@string/search_more"
+                    android:textColor="@color/text_color_969696"
+                    android:textSize="@dimen/text_size_micro"/>
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/mHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_marginLeft="-5dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <GridView
+                        android:id="@+id/mAlwaysRecommendList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:scrollbars="@null" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+           <!--  <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="12dp"
+                android:background="#eeeeee" />
+ -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:padding="0dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_hottips"
+                    android:textColor="@color/text_color_323232"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/change_data_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/search_change"
+                    android:textColor="#91c342"
+                    android:textSize="@dimen/text_size_micro" 
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <com.prize.music.ui.widgets.ScrollGridView
+                android:id="@+id/mHotApp_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:descendantFocusability="blocksDescendants"
+                android:horizontalSpacing="7.5dip"
+                android:numColumns="3"
+                android:paddingBottom="25dp"
+                android:paddingTop="15dp"
+                android:verticalSpacing="7.5dip" >
+            </com.prize.music.ui.widgets.ScrollGridView>
+
+           <!--  <View
+                android:id="@+id/search_line_View"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#eeeeee" /> -->
+
+            <RelativeLayout
+                android:id="@+id/search_Rlyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/search_history"
+                    android:textColor="@color/text_color_323232"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/clear_history_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/search_empty_history"
+                    android:textColor="@color/text_color_ff5f00"
+                    android:textSize="@dimen/text_size_micro" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

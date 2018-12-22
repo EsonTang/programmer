@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">红包助手</string>
+    <string name="main_name">抢红包</string>
+    <!--<string name="accessibility_description">启动抢红包服务，支持微信、QQ。</string>-->
+    <string name="accessibility_description">启动抢红包服务，支持微信。</string>
+    <string name="service_name">红包助手</string>
+    <string name="open_service_title">需要开启辅助服务正常使用</string>
+    <string name="open_service_button">打开辅助服务</string>
+    <string name="open_notify_service">打开通知栏服务</string>
+    <string name="check_update">检查更新</string>
+    <string name="share">分享</string>
+    <string name="tips">找到[红包助手]，然后开启服务即可</string>
+    <string name="qq_settings">QQ设置</string>
+    <string name="wechat_settings">微信设置</string>
+    <string name="notify_settings">红包提醒设置</string>
+    <string name="switch_reminder">开启红包助手后，系统自动帮您抢群红包</string>
+    <string name="single_enable_settings">开启后可以抢微信私聊红包</string>
+    <string name="single_enable_title">私聊红包</string>
+    <string name="voice">声音提醒</string>
+    <string name="voice_reminder">抢到红包时，有声音提醒</string>
+    <string name="hb_delay">红包延时</string>
+    <string name="random_delay">随机2-8s</string>
+    <string name="recorder">红包记录</string>
+    <string name="recorder_reminder">记录红包助手帮你抢到的红包数量和金额</string>
+    <string name="reminder">温馨提示:</string>
+    <!--<string name="first_sentence">如果QQ群，微信群设为免打扰模式，</string>-->
+    <string name="first_sentence">如果微信群设为免打扰模式，</string>
+    <string name="fifth_sentence">或者将手机设成勿扰模式，</string>
+    <string name="second_sentence">红包助手将不能抢红包！</string>
+    <!--<string name="more"><a href="game://">更多问题></a></string>-->
+    <string name="more">更多问题></string>
+    <string name="third_sentence">抢红包的速度过快会出现账号被冻结的风险，</string>
+    <string name="fourth_sentence">设置随机2-8s更安全</string>
+    <string name="enter_reminder">请进入设置的辅助服务中打开红包助手</string>
+
+    <string name="delay_no">无</string>
+    <string name="delay_half">0.5s</string>
+    <string name="delay_one">1s</string>
+    <string name="delay_random">随机2-8s</string>
+    <!--<string name="follow_preference_title"></string>-->
+    <!--<string name="follow_preference_summary"></string>-->
+
+    <!--<string name="donate_title"></string>-->
+    <!--<string name="donate_summary"></string>-->
+
+    <string name="after_open_hongbao">拆红包</string>
+    <string name="after_open_see">看看大家的手气(仅支持微信6.3.8版本以下)</string>
+    <string name="after_open_none">静静地看着</string>
+    <string name="after_get_back_home">返回桌面</string>
+    <string name="after_get_none">静静地看着</string>
+
+    <string name="wx_mode_0">自动抢</string>
+    <string name="wx_mode_1">抢单聊红包，群聊红包只通知</string>
+    <string name="wx_mode_2">抢群聊红包，单聊红包只通知</string>
+    <string name="wx_mode_3">通知手动抢(防封号)</string>
+
+    <!--<string name="about_title"></string>-->
+    <!--<string name="about_url"></string>-->
+
+    <!--<string name="agreement_title"></string>-->
+    <!--<string name="agreement_message"></string>-->
+
+    <!--<string name="qr_wx_id"></string>-->
+    <!--<string name="qr_tips"></string>-->
+
+
+    <string name="delay">红包延时</string>
+    <string name="total_money">累计抢红包(元)</string>
+    <string name="success_get">成功抢到</string>
+    <string name="ave_tiem">平均用时</string>
+    <string name="count">次</string>
+    <string name="second">秒</string>
+    <string name="clear_recordor">清空记录</string>
+    <string name="no_recordor">没有记录</string>
+    <string name="amount">元</string>
+    <string name="get">抢到</string>
+    <string name="whos_bag">的红包</string>
+
+
+    <string name="more_question">更多问题</string>
+    <string name="question1">1.为什么开启了红包助手，却没有抢红包？</string>
+    <string name="question2">2.为什么QQ不能自动抢红包了？</string>
+    <!--<string name="question3">3.为什么登录PC端微信后不能自动抢红包了？</string>
+    <string name="question4">4.群消息太多太烦人怎么办？</string>-->
+    <string name="question3">2.为什么登录PC端微信后不能自动抢红包了？</string>
+    <string name="question4">3.群消息太多太烦人怎么办？</string>
+    <string name="question5">5.为什么锁屏就不能自动抢红包？</string>
+
+    <string name="answer1">必须在微信的“设置”中开启“新消息通知”和“显示新消息详情”，群红包要关闭“消息勿扰”，保证可以正常收到微信消息。</string>
+    <string name="answer2">确定已经开启QQ新消息提醒和QQ群消息通知</string>
+    <string name="answer3">如果已登录微信网页版，请点击手机上置顶的网页已登录选项，关闭手机消息免打扰</string>
+    <!--<string name="answer4_1">1. 可以在微信设置—新消息提醒里，关闭声音和震动提示</string>-->
+    <string name="answer4_1">可以在微信设置—新消息提醒里，关闭声音和震动提示</string>
+    <string name="answer4_2">2. 在QQ设置—消息通知—声音里，关闭声音和震动提示</string>
+    <string name="answer5_1">1. 当您的手机存在锁屏密码时，是不能自动抢红包的，关闭图形或数字锁屏密码后，在锁屏下也能自动抢红包</string>
+    <string name="answer5_2">2. 带指纹解锁的手机请关闭指纹锁屏或保持非锁屏状态才能自动抢红包。</string>
+
+    <string name="leaveing_message">留言</string>
+    <string name="have_not_get">手慢了，红包派完了</string>
+    <string name="send_one">发了一个红包</string>
+    <string name="send_one_to_you">给你发了一个红包</string>
+    <string name="send_one_randomly">发了一个红包，金额随机</string>
+
+    <string name="back">返回</string>
+    <string name="red_packet_detail">红包详情</string>
+    <string name="look_my_packet_recorder">查看我的红包记录</string>
+    <string name="detail_description">当前所在页面,红包详情</string>
+
+    <!--prize add zhaojian 8.0 2017803 start-->
+    <string name="back_button_label" msgid="2300470004503343439">"上一步"</string>
+    <string name="next_button_label" msgid="1080555104677992408">"下一步"</string>
+    <string name="skip_button_label" msgid="1275362299471631819">"跳过"</string>
+    <string name="money_function">已存入零钱，</string>
+    <!--prize add zhaojian 8.0 2017803 end-->
+</resources>
+
+

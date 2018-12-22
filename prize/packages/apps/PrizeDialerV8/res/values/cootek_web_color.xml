@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="cootek_background">#FFE8E8E8</drawable>
+
+    <!--lifeservice-->
+
+
+    <color name="cootek_personal_individual_background">#f5f6f9</color>
+    <color name="cootek_lifeservice_individual_background">#fff5f5f9</color>
+
+
+    <!--individual-->
+
+    <color name="cootek_individual_listitem_icon">#8695f1</color>
+    <color name="cootek_individual_listitem_textcolor">#767676</color>
+    <color name="cootek_individual_listitem_more">#bfc0c1</color>
+    <color name="cootek_individual_listitem_notice">#ff4951</color>
+    <color name="cootek_individual_listitem_notice_voip">#26c416</color>
+    <color name="cootek_individual_item_remain">#ffc12e</color>
+    <color name="cootek_individual_item_remain_mouth">#46a6ff</color>
+    <color name="cootek_individual_listitem_logout_textcolor">#b1b8be</color>
+
+
+    <drawable name="listitem_divider_fg">#d9d9d9</drawable>
+</resources>

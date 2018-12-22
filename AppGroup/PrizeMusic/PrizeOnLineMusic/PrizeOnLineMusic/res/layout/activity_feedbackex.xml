@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/header_edt"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/statusbar_color" >
+
+        <TextView
+            android:id="@+id/action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:drawableLeft="@drawable/btn_back_selector"
+            android:drawablePadding="3dp"
+            android:ellipsize="end"
+            android:text="@string/feedback_title"
+            android:focusable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/text_color_262626"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_below="@+id/header_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/feedback_content"
+            android:textColor="@color/text_color_262626"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/fedbck_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/feedback_editor_bg"
+            android:gravity="top"
+            android:hint="@string/pls_input_feedback"
+            android:maxLength="350"
+            android:minLines="6"
+            android:padding="12.5dp"
+            android:textColor="@color/text_color_262626"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/fedbck_contact_tip"
+            android:textColor="@color/text_color_262626"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pic_Llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/add_Btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_add_feedback" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/feedback_send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_below="@+id/pic_Llyt"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_corner_selector"
+        android:text="@string/feedback_send"
+        android:textColor="@color/text_color_262626"
+        android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

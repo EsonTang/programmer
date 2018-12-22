@@ -1,0 +1,202 @@
+<resources>
+
+    <string name="app_name">主题商店</string>
+    <!--<string name="sf_class_name">com.prize.prizethemecenter.activity.InitLogoActivity</string>-->
+    
+    <!-- 首页 -->
+    <string name="app_theme">主题</string>
+    <string name="app_wallpaper">壁纸</string>
+    <string name="app_font">字体</string>
+    <string name="app_my">我的</string>
+    <string name="recommend_rank">排行</string>
+    <string name="recommend_classify">分类</string>
+    <string name="recommend_topic">专题</string>
+    <string name="recommend_local">本地</string>
+    <string name="net_error">网络错误，请检查网络</string>
+    <string name="reach_button">到底了，去别处看看吧</string>
+    <string name="hot_topic">热门主题</string>
+    <string name="hot_wallpaper">热门壁纸</string>
+    <string name="hot_font">热门字体</string>
+    <string name="more_topic">更多专题</string>
+    <string name="toast_exit">再按一下就退出主题商店了哟！</string>
+
+    <string name="theme_local">本地主题</string>
+    <string name="wallpaper_local">本地壁纸</string>
+    <string name="font_local">本地字体</string>
+    <string name="theme_rank">主题排行</string>
+    <string name="font_rank">字体排行</string>
+    
+    
+    <!-- 全局 -->
+    <string name="app_loading">努力加载中</string>
+    <string name="app_reload">重新加载</string>
+    
+    <!-- 我的 -->
+    <string name="mine_download_mgr">下载管理</string>
+    <string name="mine_feedback">意见反馈</string>
+    <string name="mine_setting">设置</string>
+    
+     <!-- 意见反馈 -->
+    <string name="feedback_content">问题描述</string>
+    <string name="pls_input_feedback">请详细描述你遇到的问题</string>
+    <string name="feedback_contact_tip">反馈附图(可填)</string>
+    <string name="send_feedback_tip">感谢您的意见和建议，内容已发送~</string>
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_msg_empty">请输入您的建议或者疑问</string>
+    <string name="feedback_send">提交</string>
+    <string name="alert_button_yes">确认</string>
+    <string name="caution">提示</string>
+    <string name="caution_content">您已编辑，是否舍弃本条反馈？</string>
+    <string name="committing">提交中&#8230;</string>
+    <string name="no_net_connect">暂无网络连接</string>
+    <string name="questing">请求中,请不要重复操作</string>
+
+    <!-- setting -->
+    <string name="auto_theme">自动换主题</string>
+    <string name="theme_ad">每天一套主题，每天一个心情</string>
+    <string name="traffic_download">使用移动数据下载</string>
+    <string name="traffic_download_detail">2G/3G/4G下载</string>
+    <string name="receive_notification">允许通知</string>
+    <string name="receive_message">主题商店促销、抽奖活动、折扣等消息</string>
+    <string name="clean_cache">清理缓存</string>
+    <string name="clear_cache_content">保留缓存可以节省手机流量</string>
+    <string name="app_version">版本号</string>
+    <string name="setting">设置</string>
+    <string name="cache_clear_ok">缓存清理成功</string>
+    <string name="clean">清理</string>
+    <string name="clean_now">是否立即清理缓存</string>
+    <string name="set_about_version">V%1$s</string>
+
+    <!--search-->
+    <string name="search_edittext_hint">主题名称/风格/颜色</string>
+    <string name="search_history">搜索记录</string>
+    <string name="search_clear_history">清空历史</string>
+    <string name="search_result">为你搜到以下结果</string>
+    <string name="search_no_result">抱歉！此搜索暂无结果/(ㄒoㄒ)/~~</string>
+
+    <!--webview-->
+    <string name="web_error_reason">"可能的原因有：\n无法连接网络\n该页面不存在或出现故障"</string>
+    <string name="web_error">"哎呀，网络出错了！"</string>
+    <string name="web_reload">"刷新页面"</string>
+    <string name="set_network">"设置网络"</string>
+    <string name="loading">"加载中&#8230;"</string>
+
+    <!-- 主题详情-->
+    <string name="none">暂无</string>
+    <string name="anonymity_user">手机用户</string>
+    <string name="no_commentlist">暂无评论,快来抢沙发呀！</string>
+    <string name="progress_btn_install">应用</string>
+    <string name="app_comment">评论</string>
+    <string name="app_comment_download">下载安装后可评论</string>
+    <string name="progress_btn_download">下载</string>
+    <string name="progress_btn_wait">等待中</string>
+    <string name="progress_continue">继续</string>
+    <string name="progress_pause">暂停</string>
+    <string name="pop_comment_hint">提示</string>
+    <string name="pop_comment_hint_content">您还未登录云账号，请先登录云账号再评论。</string>
+    <string name="pop_comment_content_hint">太好看了，赞一个</string>
+    <string name="pop_comment_id">提交</string>
+        <!--壁纸详情-->
+    <string name="preview">预览</string>
+    <string name="common_cancel">取消</string>
+    <string name="use">应用</string>
+    <string name="use_all">全部应用</string>
+    <string name="use_for_screenlock">应用锁屏</string>
+    <string name="use_for_launcher">应用桌面</string>
+    <string name="use_for_screenlock_hint">仅适用于默认锁屏，设置后会自动关闭杂志锁屏</string>
+    <string name="launcher_preview">桌面预览</string>
+    <string name="screen_preview">锁屏预览</string>
+    <string name="is_scroll">随屏滚动</string>
+    <string name="wall_is_set">壁纸已设置</string>
+    <string name="wall_is_seting">正在设置壁纸</string>
+
+    <!--字体详情-->
+    <string name="download_times">已下载%1$d次</string>
+    <string name="resource_intro">资源简介</string>
+    <string name="no_comment">(暂无评论)</string>
+    <string name="all_comment">全部评论(%1$d)</string>
+    <string name="themetype">类型</string>
+    <string name="pay_choose">选择支付方式</string>
+    <string name="down_failed">下载失败</string>
+    <string name="down_pause">下载暂停</string>
+    <string name="installed">正在使用</string>
+    <string name="title_activity_down_manage">DownManageActivity</string>
+    <string name="pay_text_show">¥%1$s购买</string>
+    <string name="pay_remind">支付提示</string>
+    <string name="pay_tag">客服电话4006877351</string>
+    <string name="pay_content">%1$s将花费您%2$s元，确定要购买吗？</string>
+    <string name="mine_delete_dialog">您确定要删除%1$d组%2$s？</string>
+    <string name="sure">确定</string>
+    <string name="isUseed">使用中</string>
+
+    <!--自升级-->
+    <string name="click_update_to_install">安装包已经准备好了</string>
+    <string name="current_net_is_nowifi">当前为移动数据流量,建议切换至WIFI环境更新！</string>
+    <string name="after_do">以后再说</string>
+    <string name="now_update">立即更新</string>
+    <string name="new_version_name">→   %1$s</string>
+
+    <!--公用-->
+    <string name="app_back">返回</string>
+    <string name="app_edit">编辑</string>
+    <string name="please_login">请登录</string>
+    <string name="no_downloading">暂无下载内容</string>
+    <string name="mine_local_theme">本地主题</string>
+    <string name="mine_local_wallpaper">本地壁纸</string>
+    <string name="mine_local_font">本地字体</string>
+    <string name="common_downloaded_text">已下载</string>
+    <string name="free">免费</string>
+    <string name="download_manage">下载管理</string>
+    <string name="free_applay">免费试用</string>
+    <string name="deleting">正在删除</string>
+    <string name="delete_sec">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+    <!--评论-->
+    <!--&#160;-->
+    <string name="comment_success">评论成功！</string>
+    <string name="comment_failed">评论失败！</string>
+    <string name="comment_download_hint">下载后可评论</string>
+    <string name="comment_buy_hint">购买后可下载！</string>
+    <string name="comment_empty_hint">评论内容不能为空！</string>
+    <string name="download_history">历史下载记录</string>
+    <string name="common_delete_text">删除</string>
+    <string name="common_all_seleted_text">全选</string>
+    <string name="common_all_diseleted_text">反选</string>
+    <string name="Apply_immediately">立即试用</string>
+    <string name="apply_free">免费试用</string>
+    <string name="defaut_model">未知机型</string>
+    <string name="common_not_data">暂无数据</string>
+    <string name="common_use">试用</string>
+    <string name="theme_introduce">主题简介</string>
+    <string name="common_no_selected">您当前没选择</string>
+    <string name="similary_theme_label">相似主题</string>
+    <!--下载-->
+    <string name="pop_comment_hint_traffic">当前处于2G/3G/4G网络，下载将耗费流量，是否继续下载？</string>
+    <string name="after_download">稍后下载</string>
+    <string name="now_download">立即下载</string>
+    <string name="common_exit_text">退出</string>
+    <string name="login_out_tips">确定要退出云账号吗？</string>
+    <string name="not_loginclound">未登录云账号</string>
+    <string name="no_download_data">您当前没有下载！</string>
+    <string name="progress_btn_upload">更新</string>
+    <string name="downloading">下载中</string>
+    <string name="pause_all">全部暂停</string>
+    <string name="nonet_connect">暂无网络连接</string>
+    <string name="pause">已暂停</string>
+    <string name="wait_task_start">等待中...</string>
+    <string name="download_completed">下载完成</string>
+    <string name="delete_all">清空记录</string>
+
+
+    <string name="failed_to_read">壁纸读取失败</string>
+    <string name="is_in_use">您当前正在使用！</string>
+    <string name="font_changing">正在更换字体</string>
+    <string name="changing_font_suc">字体更换成功</string>
+    <string name="changing_font_failed">字体更换失败</string>
+    <string name="no_version_update">当前是最新版本</string>
+    <string name="please_version_update">请重新进入升级版本</string>
+    <string name="wall_set_failed">壁纸设置失败</string>
+    <string name="toast_net_error">网络连接失败，请检查设置</string>
+    <string name="verision_is_newest">当前是最新版本!</string>
+
+</resources>

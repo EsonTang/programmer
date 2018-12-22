@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/main_float_menu_size"
+    android:layout_height="@dimen/main_float_menu_size"
+    android:background="@drawable/main_float_menu_bg"
+    android:paddingBottom="@dimen/main_menu_layout_margin_vertical"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    android:paddingTop="@dimen/main_menu_layout_margin_vertical" >
+
+    <TextView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/main_menu_close" />
+
+    <LinearLayout
+        android:id="@+id/screen_record"
+        style="@style/main_float_menu"
+        android:layout_above="@+id/btn_close"
+      
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            style="@style/main_float_menu_img"
+            android:src="@drawable/main_menu_screen_record" />
+
+        <TextView
+            style="@style/main_float_menu_tx"
+            android:text="@string/screen_record" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scroll_shot"
+        style="@style/main_float_menu"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_close"
+        android:background="@layout/scroll_button_selector" >
+
+        <ImageView
+            style="@style/main_float_menu_img"
+            android:src="@drawable/main_menu_scroll_shot" />
+
+        <TextView
+            style="@style/main_float_menu_tx"
+            android:text="@string/scroll_shot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/funny_shot"
+        style="@style/main_float_menu"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/screen_record"
+        android:layout_below="@+id/btn_close" >
+
+        <ImageView
+            style="@style/main_float_menu_img"
+            android:src="@drawable/main_menu_funny_shot" />
+
+        <TextView
+            style="@style/main_float_menu_tx"
+            android:text="@string/funny_shot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_move"
+        style="@style/main_float_menu"
+        android:layout_alignBottom="@+id/scroll_shot"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btn_close" >
+
+        <ImageView
+            android:id="@+id/move_img"
+            style="@style/main_float_menu_img"
+            android:src="@drawable/main_menu_move" />
+
+        <TextView
+            android:id="@+id/move_tx"
+            style="@style/main_float_menu_tx"
+            android:text="@string/move" />
+    </LinearLayout>
+
+</RelativeLayout>

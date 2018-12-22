@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/beautiful_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/picker_button_size"
+    android:visibility="visible" >
+    <RelativeLayout
+        android:id="@+id/beautiful_contain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bueaty_shutter_group_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/shutter_group_height"
+        android:clickable="true">
+
+        <!-- 美颜调节进度条 -->
+
+        <SeekBar
+            android:id="@+id/beautifu_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/seakbar_progress_upMargin"
+            android:layout_marginLeft="@dimen/seakbar_progress_leftMargin"
+            android:max="100"
+            style="@style/SeekBarStyle" />
+
+        <!-- 美颜模式 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beautifu_seekbar"
+            android:layout_marginLeft="@dimen/beautiful_button_leftMargin"
+            android:layout_marginRight="@dimen/beautiful_button_leftMargin"
+            android:layout_marginTop="@dimen/beautiful_button_topMargin"
+            android:orientation="horizontal" >
+
+            <!-- 一键美颜 -->
+
+            <LinearLayout
+                style="@style/beautiful_linear"
+                android:layout_weight="1" 
+                android:id="@+id/composite_beautiful">
+
+                <ImageView
+                    style="@style/beautiful_ImageView"
+                    android:src="@drawable/beautiful_composite" />
+
+                <TextView
+                    style="@style/beautiful_title"
+                    android:text="@string/beautiful_title_composite" />
+            </LinearLayout>
+
+            <!-- 磨皮 -->
+
+            <LinearLayout
+                style="@style/beautiful_linear"
+                android:layout_weight="1" 
+                android:id="@+id/smoothing_beautiful">
+
+                <ImageView
+                    style="@style/beautiful_ImageView"
+                    android:src="@drawable/beautiful_skin_smoothing" />
+
+                <TextView
+                    style="@style/beautiful_title"
+                    android:text="@string/beautiful_title_smoothing" />
+            </LinearLayout>
+
+            <!-- 瘦脸 -->
+
+            <LinearLayout
+                style="@style/beautiful_linear"
+                android:layout_weight="1" 
+                android:id="@+id/slimming_beautiful">
+
+                <ImageView
+                    style="@style/beautiful_ImageView"
+                    android:src="@drawable/beautiful_face_slimming" />
+
+                <TextView
+                    style="@style/beautiful_title"
+                    android:text="@string/beautiful_title_slimming" />
+            </LinearLayout>
+
+            <!-- 美瞳 -->
+
+            <LinearLayout
+                style="@style/beautiful_linear"
+                android:layout_weight="1" 
+                android:id="@+id/catchlight_beautiful">
+
+                <ImageView
+                    style="@style/beautiful_ImageView"
+                    android:src="@drawable/beautiful_catchlight" />
+
+                <TextView
+                    style="@style/beautiful_title"
+                    android:text="@string/beautiful_title_catchlight" />
+            </LinearLayout>
+
+            <!-- 大眼 -->
+
+            <LinearLayout
+                style="@style/beautiful_linear"
+                android:layout_weight="1" 
+                android:id="@+id/eyes_enlargement_beautiful">
+
+                <ImageView
+                    style="@style/beautiful_ImageView"
+                    android:src="@drawable/beautiful_eyes_enlargement" />
+
+                <TextView
+                    style="@style/beautiful_title"
+                    android:text="@string/beautiful_title_eyes_enlargement" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

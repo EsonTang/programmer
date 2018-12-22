@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prize.lockscreen.widget.SlidUpFrameView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <ImageView android:contentDescription="@null"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/img_bg"
+        />
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/imgs_content"
+        android:visibility="gone"
+        />
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+	    <TextView
+	         android:id="@+id/text_time"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:textColor="#ffffffff"
+	         android:layout_marginTop="28dp"
+	         android:textSize="80sp" />
+	
+	     <TextView
+	         android:id="@+id/text_date"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:textColor="#ffffffff"
+	         android:textSize="20sp" />
+	</LinearLayout>
+	
+   <com.prize.lockscreen.widget.SlideCutListView
+          android:id="@+id/notice_list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="160dp"
+          android:divider="@null"
+          android:listSelector="@android:color/transparent"
+          android:layout_marginBottom="90dp"
+          />
+     
+		
+       <ImageView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ico_plane"
+           android:id="@+id/img_plane"
+           android:layout_gravity="bottom|center_horizontal"
+	       android:layout_marginBottom="20dp"
+	       android:contentDescription="@null"
+           />
+
+</com.prize.lockscreen.widget.SlidUpFrameView>

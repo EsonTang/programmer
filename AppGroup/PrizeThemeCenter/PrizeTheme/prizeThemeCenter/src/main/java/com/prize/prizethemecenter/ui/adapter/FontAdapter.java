@@ -1,0 +1,220 @@
+package com.prize.prizethemecenter.ui.adapter;
+
+import android.app.Activity;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.prize.app.util.JLog;
+import com.prize.prizethemecenter.R;
+import com.prize.prizethemecenter.bean.ThemeItemBean;
+import com.prize.prizethemecenter.manage.AppManagerCenter;
+import com.prize.prizethemecenter.manage.DownloadState;
+import com.prize.prizethemecenter.manage.DownloadTask;
+import com.prize.prizethemecenter.manage.DownloadTaskMgr;
+import com.prize.prizethemecenter.manage.UIDownLoadListener;
+import com.prize.prizethemecenter.ui.utils.UILimageUtil;
+import com.prize.prizethemecenter.ui.widget.CornerImageView;
+
+import java.util.ArrayList;
+
+
+/**
+ *
+ * Created by pengy on 2016/9/6.
+ */
+public class FontAdapter extends BaseAdapter{
+
+    private  ArrayList<ThemeItemBean> items = new ArrayList<>();
+
+    public  Activity context;
+
+    private boolean isLocal;
+    private UIDownLoadListener listener = null;
+    /** 当前页是否处于显示状态 */
+    private boolean isActivity = true; // 默认true
+
+    public void setIsActivity(boolean state) {
+        isActivity = state;
+    }
+
+    /***
+     * @param activity
+     */
+    public FontAdapter(Activity activity ,boolean loacal){
+        context = activity;
+        isLocal = loacal;
+        listener = new UIDownLoadListener() {
+            @Override
+            public void onRefreshUI(int theme_Id) {
+                DownloadTask task = DownloadTaskMgr.getInstance().getDownloadTask(theme_Id+""+3);
+                if(task != null){
+                    if(task.gameDownloadState == DownloadState.STATE_DOWNLOAD_SUCESS || task.gameDownloadState==DownloadState.STATE_DOWNLOAD_INSTALLED)
+                    notifyDataSetChanged();
+                }else {
+                    notifyDataSetChanged();
+                }
+            }
+        };
+    }
+    @Override
+    public int getCount() {
+        return items.size();
+    }
+
+    @Override
+    public ThemeItemBean getItem(int position) {
+        if (position < 0 || items.isEmpty() || position >= items.size()) {
+            return null;
+        }
+        return items.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    public void setData(ArrayList<ThemeItemBean> data) {
+        if (data != null) {
+            items = data;
+        }
+        notifyDataSetChanged();
+    }
+
+    public void addData(ArrayList<ThemeItemBean> data) {
+        if (data != null) {
+            items.addAll(data);
+        }
+        notifyDataSetChanged();
+    }
+
+    public void clearAll() {
+        if (items != null) {
+            items.clear();
+        }
+        notifyDataSetChanged();
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        final ViewHolder viewHolder;
+        if (convertView == null) {
+             convertView = LayoutInflater.from(context).inflate(
+                    R.layout.item_font_layout, null);
+             viewHolder = new ViewHolder();
+             viewHolder.font_logo = (CornerImageView) convertView
+                     .findViewById(R.id.font_logo);
+             viewHolder.font_title = (TextView) convertView
+                    .findViewById(R.id.font_title);
+             viewHolder.font_prize = (TextView) convertView
+                    .findViewById(R.id.font_prize);
+            viewHolder.isNew = (ImageView) convertView
+                    .findViewById(R.id.isNew);
+             viewHolder.use_FL = (FrameLayout) convertView
+                    .findViewById(R.id.use_FL);
+             viewHolder.use_IV = (ImageView) convertView
+                    .findViewById(R.id.use_IV);
+             viewHolder.use_TV = (TextView) convertView
+                    .findViewById(R.id.use_TV);
+             convertView.setTag(viewHolder);
+             convertView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+        } else {
+            viewHolder = (ViewHolder) convertView.getTag();
+        }
+
+        ThemeItemBean bean = getItem(position);
+        viewHolder.isNew.setBackground(null);
+        /**
+         * 判断是否1.新品 2.更新 3.已下载 4.正应用
+         */
+        int state = 0;
+
+        DownloadTask task = DownloadTaskMgr.getInstance().getDownloadTask(bean.id+""+3);
+//        JLog.i("hu",task.gameDownloadState+"---");
+        boolean update=false;
+        if( task!=null) {
+            state = task.gameDownloadState;
+            JLog.i("hu",state+"---"+bean.name);
+            try {
+                update = state>5&&!bean.md5_val.equals( task.loadGame.getMd5());
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+       if(state==6){      /**已下载*/
+            viewHolder.isNew.setBackgroundResource(R.drawable.icon_is_download);
+           viewHolder.isNew.setVisibility(View.VISIBLE);
+        }
+        else if(state==7){    /**正在使用*/
+            viewHolder.isNew.setBackgroundResource(R.drawable.icon_is_used);
+            viewHolder.isNew.setVisibility(View.VISIBLE);
+        }
+        else if(bean!=null && !TextUtils.isEmpty(bean.is_latest) && bean.is_latest.equals("1")){  /**新品*/
+            viewHolder.isNew.setBackgroundResource(R.drawable.icon_is_new);
+            viewHolder.isNew.setVisibility(View.VISIBLE);
+        }
+
+        /**判断是否是本地字体列表 */
+        if(isLocal){
+            viewHolder.use_FL.setVisibility(View.VISIBLE);
+            viewHolder.font_prize.setVisibility(View.GONE);
+        }else{
+            viewHolder.use_FL.setVisibility(View.GONE);
+            viewHolder.font_prize.setVisibility(View.VISIBLE);
+        }
+
+        if(bean!=null && !TextUtils.isEmpty(bean.is_update) && bean.is_update.equals("1") && update){   /**更新*/
+            viewHolder.isNew.setBackgroundResource(R.drawable.icon_is_update);
+            viewHolder.isNew.setVisibility(View.VISIBLE);
+        }
+
+        if(bean!=null && !TextUtils.isEmpty(bean.name)){
+            viewHolder.font_title.setText(bean.name);
+        }
+        if(!isLocal && bean!=null && !TextUtils.isEmpty(bean.price)){
+            if(bean.price.equals("0.0")){
+                viewHolder.font_prize.setText(context.getResources().getString(R.string.free));
+            }else{
+                viewHolder.font_prize.setText(bean.price);
+            }
+        }
+        String tag = (String) viewHolder.font_logo.getTag();
+        if(bean!=null && bean.ad_pictrue!=null&&(tag==null||!tag.equals(bean.ad_pictrue))){
+            ImageLoader.getInstance().displayImage(bean.ad_pictrue,viewHolder.font_logo,
+                    UILimageUtil.getFontDefaultLoptions(), UILimageUtil.setTagHolder(viewHolder.font_logo,bean.ad_pictrue));
+        }
+        return convertView;
+    }
+
+    public static class ViewHolder{
+        ImageView font_logo;
+        TextView font_title;
+        TextView font_prize;
+        ImageView isNew;
+
+        /**本地字体使用按钮布局*/
+        FrameLayout use_FL;
+        ImageView use_IV;
+        TextView use_TV;
+    }
+    /**
+     * 取消 下载监听, Activity OnDestroy 时调用
+     */
+    public void removeDownLoadHandler() {
+        AppManagerCenter.removeDownloadRefreshHandle(listener);
+    }
+
+    /**
+     * 设置刷新handler,Activity OnResume 时调用
+     */
+    public void setDownlaodRefreshHandle() {
+        AppManagerCenter.setDownloadRefreshHandle(listener);
+    }
+}

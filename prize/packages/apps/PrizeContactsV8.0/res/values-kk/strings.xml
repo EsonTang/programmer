@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="applicationLabel">"Контактілер"</string>
+    <string name="launcherActivityLabel">"Контактілер"</string>
+    <string name="quickContactActivityLabel">Контактіні көру</string>
+    <string name="editContactActivityLabel">Контактіні өңдеу</string>
+    <string name="contactsList">"Контактілер"</string>
+    <string name="shortcutContact">Контакт</string>
+    <string name="shortcutDialContact">Тікелей нөмір теру</string>
+    <string name="shortcutMessageContact">Тікелей хабар алмасу</string>
+    <string name="shortcutActivityTitle">Жылдам қоңырау шалу контактісін таңдау</string>
+    <string name="callShortcutActivityTitle">Қоңырау шалу нөмірін таңдау</string>
+    <string name="messageShortcutActivityTitle">Хабар жіберу нөмірін таңдау</string>
+    <string name="contactInsertOrEditActivityTitle">Контактіге қосу</string>
+    <string name="contactPickerActivityTitle">Контактіні таңдау</string>
+    <string name="header_entry_contact_list_adapter_header_title">"Жаңаконтактқұру"</string>
+    <string name="starredList">"Жұлдызшалы"</string>
+    <string name="frequentList">Жиі қоңырау шалатын</string>
+    <string name="strequentList">Таңдаулылар</string>
+    <string name="viewContactTitle">Контак туралы дерек</string>
+    <string name="editContactDescription">Контактіні өңдеу</string>
+    <string name="insertContactDescription">Контактіні құру</string>
+    <string name="editGroupDescription">Топты өңдеу</string>
+    <string name="insertGroupDescription">Топ құру</string>
+    <string name="contactDetailAbout">Анықтама</string>
+    <string name="contactDetailUpdates">Жаңартулар</string>
+    <string name="searchHint">Контактілерді іздеу</string>
+    <string name="menu_viewContact">Контактіні көру</string>
+    <string name="menu_addStar">Таңдаулылар қатарына қосу</string>
+    <string name="menu_removeStar">Таңдаулылар қатарынан өшіру</string>
+    <string name="description_action_menu_remove_star">Таңдаулылар тізімінен жойылды</string>
+    <string name="description_action_menu_add_star">Таңдаулылар қатарына қосу</string>
+    <string name="menu_editContact">Өңдеу</string>
+    <string name="menu_deleteContact">Жою</string>
+    <string name="menu_change_photo">Фотосуретті өзгерту</string>
+    <string name="menu_create_contact_shortcut">Бастапқы экранға орнату</string>
+    <string name="menu_call">Контактіге қоңырау шалу</string>
+    <string name="menu_sendSMS">Контактіге хабар жіберу</string>
+    <string name="menu_splitAggregate">Ажырату</string>
+    <string name="menu_editGroup">Өңдеу</string>
+    <string name="menu_deleteGroup">Жою</string>
+    <string name="menu_new_contact_action_bar">Контактіні қосу</string>
+    <string name="menu_new_group_action_bar">Топ қосу</string>
+    <string name="splitConfirmation">Бұл контактіні бірнеше контактіге ажырату керек пе?</string>
+    <string name="splitConfirmation_positive_button">Ажырату</string>
+    <string name="splitConfirmationWithPendingChanges">Әлдеқашан жасалған өзгерістерді сақтап, осы контактіні бірнеше контактілерге ажырату керек пе?</string>
+    <string name="splitConfirmationWithPendingChanges_positive_button">Сақтау және ажырату</string>
+    <string name="joinConfirmation">Әлдеқашан жасалған өзгерістерді сақтап, таңдалған контактімен байланыстыру керек пе?</string>
+    <string name="joinConfirmation_positive_button">Сақтау және байланыстыру</string>
+    <string name="menu_joinAggregate">"сілтеме"</string>
+    <string name="menu_save">"Сақтау"</string>
+    <string name="titleJoinContactDataWith">Контактілерді байланыстыру</string>
+    <string name="blurbJoinContactDataWith"><xliff:g id="name">%s</xliff:g> байланыстыру керек контактіні таңдаңыз:</string>
+    <string name="showAllContactsJoinItem">Барлық контактілерді көрсету</string>
+    <string name="separatorJoinAggregateSuggestions">Ұсынылатын контактілер</string>
+    <string name="separatorJoinAggregateAll">Барлық контактілер</string>
+    <string name="contactsJoinedMessage">Контактілер байланыстырылды</string>
+    <plurals name="contacts_deleted_toast">
+        <item quantity="one">Контактілер өшірілді</item>
+        <item quantity="other">"Контактілержойылды"</item>
+    </plurals>
+    <string name="menu_set_ring_tone">Рингтонды орнату</string>
+    <string name="menu_redirect_calls_to_vm">Барлық қоңыраулар дауыстық поштаға</string>
+    <string name="readOnlyContactWarning">Тек оқуға арналған тіркелгілер контактілері өшірілмейді, бірақ олар жасырылуы мүмкін.</string>
+    <string name="readOnlyContactWarning_positive_button">"Жасыру"</string>
+    <string name="readOnlyContactDeleteConfirmation">Өшірілетін контактіде бірнеше тіркелгінің мәліметтері бар. Тек оқуға арналған тіркелгілер мәліметтері жасырылады, бірақ өшірілмейді.</string>
+    <string name="batch_link_single_contact_warning">Байланыстыруға кемінде екі контакт таңдалуы керек.</string>
+    <string name="batch_link_confirmation">Таңдалған контактілерді байланыстыру керек пе?</string>
+    <string name="batch_link_confirmation_positive_button">"сілтеме"</string>
+    <string name="single_delete_confirmation">Осы контактіні өшіру керек пе?</string>
+    <string name="batch_delete_confirmation">Таңдалған контактілерді өшіру керек пе?</string>
+    <string name="batch_delete_read_only_contact_confirmation">Тек оқуға арналған тіркелгілер контактілері өшірілмейді, бірақ олар жасырылуы мүмкін.</string>
+    <string name="batch_delete_multiple_accounts_confirmation">Өшірілетін контактіде бірнеше тіркелгінің мәліметтері бар. Тек оқуға арналған тіркелгілер мәліметтері жасырылады, бірақ өшірілмейді.</string>
+    <string name="multipleContactDeleteConfirmation">Осы контактіні өшіру бірнеше тіркелгі мәліметтерін өшіреді.</string>
+    <string name="deleteConfirmation">Осы контактіні өшіру керек пе?</string>
+    <string name="deleteConfirmation_positive_button">Жою</string>
+    <string name="menu_discard">Өзгерістерді болдырмау</string>
+    <string name="invalidContactMessage">Контакт жоқ.</string>
+    <string name="createContactShortcutSuccessful_NoName">Контакт Басты экранға қосылды.</string>
+    <string name="createContactShortcutSuccessful"><xliff:g id="name">%s</xliff:g> Басты экранға қосылды.</string>
+    <string name="pickerNewContactHeader">"Жаңаконтактқұру"</string>
+    <string name="pickerNewContactText">"Жаңаконтактқұру"</string>
+    <skip/>
+    <string-array name="otherLabels">
+        <item>Ұйым</item>
+        <item>Ескертпе</item>
+    </string-array>
+    <string name="photoPickerNotFoundText" product="tablet">Планшетте суреттер қолжетімді емес.</string>
+    <string name="photoPickerNotFoundText" product="default">Телефонда суреттер қолжетімді емес.</string>
+    <string name="attach_photo_dialog_title">"контактфотосуреті"</string>
+    <string name="customLabelPickerTitle">Теңшелетін жапсырма атауы</string>
+    <string name="send_to_voicemail_checkbox">Қоңырауды тікелей дауыстық поштаға жіберу</string>
+    <string name="removePhoto">Фотосуретті жою</string>
+    <string name="noContacts">Контактілер жоқ</string>
+    <string name="noGroups">Топтар жоқ.</string>
+    <string name="noAccounts">Топтар құру үшін тіркелгі қажет.</string>
+    <string name="emptyGroup">Бұл топта ешкім жоқ.</string>
+    <string name="addPeopleToGroup">Қосу үшін топты өңдеңіз.</string>
+    <string name="savingContact">Контакт сақтау\u2026</string>
+    <string name="contactSavedToast">Контакт сақталды</string>
+    <string name="contactUnlinkedToast">Контакт ажыратылды</string>
+    <string name="contactSavedErrorToast">Контакт өзгерістерін сақтау мүмкін болмады.</string>
+    <string name="contactUnlinkErrorToast">Контактіні ажырату мүмкін болмады.</string>
+    <string name="contactJoinErrorToast">Контактіні байланыстыру мүмкін болмады.</string>
+    <string name="contactGenericErrorToast">Контактіні сақтау қатесі.</string>
+    <string name="contactPhotoSavedErrorToast">Контакт фотосуреті өзгерістерін сақтау мүмкін болмады.</string>
+    <string name="groupSavedToast">Топ сақталды.</string>
+    <string name="groupSavedErrorToast">Топ өзгерістерін сақтау мүмкін болмады.</string>
+    <plurals name="listTotalPhoneContacts">
+        <item quantity="one">1 телефон нөмірі бар контакт</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> телефон нөмірі бар контактілер</item>
+    </plurals>
+    <string name="listTotalPhoneContactsZero">Телефон нөмірі бар контактілер жоқ</string>
+    <plurals name="listFoundAllContacts">
+        <item quantity="one">1 табылды</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> табылды</item>
+    </plurals>
+    <string name="listFoundAllContactsZero">Контактілер жоқ</string>
+    <plurals name="searchFoundContacts">
+        <item quantity="one">1 табылды</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> табылды</item>
+    </plurals>
+    <string name="all_contacts_tab_label">Барлығы</string>
+    <string name="favorites_tab_label">Таңдаулылар</string>
+    <string name="callBack">"Керіқоңыраушалу"</string>
+    <string name="callAgain">Қайта қоңырау шалу</string>
+    <string name="returnCall">Кері қоңырау шалу</string>
+    <string name="add_contact_dlg_message_fmt">Контактілерге \"<xliff:g id="email">%s</xliff:g>\" қосу керек пе?</string>
+    <string name="description_contact_photo">"контактфотосуреті"</string>
+    <string name="description_plus_button">плюс</string>
+    <string name="exporting_contact_list_progress"><xliff:g id="total_number">%s</xliff:g> контактілерінің <xliff:g id="current_number">%s</xliff:g></string>
+    <string name="search_settings_description">Контактілер аттары</string>
+    <string name="quickcontact_missing_app">Бұл әрекетті орындау үшін қолданба табылмады.</string>
+    <string name="quickcontact_transparent_view_description">Алдынғы экранға оралу үшін басыңыз</string>
+    <string name="quickcontact_add_phone_number">Телефон номерін қосу</string>
+    <string name="quickcontact_add_email">Электрондық пошта мекенжайын қосу</string>
+    <string name="missing_app">Бұл әрекетті орындау үшін қолданба табылмады.</string>
+    <string name="menu_share">Бөлісу</string>
+    <string name="menu_add_contact">Контактілер тізіміне қосу</string>
+    <string name="share_via">Контактімен осы арқылы бөлісу</string>
+    <string name="dialog_new_group_account">Тіркелгіде топ құру</string>
+    <string name="audio_chat">Дауыспен сөйлесу</string>
+    <string name="video_chat">Видеомен сөйлесу</string>
+    <string name="connections">"Байланыстар"</string>
+    <string name="add_connection_button">Байланысу амалын қосу</string>
+    <string name="recent" msgid="2062236709538790412">Соңғы</string>
+    <string name="recent_updates" msgid="2018245636796411442">Соңғы жаңартулар</string>
+    <string name="account_type_format"><xliff:g id="source" example="Gmail">%1$s</xliff:g> контактісі</string>
+    <string name="google_account_type_format">"<xliff:g id="SOURCE">%1$s</xliff:g>есептікжазбасы"</string>
+    <string name="from_account_format" translate="false"><xliff:g id="source" example="user@gmail.com">%1$s</xliff:g></string>
+    <string name="contact_read_only">Осы қолданбадан өңдеу мүмкін емес.</string>
+    <string name="group_read_only">Осы құрылғыда өңдеу мүмкін емес.</string>
+    <string name="take_photo">"Фотосурет түсіру"</string>
+    <string name="take_new_photo">Жаңа сурет түсіру</string>
+    <string name="pick_photo">Сурет таңдау</string>
+    <string name="pick_new_photo">Жаңа фотосурет таңдау</string>
+    <string name="upgrade_in_progress">Контакт тізімі жаңартылды.</string>
+    <string name="search_results_searching">Іздеу\u2026</string>
+    <string name="menu_display_selected">"Таңдалғандарды көрсету"</string>
+    <string name="menu_display_all">Барлығынкөрсету</string>
+    <string name="menu_select_all">"Барлығынтаңдау"</string>
+    <string name="menu_select_none">"Барлығыныңтаңдаубелгісіналу"</string>
+    <string name="add_new_entry_for_section">Жаңасын қосу</string>
+    <string name="add_organization">Ұйым қосу</string>
+    <string name="event_edit_field_hint_text">"Күні"</string>
+    <string name="group_edit_field_hint_text">Топ атауы</string>
+    <string name="change_photo">"Өзгерту"</string>
+    <string name="primary_photo">"Негізгі фотосурет"</string>
+    <string name="description_star">таңдаулы</string>
+    <string name="edit_contact">Контактіні өңдеу</string>
+    <string name="aggregation_suggestion_join_dialog_message">Ағымдағы контактіні таңдалған контактпен байланыстыру керек пе?</string>
+    <string name="aggregation_suggestion_edit_dialog_message">Таңдалған контактіні өңдеуге өту керек пе? Енгізген ақпарат көшіріледі.</string>
+    <string name="menu_copyContact">Менің контактілерім қалтасына көшіру</string>
+    <string name="add_to_my_contacts">"Менің контактілерім" қалтасына қосу</string>
+    <string name="contact_directory_description"><xliff:g id="type" example="CorporateDirectory">%1$s</xliff:g> каталогы</string>
+    <string name="list_filter_custom">"Теңшелетін"</string>
+    <string name="activity_title_settings">"Параметрлер"</string>
+    <string name="menu_settings" msgid="377929915873428211">"Параметрлер"</string>
+    <string name="menu_help">Анықтама және кері байланыс</string>
+    <string name="preference_displayOptions">"Дисплей опциялары"</string>
+    <string name="organization_company_and_title"><xliff:g id="company" example="TechnicalProgramManager">%2$s</xliff:g>, <xliff:g id="company" example="GoogleInc.">%1$s</xliff:g></string>
+    <string name="non_phone_caption">Телефон нөмірі</string>
+    <string name="non_phone_add_to_contacts">Контактілер тізіміне қосу</string>
+    <string name="activity_title_confirm_add_detail">Контактіге қосу</string>
+    <string name="non_phone_close">"Жабу"</string>
+    <string name="widget_name_and_phonetic"><xliff:g id="display_name" example="JohnHuber">%1$s</xliff:g> (<xliff:g id="phonetic_name">%2$s</xliff:g>)</string>
+    <string name="date_year_toggle">Жыл қосу</string>
+    <string name="social_widget_label">Контакт</string>
+    <string name="social_widget_loading">Жүктеу\u2026</string>
+    <string name="contacts_unavailable_create_contact">Жаңа контакт құру</string>
+    <string name="contacts_unavailable_add_account">"Есептік жазба қосу"</string>
+    <string name="contacts_unavailable_import_contacts">Контактілерді импорттау</string>
+    <string name="create_group_dialog_title">Жаңа топ құру</string>
+    <string name="create_group_item_label">Жаңа топ құру</string>
+    <plurals name="num_groups_in_account">
+        <item quantity="one">1-топ</item>
+        <item quantity="other"><xliff:g id="count">%0$d</xliff:g> топтары</item>
+    </plurals>
+    <string name="delete_group_dialog_message">\"<xliff:g id="group_label" example="Friends">%1$s</xliff:g>\" тобын өшіру керек пе? (Контактілер өздігінен өшірілмейді.)</string>
+    <plurals name="num_contacts_in_group">
+        <item quantity="one"><xliff:g id="account_type">%2$s</xliff:g> ішінде <xliff:g id="count">%1$d</xliff:g> адам</item>
+        <item quantity="other"><xliff:g id="account_type">%2$s</xliff:g> ішінде <xliff:g id="count">%1$d</xliff:g> адам</item>
+    </plurals>
+    <plurals name="group_list_num_contacts_in_group">
+        <item quantity="one"><xliff:g id="count">%1$d</xliff:g> адам</item>
+        <item quantity="other"><xliff:g id="count">%1$d</xliff:g> адам</item>
+    </plurals>
+    <string name="toast_join_with_empty_contact">Басқасын байланыстыру алдында контакт атын теріңіз.</string>
+    <string name="copy_text">Аралық сақтағышқа көшіру</string>
+    <string name="set_default">Әдепкі бойынша орнату</string>
+    <string name="clear_default">Әдепкі бойынша жою</string>
+    <string name="toast_text_copied">Мәтін көшірілді</string>
+    <string name="cancel_confirmation_dialog_message">Өзгерістерден бас тартып, өңдеуден шығу керек пе?</string>
+    <string name="cancel_confirmation_dialog_cancel_editing_button">"Алыптастау"</string>
+    <string name="cancel_confirmation_dialog_keep_editing_button">Өңдеуді сақтау</string>
+    <string name="call_type_and_date"><xliff:g id="call_type" example="Friends">%1$s</xliff:g> <xliff:g id="call_short_date" example="Friends">%2$s</xliff:g></string>
+    <string name="profile_display_name">Профильді орнату</string>
+    <string name="enter_contact_name">Тұлға атын теру</string>
+    <string name="group_name_hint">Топ аты</string>
+    <string name="local_profile_title">Менің жергілікті профилім</string>
+    <string name="external_profile_title">Менің <xliff:g id="external_source">%1$s</xliff:g> профилім</string>
+    <string name="toast_displaying_all_contacts">Барлық контактілерді көрсету</string>
+    <string name="generic_no_account_prompt">Тіпті телефоныңызды жоғалтқанда контактілерді қауіпсіз сақтаңыз: онлайн қызметпен синхрондаңыз</string>
+    <string name="generic_no_account_prompt_title">"Есептік жазба қосу"</string>
+    <string name="contact_editor_prompt_zero_accounts">Жаңа контакт сақтық көшірілмейді. Контактілерді онлайн сақтық көшіретін тіркелгіні қосу керек пе?</string>
+    <string name="contact_editor_prompt_one_account">Жаңа контактілер <xliff:g id="account_name">%1$s</xliff:g> тіркелгісіне сақталады.</string>
+    <string name="contact_editor_prompt_multiple_accounts">Жаңа контактілердің әдепкі тіркелгісін таңдаңыз:</string>
+    <string name="contact_editor_title_new_contact">Жаңа контакт қосу</string>
+    <string name="contact_editor_title_existing_contact">Контактіні өңдеу</string>
+    <string name="keep_local">Жергілікті түрде сақтау</string>
+    <string name="add_account">"Есептік жазба қосу"</string>
+    <string name="add_new_account">"Жаңа есептік жазба қосу"</string>
+    <string name="menu_export_database">Дерекқор файлдарын экспорттау</string>
+    <string name="action_menu_add_new_contact_button">Жаңа контакт қосу</string>
+    <string name="expanding_entry_card_view_see_more">Көбірек көрсету</string>
+    <string name="expanding_entry_card_view_see_less">Азырақ көрсету</string>
+    <string name="expanding_entry_card_view_see_all">"Барлығын көру"</string>
+    <string name="recent_card_title">Соңғы</string>
+    <string name="about_card_title">Анықтама</string>
+    <string name="send_message">Хабар жіберу</string>
+    <string name="toast_making_personal_copy">Жеке көшірме жасалуда…</string>
+    <string name="yesterday">"Кеше"</string>
+    <string name="tomorrow">"Ертең"</string>
+    <string name="today">"Бүгін"</string>
+    <string name="today_at_time_fmt">"Бүгін <xliff:g id="time_interval">%s</xliff:g> аралығында"</string>
+    <string name="tomorrow_at_time_fmt">"Ертең <xliff:g id="time_interval">%s</xliff:g> аралығында"</string>
+    <string name="date_time_fmt">"<xliff:g id="date">%s</xliff:g>, <xliff:g id="time_interval">%s</xliff:g> аралығында"</string>
+    <string name="untitled_event">(Белгіленбеген оқиға)</string>
+    <string name="date_time_set">"Орнату"</string>
+    <string name="header_im_entry">IM</string>
+    <string name="header_organization_entry">Ұйым</string>
+    <string name="header_nickname_entry">"Қысқа аты"</string>
+    <string name="header_note_entry">Ескертпе</string>
+    <string name="header_website_entry">"Веб-сайт"</string>
+    <string name="header_event_entry">"Оқиға"</string>
+    <string name="header_relation_entry">Қатынас</string>
+    <string name="header_account_entry">Тіркелгі</string>
+    <string name="header_name_entry">Аты</string>
+    <string name="header_email_entry">Электрондық пошта</string>
+    <string name="header_phone_entry">"Телефон"</string>
+    <string name="header_photo_entry">Фотосурет</string>
+    <string name="content_description_expand_editor">"Контактілер өңдегішті кеңейту үшін басыңыз."</string>
+    <string name="content_description_collapse_editor">"Контактілер өңдегішті тасалау үшін басыңыз."</string>
+    <string name="content_description_directions">Орынға бағыттаулар</string>
+    <string name="content_description_recent_sms">"жақындағы sms. <xliff:g id="MESSAGE_BODY">%s</xliff:g>. <xliff:g id="PHONE_NUMBER">%s</xliff:g>. <xliff:g id="DATE">%s</xliff:g>. жауап беру үшін басыңыз"</string>
+    <string name="content_description_recent_call_type_incoming">қабылданғандар</string>
+    <string name="content_description_recent_call_type_outgoing">жіберілгендер</string>
+    <string name="content_description_recent_call_type_missed">Қабылданбаған</string>
+    <string name="content_description_recent_call">"жақындағы қоңырау. <xliff:g id="CALL_TYPE">%s</xliff:g>. <xliff:g id="PHONE_NUMBER">%s</xliff:g>. <xliff:g id="DATE">%s</xliff:g>. кері қоңырау шалу үшін басыңыз"</string>
+    <string name="message_from_you_prefix">Сіз: <xliff:g id="sms_body">%s</xliff:g></string>
+    <string name="contact_editor_hangouts_im_alert">Электрондық пошта өрісіне немесе телефон өрісіне тұлғаның Hangouts идентификаторын енгізген кезде Hangouts жақсы жұмыс істейді.</string>
+    <string name="compact_editor_more_fields">"Қосымшаөрістер"</string>
+    <string name="compact_editor_change_photo_content_description">"Фотосуреттіөзгерту"</string>
+    <string name="compact_editor_failed_to_load">Өңдегішті ашу сәтсіз болды.</string>
+    <string name="compact_editor_account_selector_title">Сақтау орны</string>
+    <string name="compact_editor_account_selector_description">Қазір <xliff:g id="account_name">%s</xliff:g> тіркелгісіне сақтау. Басқа тіркелгіні таңдау үшін екі рет түртіңіз.</string>
+    <plurals name="compact_editor_linked_contacts_selector_title">
+        <item quantity="one">Байланыстырылған контакт</item>
+        <item quantity="other">Байланыстырылған контактілер (<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <string name="quickcontact_contacts_number"><xliff:g id="count">%d</xliff:g> байланыстырылған контакт</string>
+    <string name="quick_contact_display_name_with_phonetic">"<xliff:g id="DISPLAY_NAME">%s</xliff:g>(<xliff:g id="PHONETIC_NAME">%s</xliff:g>)"</string>
+    <string name="quickcontact_suggestion_link_button">КОНТАКТІЛЕРДІ БАЙЛАНЫСТЫРУ</string>
+    <string name="quickcontact_suggestion_cancel_button">БОЛДЫРМАУ</string>
+    <plurals name="quickcontact_suggestion_card_title">
+        <item quantity="one">1 ықтимал көшірме</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> ықтимал көшірме</item>
+    </plurals>
+    <plurals name="quickcontact_suggestions_number">
+        <item quantity="one">1 байланыстырылған контакт</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> байланыстырылған контакт</item>
+    </plurals>
+    <plurals name="quickcontact_suggestion_account_type_number">
+        <item quantity="one"/>
+        <item quantity="other">(<xliff:g id="count">%d</xliff:g>)</item>
+    </plurals>
+    <string name="quickcontact_suggestion_account_type"><xliff:g id="account_type">%s</xliff:g><xliff:g id="account_type_number">%s</xliff:g></string>
+    <string name="suggestion_card_this_contact_title">Бұл контакт</string>
+    <string name="suggestion_card_duplicates_title">Ықтимал көшірмелер</string>
+    <string name="suggestion_card_help_message">Осы контактілер бір тұлға болуы мүмкін. Оларды бірге жалғыз контакт ретінде байланыстыруға болады.</string>
+    <string name="compact_editor_linked_contacts_title">Байланыстырылған контактілер</string>
+    <string name="from_your_accounts">Тіркелгілеріңізден</string>
+    <string name="take_a_photo_button">Суретке түсіру</string>
+    <string name="all_photos_button">Барлық фотосуреттер</string>
+    <string name="photo_picker_title">Сурет таңдау</string>
+    <string name="contact_from_account_name"><xliff:g id="account_name">%s</xliff:g> тіркелгісінен</string>
+    <string name="editor_delete_view_description"><xliff:g id="data_type">%s </xliff:g><xliff:g id="data_kind">%s</xliff:g> өшіру</string>
+    <string name="editor_delete_view_description_short"><xliff:g id="data_kind">%s</xliff:g> өшіру</string>
+    <string name="photo_view_description_not_checked"><xliff:g id="account_type">%s </xliff:g><xliff:g id="user_name">%s </xliff:g>фотосуреті тексерілмеді</string>
+    <string name="photo_view_description_checked"><xliff:g id="account_type">%s </xliff:g><xliff:g id="user_name">%s </xliff:g>фотосуреті тексерілді</string>
+    <string name="photo_view_description_not_checked_no_info">Белгісіз тіркелгі фотосуреті тексерілмеді</string>
+    <string name="photo_view_description_checked_no_info">Белгісіз тіркелгі фотосуреті тексерілді</string>
+    <string name="locale_change_in_progress">Контактілер тізімі тіл өзгерісіне сәйкес жаңартылады.\n\nКүте тұрыңыз...</string>
+    <string name="menu_blocked_numbers">Құлыптаулы нөмірлер</string>
+</resources>

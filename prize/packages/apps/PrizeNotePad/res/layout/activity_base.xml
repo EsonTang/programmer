@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_avitivity_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/density_40dp"
+        android:background="@color/action_bar_color">
+
+        <RelativeLayout
+            android:id="@+id/left_click_area"
+            android:layout_width="@dimen/density_110dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/back_image_view"
+                android:layout_width="45dp"
+                android:layout_height="29dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:enabled="false"
+                android:background="@drawable/back_button_selector" />
+
+            <LinearLayout
+                android:id="@+id/title_ll"
+                android:layout_width="@dimen/density_70dp"
+                android:layout_height="@dimen/density_40dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@+id/back_image_view"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/month_and_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/big_text_size" />
+
+                <TextView
+                    android:id="@+id/week_and_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/week_time_text_color"
+                    android:visibility="gone"
+                    android:textSize="@dimen/big_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mid_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/big_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/right_click_area"
+            android:layout_width="@dimen/density_60dp"
+            android:layout_height="@dimen/density_40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/density_10dp">
+
+            <Button
+                android:id="@+id/operation_image_view"
+                android:layout_width="@dimen/density_30dp"
+                android:layout_height="@dimen/density_30dp"
+                android:clickable="false"
+                android:enabled="false"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/white"
+                android:contentDescription="@null"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

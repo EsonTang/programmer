@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dialog_shape"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_item_height">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/title_green"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/prize_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dialog_bottom_divider_color" />
+
+</RelativeLayout>

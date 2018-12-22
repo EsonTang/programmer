@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/mine_local_head_ll"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/mine_local_head_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_top_40dp">
+        <TextView
+            android:id="@+id/mine_headView_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:drawablePadding="8dp"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_33cccc"
+            android:textSize="@dimen/text_size_medium" />
+
+        <View
+            android:id="@+id/common_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="6dp"
+            android:background="@color/bg_gray_color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/common_line"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignBaseline="@id/common_line"
+            android:src="@drawable/prize_more_selector" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hot_topic_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/text_color_33cccc"
+        android:textSize="@dimen/text_size_small"
+        android:text="aaa"/>
+
+</LinearLayout>

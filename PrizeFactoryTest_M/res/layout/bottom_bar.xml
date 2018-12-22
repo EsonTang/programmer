@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Button
+        android:id="@+id/passButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:background="@drawable/btn_fcm_sucess"
+        android:text="@string/pass"
+        android:textColor="@color/white"
+        android:textSize="25.0dip" />
+
+    <Button
+        android:id="@+id/failButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:background="@drawable/btn_fcm_fail"
+        android:text="@string/fail"
+        android:textColor="@color/white"
+        android:textSize="25.0dip" />
+
+</merge>

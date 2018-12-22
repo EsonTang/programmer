@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <include layout="@layout/setover_title" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/btn_continue_lenght"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/btn_v_padding"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/start"
+        	android:textColor="@color/btn_continue_color"
+            android:textSize="@dimen/textsize_next" />
+    </RelativeLayout>
+
+</LinearLayout>

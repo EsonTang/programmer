@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_Llyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <TextView
+        android:id="@+id/app_introduce_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/updat_drop_selector"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/text_color_404040"
+        android:textSize="@dimen/text_size_micro" />
+
+    <RelativeLayout
+        android:id="@+id/relayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/app_update_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/app_version_id"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/app_update"
+            android:textColor="@color/text_color_262626"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@+id/app_version_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:text="@string/app_version"
+            android:textColor="@color/text_color_262626"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/app_content_introduce_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="@color/text_color_9a9a9a"
+        android:textSize="@dimen/text_size_min" />
+
+</LinearLayout>

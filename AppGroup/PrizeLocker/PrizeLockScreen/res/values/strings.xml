@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PrizeLockScreen</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="calculator_name">Calculator</string>
+    <string name="music_name">Music</string>
+    
+    <string name="window_manager">WindowManager</string>
+    <string name="surfaceview">SurfaceView</string>
+    <string name="hint_text">"Up sliding unlock"</string>
+    
+    <string name="month_day_year_week">yyyy-MM-dd EEE</string>
+    <string name="notification_service_name">"Lock Message Service"</string>
+    <!-- liufan add 07-30 -->
+    <string name="is_lockscreen_enable_text">"Open lock screen"</string>
+    <string name="lockscreen_setting_text">"Lock screen settings"</string>
+    <string name="open_lockscreen_pwd_text">"Set lock screen password"</string>
+    <string name="update_lockscreen_pwd_text">"Modify lock screen password"</string>
+    <string name="lockscreen_style_number_text">"Number"</string>
+    <string name="no_pwd_text">No Password</string>
+    <string name="lockscreen_style_icon_text">"Pattern"</string>
+    <string name="lockscreen_style_complex_text">"Complex"</string>
+    <string name="close_lockscreen_pwd_text">"Off password"</string>
+    <string name="lockscreen_style_number_pwd_text">"Num password"</string>
+    <string name="lockscreen_style_icon_pwd_text">"Pattern password"</string>
+    <string name="lockscreen_style_complex_pwd_text">"Complex password"</string>
+    <string name="lockscreen_access_pattern_cell_added">已添加单元格</string>
+    <string name="lockscreen_access_pattern_start">"start draw pattern"</string>
+    <string name="lockscreen_access_pattern_detected">"draw complete"</string>
+    <string name="lockscreen_access_pattern_cleared">"pattern cleared"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="lockpattern_recording_intro_header">"draw unlock pattern"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少需连接%d个点，请重试。"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"再次绘制图案进行确认"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"两次绘制图案不一致，请重新绘制"</string>
+    <string name="lockpattern_pattern_confirmed_header">"Your new unlocked pattern, Click 'Complete' to save."</string>
+    <string name="lockpattern_need_to_unlock">"确认之前所设的图案"</string>
+    <string name="unlockpattern_error">"解锁图案错误，请重新绘制"</string>
+    
+    <string name="enter_pwd">"输入密码"</string>
+    <string name="enter_pwd_has_alp">"输入4位或4位以上密码,至少包含一个字母"</string>
+    <string name="enter_pwd_error">"密码错误，请重输"</string>
+    <string name="pwd_entered_record">"密码已保存"</string>
+    <string name="need_to_enter_confirm">"再次输入密码进行确认"</string>
+    <string name="need_to_enter_wrong">"两次输入密码不一致，请重输"</string>
+    <string name="enter_too_short">"至少需输入%d字符，其中至少包含一个字母，请重新输入。"</string>
+	
+	<string name="digital_need_to_unlock">"Make sure digital password"</string>
+    <string name="enter_digital_pass">"Enter digital password"</string>
+    <string name="enter_digital_pass_again">"Enter digital password again."</string>
+    
+    <string name="str_scroll_unlock">"Fast sliding unlock"</string>
+    
+    <string name="str_right_scroll_unlock">"〉Sliding unlock"</string>
+    
+    <string name="str_emergency_call">"Emergency Call"</string>
+    
+    <string name="str_open_notice_priv">"Turn On Notification Permissions"</string>
+    <string name="str_close_system_proguard">"Turn Off System Screenlock"</string>
+    <string name="str_open_notice_hint">"Fix the conflict between PrizeLock and system screenlock"</string>
+    <string name="str_close_system_proguard_hint">"PrizeLock will display notifications"</string>
+    
+    <string name="go_on">"Go On"</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="try_again">"Try again"</string>
+    <string name="complete">"Complete"</string>
+    
+    <string name="title_digital_pwd">"Set digital password"</string>
+    <string name="title_pattern_pwd">"Set pattern password"</string>
+    <string name="title_complex_pwd">"Set complex password"</string>
+    
+    <string name="lock_and_pwd">锁屏和密码</string>
+    <string name="lock_style">锁屏样式</string>
+    <string name="lock_pwd">锁屏密码</string>
+    <string name="lock_class">经典（默认锁屏）</string>
+    <string name="lock_nomol">常用</string>
+    <string name="lock_others">其他</string>
+    <string name="notification">显示通知详情</string>
+    <string name="notification_detail">锁屏通知将显示内容详情和联系人</string>
+    <string name="lock_screen">锁屏</string>
+    <string name="lock_screen_detail">使用手机前需要解锁</string>
+    
+    <string name="lock_style_default">经典样式</string>
+    <string name="lock_style_fly">放飞样式</string>
+    <string name="lock_style_blink">眨眼样式</string>
+    <string name="lock_style_circle">圆圈样式</string>
+    <string name="lock_style_fashion">流行色样式</string>
+    <string name="apply">"Apply"</string>
+    <string name="applied">"Applied"</string>
+    <string name="applied_fail">"Applied fail"</string>
+    <string name="applying">Applying &#8230;</string>
+</resources>

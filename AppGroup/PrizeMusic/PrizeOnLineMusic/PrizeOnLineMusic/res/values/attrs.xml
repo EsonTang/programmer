@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="playerview">
+        <attr name="cover" format="integer" />
+        <attr name="buttonColor" format="color"/>
+        <attr name="progressEmptyColor" format="color"/>
+        <attr name="progressLoadedColor" format="color"/>
+        <attr name="TextColor" format="color"/>
+        <attr name="TextSize" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="PrizeCircleButton">
+        <attr name="radius" format="dimension" />
+        <attr name="line_color" format="color"></attr>
+        <attr name="pane_normal_color" format="color"></attr>
+        <attr name="pane_pressed_color" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlowIndicator">
+        <attr name="count" format="integer" />
+        <attr name="space" format="dimension" />
+        <attr name="point_size" format="dimension" />
+        <attr name="point_seleted_color" format="color|reference" />
+        <attr name="point_normal_color" format="color|reference" />
+        <attr name="point_radius" format="dimension" />
+    </declare-styleable>
+
+    
+     <declare-styleable name="PrizeHorizontalTimeView">  
+        <!-- 圆球的半径 -->              
+        <attr name="circle_radius" format="dimension" />
+        <!-- 线的宽度 -->
+        <attr name="line_width" format="dimension"></attr>
+        <!-- 字体的大小 -->
+        <attr name="text_size" format="dimension"></attr>
+        <!-- 底层未滑到的颜色 -->
+        <attr name="bottom_color" format="color"></attr>
+        <!-- 已滑到的颜色 -->
+        <attr name="active_color" format="color"></attr>
+        <!-- 字体颜色 -->
+        <attr name="text_color" format="color"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="TransitionColorView">
+        <attr name="max_color" format="color" />
+    </declare-styleable>
+     <declare-styleable name="MyTextView">
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="paddingLeft" format="dimension"></attr>
+        <attr name="paddingRight" format="dimension"></attr>
+        <attr name="marginLeft" format="dimension"></attr>
+        <attr name="marginRight" format="dimension"></attr>
+        <attr name="MytextColor" format="color"></attr>
+    </declare-styleable>  
+</resources>

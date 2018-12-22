@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingLeft="18dp"
+              android:paddingRight="18dp">
+
+    <TextView
+        android:id="@+id/fedbck_common_tips_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/feed_back_detail_asking"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="17dp"
+        android:paddingTop="17dp"
+        android:text="@string/fedbck_common_tips_title"
+        android:textColor="@color/text_color_404040"
+        android:textSize="@dimen/text_size_26"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_below="@+id/fedbck_common_tips_title"
+        android:background="#e4e4e4"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/feed_back_detail_answer">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/fedbck_common_tips_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="18dp"
+            android:paddingTop="16dp"
+            android:text="@string/fedbck_common_tips_title"
+            android:textColor="@color/text_color_747474"
+            android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_point_five_dp"
+        android:layout_below="@+id/fedbck_common_tips_title"
+        android:background="#e4e4e4"/>
+
+</LinearLayout>

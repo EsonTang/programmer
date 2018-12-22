@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+    <integer name="contacts_text_fields_editor_padding_start">40</integer>
+
+</resources>

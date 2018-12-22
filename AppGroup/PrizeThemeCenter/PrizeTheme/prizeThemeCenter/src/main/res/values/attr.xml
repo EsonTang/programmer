@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+    
+     <declare-styleable name="FlowIndicator">
+        <attr name="count" format="integer" />
+        <attr name="space" format="dimension" />
+        <attr name="point_size" format="dimension" />
+        <attr name="point_seleted_color" format="color|reference" />
+        <attr name="point_normal_color" format="color|reference" />
+        <attr name="point_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CropImage">
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="shaderColor" format="color" />
+        <attr name="scaleMax" format="float" />
+        <attr name="scaleMin" format="float" />
+        <attr name="cropShape">
+            <flag name="rectangle" value="0" />
+            <flag name="oval" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyTextView">
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="paddingLeft" format="dimension"></attr>
+        <attr name="paddingRight" format="dimension"></attr>
+        <attr name="marginLeft" format="dimension"></attr>
+        <attr name="marginRight" format="dimension"></attr>
+        <attr name="MytextColor" format="color"></attr>
+    </declare-styleable>
+
+    <!-- PagerSlidingTabStrip的配置信息 -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
+
+        <!-- 默认时候的文本大小 -->
+        <attr name="pstsTabTextSize" format="dimension"/>
+        <!-- 默认时候的文本颜色 -->
+        <attr name="pstsTabTextColor" format="color"/>
+        <!-- 选中时候的文本大小 -->
+        <attr name="pstsSelectedTabTextSize" format="dimension"/>
+        <!-- 选中时候的文本颜色 -->
+        <attr name="pstsSelectedTabTextColor" format="color"/>
+    </declare-styleable>
+
+</resources>

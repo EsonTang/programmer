@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minHeight="50dp"
+    android:paddingStart="@dimen/prize_preferencefragment_padding_start"
+    android:paddingEnd="@dimen/prize_preferencefragment_pading_end"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="50dp">
+    <TextView
+        android:id="@+id/security_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/prize_preference_title_textsize"
+        android:textColor="@color/prize_settings_textcolor"/>
+    <ImageView
+        android:id="@+id/checked_iamge"
+        android:layout_weight="1"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/prize_selected_image"
+        android:visibility="visible"/>
+</RelativeLayout>

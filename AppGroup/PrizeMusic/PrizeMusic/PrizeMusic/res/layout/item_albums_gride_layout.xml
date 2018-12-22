@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/gridview_info_holder"
+   >
+
+    <ImageView
+        android:id="@+id/action_bar_album_art"
+        android:layout_width="@dimen/image_h_w"
+        android:layout_height="@dimen/image_h_w"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/action_bar_album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:layout_alignRight="@+id/action_bar_album_art"
+        android:layout_alignLeft="@+id/action_bar_album_art"
+        android:layout_below="@+id/action_bar_album_art"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_LL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <!-- Tab 的标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/action_bar_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height_40dp"
+        android:visibility="gone"
+        >
+
+        <ImageButton
+            android:id="@+id/back_IBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:paddingLeft="4dp"
+            android:background="@drawable/action_bar_back_selector" />
+
+        <TextView
+            android:id="@+id/bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/action_bar_search"
+            android:layout_toRightOf="@+id/back_IBtn"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingBottom="0dip"
+            android:singleLine="true"
+            android:textColor="@color/common_app_title"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageButton
+            android:id="@+id/action_bar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/action_go_downQueen"
+            android:background="@drawable/action_bar_search_selector" />
+
+        <ImageButton
+            android:id="@+id/action_go_downQueen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/btn_enter_downqueue_selector" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_head_gray_color" />
+    </RelativeLayout>
+
+    <!-- Not Tab 标题栏 无跳转到下载队列的图标 -->
+
+    <RelativeLayout
+        android:id="@+id/action_bar_no_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height_40dp"
+        android:padding="0dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/action_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/action_bar_back_selector" />
+
+        <TextView
+            android:id="@+id/action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="0dp"
+            android:paddingBottom="0dip"
+            android:singleLine="true"
+            android:textColor="@color/common_app_title"
+            android:textSize="@dimen/text_size_medium" />
+
+        <!-- 最右边 不显示,只用来以他为最右边的标尺 -->
+
+        <TextView
+            android:id="@+id/action_bar_menu_right"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true" />
+
+        <ImageButton
+            android:id="@+id/action_bar_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@id/action_bar_menu_right"
+            android:background="@drawable/action_bar_search_selector" />
+
+        <View
+            android:id="@+id/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_head_gray_color" />
+    </RelativeLayout>
+
+    <!--积分系统里面使用到的actionbar-2.0积分系统-->
+    <RelativeLayout
+        android:id="@+id/action_bar_points_rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height_40dp"
+        android:padding="0dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/actionbar_back_points_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/action_bar_back_selector"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="4dp"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/actionbar_points_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/common_app_title"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageView
+            android:id="@+id/actionbar_points_rules_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/actionbar_points_rules_selector"
+            android:gravity="center" />
+
+        <View
+            android:id="@+id/actionbar_points_divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_point_five_dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_head_gray_color" />
+    </RelativeLayout>
+
+</merge>

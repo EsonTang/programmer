@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Reposition nav bar back key feature & Dynamically hiding nav bar feature. prize-linkh-20161115 -->
+	<!-- layout (0): back - home - recents (default layout)
+	     layout (1): recents - home - back
+	     layout (2): hide - back - home - recents
+	     layout (3): hide - recents - home - back
+	-->
+	<integer name="default_nav_bar_style">3</integer>
+	
+  	<!-- Dynamically hiding nav bar feature. prize-linkh-20161115 -->
+	<!-- Flag indicating whether we should disallow dispatching motion event to user. 
+		if true, the user will receive MotionEvent.ACTION_CANCEL after receving MotionEvent.ACTION_DOWN.
+		if false, the user can receive all motion event.
+	-->
+	<bool name="blocked_in_down_event">true</bool>
+
+	<!-- Dynamically changing Recents function feature. prize-linkh-20160725 -->
+	<!-- Flag indicating that we should treat Recents as Menu as default. -->
+	<bool name="default_treat_recents_as_menu">false</bool>
+
+	<!-- These are the list of apps that can run multi instances
+	-->
+	<array name="app_list_for_multi_instances">
+		<item>com.tencent.mm</item>
+		<item>com.tencent.mobileqq</item>
+	</array>
+	<!-- the list that represents they are disabled as default. -->
+	<array name="disabled_app_list_for_multi_instances">
+		<item>com.tencent.mm</item>
+		<item>com.tencent.mobileqq</item>
+	</array>
+	<!-- Flag indicating the maximum instances to run for an app
+	-->
+	<integer name="max_instances_per_app">1</integer>
+
+
+	<!-- Intercept wake up alarms. prize-linkh-20160520 -->
+	<!-- Note the format. 
+		 See below:
+	          .......
+	          .......
+		<item>com.demo.aa</item>
+		      .......
+		<item>com.demo.bb+</item>
+		<item>intent_action_xx</item>
+		<item>com.demo.yy/.kk</item>		      
+		      .......
+		<item>com.demo.cc$</item>
+		<item>intent_action_yy</item>
+		<item>@null</item>
+		<item>true</item>
+		      .......
+		      .......		      
+	-->
+	<string-array name="intercepted_pkg_components_for_wakeup_alarm">
+		<item>com.tencent.mm</item>		
+		<item>com.tencent.mobileqq</item>
+		<item>com.sina.weibo</item>		
+		<item>com.adups.fota</item>
+		<item>com.sdu.didi.psnger</item>
+		<item>com.immomo.momo</item>
+		<item>com.qiyi.video</item>
+		<item>com.taobao.taobao</item>
+		<item>com.alibaba.android.rimet</item>
+		<item>com.sohu.inputmethod.sogou</item>
+		<item>com.jingdong.app.mall</item>
+		<item>com.cubic.autohome</item>		
+        
+		<item>com.duomi.android</item>		
+		<item>com.andreader.prein</item>		
+		<item>com.tencent.news</item>		
+		<item>com.tencent.qqlive</item>		
+		<item>com.baidu.BaiduMap</item>		  
+
+		<item>com.qiyi.video</item>		
+		<item>com.tianqiwhite</item>		
+		<item>com.yidian.dk</item>		
+		<item>com.android.browser</item>		
+		<item>com.baidu.searchbox</item>
+        <item>com.stkj.android.dianchuan</item>
+        
+		<!--
+		<item>com.prize.appcenter+</item>
+		<item>com.tencent.android.tpush.service.channel.heartbeatIntent</item>
+		<item>@null</item>
+		<item>false</item>
+		-->
+	</string-array>
+	
+	<!-- this array is used to intercept those packages that have same action. -->
+	<string-array name="intercepted_only_actions_for_wakeup_alarm">
+		<item>com.xiaomi.push.PING_TIMER</item>
+		<item>com.tencent.android.tpush.service.channel.heartbeatIntent</item>
+	</string-array>
+	<!-- Intercept wake up alarms. end.... -->
+
+	<!-- app adj adjustment feature. prize-linkh-20160618 -->
+	<!-- This array is used to make app adj adjustment. It can be used in low and high ram project.
+		Each item must start with a process name, and then you can add your
+		adj value or persistent property with semicolon separator.
+		Note: 
+		1. If you only provider process name, the adj of this process will be assigned to defalut min adj.
+		2. If you provider an adj value that is smaller than the default min adj value, then AMS will use default value for you.
+		3. The current default min adj is Process.FOREGROUND_APP_ADJ (0).
+	-->
+	<string-array name="processes_to_be_adjusted">
+		<item>com.android.launcher3;0</item>
+		<item>com.prize.music:play;0</item>
+		<item>com.prize.appcenter:remote;0</item>
+		<item>com.android.floatwindow;0</item>
+		<item>com.android.prizefloatwindow;0</item>
+		<item>com.prize.sysresmon;0</item>
+		
+	</string-array>
+	<!-- this array is the same as above array. but it's used for high ram(>1GB) project -->
+	<string-array name="processes_to_be_adjusted_for_high_ram">
+		<item>com.example.framerecorder;true</item>
+		<item>com.example.longshotscreen;true</item>
+		
+	</string-array>
+
+	<!-- Support controlling app network for sleeping. prize-linkh-20160716 -->
+	<!-- This array is used to inform that App Network Management doesn't disallow accessing network
+		 for these packages. Each item is named by exact package name or some key characters of package
+		 name. En, these data are almost from Clear background Service. See file PureBackgroundUtils.java in
+		 PureBackground app package
+	-->
+	<string-array name="white_list_for_app_net_mgr_for_sleeping">
+		<!-- music category
+			* qq music    : com.tencent.qqmusic
+			* kugou music : com.kugou.android
+			* kuwo music  : cn.kuwo.player
+			* baidu music : com.ting.mp3.android
+			* xiami music : fm.xiami.main
+			* duomi music : com.duomi.android
+			* tiantian    : com.sds.android.ttpod
+		 -->
+		<item>music</item> <!-- key characters. -->
+		<item>Music</item>
+		<item>com.kugou.android</item>
+		<item>cn.kuwo.player</item>
+		<item>com.ting.mp3.android</item>
+		<item>fm.xiami.main</item>
+		<item>com.duomi.android</item>
+		<item>com.sds.android.ttpod</item>
+
+		<!-- FM category
+		    * qingting fm : fm.qingting.qtradio
+		    * douban fm   : com.douban.radio
+		    * ximalaya fm : com.ximalaya.ting.android
+		 -->
+		<item>fm.qingting.qtradio</item>
+		<item>com.douban.radio</item>
+		<item>com.ximalaya.ting.android</item>
+
+		<!-- Map category
+		    * baidu map:   com.baidu.BaiduMap
+		    * gaode map:   com.autonavi.xmgd.navigator
+		    * gaode navi:  com.autonavi.minimap
+		    * kailide map: cld.navi.xxxx.mainframe
+		    * sougou map:  com.sogou.map.android.maps
+		 -->
+		<item>navi</item>
+		<item>map</item>
+		<item>Map</item>
+
+		<!-- Chat tool category
+		    * QQ:   com.tencent.mobileqq
+		    * Wechat:   com.tencent.mm
+    		* feixin    : cn.com.fetion		    
+		 -->
+		<item>com.tencent.mobileqq</item>
+		<item>com.tencent.mm</item>
+		<item>cn.com.fetion</item>
+
+		<!-- Prize & prebuilt App category
+    		* 2345tianqi: com.tianqiwhite
+		 -->
+		<item>com.tianqiwhite</item>
+
+		<!-- Others category
+    		* didi taxi : com.sdu.didi.psnger
+		 -->
+		<item>com.sdu.didi.psnger</item>
+	
+	</string-array>	
+    
+    <!-- add for adjustment of min free of low memory killer. prize-linkh-20160922 -->
+    <bool name="enable_custom_lmk_min_free_for_high_ram">false</bool>
+    <bool name="enable_custom_lmk_min_free">false</bool>
+    <!-- Note: KB unit!!-->
+    <integer-array name="custom_lmk_min_free">
+        <!-- FOREGROUND_APP_ADJ : 0 -->
+        <!-- 72 * 1024 KB -->
+	<item>73728</item>
+        
+        <!-- VISIBLE_APP_ADJ : 1 -->
+        <!-- 90 * 1024 KB -->        
+	<item>92160</item>
+        
+        <!-- PERCEPTIBLE_APP_ADJ : 2 -->
+        <!-- 108 * 1024 KB -->        
+	<item>110592</item>
+        
+        <!-- BACKUP_APP_ADJ : 3 -->
+        <!-- 126 * 1024 KB -->        
+        <item>129024</item>
+        
+        <!-- CACHED_APP_MIN_ADJ : 9 -->
+        <!-- 230 * 1024 KB -->        
+	<item>235520</item>
+        
+        <!-- CACHED_APP_MAX_ADJ : 15 -->
+        <!-- 340 * 1024 KB -->        
+	<item>348160</item>
+	</integer-array>	
+    
+    <!--PRIZE-purebackground-wangxianzhen-2016-08-09-start-->
+    <!-- Prohibit third-party applications market background regardless of whether the download.
+        And don't allow in pure background list configuration.
+    -->
+    <string-array name="third_app_market">
+        <!--
+            * yingyongbao    : com.tencent.android.qqdownloader
+            * baidu          : com.baidu.appsearch/com.dragon.android.pandaspace
+            * 360            : com.qihoo.appstore
+            * sougou         : com.sogou.androidtool
+            * wandoujia      : com.wandoujia.phoenix2
+            * PP zhushou     : com.pp.assistant
+            * android market : com.hiapk.marketpho
+            * font           : com.ekesoo.font
+        -->
+        <item>com.tencent.android.qqdownloader</item>
+        <item>com.baidu.appsearch</item>
+        <item>com.dragon.android.pandaspace</item>
+        <item>com.qihoo.appstore</item>
+        <item>com.sogou.androidtool</item>
+        <item>com.wandoujia.phoenix2</item>
+        <item>com.pp.assistant</item>
+        <item>com.hiapk.marketpho</item>
+        <item>com.ekesoo.font</item>
+    </string-array>
+    <!--PRIZE-purebackground-wangxianzhen-2016-08-09-end-->
+</resources>

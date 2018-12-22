@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/my_white</item>
+    </style>
+  <!--prize-OS8.0_Shutdown-add-yangming-2017_8_12-start-->
+    <style name="blurDialog" parent="@android:style/Theme.Holo.DialogWhenLarge.NoActionBar"> 
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+  <!--prize-OS8.0_Shutdown-add-yangming-2017_8_12-start-->
+</resources>

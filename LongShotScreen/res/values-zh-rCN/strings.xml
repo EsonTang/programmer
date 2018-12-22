@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">超级截屏</string>
+    <string name="action_settings">设置</string>
+    <string name="scroll_shot">长截屏</string>
+    <string name="funny_shot">趣味截屏</string>
+    <string name="screen_record">屏幕录制</string>
+    <string name="nextpage">下一屏</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="rect_shot">矩形截屏</string>
+    <string name="lasso_shot">套索截屏</string>
+    <string name="daub_shot">涂鸦截屏</string>
+    <string name="redo">重做</string>
+    <string name="undo">撤销</string>
+    <string name="exit">退出</string>
+    <string name="scrawl">涂鸦</string>
+    <string name="app_restrict_capture_screen">由于应用限制，该界面无法截屏</string>
+    <string name="drag_to_select_capture_area">以拖拽方式选取截屏窗口</string>
+    <string name="not_support_screen_orientation_change">截屏过程中不支持横竖屏切换</string>
+    <string name="screenshot_saved">已捕获屏幕截图</string>
+    <string name="screenshot_saved_to_tf_card">文件已保存至“手机存储/超级截屏”文件夹中。</string>
+    <string name="screenshot_saved_to_sd_card">文件已保存至“SD卡/超级截屏”文件夹中。</string>
+    <string name="lasso_guide">画出截屏区域开始套索截屏</string>
+    <string name="scrollcapture_is_running">长截屏正在运行</string>
+    <string name="scrollcapture_is_saving_please_wait">当前的长截屏正在保存，请稍侯。</string>
+    <string name="hit_the_bottom">滑到底了</string>
+    <string name="content_un_extended">该界面不支持长截屏</string>
+    <string name="maximum_to_ten_pages">最多截取10屏</string>
+    <string name="saving">正在保存...</string>
+    <string name="screenshot_saving">正在保存屏幕截图…</string>
+    <string name="hava_not_start_daub">您还没有涂，请涂后再点击保存。</string>
+    <string name="move">移动</string>
+    
+    <string name="turn_off_long_screenshots">请先退出长截屏</string>
+    <string name="turn_off_interest_screenshots">请先退出趣味截屏</string>
+    <string name="shot_error_tips">截屏失败，请重试</string>
+    
+</resources>

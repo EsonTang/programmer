@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- created by liuweiquan-20160708 -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/application_management_settings_title" >
+        
+		<!-- Application Settings -->
+        <Preference
+                android:key="application_settings"                
+                android:title="@string/application_settings_title" 
+                android:fragment="com.android.settings.applications.ManageApplications"/>
+        <Preference
+                android:key="app_net_control_settings"
+                android:title="@string/app_net_control" 
+                >
+        <intent android:action="com.android.settings.APP_NET_CONTROL_SETTING" />
+        </Preference>
+        <Preference
+                android:key="auto_boot_app_manage_settings"
+                android:title="@string/app_auto_boot_manage_settings_title" 
+                >
+        <intent android:action="com.mediatek.security.AUTO_BOOT" />
+        </Preference>
+
+</PreferenceScreen> 

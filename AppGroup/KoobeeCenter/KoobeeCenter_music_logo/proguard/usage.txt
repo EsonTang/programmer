@@ -1,0 +1,83 @@
+com.koobee.koobeecenter.FeedBackActivity:
+    116:116:protected void init()
+com.koobee.koobeecenter.FeedBackRequestActivity:
+    private java.lang.String imeiSIM1
+    private java.lang.String imeiSIM2
+com.koobee.koobeecenter.MainActivity:
+    122:122:protected void init()
+com.koobee.koobeecenter.OutletsInCityActivity:
+    public static final java.lang.String PARAM_PROVINCE
+    public static final java.lang.String PARAM_AREA
+com.koobee.koobeecenter.base.BaseActivity:
+    protected abstract void init()
+    protected abstract void findViewById()
+    protected abstract void setListener()
+com.koobee.koobeecenter.db.AbstractDatabase:
+    protected abstract int getMinSupportVersion()
+    20:23:public int getDatabaseVersion()
+    57:62:public void unInitDatabase()
+    75:82:public boolean isNeedUpdate()
+    86:86:public java.lang.String getCommonCss(int)
+com.koobee.koobeecenter.db.AsyncBase:
+    protected static final int RESULT_AVAILABLE
+    private static final int MAX_THREADS
+com.koobee.koobeecenter.db.TableBase:
+    12:12:public TableBase()
+    37:58:protected static boolean isExistAsColumn(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.Object,java.lang.String)
+    63:66:protected static void addColumn(java.util.List,long,long,java.lang.String)
+    88:92:protected static java.lang.Double getValueDouble(java.util.List,android.database.Cursor,java.lang.String)
+com.koobee.koobeecenter.db.outlets.AsyncOutletsDatabase:
+    public static final int Q_CITYS
+    public static final int Q_BYAREA
+com.koobee.koobeecenter.db.outlets.CustomerTable:
+    public static final java.lang.String COLUMN_ID
+    public static final java.lang.String COLUMN_PROVINCE
+    public static final java.lang.String COLUMN_AREA
+    public static final java.lang.String COLUMN_LEVEL
+    public static final java.lang.String COLUMN_COMPANY
+    public static final java.lang.String COLUMN_ADDRESS
+    public static final java.lang.String COLUMN_CONSIGNEE
+    public static final java.lang.String COLUMN_TEL
+    public static final java.lang.String COLUMN_HEAD
+    public static final java.lang.String COLUMN_CATEGORY
+    private static final java.lang.String TABLENAME
+    15:15:public CustomerTable()
+com.koobee.koobeecenter.db.outlets.OutletsDatabase:
+    55:55:protected int getMinSupportVersion()
+com.koobee.koobeecenter.utils.CTelephoneInfo:
+    private java.lang.String iNumeric1
+    private java.lang.String iNumeric2
+    private boolean isSIM1Ready
+    private boolean isSIM2Ready
+    43:43:public boolean isSIM1Ready()
+    47:47:public boolean isSIM2Ready()
+    51:51:public boolean isDualSim()
+    71:71:public java.lang.String getINumeric1()
+    75:75:public java.lang.String getINumeric2()
+    79:86:public java.lang.String getINumeric()
+    183:213:private static boolean getSIMStateBySlot(android.content.Context,java.lang.String,int)
+    237:253:public static java.lang.String getSerialNumber()
+com.koobee.koobeecenter.utils.CTelephoneInfo$GeminiMethodNotFoundException:
+    private static final long serialVersionUID
+com.koobee.koobeecenter.utils.NetUtils:
+    12:12:public NetUtils()
+    79:88:public static boolean isWifiConnected(android.content.Context)
+    92:101:public static boolean isMobileConnected(android.content.Context)
+com.koobee.koobeecenter.utils.ToastUtils:
+    6:6:public ToastUtils()
+    11:14:public static void showShortToast(android.content.Context,java.lang.String)
+    17:20:public static void showLongToast(android.content.Context,java.lang.String)
+    32:38:public static void showOnceLongToast(android.content.Context,java.lang.String)
+com.koobee.koobeecenter02.BuildConfig
+com.koobee.koobeecenter02.R
+com.koobee.koobeecenter02.R$anim
+com.koobee.koobeecenter02.R$array
+com.koobee.koobeecenter02.R$attr
+com.koobee.koobeecenter02.R$color
+com.koobee.koobeecenter02.R$dimen
+com.koobee.koobeecenter02.R$drawable
+com.koobee.koobeecenter02.R$id
+com.koobee.koobeecenter02.R$layout
+com.koobee.koobeecenter02.R$menu
+com.koobee.koobeecenter02.R$string
+com.koobee.koobeecenter02.R$style

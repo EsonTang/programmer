@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">UImageLoad_DownLoad</string>
+    <string name="share_albumtips">分享 %1$s 的专辑《 %2$s 》 %3$s</string>
+    <string name="share_songtips">分享 %1$s 的歌曲《 %2$s 》 %3$s</string>
+    <string name="share_collecttips">分享 %1$s 的精选集《 %2$s 》 %3$s</string>
+    <string name="number_play"> %1$s人播放</string>
+    <string name="number_songs"> %1$s首歌</string>
+ <string name="share_mode">分享方式</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/density_65dp"
+    android:paddingLeft="@dimen/density_20dp"
+    android:paddingRight="@dimen/density_20dp"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/finger_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_front" />
+
+</RelativeLayout>

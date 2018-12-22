@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Super-Screenshots</string>
+    <string name="action_settings">einrichten</string>
+    <string name="scroll_shot">Lange Screenshots</string>
+    <string name="funny_shot">Fun Screenshots</string>
+    <string name="screen_record">Screen Recording</string>
+    <string name="nextpage">Auf dem nächsten Bildschirm</string>
+    <string name="save">Speichern</string>
+    <string name="cancel">annulliert</string>
+    <string name="rect_shot">Rechteckige Screenshots</string>
+    <string name="lasso_shot">Lasso Screenshots</string>
+    <string name="daub_shot">Graffiti Screenshots</string>
+    <string name="redo">Redo</string>
+    <string name="undo">Widerruf</string>
+    <string name="exit">verlassen</string>
+    <string name="scrawl">Graffiti</string>
+    <string name="app_restrict_capture_screen">Da die Anwendungsgrenze kann die Schnittstelle nicht-Screenshots</string>
+    <string name="drag_to_select_capture_area">In Drag and Drop ausgewählt Fenster Screenshot</string>
+    <string name="not_support_screen_orientation_change">Screen-Capture-Verfahren nicht unterstützt horizontale und vertikale Bildumschaltung</string>
+    <string name="screenshot_saved">Captured Screenshots</string>
+    <string name="screenshot_saved_to_tf_card">Dateien gespeichert in "Telefonspeicher / Super Screenshots" -Ordner.</string>
+    <string name="screenshot_saved_to_sd_card">Dateien gespeichert in "SD-Karte / Super Screenshots" -Ordner.</string>
+    <string name="lasso_guide">Zeichnen Sie Screenshots Region begann Lasso Screenshots</string>
+    <string name="scrollcapture_is_running">Lange Lauf Screenshots</string>
+    <string name="scrollcapture_is_saving_please_wait">Die aktuellen lange Screenshots Saving, bitte warten.</string>
+    <string name="hit_the_bottom">Am Ende des Schiebers</string>
+    <string name="content_un_extended">Der Querschnitt unterstützt keine langen Screenshots</string>
+    <string name="maximum_to_ten_pages">Bis zu 10 Bildschirm Abfangen</string>
+    <string name="saving">Speichern ...</string>
+    <string name="screenshot_saving">Speichern Screenshot ...</string>
+    <string name="hava_not_start_daub">Sie sind nicht gemalt, lackiert und dann klicken Sie bitte auf Speichern.</string>
+    <string name="move">Mobile</string>
+    
+    <string name="turn_off_long_screenshots">Bitte beenden Sie lange Screenshots</string>
+    <string name="turn_off_interest_screenshots">Bitte beenden Sie interessante Screenshots</string>
+    
+</resources>

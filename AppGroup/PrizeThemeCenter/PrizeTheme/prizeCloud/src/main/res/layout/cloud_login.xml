@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    android:clipToPadding="true">
+
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#21b5c0"
+        android:drawableLeft="@drawable/cloud_back_normal"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="onBackClk"
+        android:paddingLeft="20dp"
+        android:text="@string/login_account"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textsize_large" />
+
+    <EditText
+        android:id="@+id/username_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/cloud_shurukuang"
+        android:gravity="center_vertical"
+        android:hint="@string/username_hint"
+        android:maxLength="30"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/prize_text_default"
+        android:textColorHint="#c8c8c8"
+        android:textSize="@dimen/textsize_medium" >
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/password_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cloud_show_password_selector" >
+        </ImageView>
+
+         <EditText
+            android:id="@+id/passwordedit_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/password_id"
+            android:background="@drawable/cloud_edit_account"
+            android:gravity="center_vertical"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/prize_text_default"
+            android:textColorHint="#c8c8c8"            
+            android:digits="@string/symbol"
+            android:textSize="@dimen/textsize_medium" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/agree_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textsize_medium"
+        android:drawableLeft="@drawable/cloud_agree"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/agree"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/loginbtn_id"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/cloud_next_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="@dimen/textsize_medium" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/lost_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/lost_password"
+            android:textColor="@color/prize_text_high"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

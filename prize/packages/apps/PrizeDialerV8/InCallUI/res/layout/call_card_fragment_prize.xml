@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2014 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<!-- PRIZE-Change-Optimize_Dialer-wangzhong-2018_3_5-start -->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/call_card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    &lt;!&ndash; The main content of the CallCard is either one or two "call info"
+         blocks, depending on whether one or two lines are in use.
+
+         The call_info blocks are stacked vertically inside a CallCard (LinearLayout),
+         each with layout_weight="1".  If only one line is in use (i.e. the
+         common case) then the 2nd call info will be GONE and thus the 1st one
+         will expand to fill the full height of the CallCard. &ndash;&gt;
+
+    &lt;!&ndash; Primary "call card" block, for the foreground call. &ndash;&gt;
+    <LinearLayout
+        android:id="@+id/primary_call_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/incall_call_banner_background_color"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="@dimen/primary_call_elevation"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/call_banner_primary_call_container_top_padding" >
+
+        <include layout="@layout/primary_call_info_prize" />
+	
+	    <include layout="@layout/primary_call_info_small_content" />
+	 
+	    <include layout="@layout/other_call_info" />
+
+        
+
+        <TextView android:id="@+id/connectionServiceMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone"
+            android:padding="6dp"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+    &lt;!&ndash; M: ALPS01844813 primaryCallPhotoOrVideo id is used for RCSe plugin &ndash;&gt;
+    <FrameLayout
+        android:id="@+id/primaryCallPhotoOrVideo"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        &lt;!&ndash; Contact photo for primary call info &ndash;&gt;
+        &lt;!&ndash; PRIZE-add the background-yuandailin-2016-6-1&ndash;&gt;
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/contactPhoto"
+			android:background="@drawable/prize_incallui_background"
+            android:scaleType="centerCrop" />
+
+        &lt;!&ndash; manage conference call button &ndash;&gt;
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/primary_call_info_container"
+            layout="@layout/manage_conference_call_button" />
+    </FrameLayout>
+
+    &lt;!&ndash;<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/blur_background" />&ndash;&gt;
+
+    <fragment 
+        android:name="com.android.incallui.VideoCallFragment"
+        android:id="@+id/videoCallFragment"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+		android:layout_marginBottom="20dp"
+        android:gravity="top|center_horizontal"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/contactPhoto"
+        android:background="@android:color/white"
+        android:src="@drawable/img_no_image_automirrored" />
+
+    &lt;!&ndash; Progress spinner, useful for indicating pending operations such as upgrade to video. &ndash;&gt;
+    <FrameLayout
+        android:id="@+id/progressSpinner"
+        android:layout_below="@id/primary_call_info_container"
+        android:background="#63000000"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminate="true" />
+
+    </FrameLayout>
+
+    &lt;!&ndash; Placeholder for the dialpad which is replaced with the dialpad fragment when shown. &ndash;&gt;
+    &lt;!&ndash; shiyicheng-remove-android:layout_below="@id/primary_call_info_container-20150911 &ndash;&gt;
+    
+     <FrameLayout
+        android:id="@+id/dialpadFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/prize_dialpad_button_fragment_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+    
+    <FrameLayout
+        android:id="@+id/answer_fragment_container"
+        android:layout_below="@id/primary_call_info_container"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    &lt;!&ndash; bottom action button &ndash;&gt;
+    <FrameLayout
+        android:id="@+id/floating_end_call_action_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/prize_end_call_button_fragment_margin_top" >
+
+        <ImageButton
+            android:id="@+id/floating_end_call_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/end_call_background"
+            android:contentDescription="@string/onscreenEndCallText"
+            android:scaleType="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/floating_jump_into_contacts_container"
+        android:layout_width="@dimen/other_floating_button_diameter"
+        android:layout_height="@dimen/other_floating_button_diameter"
+        android:layout_marginTop="@dimen/prize_end_call_button_fragment_margin_top"
+        android:layout_toLeftOf="@id/floating_end_call_action_button_container" >
+
+        <ImageButton
+            android:id="@+id/floating_jump_into_contacts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/jump_into_contacts_button_margin_left"
+            android:scaleType="center" />
+        <TextView 
+            android:id="@+id/prize_floating_video_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:gravity="center"
+			android:paddingLeft="58dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:text="@string/prize_video_string"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/floating_dialpad_button_container"
+        android:layout_width="@dimen/other_floating_button_diameter"
+        android:layout_height="@dimen/other_floating_button_diameter"
+        android:layout_marginTop="@dimen/prize_end_call_button_fragment_margin_top"
+        android:layout_toRightOf="@id/floating_end_call_action_button_container" >
+
+        <ImageButton
+            android:id="@+id/floating_dialpad_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dialpad_call_button_margin_right"
+            android:background="@drawable/prize_btn_dialpad"
+            android:scaleType="center" />
+        <TextView 
+            android:id="@+id/prize_floating_dialpad_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+			android:paddingRight="57dp"
+            android:background="@android:color/transparent"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:text="@string/prize_dialpad_string" />
+    </FrameLayout>
+
+    <fragment 
+        android:id="@+id/callButtonFragment"
+        android:name="com.android.incallui.CallButtonFragment"            
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="60dp"
+		android:paddingRight="60dp"
+	    android:layout_gravity="center_horizontal" />
+
+	<FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/callButtonFragment"
+		android:layout_marginLeft="80dp" >
+
+        <ImageView
+                android:id="@+id/voiceRecorderIcon"
+                android:layout_width="@dimen/incall_record_icon_size"
+                android:layout_height="@dimen/incall_record_icon_size"
+                android:visibility="gone" />	
+     </FrameLayout> 	
+&lt;!&ndash; PRIZE-change-yuandailin-2016-3-15-end&ndash;&gt;
+</RelativeLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/call_card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/prize_incallui_background"
+    android:paddingBottom="@dimen/prize_call_card_fragment_padding_bottom">
+
+    <!-- The main content of the CallCard is either one or two "call info"
+         blocks, depending on whether one or two lines are in use.
+
+         The call_info blocks are stacked vertically inside a CallCard (LinearLayout),
+         each with layout_weight="1".  If only one line is in use (i.e. the
+         common case) then the 2nd call info will be GONE and thus the 1st one
+         will expand to fill the full height of the CallCard. -->
+
+    <!-- M: ALPS01844813 primaryCallPhotoOrVideo id is used for RCSe plugin -->
+    <!--<FrameLayout
+        android:id="@+id/primaryCallPhotoOrVideo"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        &lt;!&ndash; Contact photo for primary call info &ndash;&gt;
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/contactPhoto"
+            android:scaleType="centerCrop" />
+
+        &lt;!&ndash; manage conference call button &ndash;&gt;
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/primary_call_info_container"
+            layout="@layout/manage_conference_call_button" />
+    </FrameLayout>-->
+
+    <!-- Primary "call card" block, for the foreground call. -->
+    <LinearLayout
+        android:id="@+id/primary_call_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/incall_call_banner_background_color"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="@dimen/primary_call_elevation"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/call_banner_primary_call_container_top_padding" >
+
+        <include layout="@layout/primary_call_info_prize" />
+
+        <include layout="@layout/prize_multi_party_call_info" />
+
+        <!-- PRIZE-Change-Optimize_Dialer-wangzhong-2018_3_5-start -->
+        <!--<include layout="@layout/primary_call_info_small_content" />
+        <include layout="@layout/other_call_info" />-->
+        <ViewStub
+            android:id="@+id/prize_viewstub_primary_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/primary_call_info_small_content"/>
+        <ViewStub
+            android:id="@+id/prize_viewstub_secondary_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/other_call_info"/>
+        <!-- PRIZE-Change-Optimize_Dialer-wangzhong-2018_3_5-end -->
+
+        <TextView
+            android:id="@+id/connectionServiceMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone"
+            android:padding="6dp"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+    <fragment
+        android:name="com.android.incallui.VideoCallFragment"
+        android:id="@+id/videoCallFragment"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:gravity="top|center_horizontal"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/contactPhoto"
+        android:background="@android:color/white"
+        android:src="@drawable/img_no_image_automirrored" />
+
+    <!-- Progress spinner, useful for indicating pending operations such as upgrade to video. -->
+    <FrameLayout
+        android:id="@+id/progressSpinner"
+        android:layout_below="@id/primary_call_info_container"
+        android:background="#63000000"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminate="true" />
+
+    </FrameLayout>
+
+    <!-- Placeholder for the dialpad which is replaced with the dialpad fragment when shown. -->
+    <FrameLayout
+        android:id="@+id/dialpadFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/floating_end_call_action_button_container"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"/>
+
+    <!-- PRIZE-Change-InCallUI_Multi_Touch-wangzhong-2017_7_13-start -->
+    <!--<FrameLayout
+        android:id="@+id/answer_fragment_container"
+        android:layout_below="@id/primary_call_info_container"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+    <FrameLayout
+        android:id="@+id/answer_fragment_container"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!-- PRIZE-Change-InCallUI_Multi_Touch-wangzhong-2017_7_13-end -->
+
+    <!-- PRIZE-Add-InCallUI_VideoCall-wangzhong-2016_12_26-start -->
+    <TextView
+        android:id="@+id/prize_tv_video_call_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/floating_end_call_action_button_container"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:textColor="@android:color/white" />
+    <!-- PRIZE-Add-InCallUI_VideoCall-wangzhong-2016_12_26-end -->
+
+    <!-- bottom action button -->
+    <FrameLayout
+        android:id="@+id/floating_end_call_action_button_container"
+        android:layout_width="@dimen/end_call_floating_action_button_diameter"
+        android:layout_height="@dimen/end_call_floating_action_button_small_diameter"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:id="@+id/floating_end_call_action_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/prize_reject_selector"
+            android:contentDescription="@string/onscreenEndCallText"
+            android:scaleType="center" />
+    </FrameLayout>
+
+    <!--LEFT-->
+    <FrameLayout
+        android:id="@+id/floating_jump_into_contacts_container"
+        android:layout_width="@dimen/other_floating_button_diameter"
+        android:layout_height="@dimen/end_call_floating_action_button_small_diameter"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/floating_end_call_action_button_container" >
+
+        <!-- PRIZE-Change-InCallUI_VideoCall-wangzhong-2016_12_26-start -->
+        <!-- <ImageButton
+            android:id="@+id/floating_jump_into_contacts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/jump_into_contacts_button_margin_left"
+            android:scaleType="center" /> -->
+        <!--SWITCH CAMERA-->
+        <ImageButton
+            android:id="@+id/floating_jump_into_contacts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:visibility="gone"
+            android:background="@drawable/prize_camera_switch_drawable"
+            android:scaleType="center" />
+        <!-- PRIZE-Change-InCallUI_VideoCall-wangzhong-2016_12_26-end -->
+
+        <!--CHANGE TO VIDEO-->
+        <TextView
+            android:id="@+id/prize_floating_video_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:textColor="@drawable/prize_callcard_video_tv_color_selector"
+            android:text="@string/prize_video_string"/>
+    </FrameLayout>
+
+    <!--RIGHT-->
+    <FrameLayout
+        android:id="@+id/floating_dialpad_button_container"
+        android:layout_width="@dimen/other_floating_button_diameter"
+        android:layout_height="@dimen/end_call_floating_action_button_small_diameter"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/floating_end_call_action_button_container" >
+
+        <!-- PRIZE-Change-InCallUI_VideoCall-wangzhong-2016_12_26-start -->
+        <!-- <ImageButton
+            android:id="@+id/floating_dialpad_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/dialpad_call_button_margin_right"
+            android:background="@drawable/prize_btn_dialpad"
+            android:scaleType="center" /> -->
+        <!--CHANGE TO VOICE-->
+        <ImageButton
+            android:id="@+id/floating_dialpad_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:visibility="gone"
+            android:background="@drawable/prize_video_switch_voice_drawable"
+            android:scaleType="center" />
+        <!-- PRIZE-Change-InCallUI_VideoCall-wangzhong-2016_12_26-end -->
+
+        <!--DIALPAD-->
+        <TextView
+            android:id="@+id/prize_floating_dialpad_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:text="@string/prize_dialpad_string" />
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/callButtonFragment"
+        android:name="com.android.incallui.CallButtonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:layout_above="@id/floating_end_call_action_button_container"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/voiceRecorderIcon"
+        android:layout_width="@dimen/incall_record_icon_size"
+        android:layout_height="@dimen/incall_record_icon_size"
+        android:layout_above="@id/floating_end_call_action_button_container"
+        android:layout_marginStart="78.5dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
+<!-- PRIZE-Change-Optimize_Dialer-wangzhong-2018_3_5-end -->

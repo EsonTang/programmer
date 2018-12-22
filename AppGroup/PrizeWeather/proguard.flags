@@ -1,0 +1,107 @@
+-optimizationpasses 5                                                      
+-dontusemixedcaseclassnames                                                   
+-dontskipnonpubliclibraryclasses                                                
+-dontpreverify                                                                
+-verbose                                                                      
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*     
+
+-keep public class * extends android.app.Activity                              
+-keep public class * extends android.app.Application                         
+-keep public class * extends android.app.Service                              
+-keep public class * extends android.content.BroadcastReceiver                
+-keep public class * extends android.content.ContentProvider                  
+-keep public class * extends android.app.backup.BackupAgentHelper           
+-keep public class * extends android.preference.Preference                    
+-keep public class com.android.vending.licensing.ILicensingService      
+
+-keepclasseswithmembernames class * {                                   
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {                                     
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);  
+}
+
+-keepclassmembers class * extends android.app.Activity {             
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {                                                 
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {                              
+  public static final android.os.Parcelable$Creator *;
+}
+
+-libraryjars libs/fastjson-1.1.34.android.jar
+
+
+-dontwarn org.apache.http.**
+-keep class org.apache.http.**{*;}
+
+-dontwarn com.j256.ormlite.**
+-keep class com.j256.ormlite.**{*;}
+
+-dontwarn com.alibaba.fastjson.**
+-keep class com.alibaba.fastjson.**{*;}
+
+-dontwarn com.baidu.location.**
+-keep class com.baidu.location.**{*;}
+
+-dontwarn com.j256.ormlite.**
+-keep class com.j256.ormlite.**{*;}
+
+-dontwarn org.xclcharts.**
+-keep class org.xclcharts.**{*;}
+
+-dontwarn android.support.v4.**
+-keep class android.support.v4.**{*;}
+
+
+
+-keep public class * implements java.io.Serializable {
+        public *;
+} 
+
+-keepclassmembers class * implements java.io.Serializable {
+
+    static final long serialVersionUID;
+
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+
+    private void writeObject(java.io.ObjectOutputStream);
+
+    private void readObject(java.io.ObjectInputStream);
+
+    java.lang.Object writeReplace();
+
+    java.lang.Object readResolve();
+
+}
+
+-keepclassmembers class **.R$* {
+
+    public static <fields>;
+
+}
+
+-keep class com.prize.weather.detail.WeatherDetailArrBean 
+-keep class com.prize.weather.detail.WeatherDetailBean 
+-keep class com.prize.weather.detail.WeatherFuture7DayBean 
+-keep class com.prize.weather.detail.WeatherFutureBean 
+-keep class com.prize.weather.detail.WeatherHourlyBean 
+-keep class com.prize.weather.detail.WeatherNowAirQualityBean 
+-keep class com.prize.weather.detail.WeatherNowAirQualityCityBean
+-keep class com.prize.weather.detail.WeatherNowAlarmsBean 
+-keep class com.prize.weather.detail.WeatherNowBean 
+-keep class com.prize.weather.detail.WeatherTodayBean 
+-keep class com.prize.weather.detail.WeatherTodaySuggestionBean 
+-keep class com.prize.weather.detail.WeatherTodaySuggestionDetailBean 
+-keep class com.prize.weather.detail.WeatherDetailModel 
+-keep class com.prize.weather.framework.mvp.model.BaseModel 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dialog_margingground"
+    android:layout_marginRight="@dimen/dialog_margingground"
+    android:orientation="vertical" >
+	<LinearLayout
+	    android:id="@+id/popu_add_linearlayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/radius_img"
+	    android:layout_gravity="center"
+	    android:orientation="vertical">
+	    <TextView
+	        android:id="@+id/take_photos_id"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_alignParentLeft="true"
+	        android:gravity="center"
+	        android:clickable="true"
+	        android:textColor="@color/prize_text_default"
+	        android:text="@string/take_photos" />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:background="@color/prize_line"/>、
+	    <TextView
+	        android:id="@+id/photos_id"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:gravity="center"
+	        android:clickable="true"
+	        android:textColor="@color/prize_text_default"
+	        android:text="@string/select_from_photos" />
+	</LinearLayout>
+    
+	<TextView
+	    android:id="@+id/popu_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_medium"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/radius_img"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/prize_text_default"
+        android:text="@string/cancel" />
+</LinearLayout>

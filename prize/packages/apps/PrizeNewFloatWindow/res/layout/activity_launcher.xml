@@ -1,0 +1,397 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            layout="@layout/title_bar" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topdivide" />
+
+        <LinearLayout
+            android:id="@+id/float_openswitch_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listitem_height"
+            android:layout_marginLeft="@dimen/listitem_margin"
+            android:layout_marginRight="@dimen/listitem_margin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cardview_bg"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/start_margin"
+                android:text="@string/title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/item_textsize" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1" />
+
+            <Switch
+                android:id="@+id/float_openswitch_bar"
+                android:layout_width="@dimen/listitem_height"
+                android:layout_height="@dimen/listitem_height"
+                android:layout_marginRight="@dimen/right_margin"
+                android:clickable="true"
+                android:focusable="false" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_divide_height" />
+
+        <LinearLayout
+            android:id="@+id/modechose_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/listitem_margin"
+            android:layout_marginRight="@dimen/listitem_margin"
+            android:background="@drawable/cardview_normal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/quick_mode_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/listitem_height"
+                android:background="@drawable/item_press_selector"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center_vertical|fill_horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/start_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/current_mode_quick"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_textsize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/quick_mode_ck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/ck_bg_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/start_margin"
+                android:layout_marginRight="@dimen/start_margin"
+                android:background="@color/divide_color" />
+
+            <LinearLayout
+                android:id="@+id/menu_mode_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/listitem_height"
+                android:background="@drawable/item_press_selector"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/start_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/current_mode_menu"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_textsize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/menu_mode_ck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/ck_bg_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_divide_height" />
+
+        <LinearLayout
+            android:id="@+id/quickset_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/listitem_margin"
+            android:layout_marginRight="@dimen/listitem_margin"
+            android:background="@drawable/cardview_normal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/start_margin"
+                android:layout_marginRight="@dimen/start_margin"
+                android:gravity="center_vertical"
+                android:text="@string/quick_setting"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/start_margin"
+                android:layout_marginRight="@dimen/start_margin"
+                android:background="@color/divide_color" />
+
+            <LinearLayout
+                android:id="@+id/single_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/listitem_height"
+                android:background="@drawable/item_press_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/start_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/single_click"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_textsize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/single_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/single_click"
+                    android:textColor="@color/select_tvcolor"
+                    android:textSize="@dimen/item_textsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/start_margin"
+                    android:background="@drawable/rightarrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/start_margin"
+                android:layout_marginRight="@dimen/start_margin"
+                android:background="@color/divide_color" />
+
+            <LinearLayout
+                android:id="@+id/double_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/listitem_height"
+                android:background="@drawable/item_press_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/start_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/double_click"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_textsize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/double_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/double_click"
+                    android:textColor="@color/select_tvcolor"
+                    android:textSize="@dimen/item_textsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/start_margin"
+                    android:src="@drawable/rightarrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/start_margin"
+                android:layout_marginRight="@dimen/start_margin"
+                android:background="@color/divide_color" />
+
+            <LinearLayout
+                android:id="@+id/long_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/listitem_height"
+                android:background="@drawable/item_press_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/start_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/longpress"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_textsize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/long_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/longpress"
+                    android:textColor="@color/select_tvcolor"
+                    android:textSize="@dimen/item_textsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/start_margin"
+                    android:src="@drawable/rightarrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuset_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/listitem_margin"
+            android:layout_marginRight="@dimen/listitem_margin"
+            android:background="@drawable/cardview_normal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/start_margin"
+                android:gravity="center_vertical"
+                android:text="@string/menu_setting"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/start_margin"
+                android:layout_marginRight="@dimen/start_margin"
+                android:background="@color/divide_color" />
+
+            <com.android.prizefloatwindow.view.CircleMenuLayout
+                android:id="@+id/id_menulayout"
+                android:layout_width="295dp"
+                android:layout_height="295dp"
+                android:layout_marginTop="3dp" >
+
+                  <ImageView
+                      	android:id="@+id/id_circle_menu_item_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/turnplate_center" />
+            </com.android.prizefloatwindow.view.CircleMenuLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/start_margin"
+                android:layout_marginRight="@dimen/start_margin"
+                android:layout_marginTop="10dp"
+                android:background="@color/divide_color" />
+
+            <TextView
+                android:id="@+id/float_reset"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/float_reset"
+                android:textColor="@drawable/textview_reset_selector"
+                android:textSize="@dimen/item_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_divide_height" />
+
+        <LinearLayout
+            android:id="@+id/float_layout_hide"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="@dimen/listitem_margin"
+            android:layout_marginRight="@dimen/listitem_margin"
+            android:background="@drawable/cardview_bg"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/auto_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/start_margin"
+                android:gravity="center_vertical"
+                android:text="@string/float_layout_summary"
+                android:textColor="@color/black" />
+
+            <Switch
+                android:id="@+id/float_switch_hide"
+                android:layout_width="@dimen/listitem_height"
+                android:layout_height="@dimen/listitem_height"
+                android:layout_marginRight="@dimen/right_margin"
+                android:clickable="true"
+                android:focusable="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

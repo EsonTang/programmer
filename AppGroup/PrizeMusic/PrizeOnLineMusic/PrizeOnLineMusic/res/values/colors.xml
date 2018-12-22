@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_background_color">#232931</color>
+    <color name="app_background_separator">#2C2F32</color>
+    <color name="text_color_gray">#969696</color>
+    <!-- A transparent black -->
+    <color name="transparent_black">#aa000000</color>
+
+    <!-- A semi-transparent dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="background_grey">#ffdedede</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+
+    <!-- Black -->
+    <color name="black">#ff000000</color>
+
+    <!-- White -->
+    <color name="white">#ffffffff</color>
+    <color name="text_color_aaffffff">#aaffffff</color>
+
+    <!-- Quick Queue line seperator -->
+    <color name="actionbar_text">#eeffffff</color>
+
+    <!-- Quick Queue line seperator -->
+    <color name="queue_callout_line">#99ffffff</color>
+    <color name="gray_black">#323232</color>
+    <color name="edittext_hint">#c8c8c8</color>
+    <color name="statusbar_color">#f0f0f0</color>
+    <color name="lyric_background">#555557</color>
+    <color name="text_color_262626">#262626</color>
+    <color name="text_color_9a9a9a">#9a9a9a</color>
+    <color name="text_color_737373">#737373</color>
+    <color name="text_color_323232">#323232</color>
+    <color name="text_color_3ac3cf">#3ac3cf</color>
+    <color name="app_title">#f4f4f4</color>
+    <color name="bg_head_gray_color">#c2c2c3</color>
+    <color name="text_color_969696">#969696</color>
+    <color name="bg_gray_color">#e0e0e0</color>
+    <color name="text_color_ff5f00">#ff5f00</color>
+    <color name="gold_color">#ff5f00</color>
+    <color name="text_color_f0f0f0">#f0f0f0</color>
+    <color name="textcolor_3ac3cf">#3ac3cf</color>
+    <color name="textcolor_ebebeb">#ebebeb</color>
+    <color name="text_color_3ac2cf">#3ac2cf</color>
+    <color name="text_color_646464">#646464</color>
+
+    <color name="color_33ffffff">#33ffffff</color>
+    <color name="color_55ffffff">#55ffffff</color>
+    <color name="divider">#dcdcdc</color>
+    <color name="half_divider">#55dcdcdc</color>
+    <!-- 开屏广告 -->
+    <color name="status_color">#efeff0</color>
+    <color name="web_progress_color">#33cccc</color>
+    <color name="text_color_404040">#404040</color>
+     <!-- 全选反选字体颜色 -->
+    <color name="text_color_33cccc">#33cccc</color>
+    
+</resources>

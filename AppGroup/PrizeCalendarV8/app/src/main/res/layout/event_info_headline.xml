@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_info_headline"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--android:paddingTop="@dimen/prize_event_info_statusbar_height"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/prize_event_info_margin_left"
+        android:layout_marginRight="@dimen/prize_event_info_margin_left"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/square_bg"
+        android:orientation="vertical">
+        <!--android:background="@color/event_info_content_color"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_event_info_title_height"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/prize_event_info_margin_left">
+
+            <!-- WHAT -->
+
+            <TextView
+                android:id="@+id/title"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|start"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:gravity="center|start"
+                android:textColor="@color/event_info_title_color"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/prize_event_info_title" />
+
+            <!-- BUTTONS -->
+
+            <LinearLayout
+                android:id="@+id/event_info_buttons_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/change_color"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/choose_event_color_label"
+                    android:textAllCaps="false"
+                    android:textColor="@color/event_info_headline_color"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/edit"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/edit_event_label"
+                    android:textAllCaps="false"
+                    android:textColor="@color/event_info_headline_color" />
+
+                <Button
+                    android:id="@+id/delete"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/delete_label"
+                    android:textAllCaps="false"
+                    android:textColor="@color/event_info_headline_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/prize_event_info_margin_left"
+            android:layout_marginRight="@dimen/prize_event_info_margin_left"
+            android:background="@color/prize_divide_gray" />
+
+        <!-- WHERE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_event_info_normal_height"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/prize_event_info_margin_left">
+
+            <!-- <TextView
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|start"
+            android:gravity="center|start"
+            android:text="@string/where_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/prize_normal" /> -->
+
+            <TextView
+                android:id="@+id/where"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:gravity="center|start"
+                android:textColor="@color/event_info_title_color"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/prize_event_info_nomal" />
+        </LinearLayout>
+
+
+        <!-- WHEN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_event_info_normal_height"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/prize_event_info_margin_left">
+
+            <!-- <TextView
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|start"
+            android:gravity="center|start"
+            android:text="@string/when_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/prize_normal" /> -->
+
+            <TextView
+                android:id="@+id/when_datetime"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:gravity="center|start"
+                android:textColor="@color/event_info_title_color"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/prize_event_info_nomal" />
+        </LinearLayout>
+
+        <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/prize_divide_gray" /> -->
+
+        <!-- <TextView
+        android:id="@+id/when_repeat"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/prize_normal" /> -->
+
+
+        <!-- REPEAT -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_event_info_normal_height"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/prize_event_info_margin_left">
+
+            <TextView
+                android:id="@+id/repeat_title"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:gravity="center|start"
+                android:textColor="@color/event_info_title_color"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/prize_event_info_nomal" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/prize_event_info_margin_left"
+            android:layout_marginRight="@dimen/prize_event_info_margin_left"
+            android:background="@color/prize_divide_gray" />
+        <!-- DESCRIPTION -->
+
+        <include
+            android:id="@+id/description"
+            layout="@layout/expandable_textview" />
+
+        <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/prize_divide_gray" /> -->
+    </LinearLayout>
+</LinearLayout>

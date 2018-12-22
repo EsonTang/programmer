@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<!--prize-add blur background-liufan-2015-11-04-start-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/blur_layout">
+	</LinearLayout>
+	<!--prize-add blur background-liufan-2015-11-04-end-->
+
+    <!-- Recents View -->
+    <com.android.systemui.recents.views.RecentsView
+        android:id="@+id/recents_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.android.systemui.recents.views.RecentsView>
+
+    <!-- Incompatible task overlay -->
+    <ViewStub android:id="@+id/incompatible_app_overlay_stub"
+        android:inflatedId="@+id/incompatible_app_overlay"
+        android:layout="@layout/recents_incompatible_app_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_gravity="center_horizontal|top" />
+
+    <!-- Nav Bar Scrim View -->
+    <ImageView
+        android:id="@+id/nav_bar_scrim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:scaleType="fitXY" />
+        <!--prize-add prompt text-liufan-2015-12-01-start-->
+	<!--prize add layout id by xiarui 2017-11-10-->
+	<LinearLayout
+		android:id="@+id/clean_memory_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center_horizontal"
+		android:paddingTop="5dp"
+		android:paddingBottom="@dimen/recents_memerytext_bottom"
+		android:orientation="vertical">
+		<com.android.systemui.recents.views.ArcView
+			android:id="@+id/clear_recents"
+			android:layout_width="@dimen/recents_clearview_width"
+			android:layout_height="@dimen/recents_clearview_height"
+			android:layout_gravity="center_horizontal"
+			android:src="@drawable/ic_dismiss_all"
+			android:scaleType="centerInside"
+			android:background="@drawable/recents_button_bg"
+			android:contentDescription="@string/clear_recents" />
+		<LinearLayout
+			android:id="@+id/memory_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:orientation="horizontal"
+			android:paddingTop="@dimen/memory_layout_top"
+			android:gravity="center">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/used_memory_txt"
+				android:textColor="#ffffffff"
+				android:textSize="12dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/memory_spilt_txt"
+				android:textColor="#ffffffff"
+				android:textSize="12dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/all_memory_txt"
+				android:textColor="#ffffffff"
+				android:textSize="12dp"/>
+		</LinearLayout>
+
+	</LinearLayout>
+        <!--prize-add prompt text-liufan-2015-12-01-end-->
+        
+    <!--prize-add prompt text for splite screen -liyongli-20170727-start-->
+    <TextView
+        android:id="@+id/sel_splite_app"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_gravity="top|center_horizontal"
+        android:gravity="center"
+        android:text="@string/sel_splite_app"
+        android:textColor="#ffffffff"
+        android:textSize="14dp"/>
+    <!--prize-add prompt text for splite screen -liyongli-20170727-end-->
+    
+</FrameLayout>

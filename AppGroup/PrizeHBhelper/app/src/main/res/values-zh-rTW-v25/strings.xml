@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">紅包助手</string>
+    <string name="main_name">搶紅包</string>
+    <!--<string name="accessibility_description">啟動搶紅包服務，支持微信、QQ。</string>-->
+    <string name="accessibility_description">啟動搶紅包服務，支持微信。</string>
+    <string name="service_name">紅包助手</string>
+    <string name="open_service_title">需要開啟輔助服務正常使用</string>
+    <string name="open_service_button">打開輔助服務</string>
+    <string name="open_notify_service">打開通知欄服務</string>
+    <string name="check_update">檢查更新</string>
+    <string name="share">分享</string>
+    <string name="tips">找到[紅包助手]，然後開啟服務即可</string>
+    <string name="qq_settings">QQ設定</string>
+    <string name="wechat_settings">微信設定</string>
+    <string name="notify_settings">紅包提醒設定</string>
+    <string name="switch_reminder">開啟紅包助手後，系統自動幫您搶群紅包</string>
+    <string name="single_enable_settings">開啟後可以搶微信私聊紅包</string>
+    <string name="single_enable_title">私聊紅包</string>
+    <string name="voice">聲音提醒</string>
+    <string name="voice_reminder">搶到紅包時，有聲音提醒</string>
+    <string name="hb_delay">紅包延時</string>
+    <string name="random_delay">隨機2-8秒</string>
+    <string name="recorder">紅包記錄</string>
+    <string name="recorder_reminder">記錄紅包助手幫你搶到的紅包數量和金額</string>
+    <string name="reminder">溫馨提示：</string>
+    <!--<string name="first_sentence">如果QQ群，微信群設為免打擾模式，</string>-->
+    <string name="first_sentence">如果微信群設為免打擾模式，</string>
+    <string name="fifth_sentence">或者將手機設成勿擾模式，</string>
+    <string name="second_sentence">紅包助手將不能搶紅包！</string>
+    <!--<string name="more"><a href="game://">更多問題></a></string>-->
+    <string name="more">更多問題></string>
+    <string name="third_sentence">搶紅包的速度過快會出現帳號被凍結的風險，</string>
+    <string name="fourth_sentence">設定隨機2-8s更安全</string>
+    <string name="enter_reminder">請進入設定的輔助服務中打開紅包助手</string>
+
+    <string name="delay_no">無</string>
+    <string name="delay_half">0.5s</string>
+    <string name="delay_one">1s</string>
+    <string name="delay_random">隨機2-8s</string>
+
+    <string name="after_open_hongbao">拆紅包</string>
+    <string name="after_open_see">看看大家的手氣（僅支持6.3.8版本以下）</string>
+    <string name="after_open_none">靜靜地看著</string>
+    <string name="after_get_back_home">返回案頭</string>
+    <string name="after_get_none">靜靜地看著</string>
+
+    <string name="wx_mode_0">自動搶</string>
+    <string name="wx_mode_1">搶單聊紅包，群聊紅包只通知</string>
+    <string name="wx_mode_2">抢群聊紅包，單聊紅包只通知</string>
+    <string name="wx_mode_3">通知手動搶（防封號）</string>
+
+    <string name="delay">紅包延時</string>
+    <string name="total_money">累計搶紅包（元）</string>
+    <string name="success_get">成功搶到</string>
+    <string name="ave_tiem">平均用時</string>
+    <string name="count">次</string>
+    <string name="second">秒</string>
+    <string name="clear_recordor">清空記錄</string>
+    <string name="no_recordor">沒有記錄</string>
+    <string name="amount">元</string>
+    <string name="get">搶到</string>
+    <string name="whos_bag">的紅包</string>
+
+    <string name="more_question">更多問題</string>
+    <string name="question1">1.為什麼開啟了紅包助手，卻沒有搶紅包？</string>
+    <string name="question2">2.為什麼QQ不能自動搶紅包？</string>
+    <!--<string name="question3">3.為什麼登入PC端微信后不能自動搶紅包？</string>
+    <string name="question4">4.群消息太多太煩人怎麼辦？</string>-->
+    <string name="question3">2.為什麼登入PC端微信后不能自動搶紅包？</string>
+    <string name="question4">3.群消息太多太煩人怎麼辦？</string>
+    <string name="question5">5.為什麼鎖屏就不能自動搶紅包？</string>
+
+    <string name="answer1">必須在微信的“設置”中開啟“新消息通知”和“顯示新消息詳情”，群紅包要關閉“消息勿擾”，保證可以正常收到微信消息。</string>
+    <string name="answer2">確定已經開啟QQ新消息提醒和QQ群消息通知</string>
+    <string name="answer3">如果已登入微信網頁版，請點擊手機上置頂的網頁已登錄選項，關閉手機消息免打擾</string>
+    <!--<string name="answer4_1">1. 可以在微信設置-新消息提醒里，關閉聲音和震動提示</string>-->
+    <string name="answer4_1">可以在微信設置-新消息提醒里，關閉聲音和震動提示</string>
+    <string name="answer4_2">2. 在QQ設置-消息通知-聲音里，關閉聲音和震動提示</string>
+    <string name="answer5_1">1. 當您的手機存在鎖屏密碼時，是不能自動搶紅包的，關閉圖形或者數字密碼之後，在鎖屏下也能自動搶紅包</string>
+    <string name="answer5_2">2. 帶指紋解鎖的手機請關閉指紋鎖屏或保持非鎖屏狀態才能自動搶紅包</string>
+
+    <string name="leaveing_message">留言</string>
+    <string name="have_not_get">手慢了，紅包派完了。</string>
+    <string name="send_one">發了一個紅包</string>
+    <string name="send_one_to_you">給你發了一個紅包</string>
+    <string name="send_one_randomly">發了一個紅包，金額隨機</string>
+
+    <string name="back">返回</string>
+    <string name="red_packet_detail">紅包詳情</string>
+    <string name="look_my_packet_recorder">查看我的紅包記錄</string>
+    <string name="detail_description">目前所在頁面，紅包詳情</string>
+
+    <!--prize add zhaojian 8.0 2017803 start-->
+    <string name="back_button_label" msgid="2300470004503343439">"返回"</string>
+    <string name="next_button_label" msgid="1080555104677992408">"繼續"</string>
+    <string name="skip_button_label" msgid="1275362299471631819">"略過"</string>
+    <string name="money_function">已存入餘額，</string>
+    <!--prize add zhaojian 8.0 2017803 end-->
+</resources>
