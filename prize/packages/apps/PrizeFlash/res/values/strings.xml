@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="hello">Hello World, BootFlashlight!</string>
-    <string name="app_name">flashlight</string>
-    <string name="flashlight_string">flashlight</string>
-    <string name="flashlowlightremind">Power is too low, can not open this function</string>
-</resources>

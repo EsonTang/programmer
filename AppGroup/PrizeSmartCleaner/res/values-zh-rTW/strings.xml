@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">自動清理</string>
-    <string name="memery_clean_data_empty_result">已關閉 %1$s 個程式</string>
-    <string name="memery_clean_empty_result">您的手機已處於最佳狀態</string>
-    <string name="memery_clean_result">已關閉 %1$s 個程式，釋放 %2$s 記憶體</string>
-    <string name="memery_clean_result_notify_reboot">想要手機更快速，完全清理記憶體，可以嘗試重新啟動手機。</string>
-    <string name="mounting_internal_storage">正在格式化手機，請稍後重試！</string>
-</resources>

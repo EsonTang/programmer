@@ -1,7 +1,0 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item
-        android:id="@+id/exit_menu"
-        android:orderInCategory="10"
-        android:showAsAction="never"
-        android:title="@string/exit_super_power_mode"/>
-</menu>

@@ -1,3 +1,0 @@
-allow appdomain data_fonts_file:file { getattr read write };
-
-allow appdomain system_fonts_file:file { getattr read write };

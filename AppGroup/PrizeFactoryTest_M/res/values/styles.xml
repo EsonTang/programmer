@@ -1,6 +1,0 @@
-<resources>
-
-    <!-- style name="AppTheme" parent="android:Theme.Black" / -->
-    <style name="AppTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen" />
-
-</resources>

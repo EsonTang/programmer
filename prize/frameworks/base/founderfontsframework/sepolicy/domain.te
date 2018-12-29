@@ -1,3 +1,0 @@
-allow domain data_fonts_file:file r_file_perms;
-
-allow domain system_fonts_file:file r_file_perms;

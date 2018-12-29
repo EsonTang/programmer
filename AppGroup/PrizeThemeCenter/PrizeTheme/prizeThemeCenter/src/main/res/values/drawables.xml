@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <!-- Action bar background -->
-    <item name="actionbar_bg" type="drawable">@color/status_color</item>
-
-</resources>
