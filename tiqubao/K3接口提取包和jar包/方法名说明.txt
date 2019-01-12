@@ -1,0 +1,50 @@
+1、获取CPU串号        String getCpuSerial()
+2、系统背光亮度调节   boolean adjustBrightness (int value)
+3、获取光感强度       float getLSensorValue()
+4、设置GPIO输出状态    boolean setGpioState(int num, int state)
+   继电器开门信号、RGB三色灯控制   
+5、获取GPIO输入状态    getGpioState(int num)
+   微波输入、离门信号、防拆信号
+   
+	/**
+	 *继电器开门信号 GPIO。
+	**/
+	public static final int GPIO_HALL_NUM = 0;
+	/**
+	 *RGB 红灯 GPIO。
+	**/
+	public static final int GPIO_RED_LED_NUM = 1;
+	/**
+	 *RGB 蓝灯 GPIO。
+	**/
+	public static final int GPIO_BLUE_LED_NUM = 2;
+	/**
+	 *RGB 绿灯 GPIO。
+	**/
+	public static final int GPIO_GREEN_LED_NUM = 3;
+
+	/**
+	 *微波输入 GPIO。
+	**/
+	public static final int GPIO_WEIBO_NUM = 4;
+	/**
+	 *白光补光亮度 GPIO。
+	**/
+	public static final int GPIO_WHITE_LED_NUM = 5;
+	/**
+	 *红外补光亮度 GPIO。
+	**/
+	public static final int GPIO_INFRARED_LED_NUM = 6;
+	
+	/**
+	 *离门信号 GPIO。
+	**/
+	public static final int GPIO_LIMEN_NUM = 7;
+	/**
+	 *防拆按键 GPIO。
+	**/
+	public static final int GPIO_FANGCHAI_NUM = 8;
+	/**
+	 *系统恢复按键 GPIO。
+	**/
+	public static final int GPIO_REC_NUM = 9; 
